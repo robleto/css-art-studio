@@ -1,0 +1,87 @@
+$white: #ffffff;
+$black: #444444;
+$blue: #4b97ed;
+$yellow: #f6cb7c;
+
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  background: 
+
+    repeating-linear-gradient(90deg, transparent 0 80px, lighten($blue, 20%) 80px 82px),
+    repeating-linear-gradient(-10deg, transparent 0 90px, lighten($blue, 20%) 90px 92px), 
+    conic-gradient(from 167.72deg at 50.06% 45.46%, #133955 -54.38deg, #344275 7.33deg, #6F357D 84.38deg, #30297D 138.99deg, #213A57 168.75deg, #290755 205.87deg, #0C4A47 264.38deg, #133955 305.62deg, #344275 367.33deg);
+  // linear-gradient(45deg, lighten($blue, 10%) 15%, lighten($blue, 5%) 100%);
+  
+}
+
+
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+div.crawl {
+    width: 180vw;
+    height: 40vmin;
+    top: 40vmin;
+    left: -40vw;
+    position: relative;
+    border-top: solid 10px darken(black, 5%);
+    border-bottom: solid 10px darken(black, 5%);
+    background-color: #333;
+    transform: rotate(-10deg); 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+div.crawl:before,
+div.crawl:after {
+    width: 200vmin;
+    height: 20vmin;
+    top: -2vmin;
+    left: 20vmin;
+    position: relative;
+    color: $yellow;
+    font-size: 20vmin;
+    font-family: 'Teko', sans-serif;
+    text-wrap: nowrap;
+    text-transform: uppercase;
+    font-style: italic;
+    text-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    overflow: hidden;
+}
+  
+div.crawl:before {
+    display: block;
+    white-space: nowrap;
+    content: 'Breaking News: It is Divtober!';
+    animation: move-crawl 8s linear 0s infinite both running, move-crawl 8s linear 3s infinite both running;
+}
+
+div.crawl:after {
+  display: block;
+  top: -6vmin;
+  content: 'Day 4 Prompt: Crawl';
+  animation: move-crawl 10s linear 3s infinite both running, move-crawl 10s linear 6s infinite both running;
+}
+
+@keyframes move-crawl {
+    0% {
+      left: 140vw;
+    }
+    100% {
+      left: -140vw;
+    }
+}

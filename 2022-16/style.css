@@ -1,0 +1,98 @@
+/* colors */
+/* Presets */
+body {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+div.hypnotic {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.hypnotic:after {
+  width: 100%;
+  height: 100%;
+  background: repeating-radial-gradient(circle farthest-side at center center, transparent 0%, transparent 2%, #ce7b7b 2%, #d58d8d 3%);
+  -webkit-animation: zoom-in-zoom-out 10s linear 0s infinite both running;
+          animation: zoom-in-zoom-out 10s linear 0s infinite both running;
+}
+
+div.hypnotic:before {
+  -webkit-filter: blur(0.125rem);
+          filter: blur(0.125rem);
+  width: 1000%;
+  height: 1000%;
+  background: repeating-conic-gradient(#b84444 0 15deg, #a53d3d 15deg 30deg);
+  -webkit-animation: rotate 30s linear 0s infinite both running;
+          animation: rotate 30s linear 0s infinite both running;
+}
+
+@-webkit-keyframes zoom-in-zoom-out {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.3, 1.3);
+            transform: scale(1.3, 1.3);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.3, 1.3);
+            transform: scale(1.3, 1.3);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */

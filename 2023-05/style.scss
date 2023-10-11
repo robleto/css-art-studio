@@ -1,0 +1,196 @@
+$tan: #ffcc9f;
+$dark-tan: #EEB681;
+$black: #444444;
+$maroon: #450f0c;
+$blue: #29a7a0;
+$bg: #e6f8c6;
+
+body {
+  height: 100vmin;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: start; 
+  z-index: 1;
+  background-color: lighten($maroon, 20%);
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+div.lost {
+    width: 80vmin;
+    height: 95vmin;
+    margin: 0 auto;
+    z-index: 99999;
+    background: 
+      
+      radial-gradient(circle, transparent, 0vmin, transparent, 35vmin, $maroon 35vmin, $maroon 39vmin, lighten($maroon, 20%) 39vmin) -10vmin 0vmin / 100vmin 100vmin no-repeat,
+
+      
+      
+      
+      /* knuckle */ radial-gradient(ellipse, $tan 0vmin, $tan 1.5vmin, transparent 1.5vmin) 10vmin 62vmin / 3vmin 5vmin no-repeat,
+      radial-gradient(ellipse, $dark-tan 0vmin, $dark-tan 1.5vmin, transparent 1.5vmin) 9.5vmin 62.5vmin / 3vmin 4vmin no-repeat,
+       /* knuckle */ radial-gradient(ellipse, $tan 0vmin, $tan 1.5vmin, transparent 1.5vmin) 9vmin 62vmin / 3vmin 5vmin no-repeat,
+      radial-gradient(ellipse, $dark-tan 0vmin, $dark-tan 1.5vmin, transparent 1.5vmin) 8.5vmin 62.5vmin / 3vmin 4vmin no-repeat,  
+      
+      
+      radial-gradient(ellipse, $blue 0vmin, $blue  10vmin, transparent 10vmin) -4vmin 66vmin / 20vmin 20vmin no-repeat,
+      radial-gradient(ellipse, $blue 0vmin, $blue  10vmin, transparent 10vmin) -0.5vmin 69vmin / 20vmin 20vmin no-repeat,
+      radial-gradient(ellipse, $blue 0vmin, $blue  20vmin, transparent 20vmin) -19vmin 68.5vmin / 40vmin 20vmin no-repeat,
+      radial-gradient(ellipse, $blue 0vmin, $blue  10vmin, transparent 10vmin) 2vmin 72vmin / 20vmin 20vmin no-repeat,
+
+      radial-gradient(ellipse, $blue 0vmin, $blue  6.5vmin, transparent 6.5vmin) 9.85vmin 49.5vmin / 15vmin 12vmin no-repeat,
+
+      radial-gradient(ellipse, $tan 0vmin, $tan 9vmin, transparent 9vmin) 6.5vmin 56vmin / 30vmin 7vmin no-repeat,
+
+      radial-gradient(ellipse, $dark-tan 0vmin, $dark-tan 9vmin, transparent 9vmin) 8vmin 58vmin / 30vmin 5vmin no-repeat,
+
+      radial-gradient(ellipse, $tan 0vmin, $tan 10vmin, transparent 10vmin) 6.5vmin 56.5vmin / 30vmin 8.5vmin no-repeat,
+
+
+      
+    
+      /* index  */
+      
+      
+       // /* lines */ 
+ radial-gradient(ellipse, $tan 0vmin, $tan 18vmin, transparent 18vmin) 12vmin 59.25vmin / 36vmin 36vmin no-repeat,
+      radial-gradient(ellipse, $dark-tan 0vmin, $dark-tan 18vmin, transparent 18vmin) 13.25vmin 60vmin / 36vmin 36vmin no-repeat,
+      
+      radial-gradient(ellipse, $tan 0vmin, $tan 19vmin, transparent 19vmin) 24.5vmin 57.75vmin / 38vmin 10vmin no-repeat,
+      radial-gradient(ellipse, $dark-tan 0vmin, $dark-tan 18vmin, transparent 18vmin) 26vmin 57vmin / 36vmin 10vmin no-repeat,
+      
+      
+      /* knuckle */ radial-gradient(ellipse, $tan 0vmin, $tan 3.5vmin, transparent 3.5vmin) 23.5vmin 26.5vmin / 7vmin 3vmin no-repeat,
+      radial-gradient(ellipse, $dark-tan 0vmin, $dark-tan 3vmin, transparent 3vmin) 24vmin 26vmin / 6vmin 3vmin no-repeat,
+      
+       /* knuckle */ radial-gradient(ellipse, $tan 0vmin, $tan 3.5vmin, transparent 3.5vmin) 24.5vmin 35.5vmin / 7vmin 3vmin no-repeat,
+      radial-gradient(ellipse, $dark-tan 0vmin, $dark-tan 3vmin, transparent 3vmin) 24.75vmin 35vmin / 6vmin 3vmin no-repeat,
+       /* knuckle */ radial-gradient(ellipse, $tan 0vmin, $tan 3.5vmin, transparent 3.5vmin) 24.5vmin 34.5vmin / 7vmin 3vmin no-repeat,
+      radial-gradient(ellipse, $dark-tan 0vmin, $dark-tan 3vmin, transparent 3vmin) 24.75vmin 34vmin / 6vmin 3vmin no-repeat,
+      
+       /* knuckle */ radial-gradient(ellipse, $tan 0vmin, $tan 3.5vmin, transparent 3.5vmin) 26vmin 44.5vmin / 7vmin 3vmin no-repeat,
+      radial-gradient(ellipse, $dark-tan 0vmin, $dark-tan 3vmin, transparent 3vmin) 26vmin 44vmin / 6vmin 3vmin no-repeat,
+      
+      
+      radial-gradient(ellipse, $tan 0vmin, $tan 3.75vmin, transparent 3.75vmin) 22.25vmin 12vmin / 10vmin 25vmin no-repeat,
+      radial-gradient(ellipse, $tan 0vmin, $tan 4vmin, transparent 4vmin) 23.5vmin 21vmin / 8vmin 26vmin no-repeat,
+      radial-gradient(ellipse, $tan 0vmin, $tan 4.5vmin, transparent 4.5vmin) 23vmin 32vmin / 10vmin 25vmin no-repeat,
+      
+      
+      
+      
+      
+      /* middle  */
+      
+ /* knuckle */ radial-gradient(ellipse, $tan 0vmin, $tan 3.5vmin, transparent 3.5vmin) 36.5vmin 26.5vmin / 7vmin 3vmin no-repeat,
+      radial-gradient(ellipse, $dark-tan 0vmin, $dark-tan 3vmin, transparent 3vmin) 36.5vmin 26vmin / 6vmin 3vmin no-repeat,
+      
+       /* knuckle */ radial-gradient(ellipse, $tan 0vmin, $tan 3.5vmin, transparent 3.5vmin) 36.5vmin 35.5vmin / 7vmin 3vmin no-repeat,
+      radial-gradient(ellipse, $dark-tan 0vmin, $dark-tan 3vmin, transparent 3vmin) 36.75vmin 35vmin / 6vmin 3vmin no-repeat,
+       /* knuckle */ radial-gradient(ellipse, $tan 0vmin, $tan 3.5vmin, transparent 3.5vmin) 36.5vmin 34.5vmin / 7vmin 3vmin no-repeat,
+      radial-gradient(ellipse, $dark-tan 0vmin, $dark-tan 3vmin, transparent 3vmin) 36.75vmin 34vmin / 6vmin 3vmin no-repeat,
+      
+       /* knuckle */ radial-gradient(ellipse, $tan 0vmin, $tan 3.5vmin, transparent 3.5vmin) 36.75vmin 43.5vmin / 7vmin 3vmin no-repeat,
+      radial-gradient(ellipse, $dark-tan 0vmin, $dark-tan 3vmin, transparent 3vmin) 37vmin 43vmin / 6vmin 3vmin no-repeat,
+      
+      
+      radial-gradient(ellipse, $tan 0vmin, $tan 3.75vmin, transparent 3.75vmin) 35vmin 10vmin / 10vmin 25vmin no-repeat,
+      radial-gradient(ellipse, $tan 0vmin, $tan 4vmin, transparent 4vmin) 35.75vmin 21vmin / 8vmin 22vmin no-repeat,
+      radial-gradient(ellipse, $tan 0vmin, $tan 4vmin, transparent 4vmin) 35vmin 30vmin / 9.5vmin 25vmin no-repeat,
+      
+      
+      
+      
+      /* ring  */
+      
+ /* knuckle */ radial-gradient(ellipse, $tan 0vmin, $tan 3.5vmin, transparent 3.5vmin) 47.5vmin 26.5vmin / 7vmin 3vmin no-repeat,
+      radial-gradient(ellipse, $dark-tan 0vmin, $dark-tan 3vmin, transparent 3vmin) 47.5vmin 26vmin / 6vmin 3vmin no-repeat,
+      
+       /* knuckle */ radial-gradient(ellipse, $tan 0vmin, $tan 3.5vmin, transparent 3.5vmin) 47.5vmin 35.5vmin / 7vmin 3vmin no-repeat,
+      radial-gradient(ellipse, $dark-tan 0vmin, $dark-tan 3vmin, transparent 3vmin) 47.75vmin 35vmin / 6vmin 3vmin no-repeat,
+       /* knuckle */ radial-gradient(ellipse, $tan 0vmin, $tan 3.5vmin, transparent 3.5vmin) 47.5vmin 34.5vmin / 7vmin 3vmin no-repeat,
+      radial-gradient(ellipse, $dark-tan 0vmin, $dark-tan 3vmin, transparent 3vmin) 47.75vmin 34vmin / 6vmin 3vmin no-repeat,
+      
+       /* knuckle */ radial-gradient(ellipse, $tan 0vmin, $tan 3.5vmin, transparent 3.5vmin) 47.75vmin 43.5vmin / 7vmin 3vmin no-repeat,
+      radial-gradient(ellipse, $dark-tan 0vmin, $dark-tan 3vmin, transparent 3vmin) 48vmin 43vmin / 6vmin 3vmin no-repeat,
+      
+      
+       // /* lines */ 
+      radial-gradient(ellipse, $tan 0vmin, $tan 7.5vmin, transparent 7.5vmin) 46.5vmin 47.25vmin / 15vmin 8vmin no-repeat,
+      radial-gradient(ellipse, $dark-tan 0vmin, $dark-tan 6vmin, transparent 6vmin) 48vmin 46vmin / 15vmin 8vmin no-repeat,
+      
+      
+      radial-gradient(ellipse, $tan 0vmin, $tan 3.75vmin, transparent 3.75vmin) 46vmin 11vmin / 10vmin 25vmin no-repeat,
+      radial-gradient(ellipse, $tan 0vmin, $tan 4vmin, transparent 4vmin) 47vmin 21vmin / 8vmin 25vmin no-repeat,
+      radial-gradient(ellipse, $tan 0vmin, $tan 4vmin, transparent 4vmin) 46vmin 32vmin / 10vmin 25vmin no-repeat,
+      
+      
+      /* pinky  */
+      
+      
+ /* knuckle */ radial-gradient(ellipse, $tan 0vmin, $tan 3vmin, transparent 3vmin) 58.5vmin 26.5vmin / 6vmin 3vmin no-repeat,
+      radial-gradient(ellipse, $dark-tan 0vmin, $dark-tan 2.75vmin, transparent 2.75vmin) 58.75vmin 26vmin / 5.5vmin 3vmin no-repeat,
+      
+       /* knuckle */ radial-gradient(ellipse, $tan 0vmin, $tan 3.5vmin, transparent 3.5vmin) 57.5vmin 35.5vmin / 7vmin 3vmin no-repeat,
+      radial-gradient(ellipse, $dark-tan 0vmin, $dark-tan 3vmin, transparent 3vmin) 58vmin 35vmin / 6vmin 3vmin no-repeat,
+      
+       /* knuckle */ radial-gradient(ellipse, $tan 0vmin, $tan 3.5vmin, transparent 3.5vmin) 55.75vmin 46.5vmin / 7vmin 3vmin no-repeat,
+      radial-gradient(ellipse, $dark-tan 0vmin, $dark-tan 3vmin, transparent 3vmin) 56.75vmin 46vmin / 6vmin 3vmin no-repeat,
+      
+      
+      
+      radial-gradient(ellipse, $tan 0vmin, $tan 3.5vmin, transparent 3.5vmin) 58vmin 22vmin / 7vmin 15vmin no-repeat,
+      radial-gradient(ellipse, $tan 0vmin, $tan 3.75vmin, transparent 3.75vmin) 55.75vmin 24vmin / 10vmin 28vmin no-repeat,
+      radial-gradient(ellipse, $tan 0vmin, $tan 3.75vmin, transparent 3.75vmin) 55vmin 35vmin / 10vmin 22vmin no-repeat,
+      
+      /* hand  */
+      radial-gradient(ellipse, $tan 0vmin, $tan 9vmin, transparent 9vmin) -3vmin 57.25vmin / 18vmin 12vmin no-repeat,
+      radial-gradient(ellipse, $blue 0vmin, $blue  5vmin, transparent 5vmin) 13vmin 52vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, $blue 0vmin, $blue 5vmin, transparent 5vmin) 11vmin 59vmin / 10vmin 4vmin no-repeat,
+      radial-gradient(ellipse, $blue 0vmin, $blue 10vmin, transparent 10vmin) 3vmin 53vmin / 20vmin 10vmin no-repeat,
+      radial-gradient(ellipse, $blue 0vmin, $blue  2vmin, transparent 2vmin) 20vmin 40vmin / 4vmin 20vmin no-repeat,
+      radial-gradient(ellipse, $blue 0vmin, $blue  2vmin, transparent 2vmin) 18vmin 40vmin / 4vmin 20vmin no-repeat,
+      radial-gradient(ellipse, $tan 0vmin, $tan  20vmin, transparent 20vmin) 24vmin 45vmin / 36vmin 25vmin no-repeat,
+      radial-gradient(ellipse, $tan 0vmin, $tan  7vmin, transparent 7vmin) 18vmin 49vmin / 14vmin 20vmin no-repeat,
+      radial-gradient(ellipse, $tan 0vmin, $tan  4vmin, transparent 4vmin) 55vmin 43vmin / 9vmin 40vmin no-repeat,
+      radial-gradient(ellipse, $tan 0vmin, $tan  20vmin, transparent 20vmin) 21vmin 54vmin / 40vmin 40vmin no-repeat,
+      
+        /* thumb  */
+        radial-gradient(ellipse, $tan 0vmin, $tan 16vmin, transparent 16vmin) -15vmin 55vmin / 32vmin 32vmin no-repeat,
+        radial-gradient(ellipse, $tan 0vmin, $tan 16vmin, transparent 16vmin) -5vmin 58vmin / 32vmin 32vmin no-repeat,
+       radial-gradient(ellipse, $blue 0vmin, $blue 22vmin, transparent 22vmin) 0vmin 0vmin / 33vmin 44vmin no-repeat,
+       radial-gradient(ellipse, $blue 0vmin, $blue 22vmin, transparent 22vmin) 20vmin 0vmin / 33vmin 44vmin no-repeat,
+       radial-gradient(ellipse, $blue 0vmin, $blue 17vmin, transparent 17vmin) 2vmin 40vmin / 34vmin 22vmin no-repeat,
+      
+     /* linek */ linear-gradient($blue 0vmin, $blue 50vmin) 0vmin 0vmin / 100% 100% no-repeat,
+      
+}
+      
+     
+div.lost:before {
+    width: 28vmin;
+    height: 70vmin;
+    top: 9vmin;
+    left: 3vmin;
+    letter-spacing: 1vmin;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end; 
+    margin: 0 auto;
+    transform: rotate(5deg);
+    color: #333;
+    text-transform: uppercase;
+    font-family: 'Just Another Hand', cursive;
+    content: 'Not Pennys Boat';
+    text-align: center;
+    border-bottom: solid 1vmin #333;
+    font-size: 12vmin;
+    line-height: 0.75;     
+}

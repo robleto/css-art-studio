@@ -1,0 +1,141 @@
+$white: #FFFFFF;
+$black: #000000;
+$gray: #DCDCDC;
+$yellow: #B29853;
+$red: #A45858;
+
+
+/* Presets */
+
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+
+div.erase {
+    width: 150vh;
+    height: 100vh;
+    top: 0vh;
+    left: 0vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    background: 
+    repeating-linear-gradient(0deg, transparent 0 20px, darken($white, 8%) 20px 35px),
+    linear-gradient(90deg, darken($white, 10%) 15%, darken($white, 15%) 100%)
+}
+
+div.erase:before {
+    width: 100vh;
+    height: 100vh;
+    top: -10vh;
+    left: -100vh;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: eraser-line 5s ease-out 0s 1 both running;
+    background:
+    /* line */ linear-gradient( $white 7.5vh, $white 7.75vh) 0vh 60vh / 150vh 12vh no-repeat
+    ;
+}
+
+
+div.erase:after {
+    width: 100vh;
+    height: 100vh;
+    top: -19vh;
+    left: -60vh;
+    z-index: 999;
+    transform: rotatez(-60deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: eraser-pencil 5s ease-out 0s 1 both running;
+    background:
+    
+    /* pencil wood */ 
+    linear-gradient(     
+      lighten($yellow, 10%) 0vh,   
+      lighten($yellow, 10%) 5vh,
+      $yellow 5vh, 
+      $yellow 10vh, 
+      darken($yellow, 10%) 10vh) 50vh 60vh / 60vh 15vh no-repeat,
+      
+
+    /* pencil metal */ 
+    linear-gradient(   
+      transparent 0vh,
+      transparent 1vh,   
+      darken($gray, 15%) 1vh,      
+      darken($gray, 15%) 1.5vh,   
+      transparent 1.5vh,
+      transparent 3.5vh,
+      darken($gray, 15%) 3.5vh,      
+      darken($gray, 15%) 4vh,   
+      transparent 4vh,
+      transparent 6vh,
+      darken($gray, 15%) 6vh,      
+      darken($gray, 15%) 6.5vh,   
+      transparent 6.5vh,
+      transparent 8.5vh,
+      darken($gray, 15%) 8.5vh,      
+      darken($gray, 15%) 9vh,   
+      transparent 9vh,
+      transparent 11vh,
+      darken($gray, 15%) 11vh,      
+      darken($gray, 15%) 11.5vh,   
+      transparent 11.5vh,
+      transparent 13.5vh,
+      darken($gray, 15%) 13.5vh,      
+      darken($gray, 15%) 14vh,   
+      transparent 14vh,
+      transparent 15vh)
+      41vh 60vh / 6vh 15vh no-repeat,
+      
+    linear-gradient(90deg,     
+      transparent 0vh,      
+      transparent 2vh,   
+      darken($gray, 15%) 2vh,
+      darken($gray, 15%) 2.5vh,   
+      transparent 2.5vh,      
+      transparent 10vh,   
+      darken($gray, 15%) 10vh,
+      darken($gray, 15%) 10.5vh,   
+      transparent 10.5vh,      
+      transparent 12vh)        
+      38vh 60vh / 12vw 15vh no-repeat,
+    
+       radial-gradient(ellipse, $gray 4vh, darken($gray, 20%) 9vh, transparent 9vh) 38vh 60vh / 12vh 15vh no-repeat,
+          
+    /* pencil eraser */ 
+    radial-gradient(ellipse, $red 4vh, darken($red, 10%) 9vh, transparent 9vh) 28vh 60vh / 15vh 15vh no-repeat;
+  // radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%);
+}
+
+@keyframes eraser-pencil {
+  0% { transform: translateX(0vh) rotatez(-60deg); }
+  100% { transform: translateX(50vh) rotatez(-60deg); }
+}
+
+@keyframes eraser-line {
+  0% { transform: translateX(0vh); }
+  100% { transform: translateX(50vh); }
+}

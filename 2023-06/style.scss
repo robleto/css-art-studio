@@ -1,0 +1,74 @@
+$blue: #3498DB;
+$gray: #AAAAAA;
+
+$ball-size: 25vmin;
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; 
+  z-index: 1;
+  background-color: lighten($blue, 33%);
+}
+
+div.bouncing-ball:after {
+    width: $ball-size;
+    height: $ball-size;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: flex-end; 
+    z-index: 1;
+    border-radius: 50%;
+    background-size: cover;
+    border-radius: 50%;
+
+     background: 
+       radial-gradient(circle, 
+        $blue 0vmin, $blue 8vmin, transparent 8vmin) 4vmin 5vmin / 16vmin 16vmin no-repeat,
+
+     radial-gradient(circle, 
+       transparent 0vmin, 
+       transparent 6.75vmin, lighten($blue, 35%) 6.75vmin, lighten($blue, 35%) 7.5vmin, transparent 7.5vmin) 5.5vmin 4.5vmin / 15vmin 15vmin no-repeat,
+       
+       radial-gradient(circle at center, #3498db 50%, transparent 52%);
+
+  animation: bounce 1.5s infinite reverse;
+  animation-timing-function: cubic-bezier(0.05, 1.25);
+}
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-5vmin) scaleY(.90);
+    }
+    50% {
+        transform: translateY(-70vmin) scaleY(1.15);
+    }
+}
+
+
+div.bouncing-ball:before {
+  height: 20vmin;
+  width: 100vmin;
+  top: 25vmin;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; 
+  z-index: 1;
+  background: 
+    
+    linear-gradient(-90deg, $gray 0vmin, $gray 20vmin, transparent 40vmin)  -10vmin 0vmin / 60vmin .5vmin no-repeat,
+    linear-gradient(90deg, $gray 0vmin, $gray 20vmin, transparent 40vmin)  50vmin 0vmin / 60vmin .5vmin no-repeat;
+}

@@ -1,0 +1,109 @@
+/* colors */
+$white: #FFFFFF;
+$gray: #F0f0f0;
+$red: #ED4920;
+$orange: #EE854A;
+$blue: #3F87CF;
+$yellow: #F4D109;
+$green: #5CC85A;
+$purple: #845AC8;
+
+$bg: #fff;
+
+/*dimensions */
+$full: 100vh;
+
+/* Presets */
+
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  perspective: 700px;
+  perspective-origin: 0% 0%;
+  background-color: darken($white, 5%);
+}
+
+div:before, div:after {
+  
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+div.stripes {
+    width: 90vh;
+    height: 60vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: $bg;
+    border: solid 10px darken($white, 5%);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    background:
+      linear-gradient ($bg, 0vh, $bg 100vh);
+    
+}
+
+div.stripes:before { 
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+    transform: rotateZ(-38deg) translateX(15vh) translateY(-40vh);
+  background:
+
+    
+   radial-gradient(ellipse, $bg 25vh, transparent 25vh) 32vh 13vh / 49.5vh 59vh no-repeat,
+    radial-gradient(ellipse, $red 25vh, transparent 25vh) 28vh 11.5vh / 50vh 61vh no-repeat,
+    
+       radial-gradient(ellipse, $bg 25vh, transparent 25vh) 26vh 13vh / 49.5vh 60vh no-repeat,
+    radial-gradient(ellipse, $orange 25vh, transparent 25vh) 22vh 11.5vh / 50vh 62vh no-repeat,
+    
+   radial-gradient(ellipse, $bg 25vh, transparent 25vh) 20vh 13vh / 50vh 62vh no-repeat,
+    radial-gradient(ellipse, $yellow 25vh, transparent 25vh) 16vh 11.5vh / 50vh 64vh no-repeat,
+    
+   radial-gradient(ellipse, $bg 25vh, transparent 25vh) 14vh 13vh / 50vh 64vh no-repeat,
+    radial-gradient(ellipse, $green 25vh, transparent 25vh) 10vh 11.5vh / 50vh 66vh no-repeat,
+    
+   radial-gradient(ellipse, $bg 25vh, transparent 25vh) 9vh 13vh / 50vh 68vh no-repeat,
+    radial-gradient(ellipse, $blue 25vh, transparent 25vh) 5vh 11.5vh / 50vh 70vh no-repeat,
+
+   radial-gradient(ellipse, $bg 25vh, transparent 25vh) 3vh 11vh / 50vh 72vh no-repeat,
+    radial-gradient(ellipse, $purple 25vh, transparent 25vh) -1vh 11.5vh / 50vh 72vh no-repeat,
+
+    ;
+}
+
+
+div.stripes:after { 
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+    transform: rotateY(-5deg) rotateZ(35deg) translateX(-14.5vh) translateY(-28vh);
+  
+    background:
+    radial-gradient(ellipse, $bg 40vh, transparent 40vh) 50vh 60vh / 84vh 41.5vh no-repeat,
+    radial-gradient(ellipse, $purple 40vh, transparent 40vh) 50vh 57vh / 80vh 40vh no-repeat,
+    radial-gradient(ellipse, $bg 40vh, transparent 40vh) 50vh 50vh / 84vh 52vh no-repeat,
+    radial-gradient(ellipse, $blue 40vh, transparent 40vh) 50vh 47vh / 80vh 50vh no-repeat,
+    radial-gradient(ellipse, $bg 40vh, transparent 40vh) 50vh 40vh / 84vh 60vh no-repeat,
+    radial-gradient(ellipse, $green 40vh, transparent 40vh) 50vh 37vh / 80vh 60vh no-repeat,
+    radial-gradient(ellipse, $bg 40vh, transparent 40vh) 50vh 30vh / 84vh 65vh no-repeat,
+    radial-gradient(ellipse, $yellow 40vh, transparent 40vh) 50vh 27vh / 80vh 65vh no-repeat,
+    radial-gradient(ellipse, $bg 40vh, transparent 40vh) 50vh 20vh / 84vh 70vh no-repeat,
+    radial-gradient(ellipse, $orange 40vh, transparent 40vh) 50vh 17vh / 80vh 70vh no-repeat,
+    radial-gradient(ellipse, $bg 40vh, transparent 40vh) 50vh 10vh / 84vh 75vh no-repeat,
+    radial-gradient(ellipse, $red 40vh, transparent 40vh) 50vh 7vh / 80vh 75vh no-repeat,
+    ;
+}

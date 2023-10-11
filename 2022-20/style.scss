@@ -1,0 +1,151 @@
+/* colors */
+$white: #FFFFFF;
+$gray: #111111;
+$green1: #008d48;
+$green2: #65b47c;
+$green3: #1A5B4F;
+$blue1: #99C0CD;
+$blue2: #5993A7;
+$red: #ED4920;
+$yellow: #F4D109;
+
+/* Presets */
+
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  perspective-origin: 25% 75%;
+  background: linear-gradient(187.47deg, $blue1 15%, $blue2 100%);
+  perspective-origin: 50% 50%;
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+div.ten {
+    width: 100vh;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+}
+
+
+div.ten:before {
+    width: 100vh;
+    height: 100vh;
+    margin: 0 auto;
+    z-index: 99;
+    transform: perspective(800px) rotateX(55deg);
+    background:
+      
+    linear-gradient(
+    $green3 0vh,
+    $green3 100vh)
+    0vh 0vh / 100vw 15vh no-repeat,
+  
+   linear-gradient(
+    $green3 0vh,
+    $green3 15vh,
+    $green2 15vh,
+    $green2 30vh,
+    $green1 30vh,
+    $green1 45vh,
+    $green2 45vh,
+    $green2 60vh,
+    $green1 60vh,
+    $green1 75vh,
+    $green2 75vh,
+    $green2 90vh,
+    $green1 90vh,
+    $green1 100vh)
+    9vh 0vh / 80vh 100vh no-repeat,
+    
+    repeating-linear-gradient(
+    $white 0vh,
+    $white .35vh,
+    transparent .35vh,
+    transparent 2.5vh) 
+    5vh 5vh / 90vh 100vh repeat-y,
+    
+    linear-gradient(
+    $blue2 0vh,
+    $blue2 15vh,
+    $green2 15vh,
+    $green2 30vh,
+    $green1 30vh,
+    $green1 45vh,
+    $green2 45vh,
+    $green2 60vh,
+    $green1 60vh,
+    $green1 75vh,
+    $green2 75vh,
+    $green2 90vh,
+    $green1 90vh,
+    $green1 100vh)
+    0vh 0vh / 100vw 100vh no-repeat;
+      
+}
+  
+div.ten:after {
+  
+    width: 100vh;
+    height: 100vh;
+    z-index: 999;
+    margin: 0 auto;
+    background:
+
+      
+      
+      
+        
+      /* UPPER RIGHT */
+    /* top */ radial-gradient(circle, $red 0vh, $red .75vh, $gray .75vh, $gray 1.5vh, $red 1.5vh, $red 2.25vh, transparent 2.25vh) 12vh 21vh / 146.5vh 4.5vh no-repeat, 
+    /* r */ linear-gradient(-100deg, $red 2vh, $gray 2.5vh, $red 2.5vh, transparent 3vh) 81.75vh 26vh / 4vh 8vh no-repeat, 
+    /* r */ linear-gradient(100deg, $red 2vh, $gray 2.5vh, $red 2.5vh, transparent 3vh) 85vh 26vh / 4vh 8vh no-repeat, 
+      
+      
+      
+      /* UPPER LEFT */
+    /* top */ radial-gradient(circle, $red 0vh, $red .75vh, $gray .75vh, $gray 1.5vh, $red 1.5vh, $red 2.25vh, transparent 2.25vh) 12vh 21vh / 4.5vh 4.5vh no-repeat, 
+    /* r */ linear-gradient(-100deg, $red 2vh, $gray 2.5vh, $red 2.5vh, transparent 3vh) 10.75vh 26vh / 4vh 8vh no-repeat, 
+    /* r */ linear-gradient(100deg, $red 2vh, $gray 2.5vh, $red 2.5vh, transparent 3vh) 14.25vh 26vh / 4vh 8vh no-repeat, 
+      
+      
+      
+    
+      /* BACK LEFT */
+    /* top */ radial-gradient(circle, $red 0vh, $red 1vh, $gray 1vh, $gray 2vh, $red 2vh, $red 3vh, transparent 3vh) 1.5vh 28.5vh / 6vh 6vh no-repeat, 
+    /* l */ linear-gradient(-100deg, $red 3vh, $gray 3vh, $red 4vh, transparent 4vh) .25vh 35vh / 5vh 12vh no-repeat,
+    /* r */ linear-gradient(100deg, $red 3vh, $gray 3vh, $red 4vh, transparent 4vh) 4.25vh 35vh / 5vh 12vh no-repeat, 
+      
+      
+    
+      /* BACK RIGHT */
+    /* top */ radial-gradient(circle, $red 0vh, $red 1vh, $gray 1vh, $gray 2vh, $red 2vh, $red 3vh, transparent 3vh) 91.5vh 28.5vh / 6vh 6vh no-repeat, 
+    /* l */ linear-gradient(-100deg, $red 3vh, $gray 3vh, $red 4vh, transparent 4vh) 90.25vh 35vh / 5vh 12vh no-repeat,
+    /* r */ linear-gradient(100deg, $red 3vh, $gray 3vh, $red 4vh, transparent 4vh) 94.25vh 35vh / 5vh 12vh no-repeat, 
+      
+      
+      /* GOAL BAR */
+      
+    linear-gradient(darken($yellow, 0%) 0vh, darken($yellow, 10%) 8vh, transparent 7vh) 47.5vh 21.75vh / 3vh 40vh no-repeat, 
+    linear-gradient(darken($yellow, 0%) 0vh, darken($yellow, 10%) 8vh, transparent 7vh) 39vh 21.75vh / 20vh 2vh no-repeat, 
+      
+    linear-gradient(darken($yellow, 0%) 0vh, darken($yellow, 0%) 12vh, transparent 7vh) 39vh 9.75vh / 2vh 40vh no-repeat,   
+    linear-gradient(darken($yellow, 0%) 0vh, darken($yellow, 0%) 12vh, transparent 7vh) 57vh 9.75vh / 2vh 40vh no-repeat,   
+}
+  
+        

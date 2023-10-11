@@ -1,0 +1,330 @@
+/* colors */
+$white: #D9D9D9;
+$blacktop: #393939;
+$green1: #80B577;
+$green2: #558D65;
+$red1: #DF0345;
+$red2: #FB4C55;
+$glass1: #2D4454;
+$glass2: #237C8C;
+
+$size: 100%;
+
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  z-index: 1;
+  background: radial-gradient(58.32% 55.47% at 50% 47.16%, $green1 0%, $green2 100%);
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+div.forever:before {
+    width: 100vW;
+    z-index: -999;
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+    background:
+      
+      /* green infield */
+      linear-gradient(45deg, $green1 5vh, $green1 5vh, transparent 5vh) 37vh 30vh / 20vh 20.1vh no-repeat,
+      linear-gradient(135deg, $green1 5vh, $green1 5vh, transparent 5vh) 37Vh 50vh / 20vh 20vh no-repeat, 
+      linear-gradient(-45deg, $green1 5vh, $green1 5vh, transparent 5vh) 53vh 30.1vh / 20vh 20vh no-repeat,
+      linear-gradient(-135deg, $green1 5vh, $green1 5vh, transparent 5vh) 53vh 50vh / 20vh 20vh no-repeat,
+
+      /* blacktop infield */
+      linear-gradient(45deg, $blacktop 10vh, $blacktop 10vh, transparent 10vh) 50.5vh 10vh / 40vh 40vh no-repeat,
+       linear-gradient(-45deg, $blacktop 10vh, $blacktop 10vh, transparent 10vh) 19.5vh 10vh / 40vh 40vh no-repeat,
+      linear-gradient(135deg, $blacktop 10vh, $blacktop 10vh, transparent 10vh) 50.5vh 50vh / 40vh 40vh no-repeat,
+      linear-gradient(-135deg, $blacktop 10vh, $blacktop 10vh, transparent 10vh) 19.5vh 50vh / 40vh 40vh no-repeat,
+      
+      /* blacktop loops */
+    /* l */radial-gradient(circle, $green1 10vh, transparent 10vh) 0vh 20vh / 60vh 60vh no-repeat,
+    /* l */radial-gradient(circle, $blacktop 25vh, transparent 25vh) 0vh 20vh / 60vh 60vh no-repeat,
+    /* r */radial-gradient(circle, $green1 10vh, transparent 10vh) 50vh 20vh / 60vh 60vh no-repeat,
+    /* r */radial-gradient(circle, $blacktop 25vh, transparent 25vh) 50vh 20vh / 60vh 60vh no-repeat;
+}
+
+div.forever {
+    width: 100vh;
+    z-index: -999;
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+    //animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+}
+
+
+div.forever:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 40vh;
+  left: 10vh;
+  width: 12vh;
+  height: 20vh;
+  border-radius: 20px;
+  transform: rotateZ(0deg);
+  animation: drive-around 10s linear infinite; 
+  background: 
+    
+    /*windows red highlight */
+    /* front */radial-gradient(ellipse, $glass2 1vh, $glass1 2.5vh, transparent 2.5vh) 3.25vh 3vh / 4.5vh 2.5vh no-repeat,
+    /* back */radial-gradient(ellipse, $glass2 0.5vh, $glass1 2.5vh, transparent 2.5vh) 3.25vh 7.5vh / 4.5vh 2.75vh no-repeat,
+    /* l */radial-gradient(ellipse, $glass2 0.25vh, $glass1 .5vh, transparent .5vh) 3vh 5.5vh / .5vh 1.75vh no-repeat,
+    /* 4 */radial-gradient(ellipse, $glass2 0.25vh, $glass1 .5vh, transparent .5vh) 7.55vh 5.5vh / .5vh 1.75vh no-repeat,
+    
+    /* headlights */
+    /* l */linear-gradient(-45deg, darken($white, 20%) 0.75vh, transparent .5vh) 3.25vh .25vh / .5vh 1.75vh no-repeat,
+    /* r */linear-gradient(45deg, darken($white, 20%) 0.75vh, transparent .5vh) 7.25vh .25vh / .5vh 1.75vh no-repeat,
+    
+    
+    /* tires */
+    /* l-front */radial-gradient(ellipse, darken($glass2, 28%) 0.25vh, transparent .5vh) 2vh 2.25vh / .5vh 2vh no-repeat,
+    /* r-front */radial-gradient(ellipse, darken($glass2, 28%) 0.25vh, transparent .5vh) 8.5vh 2.25vh / .5vh 2vh no-repeat,
+    /* l-back */radial-gradient(ellipse, darken($glass2, 28%) 0.25vh, transparent .5vh) 2vh 9vh / .5vh 2vh no-repeat,
+    /* r-back */radial-gradient(ellipse, darken($glass2, 28%) 0.25vh, transparent .5vh) 8.5vh 9vh / .5vh 2vh no-repeat,
+
+    
+    /* white stripes */
+    linear-gradient(180deg, $white 15vh, transparent 15vh) 4.75vh .75vh / .5vh 11vh no-repeat,
+    linear-gradient(180deg, $white 15vh, transparent 15vh) 5.75vh .75vh / .5vh 11vh no-repeat,
+
+    /*light red highlight */
+    radial-gradient(ellipse, $red2 2.5vh, transparent 2.5vh) 3.25vh .5vh / 4.5vh 4.5vh no-repeat,
+    radial-gradient(ellipse, $red2 2.5vh, transparent 2.5vh) 4vh 3vh / 3vh 6vh no-repeat,
+    radial-gradient(ellipse, $red2 2.5vh, transparent 2.5vh) 3.25vh 7.5vh / 4.5vh 4.5vh no-repeat,
+
+    /*dark red base */
+    radial-gradient(ellipse, $red1 3.5vh, transparent 3.5vh) 2.5vh 0vh / 6vh 6vh no-repeat,
+    radial-gradient(ellipse, $red1 3.5vh, transparent 3.5vh) 2.75vh 5vh / 5.5vh 3vh no-repeat,
+    radial-gradient(ellipse, $red1 3.5vh, transparent 3.5vh) 2.5vh 7vh / 6vh 6vh no-repeat;
+}
+
+
+// @mixin travelling($num) {
+//   $x: 0vh;
+//   $y: 0vh;
+//   $z: 0deg;
+  
+//   /* x */
+//   @if $num < 50 {
+//     $x: calc(#{$num} * 1.7)vh;
+//   } @elseif $num >= 50 {
+//     $x: calc((50 - (#{$num} - 50)) * 1.7)vh;
+//   }
+
+  /* y */
+//   @if $num < 12 {
+//     $y: calc(#{$num} * -.75)vh;
+//   } @elseif $num < 25 {
+//     $y: calc(16 - ((#{$num} - 12) * -.75))vh;
+//   } @elseif $num < 37 {
+//     $y: calc((#{$num}-25) * .75)vh;
+//   } @elseif $num < 50 {
+//     $y: calc(16 - ((#{$num} - 37) * .75))vh;
+//   } @elseif $num < 67 {
+//     $y: calc((#{$num}-50) * .75)vh;
+//   } @elseif $num < 75 {
+//     $y: calc(16 - ((#{$num} - 67) * .75))vh;
+//   } @elseif $num < 87 {
+//     $y: calc((#{$num}-75) * -.75)vh;
+//   } @elseif $num < 50 {
+//     $y: calc(16 - ((#{$num} - 87) * -.75))vh;
+//   }
+  
+//   /* z */
+//   @if $num < 12 {
+//     $z: 30deg;
+//   } @elseif $num < 37 {
+//     $z: 150deg;
+//   } @elseif $num < 50 {
+//     $z: 30deg;
+//   } @elseif $num < 67 {
+//     $z: -30deg;
+//   } @elseif $num < 87 {
+//     $z: -150deg;
+//   } @elseif $num < 100 {
+//     $z: -30deg;
+//   }
+//   transform:  
+//     translateX($x) 
+//     translateY($y) 
+//     rotateZ($z);
+// }
+
+$x1:-2vh;
+$x2:8vh;
+$x3:27.2vh;
+$x4:52vh;
+$x5:72vh;
+$x6:81vh;
+
+$y1:-16vh;
+$y2:0vh;
+$y3:16vh;
+  
+
+@keyframes drive-around {
+  
+//     1% { @include travelling(1); }
+//     25% { @include travelling(25); }
+//     50% { @include travelling(50); }  
+  // @for $i from 1 through 100 {
+  //   #{$i}% { @include travelling(#{$i}); }
+  // 
+
+
+  
+//   1% {
+//     transform:  
+//       translateX(1.7vh) 
+//       translateY(-.75vh)
+//       rotateZ(30deg);
+//       }
+//   2% {
+//     transform:  
+//       translateX(3.4vh) 
+//       translateY(-1.5vh)
+//       rotateZ(30deg);
+//       }
+//   3% {
+//     transform:  
+//       translateX(5.1vh) 
+//       translateY(-2.25vh)
+//       rotateZ(30deg);
+//       }
+//   4% {
+//     transform:  
+//       translateX(6.8vh) 
+//       translateY(-4vh)
+//       rotateZ(30deg);
+//       }
+//   5% {
+//     transform:  
+//       translateX(8.5vh) 
+//       translateY(-4.75vh)
+//       rotateZ(60deg);
+//       }
+//   6% {
+//     transform:  
+//       translateX(10.2vh) 
+//       translateY(-5.5vh)
+//       rotateZ(60deg);
+//       }
+//   7% {
+//     transform:  
+//       translateX(11.9vh) 
+//       translateY(-6.25vh)
+//       rotateZ(60deg);
+//       }
+//   8% {
+//     transform:  
+//       translateX(13.6vh) 
+//       translateY(-8vh)
+//       rotateZ(60deg);
+//   }
+//   9% {
+//     transform:  
+//       translateX(15.5vh) 
+//       translateY(-8.75vh)
+//       rotateZ(90deg);
+//   }
+//   10% {
+//     transform:  
+//       translateX(17.2vh) 
+//       translateY(-9.5vh)
+//       rotateZ(90deg);
+//   }
+//   11% {
+//     transform:  
+//       translateX(18.9vh) 
+//       translateY(-10.2.5vh)
+//       rotateZ(90deg);
+//   }
+//   12% {
+//     transform:  
+//       translateX(20.6vh) 
+//       translateY(-11vh)
+//       rotateZ(90deg);
+    
+// }
+    //animation-timing-sequence: cubic-bezier(0,.44,.44,1)
+//   }
+
+  0% {
+    transform:  
+      translateX(#{$x1}) 
+      translateY(#{$y2})
+      rotateZ(30deg);
+  }
+  8% {
+    transform:  
+      translateX(#{$x2}) 
+      translateY(#{$y1})
+      rotateZ(90deg);
+  }
+  16% {
+    transform:  
+      translateX(#{$x3}) 
+      translateY(#{$y1})
+      rotateZ(145deg);
+  }
+  33% {
+    transform:  
+      translateX(#{$x4}) 
+      translateY(#{$y3})
+      rotateZ(90deg);
+  }
+  41% {
+   transform:  
+      translateX(#{$x5}) 
+      translateY(#{$y3})
+      rotateZ(60deg);
+  }
+  50% {
+    transform:  
+      translateX(#{$x6}) 
+      translateY(#{$y2})
+      rotateZ(0deg);
+  }
+  58% {
+    transform:  
+      translateX(#{$x5}) 
+      translateY(#{$y1})
+      rotateZ(-60deg);
+  }
+  66% {
+    transform:  
+      translateX(#{$x4}) 
+      translateY(#{$y1})
+      rotateZ(-145deg);
+  }
+  82% {
+    transform:  
+      translateX(#{$x3}) 
+      translateY(#{$y3})
+      rotateZ(-90deg);
+  }
+  92% {
+    transform:  
+      translateX(#{$x2}) 
+      translateY(#{$y3})
+      rotateZ(-30deg);
+  }
+  100% {
+    transform:  
+      translateX(#{$x1}) 
+      translateY(#{$y2});
+  }
+}

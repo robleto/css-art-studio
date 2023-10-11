@@ -1,0 +1,31 @@
+/* Presets */
+body {
+  height: 100vh;
+  width: 100vh;
+  margin: 0 auto;
+  position: relative;
+  background-color: #233637;
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+div.valuable {
+  width: 100%;
+  height: 100%;
+  margin-left: -15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(-135deg, #26c893 10vh, transparent 10vh) 30vh 40vh/20vh 20vh no-repeat, linear-gradient(-45deg, #55ddb9 10vh, transparent 10vh) 30vh 20vh/20vh 20vh no-repeat, linear-gradient(-45deg, #20bc7d 10vh, transparent 10vh) 44vh 20vh/20vh 20vh no-repeat, linear-gradient(135deg, #26c893 10vh, transparent 10vh) 50vh 26vh/20vh 20vh no-repeat, linear-gradient(45deg, #1fb67c 10vh, transparent 10vh) 64vh 20vh/20vh 20vh no-repeat, linear-gradient(-135deg, #55ddb9 10vh, transparent 10vh) 58vh 26vh/20vh 20vh no-repeat, linear-gradient(45deg, #1fb67c 10vh, transparent 10vh) 50vh 34vh/20vh 20vh no-repeat, linear-gradient(-135deg, #55ddb9 10vh, transparent 10vh) 44vh 40vh/20vh 20vh no-repeat, linear-gradient(-45deg, #20bc7d 10vh, transparent 10vh) 58vh 34vh/20vh 20vh no-repeat, linear-gradient(135deg, #26c893 10vh, transparent 10vh) 64vh 40vh/20vh 20vh no-repeat, linear-gradient(135deg, #55ddb9 10vh, transparent 10vh) 78vh 40vh/20vh 20vh no-repeat, linear-gradient(45deg, #26c893 10vh, transparent 10vh) 78vh 20vh/20vh 20vh no-repeat, linear-gradient(-135deg, #55ddb9 10vh, transparent 10vh) 44vh 54vh/20vh 20vh no-repeat, linear-gradient(135deg, #26c893 10vh, transparent 10vh) 64vh 54vh/20vh 20vh no-repeat;
+}
+/*# sourceMappingURL=style.css.map */

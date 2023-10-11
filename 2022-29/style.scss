@@ -1,0 +1,187 @@
+$light-green: #9CD203;
+$dark-green: #2F6810;
+$light-brown: #C25904;
+$dark-brown: #803A1B;
+$white: #FFFFFF;
+$black: #222222;
+$yellow: #FEE25E;
+
+
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  height: 100vmin;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(180deg, $yellow 15%, $yellow 100%);
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+div.free {
+    width: 100vmin;
+    height: 100vmin;
+    margin: -10vmin auto 0 auto;
+    padding-left: 20vmin;
+    padding-top: 90vmin;
+    color: $dark-brown;
+    font-family: 'Titan One', cursive;
+    font-size: 12vmin;
+    position: relative;
+    background:
+
+
+
+
+      /* left eye  */
+      radial-gradient(circle, $dark-green 2vmin,  transparent 2vmin) 44.5vmin 38.5vmin / 4vmin 4vmin no-repeat,
+      radial-gradient(circle, lighten($light-green, 10%) 1vmin,  transparent 1vmin) 44vmin 42vmin / 2vmin 2vmin no-repeat,
+      radial-gradient(ellipse, darken($light-green, 10%) 3vmin,  transparent 3vmin) 43vmin 37vmin / 6vmin 8vmin no-repeat,
+
+      radial-gradient(ellipse, lighten($light-green, 5%) 3vmin,  transparent 3vmin) 37vmin 44vmin / 8vmin 6vmin no-repeat,
+
+      /* right eye  */
+      radial-gradient(circle, $dark-green 2vmin,  transparent 2vmin) 61.5vmin 38.5vmin / 4vmin 4vmin no-repeat,
+      radial-gradient(circle, lighten($light-green, 10%) 1vmin,  transparent 1vmin) 61.5vmin 42vmin / 2vmin 2vmin no-repeat,
+      radial-gradient(ellipse, darken($light-green, 10%) 3vmin,  transparent 3vmin) 60vmin 37vmin / 6vmin 8vmin no-repeat,
+
+      radial-gradient(ellipse, lighten($light-green, 5%) 3vmin,  transparent 3vmin) 63vmin 44vmin / 8vmin 6vmin no-repeat,
+
+      /* mouth  */
+      radial-gradient(ellipse at top, $light-green 4vmin, transparent 4vmin) 50vmin 46vmin / 8vmin 3vmin no-repeat,
+      radial-gradient(ellipse at top, $dark-green 4vmin, transparent 4vmin) 50vmin 47vmin / 8vmin 3vmin no-repeat,
+
+
+      /* eyelashes  */
+      radial-gradient(ellipse at bottom, $light-green 4vmin, transparent 4vmin) 59vmin 34vmin / 8vmin 3vmin no-repeat,
+      radial-gradient(ellipse at bottom, $dark-green 4vmin, transparent 4vmin) 60vmin 33vmin / 8vmin 3vmin no-repeat,
+
+      radial-gradient(ellipse at bottom, $light-green 4vmin, transparent 4vmin) 43vmin 34vmin / 8vmin 3vmin no-repeat,
+      radial-gradient(ellipse at bottom, $dark-green 4vmin, transparent 4vmin) 42vmin 33vmin / 8vmin 3vmin no-repeat,
+
+
+
+      /*  pot top  */
+      radial-gradient(circle, $light-brown 3.5vmin,  transparent 3.5vmin) 23.75vmin 60vmin / 7vmin 10vmin no-repeat,
+      radial-gradient(circle, lighten($light-brown, 5%) 3.5vmin,  transparent 3.5vmin) 22vmin 60vmin / 7vmin 10vmin no-repeat,
+      radial-gradient(circle, $light-brown 4vmin,  transparent 4vmin) 79.25vmin 60vmin / 8vmin 10vmin no-repeat,
+      linear-gradient($dark-brown 1vmin, $light-brown 1vmin, $light-brown 5vmin, transparent 5vmin) 25vmin 60vmin / 60vmin 10vmin no-repeat,
+      linear-gradient( $light-brown 4vmin, $dark-brown 4vmin, $dark-brown 5vmin, transparent 5vmin) 25vmin 65vmin / 60vmin 10vmin no-repeat,
+
+      radial-gradient(circle, darken($light-brown, 5%) 4vmin, $dark-brown 4vmin, $dark-brown 5vmin, transparent 5vmin) 80vmin 60vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(circle, $light-brown 4vmin, $dark-brown 4vmin, $dark-brown 5vmin, transparent 5vmin) 20vmin 60vmin / 10vmin 10vmin no-repeat,
+
+      /* pot bottom  */
+      radial-gradient(ellipse at top, $light-brown 12.5vmin, transparent 12.5vmin) 35vmin 68vmin / 25vmin 19vmin no-repeat,
+      radial-gradient(ellipse at top, lighten($light-brown, 5%) 12.5vmin, transparent 12.5vmin) 33vmin 68vmin / 25vmin 19vmin no-repeat,
+      linear-gradient( $light-brown 20vmin, $dark-brown 20vmin, $dark-brown 21.25vmin, transparent 21.25vmin) 45vmin 68.75vmin / 20vmin 40vmin no-repeat,
+      radial-gradient(ellipse at top, $light-brown 14vmin, $dark-brown 14vmin, $dark-brown 15vmin, transparent 15vmin) 30vmin 70vmin / 30vmin 20vmin no-repeat,
+      radial-gradient(ellipse at top, $light-brown 12.5vmin, transparent 12.5vmin) 50vmin 70vmin / 25vmin 19vmin no-repeat,
+      radial-gradient(ellipse at top, darken($light-brown, 5%) 14vmin, $dark-brown 14vmin, $dark-brown 15vmin, transparent 15vmin) 50vmin 70vmin / 30vmin 20vmin no-repeat,
+      
+      //conic-gradient(from 315deg at 0% 100%, $light-brown 75deg, transparent 0) 14vmin 60vmin / 40vmin 30vmin no-repeat,
+
+      //conic-gradient(from 45deg at 0% 0%, $light-brown 125deg, transparent 125deg) 14vmin 30vmin / 40vmin 30vmin no-repeat,
+
+      //conic-gradient(from 225deg at 100% 100%, $light-brown 345deg, transparent 45deg) 64vmin 30vmin / 40vmin 30vmin no-repeat,
+
+      /* cactii spikes  */
+      linear-gradient(25deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 28vmin 35vmin / 2.5vmin 4vmin no-repeat,
+      linear-gradient(40deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 32.5vmin 25vmin / 2.5vmin 4vmin no-repeat,
+      linear-gradient(60deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 42vmin 20vmin / 2.5vmin 3vmin no-repeat,
+      linear-gradient(90deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 52.5vmin 18.25vmin / 2.5vmin 2.5vmin no-repeat,
+      linear-gradient(-60deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 66vmin 20vmin / 2.5vmin 3vmin no-repeat,
+      linear-gradient(-40deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 74.5vmin 25vmin / 2.5vmin 4vmin no-repeat,
+      linear-gradient(-25deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 79vmin 35vmin / 2.5vmin 4vmin no-repeat,
+
+
+
+      linear-gradient(60deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 40vmin 30vmin / 2.5vmin 3vmin no-repeat,
+      linear-gradient(40deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 35vmin 40vmin / 2.5vmin 4vmin no-repeat,
+      linear-gradient(25deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 39vmin 50vmin / 2.5vmin 4vmin no-repeat,
+
+
+      linear-gradient(-60deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 65vmin 30vmin / 2.5vmin 3vmin no-repeat,
+      linear-gradient(-40deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 72vmin 40vmin / 2.5vmin 4vmin no-repeat,
+      linear-gradient(-25deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 69vmin 50vmin / 2.5vmin 4vmin no-repeat,
+
+
+
+
+
+
+
+      /* cactii body */
+      radial-gradient(ellipse at bottom, $light-green 19vmin, transparent 19vmin) 31vmin 20.5vmin / 46vmin 20vmin no-repeat,
+      radial-gradient(ellipse at bottom, $light-green 17vmin, lighten($light-green, 5%) 17vmin, lighten($light-green, 5%) 18.5vmin, $light-green 18.5vmin, transparent 20vmin) 32vmin 22vmin / 38vmin 18vmin no-repeat,
+      radial-gradient(ellipse at bottom, $light-green 22.5vmin, transparent 22.5vmin) 31vmin 21vmin / 45vmin 20vmin no-repeat,
+      radial-gradient(ellipse at bottom, darken($light-green, 5%) 24vmin, $dark-green 24vmin, $dark-green 25vmin, transparent 25vmin) 30vmin 20vmin / 50vmin 20vmin no-repeat,
+      radial-gradient(ellipse at top, $light-green  22.5vmin, transparent 22.5vmin) 31vmin 40vmin / 45vmin 40vmin no-repeat,
+      radial-gradient(ellipse at top, darken($light-green, 5%) 24vmin, $dark-green 24vmin, $dark-green 25vmin, transparent 25vmin) 30vmin 40vmin / 50vmin 40vmin no-repeat;
+}
+
+
+div.free:before {
+    width: 100vmin;
+    height: 100vmin;
+    top: 5vmin;
+    left: 0;
+    z-index: -9;
+    transform: rotate(35deg);
+    background:
+
+
+      /* spikies */ 
+
+      linear-gradient(115deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 24vmin 56vmin / 2.5vmin 3vmin no-repeat,
+      linear-gradient(65deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 18vmin 55vmin / 2.5vmin 3vmin no-repeat,
+
+
+      linear-gradient(35deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 12vmin 49.5vmin / 2.5vmin 3vmin no-repeat,
+      linear-gradient(-105deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 19vmin 47.75vmin / 2.5vmin 3vmin no-repeat,
+      linear-gradient(-35deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 12vmin 58.5vmin / 2.5vmin 3vmin no-repeat,
+      linear-gradient(105deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 19vmin 61vmin / 2.5vmin 3vmin no-repeat,
+      linear-gradient(85deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 26vmin 61.5vmin / 2.5vmin 3vmin no-repeat,
+
+
+      /* left arm  */
+      radial-gradient(ellipse at top, transparent 13.5vmin, $dark-green 13.5vmin, $dark-green 15vmin, transparent 15vmin) 11vmin 54vmin / 30vmin 5vmin no-repeat,
+      radial-gradient(ellipse, $light-green 13.5vmin, $dark-green 13.5vmin, $dark-green 15vmin, transparent 15vmin) 10vmin 50vmin / 30vmin 12vmin no-repeat;
+}
+
+
+div.free:after {
+    width: 100vmin;
+    height: 100vmin;
+    z-index: -9;
+    top: 15vmin;
+    left: 15vmin;
+    transform: rotate(145deg);
+    background:
+
+
+      /* spikies */ 
+      linear-gradient(115deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 24vmin 56vmin / 2.5vmin 3vmin no-repeat,
+      linear-gradient(65deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 18vmin 55vmin / 2.5vmin 3vmin no-repeat,
+
+
+      linear-gradient(35deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 12vmin 49.5vmin / 2.5vmin 3vmin no-repeat,
+      linear-gradient(-105deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 19vmin 47.75vmin / 2.5vmin 3vmin no-repeat,
+      linear-gradient(-35deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 12vmin 58.5vmin / 2.5vmin 3vmin no-repeat,
+      linear-gradient(105deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 19vmin 61vmin / 2.5vmin 3vmin no-repeat,
+      linear-gradient(85deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 26vmin 61.5vmin / 2.5vmin 3vmin no-repeat,
+
+
+      /* left arm  */
+      radial-gradient(ellipse at top, transparent 13.5vmin, $dark-green 13.5vmin, $dark-green 15vmin, transparent 15vmin) 11vmin 54vmin / 30vmin 5vmin no-repeat,
+      radial-gradient(ellipse, $light-green 13.5vmin, $dark-green 13.5vmin, $dark-green 15vmin, transparent 15vmin) 10vmin 50vmin / 30vmin 12vmin no-repeat;
+}

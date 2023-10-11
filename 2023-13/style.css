@@ -1,0 +1,65 @@
+div:before, div:after {
+  display: block;
+  content: "";
+  position: absolute;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  background: radial-gradient(#fbc6cd, white);
+}
+
+div.collect {
+  width: 100vmin;
+  height: 100vmin;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  background: radial-gradient(ellipse, #f04258 8.5vmin, transparent 8vmin) 41.5vmin 37vmin/17vmin 1.5vmin no-repeat, radial-gradient(ellipse, #f35e71 8.5vmin, transparent 8vmin) 41.5vmin 36.5vmin/17vmin 2vmin no-repeat, radial-gradient(ellipse, #f04258 1.5vmin, transparent 1vmin) 34.5vmin 49.5vmin/3vmin 3vmin no-repeat, radial-gradient(ellipse, #f35e71 2.5vmin, transparent 1vmin) 33vmin 48vmin/5vmin 5vmin no-repeat, radial-gradient(ellipse, #f8a5b0 20vmin, transparent 1vmin) 27vmin 35vmin/40vmin 34vmin no-repeat, radial-gradient(ellipse, #f797a3 23vmin, transparent 1vmin) 25.5vmin 35vmin/46vmin 39vmin no-repeat, radial-gradient(ellipse, #f68996 25vmin, transparent 1vmin) 25vmin 35vmin/50vmin 45vmin no-repeat, linear-gradient(90deg, #f8a5b0 13vmin, transparent 1vmin) 21.5vmin 52.5vmin/8vmin 3vmin no-repeat, radial-gradient(ellipse at bottom right, #f8a5b0 7vmin, transparent 1vmin) 14.5vmin 45vmin/14vmin 8vmin no-repeat, radial-gradient(ellipse at top right, #f8a5b0 7vmin, transparent 1vmin) 14.5vmin 55vmin/14vmin 8vmin no-repeat, linear-gradient(90deg, #f797a3 13vmin, transparent 1vmin) 20.5vmin 52.5vmin/8vmin 6vmin no-repeat, radial-gradient(ellipse at bottom right, #f797a3 7vmin, transparent 1vmin) 13.5vmin 45vmin/14vmin 8vmin no-repeat, radial-gradient(ellipse at top right, #f797a3 7vmin, transparent 1vmin) 13.5vmin 58vmin/14vmin 8vmin no-repeat, radial-gradient(ellipse at top, #f797a3 4.5vmin, transparent 1vmin) 32vmin 67vmin/9vmin 15vmin no-repeat, radial-gradient(ellipse at top, #f68996 5vmin, transparent 1vmin) 32.5vmin 72vmin/10vmin 10vmin no-repeat, radial-gradient(ellipse at top, #f797a3 4.5vmin, transparent 1vmin) 60vmin 67vmin/9vmin 15vmin no-repeat, radial-gradient(ellipse at top, #f68996 5vmin, transparent 1vmin) 58.5vmin 72vmin/10vmin 10vmin no-repeat;
+}
+
+div.collect:before {
+  width: 100vmin;
+  height: 100vmin;
+  left: 30vmin;
+  z-index: 9999;
+  transform: rotate(45deg);
+  background: radial-gradient(ellipse at bottom right, transparent 6vmin, #f68996 6vmin, #f68996 7.5vmin, transparent 7.5vmin) 43vmin 50vmin/14vmin 8vmin no-repeat, radial-gradient(ellipse, #fabdc5 1vmin, transparent 1vmin) 14vmin 69vmin/2vmin 3vmin no-repeat, radial-gradient(ellipse, #fabdc5 2vmin, transparent 1vmin) 12vmin 73vmin/4vmin 7vmin no-repeat, radial-gradient(ellipse, #f47181 1vmin, transparent 1vmin) 53.5vmin 67vmin/2vmin 3vmin no-repeat, radial-gradient(ellipse, #f47181 2vmin, transparent 1vmin) 53vmin 71vmin/4vmin 7vmin no-repeat, radial-gradient(ellipse, #f8a5b0 13vmin, transparent 1vmin) 18vmin 58vmin/26vmin 26vmin no-repeat, linear-gradient(-45deg, #f8a5b0 13vmin, transparent 1vmin) 14.5vmin 57vmin/15vmin 15vmin no-repeat, radial-gradient(ellipse, #f8a5b0 2vmin, transparent 1vmin) 12vmin 69vmin/4vmin 8vmin no-repeat, radial-gradient(ellipse at right, #f8a5b0 8vmin, transparent 1vmin) -4vmin 69.5vmin/16vmin 9vmin no-repeat, radial-gradient(ellipse at bottom right, #f68996 8vmin, transparent 1vmin) -4vmin 66vmin/16vmin 8vmin no-repeat, radial-gradient(ellipse, #f8a5b0 2vmin, transparent 1vmin) 9.25vmin 74vmin/4vmin 8vmin no-repeat, radial-gradient(ellipse at right, #f797a3 7vmin, transparent 1vmin) -3vmin 73vmin/14vmin 8vmin no-repeat, radial-gradient(ellipse at bottom right, #f47181 8vmin, transparent 1vmin) -4vmin 69vmin/16vmin 8vmin no-repeat;
+}
+
+div.collect:after {
+  width: 15vmin;
+  height: 15vmin;
+  left: 42vmin;
+  top: 5vmin;
+  z-index: 999;
+  content: "$";
+  font-size: 9vmin;
+  padding-right: 1vmin;
+  padding-bottom: 1vmin;
+  font-family: "Archivo Black", sans-serif;
+  color: #e4af00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: coindown 7s infinite;
+  background: radial-gradient(ellipse, #ffd95a 5vmin, transparent 3.5vmin) 3vmin 2vmin/10vmin 7vmin no-repeat, radial-gradient(ellipse, #ffd341 6vmin, #ffc918 6vmin, #ffc918 6.5vmin, #ffd54b 7vmin, #ffd54b 7.5vmin, transparent 7.5vmin) 0vmin 0vmin/15vmin 15vmin no-repeat, radial-gradient(ellipse, #ffc918 7.5vmin, transparent 7.5vmin) 0.25vmin 0vmin/16vmin 16vmin no-repeat;
+}
+
+@keyframes coindown {
+  0% {
+    top: -10vmin;
+  }
+  70% {
+    top: 40vmin;
+  }
+  100% {
+    top: 40vmin;
+  }
+}

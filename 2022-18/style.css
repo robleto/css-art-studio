@@ -1,0 +1,48 @@
+/* colors */
+/* Presets */
+body {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-color: #91bae3;
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+div.pun {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(#b3b3b3 0vh, #999999 8vh, transparent 7vh) calc(50% - 17vh) 26.5vh/8vh 2.5vh no-repeat, radial-gradient(circle, #b3b3b3 0vh, #999999 1vh, transparent 1vh) calc(50% + 2vh) 25vh/2vh 2vh no-repeat, radial-gradient(circle, #b3b3b3 0vh, #999999 1vh, transparent 1vh) calc(50% + 5vh) 25vh/2vh 2vh no-repeat, radial-gradient(circle, #b3b3b3 0vh, #999999 1vh, transparent 1vh) calc(50% + 8vh) 25vh/2vh 2vh no-repeat, linear-gradient(#666666 0vh, #4d4d4d 4vh, transparent 20vh) calc(50% + 16vh) 24vh/10vh 5vh no-repeat, linear-gradient(155deg, #333333 3vh, transparent 3vh) calc(50% - 10vh) 23.5vh/6vh 2vh no-repeat, linear-gradient(#333333 4vh, #333333 20vh, transparent 20vh) calc(50% - 18vh) 23.5vh/6vh 2vh no-repeat, linear-gradient(155deg, #91bae3 3vh, transparent 3vh) calc(50% - 7vh) 22vh/6vh 6vh no-repeat, linear-gradient(135deg, #91bae3 2vh, transparent 2vh) calc(50% - 23vh) 24vh/4vh 4vh no-repeat, linear-gradient(#91bae3 4vh, #91bae3 20vh, transparent 20vh) calc(50% - 20vh) 20.5vh/20vh 5vh no-repeat, radial-gradient(circle, #333333 0vh, black 3vh, black 4.5vh, #f2f2f2 4.5vh, #f2f2f2 7vh, black 7vh, black 10vh, #b3b3b3 10vh, #cccccc 12vh, transparent 12vh) 50% 28vh/25vh 25vh no-repeat, radial-gradient(ellipse, transparent 1vh, #333333 1vh, #333333 2vh, transparent 2vh) calc(50% + 25vh) 30vh/6vh 4vh no-repeat, radial-gradient(ellipse, transparent 1vh, #333333 1vh, #333333 2vh, transparent 2vh) calc(50% - 25vh) 30vh/6vh 4vh no-repeat, linear-gradient(#333333 4vh, #1a1a1a 20vh, transparent 20vh) 50% 30vh/50vh 25vh no-repeat, radial-gradient(ellipse, white 4vh, #cccccc 34vh, transparent 28vh) 50% 23vh/50vh 29vh no-repeat;
+}
+
+div.pun:before {
+  width: 70vh;
+  height: 55vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  content: 'I thought I had a photographic memory... but I never developed it';
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-size: 5vh;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,84 @@
+/* colors */
+$gray: #333333;
+$blue: #3F87CF;
+$bg: lighten($blue, 20%);
+
+/* Presets */
+body {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-color: $bg;
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+div.pun {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+      
+      /*flash*/
+    linear-gradient(lighten($gray, 50%) 0vh, lighten($gray, 40%) 8vh, transparent 7vh) calc(50% - 17vh) 26.5vh / 8vh 2.5vh no-repeat, 
+      
+      /* dials-r */
+    radial-gradient(circle, 
+      lighten($gray, 50%)  0vh, lighten($gray, 40%)  1vh, transparent 1vh) calc(50% + 2vh) 25vh / 2vh 2vh no-repeat,  
+    radial-gradient(circle, 
+      lighten($gray, 50%)  0vh, lighten($gray, 40%)  1vh, transparent 1vh) calc(50% + 5vh) 25vh / 2vh 2vh no-repeat,  
+    radial-gradient(circle, 
+      lighten($gray, 50%)  0vh, lighten($gray, 40%)  1vh, transparent 1vh) calc(50% + 8vh) 25vh / 2vh 2vh no-repeat,  
+      
+      /*flash*/
+    linear-gradient(lighten($gray, 20%) 0vh, lighten($gray, 10%) 4vh, transparent 20vh) calc(50% + 16vh) 24vh / 10vh 5vh no-repeat, 
+      
+      /* knobs */
+      linear-gradient(155deg, $gray 3vh, transparent 3vh) calc(50% - 10vh) 23.5vh / 6vh 2vh no-repeat,
+    linear-gradient($gray 4vh, $gray 20vh, transparent 20vh) calc(50% - 18vh) 23.5vh / 6vh 2vh no-repeat, 
+
+      /* notch*/
+      linear-gradient(155deg, $bg 3vh, transparent 3vh) calc(50% - 7vh) 22vh / 6vh 6vh no-repeat,
+    linear-gradient(135deg, $bg 2vh, transparent 2vh) calc(50% - 23vh) 24vh / 4vh 4vh no-repeat,
+    linear-gradient($bg 4vh, $bg 20vh, transparent 20vh) calc(50% - 20vh) 20.5vh / 20vh 5vh no-repeat,  
+
+      /* lens */
+    radial-gradient(circle, 
+      $gray  0vh,
+      darken($gray, 40%) 3vh,
+      darken($gray, 40%) 4.5vh,
+      lighten($gray, 75%) 4.5vh,
+      lighten($gray, 75%) 7vh,
+      darken($gray, 40%) 7vh,
+      darken($gray, 40%) 10vh,
+      lighten($gray, 50%) 10vh,
+      lighten($gray, 60%) 12vh,
+      transparent 12vh) 50% 28vh / 25vh 25vh no-repeat,  
+      
+      /* base*/
+      
+    radial-gradient(ellipse, 
+      transparent  1vh, $gray 1vh, $gray 2vh, transparent 2vh) calc(50% + 25vh) 30vh / 6vh 4vh no-repeat, 
+    radial-gradient(ellipse, 
+      transparent  1vh, $gray 1vh, $gray 2vh, transparent 2vh) calc(50% - 25vh) 30vh / 6vh 4vh no-repeat,  
+    linear-gradient($gray 4vh, darken($gray, 10%) 20vh, transparent 20vh) 50% 30vh / 50vh 25vh no-repeat,  
+  radial-gradient(ellipse, lighten($gray, 80%) 4vh, lighten($gray, 60%) 34vh, transparent 28vh) 50% 23vh / 50vh 29vh no-repeat;
+}
+
+div.pun:before {
+    width: 70vh;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    content: 'I thought I had a photographic memory... but I never developed it';
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 5vh;
+    text-align: center;
+}

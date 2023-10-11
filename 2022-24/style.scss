@@ -1,0 +1,93 @@
+/* colors */
+$white: #FFFFFF;
+$red: #FF2C2B;
+$dark-red: #B20405;
+$gray: #333333;
+$yellow: #FECE00;
+$y-up: #FCEC3D;
+$y-side: #FAFAFA;
+$y-face: #FEB204;
+
+$hex-color: $gray;
+$hex-width: 15em;
+$hex-stop: 33.3%;
+
+
+/* Presets */
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: radial-gradient(darken($yellow, 5%) 50%, $yellow 100%);
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+div.cube:before {
+    width: 50vh;
+    height: 55vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    background: 
+      
+      /* face */
+      
+      linear-gradient(-30deg, darken($y-face, 10%) 0vh, $y-face 20vh, transparent 0vh)  25vh 10vh / 10vh 10vh no-repeat,
+      linear-gradient(150deg, $y-face 0vh, darken($y-face, 10%) 20vh, transparent 0vh)  25vh 30vh / 10vh 10vh no-repeat,
+      
+     
+      
+      // linear-gradient(-30deg, $y-face 11.75vh, transparent 11.75vh) 24vh 12.5vh / 10vh 30vh no-repeat,
+      // linear-gradient(150deg, $y-face 11.75vh, transparent 11.75vh)  26vh 29vh / 10vh 30vh no-repeat,
+      // linear-gradient(150deg, $y-face 11.75vh, transparent 11.75vh) 26vh 40vh / 10vh 30vh no-repeat,
+      // linear-gradient(-30deg, $y-face 11.75vh, transparent 11.75vh)  24vh 1.5vh / 10vh 30vh no-repeat,
+      
+      /* side */
+         
+      linear-gradient(30deg, darken($y-up, 20%) 0vh, $y-up 20vh, transparent 0vh)  0vh 10vh / 10vh 10vh no-repeat,
+      linear-gradient(-150deg, $y-up 0vh, darken($y-up, 20%) 20vh, transparent 0vh)  0vh 30vh / 10vh 10vh no-repeat,
+      
+      
+//       linear-gradient(30deg, $y-side 12vh, transparent 12vh) 0.5vh 12.5vh / 10vh 30vh no-repeat,
+//       linear-gradient(-150deg, $y-side 12vh, transparent 12vh) -1vh 29vh / 10vh 30vh no-repeat,
+//       linear-gradient(-150deg, $y-side 12vh, transparent 12vh) -1vh 40vh / 10vh 30vh no-repeat,
+//       linear-gradient(30deg, $y-side 12vh, transparent 12vh) 0.5vh 1.5vh / 10vh 30vh no-repeat,
+      
+      
+      /*top*/
+      
+      linear-gradient(30deg, $gray 0vh, darken($gray, 15%) 10vh, transparent 0vh)  25vh 6vh / 10vh 10vh no-repeat,
+      linear-gradient(-30deg, $gray 0vh, darken($gray, 15%) 10vh, transparent 0vh)  0vh 6vh / 10vh 10vh no-repeat,
+      
+      // linear-gradient(-30deg, $y-up 12vh, transparent 12vh) 0vh -13.5vh / 10vh 30vh no-repeat,
+      // linear-gradient(150deg, $y-up 12vh, transparent 12vh) 25vh 14vh / 10vh 30vh no-repeat,
+      // linear-gradient(-150deg, $y-up 12vh, transparent 12vh) 0vh 14vh / 10vh 30vh no-repeat,
+      // linear-gradient(30deg, $y-up 12vh, transparent 12vh) 25vh -13.5vh / 10vh 30vh no-repeat,
+      
+      
+      
+      linear-gradient(150deg, transparent $hex-stop, darken($hex-color, 10%) 0) top left,
+	            linear-gradient(-150deg, transparent  $hex-stop, $hex-color 0) top right,
+	            linear-gradient(-30deg, transparent $hex-stop, $hex-color 0) bottom right,
+	            linear-gradient(30deg, transparent $hex-stop, $hex-color 0) bottom left;
+  /* Extra pixel in order to avoid transparent lines when rotating */;
+  
+  background-size: calc(50% + 1px) calc(50% + 1px);
+  background-repeat: no-repeat;
+}

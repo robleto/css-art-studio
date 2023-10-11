@@ -1,0 +1,208 @@
+$test: #bada55;
+$light-gray: #a7a7a7;
+$gray: #888888;
+$black: #454545;
+$orange: #c24c0e;
+$brown: #824936;
+$yellow: #fbc233;
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+div.glass {
+    width:100vmin;
+    height: 100vmin;
+    left: -7vmin;
+    display: flex;
+    position: relative; 
+    background:
+      
+         /* top bump layer - right */
+      linear-gradient(90deg, lighten($black, 15%) 0vmin,  lighten($black, 5%) 13vmin, transparent 1vmin) 67vmin 64.5vmin / 13.75vmin 1.5vmin no-repeat,
+      radial-gradient(ellipse at left bottom, lighten($black, 5%) 2vmin, transparent 1vmin) 80vmin 58vmin / 12vmin 8vmin no-repeat,
+      linear-gradient(270deg, darken($gray, 5%) 0vmin,  darken($gray, 10%) 3vmin, transparent 1vmin) 67vmin 64vmin / 13.75vmin 2vmin no-repeat,
+      radial-gradient(ellipse at left bottom, darken($gray, 10%) 3vmin, transparent 1vmin) 80vmin 58vmin / 12vmin 8vmin no-repeat,
+ 
+       
+      /* top bump layer -left  */
+      linear-gradient(270deg, lighten($black, 15%) 0vmin,  lighten($black, 5%) 13vmin, transparent 1vmin) 30vmin 64.5vmin / 13.75vmin 1.5vmin no-repeat,
+      radial-gradient(ellipse at right bottom, lighten($black, 5%)  2vmin,  transparent 1vmin) 19vmin 58vmin / 12vmin 8vmin no-repeat,
+    
+      linear-gradient(90deg, darken($gray, 5%) 0vmin,  darken($gray, 10%) 3vmin, transparent 1vmin) 31vmin 64vmin / 13.75vmin 2vmin no-repeat,
+      radial-gradient(ellipse at right bottom, darken($gray, 10%)  3vmin, transparent 1vmin) 19vmin 58vmin / 12vmin 8vmin no-repeat,
+     
+      
+       
+        /** TOP OF THE GLASS **/
+      
+      linear-gradient(90deg, lighten($gray, 30%),  lighten($gray, 10%), lighten($gray, 30%)) 28.25vmin 19vmin / 54vmin .25vmin no-repeat,
+      
+      
+      radial-gradient(ellipse at right bottom, lighten($black, 5%)  1vmin,  transparent 1vmin) 27vmin 18vmin / 2vmin 2vmin no-repeat,
+       radial-gradient(ellipse at left bottom, lighten($black, 5%)  1vmin,  transparent 1vmin) 82vmin 18vmin / 2vmin 2vmin no-repeat,
+
+      
+       linear-gradient(darken($gray, 25%), $gray 30vmin) 28vmin 20vmin / 1vmin 46vmin no-repeat,
+      linear-gradient(darken($gray, 25%), $gray 30vmin) 82vmin 20vmin / 1vmin 46vmin no-repeat,
+      
+      
+      
+    radial-gradient(ellipse, darken($orange, 10%), darken($orange, 5%) 7vmin, transparent 1vmin) 48vmin 64.5vmin / 14vmin 1vmin no-repeat,
+      
+      
+      radial-gradient(ellipse at top, transparent 27vmin, darken($gray, 15%) 27vmin, lighten($gray, 5%)) 28.75vmin 36vmin / 53.5vmin 30vmin no-repeat,  
+      
+      
+      linear-gradient(-100deg,  transparent 33vmin,  darken($orange, 20%) 52vmin,transparent 52vmin,) 16.25vmin 41vmin / 65vmin 25vmin no-repeat,
+      linear-gradient(-95deg,  transparent 15vmin, $yellow 52vmin, transparent 52vmin,) 16.25vmin 40vmin / 65vmin 26vmin no-repeat,
+
+      linear-gradient(100deg,  transparent 35vmin,  darken($orange, 20%) 52vmin, transparent 52vmin,) 29.25vmin 41vmin / 65vmin 25vmin no-repeat,
+      linear-gradient(95deg,  transparent 30vmin,  darken($yellow, 10%) 52vmin, transparent 52vmin,) 29.25vmin 40vmin / 65vmin 26vmin no-repeat,
+      
+      
+      
+      linear-gradient(90deg, $orange 30vmin, lighten($orange, 20%) 53vmin,  transparent 53vmin) 29vmin 40vmin / 66vmin 26vmin no-repeat,
+      
+      
+      linear-gradient( rgba(255,255,255, 0.7) 50vmin,  transparent 1vmin) 29vmin 20vmin / 53vmin 46vmin no-repeat,
+      
+     
+      
+      
+      /** BOTTOM OF THE GLASS **/
+      
+    radial-gradient(ellipse, $gray 20vmin, transparent 1vmin) 20vmin 74vmin / 70vmin 2vmin no-repeat,
+      
+      
+      
+      
+      /* bottom lightest-gray layer   */
+   linear-gradient(180deg, lighten($light-gray, 40%) 0vmin, lighten($light-gray, 10%) 12vmin,  transparent 1vmin) 46vmin 66vmin / 18vmin 7vmin no-repeat,
+    radial-gradient(ellipse at right top, lighten($light-gray, 40%)   0vmin, lighten($light-gray, 20%)  8vmin, transparent 1vmin) 30vmin 66vmin / 16vmin 14vmin no-repeat,
+      radial-gradient(ellipse at left top, lighten($light-gray, 40%)   0vmin, lighten($light-gray, 20%)  8vmin, transparent 1vmin) 63.5vmin 66vmin / 16vmin 14vmin no-repeat,
+      
+
+    /* bottom lighter-gray layer   */
+        linear-gradient(180deg, lighten($light-gray, 30%) 0vmin, lighten($light-gray, 8%) 12vmin,  transparent 1vmin) 46vmin 66vmin / 18vmin 11vmin no-repeat,
+    radial-gradient(ellipse at right top, lighten($light-gray, 30%)   0vmin, lighten($light-gray, 10%)  8vmin, transparent 1vmin) 30vmin 66vmin / 16vmin 22vmin no-repeat,
+      radial-gradient(ellipse at left top, lighten($light-gray, 30%)   0vmin, lighten($light-gray, 10%)  8vmin, transparent 1vmin) 63.5vmin 66vmin / 16vmin 22vmin no-repeat,
+      
+      /* bottom light-gray layer   */ 
+        linear-gradient(180deg, lighten($light-gray, 10%) 0vmin, darken($light-gray, 5%) 12vmin,  transparent 1vmin) 42vmin 66vmin / 28vmin 11vmin no-repeat,
+    radial-gradient(ellipse at right top, lighten($light-gray, 10%)   0vmin, darken($light-gray, 5%)  8vmin, transparent 1vmin) 26.5vmin 66vmin / 16vmin 22vmin no-repeat,
+      radial-gradient(ellipse at left top, lighten($light-gray, 10%)  0vmin, darken($light-gray, 5%)  8vmin, transparent 1vmin) 68.5vmin 66vmin / 16vmin 22vmin no-repeat,
+      
+      
+    /* bottom black layer   */
+      linear-gradient(darken($black, 5%) 30vmin, transparent 1vmin) 36.5vmin 72vmin / 38vmin 5vmin no-repeat,
+    radial-gradient(ellipse at right top, lighten($black, 10%)   0vmin, darken($black, 10%)  8vmin, transparent 1vmin) 21vmin 66vmin / 16vmin 22vmin no-repeat,
+      radial-gradient(ellipse at left top, lighten($black, 10%)  0vmin, darken($black, 10%)  8vmin, transparent 1vmin) 74vmin 66vmin / 16vmin 22vmin no-repeat,
+      
+      
+    /* back gray layer   */
+    radial-gradient(ellipse at right top, lighten($gray, 10%)   0vmin, darken($gray, 10%)  8vmin, transparent 1vmin) 20vmin 66vmin / 16vmin 21.5vmin no-repeat,
+      radial-gradient(ellipse at left top, lighten($gray, 10%)  0vmin, darken($gray, 10%)  8vmin, transparent 1vmin) 75vmin 66vmin / 16vmin 21.5vmin no-repeat,   
+      
+      
+  
+      
+      
+      
+      
+      
+}
+
+
+
+
+
+
+
+
+
+
+
+
+div.glass:before {
+    width: 110vmin;
+    height: 97vmin;
+    top: 60vmin;
+    transform: rotate(180deg);
+    background:
+      
+      /** BOTTOM OF THE GLASS **/
+      
+      linear-gradient(#ffffff 20vmin, transparent 40vmin) 0vmin 48vmin / 100vw 100vh no-repeat,
+      
+      
+    radial-gradient(ellipse, $gray 20vmin, transparent 1vmin) 20vmin 74vmin / 70vmin 2vmin no-repeat,
+      
+      
+         /* top bump layer - right */
+      linear-gradient(180deg, darken($black, 5%) 0vmin,  lighten($black, 10%) 3vmin, transparent 1vmin) 67vmin 64.5vmin / 13.75vmin 1.5vmin no-repeat,
+      radial-gradient(ellipse at right bottom, lighten($black, 10%)  0vmin, darken($black, 10%)  2vmin, transparent 1vmin) 55vmin 58vmin / 12vmin 8vmin no-repeat,
+      radial-gradient(ellipse at left bottom, lighten($black, 10%)  0vmin, darken($black, 10%)  2vmin, transparent 1vmin) 80vmin 58vmin / 12vmin 8vmin no-repeat,
+      
+      
+      linear-gradient(180deg, darken($gray, 5%) 0vmin,  lighten($gray, 10%) 3vmin, transparent 1vmin) 67vmin 64vmin / 13.75vmin 2vmin no-repeat,
+      radial-gradient(ellipse at right bottom, lighten($gray, 10%)  0vmin, darken($gray, 10%)  3vmin, transparent 1vmin) 55vmin 58vmin / 12vmin 8vmin no-repeat,
+      radial-gradient(ellipse at left bottom, lighten($gray, 10%)  0vmin, darken($gray, 10%)  3vmin, transparent 1vmin) 80vmin 58vmin / 12vmin 8vmin no-repeat,
+      
+      
+      
+       
+      /* top bump layer -left  */
+      
+      linear-gradient(180deg, darken($black, 5%) 0vmin,  lighten($black, 10%) 3vmin, transparent 1vmin) 31vmin 64.5vmin / 13.75vmin 1.5vmin no-repeat,
+      radial-gradient(ellipse at right bottom, lighten($black, 10%)  0vmin, darken($black, 10%)  2vmin, transparent 1vmin) 19vmin 58vmin / 12vmin 8vmin no-repeat,
+      radial-gradient(ellipse at left bottom, lighten($black, 10%)  0vmin, darken($black, 10%)  2vmin, transparent 1vmin) 44vmin 58vmin / 12vmin 8vmin no-repeat,
+      
+      
+      linear-gradient(180deg, darken($gray, 5%) 0vmin,  lighten($gray, 10%) 3vmin, transparent 1vmin) 31vmin 64vmin / 13.75vmin 2vmin no-repeat,
+      radial-gradient(ellipse at right bottom, lighten($gray, 10%)  0vmin, darken($gray, 10%)  3vmin, transparent 1vmin) 19vmin 58vmin / 12vmin 8vmin no-repeat,
+      radial-gradient(ellipse at left bottom, lighten($gray, 10%)  0vmin, darken($gray, 10%)  3vmin, transparent 1vmin) 44vmin 58vmin / 12vmin 8vmin no-repeat,
+      
+      
+      
+      
+      /* bottom lightest-gray layer   */
+   linear-gradient(180deg, lighten($light-gray, 40%) 0vmin, lighten($light-gray, 10%) 12vmin,  transparent 1vmin) 46vmin 66vmin / 18vmin 7vmin no-repeat,
+    radial-gradient(ellipse at right top, lighten($light-gray, 40%)   0vmin, lighten($light-gray, 20%)  8vmin, transparent 1vmin) 30vmin 66vmin / 16vmin 14vmin no-repeat,
+      radial-gradient(ellipse at left top, lighten($light-gray, 40%)   0vmin, lighten($light-gray, 20%)  8vmin, transparent 1vmin) 63.5vmin 66vmin / 16vmin 14vmin no-repeat,
+      
+
+    /* bottom lighter-gray layer   */
+        linear-gradient(180deg, lighten($light-gray, 30%) 0vmin, lighten($light-gray, 8%) 12vmin,  transparent 1vmin) 46vmin 66vmin / 18vmin 11vmin no-repeat,
+    radial-gradient(ellipse at right top, lighten($light-gray, 30%)   0vmin, lighten($light-gray, 10%)  8vmin, transparent 1vmin) 30vmin 66vmin / 16vmin 22vmin no-repeat,
+      radial-gradient(ellipse at left top, lighten($light-gray, 30%)   0vmin, lighten($light-gray, 10%)  8vmin, transparent 1vmin) 63.5vmin 66vmin / 16vmin 22vmin no-repeat,
+      
+      /* bottom light-gray layer   */ 
+        linear-gradient(180deg, lighten($light-gray, 10%) 0vmin, darken($light-gray, 5%) 12vmin,  transparent 1vmin) 42vmin 66vmin / 28vmin 11vmin no-repeat,
+    radial-gradient(ellipse at right top, lighten($light-gray, 10%)   0vmin, darken($light-gray, 5%)  8vmin, transparent 1vmin) 26.5vmin 66vmin / 16vmin 22vmin no-repeat,
+      radial-gradient(ellipse at left top, lighten($light-gray, 10%)  0vmin, darken($light-gray, 5%)  8vmin, transparent 1vmin) 68.5vmin 66vmin / 16vmin 22vmin no-repeat,
+      
+      
+    /* bottom black layer   */
+      linear-gradient(darken($black, 5%) 30vmin, transparent 1vmin) 36.5vmin 72vmin / 38vmin 5vmin no-repeat,
+    radial-gradient(ellipse at right top, lighten($black, 10%)   0vmin, darken($black, 10%)  8vmin, transparent 1vmin) 21vmin 66vmin / 16vmin 22vmin no-repeat,
+      radial-gradient(ellipse at left top, lighten($black, 10%)  0vmin, darken($black, 10%)  8vmin, transparent 1vmin) 74vmin 66vmin / 16vmin 22vmin no-repeat,
+      
+      
+    /* back gray layer   */
+    radial-gradient(ellipse at right top, lighten($gray, 10%)   0vmin, darken($gray, 10%)  8vmin, transparent 1vmin) 20vmin 66vmin / 16vmin 21.5vmin no-repeat,
+      radial-gradient(ellipse at left top, lighten($gray, 10%)  0vmin, darken($gray, 10%)  8vmin, transparent 1vmin) 75vmin 66vmin / 16vmin 21.5vmin no-repeat,
+     
+}
+
+

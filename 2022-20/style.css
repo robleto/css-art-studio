@@ -1,0 +1,61 @@
+/* colors */
+/* Presets */
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  -webkit-perspective-origin: 25% 75%;
+          perspective-origin: 25% 75%;
+  background: linear-gradient(187.47deg, #99C0CD 15%, #5993A7 100%);
+  -webkit-perspective-origin: 50% 50%;
+          perspective-origin: 50% 50%;
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+div.ten {
+  width: 100vh;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.ten:before {
+  width: 100vh;
+  height: 100vh;
+  margin: 0 auto;
+  z-index: 99;
+  -webkit-transform: perspective(800px) rotateX(55deg);
+          transform: perspective(800px) rotateX(55deg);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0vh, #1A5B4F), color-stop(100vh, #1A5B4F)) 0vh 0vh/100vw 15vh no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0vh, #1A5B4F), color-stop(15vh, #1A5B4F), color-stop(15vh, #65b47c), color-stop(30vh, #65b47c), color-stop(30vh, #008d48), color-stop(45vh, #008d48), color-stop(45vh, #65b47c), color-stop(60vh, #65b47c), color-stop(60vh, #008d48), color-stop(75vh, #008d48), color-stop(75vh, #65b47c), color-stop(90vh, #65b47c), color-stop(90vh, #008d48), color-stop(100vh, #008d48)) 9vh 0vh/80vh 100vh no-repeat, repeating-linear-gradient(#FFFFFF 0vh, #FFFFFF 0.35vh, transparent 0.35vh, transparent 2.5vh) 5vh 5vh/90vh 100vh repeat-y, -webkit-gradient(linear, left top, left bottom, color-stop(0vh, #5993A7), color-stop(15vh, #5993A7), color-stop(15vh, #65b47c), color-stop(30vh, #65b47c), color-stop(30vh, #008d48), color-stop(45vh, #008d48), color-stop(45vh, #65b47c), color-stop(60vh, #65b47c), color-stop(60vh, #008d48), color-stop(75vh, #008d48), color-stop(75vh, #65b47c), color-stop(90vh, #65b47c), color-stop(90vh, #008d48), color-stop(100vh, #008d48)) 0vh 0vh/100vw 100vh no-repeat;
+  background: linear-gradient(#1A5B4F 0vh, #1A5B4F 100vh) 0vh 0vh/100vw 15vh no-repeat, linear-gradient(#1A5B4F 0vh, #1A5B4F 15vh, #65b47c 15vh, #65b47c 30vh, #008d48 30vh, #008d48 45vh, #65b47c 45vh, #65b47c 60vh, #008d48 60vh, #008d48 75vh, #65b47c 75vh, #65b47c 90vh, #008d48 90vh, #008d48 100vh) 9vh 0vh/80vh 100vh no-repeat, repeating-linear-gradient(#FFFFFF 0vh, #FFFFFF 0.35vh, transparent 0.35vh, transparent 2.5vh) 5vh 5vh/90vh 100vh repeat-y, linear-gradient(#5993A7 0vh, #5993A7 15vh, #65b47c 15vh, #65b47c 30vh, #008d48 30vh, #008d48 45vh, #65b47c 45vh, #65b47c 60vh, #008d48 60vh, #008d48 75vh, #65b47c 75vh, #65b47c 90vh, #008d48 90vh, #008d48 100vh) 0vh 0vh/100vw 100vh no-repeat;
+}
+
+div.ten:after {
+  width: 100vh;
+  height: 100vh;
+  z-index: 999;
+  margin: 0 auto;
+  background: radial-gradient(circle, #ED4920 0vh, #ED4920 0.75vh, #111111 0.75vh, #111111 1.5vh, #ED4920 1.5vh, #ED4920 2.25vh, transparent 2.25vh) 12vh 21vh/146.5vh 4.5vh no-repeat, linear-gradient(-100deg, #ED4920 2vh, #111111 2.5vh, #ED4920 2.5vh, transparent 3vh) 81.75vh 26vh/4vh 8vh no-repeat, linear-gradient(100deg, #ED4920 2vh, #111111 2.5vh, #ED4920 2.5vh, transparent 3vh) 85vh 26vh/4vh 8vh no-repeat, radial-gradient(circle, #ED4920 0vh, #ED4920 0.75vh, #111111 0.75vh, #111111 1.5vh, #ED4920 1.5vh, #ED4920 2.25vh, transparent 2.25vh) 12vh 21vh/4.5vh 4.5vh no-repeat, linear-gradient(-100deg, #ED4920 2vh, #111111 2.5vh, #ED4920 2.5vh, transparent 3vh) 10.75vh 26vh/4vh 8vh no-repeat, linear-gradient(100deg, #ED4920 2vh, #111111 2.5vh, #ED4920 2.5vh, transparent 3vh) 14.25vh 26vh/4vh 8vh no-repeat, radial-gradient(circle, #ED4920 0vh, #ED4920 1vh, #111111 1vh, #111111 2vh, #ED4920 2vh, #ED4920 3vh, transparent 3vh) 1.5vh 28.5vh/6vh 6vh no-repeat, linear-gradient(-100deg, #ED4920 3vh, #111111 3vh, #ED4920 4vh, transparent 4vh) 0.25vh 35vh/5vh 12vh no-repeat, linear-gradient(100deg, #ED4920 3vh, #111111 3vh, #ED4920 4vh, transparent 4vh) 4.25vh 35vh/5vh 12vh no-repeat, radial-gradient(circle, #ED4920 0vh, #ED4920 1vh, #111111 1vh, #111111 2vh, #ED4920 2vh, #ED4920 3vh, transparent 3vh) 91.5vh 28.5vh/6vh 6vh no-repeat, linear-gradient(-100deg, #ED4920 3vh, #111111 3vh, #ED4920 4vh, transparent 4vh) 90.25vh 35vh/5vh 12vh no-repeat, linear-gradient(100deg, #ED4920 3vh, #111111 3vh, #ED4920 4vh, transparent 4vh) 94.25vh 35vh/5vh 12vh no-repeat, linear-gradient(#f4d109 0vh, #c3a707 8vh, transparent 7vh) 47.5vh 21.75vh/3vh 40vh no-repeat, linear-gradient(#f4d109 0vh, #c3a707 8vh, transparent 7vh) 39vh 21.75vh/20vh 2vh no-repeat, linear-gradient(#f4d109 0vh, #f4d109 12vh, transparent 7vh) 39vh 9.75vh/2vh 40vh no-repeat, linear-gradient(#f4d109 0vh, #f4d109 12vh, transparent 7vh) 57vh 9.75vh/2vh 40vh no-repeat;
+}
+/*# sourceMappingURL=style.css.map */

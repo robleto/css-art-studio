@@ -1,0 +1,50 @@
+/* colors */
+/* Presets */
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background: radial-gradient(#e5b900 50%, #FECE00 100%);
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+div.cube:before {
+  width: 50vh;
+  height: 55vh;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  background: linear-gradient(-30deg, #ce9001 0vh, #FEB204 20vh, transparent 0vh) 25vh 10vh/10vh 10vh no-repeat, linear-gradient(150deg, #FEB204 0vh, #ce9001 20vh, transparent 0vh) 25vh 30vh/10vh 10vh no-repeat, linear-gradient(30deg, #d0bf03 0vh, #FCEC3D 20vh, transparent 0vh) 0vh 10vh/10vh 10vh no-repeat, linear-gradient(-150deg, #FCEC3D 0vh, #d0bf03 20vh, transparent 0vh) 0vh 30vh/10vh 10vh no-repeat, linear-gradient(30deg, #333333 0vh, #0d0d0d 10vh, transparent 0vh) 25vh 6vh/10vh 10vh no-repeat, linear-gradient(-30deg, #333333 0vh, #0d0d0d 10vh, transparent 0vh) 0vh 6vh/10vh 10vh no-repeat, linear-gradient(150deg, transparent 33.3%, #1a1a1a 0) top left, linear-gradient(-150deg, transparent 33.3%, #333333 0) top right, linear-gradient(-30deg, transparent 33.3%, #333333 0) bottom right, linear-gradient(30deg, transparent 33.3%, #333333 0) bottom left;
+  /* Extra pixel in order to avoid transparent lines when rotating */
+  background-size: calc(50% + 1px) calc(50% + 1px);
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=style.css.map */

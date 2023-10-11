@@ -1,0 +1,136 @@
+/* Presets */
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+div.erase {
+  width: 150vh;
+  height: 100vh;
+  top: 0vh;
+  left: 0vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+          box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  background: repeating-linear-gradient(0deg, transparent 0 20px, #ebebeb 20px 35px), -webkit-gradient(linear, left top, right top, color-stop(15%, #e6e6e6), to(#d9d9d9));
+  background: repeating-linear-gradient(0deg, transparent 0 20px, #ebebeb 20px 35px), linear-gradient(90deg, #e6e6e6 15%, #d9d9d9 100%);
+}
+
+div.erase:before {
+  width: 100vh;
+  height: 100vh;
+  top: -10vh;
+  left: -100vh;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: eraser-line 5s ease-out 0s 1 both running;
+          animation: eraser-line 5s ease-out 0s 1 both running;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(7.5vh, #FFFFFF), color-stop(7.75vh, #FFFFFF)) 0vh 60vh/150vh 12vh no-repeat;
+  background: linear-gradient(#FFFFFF 7.5vh, #FFFFFF 7.75vh) 0vh 60vh/150vh 12vh no-repeat;
+}
+
+div.erase:after {
+  width: 100vh;
+  height: 100vh;
+  top: -19vh;
+  left: -60vh;
+  z-index: 999;
+  -webkit-transform: rotatez(-60deg);
+          transform: rotatez(-60deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: eraser-pencil 5s ease-out 0s 1 both running;
+          animation: eraser-pencil 5s ease-out 0s 1 both running;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0vh, #c2ad76), color-stop(5vh, #c2ad76), color-stop(5vh, #B29853), color-stop(10vh, #B29853), color-stop(10vh, #917b41)) 50vh 60vh/60vh 15vh no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0vh, transparent), color-stop(1vh, transparent), color-stop(1vh, #b6b6b6), color-stop(1.5vh, #b6b6b6), color-stop(1.5vh, transparent), color-stop(3.5vh, transparent), color-stop(3.5vh, #b6b6b6), color-stop(4vh, #b6b6b6), color-stop(4vh, transparent), color-stop(6vh, transparent), color-stop(6vh, #b6b6b6), color-stop(6.5vh, #b6b6b6), color-stop(6.5vh, transparent), color-stop(8.5vh, transparent), color-stop(8.5vh, #b6b6b6), color-stop(9vh, #b6b6b6), color-stop(9vh, transparent), color-stop(11vh, transparent), color-stop(11vh, #b6b6b6), color-stop(11.5vh, #b6b6b6), color-stop(11.5vh, transparent), color-stop(13.5vh, transparent), color-stop(13.5vh, #b6b6b6), color-stop(14vh, #b6b6b6), color-stop(14vh, transparent), color-stop(15vh, transparent)) 41vh 60vh/6vh 15vh no-repeat, -webkit-gradient(linear, left top, right top, color-stop(0vh, transparent), color-stop(2vh, transparent), color-stop(2vh, #b6b6b6), color-stop(2.5vh, #b6b6b6), color-stop(2.5vh, transparent), color-stop(10vh, transparent), color-stop(10vh, #b6b6b6), color-stop(10.5vh, #b6b6b6), color-stop(10.5vh, transparent), color-stop(12vh, transparent)) 38vh 60vh/12vw 15vh no-repeat, radial-gradient(ellipse, #DCDCDC 4vh, darkgray 9vh, transparent 9vh) 38vh 60vh/12vh 15vh no-repeat, radial-gradient(ellipse, #A45858 4vh, #834646 9vh, transparent 9vh) 28vh 60vh/15vh 15vh no-repeat;
+  background: linear-gradient(#c2ad76 0vh, #c2ad76 5vh, #B29853 5vh, #B29853 10vh, #917b41 10vh) 50vh 60vh/60vh 15vh no-repeat, linear-gradient(transparent 0vh, transparent 1vh, #b6b6b6 1vh, #b6b6b6 1.5vh, transparent 1.5vh, transparent 3.5vh, #b6b6b6 3.5vh, #b6b6b6 4vh, transparent 4vh, transparent 6vh, #b6b6b6 6vh, #b6b6b6 6.5vh, transparent 6.5vh, transparent 8.5vh, #b6b6b6 8.5vh, #b6b6b6 9vh, transparent 9vh, transparent 11vh, #b6b6b6 11vh, #b6b6b6 11.5vh, transparent 11.5vh, transparent 13.5vh, #b6b6b6 13.5vh, #b6b6b6 14vh, transparent 14vh, transparent 15vh) 41vh 60vh/6vh 15vh no-repeat, linear-gradient(90deg, transparent 0vh, transparent 2vh, #b6b6b6 2vh, #b6b6b6 2.5vh, transparent 2.5vh, transparent 10vh, #b6b6b6 10vh, #b6b6b6 10.5vh, transparent 10.5vh, transparent 12vh) 38vh 60vh/12vw 15vh no-repeat, radial-gradient(ellipse, #DCDCDC 4vh, darkgray 9vh, transparent 9vh) 38vh 60vh/12vh 15vh no-repeat, radial-gradient(ellipse, #A45858 4vh, #834646 9vh, transparent 9vh) 28vh 60vh/15vh 15vh no-repeat;
+}
+
+@-webkit-keyframes eraser-pencil {
+  0% {
+    -webkit-transform: translateX(0vh) rotatez(-60deg);
+            transform: translateX(0vh) rotatez(-60deg);
+  }
+  100% {
+    -webkit-transform: translateX(50vh) rotatez(-60deg);
+            transform: translateX(50vh) rotatez(-60deg);
+  }
+}
+
+@keyframes eraser-pencil {
+  0% {
+    -webkit-transform: translateX(0vh) rotatez(-60deg);
+            transform: translateX(0vh) rotatez(-60deg);
+  }
+  100% {
+    -webkit-transform: translateX(50vh) rotatez(-60deg);
+            transform: translateX(50vh) rotatez(-60deg);
+  }
+}
+
+@-webkit-keyframes eraser-line {
+  0% {
+    -webkit-transform: translateX(0vh);
+            transform: translateX(0vh);
+  }
+  100% {
+    -webkit-transform: translateX(50vh);
+            transform: translateX(50vh);
+  }
+}
+
+@keyframes eraser-line {
+  0% {
+    -webkit-transform: translateX(0vh);
+            transform: translateX(0vh);
+  }
+  100% {
+    -webkit-transform: translateX(50vh);
+            transform: translateX(50vh);
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,297 @@
+$blue: rgba(30, 54, 114, 1.0); //#1e3672;
+$red: rgba(131, 29, 31, 1.0); //831d1f
+$test: rgba(186, 218, 85, 1.0); //bada55
+$pink: #954c51;
+$white: rgba(253, 253, 249, 1.0); //#fdfdf9;
+$gray: #677399;
+$black: rgba(40, 16, 20, 1.0); // #281014;
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center; 
+  background: 
+    
+     linear-gradient(darken($gray, 15%) 0vmin, darken($gray, 5%) 100vmin) 0vmin 0vmin / 100% 100% no-repeat, 
+    /*background-size: 115%;
+    background-position-x: -14vmin;
+    background-position-y: -12vmin;
+    background-image: url('https://nypost.com/wp-content/uploads/sites/2/2022/02/spiderman-18.jpg?quality=90&strip=all') */
+}
+
+div.mixed {
+    width: 110vmin;
+    height: 97vmin;
+    border: solid 10px $black;
+    display: flex;
+    margin: 0 auto;
+    position: relative; 
+    background: 
+
+     
+      
+         
+    /** RIGHT SPIDERMAN **/
+      
+    
+      
+  
+  /* eye-right-lash */linear-gradient(-210deg, $red 2.5vmin, transparent 2.5vmin) 88vmin 20.5vmin / 4vmin 3vmin no-repeat,
+  /* eye-right-lash */linear-gradient(-210deg, $black 2.5vmin, transparent 2.5vmin) 88vmin 21vmin / 4vmin 3vmin no-repeat,
+    /* eye-right */radial-gradient(ellipse, lighten($white, 10%) 1.25vmin,  transparent 1.25vmin) 88.5vmin 22vmin / 2.5vmin 4.5vmin no-repeat,
+    /* eye-right */ radial-gradient(ellipse, lighten($black, 10%) 2vmin,  transparent 2vmin) 88.25vmin 21vmin / 4vmin 7vmin no-repeat,
+      
+        /* head */
+      radial-gradient(ellipse, $red 5vmin,  transparent 5vmin) 87.75vmin 18vmin / 10vmin 8vmin no-repeat,   
+      radial-gradient(ellipse, $red 6vmin,  transparent 6vmin) 88vmin 18vmin / 12vmin 16vmin no-repeat,    
+      radial-gradient(ellipse, $red .75vmin,  transparent .75vmin) 87vmin 23.75vmin / 3vmin 6vmin no-repeat,    
+      
+    /* neck */
+  linear-gradient(-65deg,  $red 7vmin, transparent 7vmin) 86vmin 32vmin / 12vmin 5vmin no-repeat,
+  linear-gradient(55deg,  $red 7vmin, transparent 7vmin) 95vmin 30vmin / 14vmin 7vmin no-repeat,
+      
+  /* arm */
+  radial-gradient(ellipse, $red 4.5vmin,  transparent 4.5vmin) 60vmin 45vmin / 9vmin 2vmin no-repeat, 
+  radial-gradient(ellipse, $red 2.5vmin,  transparent 2.5vmin) 63vmin 46vmin / 5vmin 5vmin no-repeat, 
+  radial-gradient(ellipse, $red 4.5vmin,  transparent 4.5vmin) 66vmin 46vmin / 9vmin 4.5vmin no-repeat, 
+  radial-gradient(ellipse, $red 6vmin,  transparent 6vmin) 67vmin 46vmin / 13vmin 5.5vmin no-repeat, 
+  radial-gradient(ellipse, $red 8vmin,  transparent 8vmin) 69.75vmin 47vmin / 16vmin 5.5vmin no-repeat, 
+  radial-gradient(ellipse, $red 4vmin,  transparent 4vmin) 74vmin 50.5vmin / 11vmin 3vmin no-repeat, 
+  linear-gradient(-45deg,  $red 5vmin, transparent 5vmin) 78vmin 36vmin / 8vmin 12vmin no-repeat,
+  linear-gradient(145deg,  $red 7vmin, transparent 7vmin) 86vmin 39.5vmin / 8vmin 12vmin no-repeat,
+  linear-gradient(-35deg,  $blue 6vmin, transparent 6vmin) 89vmin 35vmin / 8vmin 12vmin no-repeat,
+  linear-gradient(10deg,  $blue 6vmin, transparent 6vmin) 96.5vmin 36vmin / 8vmin 10vmin no-repeat,
+  linear-gradient(-30deg,  $blue 6vmin, transparent 6vmin) 99.5vmin 34vmin / 8vmin 10vmin no-repeat,
+  linear-gradient(145deg,  $blue 6vmin, transparent 6vmin) 84vmin 45vmin / 8vmin 12vmin no-repeat,
+      
+      
+      
+  linear-gradient(-35deg,  $blue 6vmin, transparent 6vmin) 89vmin 35vmin / 8vmin 12vmin no-repeat,
+  linear-gradient(0deg,  $red 7vmin, transparent 7vmin) 101vmin 53.5vmin / 8.5vmin 3.5vmin no-repeat,
+  linear-gradient(-35deg,  $blue 7vmin, transparent 7vmin) 95vmin 52vmin / 8vmin 12vmin no-repeat,
+
+  linear-gradient(-25deg,  $red 7vmin, transparent 7vmin) 95vmin 49vmin / 6vmin 12vmin no-repeat,
+      
+      
+      
+
+  radial-gradient(ellipse, $blue 2vmin,  transparent 2vmin) 91vmin 44vmin / 4vmin 8vmin no-repeat, 
+  radial-gradient(ellipse, $blue 4vmin,  transparent 4vmin) 92vmin 41vmin / 8vmin 16vmin no-repeat, 
+  radial-gradient(ellipse, $blue 4vmin,  transparent 4vmin) 98vmin 41vmin / 8vmin 16vmin no-repeat, 
+  radial-gradient(ellipse, $blue 4vmin,  transparent 4vmin) 102vmin 38vmin / 8vmin 16vmin no-repeat, 
+  radial-gradient(ellipse, $blue 3vmin,  transparent 3vmin) 105vmin 40vmin / 6vmin 15vmin no-repeat,
+  radial-gradient(ellipse, $blue 2vmin,  transparent 2vmin) 109.5vmin 46vmin / 4vmin 6vmin no-repeat,
+      
+  radial-gradient(ellipse, $red 8vmin,  transparent 8vmin) 86vmin 34vmin / 16vmin 8vmin no-repeat, 
+  radial-gradient(ellipse, $red 8vmin,  transparent 8vmin) 94vmin 33vmin / 16vmin 8vmin no-repeat, 
+      
+  linear-gradient(65deg,  $red 7vmin, transparent 7vmin) 108.25vmin 36.5vmin / 8vmin 14vmin no-repeat,
+       linear-gradient(145deg,  $red 5vmin, transparent 5vmin) 109vmin 49vmin / 6vmin 13vmin no-repeat,
+      
+  radial-gradient(ellipse, $blue 7vmin,  transparent 7vmin) 99vmin 56vmin / 14vmin 14vmin no-repeat,
+      
+      
+      
+  radial-gradient(ellipse, $blue 4.5vmin,  transparent 4.5vmin) 101vmin 63vmin / 9vmin 28vmin no-repeat,  
+      radial-gradient(ellipse, $blue 2.5vmin,  transparent 2.5vmin) 107vmin 64vmin / 5vmin 10vmin no-repeat,
+      radial-gradient(ellipse, $blue 4vmin,  transparent 4vmin) 103vmin 85vmin / 8vmin 7vmin no-repeat,
+      radial-gradient(ellipse, $red 4.5vmin,  transparent 4.5vmin) 104vmin 86vmin / 9vmin 22vmin no-repeat,
+      
+      
+      /* left leg */
+        linear-gradient(135deg,  $blue 7vmin, transparent 7vmin) 92vmin 73vmin / 8vmin 12vmin no-repeat,
+       linear-gradient(-55deg,  $blue 7vmin, transparent 7vmin) 84vmin 63vmin / 8vmin 12vmin no-repeat,
+     linear-gradient(-75deg,  $blue 3vmin, transparent 3vmin) 77.5vmin 73vmin / 8vmin 8vmin no-repeat,
+      radial-gradient(ellipse, $blue 6vmin,  transparent 6vmin) 89vmin 60vmin / 14vmin 19vmin no-repeat,
+      radial-gradient(ellipse, $blue 5.5vmin,  transparent 5.5vmin) 84vmin 72vmin / 11vmin 11vmin no-repeat,
+      radial-gradient(ellipse, $blue 4vmin,  transparent 4vmin) 82vmin 78vmin / 8vmin 11vmin no-repeat,
+      radial-gradient(ellipse, $blue 4vmin,  transparent 4vmin) 83vmin 85vmin / 8vmin 7vmin no-repeat,
+      radial-gradient(ellipse, $red 4.5vmin,  transparent 4.5vmin) 84vmin 88vmin / 9vmin 22vmin no-repeat,
+      
+      
+      
+      
+  /** LEFT SPIDERMAN **/
+ 
+  /* eye-left-mask */linear-gradient(-140deg,  $red 2.5vmin, transparent 2.5vmin) 13.25vmin 17.5vmin / 5vmin 5vmin no-repeat,
+  /* eye-left-lash */linear-gradient(-140deg, $black 2.5vmin, transparent 2.5vmin) 13vmin 18vmin / 5vmin 5vmin no-repeat,
+  /* eye-left */radial-gradient(ellipse, lighten($white, 10%) 1.5vmin,  transparent 1.5vmin) 14vmin 17.75vmin / 4vmin 6vmin no-repeat, 
+  /* eye-left */radial-gradient(ellipse, lighten($black, 10%) 2vmin,  transparent 2vmin) 14vmin 17.75vmin / 4vmin 6vmin no-repeat, 
+   
+    
+      /* eye-right-mask */linear-gradient(140deg,  $red  1.5vmin, transparent 1.5vmin) 18.75vmin 18.25vmin / 3vmin 3vmin no-repeat,
+  /* eye-right-lash */linear-gradient(140deg, $black 1.5vmin, transparent 1.5vmin) 19vmin 18.75vmin / 3vmin 3vmin no-repeat,
+    /* eye-right */radial-gradient(ellipse, lighten($white, 10%) 1vmin,  transparent 1vmin) 19vmin 19vmin / 2vmin 4vmin no-repeat,
+    /* eye-right */radial-gradient(ellipse, lighten($black, 10%) 1.5vmin,  transparent 1.5vmin) 18.25vmin 18.75vmin / 3vmin 5vmin no-repeat, 
+     
+      
+    /* head */radial-gradient(ellipse, $red 5.5vmin,  transparent 5.5vmin) 10.5vmin 14vmin / 11vmin 14vmin no-repeat, 
+     
+  /* neck */
+  linear-gradient(-65deg,  $red 7vmin, transparent 7vmin) 4.5vmin 23vmin / 12vmin 6vmin no-repeat,
+  linear-gradient(65deg,  $red 7vmin, transparent 7vmin) 11vmin 27vmin / 12vmin 6vmin no-repeat,
+      
+  
+  /* chest and arm */
+  radial-gradient(ellipse, $red 4.5vmin,  transparent 4.5vmin) 32vmin 36.25vmin / 9vmin 2vmin no-repeat, 
+  radial-gradient(circle, $red 3vmin,  transparent 3vmin) 30vmin 36.5vmin / 6vmin 6vmin no-repeat,
+  radial-gradient(ellipse, $red 7vmin,  transparent 7vmin) 17vmin 34.5vmin / 18vmin 6vmin no-repeat, 
+  radial-gradient(ellipse, $red 7vmin,  transparent 7vmin) 14vmin 36vmin / 14vmin 6vmin no-repeat, 
+  radial-gradient(ellipse, $red 6vmin,  transparent 6vmin) 11vmin 30vmin / 12vmin 8vmin no-repeat, 
+  radial-gradient(circle, $red 6vmin,  transparent 6vmin) 4.5vmin 28vmin / 12vmin 12vmin no-repeat, 
+      
+      
+      linear-gradient(-45deg,  $blue 7vmin, transparent 7vmin) 12vmin 45vmin / 6.5vmin 19vmin no-repeat,  
+      linear-gradient(65deg,  $blue 7vmin, transparent 7vmin) 18.5vmin 52vmin / 5.5vmin 20vmin no-repeat, 
+ 
+           
+  linear-gradient(-155deg,  $blue 7vmin, transparent 7vmin) 4vmin 43vmin / 6.5vmin 19vmin no-repeat, 
+  radial-gradient(ellipse, $blue 1.5vmin,  transparent 1.5vmin) 6.5vmin 35.5vmin / 5vmin 12vmin no-repeat, 
+  radial-gradient(ellipse, $blue 3vmin,  transparent 3vmin) 3.5vmin 30vmin / 6vmin 16vmin no-repeat, 
+      
+      
+   /* left leg */   
+  linear-gradient(25deg,  $blue 7vmin, transparent 7vmin) 5vmin 43vmin / 5vmin 15vmin no-repeat, 
+       linear-gradient(-75deg,  $blue 8vmin, transparent 8vmin) -6vmin 56vmin / 16vmin 6vmin no-repeat,
+      
+       radial-gradient(ellipse, $blue 2vmin,  transparent 2vmin) 2.5vmin 50vmin / 4vmin 7vmin no-repeat, 
+      
+       linear-gradient(35deg,  $blue 7vmin, transparent 7vmin) 10vmin 46vmin / 5.5vmin 17vmin no-repeat,  
+      
+  radial-gradient(ellipse, $red 6vmin,  transparent 6vmin) 9vmin 28vmin / 12vmin 24vmin no-repeat, 
+  radial-gradient(ellipse, $red 8vmin,  transparent 8vmin) 3.5vmin 47.5vmin / 15vmin 11vmin no-repeat, 
+      
+      
+  /* right arm */
+  radial-gradient(ellipse, $red 3.5vmin,  transparent 3.5vmin) 30vmin 45vmin / 7vmin 6vmin no-repeat,
+  radial-gradient(ellipse, $red 5vmin,  transparent 5vmin) 24vmin 46vmin / 10vmin 5vmin no-repeat, 
+  radial-gradient(ellipse, $blue 2.5vmin,  transparent 2.5vmin) 22vmin 42vmin / 5vmin 8vmin no-repeat,
+  radial-gradient(ellipse, $blue 2.5vmin,  transparent 2.5vmin) 20vmin 34vmin / 5vmin 14vmin no-repeat,
+ 
+       /* right leg */
+        linear-gradient(115deg,  $blue 8vmin, transparent 8vmin) 4vmin 60vmin / 14vmin 22vmin no-repeat,
+       linear-gradient(-135deg,  $blue 7vmin, transparent 7vmin) 12vmin 63vmin / 8vmin 12vmin no-repeat,
+     linear-gradient(-75deg,  $blue 7vmin, transparent 7vmin) -11.25vmin 60vmin / 16vmin 18vmin no-repeat,
+      radial-gradient(ellipse, $blue 4.25vmin,  transparent 4.25vmin) -4.5vmin 71vmin / 11vmin 19vmin no-repeat,
+      radial-gradient(ellipse, $red 5.5vmin,  transparent 5.5vmin) -8.5vmin 76vmin / 11vmin 19vmin no-repeat,
+      
+      
+       /* left leg */
+     linear-gradient(-105deg,  $blue 5vmin, transparent 5vmin) 5.5vmin 61.5vmin / 16vmin 18vmin no-repeat,
+      radial-gradient(ellipse, $blue 2vmin,  transparent 2vmin) 24.5vmin 70vmin / 4vmin 9vmin no-repeat,
+      radial-gradient(ellipse, $blue 4vmin,  transparent 4vmin) 21vmin 75vmin / 8vmin 7vmin no-repeat,
+      radial-gradient(ellipse, $blue 3vmin,  transparent 3vmin) 21vmin 66vmin / 6vmin 16vmin no-repeat,
+      //radial-gradient(ellipse, $test 4.5vmin,  transparent 4.5vmin) 20vmin 72vmin / 9vmin 16vmin no-repeat,
+      radial-gradient(ellipse, $red 4vmin,  transparent 4vmin) 21vmin 79vmin / 8vmin 7vmin no-repeat,
+      radial-gradient(ellipse, $red 2vmin,  transparent 2vmin) 22vmin 80.5vmin / 4vmin 9vmin no-repeat,
+      radial-gradient(ellipse, $red 3vmin,  transparent 3vmin) 24vmin 80vmin / 6vmin 24vmin no-repeat,
+      
+      
+      
+      
+      
+      
+      
+    /** BACK SPIDERMAN **/
+      
+       /* eye-left-mask */linear-gradient(-130deg,  $red 2vmin, transparent 2vmin) 55vmin 5.5vmin / 4vmin 4vmin no-repeat,
+  /* eye-left-lash */linear-gradient(-130deg, $black 2vmin, transparent 2vmin) 54.5vmin 6vmin / 4vmin 4vmin no-repeat,
+    /* eye-left */radial-gradient(ellipse, lighten($white, 10%) 1vmin,  transparent 1vmin) 56vmin 6vmin / 2vmin 4vmin no-repeat, 
+      
+  /* eye-right-mask */linear-gradient(130deg,  $red 2.5vmin, transparent 2.5vmin) 58vmin 5vmin / 5vmin 5vmin no-repeat,
+  /* eye-right-lash */linear-gradient(130deg, $black 2.5vmin, transparent 2.5vmin) 59vmin 5vmin / 5vmin 5vmin no-repeat,
+  /* eye-right */radial-gradient(ellipse, lighten($white, 10%) 1.5vmin,  transparent 1.5vmin) 59vmin 5vmin / 4vmin 5.5vmin no-repeat, 
+      
+    /* head */radial-gradient(ellipse, $red 4.5vmin,  transparent 4.5vmin) 56vmin 0.5vmin / 10vmin 14vmin no-repeat, 
+     
+  /* neck */
+  linear-gradient(75deg,  $red 6vmin, transparent 6vmin) 60vmin 11vmin / 12vmin 6vmin no-repeat,  /* neck */
+  linear-gradient(-75deg,  $red 4vmin, transparent 4vmin) 52vmin 10vmin / 10vmin 10vmin no-repeat,
+      
+  /* right-arm */ 
+  radial-gradient(ellipse, $blue 3.5vmin,  transparent 3.5vmin) 69vmin 17vmin / 7vmin 5vmin no-repeat, 
+  radial-gradient(ellipse, $red 3.5vmin,  transparent 3.5vmin) 75vmin 18.5vmin / 7vmin 5vmin no-repeat,    
+  radial-gradient(ellipse, $red 4vmin,  transparent 4vmin) 81vmin 18.5vmin / 8vmin 2vmin no-repeat, 
+  radial-gradient(ellipse, $red 4vmin,  transparent 4vmin) 79vmin 18.5vmin / 8vmin 5vmin no-repeat, 
+  linear-gradient(25deg,  $red 6vmin, transparent 6vmin) 73vmin 18vmin / 8vmin 4vmin no-repeat,
+  linear-gradient(-145deg,  $red 6vmin, transparent 6vmin) 72vmin 19vmin / 8vmin 4vmin no-repeat,
+      
+  /* chest */
+  radial-gradient(ellipse, $red 6vmin,  transparent 6vmin) 61.5vmin 14.5vmin / 12vmin 7vmin no-repeat, 
+  radial-gradient(ellipse, $red 6vmin,  transparent 6vmin) 54.5vmin 16.5vmin / 12vmin 7vmin no-repeat, 
+  radial-gradient(ellipse, $red 3vmin,  transparent 3vmin) 56vmin 20vmin / 6vmin 6vmin no-repeat,  
+      
+  linear-gradient(105deg,  $blue 7vmin, transparent 7vmin) 65vmin 19vmin / 12vmin 12vmin no-repeat,
+      
+  linear-gradient(165deg,  $blue 7vmin, transparent 7vmin) 65vmin 25.6vmin / 5vmin 15vmin no-repeat,
+      
+  linear-gradient(-25deg,  $blue 7vmin, transparent 7vmin) 61vmin 26vmin / 9vmin 15vmin no-repeat,
+  linear-gradient(25deg,  $blue 7vmin, transparent 7vmin) 58vmin 33.5vmin / 3vmin 10vmin no-repeat,
+  linear-gradient(-65deg,  $blue 7vmin, transparent 7vmin) 51vmin 37vmin / 9vmin 14vmin no-repeat,
+  linear-gradient(75deg,  $blue 7vmin, transparent 7vmin) 67vmin 34.5vmin / 9vmin 15vmin no-repeat,
+  linear-gradient(130deg,  $blue 7vmin, transparent 7vmin) 55vmin 48vmin / 14vmin 15vmin no-repeat,
+  radial-gradient(ellipse, $blue 6vmin,  transparent 6vmin) 57vmin 37vmin / 12vmin 12vmin no-repeat,
+  radial-gradient(ellipse, $blue 4vmin,  transparent 4vmin) 66vmin 40vmin / 8vmin 18vmin no-repeat,
+  
+      
+      
+      radial-gradient(ellipse, $blue 3.5vmin,  transparent 3.5vmin) 49vmin 59vmin / 7vmin 6vmin no-repeat,
+      radial-gradient(ellipse, $blue 3.5vmin,  transparent 3.5vmin) 49vmin 52vmin / 7vmin 12vmin no-repeat,
+      radial-gradient(ellipse, $blue 3.5vmin,  transparent 3.5vmin) 51vmin 49vmin / 7vmin 12vmin no-repeat,
+  linear-gradient(-120deg,  $blue 8vmin, transparent 8vmin) 67vmin 48.5vmin / 5vmin 19vmin no-repeat,
+  radial-gradient(ellipse, $blue 2vmin,  transparent 2vmin) 71vmin 52vmin / 4vmin 12vmin no-repeat,
+  radial-gradient(ellipse, $blue 2vmin,  transparent 2vmin) 71vmin 52vmin / 4vmin 12vmin no-repeat,
+  radial-gradient(ellipse, $blue 3.5vmin,  transparent 3.5vmin) 71.5vmin 60vmin / 7vmin 6vmin no-repeat,
+  linear-gradient(60deg,  $blue 3vmin, transparent 3vmin) 74.5vmin 54vmin / 5vmin 7vmin no-repeat,
+      
+      /* right boot */
+  radial-gradient(ellipse, $red 3.5vmin,  transparent 3.5vmin) 72vmin 64vmin / 7vmin 7vmin no-repeat,
+  radial-gradient(ellipse, $red 2.5vmin,  transparent 2.5vmin) 74.5vmin 64vmin / 5vmin 14vmin no-repeat,
+  radial-gradient(ellipse, $red 2vmin,  transparent 2vmin) 76vmin 73vmin / 4vmin 8vmin no-repeat,
+    radial-gradient(ellipse, $red 3vmin,  transparent 3vmin) 76vmin 77vmin / 7vmin 6vmin no-repeat,
+  linear-gradient(140deg,  $red 8vmin, transparent 8vmin) 53.5vmin 67.5vmin / 2vmin 19vmin no-repeat,
+  linear-gradient( -30deg,  $red 5vmin, transparent 5vmin) 43.5vmin 72vmin / 7vmin 7vmin no-repeat,
+
+      
+        /* left boot */
+  radial-gradient(ellipse, $red 3.5vmin,  transparent 3.5vmin) 49vmin 62vmin / 7vmin 7vmin no-repeat,
+  radial-gradient(ellipse, $red 2.5vmin,  transparent 2.5vmin) 49.5vmin 62vmin / 5vmin 14vmin no-repeat,
+  radial-gradient(ellipse, $red 3.5vmin,  transparent 3.5vmin) 47vmin 73vmin / 8vmin 6vmin no-repeat,
+  radial-gradient(ellipse, $red 3.5vmin,  transparent 3.5vmin) 42.5vmin 76.5vmin / 8vmin 4vmin no-repeat,
+      
+      
+      
+      
+      
+      
+  radial-gradient(ellipse, $red 7vmin,  transparent 7vmin) 58vmin 20vmin / 12vmin 20vmin no-repeat,
+      
+  /* left-arm */ 
+  radial-gradient(ellipse, $blue 5vmin,  transparent 5vmin) 49vmin 20.5vmin / 10vmin 5vmin no-repeat, 
+  radial-gradient(ellipse, $blue 3.5vmin,  transparent 3.5vmin) 51vmin 18vmin / 8vmin 5vmin no-repeat, 
+  radial-gradient(ellipse, $blue 3.5vmin,  transparent 3.5vmin) 47vmin 22vmin / 8vmin 5vmin no-repeat, 
+  radial-gradient(ellipse, $blue 3.5vmin,  transparent 3.5vmin) 44vmin 22vmin / 7vmin 5vmin no-repeat, 
+  radial-gradient(ellipse, $red 6vmin,  transparent 6vmin) 35vmin 22.5vmin / 12vmin 5vmin no-repeat, 
+  radial-gradient(ellipse, $red 3vmin,  transparent 3vmin) 31vmin 22.75vmin / 6vmin 2vmin no-repeat, 
+  radial-gradient(ellipse, $red 2.5vmin,  transparent 2.5vmin) 33vmin 22.75vmin / 5vmin 5vmin no-repeat, 
+  linear-gradient(-145deg,  $red 5vmin, transparent 5vmin) 38vmin 23vmin / 8vmin 4vmin no-repeat,
+      
+      
+      
+      
+      /** BACKGROUND **/
+      
+      
+     linear-gradient(180deg, lighten($gray, 15%) 0vmin,  $gray 10vmin) 0vmin 65vmin / 500vmin 100vmin no-repeat, 
+     linear-gradient(0deg, lighten($pink, 15%) 0vmin,  $pink 50vmin) 0vmin 0vmin / 500vmin 70vmin no-repeat,
+      
+
+}

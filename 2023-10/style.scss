@@ -1,0 +1,146 @@
+$bg-black: #040d15;
+$bg-blue: #2b3943;
+$ash: #706677;
+$aflame: #ff9f1c;
+$test: #bada55;
+
+$center: 6.75vmin;
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background:
+      radial-gradient(ellipse at 65% 5%, $bg-blue 0%, $bg-black 60%),
+}
+
+div.sparkle {
+  width: 1vmin;
+  height: 40vmin;
+  background-color: $bg-black;
+  border-radius: 0.5rem;
+  transform: rotate(25deg) scale(1.5);
+  position: relative;
+}
+
+
+
+.sparkle:after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 9;
+  top: -12.5vmin;
+  left: -12.5vmin;
+  width: 25vmin;
+  height: 25vmin;
+  animation: 
+    sparkdown 20s infinite, 
+    spark 1s infinite,
+    spin 1s infinite;
+  background:   
+    
+      /*  12 */
+      linear-gradient(90deg, transparent 6vmin, darken($aflame, 25%) 6.25vmin, transparent 6.5vmin) 6.75vmin 6vmin / 14vmin 4vmin no-repeat,
+     
+      /*  11 and 1 */
+       linear-gradient(-125deg, transparent 6vmin, $aflame 6.25vmin, transparent 6.5vmin) -13.75vmin 6.25vmin / 30vmin 4vmin no-repeat,
+     linear-gradient(125deg, transparent 6vmin, $aflame 6.25vmin, transparent 6.5vmin) 9.25vmin 6.25vmin / 30vmin 4vmin no-repeat,
+     
+      /*  10.5 and 1.5 */
+       linear-gradient(-145deg, transparent 6vmin, darken($aflame, 25%) 6.25vmin, transparent 6.5vmin) -3.5vmin 8.5vmin / 22vmin 2vmin no-repeat,
+     linear-gradient(145deg, transparent 6vmin, darken($aflame, 25%) 6.25vmin, transparent 6.5vmin) 7vmin 8.5vmin / 22vmin 2vmin no-repeat,
+    
+      /*  10 and 2 */
+       linear-gradient(-160deg, transparent 6vmin, $aflame 6.25vmin, transparent 6.5vmin) 1vmin 9.75vmin / 22vmin 2vmin no-repeat,
+     linear-gradient(160deg, transparent 6vmin, $aflame 6.25vmin, transparent 6.5vmin) 2.5vmin 9.75vmin / 22vmin 2vmin no-repeat,
+    
+      /*  9 and 3 */
+      linear-gradient(0deg, transparent 6vmin, darken($aflame, 25%)6.25vmin, transparent 6.5vmin) 3.5vmin 9vmin / 7vmin 10vmin no-repeat,
+     linear-gradient(0deg, transparent 6vmin, darken($aflame, 25%)6.25vmin, transparent 6.5vmin) 15vmin 9vmin / 7vmin 10vmin no-repeat,
+      
+    
+      /*  8 and 4 */
+       linear-gradient(-25deg, transparent 6vmin, $aflame 6.25vmin, transparent 6.5vmin) -1vmin 13.75vmin / 22vmin 2vmin no-repeat,
+     linear-gradient(25deg, transparent 6vmin, $aflame 6.25vmin, transparent 6.5vmin) 4.5vmin 13.75vmin / 22vmin 2vmin no-repeat,
+
+      /*  7.5 and 5.5 */
+       linear-gradient(-35deg, transparent 6vmin, darken($aflame, 25%) 6.25vmin, transparent 6.5vmin) -2.75vmin 14.75vmin / 22vmin 2vmin no-repeat,
+     linear-gradient(35deg, transparent 6vmin, darken($aflame, 25%) 6.25vmin, transparent 6.5vmin) 6.5vmin 14.75vmin / 22vmin 2vmin no-repeat,
+
+      /*  7 and 5 */
+      linear-gradient(-55deg, transparent 6vmin, $aflame 6.25vmin, transparent 6.5vmin) -13.75vmin 16vmin / 30vmin 4vmin no-repeat,
+     linear-gradient(55deg, transparent 6vmin, $aflame 6.25vmin, transparent 6.5vmin) 9vmin 16vmin / 30vmin 4vmin no-repeat,
+
+      /*  6 */
+      linear-gradient(90deg, transparent 6vmin, darken($aflame, 25%) 6.25vmin, transparent 6.5vmin) 6.75vmin 16vmin / 14vmin 4vmin no-repeat,
+
+    ;
+  border-radius: 0.5rem;
+}
+
+
+
+.sparkle:before {
+  bottom: 0vmin;
+  z-index: 999;
+  width: 1vmin;
+  height: 40vmin;
+  background:
+    linear-gradient(to bottom,
+    $aflame 0.3rem,
+    darken($ash, 25%) 0.4rem),
+  ;
+  border-radius: 0.5rem;
+  animation: burndown 20s infinite;
+}
+
+
+
+@keyframes burndown {
+  0%   {
+    height: 40vmin;
+  }
+  100% {
+    height: 10vmin; 
+  }
+}
+
+@keyframes sparkdown {
+  0%   {
+    top: -12vmin;
+  }
+  100% {
+    top: 19vmin;
+  }
+}
+
+@keyframes spark {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+  
+}

@@ -1,0 +1,38 @@
+body {
+  font-family: poppins, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #bbb;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  margin-bottom: 1vmin;
+  a, a:visited {
+    color: #eee;
+    text-decoration: none;
+  }
+  a:hover, a:active { 
+    color: #fff; 
+    text-decoration: underline;
+  } 
+}
+
+main.grid { 
+  max-width: 100vw;
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  grid-column-gap: 2vmin;
+  grid-row-gap: 2vmin; 
+  @media (max-width: 1100px) {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+}
+
+iframe {
+  height: 55vmin;
+}
+
+iframe:nth-child(9n-2) {
+  grid-column: 1 / -1
+}

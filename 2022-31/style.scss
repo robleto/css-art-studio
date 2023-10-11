@@ -1,0 +1,410 @@
+$bg-brewery: #FFDDAD;
+$bg-frame: #333333;
+
+$white: #FFFFFF;
+$red: #E95879;
+$green: #7CFC4B;
+$yellow: #FEC804;
+
+$gray1: #B2B4B3;
+$gray2: #929292;
+$gray3: #71716F;
+$gray4: #606060;
+
+$yellow1: #FCC32C;
+$yellow2: #F6B60E;
+
+$brown1: #AF7F56;
+$brown2: #825E41;
+
+$ruby: #B2A28D;
+$offwhite: #DFC09D;
+$orange: #7C5E3A;
+$fucia: #B8956F;
+$gold: #605747;
+
+$wood1: 90deg, $offwhite 0vmin, $offwhite .5vmin, $orange 1vmin, darken($orange, 10%) 8vmin, $offwhite 8vmin, $offwhite 8.5vmin, $ruby 9vmin, darken($ruby, 10%) 17vmin, $offwhite 17vmin, $offwhite 17.5vmin, $fucia 18vmin, darken($fucia, 10%) 26vmin, $offwhite 17vmin, $offwhite 17.5vmin;
+
+$wood2: 90deg, darken($ruby, 5%)  1vmin, darken($ruby, 10%) 4vmin, $offwhite 4vmin, $offwhite 4.5vmin, $fucia 5vmin, darken($fucia, 10%) 13vmin, $offwhite 13vmin, $offwhite 13.5vmin, $fucia 14vmin, darken($fucia, 10%) 22vmin, $offwhite 22vmin, $offwhite 22.5vmin, darken($ruby, 5%)23vmin, darken($ruby, 10%) 27vmin;
+
+$wood3: 90deg, $offwhite 0vmin, $offwhite .5vmin, $fucia 1vmin, darken($fucia, 10%) 8vmin, $offwhite 8vmin, $offwhite 8.5vmin, $ruby 9vmin, darken($ruby, 10%) 17vmin, $offwhite 17vmin, $offwhite 17.5vmin, $gold 18vmin, darken($gold, 10%) 26vmin, $offwhite 17vmin, $offwhite 17.5vmin;
+
+$wood4: 90deg, darken($fucia, 5%)  1vmin, darken($fucia, 10%) 4vmin, $offwhite 4vmin, $offwhite 4.5vmin, $fucia 5vmin, darken($fucia, 10%) 13vmin, $offwhite 13vmin, $offwhite 13.5vmin, $ruby 14vmin, darken($ruby, 10%) 22vmin, $offwhite 22vmin, $offwhite 22.5vmin, darken($fucia, 5%)23vmin, darken($fucia, 10%) 27vmin;
+
+
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vmin;
+  position: relative;
+  
+  background:
+
+      /* wood wall  */
+      repeating-linear-gradient($wood2)  0vmin 100vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood1)  0vmin 96vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood4)  0vmin 92vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood3)  0vmin 88vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood2)  0vmin 84vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood1)  0vmin 80vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood4)  0vmin 76vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood3)  0vmin 72vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood2)  0vmin 68vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood1)  0vmin 64vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood4)  0vmin 60vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood3)  0vmin 56vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood2)  0vmin 52vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood1)  0vmin 48vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood4)  0vmin 44vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood3)  0vmin 40vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood2)  0vmin 36vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood1)  0vmin 32vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood4)  0vmin 28vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood3)  0vmin 24vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood2)  0vmin 20vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood1)  0vmin 16vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood4)  0vmin 12vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood3)  0vmin 8vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood2)  0vmin 4vmin / 100vmin 3.5vmin repeat-x,
+      linear-gradient($wood1)  0vmin 0vmin / 100vmin 3.5vmin repeat-x,
+      linear-gradient($offwhite 0%, $offwhite 100%);
+
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+div.brew {
+    width: 100vmin;
+    height: 80vmin;
+    top: 10vmin;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.75) 0px 3px 8px;
+    border: solid 2.5vmin $gold;
+    z-index: -99;
+    position: relative;
+    background:
+
+
+    /*** LIGHTS ***/
+    conic-gradient(from 115deg, darken($gray2, 5%) 65deg, $gray2 130deg, transparent 0) 11.75vmin 10vmin / 10vmin 10vmin no-repeat,
+    linear-gradient(0deg, $gray1 0vmin, darken($gray1, 35%) 20vmin, transparent 20vmin) 16vmin 0vmin / 1.5vmin 16vmin no-repeat,
+    radial-gradient(circle at top, lighten($yellow1, 20%) 3.5vmin, transparent 6vmin)  10.75vmin 20vmin / 12vmin 8vmin no-repeat,  
+
+
+    conic-gradient(from 115deg, darken($gray2, 5%) 65deg, $gray2 130deg, transparent 0) 32.75vmin 10vmin / 10vmin 10vmin no-repeat,
+    linear-gradient(0deg, $gray1 0vmin, darken($gray1, 35%) 20vmin, transparent 20vmin) 37vmin 0vmin / 1.5vmin 16vmin no-repeat,
+    radial-gradient(circle at top, lighten($yellow1, 20%) 3.5vmin, transparent 6vmin)  31.75vmin 20vmin / 12vmin 8vmin no-repeat,  
+
+    conic-gradient(from 115deg, darken($gray2, 5%) 65deg, $gray2 130deg, transparent 0) 53.75vmin 10vmin / 10vmin 10vmin no-repeat,
+    linear-gradient(0deg, $gray1 0vmin, darken($gray1, 35%) 20vmin, transparent 20vmin) 58vmin 0vmin / 1.5vmin 16vmin no-repeat,
+    radial-gradient(circle at top, lighten($yellow1, 20%) 3.5vmin, transparent 6vmin)  52.75vmin 20vmin / 12vmin 8vmin no-repeat,  
+
+    conic-gradient(from 115deg, darken($gray2, 5%) 65deg, $gray2 130deg, transparent 0) 76vmin 10vmin / 10vmin 10vmin no-repeat,
+    linear-gradient(0deg, $gray1 0vmin, darken($gray1, 35%) 20vmin, transparent 20vmin) 80vmin 0vmin / 1.5vmin 16vmin no-repeat,
+    radial-gradient(circle at top, lighten($yellow1, 20%) 3.5vmin, transparent 6vmin)  75vmin 20vmin / 12vmin 8vmin no-repeat,  
+
+
+    /*** PIPES ***/
+
+    linear-gradient($gray3 1.5vmin, transparent 1.5vmin)  0vmin 28vmin / 100vmin 3vmin no-repeat,
+    linear-gradient($gray3 4vmin, transparent 4vmin)  36vmin 28vmin / 4vmin 8vmin no-repeat,
+
+
+    linear-gradient($gray3 .5vmin, $yellow2 .5vmin, $yellow2 1.5vmin, $gray3 1.5vmin, $gray3 2vmin, transparent 2vmin)  0vmin 21vmin / 38vmin 3vmin no-repeat,
+    linear-gradient(90deg, $gray3 .5vmin, $yellow2 .5vmin, $yellow2 1.5vmin, $gray3 1.5vmin, $gray3 2vmin, transparent 2vmin)  37vmin 21vmin / 5vmin 38vmin no-repeat,
+
+    linear-gradient(darken($gray1, 20%) 2vmin, transparent 2vmin)  0vmin 5vmin / 30vmin 3vmin no-repeat,
+    linear-gradient(darken($gray1, 20%) 2vmin, transparent 2vmin)  70vmin 5vmin / 30vmin 3vmin no-repeat,
+    linear-gradient(darken($gray1, 5%) 2vmin, transparent 2vmin)  30vmin 10vmin / 40vmin 3vmin no-repeat,
+    linear-gradient(0deg, $gray1 0vmin, darken($gray1, 35%) 10vmin, transparent 10vmin)  28vmin 5vmin / 2vmin 7vmin no-repeat,
+    linear-gradient(0deg, $gray1 0vmin, darken($gray1, 35%) 10vmin, transparent 10vmin)  68vmin 5vmin / 2vmin 7vmin no-repeat,
+
+
+    /*** BELT ***/
+
+    /* belt wheels */
+    radial-gradient(circle, $gray3 1vmin, $gray1 1vmin, $gray1 3vmin, $gray3 3vmin, $gray3 3.5vmin, transparent 3.5vmin)  -6vmin 56.5vmin / 8vmin 8vmin no-repeat, 
+    radial-gradient(circle, $gray3 1vmin, $gray1 1vmin, $gray1 3vmin, $gray3 3vmin, $gray3 3.5vmin, transparent 3.5vmin)  4vmin 56.5vmin / 8vmin 8vmin no-repeat, 
+    radial-gradient(circle, $gray3 1vmin, $gray1 1vmin, $gray1 3vmin, $gray3 3vmin, $gray3 3.5vmin, transparent 3.5vmin)  14vmin 56.5vmin / 8vmin 8vmin no-repeat, 
+    radial-gradient(circle, $gray3 1vmin, $gray1 1vmin, $gray1 3vmin, $gray3 3vmin, $gray3 3.5vmin, transparent 3.5vmin)  24vmin 56.5vmin / 8vmin 8vmin no-repeat, 
+    radial-gradient(circle, $gray3 1vmin, $gray1 1vmin, $gray1 3vmin, $gray3 3vmin, $gray3 3.5vmin, transparent 3.5vmin)  34vmin 56.5vmin / 8vmin 8vmin no-repeat, 
+    radial-gradient(circle, $gray3 1vmin, $gray1 1vmin, $gray1 3vmin, $gray3 3vmin, $gray3 3.5vmin, transparent 3.5vmin)  44vmin 56.5vmin / 8vmin 8vmin no-repeat, 
+    radial-gradient(circle, $gray3 1vmin, $gray1 1vmin, $gray1 3vmin, $gray3 3vmin, $gray3 3.5vmin, transparent 3.5vmin)  54vmin 56.5vmin / 8vmin 8vmin no-repeat, 
+    radial-gradient(circle, $gray3 1vmin, $gray1 1vmin, $gray1 3vmin, $gray3 3vmin, $gray3 3.5vmin, transparent 3.5vmin)  64vmin 56.5vmin / 8vmin 8vmin no-repeat, 
+    radial-gradient(circle, $gray3 1vmin, $gray1 1vmin, $gray1 3vmin, $gray3 3vmin, $gray3 3.5vmin, transparent 3.5vmin)  74vmin 56.5vmin / 8vmin 8vmin no-repeat, 
+    radial-gradient(circle, $gray3 1vmin, $gray1 1vmin, $gray1 3vmin, $gray3 3vmin, $gray3 3.5vmin, transparent 3.5vmin)  84vmin 56.5vmin / 8vmin 8vmin no-repeat,  
+    radial-gradient(circle, $gray3 1vmin, $gray1 1vmin, $gray1 3vmin, $gray3 3vmin, $gray3 3.5vmin, transparent 3.5vmin)  94vmin 56.5vmin / 8vmin 8vmin no-repeat,  
+    
+    /* belt */
+    linear-gradient($gray3 1vmin, $gray2 1vmin, $gray2 2vmin, $gray1 2vmin, $gray1 9vmin, $gray3 9vmin, $gray3 10vmin, transparent 10vmin)  0vmin 55vmin / 100vmin 12vmin no-repeat,
+
+    /* belt stands */
+    linear-gradient($gray3 1vmin, transparent 1vmin) 10vmin 65vmin / 5vmin 2vmin no-repeat,
+    linear-gradient($gray3 20vmin, transparent 20vmin) 11.75vmin 66vmin / 1.5vmin 16vmin no-repeat,
+
+    linear-gradient($gray3 1vmin, transparent 1vmin) 30vmin 65vmin / 5vmin 2vmin no-repeat,
+    linear-gradient($gray3 20vmin, transparent 20vmin) 31.75vmin 66vmin / 1.5vmin 16vmin no-repeat,
+
+    linear-gradient($gray3 1vmin, transparent 1vmin) 50vmin 65vmin / 5vmin 2vmin no-repeat,
+    linear-gradient($gray3 20vmin, transparent 20vmin) 51.75vmin 66vmin / 1.5vmin 16vmin no-repeat,
+
+    linear-gradient($gray3 1vmin, transparent 1vmin) 70vmin 65vmin / 5vmin 2vmin no-repeat,
+    linear-gradient($gray3 20vmin, transparent 20vmin) 71.75vmin 66vmin / 1.5vmin 16vmin no-repeat,
+
+    linear-gradient($gray3 1vmin, transparent 1vmin) 90vmin 65vmin / 5vmin 2vmin no-repeat,
+    linear-gradient($gray3 20vmin, transparent 20vmin) 91.75vmin 66vmin / 1.5vmin 16vmin no-repeat,
+    
+    repeating-linear-gradient(90deg, transparent 1vmin, transparent 15vmin, rgba(30, 30, 30, 0.2) 15vmin, rgba(30, 30, 30, 0.3) 17vmin)  0vmin 0vmin / 100vmin 3.5vmin repeat-y,
+    linear-gradient(180deg, lighten($yellow1, 30%) 15%, lighten($gray3, 15%) 100%);
+    ;
+}
+
+
+
+
+$bo1: 0vmin;
+$bo2: 10vmin;
+$bo3: 20vmin;
+$bo4: 30vmin;
+$bo5: 65vmin;
+$bo6: 75vmin;
+$bo7: 85vmin;
+$bo8: 95vmin;
+
+@keyframes bottling-line {
+  0% { transform: translateX(0vmin); }
+  100% { transform: translateX(10vmin); }
+}
+
+div.brew:before {
+    width: 100vmin;
+    height: 100vmin;
+    margin-left: -5vmin;
+    display: flex;
+    z-index: 99;
+    position: absolute;
+    animation: bottling-line 5s linear 0s infinite both running;
+    background:
+
+
+
+    /*** BO1 ***/
+    /* bottletop */
+    radial-gradient(ellipse, $brown2 1.25vmin, transparent 1.25vmin) calc(#{$bo1} + .75vmin) 39.5vmin / 2.5vmin .5vmin no-repeat,
+    conic-gradient(from 370deg, $brown2 170deg, transparent 0) calc(#{$bo1} - .5vmin) 39.75vmin / 3vmin .5vmin no-repeat,
+    conic-gradient(from 180deg, $brown2 170deg, transparent 0) calc(#{$bo1} + 1.5vmin) 39.75vmin / 3vmin .5vmin no-repeat,
+    /* bottle */
+    conic-gradient(from 370deg, $brown1 170deg, transparent 0) calc(#{$bo1} - 1.25vmin) 39.75vmin / 4vmin 7vmin no-repeat,
+    conic-gradient(from 180deg, $brown1 170deg, transparent 0) calc(#{$bo1} + 1.25vmin) 39.75vmin / 4vmin 7vmin no-repeat,
+    radial-gradient(circle, $brown1 2vmin, transparent 2vmin) $bo1 46vmin / 4vmin 4vmin no-repeat,
+    linear-gradient($brown1 10vmin, transparent 10vmin) $bo1 48vmin / 4vmin 4vmin no-repeat,
+    radial-gradient(circle, $brown1 2.5vmin, transparent 2.5vmin) $bo1 51vmin / 4vmin 4vmin no-repeat,
+
+  
+    /*** BO2 ***/
+    /* bottletop */
+    radial-gradient(ellipse, $brown2 1.25vmin, transparent 1.25vmin) calc(#{$bo2} + .75vmin) 39.5vmin / 2.5vmin .5vmin no-repeat,
+    conic-gradient(from 370deg, $brown2 170deg, transparent 0) calc(#{$bo2} - .5vmin) 39.75vmin / 3vmin .5vmin no-repeat,
+    conic-gradient(from 180deg, $brown2 170deg, transparent 0) calc(#{$bo2} + 1.5vmin) 39.75vmin / 3vmin .5vmin no-repeat,
+    /* bottle */
+    conic-gradient(from 370deg, $brown1 170deg, transparent 0) calc(#{$bo2} - 1.25vmin) 39.75vmin / 4vmin 7vmin no-repeat,
+    conic-gradient(from 180deg, $brown1 170deg, transparent 0) calc(#{$bo2} + 1.25vmin) 39.75vmin / 4vmin 7vmin no-repeat,
+    radial-gradient(circle, $brown1 2vmin, transparent 2vmin) $bo2 46vmin / 4vmin 4vmin no-repeat,
+    linear-gradient($brown1 10vmin, transparent 10vmin) $bo2 48vmin / 4vmin 4vmin no-repeat,
+    radial-gradient(circle, $brown1 2.5vmin, transparent 2.5vmin) $bo2 51vmin / 4vmin 4vmin no-repeat,
+    
+
+    /*** BO3 ***/
+    /* bottletop */
+    radial-gradient(ellipse, $brown2 1.25vmin, transparent 1.25vmin) calc(#{$bo3} + .75vmin) 39.5vmin / 2.5vmin .5vmin no-repeat,
+    conic-gradient(from 370deg, $brown2 170deg, transparent 0) calc(#{$bo3} - .5vmin) 39.75vmin / 3vmin .5vmin no-repeat,
+    conic-gradient(from 180deg, $brown2 170deg, transparent 0) calc(#{$bo3} + 1.5vmin) 39.75vmin / 3vmin .5vmin no-repeat,
+    /* bottle */
+    conic-gradient(from 370deg, $brown1 170deg, transparent 0) calc(#{$bo3} - 1.25vmin) 39.75vmin / 4vmin 7vmin no-repeat,
+    conic-gradient(from 180deg, $brown1 170deg, transparent 0) calc(#{$bo3} + 1.25vmin) 39.75vmin / 4vmin 7vmin no-repeat,
+    radial-gradient(circle, $brown1 2vmin, transparent 2vmin) $bo3 46vmin / 4vmin 4vmin no-repeat,
+    linear-gradient($brown1 10vmin, transparent 10vmin) $bo3 48vmin / 4vmin 4vmin no-repeat,
+    radial-gradient(circle, $brown1 2.5vmin, transparent 2.5vmin) $bo3 51vmin / 4vmin 4vmin no-repeat,
+
+
+    /*** BO4 ***/
+    /* bottletop */
+    radial-gradient(ellipse, $brown2 1.25vmin, transparent 1.25vmin) calc(#{$bo4} + .75vmin) 39.5vmin / 2.5vmin .5vmin no-repeat,
+    conic-gradient(from 370deg, $brown2 170deg, transparent 0) calc(#{$bo4} - .5vmin) 39.75vmin / 3vmin .5vmin no-repeat,
+    conic-gradient(from 180deg, $brown2 170deg, transparent 0) calc(#{$bo4} + 1.5vmin) 39.75vmin / 3vmin .5vmin no-repeat,
+    /* bottle */
+    conic-gradient(from 370deg, $brown1 170deg, transparent 0) calc(#{$bo4} - 1.25vmin) 39.75vmin / 4vmin 7vmin no-repeat,
+    conic-gradient(from 180deg, $brown1 170deg, transparent 0) calc(#{$bo4} + 1.25vmin) 39.75vmin / 4vmin 7vmin no-repeat,
+    radial-gradient(circle, $brown1 2vmin, transparent 2vmin) $bo4 46vmin / 4vmin 4vmin no-repeat,
+    linear-gradient($brown1 10vmin, transparent 10vmin) $bo4 48vmin / 4vmin 4vmin no-repeat,
+    radial-gradient(circle, $brown1 2.5vmin, transparent 2.5vmin) $bo4 51vmin / 4vmin 4vmin no-repeat,
+
+
+
+ 
+    /*** BO5 ***/
+    /* bottletop */
+    radial-gradient(ellipse, $brown2 1.25vmin, transparent 1.25vmin) calc(#{$bo5} + .75vmin) 39.5vmin / 2.5vmin .5vmin no-repeat,
+    conic-gradient(from 370deg, $brown2 170deg, transparent 0) calc(#{$bo5} - .5vmin) 39.75vmin / 3vmin .5vmin no-repeat,
+    conic-gradient(from 180deg, $brown2 170deg, transparent 0) calc(#{$bo5} + 1.5vmin) 39.75vmin / 3vmin .5vmin no-repeat,
+    /* bottle */
+    conic-gradient(from 180deg, $yellow2 170deg, transparent 0) calc(#{$bo5} + 1.75vmin) 41vmin / 2.5vmin 6vmin no-repeat,
+    conic-gradient(from 370deg, $yellow2 170deg, transparent 0) calc(#{$bo5} - .25vmin) 41vmin / 2.5vmin 6vmin no-repeat,
+    conic-gradient(from 370deg, $brown1 170deg, transparent 0) calc(#{$bo5} - 1.25vmin) 39.75vmin / 4vmin 7vmin no-repeat,
+    conic-gradient(from 180deg, $brown1 170deg, transparent 0) calc(#{$bo5} + 1.25vmin) 39.75vmin / 4vmin 7vmin no-repeat,
+    conic-gradient(from 120deg, $brown1 120deg, transparent 0) calc(#{$bo5} + .5vmin) 48.75vmin / 3vmin 1.5vmin no-repeat,
+    linear-gradient($brown1 10vmin, transparent 10vmin) calc(#{$bo5} + .25vmin) 48.5vmin / 3.5vmin .25vmin no-repeat,
+    linear-gradient($brown1 10vmin, transparent 10vmin) calc(#{$bo5} + .25vmin) 51vmin / 3.5vmin .25vmin no-repeat,
+    linear-gradient($brown2 10vmin, transparent 10vmin) $bo5 48vmin / 4vmin 4vmin no-repeat,
+    radial-gradient(circle, $yellow2 1.75vmin, transparent 1.75vmin) calc(#{$bo5} + .25vmin) 46.25vmin / 3.5vmin 3.5vmin no-repeat,
+    radial-gradient(circle, $brown1 2vmin, transparent 2vmin) $bo5 46vmin / 4vmin 4vmin no-repeat,
+    radial-gradient(circle, $yellow2 2.25vmin, transparent 2.25vmin) calc(#{$bo5} + .25vmin) 50.75vmin / 3.5vmin 3.75vmin no-repeat,
+    radial-gradient(circle, $brown1 2.5vmin, transparent 2.5vmin) $bo5 51vmin / 4vmin 4vmin no-repeat,
+
+
+    /*** BO6 ***/
+    /* bottletop */
+    radial-gradient(ellipse, $brown2 1.25vmin, transparent 1.25vmin) calc(#{$bo6} + .75vmin) 39.5vmin / 2.5vmin .5vmin no-repeat,
+    conic-gradient(from 370deg, $brown2 170deg, transparent 0) calc(#{$bo6} - .5vmin) 39.75vmin / 3vmin .5vmin no-repeat,
+    conic-gradient(from 180deg, $brown2 170deg, transparent 0) calc(#{$bo6} + 1.5vmin) 39.75vmin / 3vmin .5vmin no-repeat,
+    /* bottle */
+    conic-gradient(from 180deg, $yellow2 170deg, transparent 0) calc(#{$bo6} + 1.75vmin) 41vmin / 2.5vmin 6vmin no-repeat,
+    conic-gradient(from 370deg, $yellow2 170deg, transparent 0) calc(#{$bo6} - .25vmin) 41vmin / 2.5vmin 6vmin no-repeat,
+    conic-gradient(from 370deg, $brown1 170deg, transparent 0) calc(#{$bo6} - 1.25vmin) 39.75vmin / 4vmin 7vmin no-repeat,
+    conic-gradient(from 180deg, $brown1 170deg, transparent 0) calc(#{$bo6} + 1.25vmin) 39.75vmin / 4vmin 7vmin no-repeat,
+    conic-gradient(from 120deg, $brown1 120deg, transparent 0) calc(#{$bo6} + .5vmin) 48.75vmin / 3vmin 1.5vmin no-repeat,
+    linear-gradient($brown1 10vmin, transparent 10vmin) calc(#{$bo6} + .25vmin) 48.5vmin / 3.5vmin .25vmin no-repeat,
+    linear-gradient($brown1 10vmin, transparent 10vmin) calc(#{$bo6} + .25vmin) 51vmin / 3.5vmin .25vmin no-repeat,
+    linear-gradient($brown2 10vmin, transparent 10vmin) $bo6 48vmin / 4vmin 4vmin no-repeat,
+    radial-gradient(circle, $yellow2 1.75vmin, transparent 1.75vmin) calc(#{$bo6} + .25vmin) 46.25vmin / 3.5vmin 3.5vmin no-repeat,
+    radial-gradient(circle, $brown1 2vmin, transparent 2vmin) $bo6 46vmin / 4vmin 4vmin no-repeat,
+    radial-gradient(circle, $yellow2 2.25vmin, transparent 2.25vmin) calc(#{$bo6} + .25vmin) 50.75vmin / 3.5vmin 3.75vmin no-repeat,
+    radial-gradient(circle, $brown1 2.5vmin, transparent 2.5vmin) $bo6 51vmin / 4vmin 4vmin no-repeat,
+
+
+    /*** BO7 ***/
+    /* bottletop */
+    radial-gradient(ellipse, $brown2 1.25vmin, transparent 1.25vmin) calc(#{$bo7} + .75vmin) 39.5vmin / 2.5vmin .5vmin no-repeat,
+    conic-gradient(from 370deg, $brown2 170deg, transparent 0) calc(#{$bo7} - .5vmin) 39.75vmin / 3vmin .5vmin no-repeat,
+    conic-gradient(from 180deg, $brown2 170deg, transparent 0) calc(#{$bo7} + 1.5vmin) 39.75vmin / 3vmin .5vmin no-repeat,
+    /* bottle */
+    conic-gradient(from 180deg, $yellow2 170deg, transparent 0) calc(#{$bo7} + 1.75vmin) 41vmin / 2.5vmin 6vmin no-repeat,
+    conic-gradient(from 370deg, $yellow2 170deg, transparent 0) calc(#{$bo7} - .25vmin) 41vmin / 2.5vmin 6vmin no-repeat,
+    conic-gradient(from 370deg, $brown1 170deg, transparent 0) calc(#{$bo7} - 1.25vmin) 39.75vmin / 4vmin 7vmin no-repeat,
+    conic-gradient(from 180deg, $brown1 170deg, transparent 0) calc(#{$bo7} + 1.25vmin) 39.75vmin / 4vmin 7vmin no-repeat,
+    conic-gradient(from 120deg, $brown1 120deg, transparent 0) calc(#{$bo7} + .5vmin) 48.75vmin / 3vmin 1.5vmin no-repeat,
+    linear-gradient($brown1 10vmin, transparent 10vmin) calc(#{$bo7} + .25vmin) 48.5vmin / 3.5vmin .25vmin no-repeat,
+    linear-gradient($brown1 10vmin, transparent 10vmin) calc(#{$bo7} + .25vmin) 51vmin / 3.5vmin .25vmin no-repeat,
+    linear-gradient($brown2 10vmin, transparent 10vmin) $bo7 48vmin / 4vmin 4vmin no-repeat,
+    radial-gradient(circle, $yellow2 1.75vmin, transparent 1.75vmin) calc(#{$bo7} + .25vmin) 46.25vmin / 3.5vmin 3.5vmin no-repeat,
+    radial-gradient(circle, $brown1 2vmin, transparent 2vmin) $bo7 46vmin / 4vmin 4vmin no-repeat,
+    radial-gradient(circle, $yellow2 2.25vmin, transparent 2.25vmin) calc(#{$bo7} + .25vmin) 50.75vmin / 3.5vmin 3.75vmin no-repeat,
+    radial-gradient(circle, $brown1 2.5vmin, transparent 2.5vmin) $bo7 51vmin / 4vmin 4vmin no-repeat,
+
+    /*** BO8 ***/
+    /* bottletop */
+    radial-gradient(ellipse, $brown2 1.25vmin, transparent 1.25vmin) calc(#{$bo8} + .75vmin) 39.5vmin / 2.5vmin .5vmin no-repeat,
+    conic-gradient(from 370deg, $brown2 170deg, transparent 0) calc(#{$bo8} - .5vmin) 39.75vmin / 3vmin .5vmin no-repeat,
+    conic-gradient(from 180deg, $brown2 170deg, transparent 0) calc(#{$bo8} + 1.5vmin) 39.75vmin / 3vmin .5vmin no-repeat,
+    /* bottle */
+    conic-gradient(from 180deg, $yellow2 170deg, transparent 0) calc(#{$bo8} + 1.75vmin) 41vmin / 2.5vmin 6vmin no-repeat,
+    conic-gradient(from 370deg, $yellow2 170deg, transparent 0) calc(#{$bo8} - .25vmin) 41vmin / 2.5vmin 6vmin no-repeat,
+    conic-gradient(from 370deg, $brown1 170deg, transparent 0) calc(#{$bo8} - 1.25vmin) 39.75vmin / 4vmin 7vmin no-repeat,
+    conic-gradient(from 180deg, $brown1 170deg, transparent 0) calc(#{$bo8} + 1.25vmin) 39.75vmin / 4vmin 7vmin no-repeat,
+    conic-gradient(from 120deg, $brown1 120deg, transparent 0) calc(#{$bo8} + .5vmin) 48.75vmin / 3vmin 1.5vmin no-repeat,
+    linear-gradient($brown1 10vmin, transparent 10vmin) calc(#{$bo8} + .25vmin) 48.5vmin / 3.5vmin .25vmin no-repeat,
+    linear-gradient($brown1 10vmin, transparent 10vmin) calc(#{$bo8} + .25vmin) 51vmin / 3.5vmin .25vmin no-repeat,
+    linear-gradient($brown2 10vmin, transparent 10vmin) $bo8 48vmin / 4vmin 4vmin no-repeat,
+    radial-gradient(circle, $yellow2 1.75vmin, transparent 1.75vmin) calc(#{$bo8} + .25vmin) 46.25vmin / 3.5vmin 3.5vmin no-repeat,
+    radial-gradient(circle, $brown1 2vmin, transparent 2vmin) $bo8 46vmin / 4vmin 4vmin no-repeat,
+    radial-gradient(circle, $yellow2 2.25vmin, transparent 2.25vmin) calc(#{$bo8} + .25vmin) 50.75vmin / 3.5vmin 3.75vmin no-repeat,
+    radial-gradient(circle, $brown1 2.5vmin, transparent 2.5vmin) $bo8 51vmin / 4vmin 4vmin no-repeat
+    ;
+  
+  }
+
+div.brew:after {
+    width: 100vmin;
+    height: 80vmin;
+    overflow: hidden;
+    position: absolute;
+    margin-left: -5vmin;
+    display: flex;
+    z-index: 999;
+    background:
+
+    /*** MACHINE ***/
+
+    linear-gradient(-55deg, transparent 0vmin, transparent 1.5vmin, $gold 1.5vmin, $gold 2vmin, transparent 2vmin) 26vmin 40vmin / 5vmin 5vmin no-repeat,
+    linear-gradient(55deg, transparent 0vmin, transparent 1.5vmin, $gold 1.5vmin, $gold 2vmin, transparent 2vmin) 30.15vmin 41.75vmin / 5vmin 2vmin no-repeat,
+    linear-gradient(-55deg, transparent 0vmin, transparent 1.5vmin, $gold 1.5vmin, $gold 2vmin, transparent 2vmin) 29.5vmin 33.75vmin / 5vmin 10vmin no-repeat,
+    linear-gradient(55deg, transparent 0vmin, transparent 1.5vmin, $gold 1.5vmin, $gold 2vmin, transparent 2vmin) 33.25vmin 40.65vmin / 5vmin 1.5vmin no-repeat,
+    linear-gradient(-55deg, transparent 0vmin, transparent 1.5vmin, $gold 1.5vmin, $gold 2vmin, transparent 2vmin) 32.5vmin 32vmin / 5vmin 10vmin no-repeat,
+
+    linear-gradient($white 25vmin, $white  25vmin) 28.5vmin 37.5vmin / 12.5vmin 7.5vmin no-repeat,
+    linear-gradient($gray1 25vmin, $gray1  25vmin) 28vmin 37vmin / 13vmin 8vmin no-repeat,
+    linear-gradient($gray4 25vmin, $gray4  25vmin) 27vmin 36vmin / 15vmin 10vmin no-repeat,
+
+    /* dials */
+    conic-gradient(from 45deg, $gray4 25deg, transparent 0) 47vmin 37.5vmin / 3vmin 3vmin no-repeat,
+    conic-gradient(from 125deg, $white 105deg, transparent 0) 48.5vmin 37vmin / 3vmin 3vmin no-repeat,
+    radial-gradient(circle, $gray4 0vmin, $gray4 .5vmin, $white .5vmin, $white 1.5vmin, $green 1.5vmin, $green 2vmin, $white 2vmin, $white 2.75vmin, $gray2 2.75vmin, $gray2 3vmin, 
+    transparent 3vmin)  47vmin 35vmin / 6vmin 6vmin no-repeat, 
+
+    conic-gradient(from 215deg, $gray4 25deg, transparent 0) 58vmin 35.25vmin / 3vmin 3vmin no-repeat,
+    conic-gradient(from 125deg, $white 105deg, transparent 0) 56.5vmin 37vmin / 3vmin 3vmin no-repeat,
+    radial-gradient(circle, $gray4 0vmin, $gray4 .5vmin, $white .5vmin, $white 1.5vmin, $yellow1 1.5vmin, $yellow1 2vmin, $white 2vmin, $white 2.75vmin, $gray2 2.75vmin, $gray2 3vmin, transparent 3vmin)  55vmin 35vmin / 6vmin 6vmin no-repeat, 
+    
+
+    conic-gradient(from 285deg, $gray4 25deg, transparent 0) 50vmin 45.25vmin / 3vmin 3vmin no-repeat,
+    conic-gradient(from 125deg, $white 105deg, transparent 0) 48.5vmin 45vmin / 3vmin 3vmin no-repeat,
+    radial-gradient(circle, $gray4 0vmin, $gray4 .5vmin, $white .5vmin, $white 1.5vmin, $red 1.5vmin, $red 2vmin, $white 2vmin, $white 2.75vmin, $gray2 2.75vmin, $gray2 3vmin, transparent 3vmin)  47vmin 43vmin / 6vmin 6vmin no-repeat, 
+    
+    
+    conic-gradient(from 55deg, $gray4 25deg, transparent 0) 54.75vmin 45.25vmin / 3vmin 3vmin no-repeat,
+    conic-gradient(from 125deg, $white 105deg, transparent 0) 56.5vmin 45vmin / 3vmin 3vmin no-repeat,
+    radial-gradient(circle, $gray4 0vmin, $gray4 .5vmin, $white .5vmin, $white 1.5vmin, $green 1.5vmin, $green 2vmin, $white 2vmin, $white 2.75vmin, $gray2 2.75vmin, $gray2 3vmin, transparent 3vmin)  55vmin 43vmin / 6vmin 6vmin no-repeat, 
+
+    /* top and bottom*/
+    linear-gradient($gray3 12vmin, $gray3  12vmin) 30vmin 31vmin / 20vmin 2vmin no-repeat,
+    linear-gradient($gray3 12vmin, $gray3  12vmin) 25vmin 72vmin / 40vmin 8vmin no-repeat,
+
+    /*  right cylander */
+    radial-gradient(circle, $gray3 2vmin, transparent 2vmin)  55vmin 52.5vmin / 4vmin 4vmin no-repeat,  
+    linear-gradient($gray3 30vmin, $gray3 30vmin) 55vmin 55vmin / 4vmin 25vmin no-repeat,
+    linear-gradient(65deg, $gray2 2vmin, transparent 2vmin) 59vmin 49.5vmin / 10vmin 10vmin no-repeat,
+    linear-gradient($gray2 30vmin, $gray2 30vmin) 56vmin 58.75vmin / 5vmin 25vmin no-repeat,
+
+    /*  left cylander */
+    radial-gradient(circle, $gray3 2vmin, transparent 2vmin)  47vmin 52.5vmin / 4vmin 4vmin no-repeat, 
+    linear-gradient($gray3 30vmin, $gray3 30vmin) 47vmin 55vmin / 4vmin 25vmin no-repeat,
+    linear-gradient(65deg, $gray2 2vmin, transparent 2vmin) 51vmin 49.5vmin / 10vmin 10vmin no-repeat,
+    linear-gradient($gray2 30vmin, $gray2 30vmin) 48vmin 58.75vmin / 5vmin 25vmin no-repeat,
+
+    /* vents */
+    linear-gradient($gray4 12vmin, $gray4  12vmin) 29.5vmin 54vmin / 10vmin .5vmin no-repeat,
+    linear-gradient($gray4 12vmin, $gray4  12vmin) 29.5vmin 55.5vmin / 10vmin .5vmin no-repeat,
+    linear-gradient($gray4 12vmin, $gray4  12vmin) 29.5vmin 57vmin / 10vmin .5vmin no-repeat,
+    linear-gradient($gray4 12vmin, $gray4  12vmin) 29.5vmin 58.5vmin / 10vmin .5vmin no-repeat,
+
+    /*  console box */
+    linear-gradient($gray3 25vmin, $gray3  25vmin) 27vmin 50vmin / 15vmin 30vmin no-repeat,
+    linear-gradient(65deg, $gray2 3vmin, transparent 3vmin) 41.75vmin 47.5vmin / 10vmin 10vmin no-repeat,
+    linear-gradient($gray2 25vmin, $gray2  25vmin) 39.95vmin 57vmin / 5vmin 40vmin no-repeat,
+    linear-gradient(90deg, $gray1 38vmin, $gray3 38vmin) 25vmin 32.5vmin / 40vmin 69vmin no-repeat,
+
+    /*  sleeve */
+
+    linear-gradient(75deg, $gray2 15vmin, transparent 15vmin) 55vmin 32.5vmin / 40vmin 22.5vmin no-repeat,
+    linear-gradient(65deg, $gray1 20vmin, transparent 20vmin) 55vmin 32.5vmin / 40vmin 22.5vmin no-repeat,
+
+}

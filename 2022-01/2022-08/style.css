@@ -1,0 +1,139 @@
+/* Presets */
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --purple: #7B5693;
+  --dark-purple: #14071D;
+  --gray: #454545;
+  --pink: #E3C0C0;
+  --white: #FFFFFF;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  height: 100vh;
+  background: radial-gradient(67% 67% at 50% 35%, var(--purple) 0%, var(--dark-purple) 100%);
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+div.haunted {
+  background-color: var(--white);
+  margin-top: 10vh;
+  height: 210px;
+  width: 180px;
+  border-radius: 100% 100% 0 0;
+}
+
+div.haunted:after {
+  position: absolute;
+  width: 125px;
+  height: 20px;
+  bottom: -35px;
+  left: 0px;
+  content: ".";
+  font-family: Comic Sans MS;
+  font-size: 180px;
+  text-shadow: 15px -250px 0 var(--pink), 95px -250px 0 var(--pink), 30px -280px 0 var(--gray), 80px -280px 0 var(--gray), 53px -244px 0 var(--white), 53px -240px 0 var(--gray);
+  height: 60px;
+  width: 50px;
+  color: transparent;
+  background-color: var(--white);
+  border-radius: 100%;
+  -webkit-box-shadow: 30px 0 0 var(--white), 60px 0 0 var(--white), 90px 0 0 var(--white), 130px 0 0 var(--white);
+          box-shadow: 30px 0 0 var(--white), 60px 0 0 var(--white), 90px 0 0 var(--white), 130px 0 0 var(--white);
+}
+
+div.haunted:before {
+  width: 195px;
+  height: 60px;
+  position: absolute;
+  bottom: -130px;
+  left: 105px;
+  background-color: var(--dark-purple);
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+/* Animation */
+div.haunted {
+  -webkit-animation: float 3s ease-out infinite;
+          animation: float 3s ease-out infinite;
+}
+
+div.haunted:before {
+  -webkit-animation: shrink 3s ease-out infinite, floatUp 3s ease-out infinite;
+          animation: shrink 3s ease-out infinite, floatUp 3s ease-out infinite;
+}
+
+/* Float up and down */
+@-webkit-keyframes float {
+  50% {
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
+  }
+}
+@keyframes float {
+  50% {
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
+  }
+}
+
+/* Keep shadow from floating up */
+@-webkit-keyframes floatUp {
+  50% {
+    -webkit-transform: translate(-50%, -10px);
+            transform: translate(-50%, -10px);
+  }
+}
+@keyframes floatUp {
+  50% {
+    -webkit-transform: translate(-50%, -10px);
+            transform: translate(-50%, -10px);
+  }
+}
+
+/* Expand / contract shadow */
+@-webkit-keyframes shrink {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 90%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes shrink {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 90%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

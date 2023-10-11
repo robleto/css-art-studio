@@ -1,0 +1,71 @@
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vmin;
+  position: relative;
+  z-index: 1;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #000000), to(#000000));
+  background: linear-gradient(180deg, #000000 15%, #000000 100%);
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+div.grain {
+  width: 100vmin;
+  height: 100vmin;
+  margin: 0 auto;
+  position: relative;
+  -webkit-perspective-origin: bottom right;
+          perspective-origin: bottom right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.grain:before {
+  width: 100vmin;
+  height: 100vmin;
+  z-index: 99;
+  margin-top: -60vmin;
+  -webkit-transform: perspective(50px) rotateX(-15deg) rotateY(-40deg) rotateZ(-20deg);
+          transform: perspective(50px) rotateX(-15deg) rotateY(-40deg) rotateZ(-20deg);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.grain:after {
+  width: 100vmin;
+  height: 100vmin;
+  z-index: 89;
+  margin-top: -20vmin;
+  -webkit-transform: perspective(150px) rotateX(-15deg) rotateY(-30deg) rotateZ(-22deg);
+          transform: perspective(150px) rotateX(-15deg) rotateY(-30deg) rotateZ(-22deg);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#DDAD82), color-stop(30%, #9c602a), color-stop(90%, #4b2e15), to(transparent)) 0vmin 47vmin/300vmin 6vmin no-repeat, radial-gradient(ellipse, #D8D8D6 0vmin, #8d8d88 6.9vmin, transparent 7vmin) 25vmin 49vmin/15vmin 25vmin no-repeat, -webkit-gradient(linear, left top, left bottom, from(#DDAD82), color-stop(30%, #9c602a), color-stop(80%, #4b2e15), to(transparent)) 0vmin 70vmin/300vmin 6vmin no-repeat;
+  background: linear-gradient(#DDAD82 0%, #9c602a 30%, #4b2e15 90%, transparent 100%) 0vmin 47vmin/300vmin 6vmin no-repeat, radial-gradient(ellipse, #D8D8D6 0vmin, #8d8d88 6.9vmin, transparent 7vmin) 25vmin 49vmin/15vmin 25vmin no-repeat, linear-gradient(#DDAD82 0%, #9c602a 30%, #4b2e15 80%, transparent 100%) 0vmin 70vmin/300vmin 6vmin no-repeat;
+}
+/*# sourceMappingURL=style.css.map */

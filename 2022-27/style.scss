@@ -1,0 +1,66 @@
+$black: #000000;
+$rice: #D8D8D6;
+$wood: #DDAD82;
+
+
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vmin;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(180deg, $black 15%, $black 100%);
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+div.grain {
+    width: 100vmin;
+    height: 100vmin;
+    margin: 0 auto;
+    position: relative;
+    perspective-origin: bottom right;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+div.grain:before {
+    width: 100vmin;
+    height: 100vmin;
+    z-index: 99;
+    margin-top: -60vmin;
+    transform: perspective(50px) rotateX(-15deg) rotateY(-40deg) rotateZ(-20deg);
+    justify-content: center;
+    align-items: center;  
+}
+
+div.grain:after {
+    width: 100vmin;
+    height: 100vmin;
+    z-index: 89;
+    margin-top: -20vmin;
+    transform: perspective(150px) rotateX(-15deg) rotateY(-30deg) rotateZ(-22deg);
+    justify-content: center;
+    align-items: center;  
+    background: 
+
+    /* chopstick - top */ 
+    linear-gradient($wood 0%, darken($wood, 30%) 30%, darken($wood, 50%) 90%, transparent 100%) 0vmin 47vmin / 300vmin 6vmin no-repeat,
+  
+    /* grain of rice */ 
+    radial-gradient(ellipse, $rice 0vmin, darken($rice, 30%) 6.9vmin,  transparent 7vmin)  25vmin 49vmin / 15vmin 25vmin no-repeat, 
+      
+    /* chopstick - bottom */ 
+    linear-gradient($wood 0%, darken($wood, 30%) 30%, darken($wood, 50%) 80%, transparent 100%) 0vmin 70vmin / 300vmin 6vmin no-repeat,
+    ;
+}
+      

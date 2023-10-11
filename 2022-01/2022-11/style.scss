@@ -1,0 +1,129 @@
+$white: #FFFFFF;
+$black: #000000;
+$gray: #CCCCCC;
+
+$brown: #391816;
+$red: #712821;
+
+$flame1: #F8F4EA;
+$flame2: #B57336;
+  
+$green1: #B5DCAF;
+$green2: #BCD9B2;
+
+/*dimensions */
+$full: 100vh;
+
+/* Presets */
+
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, $green1 15%, $green2 100%)
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+div.burger {
+    width: 60vh;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30%;
+    background-color: #000000;
+    background:
+      
+    /* base */ linear-gradient( $black 100%, $black 100%) 0 0 / 100% 100% no-repeat;
+}
+
+
+
+div.burger:before {
+    width: 60vh;
+    height: 45vh;
+    margin-top: -10vh;
+    position: relative;
+    display: flex;
+    border: solid 10px $black;
+    justify-content: start;
+    align-items: start;
+    border-radius: 30%;
+    background:
+      
+      /* grill bars */
+      repeating-linear-gradient(0deg, transparent 0 20px, black 20px 35px),
+      repeating-linear-gradient(90deg, transparent 0 32%, black 32% 35%),
+      /* flame */
+      radial-gradient(ellipse, $flame1 0%, $flame2 60%) 0 0 / 100% 100% no-repeat;
+}
+
+
+$b1x: 14vh;
+$b1y: 10vh;
+
+$b2x: 36vh;
+$b2y: 22vh;
+
+$b3x: 36vh;
+$b3y: 1vh;
+
+$b4x: 52vh;
+$b4y: 15vh;
+
+
+div.burger:after {
+    width: 85vh;
+    height: 45vh;
+    display: flex;
+    overflow: visible;
+    justify-content: start;
+    align-items: start;
+    transform: rotateZ(-20deg);
+
+    background:
+      /* burger1 */
+      radial-gradient(ellipse, darken($brown, 40%) 0.5vh, darken($brown, 5%) 0.5vh, transparent 0.5vh) calc(#{$b1x} + 6.5vh) calc(#{$b1y} + 5vh) / 1.5vh 10vh no-repeat,
+      radial-gradient(ellipse, darken($brown, 40%) 0.5vh, darken($brown, 5%) 0.5vh, transparent 0.5vh) calc(#{$b1x} + 9.5vh) calc(#{$b1y} + 2.5vh) / 1.5vh 15vh no-repeat,
+      radial-gradient(ellipse, darken($brown, 40%) 0.5vh, darken($brown, 5%) 0.5vh, transparent 0.5vh) calc(#{$b1x} + 12.5vh) calc(#{$b1y} + 5vh) / 1.5vh 10vh no-repeat,
+      radial-gradient(circle, $red 0vh, darken($red, 20%) 7.5vh, transparent 7.5vh) #{$b1x} #{$b1y} / 20vh 20vh no-repeat,
+      radial-gradient(circle, $red 0vh, darken($red, 15%) 7.5vh, transparent 7.5vh) calc(#{$b1x} - .75vh) calc(#{$b1y} + .25vh) / 21vh 21vh no-repeat,
+      /* burger2 */
+      radial-gradient(ellipse, darken($brown, 40%) 0.5vh, darken($brown, 5%) 0.5vh, transparent 0.5vh) calc(#{$b2x} + 6.5vh) calc(#{$b2y} + 5vh) / 1.5vh 10vh no-repeat,
+      radial-gradient(ellipse, darken($brown, 40%) 0.5vh, darken($brown, 5%) 0.5vh, transparent 0.5vh) calc(#{$b2x} + 9.5vh) calc(#{$b2y} + 2.5vh) / 1.5vh 15vh no-repeat,
+      radial-gradient(ellipse, darken($brown, 40%) 0.5vh, darken($brown, 5%) 0.5vh, transparent 0.5vh) calc(#{$b2x} + 12.5vh) calc(#{$b2y} + 5vh) / 1.5vh 10vh no-repeat,
+      radial-gradient(circle, $red 0vh, darken($red, 20%) 7.5vh, transparent 7.5vh) #{$b2x} #{$b2y} / 20vh 20vh no-repeat,
+      radial-gradient(circle, $red 0vh, darken($red, 15%) 7.5vh, transparent 7.5vh) calc(#{$b2x} - .75vh) calc(#{$b2y} + .25vh) / 21vh 21vh no-repeat,
+      /* burger3 */
+      radial-gradient(ellipse, darken($brown, 40%) 0.5vh, darken($brown, 5%) 0.5vh, transparent 0.5vh) calc(#{$b3x} + 6.5vh) calc(#{$b3y} + 5vh) / 1.5vh 10vh no-repeat,
+      radial-gradient(ellipse, darken($brown, 40%) 0.5vh, darken($brown, 5%) 0.5vh, transparent 0.5vh) calc(#{$b3x} + 9.5vh) calc(#{$b3y} + 2.5vh) / 1.5vh 15vh no-repeat,
+      radial-gradient(ellipse, darken($brown, 40%) 0.5vh, darken($brown, 5%) 0.5vh, transparent 0.5vh) calc(#{$b3x} + 12.5vh) calc(#{$b3y} + 5vh) / 1.5vh 10vh no-repeat,
+      radial-gradient(circle, $red 0vh, darken($red, 20%) 7.5vh, transparent 7.5vh) #{$b3x} #{$b3y} / 20vh 20vh no-repeat,
+      radial-gradient(circle, $red 0vh, darken($red, 15%) 7.5vh, transparent 7.5vh) calc(#{$b3x} - .75vh) calc(#{$b3y} + .25vh) / 21vh 21vh no-repeat,
+      /* burger4 */
+      radial-gradient(ellipse, darken($brown, 40%) 0.5vh, darken($brown, 5%) 0.5vh, transparent 0.5vh) calc(#{$b4x} + 6.5vh) calc(#{$b4y} + 5vh) / 1.5vh 10vh no-repeat,
+      radial-gradient(ellipse, darken($brown, 40%) 0.5vh, darken($brown, 5%) 0.5vh, transparent 0.5vh) calc(#{$b4x} + 9.5vh) calc(#{$b4y} + 2.5vh) / 1.5vh 15vh no-repeat,
+      radial-gradient(ellipse, darken($brown, 40%) 0.5vh, darken($brown, 5%) 0.5vh, transparent 0.5vh) calc(#{$b4x} + 12.5vh) calc(#{$b4y} + 5vh) / 1.5vh 10vh no-repeat,
+      radial-gradient(circle, $red 0vh, darken($red, 20%) 7.5vh, transparent 7.5vh) #{$b4x} #{$b4y} / 20vh 20vh no-repeat,
+      radial-gradient(circle, $red 0vh, darken($red, 15%) 7.5vh, transparent 7.5vh) calc(#{$b4x} - .75vh) calc(#{$b4y} + .25vh) / 21vh 21vh no-repeat,
+
+      
+      radial-gradient(ellipse 35% 140% at 50% 50%, #D9D9D9 70%, #8F8F8F 100%) 36vh 5vh / 20vh 12vh no-repeat,
+      radial-gradient(ellipse, darken($red, 20%) 10vh, transparent 10vh) 66vh 7.5vh / 18vh 6vh no-repeat,
+      linear-gradient(#CCCCCC -19.15%, #909090 40%, transparent 40%) 54vh 9.5vh / 17vh 6vh no-repeat
+      ;
+      
+}

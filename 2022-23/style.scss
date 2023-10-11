@@ -1,0 +1,64 @@
+/* colors */
+$gray: #333333;
+$blue: #1EADD5;
+$red: #DC0000;
+$yellow: $blue;
+$yellow2: #F5E702;
+
+/* Presets */
+body {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background:
+    
+    repeating-conic-gradient(darken($red, 5%) 0 15deg, transparent 15deg 30deg),
+    radial-gradient(circle, 
+      darken($red, 5%)  0vh, darken($red, 5%)  0.75vh, transparent 0.75vh) calc(50% + 5vh) 25vh / 3vh 3vh repeat,
+    linear-gradient(darken($red, 10%) 0vh, darken($red, 0%) 100vh) 0vw 0vh / 100vw 100vh no-repeat;
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+div.pop {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.pop:before {
+    width: 80vh;
+    height: 50vh;
+    border-radius: 90%; 
+    content: 'CSS!';
+    font-family: 'Spicy Rice', cursive;
+    font-size: 45vh;
+    color: $gray;
+    box-shadow: 25px 10px 5px 5px $gray; 
+    transform: rotate(-5deg);
+    background: 
+      
+    radial-gradient(circle, 
+      darken($yellow,5%)  0vh, darken($yellow, 5%)  0.75vh, transparent 0.75vh) calc(50% + 5vh) 25vh / 3vh 3vh repeat,
+    linear-gradient(darken($yellow, 10%) 0vh, darken($yellow, 5%) 100vh) 0vw 0vh / 100vw 100vh no-repeat;
+}
+
+div.pop:after {
+    width: 80vh;
+    height: 50vh;
+    border-radius: 90%; 
+    content: 'CSS!';
+    font-family: 'Spicy Rice', cursive;
+    font-size: 45vh;
+    margin-top: -5vh;
+    margin-left: -5vh;
+    color: $yellow2;
+    transform: rotate(-5deg);
+}

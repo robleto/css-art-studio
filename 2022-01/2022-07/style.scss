@@ -1,0 +1,312 @@
+/* font */
+$font: Inter, serif;
+
+/* colors */
+$white: #FFFFFF;
+
+$lh: #6B5E51;
+$lh-shadow: #4B3F34; 
+$lh-window: #26211B; 
+
+$moon1: #D9D6C5;
+$moon2: #EBE6CB;
+
+$beach1: #735C46;
+$beach2: #88827D;
+
+$ocean1: #1C5BBA;
+$ocean2: #0C2954;
+
+/*dimensions */
+$full: 100vh;
+
+/* Presets */
+
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: 
+    /* land */
+    linear-gradient(180deg, $beach1 19.59%, $beach2 100%) 0% 90vh / 100vw 4vh no-repeat,
+  
+    /* ocean */ 
+    linear-gradient($ocean1 0%, $ocean2 100%) 0% 94vh / 100vw 6vh no-repeat,
+
+    radial-gradient(ellipse, $beach1 40vh, transparent 40vh) -50vw 50vh / 280vw 80vh no-repeat,
+    radial-gradient(ellipse, $beach1 40vh, transparent 40vh) -75vw 50vh / 280vw 80vh no-repeat,
+    radial-gradient(ellipse, $beach1 40vh, transparent 40vh) -100vw 50vh / 280vw 80vh no-repeat,
+    radial-gradient(ellipse, $beach1 40vh, transparent 40vh) -125vw 50vh / 280vw 80vh no-repeat, 
+
+  conic-gradient(from 167.72deg at 50.06% 45.46%, #133955 -54.38deg, #344275 7.33deg, #6F357D 84.38deg, #30297D 138.99deg, #213A57 168.75deg, #290755 205.87deg, #0C4A47 264.38deg, #133955 305.62deg, #344275 367.33deg);
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+div.wonder {
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+  
+  $star-size: .25vh;
+  $moon-size: 10vh;
+  $moon2-size: 5vh;
+  $ocean-size: 15vh;
+  $random: (random(100) + vh);
+
+  background:    
+  
+    /*--- night sky ---*/
+    /* stars */ 
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $moon1 $star-size, transparent $star-size)  (random(100) + vw) (random(85) + vh)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat;
+
+}
+  
+  
+
+div.wonder:before {
+    width: 110vh;
+    height: 95vh;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+  background:    
+    
+    
+    
+    /*  lighthouse base */
+    
+    /* window row 1 */linear-gradient($lh-window 6vh, transparent 6vh) 49.75vh 38.5vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 52.25vh 38.5vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 54.75vh 38.5vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 57.25vh 38.5vh / 1.5vh 2.5vh no-repeat,
+
+    /* window row 2 */linear-gradient($lh-window 6vh, transparent 6vh) 49.75vh 42vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 52.25vh 42vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 54.75vh 42vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 57.25vh 42vh / 1.5vh 2.5vh no-repeat,
+    /* window row 3 */linear-gradient($lh-window 6vh, transparent 6vh) 49.75vh 45.5vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 52.25vh 45.5vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 54.75vh 45.5vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 57.25vh 45.5vh / 1.5vh 2.5vh no-repeat,
+    /* window row 4 */linear-gradient($lh-window 6vh, transparent 6vh) 49.75vh 49vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 52.25vh 49vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 54.75vh 49vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 57.25vh 49vh / 1.5vh 2.5vh no-repeat,
+    
+    /* window row 5 */linear-gradient($lh-window 6vh, transparent 6vh) 47.5vh 56.5vh / 1.5vh 2.5vh no-repeat,
+    linear-gradient($lh-window 6vh, transparent 6vh) 49.75vh 56.5vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 52.25vh 56.5vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 54.75vh 56.5vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 57.25vh 56.5vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 59.75vh 56.5vh / 1.5vh 2.5vh no-repeat,
+    
+    
+    /* window row 6 */linear-gradient($lh-window 6vh, transparent 6vh) 47.5vh 60vh / 1.5vh 2.5vh no-repeat,
+    linear-gradient($lh-window 6vh, transparent 6vh) 49.75vh 60vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 52.25vh 60vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 54.75vh 60vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 57.25vh 60vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 59.75vh 60vh / 1.5vh 2.5vh no-repeat,
+    
+    
+    /* window row 7 */linear-gradient($lh-window 6vh, transparent 6vh) 47.5vh 63.5vh / 1.5vh 2.5vh no-repeat,
+    linear-gradient($lh-window 6vh, transparent 6vh) 49.75vh 63.5vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 52.25vh 63.5vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 54.75vh 63.5vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 57.25vh 63.5vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 59.75vh 63.5vh / 1.5vh 2.5vh no-repeat,
+    
+    
+    /* window row 8 */linear-gradient($lh-window 6vh, transparent 6vh) 47.5vh 67vh / 1.5vh 2.5vh no-repeat,
+    linear-gradient($lh-window 6vh, transparent 6vh) 49.75vh 67vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 52.25vh 67vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 54.75vh 67vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 57.25vh 67vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 59.75vh 67vh / 1.5vh 2.5vh no-repeat,
+    
+    /* window row 9 */linear-gradient($lh-window 6vh, transparent 6vh) 47.5vh 70.5vh / 1.5vh 2.5vh no-repeat,
+    linear-gradient($lh-window 6vh, transparent 6vh) 49.75vh 70.5vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 52.25vh 70.5vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 54.75vh 70.5vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 57.25vh 70.5vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 59.75vh 70.5vh / 1.5vh 2.5vh no-repeat,
+    
+    
+    /* window row 10 */linear-gradient($lh-window 6vh, transparent 6vh) 47.5vh 74vh / 1.5vh 2.5vh no-repeat,
+    linear-gradient($lh-window 6vh, transparent 6vh) 49.75vh 74vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 52.25vh 74vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 54.75vh 74vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 57.25vh 74vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 59.75vh 74vh / 1.5vh 2.5vh no-repeat,
+    
+    /* window row 11 */linear-gradient($lh-window 6vh, transparent 6vh) 47.5vh 77.5vh / 1.5vh 2.5vh no-repeat,
+    linear-gradient($lh-window 6vh, transparent 6vh) 49.75vh 77.5vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 52.25vh 77.5vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 54.75vh 77.5vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 57.25vh 77.5vh / 1.5vh 2.5vh no-repeat,
+  linear-gradient($lh-window 6vh, transparent 6vh) 59.75vh 77.5vh / 1.5vh 2.5vh no-repeat,
+    
+    
+    /* large widow row  */
+    
+
+    radial-gradient(circle, $lh-window 1.5vh, transparent 1.5vh)  26.75vh 81.5vh / 4vh 4vh no-repeat, linear-gradient($lh-window 6vh, transparent 6vh) 27.25vh 83.75vh / 3vh 5vh no-repeat,
+    
+    
+    radial-gradient(circle, $lh-window 1.5vh, transparent 1.5vh)  35vh 83.5vh / 4vh 4vh no-repeat, linear-gradient($lh-window 6vh, transparent 6vh) 35.5vh 85.75vh / 3vh 3vh no-repeat,
+
+    radial-gradient(circle, $lh-window 1.5vh, transparent 1.5vh)  41vh 83.5vh / 4vh 4vh no-repeat, linear-gradient($lh-window 6vh, transparent 6vh) 41.5vh 85.75vh / 3vh 3vh no-repeat,
+    
+    radial-gradient(circle, $lh-window 1.5vh, transparent 1.5vh)  47vh 83.5vh / 4vh 4vh no-repeat, linear-gradient($lh-window 6vh, transparent 6vh) 47.5vh 85.75vh / 3vh 3vh no-repeat,
+    
+    radial-gradient(circle, $lh-window 1.5vh, transparent 1.5vh)  53vh 83.5vh / 4vh 4vh no-repeat, linear-gradient($lh-window 6vh, transparent 6vh) 53.5vh 85.75vh / 3vh 3vh no-repeat,
+
+    radial-gradient(circle, $lh-window 1.5vh, transparent 1.5vh)  59vh 83.5vh / 4vh 4vh no-repeat, linear-gradient($lh-window 6vh, transparent 6vh) 59.5vh 85.75vh / 3vh 3vh no-repeat,
+
+    radial-gradient(circle, $lh-window 1.5vh, transparent 1.5vh)  65vh 83.5vh / 4vh 4vh no-repeat, linear-gradient($lh-window 6vh, transparent 6vh) 65.5vh 85.75vh / 3vh 3vh no-repeat,
+
+    radial-gradient(circle, $lh-window 1.5vh, transparent 1.5vh)  71vh 83.5vh / 4vh 4vh no-repeat, linear-gradient($lh-window 6vh, transparent 6vh) 71.5vh 85.75vh / 3vh 3vh no-repeat,
+
+
+    radial-gradient(circle, $lh-window 1.5vh, transparent 1.5vh)  79.5vh 81.5vh / 4vh 4vh no-repeat, linear-gradient($lh-window 6vh, transparent 6vh) 80vh 83.75vh / 3vh 5vh no-repeat,
+   
+    
+    
+    
+    
+    /*  lighthouse base */
+    
+    
+    /* top tower shadow r linear-gradient(60deg, $lh-shadow 3vh, transparent 3vh) 60vh 12vh / 6vh 7vh no-repeat,
+     top tower shadow l linear-gradient(-25deg, $lh-shadow 4vh, transparent 8vh) 27vh -11vh / 33vh 30vh no-repeat,
+
+    * top tower l * linear-gradient(60deg, $lh 10vh, transparent 10vh) 52vh 13.7vh / 15vh 4.5vh no-repeat,
+    * top tower r * linear-gradient(-60deg, $lh 10vh, transparent 10vh) 42vh 13.7vh / 15vh 4.5vh no-repeat, */
+
+
+    /* upper-upper-base shadow */     linear-gradient(160deg, $lh 1vh, $lh-shadow 4vh) 50.5vh 19.25vh / 8vh 2vh no-repeat,
+    linear-gradient(160deg, $lh 1vh, $lh-shadow 6vh) 49.5vh 21vh / 10vh 1vh no-repeat,
+    /* upper-upper-base */linear-gradient(160deg, $lh 1vh, $lh-shadow 5vh) 49vh 22vh / 11vh 1vh no-repeat,
+    radial-gradient(ellipse, $lh 4vh, transparent 4vh)  50vh 16vh / 9vh 7vh no-repeat,
+    /*radial-gradient(ellipse, $lh-shadow 4vh, transparent 4vh)  45.5vh 25.5vh / 18vh 8vh no-repeat,*/
+
+    
+
+    
+    /* light-column1 */linear-gradient(160deg, $lh 1vh, $lh 6vh) 49vh 23vh / 1vh 6vh no-repeat,
+    /* light-column2 */linear-gradient(160deg, $lh 1vh, $lh 6vh) 51.5vh 23vh / 1.25vh 6vh no-repeat,
+    /* light-column3 */linear-gradient(160deg, $lh 1vh, $lh-shadow 8vh) 56vh 23vh / 1.25vh 6vh no-repeat,
+    /* light-column4 */linear-gradient(160deg, $lh 1vh, $lh-shadow 6vh) 59vh 23vh / 1vh 6vh no-repeat,
+    
+    /* upper-upper-base shadow */ linear-gradient(160deg, $lh 1vh, $lh-shadow 4vh) 49.5vh 30vh / 10vh 1vh no-repeat,
+    /* upper-upper-base */linear-gradient(160deg, $lh 1vh, $lh-shadow 5vh) 49vh 29vh / 11vh 1vh no-repeat,
+    radial-gradient(ellipse, $lh 4vh, transparent 4vh)  45.5vh 27vh / 18vh 8vh no-repeat,
+    radial-gradient(ellipse, $lh-shadow 4vh, transparent 4vh)  45.5vh 27.25vh / 18vh 8vh no-repeat,
+    
+    /* upper-base */ linear-gradient(160deg, $lh 4vh, $lh-shadow 6vh) 51vh 31vh / 7vh 4.5vh no-repeat,
+    
+
+    /* lower-upper-base */linear-gradient(170deg, $lh 1vh, $lh-shadow 3vh) 47vh 35.5vh / 15vh 1vh no-repeat,
+    /* lower-upper-base */linear-gradient(170deg, $lh 1vh, $lh-shadow 3vh) 46vh 36.5vh / 17vh 1vh no-repeat,
+
+
+    /* top tower shadow r */linear-gradient(82deg, $lh-shadow 3vh, transparent 3vh) 59.25vh 46vh / 6vh 7vh no-repeat,
+    /* top tower shadow l */ linear-gradient(-35deg, $lh-shadow 6vh, transparent 8vh) 28vh 23vh / 33vh 30vh no-repeat,
+    /* top tower l */ linear-gradient(82deg, $lh 10vh, transparent 10vh) 52vh 37vh / 15vh 16vh no-repeat,
+    /* top tower r */ linear-gradient(-82deg, $lh 10vh, transparent 10vh) 42vh 37vh / 15vh 16vh no-repeat,
+
+    /* lightbulb */radial-gradient(circle, $moon2 2.5vh, transparent 4.5vh)  50.5vh 21.5vh / 8vh 8vh no-repeat,
+    
+    /* mid-base */linear-gradient(170deg, $lh 1vh, $lh-shadow 4vh) 44vh 53vh / 21vh 1vh no-repeat,
+    /* mid-base */linear-gradient(170deg, $lh 1vh, $lh-shadow 4vh) 43vh 54vh / 23vh 1vh no-repeat,
+    
+
+
+    /* base l */ linear-gradient(90deg, $lh 8.5vh, $lh-shadow 14vh) 24vh 78vh / 10vh 12vh no-repeat,
+    /* base l */ linear-gradient(90deg, $lh-shadow 8.5vh, $lh-shadow 14vh) 76vh 78vh / 10vh 12vh no-repeat,
+    /* base */ linear-gradient(160deg, $lh 5vh, $lh-shadow 14vh) 29vh 83vh / 53vh 7vh no-repeat,
+    
+    /* bottom tower shadow r */linear-gradient(82deg, $lh-shadow 4vh, transparent 4vh) 63.5vh 75vh / 8vh 10vh no-repeat,
+    /* bottom tower shadow l */ linear-gradient(-25deg, $lh-shadow 9.5vh, transparent 11.5vh) 24vh 55vh / 42vh 30vh no-repeat,
+    /* bottom tower l */ linear-gradient(82deg, $lh 20vh, transparent 20vh) 47vh 55vh / 30vh 30vh no-repeat,
+    /* bottom tower r */ linear-gradient(-82deg, $lh 20vh, transparent 20vh) 32vh 55vh / 30vh 30vh no-repeat,
+
+    /* base */ linear-gradient(0deg, $lh-shadow 0vh, $lh-window 3vh) 20vh 90vh / 70vh 4vh no-repeat,
+    /* base */ linear-gradient(-45deg, $lh-shadow 0vh, $lh-window 2.75vh, transparent 3vh) 10vh 84vh / 10vh 10vh no-repeat,
+    /* base */ linear-gradient(45deg, $lh-shadow 0vh, $lh-window 2.75vh, transparent 3vh) 90vh 84vh / 10vh 10vh no-repeat,
+}
+
+div.wonder:after {
+      top: 10vh;
+      left: 10vw;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      box-shadow: 25px 25px 0 0 $moon1;
+    }
+  
+
+
+    
+  

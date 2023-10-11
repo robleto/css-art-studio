@@ -1,0 +1,104 @@
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vmin;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #f2f2f2), to(#d9d9d9));
+  background: linear-gradient(180deg, #f2f2f2 15%, #d9d9d9 100%);
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+div.beloved {
+  width: 100vmin;
+  height: 100vmin;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: -99;
+  position: relative;
+  background: radial-gradient(ellipse, #E3BA9B 3vmin, transparent 5vmin) 50vmin 5vmin/10vmin 5vmin no-repeat, radial-gradient(circle, #3C6526 0.75vmin, black 0.75vmin, transparent 1vmin) 52vmin 12vmin/4vmin 4vmin no-repeat, radial-gradient(circle, #3C6526 0.75vmin, black 0.75vmin, transparent 1vmin) 56vmin 12vmin/4vmin 4vmin no-repeat, radial-gradient(circle, #F0CAAB 5vmin, #ecbc95 10vmin, transparent 10vmin) 45vmin 5vmin/20vmin 20vmin no-repeat, radial-gradient(ellipse at 90% 100%, #633b1c 8vmin, transparent 8vmin) 30vmin 85vmin/20vmin 8vmin no-repeat, radial-gradient(ellipse at 10% 100%, #633b1c 8vmin, transparent 8vmin) 63vmin 85vmin/20vmin 8vmin no-repeat, linear-gradient(-85deg, transparent 1vmin, #4e555e 1vmin, #717A88 10vmin, transparent 10vmin) 37vmin 60vmin/15vmin 30vmin no-repeat, linear-gradient(85deg, transparent 1vmin, #4e555e 1vmin, #717A88 10vmin, transparent 10vmin) 61vmin 60vmin/15vmin 30vmin no-repeat;
+}
+
+div.beloved:before {
+  width: 100vmin;
+  height: 100vmin;
+  z-index: 50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background: radial-gradient(circle, #F0CAAB 1vmin, #e8af80 3.5vmin, transparent 3.5vmin) 29vmin 61vmin/8vmin 6vmin no-repeat, radial-gradient(circle, #F0CAAB 1vmin, #e8af80 3.5vmin, transparent 3.5vmin) 71vmin 20vmin/6vmin 8vmin no-repeat, radial-gradient(circle, #B40001 20vmin, transparent 20vmin) 35vmin 5vmin/40vmin 40vmin no-repeat, radial-gradient(circle, #B40001 20vmin, transparent 20vmin) 15vmin 25vmin/40vmin 40vmin no-repeat, -webkit-gradient(linear, left top, right top, color-stop(50vmin, #B40001), color-stop(50vmin, transparent)) 35vmin 25vmin/40vmin 40vmin no-repeat;
+  background: radial-gradient(circle, #F0CAAB 1vmin, #e8af80 3.5vmin, transparent 3.5vmin) 29vmin 61vmin/8vmin 6vmin no-repeat, radial-gradient(circle, #F0CAAB 1vmin, #e8af80 3.5vmin, transparent 3.5vmin) 71vmin 20vmin/6vmin 8vmin no-repeat, radial-gradient(circle, #B40001 20vmin, transparent 20vmin) 35vmin 5vmin/40vmin 40vmin no-repeat, radial-gradient(circle, #B40001 20vmin, transparent 20vmin) 15vmin 25vmin/40vmin 40vmin no-repeat, linear-gradient(90deg, #B40001 50vmin, transparent 50vmin) 35vmin 25vmin/40vmin 40vmin no-repeat;
+}
+
+div.beloved:after {
+  width: 100vmin;
+  height: 100vmin;
+  top: 30vmin;
+  left: 28vmin;
+  z-index: 50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  white-space: pre;
+  content: "Thank you \A Selena";
+  text-align: center;
+  line-height: 1.1;
+  color: #FFFFFF;
+  opacity: 0.08;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 12vmin;
+}
+
+div.beloved:before {
+  -webkit-animation: floatturn 10s ease-out infinite;
+          animation: floatturn 10s ease-out infinite;
+}
+
+/* Float up and down */
+@-webkit-keyframes floatturn {
+  50% {
+    -webkit-transform: rotateZ(45deg) translateY(-3vmin);
+            transform: rotateZ(45deg) translateY(-3vmin);
+  }
+}
+@keyframes floatturn {
+  50% {
+    -webkit-transform: rotateZ(45deg) translateY(-3vmin);
+            transform: rotateZ(45deg) translateY(-3vmin);
+  }
+}
+
+div.beloved:after {
+  -webkit-animation: float 10s ease-out infinite;
+          animation: float 10s ease-out infinite;
+}
+
+/* Float up and down */
+@-webkit-keyframes float {
+  50% {
+    -webkit-transform: translateX(3vmin) translateY(-3vmin);
+            transform: translateX(3vmin) translateY(-3vmin);
+  }
+}
+@keyframes float {
+  50% {
+    -webkit-transform: translateX(3vmin) translateY(-3vmin);
+            transform: translateX(3vmin) translateY(-3vmin);
+  }
+}
+/*# sourceMappingURL=style.css.map */

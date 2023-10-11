@@ -1,0 +1,230 @@
+$test: #bada55;
+$yellow: #fed073;
+$gray: #606060;
+$bg : #b4d6be;
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-content: center; 
+  background: 
+    
+    radial-gradient($bg 65vmin, darken($bg, 10%) 90vmin);
+}
+
+div.bones {
+    width: 80vmin;
+    height: 80vmin;
+    display: flex;
+    justify-self: center;
+    align-self: center; 
+    position: relative; 
+    background:  
+      
+
+      
+    /** CAP **/
+    
+    /* left hatmask */
+    radial-gradient(ellipse, $bg  7.5vmin, transparent 1vmin) 7vmin 11vmin / 15vmin 15vmin no-repeat,  
+    /* right hatmask */
+    radial-gradient(ellipse, $bg  7.5vmin, transparent 1vmin) 58vmin 11vmin / 15vmin 15vmin no-repeat,  
+      
+      /* left hatside */
+    radial-gradient(ellipse, $gray  15vmin, transparent 1vmin) 8vmin 18vmin / 30vmin 15vmin no-repeat,  
+      /* right hatside */
+    radial-gradient(ellipse, $gray  15vmin, transparent 1vmin) 42vmin 18vmin / 30vmin 15vmin no-repeat,
+
+    /* left hattop */
+    radial-gradient(ellipse, $gray  10vmin, transparent 1vmin) 22vmin 5vmin / 20vmin 30vmin no-repeat,
+    /* right hattop */
+    radial-gradient(ellipse, $gray  10vmin, transparent 1vmin) 38vmin 5vmin / 20vmin 30vmin no-repeat,
+      
+
+}
+
+div.bones:before {
+    width: 80vmin;
+    height: 80vmin;
+    display: flex;
+    background:  
+      
+     
+   /** SKULL **/
+      
+      /* left nostrel */
+      linear-gradient(0deg, $gray 4vmin, transparent 1vmin) 35vmin 52vmin / 2.25vmin 1.5vmin no-repeat,
+      linear-gradient(0deg, $gray 3.5vmin, transparent 1vmin) 36.5vmin 46vmin / 2vmin 6vmin no-repeat,
+      linear-gradient(-57.5deg, $gray 3vmin, transparent 1vmin) 33.35vmin 47.25vmin / 4vmin 5vmin no-repeat,
+    radial-gradient(ellipse at left bottom, $gray  1.5vmin, transparent 1vmin) 37vmin 44.65vmin / 4vmin 4vmin no-repeat,
+    radial-gradient(ellipse at top right, $gray  1.25vmin, transparent 1vmin) 31.10vmin 52.25vmin / 4vmin 4vmin no-repeat,
+    radial-gradient(ellipse at top left, $gray  1.5vmin, transparent 1vmin) 37vmin 52vmin / 3vmin 3vmin no-repeat,
+      
+      
+    /* right nostrel */
+    linear-gradient(0deg, $gray 4vmin, transparent 1vmin) 42.25vmin 52vmin / 2.25vmin 1.5vmin no-repeat,
+      linear-gradient(0deg, $gray 3.5vmin, transparent 1vmin) 41vmin 46vmin / 2vmin 6vmin no-repeat,
+      linear-gradient(57.5deg, $gray 3vmin, transparent 1vmin) 42.25vmin 47.25vmin / 4vmin 5vmin no-repeat,
+    radial-gradient(ellipse at right bottom, $gray  1.5vmin, transparent 1vmin) 38.5vmin 44.65vmin / 4vmin 4vmin no-repeat,
+    radial-gradient(ellipse at top left, $gray  1.25vmin, transparent 1vmin) 44.45vmin 52.25vmin / 4vmin 4vmin no-repeat,
+    radial-gradient(ellipse at top right, $gray  1.5vmin, transparent 1vmin) 39.5vmin 52vmin / 3vmin 3vmin no-repeat,
+      
+      
+      
+    /* left eye */
+    radial-gradient(ellipse, $gray  5vmin, transparent 1vmin) 26vmin 35vmin / 10vmin 13vmin no-repeat,
+    /* right eye */
+    radial-gradient(ellipse, $gray  5vmin, transparent 1vmin) 44vmin 35vmin / 10vmin 13vmin no-repeat,
+      
+/* YELLOW HEAD  */
+   
+    /* tooth */
+    radial-gradient(ellipse, $yellow  5vmin, transparent 17vmin) 29vmin 55vmin / 3.5vmin 10vmin no-repeat,
+    radial-gradient(ellipse, $yellow  1.75vmin, transparent 1vmin) 29vmin 63vmin / 3.5vmin 3.5vmin no-repeat,
+      
+    /* tooth */
+    radial-gradient(ellipse, $yellow  5vmin, transparent 17vmin) 35vmin 55vmin / 3.5vmin 10vmin no-repeat,
+    radial-gradient(ellipse, $yellow  1.75vmin, transparent 1vmin) 35vmin 63vmin / 3.5vmin 3.5vmin no-repeat,
+      
+    /* tooth */
+    radial-gradient(ellipse, $yellow  5vmin, transparent 17vmin) 41vmin 55vmin / 3.5vmin 10vmin no-repeat,
+    radial-gradient(ellipse, $yellow  1.75vmin, transparent 1vmin) 41vmin 63vmin / 3.5vmin 3.5vmin no-repeat,
+      
+    /* tooth */
+    radial-gradient(ellipse, $yellow  5vmin, transparent 17vmin) 47vmin 55vmin / 3.5vmin 10vmin no-repeat,
+    radial-gradient(ellipse, $yellow  1.75vmin, transparent 1vmin) 47vmin 63vmin / 3.5vmin 3.5vmin no-repeat,
+
+    /* head */
+    radial-gradient(ellipse, $yellow  20vmin, transparent 17vmin) 20vmin 26.5vmin / 40vmin 35vmin no-repeat,
+      
+      
+      
+  /** BONES **/
+      
+    /* bonesNW */
+    radial-gradient(ellipse, $gray  5vmin, transparent 1vmin) 5vmin 35vmin / 10vmin 10vmin no-repeat,
+    radial-gradient(ellipse, $gray  5vmin, transparent 1vmin) 1vmin 41vmin / 10vmin 10vmin no-repeat,
+      
+    /* bonesSW */
+    radial-gradient(ellipse, $gray  5vmin, transparent 1vmin) 5vmin 62vmin / 10vmin 10vmin no-repeat,
+    radial-gradient(ellipse, $gray  5vmin, transparent 1vmin) 1vmin 56vmin / 10vmin 10vmin no-repeat,
+      
+    /* bonesNE */
+    radial-gradient(ellipse, $gray  5vmin, transparent 1vmin) 67vmin 35vmin / 10vmin 10vmin no-repeat,
+    radial-gradient(ellipse, $gray  5vmin, transparent 1vmin) 70vmin 41vmin / 10vmin 10vmin no-repeat,
+      
+    /* bonesSE */
+    radial-gradient(ellipse, $gray  5vmin, transparent 1vmin) 67vmin 62vmin / 10vmin 10vmin no-repeat,
+    radial-gradient(ellipse, $gray  5vmin, transparent 1vmin) 70vmin 56vmin / 10vmin 10vmin no-repeat,
+         //NW
+      linear-gradient(20deg, transparent 15vmin, $gray 15vmin, $gray 20vmin, transparent 20vmin) 8vmin 22vmin / 40vmin 40vmin no-repeat,
+      
+      //NE
+      linear-gradient(-20deg, transparent 15vmin, $gray 15vmin, $gray 20vmin, transparent 20vmin) 32vmin 22vmin / 40vmin 40vmin no-repeat,
+      
+      //SW
+      linear-gradient(160deg, transparent 15vmin, $gray 15vmin, $gray 20vmin, transparent 20vmin) 8vmin 44vmin / 40vmin 40vmin no-repeat,
+      
+      //SE
+      linear-gradient(-160deg, transparent 15vmin, $gray 15vmin, $gray 20vmin, transparent 20vmin) 32vmin 44vmin / 40vmin 40vmin no-repeat,
+      
+}
+
+
+div.bones:after {
+    width: 80vmin;
+    height: 80vmin;
+    top: -24vmin;
+    display: flex;
+    z-index: 999;
+    transform: scale(.20);
+    background:  
+      
+     
+   /** SKULL **/
+      
+      /* left nostrel */
+      linear-gradient(0deg, $gray 4vmin, transparent 1vmin) 35vmin 52vmin / 2.25vmin 1.5vmin no-repeat,
+      linear-gradient(0deg, $gray 3.5vmin, transparent 1vmin) 36.5vmin 46vmin / 2vmin 6vmin no-repeat,
+      linear-gradient(-57.5deg, $gray 3vmin, transparent 1vmin) 33.35vmin 47.25vmin / 4vmin 5vmin no-repeat,
+    radial-gradient(ellipse at left bottom, $gray  1.5vmin, transparent 1vmin) 37vmin 44.65vmin / 4vmin 4vmin no-repeat,
+    radial-gradient(ellipse at top right, $gray  1.25vmin, transparent 1vmin) 31.10vmin 52.25vmin / 4vmin 4vmin no-repeat,
+    radial-gradient(ellipse at top left, $gray  1.5vmin, transparent 1vmin) 37vmin 52vmin / 3vmin 3vmin no-repeat,
+      
+      
+    /* right nostrel */
+    linear-gradient(0deg, $gray 4vmin, transparent 1vmin) 42.25vmin 52vmin / 2.25vmin 1.5vmin no-repeat,
+      linear-gradient(0deg, $gray 3.5vmin, transparent 1vmin) 41vmin 46vmin / 2vmin 6vmin no-repeat,
+      linear-gradient(57.5deg, $gray 3vmin, transparent 1vmin) 42.25vmin 47.25vmin / 4vmin 5vmin no-repeat,
+    radial-gradient(ellipse at right bottom, $gray  1.5vmin, transparent 1vmin) 38.5vmin 44.65vmin / 4vmin 4vmin no-repeat,
+    radial-gradient(ellipse at top left, $gray  1.25vmin, transparent 1vmin) 44.45vmin 52.25vmin / 4vmin 4vmin no-repeat,
+    radial-gradient(ellipse at top right, $gray  1.5vmin, transparent 1vmin) 39.5vmin 52vmin / 3vmin 3vmin no-repeat,
+      
+      
+      
+    /* left eye */
+    radial-gradient(ellipse, $gray  5vmin, transparent 1vmin) 26vmin 35vmin / 10vmin 13vmin no-repeat,
+    /* right eye */
+    radial-gradient(ellipse, $gray  5vmin, transparent 1vmin) 44vmin 35vmin / 10vmin 13vmin no-repeat,
+      
+/* YELLOW HEAD  */
+   
+    /* tooth */
+    radial-gradient(ellipse, $yellow  5vmin, transparent 17vmin) 29vmin 55vmin / 3.5vmin 10vmin no-repeat,
+    radial-gradient(ellipse, $yellow  1.75vmin, transparent 1vmin) 29vmin 63vmin / 3.5vmin 3.5vmin no-repeat,
+      
+    /* tooth */
+    radial-gradient(ellipse, $yellow  5vmin, transparent 17vmin) 35vmin 55vmin / 3.5vmin 10vmin no-repeat,
+    radial-gradient(ellipse, $yellow  1.75vmin, transparent 1vmin) 35vmin 63vmin / 3.5vmin 3.5vmin no-repeat,
+      
+    /* tooth */
+    radial-gradient(ellipse, $yellow  5vmin, transparent 17vmin) 41vmin 55vmin / 3.5vmin 10vmin no-repeat,
+    radial-gradient(ellipse, $yellow  1.75vmin, transparent 1vmin) 41vmin 63vmin / 3.5vmin 3.5vmin no-repeat,
+      
+    /* tooth */
+    radial-gradient(ellipse, $yellow  5vmin, transparent 17vmin) 47vmin 55vmin / 3.5vmin 10vmin no-repeat,
+    radial-gradient(ellipse, $yellow  1.75vmin, transparent 1vmin) 47vmin 63vmin / 3.5vmin 3.5vmin no-repeat,
+
+    /* head */
+    radial-gradient(ellipse, $yellow  20vmin, transparent 17vmin) 20vmin 26.5vmin / 40vmin 35vmin no-repeat,
+      
+      
+      
+  /** BONES **/
+      
+    /* bonesNW */
+    radial-gradient(ellipse, $yellow  5vmin, transparent 1vmin) 5vmin 35vmin / 10vmin 10vmin no-repeat,
+    radial-gradient(ellipse, $yellow  5vmin, transparent 1vmin) 1vmin 41vmin / 10vmin 10vmin no-repeat,
+      
+    /* bonesSW */
+    radial-gradient(ellipse, $yellow  5vmin, transparent 1vmin) 5vmin 62vmin / 10vmin 10vmin no-repeat,
+    radial-gradient(ellipse, $yellow  5vmin, transparent 1vmin) 1vmin 56vmin / 10vmin 10vmin no-repeat,
+      
+    /* bonesNE */
+    radial-gradient(ellipse, $yellow  5vmin, transparent 1vmin) 67vmin 35vmin / 10vmin 10vmin no-repeat,
+    radial-gradient(ellipse, $yellow  5vmin, transparent 1vmin) 70vmin 41vmin / 10vmin 10vmin no-repeat,
+      
+    /* bonesSE */
+    radial-gradient(ellipse, $yellow  5vmin, transparent 1vmin) 67vmin 62vmin / 10vmin 10vmin no-repeat,
+    radial-gradient(ellipse, $yellow  5vmin, transparent 1vmin) 70vmin 56vmin / 10vmin 10vmin no-repeat,
+         //NW
+      linear-gradient(20deg, transparent 15vmin, $yellow 15vmin, $yellow 20vmin, transparent 20vmin) 8vmin 22vmin / 40vmin 40vmin no-repeat,
+      
+      //NE
+      linear-gradient(-20deg, transparent 15vmin, $yellow 15vmin, $yellow 20vmin, transparent 20vmin) 32vmin 22vmin / 40vmin 40vmin no-repeat,
+      
+      //SW
+      linear-gradient(160deg, transparent 15vmin, $yellow 15vmin, $yellow 20vmin, transparent 20vmin) 8vmin 44vmin / 40vmin 40vmin no-repeat,
+      
+      //SE
+      linear-gradient(-160deg, transparent 15vmin, $yellow 15vmin, $yellow 20vmin, transparent 20vmin) 32vmin 44vmin / 40vmin 40vmin no-repeat,
+      
+}

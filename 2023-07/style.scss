@@ -1,0 +1,114 @@
+$tan: #e8a557;
+$dark-tan: #bb7f50;
+$brown: #743214;
+$pink: #f4988c;
+$white: #fdfdf9;
+$gray: #eae7db;
+$black: #28100a;
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+    background: 
+    radial-gradient(lighten($pink, 10%), lighten($brown, 40%));
+}
+
+div.treat {
+    width: 70vmin;
+    height: 100vmin;
+    margin: 0 auto;
+    position: relative;  
+    background: 
+      
+
+  /*** FACE  ***/  
+ /* left-eye */radial-gradient(ellipse, lighten($black, 10%) 2vmin,  transparent 2vmin) 17vmin 40vmin / 12vmin 12vmin no-repeat, 
+  /* right-eye */radial-gradient(ellipse, lighten($black, 10%) 2vmin,  transparent 2vmin) 38.5vmin 40vmin / 12vmin 12vmin no-repeat,
+  /* left-eye */radial-gradient(ellipse, lighten($pink, 10%) 2.5vmin,  transparent 2.5vmin) 11vmin 45vmin / 20vmin 12vmin no-repeat,
+  /* right-eye */radial-gradient(ellipse, lighten($pink, 10%) 2.5vmin,  transparent 2.5vmin) 37vmin 45vmin / 20vmin 12vmin no-repeat,
+  /* mouth-mask */radial-gradient(ellipse, lighten($white, 10%) 2.5vmin,  transparent 2.5vmin) 24vmin 42vmin / 20vmin 12vmin no-repeat,
+  /* mouth */radial-gradient(ellipse, lighten($black, 10%) 2.5vmin,  transparent 2.5vmin) 24vmin 43vmin / 20vmin 12vmin no-repeat,
+
+
+  /*** CHOCOLATE  ***/  
+  /* inner-left-edge-back */radial-gradient(ellipse, $brown 5vmin,  transparent 5vmin) 15.25vmin 26.75vmin / 15vmin 12vmin no-repeat,
+  /* inner-left-edge-back */radial-gradient(ellipse, lighten($brown, 10%) 4vmin,  transparent 4vmin) 17vmin 27.75vmin / 12vmin 12vmin no-repeat,
+  /* inner-left-edge-back */radial-gradient(ellipse, $brown 5vmin,  transparent 5vmin) 17vmin 27.75vmin / 12vmin 12vmin no-repeat,
+      
+  /* inner-left-edge-back */radial-gradient(ellipse, $brown 5vmin,  transparent 5vmin) 37.5vmin 26.75vmin / 15vmin 12vmin no-repeat,
+  /* inner-left-edge-back */radial-gradient(ellipse, lighten($brown, 10%) 4vmin,  transparent 4vmin) 38.5vmin 27.75vmin / 12vmin 12vmin no-repeat,
+  /* inner-right-edge-back */radial-gradient(ellipse, $brown 5vmin,  transparent 5vmin) 38.5vmin 27.75vmin / 12vmin 12vmin no-repeat,
+      
+      
+  /* middle-mask*/radial-gradient(ellipse, $white 7vmin,  transparent 7vmin) 24.75vmin 31.5vmin / 18vmin 14vmin no-repeat,
+  /* right-mask*/radial-gradient(ellipse, $white 4vmin,  transparent 4vmin) 39.25vmin 31vmin / 22vmin 18vmin no-repeat,
+  /* right-mask*/radial-gradient(ellipse, $white 6vmin,  transparent 6vmin) 33.75vmin 33vmin / 18vmin 18vmin no-repeat,
+      
+  /* left-edge-back */radial-gradient(ellipse, $brown 4.5vmin,  transparent 4.5vmin) -0.25vmin 26.75vmin / 16vmin 24vmin no-repeat,
+  /* left-edge-back */radial-gradient(ellipse, lighten($brown, 10%) 4.5vmin,  transparent 4.5vmin) 0vmin 27.75vmin / 16vmin 24vmin no-repeat,
+  /* left-edge-back */radial-gradient(ellipse, $brown 5.5vmin,  transparent 5.5vmin) 0vmin 28.25vmin / 16vmin 24vmin no-repeat,
+      
+  /* left-mask*/radial-gradient(ellipse, $white 4vmin,  transparent 4vmin) 6.5vmin 31vmin / 22vmin 18vmin no-repeat,
+  /* left-mask*/radial-gradient(ellipse, $white 6vmin,  transparent 6vmin) 16.75vmin 33vmin / 18vmin 18vmin no-repeat,
+  /* inner-left-edge-back */radial-gradient(ellipse, $brown 12vmin,  transparent 12vmin) 8vmin 33vmin / 24vmin 8vmin no-repeat,
+      
+      
+  /* inner-right-edge-back */radial-gradient(ellipse, $brown 12vmin,  transparent 12vmin) 32vmin 27vmin / 24vmin 16vmin no-repeat,
+  /* right-edge-back */radial-gradient(ellipse, $brown 4.5vmin,  transparent 4.5vmin) 52vmin 26.75vmin / 16vmin 24vmin no-repeat,
+  /* right-edge-back */radial-gradient(ellipse, lighten($brown, 10%) 4.5vmin,  transparent 4.5vmin) 51.75vmin 27.75vmin / 16vmin 24vmin no-repeat,
+  /* right-edge-back */radial-gradient(ellipse, $brown 5.5vmin,  transparent 5.5vmin) 51.75vmin 27.5vmin / 16vmin 24vmin no-repeat,
+
+
+
+  /*** MARSHMELLOW ***/   
+  /* left-edge-inner */radial-gradient(ellipse, $white 8.5vmin,  transparent 8.5vmin) 6vmin 33.5vmin / 20vmin 28vmin no-repeat,
+  /* left-edge-inner */radial-gradient(ellipse, $white 8.5vmin,  transparent 8.5vmin) 43vmin 33.5vmin / 20vmin 28vmin no-repeat,
+  /* mid-bar-back */linear-gradient(90deg, $white 0vmin, $white 60vmin, transparent 25vmin) 15vmin 35.5vmin / 38vmin 23vmin no-repeat,
+  /* bottom-edge-back */radial-gradient(ellipse, $white 20vmin,  transparent 20vmin) 14vmin 57vmin / 40vmin 4vmin no-repeat,
+
+  /* left-edge-back */radial-gradient(ellipse, $gray 9vmin,  transparent 9vmin) 5vmin 34vmin / 20vmin 30vmin no-repeat,
+  /* right-edge-back */radial-gradient(ellipse, $gray 9vmin,  transparent 9vmin) 43vmin 34vmin / 20vmin 30vmin no-repeat,
+  /* mid-bar-back */linear-gradient(90deg, $gray 0vmin, $gray 60vmin, transparent 25vmin) 15vmin 35.5vmin / 38vmin 25.5vmin no-repeat,
+  /* bottom-edge-back */radial-gradient(ellipse, $gray 22vmin,  transparent 22vmin) 12vmin 59.75vmin / 44vmin 4vmin no-repeat,
+      
+      
+  /*** CHOCOLATE  ***/  
+
+  /* bottom-edge-back */radial-gradient(ellipse, $brown 30vmin,  transparent 30vmin) 4vmin 25.5vmin / 60vmin 20vmin no-repeat,
+      
+      
+      
+      
+      
+  /*** TOP CRACKER ***/   
+  /* bottom-edge-back */radial-gradient(ellipse, $dark-tan 22vmin,  transparent 22vmin) 12vmin 24.25vmin / 44vmin 8vmin no-repeat,
+  /* left-edge-inner */ radial-gradient(ellipse, $tan 3.5vmin,  transparent 3.5vmin) 11.5vmin 20vmin / 7.25vmin 8vmin no-repeat,
+  /* right-edge-inner */radial-gradient(ellipse, $tan 3.5vmin,  transparent 3.5vmin) 50vmin 20vmin / 7.25vmin 8vmin no-repeat,
+  /* mid-bar-inner */linear-gradient(90deg, $tan 0vmin, $tan 60vmin, transparent 25vmin) 15vmin 20vmin / 38vmin 7.5vmin no-repeat,
+  /* bottom-edge-inner */radial-gradient(ellipse, $tan 21vmin,  transparent 21vmin) 13vmin 18.75vmin / 42vmin 4vmin no-repeat,
+
+  /* left-edge-back */ radial-gradient(ellipse, $dark-tan 4vmin,  transparent 4vmin) 10vmin 20.5vmin / 7.75vmin 9vmin no-repeat,
+  /* right-edge-back */radial-gradient(ellipse, $dark-tan 4vmin,  transparent 4vmin) 50vmin 20.5vmin / 7.75vmin 9vmin no-repeat,
+  /* mid-bar-back */linear-gradient(90deg, $dark-tan 0vmin, $dark-tan 60vmin, transparent 25vmin) 15vmin 22vmin / 40vmin 7.5vmin no-repeat,
+
+
+   /*** BOTTOM CRACKER ***/   
+  /* left-edge-inner */ radial-gradient(ellipse, $tan 3.5vmin,  transparent 3.5vmin) 11vmin 60vmin / 7.25vmin 8vmin no-repeat,
+  /* right-edge-inner */radial-gradient(ellipse, $tan 3.5vmin,  transparent 3.5vmin) 49.5vmin 60vmin / 7.25vmin 8vmin no-repeat,
+  /* mid-bar-inner */linear-gradient(90deg, $tan 0vmin, $tan 60vmin, transparent 25vmin) 15vmin 60vmin / 38vmin 7.5vmin no-repeat,
+  /* bottom-edge-inner */radial-gradient(ellipse, $tan 21vmin,  transparent 21vmin) 13vmin 65.25vmin / 42vmin 4vmin no-repeat,
+
+  /* left-edge-back */ radial-gradient(ellipse, $dark-tan 4vmin,  transparent 4vmin) 10vmin 60vmin / 7.75vmin 9vmin no-repeat,
+  /* right-edge-back */radial-gradient(ellipse, $dark-tan 4vmin,  transparent 4vmin) 50vmin 60vmin / 7.75vmin 9vmin no-repeat,
+  /* mid-bar-back */linear-gradient(90deg, $dark-tan 0vmin, $dark-tan 60vmin, transparent 25vmin) 15vmin 60vmin / 40vmin 7.5vmin no-repeat,
+  /* bottom-edge-back */radial-gradient(ellipse, $dark-tan 22vmin,  transparent 22vmin) 12vmin 66.5vmin / 44vmin 4vmin no-repeat,
+}

@@ -1,0 +1,159 @@
+/* colors */
+$white: #FFFFFF;
+$red: #FF2C2B;
+$dark-red: #B20405;
+$gray: #555555;
+$light-blue: #2A76AC;
+$dark-blue: #000204;
+
+
+
+/* Presets */
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+  $star: rgba(255,196,126, 0.2);
+  $star-size: .75vmin;
+
+
+body {
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: 
+    
+    /* stars */ 
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    radial-gradient(circle, $star $star-size, transparent $star-size)  (random(100) + vmin) (random(50) + vmin)  / calc( #{$star-size} * 2) calc( #{$star-size} * 2)  no-repeat,
+    
+
+    
+    
+    /* lightbulb */radial-gradient(ellipse, #F8EBE1 5vmin, transparent 20vmin)  50% 29vmin / 80vmin 40vmin no-repeat,
+    
+
+    /* space */
+    repeating-conic-gradient(transparent 0deg 3deg, rgba(238,237,236, 0.1)  6deg 9deg, transparent 12deg 15deg),
+    repeating-conic-gradient(transparent 0deg 2deg, rgba(238,237,236, 0.05)   4deg 6deg, transparent 8deg 10deg),
+    
+ 
+    
+    /* clouds */radial-gradient(ellipse, rgba(80,122,112, 0.45) 10vmin, transparent 30vmin)  60vmin 50vmin / 90vmin 40vmin no-repeat,
+  radial-gradient(ellipse, rgba(80,122,112, 0.55) 10vmin, transparent 30vmin)  -40vmin 55vmin / 90vmin 40vmin no-repeat,
+  radial-gradient(ellipse, rgba(80,122,112, 0.55) 10vmin, transparent 30vmin)  30vmin 55vmin / 90vmin 40vmin no-repeat,
+  radial-gradient(ellipse, rgba(80,122,112, 0.65) 10vmin, transparent 30vmin)  70vmin 75vmin / 90vmin 40vmin no-repeat,
+  radial-gradient(ellipse, rgba(80,122,112, 0.65) 10vmin, transparent 30vmin)  125vmin 65vmin / 90vmin 40vmin no-repeat,
+
+    /* sky */
+    linear-gradient(180deg, transparent 0%,  #DFD7BF 10%, #B3D9C9 40%, #75A399 100%) 0vmin 50vmin / 100vw 50vmin no-repeat,
+    
+    
+    conic-gradient(from 167.72deg at 50.06% 45.46%, #75A399 -33.75deg, #B3D9C9 15deg, #DFD7BF 76.88deg, #EB6E48 116.25deg, #8A4736 195deg, #C9714C 273.75deg, #ECD1BC 307.5deg, #75A399 326.25deg, #B3D9C9 375deg);
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+div.luminous {
+  height: 100vmin;
+  width: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+div.luminous:before {
+  height: 40vmin;
+  width: 40vmin;
+  top: 30vmin;
+  left: 33vmin;
+  opacity: 0.7;
+  transform: rotate(20deg) scale(.6);
+  background: 
+    
+    /* tie-fighter */
+radial-gradient(ellipse, lighten(#414141, 15%) 0vmin, lighten(#414141, 5%) 1rem, #414141 1rem, #414141 1.5rem, transparent 1.5rem)  15.75rem 8rem / 3rem 3rem no-repeat,
+    linear-gradient(180deg, transparent 33.3%, #414141 0) 20rem .5rem / .25rem 14rem no-repeat,
+    linear-gradient(180deg, transparent 33.3%, #414141 0) 14.25rem .5rem / .25rem 14rem no-repeat,
+    linear-gradient(180deg, transparent 33.3%, #414141 0) 14.5rem 9rem / 5.75rem 1rem no-repeat;
+}
+
+
+
+div.luminous:after {
+  height: 40vmin;
+  width: 40vmin;
+  top: 30vmin;
+  left: 31vmin;
+  opacity: 0.7;
+  transform: rotate(-15deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: 
+    
+    /* tie-fighter */
+radial-gradient(ellipse, lighten(#414141, 15%) 0vmin, lighten(#414141, 5%) 1rem, #414141 1rem, #414141 1.5rem, transparent 1.5rem)  5.75rem 8rem / 3rem 3rem no-repeat,
+    linear-gradient(180deg, transparent 33.3%, #414141 0) 10rem .5rem / .3rem 14rem no-repeat,
+    linear-gradient(180deg, transparent 33.3%, #414141 0) 4.25rem .5rem / .3rem 14rem no-repeat,
+    linear-gradient(180deg, transparent 33.3%, #414141 0) 4.5rem 9rem / 5.75rem 1rem no-repeat;
+}
+
+
+
+    
+
+
+

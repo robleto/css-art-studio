@@ -1,0 +1,89 @@
+/* colors */
+$white: #fafafa;
+$gray: #333333;
+$red: #E85543;
+
+/* Presets */
+body {
+  height: 100vh;
+  width: 100vh;
+  margin: 0 auto;
+  background-color: $white;
+}
+
+$l: 0vh;
+$t: 10vh;
+$ex: 0.013vh;
+
+div.mythical {
+    width: 100%;
+    height: 100%;
+    background:
+
+      
+      linear-gradient(45deg, $white .75vh, transparent .75vh) 33vh 27vh  / 1.5vh 1.5vh no-repeat, 
+      linear-gradient(-45deg, $white .75vh, transparent .75vh) 30vh 27vh  / 1.5vh 1.5vh no-repeat,
+      
+      
+      /* mouth */
+       linear-gradient(25deg, $white 1.5vh, transparent 1.5vh) 33vh 28vh  / 4vh 4vh no-repeat,
+       linear-gradient(-165deg, $white 2vh, transparent 2vh) 30vh 31.5vh  / 7vh 4vh no-repeat,
+      
+       radial-gradient(ellipse, $white calc((405 * #{$ex}) * .5), transparent calc((405 * #{$ex}) * .5)) calc(#{$l} + (2679 * #{$ex})) calc(#{$t} + (1403 * #{$ex}))  / calc(405 * #{$ex}) calc(272 * #{$ex}) no-repeat,
+       radial-gradient(ellipse, $red calc((390 * #{$ex}) * .5), transparent calc((390 * #{$ex}) * .5)) calc(#{$l} + (2698 * #{$ex})) calc(#{$t} + (1597 * #{$ex}))  / calc(390 * #{$ex}) calc(313 * #{$ex}) no-repeat,
+      radial-gradient(ellipse, $red calc((390 * #{$ex}) * .5), transparent calc((390 * #{$ex}) * .5)) calc(#{$l} + (2316 * #{$ex})) calc(#{$t} + (1279 * #{$ex}))  / calc(390 * #{$ex}) calc(313 * #{$ex}) no-repeat,
+
+      
+      /* eye */
+       linear-gradient(135deg, $white 1.125vh, transparent 1.125vh) 43vh 25.5vh  / 2.25vh 2.25vh no-repeat,
+       linear-gradient(-15deg, $white 1.5vh, transparent 1.5vh) 38vh 23vh  / 5vh 4vh no-repeat,
+       linear-gradient(15deg, $white 2vh, transparent 2vh) 30vh 23vh  / 15vh 4vh no-repeat,
+      
+       radial-gradient(ellipse, $red calc((958 * #{$ex}) * .5), transparent calc((958 * #{$ex}) * .5)) calc(#{$l} + (2778 * #{$ex})) calc(#{$t} + (997 * #{$ex}))  / calc(958 * #{$ex}) calc(440 * #{$ex}) no-repeat,
+       radial-gradient(ellipse, $white calc((958 * #{$ex}) * .5), transparent calc((958 * #{$ex}) * .5)) calc(#{$l} + (2736 * #{$ex})) calc(#{$t} + (983 * #{$ex}))  / calc(958 * #{$ex}) calc(385 * #{$ex}) no-repeat,
+       radial-gradient(ellipse, $red calc((958 * #{$ex}) * .5), transparent calc((958 * #{$ex}) * .5)) calc(#{$l} + (2661 * #{$ex})) calc(#{$t} + (997 * #{$ex}))  / calc(958 * #{$ex}) calc(358 * #{$ex}) no-repeat,
+      
+      
+      /* horns */
+       radial-gradient(ellipse, $white calc((958 * #{$ex}) * .5), transparent calc((958 * #{$ex}) * .5)) calc(#{$l} + (3536 * #{$ex})) calc(#{$t} + (790 * #{$ex}))  / calc(958 * #{$ex}) calc(385 * #{$ex}) no-repeat,
+       radial-gradient(ellipse, $red calc((958 * #{$ex}) * .5), transparent calc((958 * #{$ex}) * .5)) calc(#{$l} + (3361 * #{$ex})) calc(#{$t} + (697 * #{$ex}))  / calc(958 * #{$ex}) calc(358 * #{$ex}) no-repeat,
+        radial-gradient(ellipse, $white calc((958 * #{$ex}) * .5), transparent calc((958 * #{$ex}) * .5)) calc(#{$l} + (3036 * #{$ex})) calc(#{$t} + (750 * #{$ex}))  / calc(958 * #{$ex}) calc(385 * #{$ex}) no-repeat,
+       radial-gradient(ellipse, $red calc((958 * #{$ex}) * .5), transparent calc((958 * #{$ex}) * .5)) calc(#{$l} + (2861 * #{$ex})) calc(#{$t} + (697 * #{$ex}))  / calc(958 * #{$ex}) calc(358 * #{$ex}) no-repeat,
+      
+      
+      
+      radial-gradient(ellipse, $red calc((1569 * #{$ex}) * .5), transparent calc((1569 * #{$ex}) * .5)) calc(#{$l} + (2359 * #{$ex})) calc(#{$t} + (1201 * #{$ex}))  / calc(1569 * #{$ex}) calc(578 * #{$ex}) no-repeat,
+      
+      radial-gradient(ellipse, $white calc((1888 * #{$ex}) * .5), transparent calc((1888 * #{$ex}) * .5)) calc(#{$l} + (1722 * #{$ex})) calc(#{$t} + (3306 * #{$ex}))  / calc(1888 * #{$ex}) calc(677 * #{$ex}) no-repeat,
+      
+      radial-gradient(ellipse, $white calc((2384 * #{$ex}) * .5), transparent calc((2384 * #{$ex}) * .5)) calc(#{$l} + (2165 * #{$ex})) calc(#{$t} + (1720 * #{$ex}))  / calc(2384 * #{$ex}) calc(1258 * #{$ex}) no-repeat,
+
+      radial-gradient(ellipse, $red calc((1593 * #{$ex}) * .5), transparent calc((1593 * #{$ex}) * .5)) calc(#{$l} + (1722 * #{$ex})) calc(#{$t} + (2882 * #{$ex}))  / calc(1593 * #{$ex}) calc(848 * #{$ex}) no-repeat,
+      
+      
+      radial-gradient(ellipse, $red calc((1921 * #{$ex}) * .5), transparent calc((1921 * #{$ex}) * .5)) calc(#{$l} + (2781 * #{$ex})) calc(#{$t} + (2744 * #{$ex}))  / calc(1921 * #{$ex}) calc(707 * #{$ex}) no-repeat,
+      
+      
+      
+      
+      radial-gradient(ellipse, $red calc((1901 * #{$ex}) * .5), transparent calc((1901 * #{$ex}) * .5)) calc(#{$l} + (3008 * #{$ex})) calc(#{$t} + (1794 * #{$ex}))  / calc(1901 * #{$ex}) calc(1416 * #{$ex}) no-repeat,
+       
+      radial-gradient(ellipse, $white calc((2888 * #{$ex}) * .5), transparent calc((2888 * #{$ex}) * .5)) calc(#{$l} + (2085 * #{$ex})) calc(#{$t} + (1490 * #{$ex}))  / calc(2888 * #{$ex}) calc(1614 * #{$ex}) no-repeat,
+      
+      radial-gradient(ellipse, $red calc((2968 * #{$ex}) * .5), transparent calc((2968 * #{$ex}) * .5)) calc(#{$l} + (2613 * #{$ex})) calc(#{$t} + (1258 * #{$ex}))  / calc(2968 * #{$ex}) calc(2624 * #{$ex}) no-repeat,
+      
+      
+      /* scales */
+      
+      radial-gradient(ellipse, $white calc((1346 * #{$ex}) * .5), transparent calc((136 * #{$ex}) * .5)) calc(#{$l} + (3700 * .014vh)) calc(#{$t} + (2928 * .011vh))  / calc(1346 * #{$ex}) calc(1416 * #{$ex}) no-repeat,
+      radial-gradient(ellipse, $red calc((1346 * #{$ex}) * .5), transparent calc((136 * #{$ex}) * .5)) calc(#{$l} + (4000 * .014vh)) calc(#{$t} + (2928 * .011vh))  / calc(1346 * #{$ex}) calc(1416 * #{$ex}) no-repeat,
+      
+      
+      radial-gradient(ellipse, $white calc((1346 * #{$ex}) * .5), transparent calc((1346 * #{$ex}) * .5)) calc(#{$l} + (4100 * .014vh)) calc(#{$t} + (2528 * .011vh))  / calc(1346 * #{$ex}) calc(1416 * #{$ex}) no-repeat,
+      radial-gradient(ellipse, $red calc((1346 * #{$ex}) * .5), transparent calc((136 * #{$ex}) * .5)) calc(#{$l} + (4200 * .014vh)) calc(#{$t} + (2128 * .011vh))  / calc(1346 * #{$ex}) calc(1416 * #{$ex}) no-repeat,
+      
+      radial-gradient(ellipse, $white calc((1346 * #{$ex}) * .5), transparent calc((1346 * #{$ex}) * .5)) calc(#{$l} + (4100 * .014vh)) calc(#{$t} + (1782 * .011vh))  / calc(1346 * #{$ex}) calc(1416 * #{$ex}) no-repeat,
+      radial-gradient(ellipse, $red calc((1346 * #{$ex}) * .5), transparent calc((1346 * #{$ex}) * .5)) calc(#{$l} + (3900 * .014vh)) calc(#{$t} + (1328 * .011vh))  / calc(1346 * #{$ex}) calc(1416 * #{$ex}) no-repeat;
+
+}
+      

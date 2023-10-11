@@ -1,0 +1,122 @@
+$red: #B40001;
+$gray: #555555;
+$white: #FFFFFF;
+
+$shirt: #717A88;
+$head: #F0CAAB;
+$eyes: #3C6526;
+$hair: #E3BA9B;
+
+
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100vmin;
+  position: relative;
+  background: linear-gradient(180deg, darken($white, 5%) 15%, darken($white, 15%) 100%);
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+div.beloved {
+    width: 100vmin;
+    height: 100vmin;
+    margin: 0 auto;
+    display: flex;
+    z-index: -99;
+    position: relative;
+    background:
+
+    /* hair */
+    radial-gradient(ellipse, $hair 3vmin,  transparent 5vmin)  50vmin 5vmin / 10vmin 5vmin no-repeat,
+
+    /* eyes  */
+    radial-gradient(circle, $eyes .75vmin, darken($eyes, 75%) .75vmin,   transparent 1vmin)  52vmin 12vmin / 4vmin 4vmin no-repeat,
+    radial-gradient(circle, $eyes .75vmin, darken($eyes, 75%) .75vmin,   transparent 1vmin)  56vmin 12vmin / 4vmin 4vmin no-repeat,
+
+    /* head */
+    radial-gradient(circle, $head 5vmin, darken($head, 5%) 10vmin,   transparent 10vmin)  45vmin 5vmin / 20vmin 20vmin no-repeat,
+
+    /* shoes */
+    radial-gradient(ellipse at 90% 100%, darken($hair, 50%) 8vmin,  transparent 8vmin)  30vmin 85vmin / 20vmin 8vmin no-repeat,
+    radial-gradient(ellipse at 10% 100%, darken($hair, 50%) 8vmin,  transparent 8vmin)  63vmin 85vmin / 20vmin 8vmin no-repeat,
+
+    /* legs  */
+    linear-gradient(-85deg, transparent 1vmin, darken($shirt, 15%) 1vmin, $shirt 10vmin, transparent 10vmin) 37vmin 60vmin / 15vmin 30vmin no-repeat,
+    linear-gradient(85deg, transparent 1vmin, darken($shirt, 15%) 1vmin, $shirt 10vmin, transparent 10vmin) 61vmin 60vmin / 15vmin 30vmin no-repeat,
+}
+
+
+
+div.beloved:before {
+    width: 100vmin;
+    height: 100vmin;
+    z-index: 50;
+    display: flex;
+    position: absolute;
+    transform: rotate(45deg);
+    background:
+
+    /* hands */
+    radial-gradient(circle, $head 1vmin, darken($head, 10%) 3.5vmin,   transparent 3.5vmin)  29vmin 61vmin / 8vmin 6vmin no-repeat,
+    radial-gradient(circle, $head 1vmin, darken($head, 10%) 3.5vmin,   transparent 3.5vmin)  71vmin 20vmin / 6vmin 8vmin no-repeat,
+
+    /* heart */
+    radial-gradient(circle, $red 20vmin,  transparent 20vmin)  35vmin 5vmin / 40vmin 40vmin no-repeat,
+    radial-gradient(circle, $red  20vmin,  transparent 20vmin)  15vmin 25vmin / 40vmin 40vmin no-repeat,
+    linear-gradient(90deg, $red  50vmin,  transparent 50vmin) 35vmin 25vmin / 40vmin 40vmin no-repeat, 
+    ;
+}
+
+
+div.beloved:after {
+    width: 100vmin;
+    height: 100vmin;
+    top: 30vmin;
+    left: 28vmin;
+    z-index: 50;
+    display: flex;
+    position: absolute;
+    white-space: pre;
+    content: "Thank you \A Selena";
+    text-align: center;
+    line-height: 1.1;
+    color: $white;
+    opacity: 0.08;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 12vmin;
+}
+
+div.beloved:before{
+  animation: floatturn 10s ease-out infinite;
+}
+
+/* Float up and down */
+@keyframes floatturn{
+  50%{
+    transform: 
+      rotateZ(45deg)
+      translateY(-3vmin);
+  }
+}
+div.beloved:after{
+  animation: float 10s ease-out infinite;
+}
+
+/* Float up and down */
+@keyframes float{
+  50%{
+    transform: 
+      translateX(3vmin)
+      translateY(-3vmin);
+  }
+}

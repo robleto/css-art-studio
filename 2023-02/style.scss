@@ -1,0 +1,41 @@
+$white: #ffffff;
+$black: #444444;
+$blue-gray: #b5c4d9;
+
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(-90deg, lighten($blue-gray, 10%) 15%, lighten($blue-gray, 5%) 100%);
+}
+
+
+div.impossible {
+    width: 100vmin;
+    height: 100vmin;
+    margin: -10vmin auto 0;
+    position: relative;  
+    background: 
+
+   /* bottom-dark */ linear-gradient(60deg, $black 0vmin, $black 38vmin, transparent 38vmin) 20vmin 77vmin / 80vmin 7.5vmin no-repeat,
+
+   /* bottom-mid */ linear-gradient(-120deg, lighten($black, 40%) 0vmin, lighten($black, 40%) 50vmin, transparent 50vmin) -9.5vmin 84.5vmin / 80vmin 7.5vmin no-repeat,
+
+   /* right-light */ linear-gradient(60deg, transparent 18.5vmin, $white 18.5vmin, $white 25vmin, transparent 25vmin) 50vmin 25vmin / 50vmin 60vmin no-repeat,   
+    linear-gradient(120deg, $white 0vmin, $white 3.5vmin, transparent 3.5vmin) 75vmin 85vmin / 10vmin 10vmin no-repeat,
+      linear-gradient(-120deg, $white 0vmin, $white 3vmin, transparent 3vmin) 65vmin 85vmin / 10vmin 10vmin no-repeat,
+
+   /* left-light */ linear-gradient(-60deg, transparent 18.5vmin, $white 18.5vmin, $white 25vmin, transparent 25vmin) 0vmin 25vmin / 50vmin 60vmin no-repeat,
+
+    /* left-dark */ linear-gradient(-60deg, transparent 18.5vmin, $black 18.5vmin, $black 32vmin, transparent 32vmin) 0vmin 35vmin / 50vmin 50vmin no-repeat,
+
+    /* right-mid */ linear-gradient(60deg, transparent 18.5vmin, lighten($black, 40%) 18.5vmin, lighten($black, 40%) 25vmin, transparent 25vmin) 46.5vmin 34vmin / 50vmin 58vmin no-repeat;
+}

@@ -1,0 +1,194 @@
+/* Presets */
+
+$tan: #F5ECDB;
+$blue: #489A95;
+$brown: #5C4A4A;
+$black: #303030;
+$orange: #DF5B58;
+$yellow: #F2AC4C;
+$white: #FFFFFF;
+$gray: #E5E5E5;
+
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vmin;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(180deg, $tan 15%, $tan 100%);
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+
+div.vintage {
+    width: 100vmin;
+    height: 100vmin;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background:
+      
+
+
+    /*** SURFBOARD ***/
+
+    /* rack */
+    linear-gradient($orange 8vmin, transparent 8vmin) 10vmin 25vmin / 80vmin 1vmin no-repeat,
+    linear-gradient($orange 8vmin, transparent 8vmin) 27vmin 22vmin / 1vmin 12vmin no-repeat, 
+    linear-gradient($orange 8vmin, transparent 8vmin) 67vmin 22vmin / 1vmin 12vmin no-repeat, 
+
+    /*  surfboard  */  
+    linear-gradient($tan 8vmin, transparent 8vmin) 10vmin 26vmin / 80vmin 2vmin no-repeat,
+    radial-gradient(ellipse, $yellow 40vmin, transparent 22vmin) 10vmin 21.5vmin / 80vmin 6vmin no-repeat, 
+       
+
+    /*  surfboard fin */  
+    linear-gradient($tan 8vmin, transparent 8vmin) 8vmin 17vmin / 10vmin 20vmin no-repeat,
+    radial-gradient(ellipse, $yellow 5vmin, transparent 5vmin) 12vmin 17vmin / 10vmin 10vmin no-repeat,
+
+
+    
+     /*** WINDOWS ***/ 
+          
+    /* rear window 3 */
+    linear-gradient(-45deg, darken($gray, 10%) 6.75vmin, transparent 5vmin) 9vmin 25.75vmin / 20vmin 20vmin no-repeat, 
+    linear-gradient(darken($white, 5%) 12.5vmin, transparent 12.5vmin) 16.75vmin 36vmin / 12.5vmin 9.75vmin no-repeat, 
+    linear-gradient(darken($brown, 10%) 12.5vmin, transparent 12.5vmin) 16.25vmin 35.5vmin / 13.5vmin 10.5vmin no-repeat,
+      
+    /* rear window 2 */
+    linear-gradient(-45deg, darken($gray, 10%) 6.75vmin, transparent 5vmin) 24vmin 25.75vmin / 20vmin 20vmin no-repeat, 
+    linear-gradient(darken($white, 5%) 12.5vmin, transparent 12.5vmin) 31.75vmin 36vmin / 12.5vmin 9.75vmin no-repeat, 
+    linear-gradient(darken($brown, 10%) 12.5vmin, transparent 12.5vmin) 31.25vmin 35.5vmin / 13.5vmin 10.5vmin no-repeat,
+      
+    /* rear window 1 */
+    linear-gradient(-45deg, darken($gray, 10%) 6.75vmin, transparent 5vmin) 39vmin 25.75vmin / 20vmin 20vmin no-repeat, 
+    linear-gradient(darken($white, 5%) 12.5vmin, transparent 12.5vmin) 46.75vmin 36vmin / 12.5vmin 9.75vmin no-repeat, 
+    linear-gradient(darken($brown, 10%) 12.5vmin, transparent 12.5vmin) 46.25vmin 35.5vmin / 13.5vmin 10.5vmin no-repeat, 
+      
+    /* passanger window */
+    linear-gradient(60deg, darken($gray, 10%) 5vmin, transparent 5vmin) 79vmin 30vmin / 14vmin 15.75vmin no-repeat, 
+    linear-gradient(-45deg, darken($gray, 10%) 6.75vmin, transparent 5vmin) 59vmin 25.75vmin / 20vmin 20vmin no-repeat, 
+    linear-gradient(darken($white, 5%) 12.5vmin, transparent 12.5vmin) 61.75vmin 36vmin / 17.5vmin 9.75vmin no-repeat, 
+    linear-gradient(darken($brown, 10%) 12.5vmin, transparent 12.5vmin) 61.25vmin 35.5vmin / 17.5vmin 9.75vmin no-repeat, 
+    linear-gradient(60deg, darken($brown, 10%) 5vmin, transparent 5vmin) 79.5vmin 30vmin / 14vmin 15.75vmin no-repeat,
+      
+    /* front windows  */ 
+    linear-gradient(60deg, darken($white, 10%) 6vmin, transparent 6vmin) 88vmin 31vmin / 10vmin 15.75vmin no-repeat, 
+    linear-gradient(-120deg, darken($white, 10%) 6vmin, transparent 6vmin) 78vmin 34.75vmin / 10vmin 16vmin no-repeat, 
+      
+
+     /*** TOP ***/ 
+
+    /* brown rail  */   
+    linear-gradient($brown 40vmin, transparent 40vmin) 3vmin 47.5vmin / 93vmin 2vmin no-repeat, 
+    radial-gradient(circle,   $brown 1vmin,  transparent 1vmin)  2vmin 47.5vmin / 2vmin 2vmin no-repeat,
+    radial-gradient(circle, darken($brown, 10%) 1.25vmin,  transparent 1vmin)  1.25vmin 46.75vmin / 3vmin 3vmin no-repeat,  
+    linear-gradient(darken($brown, 10%) 40vmin, transparent 40vmin) 2.25vmin 47vmin / 93.5vmin 2vmin no-repeat, 
+      
+     /* brown window base */ 
+    linear-gradient(60deg, darken($brown, 10%) 6vmin, transparent 6vmin) 88.5vmin 29.5vmin / 14vmin 17vmin no-repeat,  
+    linear-gradient(darken($brown, 10%) 40vmin, transparent 40vmin) 8vmin 32.25vmin / 84vmin .75vmin no-repeat, 
+    linear-gradient($brown 40vmin, transparent 40vmin) 10vmin 33vmin / 79vmin 14vmin no-repeat,
+    linear-gradient(-75deg, $brown 6vmin, transparent 6vmin) -4vmin 32.5vmin / 14vmin 15vmin no-repeat,   
+      
+    /*  brown top */ 
+    radial-gradient(ellipse, $brown 42.5vmin, transparent 42.5vmin) 7.5vmin 28vmin / 84.5vmin 10vmin no-repeat, 
+      
+      
+
+     /*** LIGHTS ***/ 
+
+    /* headlights */
+    radial-gradient(ellipse, $white 1.75vmin, transparent 1.75vmin) 93.75vmin 58vmin / 3.5vmin 5.75vmin no-repeat,
+    radial-gradient(ellipse, $gray 2vmin, transparent 2vmin) 93vmin 58vmin / 4vmin 6vmin no-repeat,
+
+    /* sub lights */
+    radial-gradient(ellipse, $white .75vmin, transparent .75vmin) 90.5vmin 55vmin / 1.5vmin 3.75vmin no-repeat,
+    radial-gradient(ellipse, $gray 1vmin, transparent 1vmin) 90vmin 55vmin / 2vmin 4vmin no-repeat,
+
+
+
+
+
+
+     /*** BUMPERS ***/ 
+
+    /* front bumper */
+    radial-gradient(circle, darken($gray, 10%) 3vmin, transparent 3vmin) 90vmin 68vmin / 12vmin 4vmin no-repeat,
+    /* rear bumper */
+    radial-gradient(circle, darken($gray, 10%) 3vmin, transparent 3vmin) -1.5vmin 68vmin / 12vmin 4vmin no-repeat,
+
+
+     /*** WHEELS ***/ 
+
+    /* front tire */
+    radial-gradient(circle, $white 0vmin, $white 3.5vmin, $gray 3.5vmin, $gray 4vmin, $white 4vmin, $white 5.75vmin, $white 5.75vmin, $black 6vmin,  $black 8.25vmin,  transparent 8.25vmin)  70vmin 60vmin / 20vmin 20vmin no-repeat,
+      
+     /* back tire */ 
+    linear-gradient($blue 30vmin, transparent 30vmin) 8vmin 60vmin / 30vmin 5vmin no-repeat, 
+    radial-gradient(circle, $white 0vmin, $white 3.5vmin, $gray 3.5vmin, $gray 4vmin, $white 4vmin, $white 5.75vmin, $white 5.75vmin, $black 6vmin, $black 8.25vmin,  transparent 8.25vmin)  12vmin 60vmin / 20vmin 20vmin no-repeat,
+      
+    /* front wheelwells*/
+    linear-gradient($tan 30vmin, transparent 30vmin) 65vmin 70vmin / 30vmin 15vmin no-repeat, 
+    radial-gradient(ellipse, darken($blue, 8.25%) 10vmin,  transparent 8.25vmin)  61vmin 50vmin / 38vmin 40vmin no-repeat,
+      
+     /* rear wheelwells*/
+    linear-gradient($tan 30vmin, transparent 30vmin) 0vmin 70vmin / 40vmin 35vmin no-repeat, 
+    radial-gradient(ellipse, darken($blue, 10%) 8.5vmin,  transparent 8.5vmin)  5vmin 50vmin / 38vmin 40vmin no-repeat,
+    radial-gradient(ellipse, darken($blue, 10%) 8.5vmin,  transparent 8.5vmin) 1vmin 50vmin / 38vmin 40vmin no-repeat,
+   
+
+
+     /*** BODY ***/
+
+
+    /* vents */
+    linear-gradient(darken($blue, 10%) 5vmin, transparent 5vmin) 15vmin 52vmin / 8vmin .25vmin no-repeat, 
+    linear-gradient(darken($blue, 10%) 5vmin, transparent 5vmin) 15vmin 53vmin / 8vmin .25vmin no-repeat, 
+    linear-gradient(darken($blue, 10%) 5vmin, transparent 5vmin) 15vmin 54vmin / 8vmin .25vmin no-repeat, 
+    linear-gradient(darken($blue, 10%) 5vmin, transparent 5vmin) 15vmin 55vmin / 8vmin .25vmin no-repeat, 
+    linear-gradient(darken($blue, 10%) 5vmin, transparent 5vmin) 15vmin 56vmin / 8vmin .25vmin no-repeat, 
+    linear-gradient(darken($blue, 10%) 5vmin, transparent 5vmin) 15vmin 57vmin / 8vmin .25vmin no-repeat, 
+    linear-gradient(darken($blue, 10%) 5vmin, transparent 5vmin) 15vmin 58vmin / 8vmin .25vmin no-repeat, 
+    linear-gradient(darken($blue, 10%) 5vmin, transparent 5vmin) 15vmin 59vmin / 8vmin .25vmin no-repeat, 
+    linear-gradient(darken($blue, 10%) 5vmin, transparent 5vmin) 15vmin 60vmin / 8vmin .25vmin no-repeat, 
+
+
+    /* gastank */
+    radial-gradient(circle, $blue 3.25vmin, transparent 3.25vmin) 25.25vmin 52.25vmin / 5.5vmin 5.5vmin no-repeat,
+    radial-gradient(circle, darken($blue, 10%) 3.5vmin, transparent 3.5vmin) 25vmin 52vmin / 6vmin 6vmin no-repeat,
+
+     /* doorhandle */
+    linear-gradient($white 5vmin, transparent 5vmin) 67vmin 54.5vmin / 4vmin 1vmin no-repeat, 
+    radial-gradient(ellipse, darken($blue, 10%) 2.5vmin,  transparent 2.5vmin)  60vmin 50vmin / 20vmin 10vmin no-repeat,
+
+    /* door */
+    radial-gradient(ellipse, $blue 12vmin, transparent 12vmin) 61.25vmin 44.75vmin / 20vmin 22vmin no-repeat,
+    radial-gradient(ellipse, darken($blue, 10%) 12vmin, transparent 12vmin) 61vmin 45vmin / 20vmin 22vmin no-repeat,
+
+    
+     /* front */
+    radial-gradient(ellipse,  $blue 10vmin,  transparent 9vmin)  73vmin 41vmin / 30vmin 40vmin no-repeat,
+    radial-gradient(ellipse, $brown 7vmin,  transparent 5vmin)  82vmin 38.75vmin / 20vmin 40vmin no-repeat,
+      
+    /* rear */
+    radial-gradient(ellipse, $blue 7vmin,  transparent 5vmin)  0vmin 28vmin / 20vmin 70vmin no-repeat,
+    linear-gradient($blue 4vmin, $blue 30vmin, transparent 30vmin) 3vmin 65vmin / 8vmin 5vmin no-repeat, 
+       
+    /* base  */    
+    linear-gradient($blue 4vmin, $blue 40vmin, transparent 40vmin) 8vmin 40vmin / 80vmin 30vmin no-repeat, 
+      
+    }
+
+

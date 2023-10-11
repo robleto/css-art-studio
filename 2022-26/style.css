@@ -1,0 +1,39 @@
+/* Presets */
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vmin;
+  position: relative;
+  z-index: 1;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #F5ECDB), to(#F5ECDB));
+  background: linear-gradient(180deg, #F5ECDB 15%, #F5ECDB 100%);
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+div.vintage {
+  width: 100vmin;
+  height: 100vmin;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(#DF5B58 8vmin, transparent 8vmin) 10vmin 25vmin/80vmin 1vmin no-repeat, linear-gradient(#DF5B58 8vmin, transparent 8vmin) 27vmin 22vmin/1vmin 12vmin no-repeat, linear-gradient(#DF5B58 8vmin, transparent 8vmin) 67vmin 22vmin/1vmin 12vmin no-repeat, linear-gradient(#F5ECDB 8vmin, transparent 8vmin) 10vmin 26vmin/80vmin 2vmin no-repeat, radial-gradient(ellipse, #F2AC4C 40vmin, transparent 22vmin) 10vmin 21.5vmin/80vmin 6vmin no-repeat, linear-gradient(#F5ECDB 8vmin, transparent 8vmin) 8vmin 17vmin/10vmin 20vmin no-repeat, radial-gradient(ellipse, #F2AC4C 5vmin, transparent 5vmin) 12vmin 17vmin/10vmin 10vmin no-repeat, linear-gradient(-45deg, #cccccc 6.75vmin, transparent 5vmin) 9vmin 25.75vmin/20vmin 20vmin no-repeat, linear-gradient(#f2f2f2 12.5vmin, transparent 12.5vmin) 16.75vmin 36vmin/12.5vmin 9.75vmin no-repeat, linear-gradient(#403333 12.5vmin, transparent 12.5vmin) 16.25vmin 35.5vmin/13.5vmin 10.5vmin no-repeat, linear-gradient(-45deg, #cccccc 6.75vmin, transparent 5vmin) 24vmin 25.75vmin/20vmin 20vmin no-repeat, linear-gradient(#f2f2f2 12.5vmin, transparent 12.5vmin) 31.75vmin 36vmin/12.5vmin 9.75vmin no-repeat, linear-gradient(#403333 12.5vmin, transparent 12.5vmin) 31.25vmin 35.5vmin/13.5vmin 10.5vmin no-repeat, linear-gradient(-45deg, #cccccc 6.75vmin, transparent 5vmin) 39vmin 25.75vmin/20vmin 20vmin no-repeat, linear-gradient(#f2f2f2 12.5vmin, transparent 12.5vmin) 46.75vmin 36vmin/12.5vmin 9.75vmin no-repeat, linear-gradient(#403333 12.5vmin, transparent 12.5vmin) 46.25vmin 35.5vmin/13.5vmin 10.5vmin no-repeat, linear-gradient(60deg, #cccccc 5vmin, transparent 5vmin) 79vmin 30vmin/14vmin 15.75vmin no-repeat, linear-gradient(-45deg, #cccccc 6.75vmin, transparent 5vmin) 59vmin 25.75vmin/20vmin 20vmin no-repeat, linear-gradient(#f2f2f2 12.5vmin, transparent 12.5vmin) 61.75vmin 36vmin/17.5vmin 9.75vmin no-repeat, linear-gradient(#403333 12.5vmin, transparent 12.5vmin) 61.25vmin 35.5vmin/17.5vmin 9.75vmin no-repeat, linear-gradient(60deg, #403333 5vmin, transparent 5vmin) 79.5vmin 30vmin/14vmin 15.75vmin no-repeat, linear-gradient(60deg, #e6e6e6 6vmin, transparent 6vmin) 88vmin 31vmin/10vmin 15.75vmin no-repeat, linear-gradient(-120deg, #e6e6e6 6vmin, transparent 6vmin) 78vmin 34.75vmin/10vmin 16vmin no-repeat, linear-gradient(#5C4A4A 40vmin, transparent 40vmin) 3vmin 47.5vmin/93vmin 2vmin no-repeat, radial-gradient(circle, #5C4A4A 1vmin, transparent 1vmin) 2vmin 47.5vmin/2vmin 2vmin no-repeat, radial-gradient(circle, #403333 1.25vmin, transparent 1vmin) 1.25vmin 46.75vmin/3vmin 3vmin no-repeat, linear-gradient(#403333 40vmin, transparent 40vmin) 2.25vmin 47vmin/93.5vmin 2vmin no-repeat, linear-gradient(60deg, #403333 6vmin, transparent 6vmin) 88.5vmin 29.5vmin/14vmin 17vmin no-repeat, linear-gradient(#403333 40vmin, transparent 40vmin) 8vmin 32.25vmin/84vmin 0.75vmin no-repeat, linear-gradient(#5C4A4A 40vmin, transparent 40vmin) 10vmin 33vmin/79vmin 14vmin no-repeat, linear-gradient(-75deg, #5C4A4A 6vmin, transparent 6vmin) -4vmin 32.5vmin/14vmin 15vmin no-repeat, radial-gradient(ellipse, #5C4A4A 42.5vmin, transparent 42.5vmin) 7.5vmin 28vmin/84.5vmin 10vmin no-repeat, radial-gradient(ellipse, #FFFFFF 1.75vmin, transparent 1.75vmin) 93.75vmin 58vmin/3.5vmin 5.75vmin no-repeat, radial-gradient(ellipse, #E5E5E5 2vmin, transparent 2vmin) 93vmin 58vmin/4vmin 6vmin no-repeat, radial-gradient(ellipse, #FFFFFF 0.75vmin, transparent 0.75vmin) 90.5vmin 55vmin/1.5vmin 3.75vmin no-repeat, radial-gradient(ellipse, #E5E5E5 1vmin, transparent 1vmin) 90vmin 55vmin/2vmin 4vmin no-repeat, radial-gradient(circle, #cccccc 3vmin, transparent 3vmin) 90vmin 68vmin/12vmin 4vmin no-repeat, radial-gradient(circle, #cccccc 3vmin, transparent 3vmin) -1.5vmin 68vmin/12vmin 4vmin no-repeat, radial-gradient(circle, #FFFFFF 0vmin, #FFFFFF 3.5vmin, #E5E5E5 3.5vmin, #E5E5E5 4vmin, #FFFFFF 4vmin, #FFFFFF 5.75vmin, #FFFFFF 5.75vmin, #303030 6vmin, #303030 8.25vmin, transparent 8.25vmin) 70vmin 60vmin/20vmin 20vmin no-repeat, linear-gradient(#489A95 30vmin, transparent 30vmin) 8vmin 60vmin/30vmin 5vmin no-repeat, radial-gradient(circle, #FFFFFF 0vmin, #FFFFFF 3.5vmin, #E5E5E5 3.5vmin, #E5E5E5 4vmin, #FFFFFF 4vmin, #FFFFFF 5.75vmin, #FFFFFF 5.75vmin, #303030 6vmin, #303030 8.25vmin, transparent 8.25vmin) 12vmin 60vmin/20vmin 20vmin no-repeat, linear-gradient(#F5ECDB 30vmin, transparent 30vmin) 65vmin 70vmin/30vmin 15vmin no-repeat, radial-gradient(ellipse, #3b7d79 10vmin, transparent 8.25vmin) 61vmin 50vmin/38vmin 40vmin no-repeat, linear-gradient(#F5ECDB 30vmin, transparent 30vmin) 0vmin 70vmin/40vmin 35vmin no-repeat, radial-gradient(ellipse, #387773 8.5vmin, transparent 8.5vmin) 5vmin 50vmin/38vmin 40vmin no-repeat, radial-gradient(ellipse, #387773 8.5vmin, transparent 8.5vmin) 1vmin 50vmin/38vmin 40vmin no-repeat, linear-gradient(#387773 5vmin, transparent 5vmin) 15vmin 52vmin/8vmin 0.25vmin no-repeat, linear-gradient(#387773 5vmin, transparent 5vmin) 15vmin 53vmin/8vmin 0.25vmin no-repeat, linear-gradient(#387773 5vmin, transparent 5vmin) 15vmin 54vmin/8vmin 0.25vmin no-repeat, linear-gradient(#387773 5vmin, transparent 5vmin) 15vmin 55vmin/8vmin 0.25vmin no-repeat, linear-gradient(#387773 5vmin, transparent 5vmin) 15vmin 56vmin/8vmin 0.25vmin no-repeat, linear-gradient(#387773 5vmin, transparent 5vmin) 15vmin 57vmin/8vmin 0.25vmin no-repeat, linear-gradient(#387773 5vmin, transparent 5vmin) 15vmin 58vmin/8vmin 0.25vmin no-repeat, linear-gradient(#387773 5vmin, transparent 5vmin) 15vmin 59vmin/8vmin 0.25vmin no-repeat, linear-gradient(#387773 5vmin, transparent 5vmin) 15vmin 60vmin/8vmin 0.25vmin no-repeat, radial-gradient(circle, #489A95 3.25vmin, transparent 3.25vmin) 25.25vmin 52.25vmin/5.5vmin 5.5vmin no-repeat, radial-gradient(circle, #387773 3.5vmin, transparent 3.5vmin) 25vmin 52vmin/6vmin 6vmin no-repeat, linear-gradient(#FFFFFF 5vmin, transparent 5vmin) 67vmin 54.5vmin/4vmin 1vmin no-repeat, radial-gradient(ellipse, #387773 2.5vmin, transparent 2.5vmin) 60vmin 50vmin/20vmin 10vmin no-repeat, radial-gradient(ellipse, #489A95 12vmin, transparent 12vmin) 61.25vmin 44.75vmin/20vmin 22vmin no-repeat, radial-gradient(ellipse, #387773 12vmin, transparent 12vmin) 61vmin 45vmin/20vmin 22vmin no-repeat, radial-gradient(ellipse, #489A95 10vmin, transparent 9vmin) 73vmin 41vmin/30vmin 40vmin no-repeat, radial-gradient(ellipse, #5C4A4A 7vmin, transparent 5vmin) 82vmin 38.75vmin/20vmin 40vmin no-repeat, radial-gradient(ellipse, #489A95 7vmin, transparent 5vmin) 0vmin 28vmin/20vmin 70vmin no-repeat, linear-gradient(#489A95 4vmin, #489A95 30vmin, transparent 30vmin) 3vmin 65vmin/8vmin 5vmin no-repeat, linear-gradient(#489A95 4vmin, #489A95 40vmin, transparent 40vmin) 8vmin 40vmin/80vmin 30vmin no-repeat;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,312 @@
+/* colors */
+$white: #FFFFFF;
+$black: #000000;
+$offwhite: #D5DBCF;
+$gray: #F0f0f0;
+$skyblue: #C4D9EA;
+
+
+$gold: #A89D53;
+$fucia: #984070;
+$orange: #C3975B;
+$red: #B63B46;
+$yellow: #CB9E60;
+$green: #A1B554;
+$brown: #684645;
+$peach: #EBC19B;
+$beige: #EFE6BB;
+$gray: #E2E8F4;
+
+$bluefur: #0080C7;
+
+
+$brick1: 90deg, $offwhite 0vmin, $offwhite .5vmin, $orange 1vmin, darken($orange, 10%) 8vmin, $offwhite 8vmin, $offwhite 8.5vmin, $red 9vmin, darken($red, 10%) 17vmin, $offwhite 17vmin, $offwhite 17.5vmin, $fucia 18vmin, darken($fucia, 10%) 26vmin, $offwhite 17vmin, $offwhite 17.5vmin;
+
+$brick2: 90deg, darken($red, 5%)  1vmin, darken($red, 10%) 4vmin, $offwhite 4vmin, $offwhite 4.5vmin, $fucia 5vmin, darken($fucia, 10%) 13vmin, $offwhite 13vmin, $offwhite 13.5vmin, $fucia 14vmin, darken($fucia, 10%) 22vmin, $offwhite 22vmin, $offwhite 22.5vmin, darken($red, 5%)23vmin, darken($red, 10%) 27vmin;
+
+$brick3: 90deg, $offwhite 0vmin, $offwhite .5vmin, $fucia 1vmin, darken($fucia, 10%) 8vmin, $offwhite 8vmin, $offwhite 8.5vmin, $red 9vmin, darken($red, 10%) 17vmin, $offwhite 17vmin, $offwhite 17.5vmin, $yellow 18vmin, darken($yellow, 10%) 26vmin, $offwhite 17vmin, $offwhite 17.5vmin;
+
+$brick4: 90deg, darken($fucia, 5%)  1vmin, darken($fucia, 10%) 4vmin, $offwhite 4vmin, $offwhite 4.5vmin, $fucia 5vmin, darken($fucia, 10%) 13vmin, $offwhite 13vmin, $offwhite 13.5vmin, $red 14vmin, darken($red, 10%) 22vmin, $offwhite 22vmin, $offwhite 22.5vmin, darken($fucia, 5%)23vmin, darken($fucia, 10%) 27vmin;
+
+
+/* Presets */
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  perspective-origin: 50% 100%;
+  background-color: lighten($bluefur, 50%);
+  background:
+      linear-gradient(lighten($bluefur, 50%) 0%, lighten($bluefur, 40%) 100%);
+}
+
+div:before, div:after {
+  
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+
+div.monster {
+    margin-top: 20vmin;
+    width: 90vmin;
+    height: 90vmin;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-left: solid 60px $gold;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    font-size: 7.5vmin;
+    line-height: 1.1;
+    transform: perspective(1000px) rotateY(-5deg) translateY(-10vh);
+    color: $fucia;
+    box-shadow:  
+      transparent 0px 0px, white 5px 0px 0px -3px, $gray 5px 0px, white 10px 0px 0px -3px, $gray 10px 0px, white 15px 0px 0px -3px, $gray 15px 0px, white 20px 0px 0px -3px,  $gray 20px 0px;
+    padding-top: 22vmin;
+    padding-left: 17vmin;
+    padding-right: 40vmin;
+    text-align: center;
+    font-family: 'Chicle', cursive;
+    background-color: $fucia;
+    background:
+
+       /*** LAMPPOST ***/
+
+      /*  streetsign */
+      linear-gradient($green 0%, darken($green, 20%) 100%) 53vmin 21.25vmin / 20vmin 6vmin no-repeat,
+      linear-gradient(90deg, $green 0%, darken($green, 20%) 100%) 70vmin 25.25vmin / 8vmin 1vmin no-repeat,
+      linear-gradient(90deg, $green 0%, darken($green, 20%) 100%) 70vmin 22.25vmin / 8vmin 1vmin no-repeat,
+      radial-gradient(ellipse at bottom, darken($green, 10%) 4vmin, $green 5vmin, transparent 5vmin) 58vmin 18.5vmin / 10vmin 3vmin no-repeat,
+
+      /*  pole and lamp */
+      radial-gradient(ellipse at top, darken($green, 10%) 4vmin, $green 5vmin, transparent 5vmin) 70vmin 15vmin / 10vmin 3vmin no-repeat,
+      radial-gradient(ellipse, darken($offwhite, 5%) 4vmin, $offwhite 6vmin, transparent 6vmin) 69vmin 5vmin / 12vmin 12vmin no-repeat,
+      radial-gradient(ellipse at bottom, darken($green, 10%) 4vmin, $green 5vmin, transparent 5vmin) 70vmin 74.25vmin / 10vmin 3vmin no-repeat,
+      linear-gradient(90deg, $green 0%, darken($green, 30%) 100%) 73.5vmin 15vmin / 3vmin 60vmin no-repeat,
+
+      /*  base top */
+      radial-gradient(circle, darken($green, 25%) .75vmin, transparent .75vmin) 77vmin 78vmin / 2vmin 2vmin no-repeat,
+      radial-gradient(circle, darken($green, 20%) .75vmin, transparent .75vmin) 74vmin 78vmin / 2vmin 2vmin no-repeat,
+      radial-gradient(circle, darken($green, 15%) .75vmin, transparent .75vmin) 71vmin 78vmin / 2vmin 2vmin no-repeat,
+      linear-gradient(90deg, $green 0%, darken($green, 20%) 100%) 70vmin 77.25vmin / 10vmin 3vmin no-repeat,
+
+      /*  base */
+      radial-gradient(ellipse, darken($green, 30%) 1vmin, transparent 1vmin) 77vmin 82vmin / 2vmin 20vmin no-repeat,
+      radial-gradient(ellipse, darken($green, 25%) 1vmin, transparent 1vmin) 74vmin 82vmin / 2vmin 20vmin no-repeat,
+      radial-gradient(ellipse, darken($green, 20%) 1vmin, transparent 1vmin) 71vmin 82vmin / 2vmin 20vmin no-repeat,
+      linear-gradient(90deg, $green 0%, darken($green, 30%) 100%) 70vmin 78vmin / 10vmin 12vmin no-repeat,
+
+
+
+       /*** TRASHCAN ***/
+
+
+      /* lid */
+      linear-gradient(90deg, $green 0%, $green 100%) 12vmin 71vmin / 6vmin 1vmin no-repeat,
+      linear-gradient(90deg, $green 0%, darken($green, 20%) 100%) 12vmin 71vmin / 2vmin 3vmin no-repeat,
+      radial-gradient(circle, darken($green, 30%) .75vmin, transparent .75vmin) 21vmin 78vmin / 2vmin 2vmin no-repeat,
+      radial-gradient(circle, darken($green, 25%) .75vmin, transparent .75vmin) 16vmin 78vmin / 2vmin 2vmin no-repeat,
+      radial-gradient(circle, darken($green, 20%) .75vmin, transparent .75vmin) 11vmin 78vmin / 2vmin 2vmin no-repeat,
+      radial-gradient(circle, darken($green, 15%) .75vmin, transparent .75vmin) 6vmin 78vmin / 2vmin 2vmin no-repeat,
+      linear-gradient(90deg, $green 0%, darken($green, 20%) 100%) 4vmin 77.5vmin / 22vmin 3vmin no-repeat,
+      radial-gradient(ellipse at bottom, darken($green, 10%) 0vmin, $green 11vmin, transparent 11vmin) 3vmin 72vmin / 24vmin 7vmin no-repeat,
+      linear-gradient(90deg, $green 0%, darken($green, 20%) 100%) 16vmin 72vmin / 2vmin 3vmin no-repeat,
+
+      /* can */
+      radial-gradient(ellipse, darken($green, 45%) 1vmin, transparent 1vmin) 21vmin 82vmin / 2vmin 20vmin no-repeat,
+      radial-gradient(ellipse, darken($green, 40%) 1vmin, transparent 1vmin) 18vmin 82vmin / 2vmin 20vmin no-repeat,
+      radial-gradient(ellipse, darken($green, 35%) 1vmin, transparent 1vmin) 15vmin 82vmin / 2vmin 20vmin no-repeat,
+      radial-gradient(ellipse, darken($green, 30%) 1vmin, transparent 1vmin) 12vmin 82vmin / 2vmin 20vmin no-repeat,
+      radial-gradient(ellipse, darken($green, 25%) 1vmin, transparent 1vmin) 9vmin 82vmin / 2vmin 20vmin no-repeat,
+      radial-gradient(ellipse, darken($green, 20%) 1vmin, transparent 1vmin) 6vmin 82vmin / 2vmin 20vmin no-repeat,
+      linear-gradient(90deg, $green 0%, darken($green, 30%) 100%) 5vmin 80vmin / 20vmin 10vmin no-repeat,
+
+
+       /*** SIGN ***/
+
+      /* sign screws  */
+      radial-gradient(circle, $brown 1vmin, transparent 1vmin) 15vmin 20vmin / 2vmin 2vmin no-repeat,
+      radial-gradient(circle, $brown 1vmin, transparent 1vmin) 43vmin 20vmin / 2vmin 2vmin no-repeat,
+      radial-gradient(circle, $brown 1vmin, transparent 1vmin) 15vmin 64vmin / 2vmin 2vmin no-repeat,
+      radial-gradient(circle, $brown 1vmin, transparent 1vmin) 43vmin 64vmin / 2vmin 2vmin no-repeat,
+
+      /* sign back */
+      linear-gradient($offwhite 0%, $offwhite 100%) 13vmin 18vmin / 34vmin 49vmin no-repeat,
+      linear-gradient(lighten($green, 10%) 0%, $green 100%) 12vmin 17vmin / 36vmin 51vmin no-repeat,
+      linear-gradient($green 0%, darken($green, 30%) 100%) 10vmin 15vmin / 40vmin 55vmin no-repeat,
+
+      /* sign top */
+      radial-gradient(circle, $fucia 1.25vmin, darken($fucia, 10%) 2vmin, transparent 2vmin) 28vmin 8vmin / 4vmin 4vmin no-repeat,
+      radial-gradient(ellipse, $green 0vmin, $green 13vmin, lighten($green, 10%) 13vmin, lighten($green, 10%) 14vmin, $green 14vmin, $green 15vmin, transparent 15vmin) 15vmin 8vmin / 30vmin 20vmin no-repeat,
+
+
+       /*** BACKGROUND ***/
+
+       /* peach bldgs */
+      linear-gradient($peach 0%, $peach 100%) 60vmin 70vmin / 5vmin 30vmin no-repeat,
+      linear-gradient($peach 0%, $peach 100%) 65vmin 75vmin / 5vmin 20vmin no-repeat,
+
+       /* beige bldgs */
+      linear-gradient($beige 0%, $beige 100%) 67vmin 60vmin / 13vmin 40vmin no-repeat,
+      linear-gradient($beige 0%, $beige 100%) 80vmin 75vmin / 20vmin 25vmin no-repeat,
+
+       /* gray bldgs */
+      linear-gradient($gray 0%, $gray 100%) 77vmin 50vmin / 23vmin 50vmin no-repeat,
+
+        /* sky */
+      linear-gradient($skyblue 0%, $skyblue 100%) 60vmin 0vmin / 40vmin 100vmin no-repeat,
+
+      /* brick wall  */
+      repeating-linear-gradient($brick4)  0vmin 92vmin / 100vmin 3vmin repeat-x,
+      repeating-linear-gradient($brick3)  0vmin 88vmin / 100vmin 3vmin repeat-x,
+      repeating-linear-gradient($brick2)  0vmin 84vmin / 100vmin 3vmin repeat-x,
+      repeating-linear-gradient($brick1)  0vmin 80vmin / 100vmin 3vmin repeat-x,
+      repeating-linear-gradient($brick4)  0vmin 76vmin / 100vmin 3vmin repeat-x,
+      repeating-linear-gradient($brick3)  0vmin 72vmin / 100vmin 3vmin repeat-x,
+      repeating-linear-gradient($brick2)  0vmin 68vmin / 100vmin 3vmin repeat-x,
+      repeating-linear-gradient($brick1)  0vmin 64vmin / 100vmin 3vmin repeat-x,
+      repeating-linear-gradient($brick4)  0vmin 60vmin / 100vmin 3vmin repeat-x,
+      repeating-linear-gradient($brick3)  0vmin 56vmin / 100vmin 3vmin repeat-x,
+      repeating-linear-gradient($brick2)  0vmin 52vmin / 100vmin 3vmin repeat-x,
+      repeating-linear-gradient($brick1)  0vmin 48vmin / 100vmin 3vmin repeat-x,
+      repeating-linear-gradient($brick4)  0vmin 44vmin / 100vmin 3vmin repeat-x,
+      repeating-linear-gradient($brick3)  0vmin 40vmin / 100vmin 3vmin repeat-x,
+      repeating-linear-gradient($brick2)  0vmin 36vmin / 100vmin 3vmin repeat-x,
+      repeating-linear-gradient($brick1)  0vmin 32vmin / 100vmin 3vmin repeat-x,
+      repeating-linear-gradient($brick4)  0vmin 28vmin / 100vmin 3vmin repeat-x,
+      repeating-linear-gradient($brick3)  0vmin 24vmin / 100vmin 3vmin repeat-x,
+      repeating-linear-gradient($brick2)  0vmin 20vmin / 100vmin 3vmin repeat-x,
+      repeating-linear-gradient($brick1)  0vmin 16vmin / 100vmin 3vmin repeat-x,
+      repeating-linear-gradient($brick4)  0vmin 12vmin / 100vmin 3vmin repeat-x,
+      repeating-linear-gradient($brick3)  0vmin 8vmin / 100vmin 3vmin repeat-x,
+      repeating-linear-gradient($brick2)  0vmin 4vmin / 100vmin 3vmin repeat-x,
+      repeating-linear-gradient($brick1)  0vmin 0vmin / 100vmin 3vmin repeat-x,
+      repeating-linear-gradient($offwhite 0vmin, $offwhite .5vmin, transparent 1vmin, transparent 3vmin),
+      linear-gradient($offwhite 0%, $offwhite 100%);
+}
+
+
+
+div.monster:before {
+    width: 70vmin;
+    top: 30vmin;
+    left: 10vmin;
+    height: 60vmin;
+    position: absolute;
+    z-index: 99;
+    overflow: visible;
+    padding-top: 45vmin;
+    padding-left: 7.5vmin;
+    text-align: left;
+    color: $black;
+    white-space: pre;
+    content: 'Hello,  \A everybodyeee!';
+    font-size: 3.5vmin;
+    font-family: 'Fuzzy Bubbles', cursive;
+    background: 
+
+
+      /* speech bubble */
+      radial-gradient(ellipse at bottom right, $offwhite 0vmin, $offwhite 10vmin, transparent 10vmin) -3vmin 25vmin / 35vmin 20vmin no-repeat,
+      radial-gradient(ellipse, $offwhite 0vmin, $offwhite 10vmin, transparent 10vmin) 12vmin 40vmin / 25vmin 20vmin no-repeat,
+      radial-gradient(ellipse, $offwhite 0vmin, $offwhite 10vmin, transparent 10vmin) 8vmin 36vmin / 25vmin 20vmin no-repeat,
+      radial-gradient(ellipse, $offwhite 0vmin, $offwhite 10vmin, transparent 10vmin) 2vmin 39vmin / 25vmin 20vmin no-repeat,
+
+      radial-gradient(ellipse at bottom right, $black 0vmin, $black 10.25vmin, transparent 10.25vmin) -2.75vmin 25vmin / 35vmin 20vmin no-repeat,
+      radial-gradient(ellipse, $black 0vmin, $black 10.5vmin, transparent 10.5vmin) 11.75vmin 40vmin / 25vmin 20vmin no-repeat,
+      radial-gradient(ellipse, $black 0vmin, $black 10.25vmin, transparent 10.25vmin) 8vmin 36vmin / 25vmin 20vmin no-repeat,
+      radial-gradient(ellipse, $black 0vmin, $black 10.25vmin, transparent 10.25vmin) 2vmin 39vmin / 25vmin 20vmin no-repeat,
+
+      /* grover eyes */
+      radial-gradient(ellipse, $black 0vmin, $black 1.25vmin, transparent 1.25vmin) 40vmin 19vmin / 3vmin 3vmin no-repeat,
+      radial-gradient(ellipse, $black 0vmin, $black 1.25vmin, transparent 1.25vmin) 47vmin 19vmin / 3vmin 3vmin no-repeat,
+      radial-gradient(ellipse, $white 0vmin, $white 2.5vmin, transparent 2.5vmin) 37.75vmin 18vmin / 7vmin 5vmin no-repeat,
+      radial-gradient(ellipse, $white 0vmin, $white 2.5vmin, transparent 2.5vmin) 45.75vmin 18vmin / 7vmin 5vmin no-repeat,
+
+      /* grover nose */
+      radial-gradient(ellipse, $fucia 0vmin, $fucia 2.5vmin, transparent 2.5vmin) 42.5vmin 21vmin / 5vmin 5vmin no-repeat,
+
+      /* grover mouth */
+      radial-gradient(ellipse at top, $bluefur 0vmin, $bluefur 7vmin, transparent 7vmin) 35.5vmin 23.5vmin / 20vmin 4vmin no-repeat,
+      radial-gradient(ellipse at top, $black 0vmin, $black 3vmin, $black 5vmin, $red 5vmin, $red 6vmin, $bluefur 6vmin, darken($bluefur, 10%)7.5vmin, transparent 7vmin) 38vmin 25vmin / 15vmin 7.5vmin no-repeat,
+
+      /* grover body */
+      radial-gradient(ellipse at bottom, $bluefur 13vmin, darken($bluefur, 10%) 15vmin, transparent 15vmin) 30vmin 30vmin / 30vmin 65vmin no-repeat,
+      radial-gradient(ellipse, $bluefur 6vmin, darken($bluefur, 10%) 9vmin, transparent 9vmin) 36.25vmin 11.75vmin / 18vmin 18vmin no-repeat,
+
+      /* grover right arm */
+      radial-gradient(ellipse at top, darken($bluefur, 5%) 3.5vmin, darken($bluefur, 10%) 5vmin, transparent 5vmin) 57vmin 12vmin / 9vmin 4vmin no-repeat,
+      radial-gradient(ellipse at bottom, darken($bluefur, 2%) 0vmin, darken($bluefur, 10%) 1.75vmin, transparent 1.75vmin) 56.75vmin 5vmin / 4vmin 9vmin no-repeat,
+      radial-gradient(ellipse at bottom, darken($bluefur, 2%) 0vmin,darken($bluefur, 10%) 2vmin, transparent 2vmin) 58vmin 1vmin / 5vmin 14vmin no-repeat,
+      radial-gradient(ellipse at bottom, darken($bluefur, 2%) 0vmin, darken($bluefur, 10%) 2vmin, transparent 2vmin) 60vmin 1vmin / 5vmin 14vmin no-repeat,
+      radial-gradient(ellipse at bottom, darken($bluefur, 2%) 0vmin, darken($bluefur, 10%) 2vmin, transparent 2vmin) 62vmin 1vmin / 5vmin 14vmin no-repeat,
+      radial-gradient(ellipse at top left, transparent 10vmin, $bluefur 10vmin, darken($bluefur, 10%) 14vmin, transparent 14vmin) 50vmin 15vmin / 20vmin 40vmin no-repeat,
+
+
+      /* grover left arm */
+      radial-gradient(ellipse at right, transparent 10vmin, $bluefur 10vmin, darken($bluefur, 10%) 14.5vmin, transparent 14vmin) 23vmin 30vmin / 20vmin 40vmin no-repeat,
+
+      /* grover shaggy */
+      linear-gradient(-25deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 36vmin 13vmin / 3vmin 3vmin no-repeat,
+      linear-gradient(-65deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 34vmin 20vmin / 3vmin 3vmin no-repeat,
+      linear-gradient(-75deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 35vmin 24vmin / 3vmin 3vmin no-repeat,
+
+
+      linear-gradient(25deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 50.75vmin 13vmin / 3vmin 3vmin no-repeat,
+      linear-gradient(25deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 51.75vmin 16vmin / 3vmin 3vmin no-repeat,
+      linear-gradient(65deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 53.5vmin 21vmin / 3vmin 3vmin no-repeat,
+      linear-gradient(75deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 51.25vmin 26vmin / 3vmin 3vmin no-repeat,
+
+
+      linear-gradient(-45deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 36.75vmin 33vmin / 3vmin 3vmin no-repeat,
+      linear-gradient(-45deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 35.25vmin 37vmin / 3vmin 3vmin no-repeat,
+      linear-gradient(-35deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 33vmin 43vmin / 3vmin 3vmin no-repeat,
+      linear-gradient(-65deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 31.25vmin 50vmin / 3vmin 3vmin no-repeat,
+      linear-gradient(-75deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 30.5vmin 56vmin / 3vmin 3vmin no-repeat,
+
+
+      linear-gradient(45deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 50.25vmin 33vmin / 3vmin 3vmin no-repeat,
+      linear-gradient(45deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 51.25vmin 37vmin / 3vmin 3vmin no-repeat,
+      linear-gradient(35deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 53.75vmin 43vmin / 3vmin 3vmin no-repeat,
+      linear-gradient(65deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 55.5vmin 50vmin / 3vmin 3vmin no-repeat,
+      linear-gradient(55deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 57vmin 56vmin / 3vmin 3vmin no-repeat,
+
+      linear-gradient(-125deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 56.75vmin 23vmin / 3vmin 3vmin no-repeat,
+      linear-gradient(115deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 57.25vmin 37vmin / 3vmin 3vmin no-repeat,
+      linear-gradient(125deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 61vmin 30vmin / 3vmin 3vmin no-repeat,
+
+      linear-gradient(-45deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 30vmin 38vmin / 3vmin 3vmin no-repeat,
+      linear-gradient(-43deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 27.5vmin 42vmin / 3vmin 3vmin no-repeat,
+      linear-gradient(-65deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 26.5vmin 51vmin / 3vmin 3vmin no-repeat,
+      ;
+}
+
+div.monster:after {
+    width: 25vmin;
+    top: 22.5vmin;
+    left: 54.5vmin;
+    height: 10vmin;
+    position: absolute;
+    z-index: 49;
+    overflow: visible;
+    text-align: left;
+    color: $white;
+    white-space: pre;
+    content: 'SESAME ST.';
+    font-size: 3.5vmin;
+    letter-spacing: .25vmin;
+    font-family: 'Londrina Solid', cursive;
+}
