@@ -1,0 +1,222 @@
+$test: #bada55;
+$beige: #ddddcc;
+$red: #d5872b;
+$white: #f1f1f1;
+$tan: #e6cda5;
+$light-brown: #c78c55;
+$dark-brown: #844414;
+$yellow: #FEE25E;
+$orange: #E77E22;
+
+div, div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+  box-sizing:border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  
+    background: 
+    radial-gradient($beige, darken($beige, 10%));
+}
+
+
+$cardback: 20vmin 30vmin;
+$cardoutline: 22vmin 32vmin;
+
+$a1: 3vmin 3vmin;
+$b1: 2vmin 2vmin;
+
+$a2: 28vmin 3vmin;
+$b2: 27vmin 2vmin;
+
+$a3: 53vmin 3vmin;
+$b3: 52vmin 2vmin;
+
+$a4: 78vmin 3vmin;
+$b4: 77vmin 2vmin;
+
+
+$c1: 3vmin 38vmin;
+$d1: 2vmin 37vmin;
+
+$c2: 28vmin 38vmin;
+$d2: 27vmin 37vmin;
+
+$c3: 53vmin 38vmin;
+$d3: 52vmin 37vmin;
+
+$c4: 78vmin 38vmin;
+$d4: 77vmin 37vmin;
+
+
+$e1: 3vmin 73vmin;
+$f1: 2vmin 72vmin;
+
+$e2: 28vmin 73vmin;
+$f2: 27vmin 72vmin;
+
+$e3: 53vmin 73vmin;
+$f3: 52vmin 72vmin;
+
+$e4: 78vmin 73vmin;
+$f4: 77vmin 72vmin;
+
+
+
+div.remember {
+    width:100vmin;
+    height: 105vmin;
+    transform: scale(0.9);
+    display: flex;
+    background: 
+      
+      /* card 1AB */
+      repeating-linear-gradient(45deg, transparent 0vmin, transparent 1vmin, lighten($red, 30%) 1.25vmin) $a1 / $cardback no-repeat,
+      repeating-linear-gradient(-45deg, transparent 0vmin, transparent 1vmin, lighten($red, 30%) 1.25vmin) $a1  / $cardback no-repeat,
+      radial-gradient($red 13.75vmin, transparent 1vmin) $a1  / $cardback no-repeat, 
+      radial-gradient($white 14.75vmin, transparent 1vmin) $b1  / $cardoutline  no-repeat,
+      
+      /* card 2AB */
+      repeating-linear-gradient(45deg, transparent 0vmin, transparent 1vmin, lighten($red, 30%) 1.25vmin) $a2 / $cardback no-repeat,
+      repeating-linear-gradient(-45deg, transparent 0vmin, transparent 1vmin, lighten($red, 30%) 1.25vmin) $a2  / $cardback no-repeat,
+      radial-gradient($red 13.75vmin, transparent 1vmin) $a2  / $cardback no-repeat, 
+      radial-gradient($white 14.75vmin, transparent 1vmin) $b2  / $cardoutline  no-repeat,
+      
+     /* card 3AB */
+      repeating-linear-gradient(45deg, transparent 0vmin, transparent 1vmin, lighten($red, 30%) 1.25vmin) $a3 / $cardback no-repeat,
+      repeating-linear-gradient(-45deg, transparent 0vmin, transparent 1vmin, lighten($red, 30%) 1.25vmin) $a3  / $cardback no-repeat,
+      radial-gradient($red 13.75vmin, transparent 1vmin) $a3  / $cardback no-repeat, 
+      radial-gradient($white 14.75vmin, transparent 1vmin) $b3  / $cardoutline  no-repeat,
+      
+     /* card 4AB */
+      repeating-linear-gradient(45deg, transparent 0vmin, transparent 1vmin, lighten($red, 30%) 1.25vmin) $a4 / $cardback no-repeat,
+      repeating-linear-gradient(-45deg, transparent 0vmin, transparent 1vmin, lighten($red, 30%) 1.25vmin) $a4  / $cardback no-repeat,
+      radial-gradient($red 13.75vmin, transparent 1vmin) $a4  / $cardback no-repeat, 
+      radial-gradient($white 14.75vmin, transparent 1vmin) $b4  / $cardoutline  no-repeat,
+      
+      
+      
+      /* card 1CD */
+      repeating-linear-gradient(45deg, transparent 0vmin, transparent 1vmin, lighten($red, 30%) 1.25vmin) $c1 / $cardback no-repeat,
+      repeating-linear-gradient(-45deg, transparent 0vmin, transparent 1vmin, lighten($red, 30%) 1.25vmin) $c1  / $cardback no-repeat,
+      radial-gradient($red 13.75vmin, transparent 1vmin) $c1  / $cardback no-repeat, 
+      radial-gradient($white 14.75vmin, transparent 1vmin) $d1  / $cardoutline  no-repeat,
+      
+      /* card 2CD */
+      repeating-linear-gradient(45deg, transparent 0vmin, transparent 1vmin, lighten($red, 30%) 1.25vmin) $c2 / $cardback no-repeat,
+      repeating-linear-gradient(-45deg, transparent 0vmin, transparent 1vmin, lighten($red, 30%) 1.25vmin) $c2  / $cardback no-repeat,
+      radial-gradient($red 13.75vmin, transparent 1vmin) $c2  / $cardback no-repeat, 
+      radial-gradient($white 14.75vmin, transparent 1vmin) $d2  / $cardoutline  no-repeat,
+      
+     /* card 3CD */
+      repeating-linear-gradient(45deg, transparent 0vmin, transparent 1vmin, lighten($red, 30%) 1.25vmin) $c3 / $cardback no-repeat,
+      repeating-linear-gradient(-45deg, transparent 0vmin, transparent 1vmin, lighten($red, 30%) 1.25vmin) $c3  / $cardback no-repeat,
+      radial-gradient($red 13.75vmin, transparent 1vmin) $c3  / $cardback no-repeat, 
+      radial-gradient($white 14.75vmin, transparent 1vmin) $d3  / $cardoutline  no-repeat,
+      
+     /* card 4CD */
+      repeating-linear-gradient(45deg, transparent 0vmin, transparent 1vmin, lighten($red, 30%) 1.25vmin) $c4 / $cardback no-repeat,
+      repeating-linear-gradient(-45deg, transparent 0vmin, transparent 1vmin, lighten($red, 30%) 1.25vmin) $c4  / $cardback no-repeat,
+      radial-gradient($red 13.75vmin, transparent 1vmin) $c4  / $cardback no-repeat, 
+      radial-gradient($white 14.75vmin, transparent 1vmin) $d4  / $cardoutline  no-repeat,
+      
+      
+      /* card 1EF */
+      repeating-linear-gradient(45deg, transparent 0vmin, transparent 1vmin, lighten($red, 30%) 1.25vmin) $e1 / $cardback no-repeat,
+      repeating-linear-gradient(-45deg, transparent 0vmin, transparent 1vmin, lighten($red, 30%) 1.25vmin) $e1  / $cardback no-repeat,
+      radial-gradient($red 13.75vmin, transparent 1vmin) $e1  / $cardback no-repeat, 
+      radial-gradient($white 14.75vmin, transparent 1vmin) $f1  / $cardoutline  no-repeat,
+      
+      /* card 2EF */
+      repeating-linear-gradient(45deg, transparent 0vmin, transparent 1vmin, lighten($red, 30%) 1.25vmin) $e2 / $cardback no-repeat,
+      repeating-linear-gradient(-45deg, transparent 0vmin, transparent 1vmin, lighten($red, 30%) 1.25vmin) $e2  / $cardback no-repeat,
+      radial-gradient($red 13.75vmin, transparent 1vmin) $e2  / $cardback no-repeat, 
+      radial-gradient($white 14.75vmin, transparent 1vmin) $f2  / $cardoutline  no-repeat,
+      
+     /* card 3EF */
+      repeating-linear-gradient(45deg, transparent 0vmin, transparent 1vmin, lighten($red, 30%) 1.25vmin) $e3 / $cardback no-repeat,
+      repeating-linear-gradient(-45deg, transparent 0vmin, transparent 1vmin, lighten($red, 30%) 1.25vmin) $e3  / $cardback no-repeat,
+      radial-gradient($red 13.75vmin, transparent 1vmin) $e3  / $cardback no-repeat, 
+      radial-gradient($white 14.75vmin, transparent 1vmin) $f3  / $cardoutline  no-repeat,
+      
+     /* card 4EF */
+      repeating-linear-gradient(45deg, transparent 0vmin, transparent 1vmin, lighten($red, 30%) 1.25vmin) $e4 / $cardback no-repeat,
+      repeating-linear-gradient(-45deg, transparent 0vmin, transparent 1vmin, lighten($red, 30%) 1.25vmin) $e4  / $cardback no-repeat,
+      radial-gradient($red 13.75vmin, transparent 1vmin) $e4  / $cardback no-repeat, 
+      radial-gradient($white 14.75vmin, transparent 1vmin) $f4  / $cardoutline  no-repeat,
+      
+}
+
+div.remember:before {
+    width:100vmin;
+    height: 105vmin;
+    display: flex;
+    animation: 
+      cardflip 10s infinite 1.5s;
+    background: 
+      
+       /* Pumpkin  */
+    radial-gradient(50% 60%, lighten($orange, 5%) 5vmin,  transparent 5vmin) 25.75vmin 7vmin / 25vmin 25vmin no-repeat,
+    radial-gradient(50% 60%, $orange 5vmin,  transparent 5vmin) 23.25vmin 7vmin / 25vmin 25vmin no-repeat,
+    radial-gradient(50% 60%, $orange 5vmin,  transparent 5vmin) 28.25vmin 7vmin / 25vmin 25vmin no-repeat,
+      radial-gradient(55% 43% at 100% 100%, transparent 3.5vmin, $dark-brown 3.5vmin,  $dark-brown 5vmin, transparent 5vmin) 32.75vmin 4vmin / 10vmin 10vmin no-repeat,
+      /* card 1AB */
+      radial-gradient($tan 13.75vmin, transparent 1vmin) $a2  / $cardback no-repeat, 
+      radial-gradient($white 14.75vmin, transparent 1vmin) $b2  / $cardoutline  no-repeat,
+}
+
+
+@keyframes cardflip {
+  0%   {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+div.remember:after {
+    width:100vmin;
+    height: 105vmin;
+    display: flex;
+    animation: 
+      cardflip 10s infinite;
+    background: 
+      
+       /* Umbrella  */
+       linear-gradient(transparent 2vmin, $dark-brown 2vmin,  $dark-brown 10vmin, transparent 10vmin) 62.75vmin 92vmin / 1vmin 4vmin no-repeat,
+      
+       linear-gradient(transparent 2vmin, $light-brown 2vmin,  $light-brown 10vmin, transparent 10vmin) 63vmin 86vmin / .75vmin 20vmin no-repeat,
+      
+      radial-gradient(ellipse at top, transparent 1vmin, $dark-brown 1vmin,  $dark-brown 2vmin, transparent 2vmin) 54.75vmin 96vmin / 20vmin 10vmin no-repeat,
+      
+    radial-gradient(50% 60%, $tan 14vmin,  transparent 4vmin) 58vmin 89vmin / 10vmin 10vmin no-repeat,
+    radial-gradient(50% 60%, $tan 4vmin,  transparent 4vmin) 58vmin 88vmin / 10vmin 2vmin no-repeat,
+    radial-gradient(50% 60%, $tan 2.5vmin,  transparent 1vmin) 66.75vmin 88vmin / 5.5vmin 1.5vmin no-repeat,
+    radial-gradient(50% 60%, $tan 2.5vmin,  transparent 1vmin) 53.75vmin 88vmin / 5.5vmin 1.5vmin no-repeat,
+    
+    radial-gradient(50% 60%, lighten($orange, 5%) 4vmin,  transparent 4vmin) 50vmin 69vmin / 26vmin 35vmin no-repeat,
+    radial-gradient(ellipse at bottom left, $orange 7vmin,  transparent 5vmin) 64.5vmin 59vmin / 25vmin 30vmin no-repeat,
+    radial-gradient(ellipse at bottom right, $orange 7vmin,  transparent 5vmin) 36.5vmin 59vmin / 25vmin 30vmin no-repeat,
+      
+      /* card 1AB */
+      radial-gradient($tan 13.75vmin, transparent 1vmin) $e3  / $cardback no-repeat, 
+      radial-gradient($white 14.75vmin, transparent 1vmin) $f3  / $cardoutline  no-repeat,
+}

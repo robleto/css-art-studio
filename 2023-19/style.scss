@@ -1,0 +1,327 @@
+$test: #bada55;
+$pink: #ff5b98;
+$blue: #8bd6f5;
+$gray: #6c747f;
+$light-gray: #dddddd;
+$green: #d5f031;
+$yellow: #ffdf28;
+$white: #ffffff;
+$black: #36333e;
+
+
+div, div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+  box-sizing:border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+   background-color: $white;
+    // background-size: 80%;
+    // background-repeat: no-repeat;
+    // background-position-x: 15vmin;
+    // background-position-y: 3.5vmin;
+    // background-image: url('https://cdn3.vectorstock.com/i/1000x1000/76/12/process-planning-board-with-color-sticky-notes-vector-19747612.jpg') 
+}
+
+
+
+$board-w: 0vmin;
+$board-h: 0vmin;
+
+
+
+
+
+
+div.sticky {
+    width: 100vmin;
+    height: 80vmin;
+    display: flex;
+    //border: solid 10px $test;
+    margin: 0 auto;
+    //opacity: 0.5;
+    position: relative; 
+    background: 
+      
+      
+      
+       linear-gradient(
+         lighten($pink, 25%)  1vmin, transparent 1vmin) calc(#{$board-w} + 13vmin) calc(#{$board-h} + 60.5vmin)  / 7vmin .25vmin no-repeat,
+          linear-gradient(
+         lighten($pink, 25%)  1vmin, transparent 1vmin) calc(#{$board-w} + 22vmin) calc(#{$board-h} + 60.5vmin)  / 2vmin .25vmin no-repeat,
+      
+      linear-gradient(90deg,
+         $pink  1.5vmin, $gray 1.5vmin, $gray 3.5vmin, $pink 3.5vmin, $pink 12vmin, $gray 12vmin, $gray 14vmin, $pink 1vmin) calc(#{$board-w} + 8vmin) calc(#{$board-h} + 60.25vmin)  / 17vmin 2vmin no-repeat,
+      radial-gradient(circle,
+         $pink 1vmin, transparent 1vmin) calc(#{$board-w} + 24vmin) calc(#{$board-h} + 60.25vmin)  / 2vmin 2vmin no-repeat,
+      
+      /* circle */
+      radial-gradient(ellipse,
+          transparent 5vmin, lighten($pink, 25%) 5vmin, lighten($pink, 25%)  5.75vmin, transparent 1vmin) calc(#{$board-w} + 41.5vmin) calc(#{$board-h} + 18.5vmin)  / 20vmin 20vmin no-repeat,
+      
+      /* arrowA */
+         linear-gradient(135deg,
+           $light-gray  1.75vmin, transparent 1vmin) calc(#{$board-w} + 33.75vmin) calc(#{$board-h} + 40.5vmin)  / 4vmin 6vmin no-repeat,
+         
+        radial-gradient(ellipse at -10% 120%,
+          transparent 3vmin, $light-gray 3vmin, $light-gray  3.75vmin, transparent 1vmin) calc(#{$board-w} + 34.25vmin) calc(#{$board-h} + 35.5vmin)  / 7vmin 9vmin no-repeat,
+      
+    
+       /* arrowB */
+         linear-gradient(-45deg,
+           $light-gray  1.75vmin, transparent 1vmin) calc(#{$board-w} + 58vmin) calc(#{$board-h} + 29.5vmin)  / 4vmin 6vmin no-repeat,
+         
+        radial-gradient(ellipse at 0% 130%,
+          transparent 3vmin, $light-gray 3vmin, $light-gray  3.75vmin, transparent 1vmin) calc(#{$board-w} + 58vmin) calc(#{$board-h} + 26vmin)  / 7vmin 9vmin no-repeat,
+      
+      /* arrowB */
+         linear-gradient(-45deg,
+           $light-gray  1.75vmin, transparent 1vmin) calc(#{$board-w} + 42vmin) calc(#{$board-h} + 18vmin)  / 4vmin 6vmin no-repeat,
+         
+        radial-gradient(ellipse at 130% 10%,
+          transparent 4vmin, $light-gray 4vmin, $light-gray  4.75vmin, transparent 1vmin) calc(#{$board-w} + 38.5vmin) calc(#{$board-h} + 18vmin)  / 7vmin 11vmin no-repeat,
+      
+      
+      
+      /*** LINES ***/
+        linear-gradient(1deg,
+          transparent 3vmin, lighten($pink, 25%) 3vmin, lighten($pink, 25%)  3.75vmin, transparent 1vmin) calc(#{$board-w} + 8.25vmin) calc(#{$board-h} + 8vmin)  / 83vmin 6vmin no-repeat,
+      
+        linear-gradient(lighten($pink, 25%)  80vmin, transparent 1vmin) calc(#{$board-w} + 14.5vmin) calc(#{$board-h} + 7vmin)  / .75vmin 52vmin no-repeat,
+        linear-gradient(lighten($pink, 25%)  80vmin, transparent 1vmin) calc(#{$board-w} + 41vmin) calc(#{$board-h} + 7.5vmin)  / .75vmin 52vmin no-repeat,
+        linear-gradient(lighten($pink, 25%)  80vmin, transparent 1vmin) calc(#{$board-w} + 76vmin) calc(#{$board-h} + 8vmin)  / .75vmin 52vmin no-repeat,
+      
+    
+       /* A block */    
+      radial-gradient(ellipse, $pink 5vmin, transparent 1vmin) calc(#{$board-w} + 23.5vmin) calc(#{$board-h} + 7vmin)  / 8vmin 1.25vmin no-repeat,
+      radial-gradient(ellipse, $light-gray 11vmin, transparent 1vmin) calc(#{$board-w} + 19vmin) calc(#{$board-h} + 8.75vmin)  / 17vmin 1.25vmin no-repeat,
+      
+      
+       /* B block */    
+      radial-gradient(ellipse, $pink 8.5vmin, transparent 1vmin) calc(#{$board-w} + 47vmin) calc(#{$board-h} + 7vmin)  / 13vmin 1.25vmin no-repeat,
+      radial-gradient(ellipse, $pink 7vmin, transparent 1vmin) calc(#{$board-w} + 63vmin) calc(#{$board-h} + 7vmin)  / 11vmin 1.25vmin no-repeat,
+      radial-gradient(ellipse, $light-gray 11.25vmin, transparent 1vmin) calc(#{$board-w} + 52vmin) calc(#{$board-h} + 9vmin)  / 17vmin 1.25vmin no-repeat,
+      
+       /* C block */   
+      radial-gradient(ellipse, $pink 6.5vmin, transparent 1vmin) calc(#{$board-w} + 80vmin) calc(#{$board-h} + 7vmin)  / 10vmin 1.25vmin no-repeat,
+      radial-gradient(ellipse, $light-gray 4.25vmin, transparent 1vmin) calc(#{$board-w} + 82vmin) calc(#{$board-h} + 9vmin)  / 7vmin 1.25vmin no-repeat,
+      
+      
+       /* 1 row */  
+      radial-gradient(ellipse, $light-gray 3.25vmin, transparent 1vmin) calc(#{$board-w} + 8.25vmin) calc(#{$board-h} + 15vmin)  / 5.75vmin 1.25vmin no-repeat,
+      radial-gradient(ellipse, $light-gray 3.25vmin, transparent 1vmin) calc(#{$board-w} + 8.25vmin) calc(#{$board-h} + 17.25vmin)  / 5.75vmin 1.25vmin no-repeat,
+      radial-gradient(ellipse, $light-gray 2vmin, transparent 1vmin) calc(#{$board-w} + 8.25vmin) calc(#{$board-h} + 19.5vmin)  / 3.75vmin 1.25vmin no-repeat,
+      
+       
+       /* 2 row */  
+      radial-gradient(ellipse, $light-gray 3.25vmin, transparent 1vmin) calc(#{$board-w} + 8.25vmin) calc(#{$board-h} + 24vmin)  / 5.75vmin 1.25vmin no-repeat,
+      
+       /* 4 row */  
+      radial-gradient(ellipse, $light-gray 2vmin, transparent 1vmin) calc(#{$board-w} + 9.25vmin) calc(#{$board-h} + 39.75vmin)  / 3.75vmin 1.25vmin no-repeat,
+      radial-gradient(ellipse, $light-gray 3.25vmin, transparent 1vmin) calc(#{$board-w} + 8.25vmin) calc(#{$board-h} + 42.25vmin)  / 5.75vmin 1.25vmin no-repeat,
+      radial-gradient(ellipse, $light-gray 3.25vmin, transparent 1vmin) calc(#{$board-w} + 8.25vmin) calc(#{$board-h} + 44.5vmin)  / 5.75vmin 1.25vmin no-repeat,
+      
+       /* 5 row */  
+      radial-gradient(ellipse, $light-gray 2vmin, transparent 1vmin) calc(#{$board-w} + 9vmin) calc(#{$board-h} + 53vmin)  / 3.75vmin 1.25vmin no-repeat,
+      
+          /* 5B row */  
+      radial-gradient(ellipse, $light-gray 2vmin, transparent 1vmin) calc(#{$board-w} + 53vmin) calc(#{$board-h} + 53vmin)  / 3.75vmin 1.25vmin no-repeat,
+      radial-gradient(ellipse, $light-gray 3.25vmin, transparent 1vmin) calc(#{$board-w} + 52vmin) calc(#{$board-h} + 55vmin)  / 5.75vmin 1.25vmin no-repeat,
+      radial-gradient(ellipse, $light-gray 3.25vmin, transparent 1vmin) calc(#{$board-w} + 52vmin) calc(#{$board-h} + 57vmin)  / 5.75vmin 1.25vmin no-repeat,
+      
+      
+      
+      /*** BOARD ***/
+      
+      /* white board */ radial-gradient($white 65vmin, transparent 1vmin) calc(#{$board-w} + 6.5vmin) calc(#{$board-h} + 4.5vmin)  / 85.25vmin 57.75vmin no-repeat,
+      
+      /* white board shadow */ radial-gradient($light-gray 65vmin, transparent 1vmin) calc(#{$board-w} + 6.5vmin) calc(#{$board-h} + 3.75vmin)  / 86.25vmin 58.5vmin no-repeat,
+      
+      /* NW */ radial-gradient(ellipse at bottom right, $gray 1.5vmin, $white 1.5vmin) calc(#{$board-w} + 4.5vmin) calc(#{$board-h} + 1.5vmin)  / 1.5vmin 1.5vmin no-repeat,
+       /* SW */ radial-gradient(ellipse at top right, $gray 1.5vmin, $light-gray  1.5vmin) calc(#{$board-w} + 4.5vmin) calc(#{$board-h} + 62.75vmin)  / 1.5vmin 1.5vmin no-repeat,
+       /* NE */ radial-gradient(ellipse at bottom left, $gray 1.5vmin, $white 1.5vmin) calc(#{$board-w} + 93vmin) calc(#{$board-h} + 1.5vmin)  / 1.5vmin 1.5vmin no-repeat,
+       /* SE */ radial-gradient(ellipse at top left, $gray 1.5vmin, $light-gray  1.5vmin) calc(#{$board-w} + 93vmin) calc(#{$board-h} + 62.75vmin)  / 1.5vmin 1.5vmin no-repeat, 
+      /* back board */ radial-gradient($gray 65vmin, transparent 1vmin) calc(#{$board-w} + 4.5vmin) calc(#{$board-h} + 1.5vmin)  / 90vmin 62.75vmin no-repeat,
+      
+      
+      /* NW */ radial-gradient(ellipse at bottom right, $light-gray  1.5vmin, $white 1.5vmin) calc(#{$board-w} + 3.25vmin) calc(#{$board-h} + 3.5vmin)  / 1.5vmin 1.5vmin no-repeat,
+      /* SW */ radial-gradient(ellipse at top right, $light-gray  1.5vmin, $white 1.5vmin) calc(#{$board-w} + 3.25vmin) calc(#{$board-h} + 64.75vmin)  / 1.5vmin 1.5vmin no-repeat,
+      /* back shadow */ radial-gradient($light-gray  65vmin, transparent 1vmin) calc(#{$board-w} + 3.25vmin) calc(#{$board-h} + 3.5vmin)  / 90vmin 62.75vmin no-repeat,
+      
+}
+
+
+
+
+$card-w: 0vmin;
+$card-h: 0vmin;
+
+$cardback-w: -.5vmin;
+$cardback-h: .5vmin;
+
+
+
+      
+
+
+div.sticky:before {
+    width: 100vmin;
+    height: 100vmin;
+    z-index: 99;
+    background: 
+      
+       /*** STICKIES ***/
+      
+       /* blueA1 */ 
+      linear-gradient($blue 7vmin, transparent 1vmin) calc(#{$card-w} + 15.75vmin) calc(#{$card-h} + 12vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 15.75vmin) calc(#{$cardback-h} + 12vmin)  / 7vmin 7vmin no-repeat,  
+      
+       /* yellowA1 */ 
+      linear-gradient($yellow 7vmin, transparent 1vmin) calc(#{$card-w} + 24vmin) calc(#{$card-h} + 12vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 24vmin) calc(#{$cardback-h} + 12vmin)  / 7vmin 7vmin no-repeat,  
+      
+       /* greenA1 */ 
+      linear-gradient($green 7vmin, transparent 1vmin) calc(#{$card-w} + 33vmin) calc(#{$card-h} + 13.5vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 33vmin) calc(#{$cardback-h} + 13.5vmin)  / 7vmin 7vmin no-repeat, 
+      
+       /* greenA2 */ 
+      linear-gradient($green 7vmin, transparent 1vmin) calc(#{$card-w} + 21vmin) calc(#{$card-h} + 21vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 21vmin) calc(#{$cardback-h} + 21vmin)  / 7vmin 7vmin no-repeat, 
+      
+       /* blueA4 */ 
+      linear-gradient($blue 7vmin, transparent 1vmin) calc(#{$card-w} + 15.75vmin) calc(#{$card-h} + 38vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 15.75vmin) calc(#{$cardback-h} + 38vmin)  / 7vmin 7vmin no-repeat, 
+      /* greenA4 */ 
+      linear-gradient($green 7vmin, transparent 1vmin) calc(#{$card-w} + 25vmin) calc(#{$card-h} + 38vmin)  / 7vmin 7vmin no-repeat, 
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 25vmin) calc(#{$cardback-h} + 38vmin)  / 7vmin 7vmin no-repeat, 
+      
+      /* greenA4 */ 
+      linear-gradient($green 7vmin, transparent 1vmin) calc(#{$card-w} + 17.5vmin) calc(#{$card-h} + 47vmin)  / 7vmin 7vmin no-repeat, 
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 17.5vmin) calc(#{$cardback-h} + 47vmin)  / 7vmin 7vmin no-repeat, 
+      
+      /* blueA4 */ 
+      linear-gradient($blue 7vmin, transparent 1vmin) calc(#{$card-w} + 30.5vmin) calc(#{$card-h} + 48vmin)  / 7vmin 7vmin no-repeat, 
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 30.5vmin) calc(#{$cardback-h} + 48vmin)  / 7vmin 7vmin no-repeat, 
+      
+        /* blueB1 */ 
+      linear-gradient($blue 7vmin, transparent 1vmin) calc(#{$card-w} + 45.75vmin) calc(#{$card-h} + 14vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 45.75vmin) calc(#{$cardback-h} + 14vmin)  / 7vmin 7vmin no-repeat,
+  
+       /* yellowB1 */ 
+      linear-gradient($yellow 7vmin, transparent 1vmin) calc(#{$card-w} + 61vmin) calc(#{$card-h} + 13vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 61vmin) calc(#{$cardback-h} + 13vmin)  / 7vmin 7vmin no-repeat,  
+      
+
+       /* pinkB2 */ 
+      linear-gradient($pink 7vmin, transparent 1vmin) calc(#{$card-w} + 48vmin) calc(#{$card-h} + 25vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 48vmin) calc(#{$cardback-h} + 25vmin)  / 7vmin 7vmin no-repeat, 
+      
+       /* blueB4 */ 
+      linear-gradient($blue 7vmin, transparent 1vmin) calc(#{$card-w} + 43vmin) calc(#{$card-h} + 36.5vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 43vmin) calc(#{$cardback-h} + 36.5vmin)  / 7vmin 7vmin no-repeat, 
+      
+      
+       /* pinkB4 */ 
+      linear-gradient($pink 7vmin, transparent 1vmin) calc(#{$card-w} + 61vmin) calc(#{$card-h} + 38vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 61vmin) calc(#{$cardback-h} + 38vmin)  / 7vmin 7vmin no-repeat, 
+      
+       /* yellowB4 */ 
+      linear-gradient($yellow 7vmin, transparent 1vmin) calc(#{$card-w} + 56vmin) calc(#{$card-h} + 36.5vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 56vmin) calc(#{$cardback-h} + 36.5vmin)  / 7vmin 7vmin no-repeat, 
+      
+       /* greenB4 */ 
+      linear-gradient($green 7vmin, transparent 1vmin) calc(#{$card-w} + 68.5vmin) calc(#{$card-h} + 37vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 68.5vmin) calc(#{$cardback-h} + 37vmin)  / 7vmin 7vmin no-repeat, 
+      
+      
+       /* pinkB5 */ 
+      linear-gradient($pink 7vmin, transparent 1vmin) calc(#{$card-w} + 44vmin) calc(#{$card-h} + 52vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 44vmin) calc(#{$cardback-h} + 52vmin)  / 7vmin 7vmin no-repeat, 
+      
+       /* pinkB5 */ 
+      linear-gradient($pink 7vmin, transparent 1vmin) calc(#{$card-w} + 68vmin) calc(#{$card-h} + 48vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 68vmin) calc(#{$cardback-h} + 48vmin)  / 7vmin 7vmin no-repeat, 
+      
+       /* yellowB5 */ 
+      linear-gradient($yellow 7vmin, transparent 1vmin) calc(#{$card-w} + 62vmin) calc(#{$card-h} + 50vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 62vmin) calc(#{$cardback-h} + 50vmin)  / 7vmin 7vmin no-repeat, 
+
+      /* blueC1 */ 
+      linear-gradient($blue 7vmin, transparent 1vmin) calc(#{$card-w} + 83vmin) calc(#{$card-h} + 15.5vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 83vmin) calc(#{$cardback-h} + 15.5vmin)  / 7vmin 7vmin no-repeat, 
+      
+       /* greenC5 */ 
+      linear-gradient($green 7vmin, transparent 1vmin) calc(#{$card-w} + 84vmin) calc(#{$card-h} + 27vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 84vmin) calc(#{$cardback-h} + 27vmin)  / 7vmin 7vmin no-repeat, 
+
+       /* yellowC5 */ 
+      linear-gradient($yellow 7vmin, transparent 1vmin) calc(#{$card-w} + 79vmin) calc(#{$card-h} + 32vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 79vmin) calc(#{$cardback-h} + 32vmin)  / 7vmin 7vmin no-repeat, 
+      
+      
+       /* greenC5 */ 
+      linear-gradient($green 7vmin, transparent 1vmin) calc(#{$card-w} + 79vmin) calc(#{$card-h} + 47vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 79vmin) calc(#{$cardback-h} + 47vmin)  / 7vmin 7vmin no-repeat, 
+
+      
+      
+}
+      
+
+div.sticky:after {
+    width: 100vmin;
+    height: 100vmin;
+    //border: solid 3px #990000;
+    z-index: 999;
+    transform: rotate(8deg);
+    background: 
+      
+       /* greenA3 */ 
+      linear-gradient($green 7vmin, transparent 1vmin) calc(#{$card-w} + 9vmin) calc(#{$card-h} + 33vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 9vmin) calc(#{$cardback-h} + 33vmin)  / 7vmin 7vmin no-repeat, 
+      
+      
+       /* pinkA3 */ 
+      linear-gradient($pink 7vmin, transparent 1vmin) calc(#{$card-w} + 28vmin) calc(#{$card-h} + 26.5vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 28vmin) calc(#{$cardback-h} + 26.5vmin)  / 7vmin 7vmin no-repeat, 
+      
+      
+       /* greenB1 */ 
+      linear-gradient($green 7vmin, transparent 1vmin) calc(#{$card-w} + 48vmin) calc(#{$card-h} + 13.5vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 48vmin) calc(#{$cardback-h} + 13.5vmin)  / 7vmin 7vmin no-repeat, 
+
+       /* blueB1 */ 
+      linear-gradient($blue 7vmin, transparent 1vmin) calc(#{$card-w} + 62vmin) calc(#{$card-h} + 15vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 62vmin) calc(#{$cardback-h} + 15vmin)  / 7vmin 7vmin no-repeat, 
+      
+
+       /* greenB3 */ 
+      linear-gradient($green 7vmin, transparent 1vmin) calc(#{$card-w} + 48vmin) calc(#{$card-h} + 38vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 48vmin) calc(#{$cardback-h} + 38vmin)  / 7vmin 7vmin no-repeat, 
+      
+      
+
+       /* pinkC1 */ 
+      linear-gradient($pink 7vmin, transparent 1vmin) calc(#{$card-w} + 72vmin) calc(#{$card-h} + 10vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 72vmin) calc(#{$cardback-h} + 10vmin)  / 7vmin 7vmin no-repeat, 
+      
+       /* blueC5 */ 
+      linear-gradient($blue 7vmin, transparent 1vmin) calc(#{$card-w} + 85vmin) calc(#{$card-h} + 46vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 85vmin) calc(#{$cardback-h} + 46vmin)  / 7vmin 7vmin no-repeat, 
+      
+       /* yellowCbottom */ 
+      linear-gradient($yellow 7vmin, transparent 1vmin) calc(#{$card-w} + 76vmin) calc(#{$card-h} + 60vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 76vmin) calc(#{$cardback-h} + 60vmin)  / 7vmin 7vmin no-repeat, 
+      
+      /* blueCbottom */ 
+      linear-gradient($blue 7vmin, transparent 1vmin) calc(#{$card-w} + 90vmin) calc(#{$card-h} + 54vmin)  / 7vmin 7vmin no-repeat,  
+      linear-gradient($light-gray 7vmin, transparent 1vmin) calc(#{$cardback-w} + 90vmin) calc(#{$cardback-h} + 54vmin)  / 7vmin 7vmin no-repeat, 
+      
+}   

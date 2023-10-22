@@ -1,0 +1,55 @@
+div, div:before, div:after {
+  display: block;
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #001740;
+}
+
+div.fake {
+  width: 55vmin;
+  height: 55vmin;
+  border-radius: 90%;
+  left: -30vmin;
+  display: flex;
+  margin: 0 auto;
+  border: solid 15px #dfdac7;
+  position: relative;
+  background: radial-gradient(ellipse, #181a19 1vmin, transparent 0.75vmin) calc(-6vmin + 21vmin) calc(-19vmin + 38vmin)/2vmin 7vmin no-repeat, radial-gradient(ellipse, #181a19 1vmin, transparent 0.75vmin) calc(-6vmin + 41.5vmin) calc(-19vmin + 38vmin)/2vmin 6vmin no-repeat, radial-gradient(ellipse, #181a19 2.5vmin, transparent 1vmin) calc(-6vmin + 27.5vmin) calc(-19vmin + 55.5vmin)/5vmin 5vmin no-repeat, radial-gradient(ellipse, #181a19 2.5vmin, transparent 1vmin) calc(-6vmin + 25vmin) calc(-19vmin + 55vmin)/5vmin 4vmin no-repeat, radial-gradient(ellipse at 100% 50%, #181a19 2vmin, transparent 1vmin) calc(-6vmin + 22.5vmin) calc(-19vmin + 50vmin)/3vmin 7vmin no-repeat, radial-gradient(ellipse at 100% 0%, transparent 5vmin, #181a19 5vmin, #181a19 8vmin, transparent 1vmin) calc(-6vmin + 25.5vmin) calc(-19vmin + 50.75vmin)/5vmin 3.5vmin no-repeat, radial-gradient(ellipse at 50% 100%, #181a19 3vmin, transparent 1vmin) calc(-6vmin + 22vmin) calc(-19vmin + 51.5vmin)/14vmin 4.5vmin no-repeat, radial-gradient(ellipse, #181a19 1.5vmin, transparent 1vmin) calc(-6vmin + 25vmin) calc(-19vmin + 53.5vmin)/3vmin 3vmin no-repeat, radial-gradient(ellipse, #181a19 2.5vmin, transparent 1vmin) calc(-6vmin + 30.5vmin) calc(-19vmin + 55.5vmin)/5vmin 5vmin no-repeat, radial-gradient(ellipse, #181a19 2.5vmin, transparent 1vmin) calc(-6vmin + 34vmin) calc(-19vmin + 55vmin)/5vmin 4vmin no-repeat, radial-gradient(ellipse, #181a19 1.5vmin, transparent 1vmin) calc(-6vmin + 36vmin) calc(-19vmin + 53.5vmin)/3vmin 3vmin no-repeat, radial-gradient(ellipse at 0% 50%, #181a19 2vmin, transparent 1vmin) calc(-6vmin + 38.5vmin) calc(-19vmin + 50vmin)/3vmin 7vmin no-repeat, radial-gradient(ellipse at 0% 0%, transparent 5vmin, #181a19 5vmin, #181a19 8vmin, transparent 1vmin) calc(-6vmin + 33.5vmin) calc(-19vmin + 50.75vmin)/5vmin 3.5vmin no-repeat, radial-gradient(ellipse at 50% 100%, #181a19 3vmin, transparent 1vmin) calc(-6vmin + 28vmin) calc(-19vmin + 51.5vmin)/14vmin 4.5vmin no-repeat, radial-gradient(ellipse, #ffa992 6vmin, transparent 1vmin) calc(-6vmin + 27.5vmin) calc(-19vmin + 32.75vmin)/10vmin 1vmin no-repeat, radial-gradient(ellipse, #ffa992 8vmin, transparent 1vmin) calc(-6vmin + 25.5vmin) calc(-19vmin + 34.5vmin)/14vmin 1vmin no-repeat, radial-gradient(ellipse, #ffa992 6vmin, transparent 1vmin) calc(-6vmin + 27.5vmin) calc(-19vmin + 36vmin)/10vmin 1vmin no-repeat, radial-gradient(ellipse at 50% 100%, #181a19 1.45vmin, transparent 1vmin) calc(-6vmin + 26vmin) calc(-19vmin + 41.5vmin)/3vmin 2vmin no-repeat, radial-gradient(ellipse, #ffa992 2.75vmin, transparent 1vmin) calc(-6vmin + 24.5vmin) calc(-19vmin + 40vmin)/5.5vmin 5.5vmin no-repeat, radial-gradient(ellipse at 50% 100%, transparent 2vmin, #181a19 2vmin, #181a19 3vmin, transparent 1vmin) calc(-6vmin + 24.25vmin) calc(-19vmin + 39.5vmin)/6vmin 2vmin no-repeat, radial-gradient(ellipse at 50% 100%, #181a19 1.45vmin, transparent 1vmin) calc(-6vmin + 35.25vmin) calc(-19vmin + 41.5vmin)/3vmin 2vmin no-repeat, radial-gradient(ellipse, #ffa992 2.75vmin, transparent 1vmin) calc(-6vmin + 34vmin) calc(-19vmin + 40vmin)/5.5vmin 5.5vmin no-repeat, radial-gradient(ellipse at 50% 100%, transparent 2vmin, #181a19 2vmin, #181a19 3vmin, transparent 1vmin) calc(-6vmin + 33.75vmin) calc(-19vmin + 39.5vmin)/6vmin 2vmin no-repeat, radial-gradient(ellipse, #ffa992 0.75vmin, transparent 0.75vmin) calc(-6vmin + 30.25vmin) calc(-19vmin + 38.5vmin)/1.5vmin 1.5vmin no-repeat, radial-gradient(ellipse, #ffa992 0.75vmin, transparent 0.75vmin) calc(-6vmin + 32.25vmin) calc(-19vmin + 38.5vmin)/1.5vmin 1.5vmin no-repeat, radial-gradient(ellipse, #ffa992 1.2vmin, transparent 1vmin) calc(-6vmin + 31vmin) calc(-19vmin + 40.5vmin)/2vmin 9vmin no-repeat, radial-gradient(ellipse, #ffa992 3.6vmin, transparent 1vmin) calc(-6vmin + 29vmin) calc(-19vmin + 46.75vmin)/6vmin 2vmin no-repeat, radial-gradient(ellipse, #ffa992 4vmin, transparent 1vmin) calc(-6vmin + 28.5vmin) calc(-19vmin + 51.75vmin)/7vmin 0.75vmin no-repeat, radial-gradient(ellipse at 50% 100%, #feb6a2 6.75vmin, #ffa992 6.75vmin, #ffa992 7vmin, transparent 1vmin) calc(-6vmin + 24.75vmin) calc(-19vmin + 46vmin)/15.5vmin 9vmin no-repeat, radial-gradient(ellipse, #181a19 5vmin, transparent 1vmin) calc(-6vmin + 27vmin) calc(-19vmin + 25.25vmin)/10vmin 6vmin no-repeat, radial-gradient(ellipse, #feb6a2 9vmin, transparent 1vmin) calc(-6vmin + 33.75vmin) calc(-19vmin + 36vmin)/8vmin 6vmin no-repeat, radial-gradient(ellipse, #feb6a2 9vmin, transparent 1vmin) calc(-6vmin + 22.75vmin) calc(-19vmin + 36vmin)/8vmin 6vmin no-repeat, radial-gradient(ellipse, #feb6a2 4vmin, transparent 1vmin) calc(-6vmin + 28vmin) calc(-19vmin + 30vmin)/8vmin 6vmin no-repeat, radial-gradient(ellipse, #feb6a2 5vmin, transparent 1vmin) calc(-6vmin + 22.5vmin) calc(-19vmin + 30vmin)/10vmin 13vmin no-repeat, radial-gradient(ellipse, #feb6a2 5vmin, transparent 1vmin) calc(-6vmin + 32vmin) calc(-19vmin + 30vmin)/10vmin 13vmin no-repeat, radial-gradient(ellipse, #feb6a2 9vmin, transparent 1vmin) calc(-6vmin + 24vmin) calc(-19vmin + 34vmin)/18vmin 18vmin no-repeat, radial-gradient(ellipse, #181a19 7vmin, transparent 1vmin) calc(-6vmin + 30vmin) calc(-19vmin + 25.75vmin)/14vmin 14vmin no-repeat, radial-gradient(ellipse, #181a19 10vmin, transparent 1vmin) calc(-6vmin + 23vmin) calc(-19vmin + 27vmin)/20vmin 20vmin no-repeat, radial-gradient(ellipse, #181a19 10vmin, transparent 1vmin) calc(-6vmin + 20vmin) calc(-19vmin + 24vmin)/20vmin 20vmin no-repeat, radial-gradient(ellipse, #feb6a2 10vmin, transparent 1vmin) calc(-6vmin + 23.75vmin) calc(-19vmin + 35vmin)/17vmin 22vmin no-repeat, radial-gradient(ellipse, #feb6a2 12vmin, transparent 1vmin) calc(-6vmin + 21.5vmin) calc(-19vmin + 29vmin)/21.5vmin 22vmin no-repeat, radial-gradient(ellipse, #181a19 2vmin, transparent 0.75vmin) calc(-6vmin + 21.25vmin) calc(-19vmin + 41vmin)/4vmin 8vmin no-repeat, radial-gradient(ellipse, #181a19 1vmin, transparent 1vmin) calc(-6vmin + 22vmin) calc(-19vmin + 47vmin)/2vmin 3vmin no-repeat, radial-gradient(ellipse, #181a19 1vmin, transparent 1vmin) calc(-6vmin + 23vmin) calc(-19vmin + 49vmin)/2vmin 3vmin no-repeat, radial-gradient(ellipse, #181a19 2vmin, transparent 0.75vmin) calc(-6vmin + 39.5vmin) calc(-19vmin + 41vmin)/4vmin 8vmin no-repeat, radial-gradient(ellipse, #181a19 1vmin, transparent 1vmin) calc(-6vmin + 41vmin) calc(-19vmin + 47vmin)/2vmin 3vmin no-repeat, radial-gradient(ellipse, #181a19 2vmin, transparent 1vmin) calc(-6vmin + 38vmin) calc(-19vmin + 47vmin)/4vmin 6vmin no-repeat, radial-gradient(ellipse at 100% 50%, #ffa992 3.5vmin, transparent 1vmin) calc(-6vmin + 16.25vmin) calc(-19vmin + 38.25vmin)/6vmin 11vmin no-repeat, radial-gradient(ellipse at 100% 50%, #ffa992 2vmin, transparent 1vmin) calc(-6vmin + 19.5vmin) calc(-19vmin + 39.5vmin)/3vmin 12vmin no-repeat, radial-gradient(ellipse at 0% 50%, #ffa992 3vmin, transparent 1vmin) calc(-6vmin + 43vmin) calc(-19vmin + 38.25vmin)/4vmin 8vmin no-repeat, radial-gradient(ellipse at 0% 50%, #ffa992 3vmin, transparent 1vmin) calc(-6vmin + 42vmin) calc(-19vmin + 37vmin)/4vmin 14vmin no-repeat, radial-gradient(ellipse at 100% 50%, #181a19 3.25vmin, transparent 1vmin) calc(-6vmin + 17vmin) calc(-19vmin + 30vmin)/5.5vmin 13vmin no-repeat, radial-gradient(ellipse, #181a19 1.75vmin, transparent 0.1vmin) calc(-6vmin + 19.5vmin) calc(-19vmin + 37vmin)/3.5vmin 5vmin no-repeat, radial-gradient(ellipse at 0% 50%, #181a19 3.25vmin, transparent 1vmin) calc(-6vmin + 42vmin) calc(-19vmin + 32vmin)/5.5vmin 13vmin no-repeat, radial-gradient(ellipse, #181a19 1.75vmin, transparent 0.1vmin) calc(-6vmin + 42vmin) calc(-19vmin + 37vmin)/3.5vmin 5vmin no-repeat, radial-gradient(ellipse, #feb6a2 5vmin, transparent 1vmin) calc(-6vmin + 27vmin) calc(-19vmin + 50vmin)/10vmin 12vmin no-repeat, radial-gradient(ellipse, #181a19 1.5vmin, transparent 1vmin) calc(-6vmin + 30vmin) calc(-19vmin + 62.25vmin)/3vmin 3vmin no-repeat, linear-gradient(20deg, #181a19 2.5vmin, transparent 1vmin) calc(-6vmin + 27.5vmin) calc(-19vmin + 56vmin)/5vmin 8vmin no-repeat, linear-gradient(160deg, #181a19 2.5vmin, transparent 1vmin) calc(-6vmin + 27.5vmin) calc(-19vmin + 64vmin)/5vmin 8vmin no-repeat, linear-gradient(-20deg, #181a19 2.5vmin, transparent 1vmin) calc(-6vmin + 31vmin) calc(-19vmin + 56vmin)/5vmin 8vmin no-repeat, linear-gradient(-160deg, #181a19 2.5vmin, transparent 1vmin) calc(-6vmin + 31vmin) calc(-19vmin + 64vmin)/5vmin 8vmin no-repeat, radial-gradient(ellipse, #ffffff 6vmin, transparent 1vmin) calc(-6vmin + 26.5vmin) calc(-19vmin + 55vmin)/12vmin 8vmin no-repeat, linear-gradient(100deg, #ffffff 7vmin, transparent 1vmin) calc(-6vmin + 31vmin) calc(-19vmin + 60vmin)/18vmin 20vmin no-repeat, linear-gradient(-100deg, #ffffff 7vmin, transparent 1vmin) calc(-6vmin + 15.75vmin) calc(-19vmin + 60vmin)/18vmin 20vmin no-repeat, radial-gradient(ellipse, #181a19 8vmin, transparent 1vmin) calc(-6vmin + 25vmin) calc(-19vmin + 55vmin)/16vmin 12vmin no-repeat, linear-gradient(20deg, #181a19 20vmin, transparent 1vmin) calc(-6vmin + 38vmin) calc(-19vmin + 58vmin)/30vmin 20vmin no-repeat, linear-gradient(-20deg, #181a19 27vmin, transparent 1vmin) calc(-6vmin + 9vmin) calc(-19vmin + 58vmin)/30vmin 22vmin no-repeat, linear-gradient(#5089e0 0vmin, #5089e0 25vmin) calc(-6vmin + 0vmin) calc(-19vmin + 0vmin)/100vmin 100vmin no-repeat;
+}
+
+div.fake:after {
+  width: 55vmin;
+  height: 60vmin;
+  left: 60vmin;
+  top: -10vmin;
+  font-size: 7.5vmin;
+  font-weight: 600;
+  letter-spacing: 0.025vmin;
+  text-shadow: 0.75vmin 0.75vmin 0.5vmin #00050d;
+  font-family: "Oswald", sans-serif;
+  color: #dfdac7;
+  content: "THE PROBLEM WITH QUOTES FOUND ON THE INTERNET IS THAT THEY ARE OFTEN NOT TRUE.";
+}
+
+div.fake:before {
+  width: 45vmin;
+  height: 10vmin;
+  left: 60vmin;
+  top: 58vmin;
+  font-size: 4.5vmin;
+  font-weight: 300;
+  z-index: 999;
+  color: #ccc5a7;
+  opacity: 0.7;
+  font-family: "Oswald", sans-serif;
+  content: "~ Abraham Lincoln";
+}

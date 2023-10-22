@@ -1,0 +1,62 @@
+div, div:before, div:after {
+  display: block;
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#fffadc, #fffef6);
+}
+
+div.small {
+  display: inline-block;
+  margin: 10vmin 10vmin;
+  height: 80vmin;
+  width: 60vmin;
+  padding: 3vmin 2vmin;
+  position: relative;
+  background-color: #2d9edf;
+  border: solid 5vmin #eeeeee;
+  border-bottom-color: #ffffff;
+  border-left-color: #eeeeee;
+  border-radius: 0.25vmin;
+  border-right-color: #eeeeee;
+  border-top-color: #d5d5d5;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset, 0 0.5vmin 1vmin 0.5vmin rgba(0, 0, 0, 0.25);
+  background: linear-gradient(#ddddcc, #ddddcc) 12vmin 0vmin/29vmin 12vmin no-repeat, linear-gradient(#1d82bc, #1d82bc) 12vmin 0vmin/26vmin 12.25vmin no-repeat, linear-gradient(#e7e7db, #e7e7db) 12vmin 58vmin/29vmin 12vmin no-repeat, linear-gradient(#1d82bc, #1d82bc) 12vmin 57.75vmin/26vmin 12.25vmin no-repeat, linear-gradient(#ddddcc, #e7e7db) 0vmin 0vmin/12vmin 100vmin no-repeat, linear-gradient(#1d82bc, #1d82bc) 0vmin 0vmin/12.25vmin 100vmin no-repeat, linear-gradient(#ddddcc, #e7e7db) 38vmin 0vmin/12.5vmin 100vmin no-repeat, linear-gradient(#1d82bc, #1d82bc) 37.75vmin 0vmin/13vmin 100vmin no-repeat, linear-gradient(#2d9edf 30vmin, #1d82bc) 0vmin 0vmin/100vmin 100vmin no-repeat;
+}
+
+div.small:before {
+  border-radius: 2px;
+  bottom: -2vmin;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25) inset;
+  content: "Small Wonder";
+  font-family: "Amatic SC", sans-serif;
+  font-size: 2vmin;
+  color: #ffffff;
+  padding-left: 23vmin;
+  padding-top: 46.5vmin;
+  left: -2vmin;
+  position: absolute;
+  right: -2vmin;
+  top: -2vmin;
+}
+
+div.small:after {
+  width: 50vmin;
+  height: 70vmin;
+  top: -5vmin;
+  left: -2vmin;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.45);
+  background: radial-gradient(ellipse, #ffffff 2vmin, transparent 1vmin) 19.25vmin 16vmin/4vmin 4vmin no-repeat, radial-gradient(ellipse, #2d9edf 2vmin, transparent 1vmin) 20.75vmin 20vmin/4vmin 4vmin no-repeat, linear-gradient(-60deg, #2d9edf 3vmin, transparent 1vmin) 15vmin 16vmin/10vmin 5vmin no-repeat, radial-gradient(ellipse, #2d9edf 2vmin, transparent 1vmin) 23.5vmin 15.75vmin/4vmin 4vmin no-repeat, radial-gradient(ellipse, #ffffff 2.5vmin, transparent 1vmin) 20.25vmin 30.5vmin/5vmin 5vmin no-repeat, linear-gradient(-115deg, #2d9edf 4vmin, transparent 1vmin) 15.5vmin 26vmin/10vmin 5vmin no-repeat, linear-gradient(-45deg, #2d9edf 4vmin, transparent 1vmin) 17vmin 18vmin/10vmin 5vmin no-repeat, linear-gradient(#2d9edf 4vmin, transparent 1vmin) 21.5vmin 21vmin/5vmin 5vmin no-repeat, radial-gradient(ellipse, #2d9edf 2.5vmin, transparent 1vmin) 21vmin 23.5vmin/5vmin 5vmin no-repeat, radial-gradient(ellipse, #ffffff 1.5vmin, transparent 1vmin) 22.55vmin 37vmin/3vmin 3vmin no-repeat, radial-gradient(ellipse, #2d9edf 2vmin, transparent 1vmin) 30.25vmin 44.5vmin/4vmin 4vmin no-repeat, linear-gradient(-135deg, #2d9edf 4vmin, transparent 1vmin) 27vmin 42vmin/4vmin 6vmin no-repeat, linear-gradient(-105deg, #2d9edf 4vmin, transparent 1vmin) 19.75vmin 39vmin/10vmin 4vmin no-repeat, radial-gradient(ellipse, #ffffff 2vmin, transparent 1vmin) 23.75vmin 40.25vmin/4vmin 4vmin no-repeat, linear-gradient(-85deg, #2d9edf 4vmin, transparent 1vmin) 19.25vmin 32vmin/10vmin 7.75vmin no-repeat, radial-gradient(ellipse, #ffffff 5vmin, transparent 1vmin) 17vmin 14vmin/10vmin 10vmin no-repeat, linear-gradient(70deg, #ffffff 13vmin, transparent 1vmin) 20vmin 16vmin/40vmin 41vmin no-repeat, linear-gradient(90deg, #ffffff 18vmin, transparent 1vmin) 16vmin 47vmin/30vmin 12.5vmin no-repeat, linear-gradient(90deg, #ffffff 13vmin, transparent 1vmin) 16vmin 18vmin/4vmin 41vmin no-repeat;
+}

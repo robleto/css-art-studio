@@ -1,0 +1,56 @@
+div, div:before, div:after {
+  display: block;
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(#ddddcc, #c9c9ad);
+}
+
+div.remember {
+  width: 100vmin;
+  height: 105vmin;
+  transform: scale(0.9);
+  display: flex;
+  background: repeating-linear-gradient(45deg, transparent 0vmin, transparent 1vmin, #eecfab 1.25vmin) 3vmin 3vmin/20vmin 30vmin no-repeat, repeating-linear-gradient(-45deg, transparent 0vmin, transparent 1vmin, #eecfab 1.25vmin) 3vmin 3vmin/20vmin 30vmin no-repeat, radial-gradient(#d5872b 13.75vmin, transparent 1vmin) 3vmin 3vmin/20vmin 30vmin no-repeat, radial-gradient(#f1f1f1 14.75vmin, transparent 1vmin) 2vmin 2vmin/22vmin 32vmin no-repeat, repeating-linear-gradient(45deg, transparent 0vmin, transparent 1vmin, #eecfab 1.25vmin) 28vmin 3vmin/20vmin 30vmin no-repeat, repeating-linear-gradient(-45deg, transparent 0vmin, transparent 1vmin, #eecfab 1.25vmin) 28vmin 3vmin/20vmin 30vmin no-repeat, radial-gradient(#d5872b 13.75vmin, transparent 1vmin) 28vmin 3vmin/20vmin 30vmin no-repeat, radial-gradient(#f1f1f1 14.75vmin, transparent 1vmin) 27vmin 2vmin/22vmin 32vmin no-repeat, repeating-linear-gradient(45deg, transparent 0vmin, transparent 1vmin, #eecfab 1.25vmin) 53vmin 3vmin/20vmin 30vmin no-repeat, repeating-linear-gradient(-45deg, transparent 0vmin, transparent 1vmin, #eecfab 1.25vmin) 53vmin 3vmin/20vmin 30vmin no-repeat, radial-gradient(#d5872b 13.75vmin, transparent 1vmin) 53vmin 3vmin/20vmin 30vmin no-repeat, radial-gradient(#f1f1f1 14.75vmin, transparent 1vmin) 52vmin 2vmin/22vmin 32vmin no-repeat, repeating-linear-gradient(45deg, transparent 0vmin, transparent 1vmin, #eecfab 1.25vmin) 78vmin 3vmin/20vmin 30vmin no-repeat, repeating-linear-gradient(-45deg, transparent 0vmin, transparent 1vmin, #eecfab 1.25vmin) 78vmin 3vmin/20vmin 30vmin no-repeat, radial-gradient(#d5872b 13.75vmin, transparent 1vmin) 78vmin 3vmin/20vmin 30vmin no-repeat, radial-gradient(#f1f1f1 14.75vmin, transparent 1vmin) 77vmin 2vmin/22vmin 32vmin no-repeat, repeating-linear-gradient(45deg, transparent 0vmin, transparent 1vmin, #eecfab 1.25vmin) 3vmin 38vmin/20vmin 30vmin no-repeat, repeating-linear-gradient(-45deg, transparent 0vmin, transparent 1vmin, #eecfab 1.25vmin) 3vmin 38vmin/20vmin 30vmin no-repeat, radial-gradient(#d5872b 13.75vmin, transparent 1vmin) 3vmin 38vmin/20vmin 30vmin no-repeat, radial-gradient(#f1f1f1 14.75vmin, transparent 1vmin) 2vmin 37vmin/22vmin 32vmin no-repeat, repeating-linear-gradient(45deg, transparent 0vmin, transparent 1vmin, #eecfab 1.25vmin) 28vmin 38vmin/20vmin 30vmin no-repeat, repeating-linear-gradient(-45deg, transparent 0vmin, transparent 1vmin, #eecfab 1.25vmin) 28vmin 38vmin/20vmin 30vmin no-repeat, radial-gradient(#d5872b 13.75vmin, transparent 1vmin) 28vmin 38vmin/20vmin 30vmin no-repeat, radial-gradient(#f1f1f1 14.75vmin, transparent 1vmin) 27vmin 37vmin/22vmin 32vmin no-repeat, repeating-linear-gradient(45deg, transparent 0vmin, transparent 1vmin, #eecfab 1.25vmin) 53vmin 38vmin/20vmin 30vmin no-repeat, repeating-linear-gradient(-45deg, transparent 0vmin, transparent 1vmin, #eecfab 1.25vmin) 53vmin 38vmin/20vmin 30vmin no-repeat, radial-gradient(#d5872b 13.75vmin, transparent 1vmin) 53vmin 38vmin/20vmin 30vmin no-repeat, radial-gradient(#f1f1f1 14.75vmin, transparent 1vmin) 52vmin 37vmin/22vmin 32vmin no-repeat, repeating-linear-gradient(45deg, transparent 0vmin, transparent 1vmin, #eecfab 1.25vmin) 78vmin 38vmin/20vmin 30vmin no-repeat, repeating-linear-gradient(-45deg, transparent 0vmin, transparent 1vmin, #eecfab 1.25vmin) 78vmin 38vmin/20vmin 30vmin no-repeat, radial-gradient(#d5872b 13.75vmin, transparent 1vmin) 78vmin 38vmin/20vmin 30vmin no-repeat, radial-gradient(#f1f1f1 14.75vmin, transparent 1vmin) 77vmin 37vmin/22vmin 32vmin no-repeat, repeating-linear-gradient(45deg, transparent 0vmin, transparent 1vmin, #eecfab 1.25vmin) 3vmin 73vmin/20vmin 30vmin no-repeat, repeating-linear-gradient(-45deg, transparent 0vmin, transparent 1vmin, #eecfab 1.25vmin) 3vmin 73vmin/20vmin 30vmin no-repeat, radial-gradient(#d5872b 13.75vmin, transparent 1vmin) 3vmin 73vmin/20vmin 30vmin no-repeat, radial-gradient(#f1f1f1 14.75vmin, transparent 1vmin) 2vmin 72vmin/22vmin 32vmin no-repeat, repeating-linear-gradient(45deg, transparent 0vmin, transparent 1vmin, #eecfab 1.25vmin) 28vmin 73vmin/20vmin 30vmin no-repeat, repeating-linear-gradient(-45deg, transparent 0vmin, transparent 1vmin, #eecfab 1.25vmin) 28vmin 73vmin/20vmin 30vmin no-repeat, radial-gradient(#d5872b 13.75vmin, transparent 1vmin) 28vmin 73vmin/20vmin 30vmin no-repeat, radial-gradient(#f1f1f1 14.75vmin, transparent 1vmin) 27vmin 72vmin/22vmin 32vmin no-repeat, repeating-linear-gradient(45deg, transparent 0vmin, transparent 1vmin, #eecfab 1.25vmin) 53vmin 73vmin/20vmin 30vmin no-repeat, repeating-linear-gradient(-45deg, transparent 0vmin, transparent 1vmin, #eecfab 1.25vmin) 53vmin 73vmin/20vmin 30vmin no-repeat, radial-gradient(#d5872b 13.75vmin, transparent 1vmin) 53vmin 73vmin/20vmin 30vmin no-repeat, radial-gradient(#f1f1f1 14.75vmin, transparent 1vmin) 52vmin 72vmin/22vmin 32vmin no-repeat, repeating-linear-gradient(45deg, transparent 0vmin, transparent 1vmin, #eecfab 1.25vmin) 78vmin 73vmin/20vmin 30vmin no-repeat, repeating-linear-gradient(-45deg, transparent 0vmin, transparent 1vmin, #eecfab 1.25vmin) 78vmin 73vmin/20vmin 30vmin no-repeat, radial-gradient(#d5872b 13.75vmin, transparent 1vmin) 78vmin 73vmin/20vmin 30vmin no-repeat, radial-gradient(#f1f1f1 14.75vmin, transparent 1vmin) 77vmin 72vmin/22vmin 32vmin no-repeat;
+}
+
+div.remember:before {
+  width: 100vmin;
+  height: 105vmin;
+  display: flex;
+  animation: cardflip 10s infinite 1.5s;
+  background: radial-gradient(50% 60%, #e98b39 5vmin, transparent 5vmin) 25.75vmin 7vmin/25vmin 25vmin no-repeat, radial-gradient(50% 60%, #E77E22 5vmin, transparent 5vmin) 23.25vmin 7vmin/25vmin 25vmin no-repeat, radial-gradient(50% 60%, #E77E22 5vmin, transparent 5vmin) 28.25vmin 7vmin/25vmin 25vmin no-repeat, radial-gradient(55% 43% at 100% 100%, transparent 3.5vmin, #844414 3.5vmin, #844414 5vmin, transparent 5vmin) 32.75vmin 4vmin/10vmin 10vmin no-repeat, radial-gradient(#e6cda5 13.75vmin, transparent 1vmin) 28vmin 3vmin/20vmin 30vmin no-repeat, radial-gradient(#f1f1f1 14.75vmin, transparent 1vmin) 27vmin 2vmin/22vmin 32vmin no-repeat;
+}
+
+@keyframes cardflip {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+div.remember:after {
+  width: 100vmin;
+  height: 105vmin;
+  display: flex;
+  animation: cardflip 10s infinite;
+  background: linear-gradient(transparent 2vmin, #844414 2vmin, #844414 10vmin, transparent 10vmin) 62.75vmin 92vmin/1vmin 4vmin no-repeat, linear-gradient(transparent 2vmin, #c78c55 2vmin, #c78c55 10vmin, transparent 10vmin) 63vmin 86vmin/0.75vmin 20vmin no-repeat, radial-gradient(ellipse at top, transparent 1vmin, #844414 1vmin, #844414 2vmin, transparent 2vmin) 54.75vmin 96vmin/20vmin 10vmin no-repeat, radial-gradient(50% 60%, #e6cda5 14vmin, transparent 4vmin) 58vmin 89vmin/10vmin 10vmin no-repeat, radial-gradient(50% 60%, #e6cda5 4vmin, transparent 4vmin) 58vmin 88vmin/10vmin 2vmin no-repeat, radial-gradient(50% 60%, #e6cda5 2.5vmin, transparent 1vmin) 66.75vmin 88vmin/5.5vmin 1.5vmin no-repeat, radial-gradient(50% 60%, #e6cda5 2.5vmin, transparent 1vmin) 53.75vmin 88vmin/5.5vmin 1.5vmin no-repeat, radial-gradient(50% 60%, #e98b39 4vmin, transparent 4vmin) 50vmin 69vmin/26vmin 35vmin no-repeat, radial-gradient(ellipse at bottom left, #E77E22 7vmin, transparent 5vmin) 64.5vmin 59vmin/25vmin 30vmin no-repeat, radial-gradient(ellipse at bottom right, #E77E22 7vmin, transparent 5vmin) 36.5vmin 59vmin/25vmin 30vmin no-repeat, radial-gradient(#e6cda5 13.75vmin, transparent 1vmin) 53vmin 73vmin/20vmin 30vmin no-repeat, radial-gradient(#f1f1f1 14.75vmin, transparent 1vmin) 52vmin 72vmin/22vmin 32vmin no-repeat;
+}

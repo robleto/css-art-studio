@@ -1,0 +1,246 @@
+$test: #bada55;
+$gray: #45424e;
+$maroon: #83675b;
+$white: #ffffff;
+$light-blue: #84ade2;
+$blue: #4382cf;
+$boat-blue: darken($blue, 7%);
+$dark-blue: #2d578f;
+
+$box-w: 0vmin;
+$box-h: 10vmin;
+
+
+div, div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+  box-sizing:border-box;
+}
+
+
+
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background: 
+    
+    
+    
+    
+    /* rocks*/
+  linear-gradient(30deg, $dark-blue 30vmin, transparent 1vmin) calc(#{$box-w} + -12vmin) calc(#{$box-h} + 40vmin)  / 46vmin 14vmin no-repeat,
+  linear-gradient(-33deg, $dark-blue 12vmin, transparent 1vmin) calc(#{$box-w} + 19vmin) calc(#{$box-h} + 42vmin)  / 15vmin 12vmin no-repeat,
+  linear-gradient(40deg, $dark-blue 12vmin, transparent 1vmin) calc(#{$box-w} + 32vmin) calc(#{$box-h} + 42vmin)  / 15vmin 12vmin no-repeat,
+      
+  linear-gradient(-90deg, $dark-blue 10vmin, transparent 1vmin) calc(#{$box-w} + 36vmin) calc(#{$box-h} + 49vmin)  / 15vmin 5vmin no-repeat,
+      
+      
+  linear-gradient(-25deg, $dark-blue 5vmin, transparent 1vmin) calc(#{$box-w} + 42vmin) calc(#{$box-h} + 45vmin)  / 10vmin 8.5vmin no-repeat,
+  linear-gradient(35deg, $dark-blue 5vmin, transparent 1vmin) calc(#{$box-w} + 52vmin) calc(#{$box-h} + 47vmin)  / 10vmin 7vmin no-repeat,
+      
+  linear-gradient(-35deg, $dark-blue 6vmin, transparent 1vmin) calc(#{$box-w} + 50vmin) calc(#{$box-h} + 47vmin)  / 10vmin 7vmin no-repeat,
+  linear-gradient(60deg, $dark-blue 5vmin, transparent 1vmin) calc(#{$box-w} + 60vmin) calc(#{$box-h} + 47vmin)  / 10vmin 7vmin no-repeat,
+    
+    
+    /* bg*/
+    linear-gradient(transparent 63vmin, $light-blue 63vmin, darken($light-blue, 30%) 93vmin),
+    
+  radial-gradient(circle, lighten($light-blue, 15%) 20vmin, transparent 1vmin) 50vmin 35vmin  / 40vmin 40vmin no-repeat,
+    
+    linear-gradient($light-blue 0vmin, $blue 50vmin);
+  
+}
+
+
+
+
+div.faraway {
+    width: 100vw;
+    left: -5vmin;
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    z-index: 9999;
+    position: relative; 
+    background: 
+      
+  linear-gradient(70deg, darken($dark-blue, 20%) 3.5vmin, transparent 1vmin) calc(#{$box-w} + 44vmin) calc(#{$box-h} + 51.5vmin)  / 6vmin 6.5vmin no-repeat,
+      
+  linear-gradient(40deg, darken($dark-blue, 20%) 9vmin, transparent 1vmin) calc(#{$box-w} + 38vmin) calc(#{$box-h} + 42.75vmin)  / 6vmin 15.25vmin no-repeat,
+      
+  linear-gradient(80deg, darken($dark-blue, 20%) 6vmin, transparent 1vmin) calc(#{$box-w} + 35vmin) calc(#{$box-h} + 42.75vmin)  / 30vmin 15.25vmin no-repeat,
+  linear-gradient(-10deg, darken($dark-blue, 20%) 15vmin, transparent 1vmin) calc(#{$box-w} + 5vmin) calc(#{$box-h} + 38vmin)  / 30vmin 20vmin no-repeat,
+      
+      
+  linear-gradient(30deg, darken($dark-blue, 20%) 20vmin, transparent 1vmin) calc(#{$box-w} + 0vmin) calc(#{$box-h} + 30vmin)  / 30vmin 28vmin no-repeat,
+      
+  linear-gradient(60deg, darken($dark-blue, 20%) 20vmin, transparent 1vmin) calc(#{$box-w} + 0vmin) calc(#{$box-h} + 36vmin)  / 30vmin 22vmin no-repeat,
+}
+
+
+div.faraway:before {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.4;
+    z-index: -99;
+    animation: sparkle 10s ease-in-out infinite;
+    background: 
+          
+      
+          
+  radial-gradient(ellipse, lighten($light-blue, 4%) 10vmin, transparent 13vmin) calc(#{$box-w} + 43vmin) calc(#{$box-h} + 30vmin)  / 43vmin 4vmin no-repeat,
+       radial-gradient(ellipse, lighten($light-blue, 2%) 10vmin, transparent 13vmin) calc(#{$box-w} + 50vmin) calc(#{$box-h} + 34vmin)  / 43vmin 4vmin no-repeat,
+      
+      
+      
+  radial-gradient(ellipse, lighten($light-blue, 3%) 60vmin, transparent 65vmin) calc(#{$box-w} + 55vmin) calc(#{$box-h} + 55vmin)  / 120vmin .75vmin no-repeat,
+      
+    radial-gradient(ellipse, lighten($light-blue, 4%) 60vmin, transparent 60vmin) calc(#{$box-w} + 50vmin) calc(#{$box-h} + 57vmin)  / 120vmin 1vmin no-repeat,
+      
+      
+    radial-gradient(ellipse, lighten($light-blue, 4%) 60vmin, transparent 60vmin) calc(#{$box-w} + 180vmin) calc(#{$box-h} + 56vmin)  / 120vmin 1vmin no-repeat,
+      
+      
+    radial-gradient(ellipse, lighten($light-blue, 4%) 60vmin, transparent 60vmin) calc(#{$box-w} + -25vmin) calc(#{$box-h} + 60vmin)  / 120vmin .75vmin no-repeat,
+      
+    radial-gradient(ellipse, lighten($light-blue, 3%) 60vmin, transparent 60vmin) calc(#{$box-w} + 5vmin) calc(#{$box-h} + 63vmin)  / 120vmin 1vmin no-repeat,
+    radial-gradient(ellipse, lighten($light-blue, 1%) 70vmin, transparent 60vmin) calc(#{$box-w} + 0vmin) calc(#{$box-h} + 65.5vmin)  / 140vmin 1vmin no-repeat,
+      
+    radial-gradient(ellipse, lighten($light-blue, 1%) 70vmin, transparent 60vmin) calc(#{$box-w} + 150vmin) calc(#{$box-h} + 65.5vmin)  / 140vmin 1vmin no-repeat,
+      
+      
+         radial-gradient(ellipse, darken($light-blue, 2%) 60vmin, transparent 60vmin) calc(#{$box-w} + -25vmin) calc(#{$box-h} + 69.5vmin)  / 120vmin 1vmin no-repeat,
+      radial-gradient(ellipse, darken($light-blue, 5%) 60vmin, transparent 60vmin) calc(#{$box-w} + 5vmin) calc(#{$box-h} + 74vmin)  / 120vmin 1.25vmin no-repeat,
+      
+         radial-gradient(ellipse, darken($light-blue, 2%) 60vmin, transparent 60vmin) calc(#{$box-w} + 125vmin) calc(#{$box-h} + 69.5vmin)  / 120vmin 1vmin no-repeat,
+      
+         radial-gradient(ellipse, darken($light-blue, 7%) 60vmin, transparent 60vmin) calc(#{$box-w} + -45vmin) calc(#{$box-h} + 78vmin)  / 120vmin 1.25vmin no-repeat,
+      radial-gradient(ellipse, darken($light-blue, 7%) 60vmin, transparent 60vmin) calc(#{$box-w} + 85vmin) calc(#{$box-h} + 78vmin)  / 120vmin 1.25vmin no-repeat,
+      radial-gradient(ellipse, darken($light-blue, 9%) 60vmin, transparent 60vmin) calc(#{$box-w} + 25vmin) calc(#{$box-h} + 83vmin)  / 120vmin 1.5vmin no-repeat,
+      
+      
+      radial-gradient(ellipse, darken($light-blue, 7%) 60vmin, transparent 60vmin) calc(#{$box-w} + 158vmin) calc(#{$box-h} + 81vmin)  / 120vmin 1.25vmin no-repeat,
+}
+
+      
+
+
+
+div.faraway:after {
+    width: 80vmin;
+    top: 25vmin;
+    height: 70vmin;
+    left: 13vmin;
+    transform: scale(0.15);
+    z-index: 9;
+    animation: ship 60s linear infinite;
+    background: 
+          
+      /* mast 1 */
+       linear-gradient(90deg, transparent 1vmin, $boat-blue 1vmin, $boat-blue 2vmin, transparent 1vmin) 48vmin 7vmin  / 30vmin 45vmin no-repeat,
+      
+            
+     radial-gradient(ellipse at -5% 50%,
+       transparent 8vmin, $boat-blue 8vmin, $boat-blue 20vmin, transparent 1vmin) 38vmin 13vmin  / 7vmin 18vmin no-repeat,
+      
+       linear-gradient(10deg, $boat-blue 18vmin, transparent 1vmin) 45vmin -8.75vmin  / 12vmin 40vmin no-repeat,
+      
+     radial-gradient(ellipse at -5% 50%, $boat-blue 6.5vmin, transparent 1vmin) 56vmin 3vmin  / 15vmin 40vmin no-repeat,
+      
+      
+            
+     radial-gradient(ellipse at -5% 50%,
+       transparent 8vmin, $boat-blue 8vmin, $boat-blue 20vmin, transparent 1vmin) 38vmin 30vmin  / 7vmin 18vmin no-repeat,
+      
+       linear-gradient(10deg, $boat-blue 18vmin, transparent 1vmin) 45vmin 8vmin  / 12vmin 40vmin no-repeat,
+      
+     radial-gradient(ellipse at -5% 50%, $boat-blue 6.5vmin, transparent 1vmin) 56vmin 20vmin  / 15vmin 40vmin no-repeat,
+      
+     linear-gradient(30deg, $boat-blue 3vmin, transparent 1vmin) 49.5vmin 6.5vmin  / 6vmin 4vmin no-repeat,
+      
+      
+      
+      
+       /* mast 2 */
+       linear-gradient(90deg, transparent 1vmin, $boat-blue 1vmin, $boat-blue 2vmin, transparent 1vmin) 31vmin 4vmin  / 30vmin 50vmin no-repeat,
+      
+       linear-gradient(75deg, transparent 5vmin, $boat-blue 5vmin, $boat-blue 5.75vmin, transparent 1vmin) 32vmin 4vmin  / 60vmin 50vmin no-repeat,
+       linear-gradient(-75deg, transparent 5vmin, $boat-blue 5vmin, $boat-blue 5.75vmin, transparent 1vmin) 22vmin 4vmin  / 10vmin 50vmin no-repeat,
+      
+      
+      linear-gradient(5deg, $boat-blue 2.5vmin, transparent 1vmin) 21vmin 32vmin  / 23vmin 3vmin no-repeat,
+      
+     radial-gradient(ellipse, $boat-blue 3vmin, transparent 1vmin) 17vmin 32vmin  / 14vmin 6vmin no-repeat,
+        radial-gradient(ellipse, $boat-blue 3vmin, transparent 1vmin) 23vmin 32.25vmin  / 14vmin 6vmin no-repeat,
+        radial-gradient(ellipse, $boat-blue 3vmin, transparent 1vmin) 29vmin 32.5vmin  / 14vmin 6vmin no-repeat,
+        radial-gradient(ellipse, $boat-blue 3vmin, transparent 1vmin) 34vmin 32.75vmin  / 14vmin 6vmin no-repeat,
+      
+     radial-gradient(ellipse at -5% 50%,
+       transparent 8vmin, $boat-blue 8vmin, $boat-blue 20vmin, transparent 1vmin) 20vmin 13vmin  / 7vmin 18vmin no-repeat,
+      
+       linear-gradient(10deg, $boat-blue 18vmin, transparent 1vmin) 27vmin -8.75vmin  / 12vmin 40vmin no-repeat,
+      
+     radial-gradient(ellipse at -5% 50%, $boat-blue 6.5vmin, transparent 1vmin) 38vmin 3vmin  / 15vmin 40vmin no-repeat,
+      
+      
+     linear-gradient(30deg, $boat-blue 3vmin, transparent 1vmin) 32vmin 3vmin  / 6vmin 4vmin no-repeat,
+      
+      
+      
+      
+       /* mast 3 */
+       linear-gradient(90deg, transparent 1vmin, $boat-blue 1vmin, $boat-blue 2vmin, transparent 1vmin) 17vmin 17vmin  / 30vmin 45vmin no-repeat,
+       linear-gradient(-75deg, transparent 5vmin, $boat-blue 5vmin, $boat-blue 5.75vmin, transparent 1vmin) 3vmin -7vmin  / 15vmin 50vmin no-repeat,
+      
+       linear-gradient(75deg, transparent 5vmin, $boat-blue 5vmin, $boat-blue 5.75vmin, transparent 1vmin) 18vmin -7vmin  / 15vmin 50vmin no-repeat,
+      
+    
+      
+      
+      
+      
+       /* mast 4 */
+       linear-gradient(80deg, transparent 2vmin, $boat-blue 2vmin, $boat-blue 3vmin, transparent 1vmin) 7vmin -3vmin  / 30vmin 45vmin no-repeat,
+     radial-gradient(ellipse at -5% 50%, $boat-blue 4vmin, transparent 1vmin) 8vmin 18vmin  / 15vmin 30vmin no-repeat,
+      
+      
+      
+      /* front */
+       linear-gradient(-12deg, transparent 9vmin, $boat-blue 9vmin, $boat-blue 9.5vmin, transparent 1vmin) 50vmin 22vmin  / 30vmin 30vmin no-repeat,
+
+     linear-gradient(-25deg, transparent 3vmin, $boat-blue 3vmin, $boat-blue 5vmin, transparent 1vmin) 20vmin 22vmin  / 46vmin 30vmin no-repeat,
+      
+     radial-gradient(ellipse at 0% 0%, $boat-blue 6vmin, transparent 1vmin) 57vmin 50vmin  / 35vmin 30vmin no-repeat,
+     radial-gradient(ellipse at 0% 0%, $boat-blue 9vmin, transparent 1vmin) 50vmin 55vmin  / 35vmin 30vmin no-repeat,
+      
+      
+     linear-gradient($boat-blue 9vmin, transparent 1vmin) 11vmin 50vmin  / 46vmin 30vmin no-repeat,
+     linear-gradient($boat-blue 9vmin, transparent 1vmin) 11vmin 53.5vmin  / 40vmin 30vmin no-repeat,
+      
+      /* back */
+     radial-gradient(ellipse at 100% 0%, transparent, 8.75vmin, $boat-blue 8.75vmin, $boat-blue 22vmin, transparent 1vmin) 3vmin 44vmin  / 30vmin 20vmin no-repeat,
+     linear-gradient(15deg, $boat-blue 4.5vmin, transparent 1vmin) 8vmin 39vmin  / 30vmin 5vmin no-repeat,
+     linear-gradient(-40deg, $boat-blue 3vmin, transparent 1vmin) 5vmin 56.5vmin  / 6vmin 6vmin no-repeat,
+     radial-gradient(ellipse at 100% 0%, $boat-blue 5vmin, transparent 1vmin) -2vmin 42vmin  / 15vmin 30vmin no-repeat,
+  
+}
+
+@keyframes ship {
+    100% {
+        left: 190vmin;
+    }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+      opacity: 0.4;
+  }
+    50% {
+        opacity: 0.25;
+    }
+}

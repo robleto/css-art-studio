@@ -1,0 +1,175 @@
+$test: #bada55;
+$bull: #351908;
+$girl: #e4c9b7;
+
+div, div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+  box-sizing:border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  transform: scale(1.2);
+  justify-content: center;
+  align-items: center; 
+   background-color: $girl;
+}
+
+div.brave {
+    width: 70vmin;
+    height: 70vmin;
+    transform: scale(1.2);
+    display: flex;
+    margin: 0 auto;
+    position: relative; 
+}
+
+div.brave:before {
+    width: 80vmin;
+    height: 64vmin;
+  
+  
+    animation: fly 7s linear 1;
+
+    background: 
+      
+      
+       
+         /* tail */  
+      
+      linear-gradient(-160deg, transparent 10.5vmin, $bull 10.5vmin, $bull 12vmin,transparent 12vmin) 40vmin 8vmin / 20vmin 8vmin no-repeat,
+      
+      radial-gradient(ellipse, $bull 1.75vmin, transparent 1vmin) 52.5vmin 13vmin / 7vmin 3vmin no-repeat,
+      radial-gradient(ellipse at top, transparent 3.5vmin, $bull 3.5vmin, $bull 7vmin, transparent 1vmin) 43vmin 14.5vmin / 15vmin 1.5vmin no-repeat,
+      
+      
+         /* left horn */  
+      1.5vmin / 5vmin 18vmin no-repeat,
+      radial-gradient(ellipse at top right, transparent 13.5vmin, $bull 13.5vmin, $bull 17.5vmin, transparent 1vmin) 14.5vmin 11vmin / 40vmin 22vmin no-repeat,
+      radial-gradient(ellipse, $bull 2vmin, transparent 1vmin) 36.5vmin 1.5vmin / 5vmin 18vmin no-repeat,
+
+       linear-gradient(45deg,  $bull 5.5vmin,transparent 1vmin) 38vmin 15vmin / 7vmin 5vmin no-repeat,
+      linear-gradient(145deg, transparent 9.5vmin, $bull 9.5vmin, $bull 12vmin,transparent 12vmin) 28.25vmin 10.25vmin / 8.25vmin 20vmin no-repeat,
+      radial-gradient(ellipse, $bull 1.5vmin, transparent 1vmin) 34.25vmin 11.25vmin / 5vmin 22vmin no-repeat,
+      
+         /* right horn */  
+      radial-gradient(ellipse at top, transparent 4vmin, $bull 4vmin, $bull 9vmin, transparent 1vmin) 53.25vmin 21.5vmin / 20vmin 6vmin no-repeat,
+      radial-gradient(ellipse, $bull 1.5vmin, transparent 1vmin) 69vmin 5.5vmin / 5vmin 22vmin no-repeat,
+      radial-gradient(ellipse at top, transparent 2vmin, $bull 2vmin, $bull 7vmin, transparent 1vmin) 55.5vmin 19.75vmin / 20vmin 6vmin no-repeat,
+      linear-gradient(-70deg, $bull 4.5vmin, transparent 1vmin) 64.25vmin 11.5vmin / 7.5vmin 10vmin no-repeat,
+      
+       /* head */ 
+      
+      radial-gradient(ellipse, $bull 3vmin, transparent 1vmin) 55.5vmin 13vmin / 20vmin 27vmin no-repeat,
+      radial-gradient(ellipse at left, $bull 10vmin, transparent 1vmin) 58vmin 15.5vmin / 20vmin 20vmin no-repeat,
+      radial-gradient(ellipse, $bull 10vmin, transparent 1vmin) 44.75vmin 16.25vmin / 20vmin 15vmin no-repeat,
+      
+      
+      
+       /* body */ 
+      radial-gradient(ellipse, $bull 4vmin, transparent 1vmin) 53vmin 39vmin / 8vmin 10vmin no-repeat,
+      radial-gradient(ellipse, $bull 10vmin, transparent 1vmin) 36vmin 23vmin / 30vmin 17vmin no-repeat,
+      linear-gradient(120deg, $bull 8vmin, transparent 5vmin) 59vmin 25vmin / 30vmin 30vmin no-repeat,
+      radial-gradient(ellipse, $bull 15vmin, transparent 1vmin) 35.25vmin 31vmin / 30vmin 17vmin no-repeat,     
+      linear-gradient(140deg, $bull 8vmin, transparent 5vmin) 34.5vmin 39.5vmin / 10vmin 12vmin no-repeat,
+      linear-gradient(-105deg, $bull 5.5vmin, transparent 5vmin) 28vmin 38vmin / 6.5vmin 12vmin no-repeat,
+      linear-gradient(-55deg, $bull 8vmin, transparent 5vmin) 19.75vmin 22.75vmin / 7.5vmin 13vmin no-repeat,
+      radial-gradient(ellipse, $bull 15vmin, transparent 1vmin) 19vmin 28vmin / 30vmin 13.5vmin no-repeat,      
+      radial-gradient(ellipse, $bull 15vmin, transparent 1vmin) 25.25vmin 18.5vmin / 30vmin 14vmin no-repeat,
+      
+       /* left front leg */ 
+      radial-gradient(ellipse, $bull 3vmin, transparent 1vmin) 16vmin 40vmin / 6vmin 10vmin no-repeat,
+      radial-gradient(ellipse, $bull 3vmin, transparent 1vmin) 17.75vmin 33vmin / 6vmin 10vmin no-repeat,
+      linear-gradient(115deg, transparent 5vmin, $bull 5vmin, $bull 10.5vmin, transparent 5vmin) 13.5vmin 39.5vmin / 9vmin 18vmin no-repeat,
+      linear-gradient(135deg, $bull 11.5vmin, transparent 5vmin) 19vmin 34vmin / 9vmin 20vmin no-repeat,
+      linear-gradient(-50deg, $bull 7vmin, transparent 1vmin) 5vmin 48vmin / 11vmin 10vmin no-repeat,
+      radial-gradient(ellipse, $bull 6vmin, transparent 1vmin) 5.5vmin 59vmin / 12vmin 4vmin no-repeat,
+      radial-gradient(ellipse at bottom, $bull 6vmin, transparent 1vmin) 5vmin 53vmin / 13vmin 8vmin no-repeat,
+      
+      
+       /* left back  leg */ 
+      radial-gradient(ellipse at bottom right, transparent 3vmin, $bull 3vmin, $bull 7vmin, transparent 1vmin) 18.5vmin 39.5vmin / 16vmin 13vmin no-repeat,
+      radial-gradient(ellipse, $bull 4vmin, transparent 1vmin) 23.5vmin 54vmin / 12vmin 4vmin no-repeat,
+      radial-gradient(ellipse at bottom, $bull 4vmin, transparent 1vmin) 23vmin 48vmin / 13vmin 8vmin no-repeat,
+      
+       /* back right leg */ 
+      linear-gradient(-115deg, transparent 5vmin, $bull 5vmin, $bull 10.5vmin, transparent 5vmin) 48vmin 37vmin / 9vmin 18vmin no-repeat,
+      radial-gradient(ellipse, $bull 4vmin, transparent 1vmin) 50.5vmin 53vmin / 12vmin 4vmin no-repeat,
+      radial-gradient(ellipse at bottom, $bull 4vmin, transparent 1vmin) 50vmin 47vmin / 13vmin 8vmin no-repeat,
+
+      
+     /* front right leg */ 
+      linear-gradient(115deg, transparent 5vmin, $bull 5vmin, $bull 10.5vmin, transparent 5vmin) 45vmin 39.5vmin / 9vmin 18vmin no-repeat,
+  
+      linear-gradient(-55deg, $bull 3vmin, transparent 1vmin) 34.5vmin 46vmin / 11vmin 10vmin no-repeat,
+      
+      
+      radial-gradient(ellipse, $bull 6vmin, transparent 1vmin) 40vmin 59vmin / 12vmin 4vmin no-repeat,
+      radial-gradient(ellipse at bottom, $bull 6vmin, transparent 1vmin) 39.5vmin 53vmin / 13vmin 8vmin no-repeat,
+      
+}
+      
+
+div.brave:after {
+    width: 70vmin;
+    height: 70vmin;
+    background: 
+      
+      /* head */ radial-gradient(ellipse, $girl 3.25vmin, transparent 1vmin) 39.25vmin 23.5vmin / 7vmin 9vmin no-repeat,
+      
+      /* neck */ radial-gradient(ellipse at left, transparent 2vmin, $girl 2vmin, $girl 5vmin, transparent 1vmin) 39.75vmin 23.5vmin / 7vmin 18vmin no-repeat,
+      linear-gradient(45deg, $girl 7vmin, transparent 1vmin) 42.25vmin 30vmin / 5vmin 8vmin no-repeat,
+      linear-gradient(155deg, transparent 9.5vmin, $girl 9.5vmin, $girl 12vmin,transparent 12vmin) 40vmin 22vmin / 8.25vmin 9vmin no-repeat,
+      linear-gradient(-45deg, transparent 9.5vmin, $girl 9.5vmin, $girl 12vmin,transparent 12vmin) 45vmin 31vmin / 8.25vmin 9vmin no-repeat,
+      linear-gradient(-145deg, transparent 9.5vmin, $girl 9.5vmin, $girl 12vmin,transparent 12vmin) 44.25vmin 22vmin / 8.25vmin 9vmin no-repeat,
+      
+      
+/* RIGHT ARM */
+       /* upper arm bumps */radial-gradient(ellipse, $girl 2vmin, transparent 1vmin) 36vmin 36vmin / 4vmin 1vmin no-repeat,
+      radial-gradient(ellipse, $girl 2vmin, transparent 1vmin) 40vmin 33vmin / 4vmin 2vmin no-repeat,
+      linear-gradient(145deg, transparent 9.5vmin, $girl 9.5vmin, $girl 12vmin,transparent 12vmin) 32.5vmin 27.5vmin / 8.25vmin 9vmin no-repeat,
+      
+      /* lower arm */ linear-gradient(-145deg, transparent 10vmin, $girl 10vmin, $girl 12vmin,transparent 12vmin) 33vmin 33.75vmin / 8.5vmin 19vmin no-repeat,
+      /* upper arm */ linear-gradient(145deg, transparent 9.5vmin, $girl 9.5vmin, $girl 12vmin,transparent 12vmin) 32.75vmin 27.75vmin / 8.25vmin 20vmin no-repeat,
+       /* elbow */radial-gradient(ellipse, $girl 1.25vmin, transparent 1vmin) 32vmin 39vmin / 2.5vmin 3.5vmin no-repeat,
+    
+/* LEFT ARM */
+       /* upper arm bumps */radial-gradient(ellipse, $girl 2vmin, transparent 1vmin) 46.5vmin 34.25vmin / 4vmin 1.75vmin no-repeat,
+      radial-gradient(ellipse, $girl 1vmin, transparent 1vmin) 47vmin 33.5vmin / 2vmin 1.5vmin no-repeat,
+      /* lower arm */ linear-gradient(130deg, transparent 10.25vmin, $girl 10.25vmin, $girl 12vmin,transparent 12vmin) 45.5vmin 31vmin / 8vmin 18vmin no-repeat,
+      /* upper arm */ linear-gradient(-145deg, transparent 9.75vmin, $girl 9.75vmin, $girl 12vmin,transparent 12vmin) 47vmin 25.5vmin / 6.25vmin 20vmin no-repeat,
+       /* elbow */radial-gradient(ellipse, $girl 1.25vmin, transparent 1vmin) 51.5vmin 37.25vmin / 2.5vmin 2.5vmin no-repeat,
+      
+      
+      
+/* BODY */
+       /* dress right */     
+      radial-gradient(ellipse, $girl 3.5vmin, transparent 1vmin) 42.75vmin 51.5vmin / 14vmin 7vmin no-repeat,
+      radial-gradient(ellipse, $girl 3.5vmin, transparent 1vmin) 41.25vmin 44vmin / 14vmin 17vmin no-repeat,
+      radial-gradient(ellipse, $girl 4.5vmin, transparent 1vmin) 39vmin 41vmin / 14vmin 19vmin no-repeat,
+      linear-gradient(60deg, $girl 10vmin, transparent 1vmin) 41.75vmin 46vmin / 14vmin 9vmin no-repeat,
+      
+       /* dress left */    
+      radial-gradient(ellipse, $girl 7vmin, transparent 1vmin) 33.25vmin 47vmin / 14vmin 9vmin no-repeat,
+      radial-gradient(ellipse, $girl 7vmin, transparent 1vmin) 35vmin 45vmin / 14vmin 10vmin no-repeat,
+      radial-gradient(ellipse, $girl 3.5vmin, transparent 1vmin) 27vmin 51.5vmin / 14vmin 7vmin no-repeat,
+      radial-gradient(ellipse, $girl 5vmin, transparent 1vmin) 33vmin 51vmin / 14vmin 7vmin no-repeat,
+      linear-gradient(-45deg, $girl 10vmin, transparent 1vmin) 31vmin 45vmin / 14vmin 9vmin no-repeat,
+      
+      /* torso */ linear-gradient(-100deg, $girl 10vmin, transparent 1vmin) 34vmin 36vmin / 14vmin 19vmin no-repeat,
+      linear-gradient(100deg, $girl 10vmin, transparent 1vmin) 39vmin 36vmin / 14vmin 19vmin no-repeat,
+      
+      /* legs */ linear-gradient(92deg, $girl 3.5vmin, transparent 1vmin) 43.5vmin 55vmin / 7.5vmin 9vmin no-repeat,
+      linear-gradient(99deg, transparent 1vmin, $girl 1vmin,  $girl 4vmin, transparent 1vmin) 36.5vmin 55vmin / 7.5vmin 9vmin no-repeat,
+      
+}
+
+@keyframes fly {
+    from {
+        transform: scale(.6) translate(0vmin, -25vmin);opacity: .70;
+    }
+}

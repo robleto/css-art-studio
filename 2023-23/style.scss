@@ -1,0 +1,242 @@
+$test: #bada55;
+$dark-blue: #001740;
+$light-blue: #5089e0;
+$biege: #dfdac7;
+$peach: #ffa992;
+$light-peach: #feb6a2;
+$gray: #6d6d6d;
+$white: #ffffff;
+$black: #181a19;
+
+
+div, div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+  box-sizing:border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: $dark-blue;
+}
+
+
+
+$box-w: -6vmin;
+$box-h: -19vmin;
+
+
+div.fake {
+    width: 55vmin;
+    height: 55vmin;
+    border-radius: 90%;
+    left: -30vmin;
+    display: flex;
+    margin: 0 auto;
+    border: solid 15px $biege;
+    //transform: scale(1.5);
+    //opacity: 0.7;
+    position: relative; 
+    background: 
+      
+      
+      
+        /* left sideburn */
+      
+       radial-gradient(ellipse , $black 1vmin, transparent .75vmin) calc(#{$box-w} + 21vmin) calc(#{$box-h} + 38vmin)  / 2vmin 7vmin no-repeat, 
+      
+      
+        /* right sideburn */
+      
+       radial-gradient(ellipse , $black 1vmin, transparent .75vmin) calc(#{$box-w} + 41.5vmin) calc(#{$box-h} + 38vmin)  / 2vmin 6vmin no-repeat, 
+      
+      
+      
+      /* beard */
+       radial-gradient(ellipse , $black 2.5vmin, transparent 1vmin) calc(#{$box-w} + 27.5vmin) calc(#{$box-h} + 55.5vmin)  / 5vmin 5vmin no-repeat, 
+        radial-gradient(ellipse , $black 2.5vmin, transparent 1vmin) calc(#{$box-w} + 25vmin) calc(#{$box-h} + 55vmin)  / 5vmin 4vmin no-repeat, 
+      
+      radial-gradient(ellipse at 100% 50%, $black 2vmin, transparent 1vmin) calc(#{$box-w} + 22.5vmin) calc(#{$box-h} + 50vmin)  / 3vmin 7vmin no-repeat, 
+      radial-gradient(ellipse at 100% 0%, transparent 5vmin, $black 5vmin, $black 8vmin, transparent 1vmin) calc(#{$box-w} + 25.5vmin) calc(#{$box-h} + 50.75vmin)  / 5vmin 3.5vmin no-repeat, 
+      radial-gradient(ellipse at 50% 100%, $black 3vmin, transparent 1vmin) calc(#{$box-w} + 22vmin) calc(#{$box-h} + 51.5vmin)  / 14vmin 4.5vmin no-repeat, 
+      
+      
+      radial-gradient(ellipse , $black 1.5vmin, transparent 1vmin) calc(#{$box-w} + 25vmin) calc(#{$box-h} + 53.5vmin)  / 3vmin 3vmin no-repeat, 
+       radial-gradient(ellipse , $black 2.5vmin, transparent 1vmin) calc(#{$box-w} + 30.5vmin) calc(#{$box-h} + 55.5vmin)  / 5vmin 5vmin no-repeat, 
+        radial-gradient(ellipse , $black 2.5vmin, transparent 1vmin) calc(#{$box-w} + 34vmin) calc(#{$box-h} + 55vmin)  / 5vmin 4vmin no-repeat, 
+      
+       radial-gradient(ellipse , $black 1.5vmin, transparent 1vmin) calc(#{$box-w} + 36vmin) calc(#{$box-h} + 53.5vmin)  / 3vmin 3vmin no-repeat, 
+       radial-gradient(ellipse at 0% 50%, $black 2vmin, transparent 1vmin) calc(#{$box-w} + 38.5vmin) calc(#{$box-h} + 50vmin)  / 3vmin 7vmin no-repeat, 
+      radial-gradient(ellipse at 0% 0%, transparent 5vmin, $black 5vmin, $black 8vmin, transparent 1vmin) calc(#{$box-w} + 33.5vmin) calc(#{$box-h} + 50.75vmin)  / 5vmin 3.5vmin no-repeat, 
+      radial-gradient(ellipse at 50% 100%, $black 3vmin, transparent 1vmin) calc(#{$box-w} + 28vmin) calc(#{$box-h} + 51.5vmin)  / 14vmin 4.5vmin no-repeat,
+      
+      /* forehead */
+      radial-gradient(ellipse, $peach 6vmin, transparent 1vmin) calc(#{$box-w} + 27.5vmin) calc(#{$box-h} + 32.75vmin)  / 10vmin 1vmin no-repeat,
+      
+      radial-gradient(ellipse, $peach 8vmin, transparent 1vmin) calc(#{$box-w} + 25.5vmin) calc(#{$box-h} + 34.5vmin)  / 14vmin 1vmin no-repeat,
+      
+      radial-gradient(ellipse, $peach 6vmin, transparent 1vmin) calc(#{$box-w} + 27.5vmin) calc(#{$box-h} + 36vmin)  / 10vmin 1vmin no-repeat,
+      
+      
+       /* left eye */
+      radial-gradient(ellipse at 50% 100%, $black 1.45vmin, transparent 1vmin) calc(#{$box-w} + 26vmin) calc(#{$box-h} + 41.5vmin)  / 3vmin 2vmin no-repeat,
+       radial-gradient(ellipse, $peach 2.75vmin, transparent 1vmin) calc(#{$box-w} + 24.5vmin) calc(#{$box-h} + 40vmin)  / 5.5vmin 5.5vmin no-repeat,
+      radial-gradient(ellipse at 50% 100%, transparent 2vmin,$black 2vmin, $black 3vmin, transparent 1vmin) calc(#{$box-w} + 24.25vmin) calc(#{$box-h} + 39.5vmin)  / 6vmin 2vmin no-repeat,
+      
+      /* right eye */
+      radial-gradient(ellipse at 50% 100%, $black 1.45vmin, transparent 1vmin) calc(#{$box-w} + 35.25vmin) calc(#{$box-h} + 41.5vmin)  / 3vmin 2vmin no-repeat,
+       radial-gradient(ellipse, $peach 2.75vmin, transparent 1vmin) calc(#{$box-w} + 34vmin) calc(#{$box-h} + 40vmin)  / 5.5vmin 5.5vmin no-repeat,
+      radial-gradient(ellipse at 50% 100%, transparent 2vmin,$black 2vmin, $black 3vmin, transparent 1vmin) calc(#{$box-w} + 33.75vmin) calc(#{$box-h} + 39.5vmin)  / 6vmin 2vmin no-repeat,
+      
+      
+      /* nose */
+       radial-gradient(ellipse, $peach .75vmin, transparent .75vmin) calc(#{$box-w} + 30.25vmin) calc(#{$box-h} + 38.5vmin)  / 1.5vmin 1.5vmin no-repeat,
+       radial-gradient(ellipse, $peach .75vmin, transparent .75vmin) calc(#{$box-w} + 32.25vmin) calc(#{$box-h} + 38.5vmin)  / 1.5vmin 1.5vmin no-repeat,
+      
+       radial-gradient(ellipse, $peach 1.2vmin, transparent 1vmin) calc(#{$box-w} + 31vmin) calc(#{$box-h} + 40.5vmin)  / 2vmin 9vmin no-repeat,
+      radial-gradient(ellipse, $peach 3.6vmin, transparent 1vmin) calc(#{$box-w} + 29vmin) calc(#{$box-h} + 46.75vmin)  / 6vmin 2vmin no-repeat,
+      
+      
+      /* mouth */
+      radial-gradient(ellipse, $peach 4vmin, transparent 1vmin) calc(#{$box-w} + 28.5vmin) calc(#{$box-h} + 51.75vmin)  / 7vmin .75vmin no-repeat,
+       radial-gradient(ellipse at 50% 100%, $light-peach 6.75vmin, $peach 6.75vmin, $peach 7vmin, transparent 1vmin) calc(#{$box-w} + 24.75vmin) calc(#{$box-h} + 46vmin)  / 15.5vmin 9vmin no-repeat,
+      
+      
+      
+        
+       radial-gradient(ellipse, $black 5vmin, transparent 1vmin) calc(#{$box-w} + 27vmin) calc(#{$box-h} + 25.25vmin)  / 10vmin 6vmin no-repeat, 
+      
+      
+       /* face */
+      
+       radial-gradient(ellipse, $light-peach 9vmin, transparent 1vmin) calc(#{$box-w} + 33.75vmin) calc(#{$box-h} + 36vmin)  / 8vmin 6vmin no-repeat, 
+       radial-gradient(ellipse, $light-peach 9vmin, transparent 1vmin) calc(#{$box-w} + 22.75vmin) calc(#{$box-h} + 36vmin)  / 8vmin 6vmin no-repeat, 
+       radial-gradient(ellipse, $light-peach 4vmin, transparent 1vmin) calc(#{$box-w} + 28vmin) calc(#{$box-h} + 30vmin)  / 8vmin 6vmin no-repeat, 
+       radial-gradient(ellipse, $light-peach 5vmin, transparent 1vmin) calc(#{$box-w} + 22.5vmin) calc(#{$box-h} + 30vmin)  / 10vmin 13vmin no-repeat, 
+       radial-gradient(ellipse, $light-peach 5vmin, transparent 1vmin) calc(#{$box-w} + 32vmin) calc(#{$box-h} + 30vmin)  / 10vmin 13vmin no-repeat,
+      
+      radial-gradient(ellipse, $light-peach 9vmin, transparent 1vmin) calc(#{$box-w} + 24vmin) calc(#{$box-h} + 34vmin)  / 18vmin 18vmin no-repeat, 
+      
+      
+       radial-gradient(ellipse, $black 7vmin, transparent 1vmin) calc(#{$box-w} + 30vmin) calc(#{$box-h} + 25.75vmin)  / 14vmin 14vmin no-repeat, 
+      radial-gradient(ellipse, $black 10vmin, transparent 1vmin) calc(#{$box-w} + 23vmin) calc(#{$box-h} + 27vmin)  / 20vmin 20vmin no-repeat, 
+       radial-gradient(ellipse, $black 10vmin, transparent 1vmin) calc(#{$box-w} + 20vmin) calc(#{$box-h} + 24vmin)  / 20vmin 20vmin no-repeat, 
+      
+      
+      /* head */
+       radial-gradient(ellipse, $light-peach 10vmin, transparent 1vmin) calc(#{$box-w} + 23.75vmin) calc(#{$box-h} + 35vmin)  / 17vmin 22vmin no-repeat,
+       radial-gradient(ellipse, $light-peach 12vmin, transparent 1vmin) calc(#{$box-w} + 21.5vmin) calc(#{$box-h} + 29vmin)  / 21.5vmin 22vmin no-repeat,
+      
+      /* left side back */
+      
+       radial-gradient(ellipse , $black 2vmin, transparent .75vmin) calc(#{$box-w} + 21.25vmin) calc(#{$box-h} + 41vmin)  / 4vmin 8vmin no-repeat, 
+       radial-gradient(ellipse , $black 1vmin, transparent 1vmin) calc(#{$box-w} + 22vmin) calc(#{$box-h} + 47vmin)  / 2vmin 3vmin no-repeat, 
+      radial-gradient(ellipse , $black 1vmin, transparent 1vmin) calc(#{$box-w} + 23vmin) calc(#{$box-h} + 49vmin)  / 2vmin 3vmin no-repeat, 
+      
+      
+        /* right side back */
+       
+      
+       radial-gradient(ellipse , $black 2vmin, transparent .75vmin) calc(#{$box-w} + 39.5vmin) calc(#{$box-h} + 41vmin)  / 4vmin 8vmin no-repeat, 
+       radial-gradient(ellipse , $black 1vmin, transparent 1vmin) calc(#{$box-w} + 41vmin) calc(#{$box-h} + 47vmin)  / 2vmin 3vmin no-repeat, 
+      radial-gradient(ellipse , $black 2vmin, transparent 1vmin) calc(#{$box-w} + 38vmin) calc(#{$box-h} + 47vmin)  / 4vmin 6vmin no-repeat, 
+      
+      
+      
+      /* left ear */
+       radial-gradient(ellipse at 100% 50%, $peach 3.5vmin, transparent 1vmin) calc(#{$box-w} + 16.25vmin) calc(#{$box-h} + 38.25vmin)  / 6vmin 11vmin no-repeat,
+       radial-gradient(ellipse at 100% 50%, $peach 2vmin, transparent 1vmin) calc(#{$box-w} + 19.5vmin) calc(#{$box-h} + 39.5vmin)  / 3vmin 12vmin no-repeat,
+      
+      
+       /* right ear */
+       radial-gradient(ellipse at 0% 50%, $peach 3vmin, transparent 1vmin) calc(#{$box-w} + 43vmin) calc(#{$box-h} + 38.25vmin)  / 4vmin 8vmin no-repeat,
+       radial-gradient(ellipse at 0% 50%, $peach 3vmin, transparent 1vmin) calc(#{$box-w} + 42vmin) calc(#{$box-h} + 37vmin)  / 4vmin 14vmin no-repeat,
+      
+      
+       /* hair behind left ear */
+      
+       /* hair behind right ear */
+       radial-gradient(ellipse at 100% 50% , $black 3.25vmin, transparent 1vmin) calc(#{$box-w} + 17vmin) calc(#{$box-h} + 30vmin)  / 5.5vmin 13vmin no-repeat, 
+      
+       radial-gradient(ellipse , $black 1.75vmin, transparent .1vmin) calc(#{$box-w} + 19.5vmin) calc(#{$box-h} + 37vmin)  / 3.5vmin 5vmin no-repeat, 
+      
+       /* hair behind right ear */
+      
+       /* hair behind right ear */
+       radial-gradient(ellipse at 0% 50% , $black 3.25vmin, transparent 1vmin) calc(#{$box-w} + 42vmin) calc(#{$box-h} + 32vmin)  / 5.5vmin 13vmin no-repeat, 
+      
+       radial-gradient(ellipse , $black 1.75vmin, transparent .1vmin) calc(#{$box-w} + 42vmin) calc(#{$box-h} + 37vmin)  / 3.5vmin 5vmin no-repeat, 
+      
+ 
+
+    /* neck */
+       radial-gradient(ellipse, $light-peach 5vmin, transparent 1vmin) calc(#{$box-w} + 27vmin) calc(#{$box-h} + 50vmin)  / 10vmin 12vmin no-repeat, 
+      
+      
+      
+    /* tie */
+        radial-gradient(ellipse, $black 1.5vmin, transparent 1vmin) calc(#{$box-w} + 30vmin) calc(#{$box-h} + 62.25vmin)  / 3vmin 3vmin no-repeat, 
+       linear-gradient(20deg, $black  2.5vmin, transparent 1vmin) calc(#{$box-w} + 27.5vmin) calc(#{$box-h} + 56vmin)  / 5vmin 8vmin no-repeat,
+       linear-gradient(160deg, $black  2.5vmin, transparent 1vmin) calc(#{$box-w} + 27.5vmin) calc(#{$box-h} + 64vmin)  / 5vmin 8vmin no-repeat,
+      
+       linear-gradient(-20deg, $black  2.5vmin, transparent 1vmin) calc(#{$box-w} + 31vmin) calc(#{$box-h} + 56vmin)  / 5vmin 8vmin no-repeat,
+      
+       linear-gradient(-160deg, $black  2.5vmin, transparent 1vmin) calc(#{$box-w} + 31vmin) calc(#{$box-h} + 64vmin)  / 5vmin 8vmin no-repeat,
+      
+      
+      
+    /* shirt */
+      
+       radial-gradient(ellipse, $white 6vmin, transparent 1vmin) calc(#{$box-w} + 26.5vmin) calc(#{$box-h} + 55vmin)  / 12vmin 8vmin no-repeat, 
+      
+      linear-gradient(100deg, $white  7vmin, transparent 1vmin) calc(#{$box-w} + 31vmin) calc(#{$box-h} + 60vmin)  / 18vmin 20vmin no-repeat,
+       linear-gradient(-100deg, $white  7vmin, transparent 1vmin) calc(#{$box-w} + 15.75vmin) calc(#{$box-h} + 60vmin)  / 18vmin 20vmin no-repeat,
+      
+      
+       radial-gradient(ellipse, $black 8vmin, transparent 1vmin) calc(#{$box-w} + 25vmin) calc(#{$box-h} + 55vmin)  / 16vmin 12vmin no-repeat, 
+      
+      
+       linear-gradient(20deg, $black  20vmin, transparent 1vmin) calc(#{$box-w} + 38vmin) calc(#{$box-h} + 58vmin)  / 30vmin 20vmin no-repeat,
+       linear-gradient(-20deg, $black 27vmin, transparent 1vmin) calc(#{$box-w} + 9vmin) calc(#{$box-h} + 58vmin)  / 30vmin 22vmin no-repeat,
+      
+      
+       /* bg */
+       linear-gradient($light-blue 0vmin, $light-blue 25vmin) calc(#{$box-w} + 0vmin) calc(#{$box-h} + 0vmin)  / 100vmin 100vmin no-repeat,
+}
+
+
+div.fake:after {
+    width: 55vmin;
+    height: 60vmin;
+    left: 60vmin;
+    top: -10vmin;
+    font-size: 7.5vmin;
+    font-weight: 600;
+    letter-spacing: .025vmin;
+    text-shadow: .75vmin .75vmin.5vmin darken($dark-blue, 10%);
+    font-family: 'Oswald', sans-serif;
+    color: $biege;
+    content: 'THE PROBLEM WITH QUOTES FOUND ON THE INTERNET IS THAT THEY ARE OFTEN NOT TRUE.';
+    //background: 
+}
+      
+div.fake:before {
+    width: 45vmin;
+    height: 10vmin;
+    left: 60vmin;
+    top: 58vmin;
+    font-size: 4.5vmin;
+    font-weight: 300;
+    z-index: 999;
+    color: darken($biege, 10%);
+    opacity: 0.7;
+    font-family: 'Oswald', sans-serif;
+    content: '~ Abraham Lincoln';
+    
+}
+     
