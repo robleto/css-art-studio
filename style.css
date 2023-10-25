@@ -27,8 +27,7 @@ main.grid {
   max-width: 90vw;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 5vmin;
   grid-row-gap: 5vmin;
 }
@@ -49,7 +48,7 @@ iframe {
   padding: 7.5vmin;
   position: relative;
   text-align: center;  
-  aspect-ratio: 5/4;
+  aspect-ratio: 16/9;
   min-height: 70vmin;
 }
 iframe:before {
@@ -79,6 +78,8 @@ iframe:after {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
+}
+@media (max-width: 1100px) {
   iframe {
     min-height: 80vmin;
   }
