@@ -32,19 +32,138 @@ $wood3: 90deg, $offwhite 0vmin, $offwhite .5vmin, $fucia 1vmin, darken($fucia, 1
 $wood4: 90deg, darken($fucia, 5%)  1vmin, darken($fucia, 10%) 4vmin, $offwhite 4vmin, $offwhite 4.5vmin, $fucia 5vmin, darken($fucia, 10%) 13vmin, $offwhite 13vmin, $offwhite 13.5vmin, $ruby 14vmin, darken($ruby, 10%) 22vmin, $offwhite 22vmin, $offwhite 22.5vmin, darken($fucia, 5%)23vmin, darken($fucia, 10%) 27vmin;
 
 
+
 *, *:before, *:after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
 body {
   height: 100vmin;
   position: relative;
-  
   background:
 
       /* wood wall  */
+      linear-gradient($offwhite 0%, $offwhite 100%);
+
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+div.brew {
+    width: 100vmin;
+    height: 80vmin;
+    top: 10vmin;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.75) 0px 3px 8px;
+    border: solid 2.5vmin $gold;
+    z-index: -99;
+    position: relative;
+    background:
+
+
+    /*** BELT ***/
+
+    /* belt wheels */
+    radial-gradient(circle, $gray3 1vmin, $gray1 1vmin, $gray1 3vmin, $gray3 3vmin, $gray3 3.5vmin, transparent 3.5vmin)  -6vmin 56.5vmin / 8vmin 8vmin no-repeat, 
+    radial-gradient(circle, $gray3 1vmin, $gray1 1vmin, $gray1 3vmin, $gray3 3vmin, $gray3 3.5vmin, transparent 3.5vmin)  4vmin 56.5vmin / 8vmin 8vmin no-repeat, 
+    radial-gradient(circle, $gray3 1vmin, $gray1 1vmin, $gray1 3vmin, $gray3 3vmin, $gray3 3.5vmin, transparent 3.5vmin)  14vmin 56.5vmin / 8vmin 8vmin no-repeat, 
+    radial-gradient(circle, $gray3 1vmin, $gray1 1vmin, $gray1 3vmin, $gray3 3vmin, $gray3 3.5vmin, transparent 3.5vmin)  24vmin 56.5vmin / 8vmin 8vmin no-repeat, 
+    radial-gradient(circle, $gray3 1vmin, $gray1 1vmin, $gray1 3vmin, $gray3 3vmin, $gray3 3.5vmin, transparent 3.5vmin)  34vmin 56.5vmin / 8vmin 8vmin no-repeat, 
+    radial-gradient(circle, $gray3 1vmin, $gray1 1vmin, $gray1 3vmin, $gray3 3vmin, $gray3 3.5vmin, transparent 3.5vmin)  44vmin 56.5vmin / 8vmin 8vmin no-repeat, 
+    radial-gradient(circle, $gray3 1vmin, $gray1 1vmin, $gray1 3vmin, $gray3 3vmin, $gray3 3.5vmin, transparent 3.5vmin)  54vmin 56.5vmin / 8vmin 8vmin no-repeat, 
+    radial-gradient(circle, $gray3 1vmin, $gray1 1vmin, $gray1 3vmin, $gray3 3vmin, $gray3 3.5vmin, transparent 3.5vmin)  64vmin 56.5vmin / 8vmin 8vmin no-repeat, 
+    radial-gradient(circle, $gray3 1vmin, $gray1 1vmin, $gray1 3vmin, $gray3 3vmin, $gray3 3.5vmin, transparent 3.5vmin)  74vmin 56.5vmin / 8vmin 8vmin no-repeat, 
+    radial-gradient(circle, $gray3 1vmin, $gray1 1vmin, $gray1 3vmin, $gray3 3vmin, $gray3 3.5vmin, transparent 3.5vmin)  84vmin 56.5vmin / 8vmin 8vmin no-repeat,  
+    radial-gradient(circle, $gray3 1vmin, $gray1 1vmin, $gray1 3vmin, $gray3 3vmin, $gray3 3.5vmin, transparent 3.5vmin)  94vmin 56.5vmin / 8vmin 8vmin no-repeat,  
+    
+    /* belt */
+    linear-gradient($gray3 1vmin, $gray2 1vmin, $gray2 2vmin, $gray1 2vmin, $gray1 9vmin, $gray3 9vmin, $gray3 10vmin, transparent 10vmin)  0vmin 55vmin / 100vmin 12vmin no-repeat,
+
+    /* belt stands */
+    linear-gradient($gray3 1vmin, transparent 1vmin) 10vmin 65vmin / 5vmin 2vmin no-repeat,
+    linear-gradient($gray3 20vmin, transparent 20vmin) 11.75vmin 66vmin / 1.5vmin 16vmin no-repeat,
+
+    linear-gradient($gray3 1vmin, transparent 1vmin) 30vmin 65vmin / 5vmin 2vmin no-repeat,
+    linear-gradient($gray3 20vmin, transparent 20vmin) 31.75vmin 66vmin / 1.5vmin 16vmin no-repeat,
+
+    linear-gradient($gray3 1vmin, transparent 1vmin) 50vmin 65vmin / 5vmin 2vmin no-repeat,
+    linear-gradient($gray3 20vmin, transparent 20vmin) 51.75vmin 66vmin / 1.5vmin 16vmin no-repeat,
+
+    linear-gradient($gray3 1vmin, transparent 1vmin) 70vmin 65vmin / 5vmin 2vmin no-repeat,
+    linear-gradient($gray3 20vmin, transparent 20vmin) 71.75vmin 66vmin / 1.5vmin 16vmin no-repeat,
+
+    linear-gradient($gray3 1vmin, transparent 1vmin) 90vmin 65vmin / 5vmin 2vmin no-repeat,
+    linear-gradient($gray3 20vmin, transparent 20vmin) 91.75vmin 66vmin / 1.5vmin 16vmin no-repeat,
+    
+    linear-gradient(180deg, lighten($yellow1, 30%) 15%, lighten($gray3, 15%) 100%);
+    ;
+}
+
+
+
+$bg-brewery: #FFDDAD;
+$bg-frame: #333333;
+
+$white: #FFFFFF;
+$red: #E95879;
+$green: #7CFC4B;
+$yellow: #FEC804;
+
+$gray1: #B2B4B3;
+$gray2: #929292;
+$gray3: #71716F;
+$gray4: #606060;
+
+$yellow1: #FCC32C;
+$yellow2: #F6B60E;
+
+$brown1: #AF7F56;
+$brown2: #825E41;
+
+$ruby: #B2A28D;
+$offwhite: #DFC09D;
+$orange: #7C5E3A;
+$fucia: #B8956F;
+$gold: #605747;
+
+$wood1: 90deg, $offwhite 0vmin, $offwhite .5vmin, $orange 1vmin, darken($orange, 10%) 8vmin, $offwhite 8vmin, $offwhite 8.5vmin, $ruby 9vmin, darken($ruby, 10%) 17vmin, $offwhite 17vmin, $offwhite 17.5vmin, $fucia 18vmin, darken($fucia, 10%) 26vmin, $offwhite 17vmin, $offwhite 17.5vmin;
+
+$wood2: 90deg, darken($ruby, 5%)  1vmin, darken($ruby, 10%) 4vmin, $offwhite 4vmin, $offwhite 4.5vmin, $fucia 5vmin, darken($fucia, 10%) 13vmin, $offwhite 13vmin, $offwhite 13.5vmin, $fucia 14vmin, darken($fucia, 10%) 22vmin, $offwhite 22vmin, $offwhite 22.5vmin, darken($ruby, 5%)23vmin, darken($ruby, 10%) 27vmin;
+
+$wood3: 90deg, $offwhite 0vmin, $offwhite .5vmin, $fucia 1vmin, darken($fucia, 10%) 8vmin, $offwhite 8vmin, $offwhite 8.5vmin, $ruby 9vmin, darken($ruby, 10%) 17vmin, $offwhite 17vmin, $offwhite 17.5vmin, $gold 18vmin, darken($gold, 10%) 26vmin, $offwhite 17vmin, $offwhite 17.5vmin;
+
+$wood4: 90deg, darken($fucia, 5%)  1vmin, darken($fucia, 10%) 4vmin, $offwhite 4vmin, $offwhite 4.5vmin, $fucia 5vmin, darken($fucia, 10%) 13vmin, $offwhite 13vmin, $offwhite 13.5vmin, $ruby 14vmin, darken($ruby, 10%) 22vmin, $offwhite 22vmin, $offwhite 22.5vmin, darken($fucia, 5%)23vmin, darken($fucia, 10%) 27vmin;
+
+
+
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vmin;
+  position: relative;
+  background:
+
+      /* wood wall  */
+    
+      repeating-linear-gradient($wood4)  0vmin 140vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood3)  0vmin 136vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood2)  0vmin 132vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood1)  0vmin 128vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood4)  0vmin 124vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood3)  0vmin 120vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood2)  0vmin 116vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood1)  0vmin 112vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood4)  0vmin 108vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood3)  0vmin 104vmin / 100vmin 3.5vmin repeat-x,
       repeating-linear-gradient($wood2)  0vmin 100vmin / 100vmin 3.5vmin repeat-x,
       repeating-linear-gradient($wood1)  0vmin 96vmin / 100vmin 3.5vmin repeat-x,
       repeating-linear-gradient($wood4)  0vmin 92vmin / 100vmin 3.5vmin repeat-x,
@@ -70,6 +189,12 @@ body {
       repeating-linear-gradient($wood4)  0vmin 12vmin / 100vmin 3.5vmin repeat-x,
       repeating-linear-gradient($wood3)  0vmin 8vmin / 100vmin 3.5vmin repeat-x,
       repeating-linear-gradient($wood2)  0vmin 4vmin / 100vmin 3.5vmin repeat-x,
+      repeating-linear-gradient($wood1)  0vmin 0vmin / 100vmin 3.5vmin repeat-x,
+    
+      repeating-linear-gradient($wood4)  0vmin -4vmin / 100vmin 3.5vmin repeat-x,
+    
+      repeating-linear-gradient($wood3)  0vmin -8vmin / 100vmin 3.5vmin repeat-x,
+    
       linear-gradient($wood1)  0vmin 0vmin / 100vmin 3.5vmin repeat-x,
       linear-gradient($offwhite 0%, $offwhite 100%);
 
@@ -85,6 +210,7 @@ div.brew {
     height: 80vmin;
     top: 10vmin;
     margin: 0 auto;
+    transform: scale(0.95);
     overflow: hidden;
     display: flex;
     box-shadow: rgba(0, 0, 0, 0.75) 0px 3px 8px;
@@ -406,5 +532,7 @@ div.brew:after {
 
     linear-gradient(75deg, $gray2 15vmin, transparent 15vmin) 55vmin 32.5vmin / 40vmin 22.5vmin no-repeat,
     linear-gradient(65deg, $gray1 20vmin, transparent 20vmin) 55vmin 32.5vmin / 40vmin 22.5vmin no-repeat,
+
+
 
 }
