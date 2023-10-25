@@ -1,43 +1,127 @@
-div, div:before, div:after {
-  display: block;
-  content: "";
-  position: absolute;
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  position: relative;
+  background-color: #d0c8b6;
 }
 
 body {
   height: 100vh;
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f0dac6;
 }
 
-div.feast {
-  width: 90vmin;
-  height: 100vmin;
-  z-index: 9999;
-  display: flex;
-  transform: rotate(25deg);
-  margin: 0 auto;
-  position: relative;
-  background: radial-gradient(ellipse, #856240 7.5vmin, transparent 1vmin) calc(-5vmin + 45vmin) calc(8vmin + 25vmin)/15vmin 55vmin no-repeat, radial-gradient(ellipse, #ffc24d 7.5vmin, transparent 1vmin) calc(-5vmin + 52vmin) calc(8vmin + 27vmin)/15vmin 55vmin no-repeat;
+div:before,
+div:after {
+  content: "";
+  display: inline-block;
 }
 
-div.feast:before {
-  width: 100vmin;
-  height: 100vmin;
-  z-index: -99;
-  transform: rotate(-25deg);
-  background: radial-gradient(ellipse at 130% 90%, transparent 8vmin, #cc8700 8vmin, #cc8700 8.5vmin, transparent 1vmin) calc(-5vmin + 42vmin) calc(8vmin + 50vmin)/20vmin 20vmin no-repeat, radial-gradient(ellipse at 130% 90%, transparent 8vmin, #cc8700 8vmin, #cc8700 8.5vmin, transparent 1vmin) calc(-5vmin + 47vmin) calc(8vmin + 50vmin)/20vmin 20vmin no-repeat, radial-gradient(ellipse at 130% 90%, transparent 8vmin, #cc8700 8vmin, #cc8700 8.5vmin, transparent 1vmin) calc(-5vmin + 52vmin) calc(8vmin + 50vmin)/20vmin 20vmin no-repeat, radial-gradient(ellipse at 50% 80%, #ffcb66 30vmin, transparent 1vmin) calc(-5vmin + 30vmin) calc(8vmin + 60vmin)/75vmin 23vmin no-repeat, radial-gradient(ellipse, #a77b51 5vmin, transparent 1vmin) calc(-5vmin + 59vmin) calc(8vmin + 10vmin)/10vmin 10vmin no-repeat, radial-gradient(ellipse, #a77b51 3.25vmin, transparent 1vmin) calc(-5vmin + 34.75vmin) calc(8vmin + -7.75vmin)/6.5vmin 6.5vmin no-repeat, radial-gradient(ellipse, #a77b51 3.25vmin, transparent 1vmin) calc(-5vmin + 75.5vmin) calc(8vmin + 37.5vmin)/6.5vmin 6.5vmin no-repeat, linear-gradient(48deg, transparent 27vmin, #a77b51 27vmin, #a77b51 33.5vmin, transparent 1vmin) calc(-5vmin + 36.25vmin) calc(8vmin + -6.25vmin)/25vmin 45vmin no-repeat, linear-gradient(-132deg, transparent 27vmin, #a77b51 27vmin, #a77b51 33.5vmin, transparent 1vmin) calc(-5vmin + 56vmin) calc(8vmin + -2vmin)/25vmin 45vmin no-repeat, radial-gradient(ellipse at 50% 0%, transparent 34vmin, #f0dac6 34vmin) calc(-5vmin + 8vmin) calc(8vmin + 60vmin)/75vmin 23vmin no-repeat, repeating-linear-gradient(90deg, #ffe6cc 0vmin, #ffe6cc 1.5vmin, transparent 1.5vmin, transparent 4vmin) calc(-5vmin + 18vmin) calc(8vmin + 45vmin)/18vmin 36vmin no-repeat, repeating-linear-gradient(90deg, #ffe6cc 0vmin, #ffe6cc 1.5vmin, transparent 1.5vmin, transparent 4vmin) calc(-5vmin + 56vmin) calc(8vmin + 45vmin)/18vmin 36vmin no-repeat, repeating-linear-gradient(#ffe6cc 0vmin, #ffe6cc 1.5vmin, transparent 1.5vmin, transparent 4vmin) calc(-5vmin + 13.5vmin) calc(8vmin + 50vmin)/66vmin 18vmin no-repeat, linear-gradient(90deg, #a77b51 66vmin, transparent 1vmin) calc(-5vmin + 13.5vmin) calc(8vmin + 45vmin)/66vmin 36vmin no-repeat, radial-gradient(ellipse at 90% 130%, transparent 7vmin, #714c26 7vmin, #714c26 7.5vmin, transparent 1vmin) calc(-5vmin + 14.5vmin) calc(8vmin + 22vmin)/25vmin 15vmin no-repeat, radial-gradient(ellipse at 90% 130%, transparent 7vmin, #714c26 7vmin, #714c26 7.5vmin, transparent 1vmin) calc(-5vmin + 14.5vmin) calc(8vmin + 25vmin)/25vmin 15vmin no-repeat, radial-gradient(ellipse, #cb9865 7.5vmin, transparent 1vmin) calc(-5vmin + 25vmin) calc(8vmin + 16vmin)/15vmin 55vmin no-repeat, radial-gradient(ellipse at 90% 130%, transparent 7vmin, #c58b52 7vmin, #c58b52 7.5vmin, transparent 1vmin) calc(-5vmin + 24.5vmin) calc(8vmin + 18vmin)/25vmin 15vmin no-repeat, radial-gradient(ellipse at 90% 130%, transparent 7vmin, #c58b52 7vmin, #c58b52 7.5vmin, transparent 1vmin) calc(-5vmin + 24.5vmin) calc(8vmin + 21vmin)/25vmin 15vmin no-repeat, radial-gradient(ellipse, #ffcc99 7.5vmin, transparent 1vmin) calc(-5vmin + 35vmin) calc(8vmin + 10vmin)/15vmin 55vmin no-repeat;
-}
-
-div.feast:after {
-  width: 100vmin;
-  height: 100vmin;
-  left: 1vmin;
-  z-index: -999;
-  transform: rotate(-46deg);
-  background: linear-gradient(-105deg, #f0dac6 2vmin, transparent 1vmin) calc(-5vmin + 10vmin) calc(8vmin + 8vmin)/10vmin 8vmin no-repeat, radial-gradient(ellipse at 50% -30%, transparent 4vmin, #993d00 4vmin, #993d00 4.5vmin, transparent 1vmin) calc(-5vmin + 18vmin) calc(8vmin + 23vmin)/10vmin 4vmin no-repeat, radial-gradient(ellipse, #993d00 1vmin, transparent 1vmin) calc(-5vmin + 24vmin) calc(8vmin + 16vmin)/2vmin 3vmin no-repeat, radial-gradient(ellipse, #ff6600 7.5vmin, transparent 1vmin) calc(-5vmin + 12vmin) calc(8vmin + 5vmin)/20vmin 55vmin no-repeat, linear-gradient(-105deg, #f0dac6 2vmin, transparent 1vmin) calc(-5vmin + 17vmin) calc(8vmin + -1vmin)/10vmin 8vmin no-repeat, radial-gradient(ellipse at 50% -30%, transparent 4vmin, #cc5200 4vmin, #cc5200 4.5vmin, transparent 1vmin) calc(-5vmin + 25.5vmin) calc(8vmin + 12vmin)/10vmin 4vmin no-repeat, radial-gradient(ellipse, #cc5200 1vmin, transparent 1vmin) calc(-5vmin + 31vmin) calc(8vmin + 7vmin)/2vmin 2.5vmin no-repeat, radial-gradient(ellipse, #ff8533 7.5vmin, transparent 1vmin) calc(-5vmin + 20vmin) calc(8vmin + -5vmin)/20vmin 55vmin no-repeat;
+.artist {
+  /*colors */
+  --red: red;
+  --blue: blue;
+  --yellow: yellow;
+  --white: #fafafa;
+  --off-white: #ececec;
+  --black: #222222;
+  --shadow: #8d8d8d;
+  /*adjust this variable to resize the whole picture*/
+  --base: 60vw;
+  /* calculations */
+  --atomic: calc(var(--base) * 0.1);
+  --border: calc((var(--atomic) * .5));
+  --matting: calc((var(--atomic) * 1));
+  --artspan: calc(var(--base) - ((var(--atomic) * 3)));
+  --col1start: var(--matting);
+  --col1span: calc(var(--atomic) * 2);
+  --col2start: calc(var(--col1span) + var(--matting));
+  --col2span: calc(var(--atomic) * 4);
+  --col3start: calc(var(--col2start) + var(--col2span));
+  --col3span: calc(var(--base) * 0.1);
+  --row1start: var(--matting);
+  --row1span: calc(var(--atomic) * 2);
+  --row2start: calc(var(--row1start) + var(--row1span));
+  --row2span: calc(var(--atomic) * 3);
+  --row3start: calc(var(--row2start) + var(--row2span));
+  --row3span: calc(var(--atomic) * 2.25);
+  --row4start: calc(var(--row1span) + var(--row2span) + var(--row3span));
+  /*placements*/
+  --hor-line-1:
+  	linear-gradient(
+  		var(--black) 100%,
+  		transparent)
+  	var(--col1start) var(--row2start) / var(--col1span) calc(var(--atomic) * 0.25)
+  	no-repeat;
+  --hor-line-2:
+  	linear-gradient(
+  		var(--black) 100%,
+  		transparent)
+  	var(--col1start) var(--row3start) / var(--artspan) calc(var(--atomic) * 0.25)
+  	no-repeat;
+  --se1:
+  	linear-gradient(
+  		to bottom,
+  		var(--off-white) 85%,
+  		var(--black) 85%)
+  	var(--col3start) var(--row3start) / var(--col3span) calc(var(--atomic) * 1.25)
+  	no-repeat;
+  --se2:
+  	linear-gradient(
+  		to bottom,
+  		var(--yellow) 100%,
+  		transparent)
+  	var(--col3start) var(--row4start) / var(--col3span) calc(var(--atomic) * 1)
+  	no-repeat;
+  --s:
+  	linear-gradient(to right,
+  		var(--off-white) 95%,
+  		var(--black) 95%)
+  	var(--col2start) var(--row3start) / var(--col2span) var(--row3span)
+  	no-repeat;
+  --ne:
+  	linear-gradient(
+  		var(--red) 100%,
+  		transparent 100%)
+  	var(--col2start) var(--row1start) / calc(var(--col2span) + var(--col3span)) calc(var(--col2span) + var(--col3span))
+  	no-repeat;
+  --sw:
+  	linear-gradient(
+  		to right,
+  		var(--blue) 90%,
+  		var(--black) 90%)
+  	var(--col1start) var(--row3start) / var(--col1span) var(--row3span)
+  	no-repeat;
+  --w:
+  	linear-gradient(
+  		to right,
+  		var(--off-white) 90%,
+  		var(--black) 90%)
+  	var(--col1start) var(--row2start) / var(--col1span) var(--row2span)
+  	no-repeat;
+  --nw:
+  	linear-gradient(
+  		to right,
+  		var(--off-white) 90%,
+  		var(--black) 90%)
+  	var(--col1start) var(--row1start) / var(--col1span) var(--row1span)
+  	no-repeat;
+  --full:
+  	linear-gradient(
+  		var(--white) 100%,
+  		transparent)
+  	center center / 100% 100%
+  	no-repeat;
+  border: solid var(--border) black;
+  height: var(--base);
+  width: var(--base);
+  max-height: 95vw;
+  max-width: 95vw;
+  display: block;
+  box-shadow: 10px 10px 10px #8d8d8d;
+  background: var(--hor-line-1), var(--hor-line-2), var(--se2), var(--se1), var(--s), var(--sw), var(--ne), var(--w), var(--nw), var(--full);
 }/*# sourceMappingURL=style.css.map */

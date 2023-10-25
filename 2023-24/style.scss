@@ -24,25 +24,14 @@ body {
   justify-content: center;
   align-items: center; 
    background-color: $bg;
-    // background-size: 60%;
-    // background-repeat: no-repeat;
-    // background-position-x: 25vmin;
-    // background-position-y: 10vmin;
-   // background-image: url('https://www.shutterstock.com/image-vector/five-loaves-two-fish-basket-600w-1565932273.jpg') 
 }
-
-
 
 $box-w: -5vmin;
 $box-h: 8vmin;
 
-
-
-
 div.feast {
     width: 90vmin;
     height: 100vmin;
-    //opacity: .9;
     z-index: 9999;
     display: flex;
     transform: rotate(25deg);
@@ -50,11 +39,8 @@ div.feast {
     position: relative; 
     background: 
       
-     
-      
       /* Bread */
       radial-gradient(ellipse, darken($tan, 10%) 7.5vmin, transparent 1vmin ) calc(#{$box-w} + 45vmin) calc(#{$box-h} + 25vmin)  / 15vmin 55vmin no-repeat,
-
       radial-gradient(ellipse, darken($yellow, 5%) 7.5vmin, transparent 1vmin ) calc(#{$box-w} + 52vmin) calc(#{$box-h} + 27vmin)  / 15vmin 55vmin no-repeat,
 }
 
@@ -64,30 +50,21 @@ div.feast:before {
     height: 100vmin;
     z-index: -99;
     transform: rotate(-25deg);
-    background: 
+    background:  
       
-      
-      /* Bread */
-      
+      /* BREAD */
       /* breadlines */ 
       radial-gradient(ellipse at 130% 90%, transparent 8vmin, darken($yellow, 30%) 8vmin, darken($yellow, 30%) 8.5vmin, transparent 1vmin ) calc(#{$box-w} + 42vmin) calc(#{$box-h} + 50vmin)  / 20vmin 20vmin no-repeat,
       radial-gradient(ellipse at 130% 90%, transparent 8vmin, darken($yellow, 30%) 8vmin, darken($yellow, 30%) 8.5vmin, transparent 1vmin ) calc(#{$box-w} + 47vmin) calc(#{$box-h} + 50vmin)  / 20vmin 20vmin no-repeat,
       radial-gradient(ellipse at 130% 90%, transparent 8vmin, darken($yellow, 30%) 8vmin, darken($yellow, 30%) 8.5vmin, transparent 1vmin ) calc(#{$box-w} + 52vmin) calc(#{$box-h} + 50vmin)  / 20vmin 20vmin no-repeat,
-      
-      
-      radial-gradient(ellipse at 50% 80%, $yellow 30vmin, transparent 1vmin ) calc(#{$box-w} + 30vmin) calc(#{$box-h} + 60vmin)  / 75vmin 23vmin no-repeat,
-      
+      radial-gradient(ellipse at 50% 80%, $yellow 30vmin, transparent 1vmin ) calc(#{$box-w} + 30vmin) calc(#{$box-h} + 60vmin)  / 75vmin 23vmin no-repeat,    
       
       /* Basket Lid */
-       radial-gradient(ellipse, $tan 5vmin, transparent 1vmin) calc(#{$box-w} + 59vmin) calc(#{$box-h} + 10vmin)  / 10vmin 10vmin no-repeat,
-      
+       radial-gradient(ellipse, $tan 5vmin, transparent 1vmin) calc(#{$box-w} + 59vmin) calc(#{$box-h} + 10vmin)  / 10vmin 10vmin no-repeat,    
        radial-gradient(ellipse, $tan 3.25vmin, transparent 1vmin) calc(#{$box-w} + 34.75vmin) calc(#{$box-h} + -7.75vmin)  / 6.5vmin 6.5vmin no-repeat,
        radial-gradient(ellipse, $tan 3.25vmin, transparent 1vmin) calc(#{$box-w} + 75.5vmin) calc(#{$box-h} + 37.5vmin)  / 6.5vmin 6.5vmin no-repeat,
        linear-gradient(48deg, transparent 27vmin, $tan 27vmin, $tan 33.5vmin, transparent 1vmin) calc(#{$box-w} + 36.25vmin) calc(#{$box-h} + -6.25vmin)  / 25vmin 45vmin no-repeat,
-       linear-gradient(-132deg, transparent 27vmin, $tan 27vmin, $tan 33.5vmin, transparent 1vmin) calc(#{$box-w} + 56vmin) calc(#{$box-h} + -2vmin)  / 25vmin 45vmin no-repeat,
-      
-      
-      
+       linear-gradient(-132deg, transparent 27vmin, $tan 27vmin, $tan 33.5vmin, transparent 1vmin) calc(#{$box-w} + 56vmin) calc(#{$box-h} + -2vmin)  / 25vmin 45vmin no-repeat,    
       
       /* Basket */
       radial-gradient(ellipse at 50% 0%, transparent 34vmin, $bg 34vmin) calc(#{$box-w} + 8vmin) calc(#{$box-h} + 60vmin)  / 75vmin 23vmin no-repeat,
@@ -96,18 +73,12 @@ div.feast:before {
         repeating-linear-gradient( lighten($light-tan, 10%) 0vmin, lighten($light-tan, 10%) 1.5vmin, transparent 1.5vmin,  transparent 4vmin) calc(#{$box-w} + 13.5vmin) calc(#{$box-h} + 50vmin)  / 66vmin 18vmin no-repeat,
       linear-gradient(90deg, $tan 66vmin, transparent 1vmin) calc(#{$box-w} + 13.5vmin) calc(#{$box-h} + 45vmin)  / 66vmin 36vmin no-repeat,
       
-      
       /* Bread */
        radial-gradient(ellipse at 90% 130%, transparent 7vmin, darken($mid-tan, 30%) 7vmin, darken($mid-tan, 30%) 7.5vmin, transparent 1vmin ) calc(#{$box-w} + 14.5vmin) calc(#{$box-h} + 22vmin)  / 25vmin 15vmin no-repeat,
-       radial-gradient(ellipse at 90% 130%, transparent 7vmin, darken($mid-tan, 30%) 7vmin, darken($mid-tan, 30%) 7.5vmin, transparent 1vmin ) calc(#{$box-w} + 14.5vmin) calc(#{$box-h} + 25vmin)  / 25vmin 15vmin no-repeat,
-      
-      
-      radial-gradient(ellipse, $mid-tan 7.5vmin, transparent 1vmin ) calc(#{$box-w} + 25vmin) calc(#{$box-h} + 16vmin)  / 15vmin 55vmin no-repeat,
-      
-      
+       radial-gradient(ellipse at 90% 130%, transparent 7vmin, darken($mid-tan, 30%) 7vmin, darken($mid-tan, 30%) 7.5vmin, transparent 1vmin ) calc(#{$box-w} + 14.5vmin) calc(#{$box-h} + 25vmin)  / 25vmin 15vmin no-repeat,      
+      radial-gradient(ellipse, $mid-tan 7.5vmin, transparent 1vmin ) calc(#{$box-w} + 25vmin) calc(#{$box-h} + 16vmin)  / 15vmin 55vmin no-repeat,      
        radial-gradient(ellipse at 90% 130%, transparent 7vmin, darken($mid-tan, 5%) 7vmin, darken($mid-tan, 5%) 7.5vmin, transparent 1vmin ) calc(#{$box-w} + 24.5vmin) calc(#{$box-h} + 18vmin)  / 25vmin 15vmin no-repeat,
        radial-gradient(ellipse at 90% 130%, transparent 7vmin, darken($mid-tan, 5%) 7vmin, darken($mid-tan, 5%) 7.5vmin, transparent 1vmin ) calc(#{$box-w} + 24.5vmin) calc(#{$box-h} + 21vmin)  / 25vmin 15vmin no-repeat,
-      
       radial-gradient(ellipse, $light-tan 7.5vmin, transparent 1vmin ) calc(#{$box-w} + 35vmin) calc(#{$box-h} + 10vmin)  / 15vmin 55vmin no-repeat,
 }
 
@@ -120,24 +91,15 @@ div.feast:after {
     transform: rotate(-46deg);
     background: 
       
-      
-      /* Fish */
-      
-      /* mouth */  linear-gradient(-105deg, $bg 2vmin, transparent 1vmin) calc(#{$box-w} + 10vmin) calc(#{$box-h} + 8vmin)  / 10vmin 8vmin no-repeat,
-      
-      /* gill */ radial-gradient(ellipse at 50% -30%, transparent 4vmin, darken($orange, 20%) 4vmin, darken($orange, 20%) 4.5vmin, transparent 1vmin ) calc(#{$box-w} + 18vmin) calc(#{$box-h} + 23vmin)  / 10vmin 4vmin no-repeat,
-      
+      /* FISH */
+      /* mouth */  linear-gradient(-105deg, $bg 2vmin, transparent 1vmin) calc(#{$box-w} + 10vmin) calc(#{$box-h} + 8vmin)  / 10vmin 8vmin no-repeat,  
+      /* gill */ radial-gradient(ellipse at 50% -30%, transparent 4vmin, darken($orange, 20%) 4vmin, darken($orange, 20%) 4.5vmin, transparent 1vmin ) calc(#{$box-w} + 18vmin) calc(#{$box-h} + 23vmin)  / 10vmin 4vmin no-repeat,  
         /* eye */  radial-gradient(ellipse, darken($orange, 20%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 24vmin) calc(#{$box-h} + 16vmin)  / 2vmin 3vmin no-repeat,
-       /* fish */  radial-gradient(ellipse, $orange 7.5vmin, transparent 1vmin ) calc(#{$box-w} + 12vmin) calc(#{$box-h} + 5vmin)  / 20vmin 55vmin no-repeat,
       
-      
-      
-      /* mouth */  linear-gradient(-105deg, $bg 2vmin, transparent 1vmin) calc(#{$box-w} + 17vmin) calc(#{$box-h} + -1vmin)  / 10vmin 8vmin no-repeat,
-      
+       /* fish */  radial-gradient(ellipse, $orange 7.5vmin, transparent 1vmin ) calc(#{$box-w} + 12vmin) calc(#{$box-h} + 5vmin)  / 20vmin 55vmin no-repeat,     
+      /* mouth */  linear-gradient(-105deg, $bg 2vmin, transparent 1vmin) calc(#{$box-w} + 17vmin) calc(#{$box-h} + -1vmin)  / 10vmin 8vmin no-repeat,  
       /* gill */ radial-gradient(ellipse at 50% -30%, transparent 4vmin, darken($orange, 10%) 4vmin, darken($orange, 10%) 4.5vmin, transparent 1vmin ) calc(#{$box-w} + 25.5vmin) calc(#{$box-h} + 12vmin)  / 10vmin 4vmin no-repeat,
       
        /* eye */  radial-gradient(ellipse, darken($orange, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 31vmin) calc(#{$box-h} + 7vmin)  / 2vmin 2.5vmin no-repeat,
-       /* fish */  radial-gradient(ellipse, lighten($orange, 10%) 7.5vmin, transparent 1vmin ) calc(#{$box-w} + 20vmin) calc(#{$box-h} + -5vmin)  / 20vmin 55vmin no-repeat,
-      
-      
+       /* fish */  radial-gradient(ellipse, lighten($orange, 10%) 7.5vmin, transparent 1vmin ) calc(#{$box-w} + 20vmin) calc(#{$box-h} + -5vmin)  / 20vmin 55vmin no-repeat,    
 }
