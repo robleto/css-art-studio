@@ -18,9 +18,10 @@ body {
   display: flex;
   justify-content: center;
   align-content: center; 
+  margin: 0 auto;
   background: 
     
-     linear-gradient(darken($gray, 15%) 0vmin, darken($gray, 5%) 100vmin) 0vmin 0vmin / 100% 100% no-repeat, 
+    radial-gradient(lighten($gray, 50%), lighten($gray, 35%));
     /*background-size: 115%;
     background-position-x: -14vmin;
     background-position-y: -12vmin;
@@ -30,7 +31,8 @@ body {
 div.mixed {
     width: 110vmin;
     height: 97vmin;
-    border: solid 10px $black;
+    transform: scale(0.9);
+    border: solid 5px $black;
     display: flex;
     margin: 0 auto;
     position: relative; 
@@ -41,9 +43,6 @@ div.mixed {
          
     /** RIGHT SPIDERMAN **/
       
-    
-      
-  
   /* eye-right-lash */linear-gradient(-210deg, $red 2.5vmin, transparent 2.5vmin) 88vmin 20.5vmin / 4vmin 3vmin no-repeat,
   /* eye-right-lash */linear-gradient(-210deg, $black 2.5vmin, transparent 2.5vmin) 88vmin 21vmin / 4vmin 3vmin no-repeat,
     /* eye-right */radial-gradient(ellipse, lighten($white, 10%) 1.25vmin,  transparent 1.25vmin) 88.5vmin 22vmin / 2.5vmin 4.5vmin no-repeat,

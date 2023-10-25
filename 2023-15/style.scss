@@ -73,6 +73,7 @@ $f4: 77vmin 72vmin;
 div.remember {
     width:100vmin;
     height: 105vmin;
+    top: -5vmin;
     transform: scale(0.9);
     display: flex;
     background: 
@@ -157,6 +158,7 @@ div.remember {
 div.remember:before {
     width:100vmin;
     height: 105vmin;
+    top: 0vmin;
     display: flex;
     animation: 
       cardflip 10s infinite 1.5s;

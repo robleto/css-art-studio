@@ -11,12 +11,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(#fdfaf1 40vmin, #ffffff 100vmin) 0vw 0vh/100vmin 100vmin no-repeat;
+  background: radial-gradient(#ffffff, #cccccc);
 }
 
 div.rules {
   width: 90vmin;
   height: 90vmin;
+
+    left: -1.5vmin;
   display: flex;
   opacity: 0.8;
   border: solid 3px #020000;

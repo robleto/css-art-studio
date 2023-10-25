@@ -9,6 +9,7 @@ body {
   height: 100vh;
   width: 100vw;
   display: flex;
+  opacity: 0.85;
   transform: scale(1.3);
   justify-content: center;
   align-items: center;
@@ -18,6 +19,7 @@ body {
 div.seeing {
   width: 100vmin;
   height: 80vmin;
+  opacity: 1;
   display: flex;
   margin: 0 auto;
   position: relative;
@@ -29,6 +31,7 @@ div.seeing:before {
   left: 20vmin;
   top: 22vmin;
   height: 40vmin;
+  opacity: 1;
   z-index: 999;
   background: radial-gradient(circle, #e6e6e6 0.5vmin, transparent 0.5vmin) calc(0vmin + 4vmin) calc(10vmin + 2.25vmin)/1vmin 1vmin no-repeat, radial-gradient(circle, #e6e6e6 0.5vmin, transparent 0.5vmin) calc(0vmin + 55vmin) calc(10vmin + 2.25vmin)/1vmin 1vmin no-repeat, radial-gradient(ellipse at right, #927365 2.75vmin, transparent 1vmin) calc(0vmin + 2vmin) calc(10vmin + 0vmin)/3.5vmin 6vmin no-repeat, radial-gradient(ellipse at left, #927365 2.75vmin, transparent 1vmin) calc(0vmin + 54vmin) calc(10vmin + 0vmin)/3.5vmin 6vmin no-repeat, linear-gradient(transparent 1.5vmin, #927365 1.5vmin, #927365 4.25vmin, transparent 1vmin) calc(0vmin + 28.25vmin) calc(10vmin + -1vmin)/3.5vmin 3.75vmin no-repeat, linear-gradient(135deg, transparent 1vmin, #927365 1vmin, #927365 3vmin, transparent 1vmin) calc(0vmin + 26.75vmin) calc(10vmin + 0.5vmin)/2vmin 4vmin no-repeat, linear-gradient(-135deg, transparent 1vmin, #927365 1vmin, #927365 3vmin, transparent 1vmin) calc(0vmin + 31.25vmin) calc(10vmin + 0.5vmin)/2vmin 4vmin no-repeat, radial-gradient(ellipse at 45% 95%, transparent 10vmin, #9e8073 10vmin, #83675b 12.5vmin, #ffffff 12.5vmin, transparent 15vmin) calc(0vmin + 2.5vmin) calc(10vmin + -3vmin)/30vmin 6vmin no-repeat, radial-gradient(ellipse at 50% 5%, transparent 10vmin, #9e8073 10vmin, #83675b 11.25vmin, #ffffff 11.25vmin, transparent 12.25vmin) calc(0vmin + 4vmin) calc(10vmin + 3vmin)/24vmin 13vmin no-repeat, radial-gradient(ellipse at 45% 95%, transparent 10vmin, #9e8073 10vmin, #83675b 12.5vmin, #ffffff 12.5vmin, transparent 15vmin) calc(0vmin + 30.5vmin) calc(10vmin + -3vmin)/30vmin 6vmin no-repeat, radial-gradient(ellipse at 50% 5%, transparent 10vmin, #9e8073 10vmin, #83675b 11.25vmin, #ffffff 11.25vmin, transparent 12.25vmin) calc(0vmin + 32vmin) calc(10vmin + 3vmin)/24vmin 13vmin no-repeat;
 }

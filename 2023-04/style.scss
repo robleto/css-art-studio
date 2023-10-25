@@ -1,87 +1,258 @@
-$white: #ffffff;
-$black: #444444;
+$black: #133955;
 $blue: #4b97ed;
 $yellow: #f6cb7c;
+$bg: lighten($blue, 5%);
 
-*, *:before, *:after {
+div, div:before, div:after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+
+
+$box-w: 0vmin;
+$box-h: 0vmin;
+
+$boxR-w: 35vmin;
+$boxR-h: 0vmin;
 
 body {
-  width: 100vw;
   height: 100vh;
-  position: relative;
-  z-index: 1;
-  background: 
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: end; 
+  margin: 0 auto;
+  background:
+          /* cloud 1 */
+      radial-gradient(ellipse, lighten($bg, 20%)  15vmin, transparent 1vmin ) calc(#{$box-w} + 45vmin) calc(#{$box-h} + 25vmin)  / 30vmin 20vmin no-repeat,
+       radial-gradient(ellipse, lighten($bg, 20%)  20vmin, transparent 1vmin ) calc(#{$box-w} + 25vmin) calc(#{$box-h} + 35vmin)  / 40vmin 20vmin no-repeat,
+       radial-gradient(ellipse, lighten($bg, 20%)  20vmin, transparent 1vmin ) calc(#{$box-w} + 15vmin) calc(#{$box-h} + 17vmin)  / 40vmin 20vmin no-repeat,
+       radial-gradient(ellipse, lighten($bg, 20%)  20vmin, transparent 1vmin ) calc(#{$box-w} + 0vmin) calc(#{$box-h} + 25vmin)  / 40vmin 20vmin no-repeat,
+      
+      
+      /* cloud 2 */
+      radial-gradient(ellipse, lighten($bg, 20%)  25vmin, transparent 1vmin ) calc(#{$box-w} + 90vmin) calc(#{$box-h} + -5vmin)  / 50vmin 30vmin no-repeat,
+      radial-gradient(ellipse, lighten($bg, 20%)  15vmin, transparent 1vmin ) calc(#{$box-w} + 70vmin) calc(#{$box-h} + 5vmin)  / 30vmin 20vmin no-repeat,
+       radial-gradient(ellipse, lighten($bg, 20%)  20vmin, transparent 1vmin ) calc(#{$box-w} + 75vmin) calc(#{$box-h} + 15vmin)  / 40vmin 20vmin no-repeat,
+       radial-gradient(ellipse, lighten($bg, 20%)  20vmin, transparent 1vmin ) calc(#{$box-w} + 95vmin) calc(#{$box-h} + 21vmin)  / 40vmin 20vmin no-repeat,
+       radial-gradient(ellipse, lighten($bg, 20%)  20vmin, transparent 1vmin ) calc(#{$box-w} + 115vmin) calc(#{$box-h} + 16vmin)  / 40vmin 20vmin no-repeat,
+      
 
-    repeating-linear-gradient(90deg, transparent 0 80px, lighten($blue, 20%) 80px 82px),
-    repeating-linear-gradient(-10deg, transparent 0 90px, lighten($blue, 20%) 90px 92px), 
-    conic-gradient(from 167.72deg at 50.06% 45.46%, #133955 -54.38deg, #344275 7.33deg, #6F357D 84.38deg, #30297D 138.99deg, #213A57 168.75deg, #290755 205.87deg, #0C4A47 264.38deg, #133955 305.62deg, #344275 367.33deg);
-  // linear-gradient(45deg, lighten($blue, 10%) 15%, lighten($blue, 5%) 100%);
-  
+    radial-gradient(lighten($blue, 25%), lighten($blue, 5%));  
 }
 
 
-*, *:before, *:after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+div, div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+  box-sizing:border-box;
 }
-
 
 
 div.crawl {
-    width: 180vw;
-    height: 40vmin;
-    top: 40vmin;
-    left: -40vw;
+    width: 100vmin;
+    height: 100vmin;
     position: relative;
-    border-top: solid 10px darken(black, 5%);
-    border-bottom: solid 10px darken(black, 5%);
-    background-color: #333;
-    transform: rotate(-10deg); 
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    align-items: end; 
+    background: 
+      
+      linear-gradient(90deg, #111 15vmin, transparent  1vmin )  calc(#{$box-w} + 31.5vmin) calc(#{$box-h} + 6.5vmin)  / .5vmin 17vmin no-repeat,
+
+      linear-gradient(90deg, #111 15vmin, transparent  1vmin )  calc(#{$box-w} + 27vmin) calc(#{$box-h} + 10.5vmin)  / .5vmin 14vmin no-repeat,
+      
+    /*** LEFT SIDE BUILDING ***/
+      
+    linear-gradient(-15deg, transparent 9vmin, #222 9vmin, #222 10vmin, #000 10vmin, #000 20vmin, #444 21vmin, #444 21vmin,  transparent 21vmin) calc(#{$box-w} + 0vmin) calc(#{$box-h} + 43.5vmin)  / 35vmin 35vmin no-repeat,
+      
+    /* building */
+      linear-gradient(90deg,  darken($blue, 45%) 15vmin, transparent  1vmin )  calc(#{$box-w} + 0vmin) calc(#{$box-h} + 32vmin)  / 2vmin 85vmin no-repeat,
+      
+      linear-gradient(90deg,  darken($blue, 45%) 15vmin, transparent  1vmin )  calc(#{$box-w} + 31.5vmin) calc(#{$box-h} + 24vmin)  / 3.5vmin 85vmin no-repeat,
+      
+    linear-gradient(-15deg, transparent 10vmin, darken($blue, 45%) 10vmin, darken($blue, 45%)  15vmin,  transparent 15vmin) calc(#{$box-w} + 0vmin) calc(#{$box-h} + 13vmin)  / 35vmin 25vmin no-repeat,
+      
+      
+      repeating-linear-gradient(90deg, transparent 0vmin,  transparent 2.75vmin, darken($blue, 55%) 2.75vmin, darken($blue, 40%) 3vmin) calc(#{$box-w} + 0vmin) calc(#{$box-h} + 31vmin)  / 35vmin 80vmin no-repeat,
+    repeating-linear-gradient(-15deg, transparent 0vmin,  transparent 3.25vmin, darken($blue, 55%) 3.75vmin, darken($blue, 20%) 4vmin)calc(#{$box-w} + 0vmin) calc(#{$box-h} + 30vmin)  / 35vmin 80vmin no-repeat, 
+      
+    linear-gradient(-15deg, #133955 0vmin, #133955 80vmin, transparent 1vmin) calc(#{$box-w} + 0vmin) calc(#{$box-h} + 6vmin)  / 35vmin 100vmin no-repeat,
+      
+      
+      
+      
+    /*** RIGHT SIDE BUILDING ***/
+      
+    linear-gradient(15deg, transparent 19vmin, #222 19vmin, #222 20vmin, #000 20vmin, #000 30vmin, #444 31vmin, #444 31vmin,  transparent 31vmin) calc(#{$boxR-w} + 0vmin) calc(#{$boxR-h} + 34vmin)  / 55vmin 55vmin no-repeat,
+      
+    /* building */
+      linear-gradient(90deg,  darken($blue, 45%) 15vmin, transparent  1vmin )  calc(#{$boxR-w} + 0vmin) calc(#{$boxR-h} + 27vmin)  / 3.5vmin 85vmin no-repeat,
+      
+      linear-gradient(90deg,  darken($blue, 45%) 15vmin, transparent  1vmin )  calc(#{$boxR-w} + 52.5vmin) calc(#{$boxR-h} + 39vmin)  / 2.25vmin 85vmin no-repeat,
+      
+    linear-gradient(15deg, transparent 20vmin, darken($blue, 45%) 20vmin, darken($blue, 45%)  25vmin,  transparent 25vmin) calc(#{$boxR-w} + 0vmin) calc(#{$boxR-h} + 19vmin)  / 55vmin 30vmin no-repeat,
+      
+      
+      repeating-linear-gradient(90deg, transparent 0vmin,  transparent 2.75vmin, darken($blue, 55%) 2.75vmin, darken($blue, 40%) 3vmin) calc(#{$boxR-w} + 0vmin) calc(#{$boxR-h} + 37vmin)  / 55vmin 80vmin no-repeat,
+    repeating-linear-gradient(15deg, transparent 0vmin,  transparent 3.25vmin, darken($blue, 55%) 3.75vmin, darken($blue, 20%) 4vmin)calc(#{$boxR-w} + 0vmin) calc(#{$boxR-h} + 35vmin)  / 55vmin 80vmin no-repeat, 
+    
+      
+    linear-gradient(15deg, #133955 0vmin, #133955 80vmin, transparent 1vmin) calc(#{$boxR-w} + 0vmin) calc(#{$boxR-h} + 5.5vmin)  / 55vmin 100vmin no-repeat,
+      
+      
 }
+
+  
+
+
+  
 
 div.crawl:before,
 div.crawl:after {
-    width: 200vmin;
-    height: 20vmin;
-    top: -2vmin;
-    left: 20vmin;
-    position: relative;
     color: $yellow;
-    font-size: 20vmin;
+    font-size: 6vmin;
     font-family: 'Teko', sans-serif;
     text-wrap: nowrap;
     text-transform: uppercase;
-    font-style: italic;
+    //font-style: italic;
     text-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     overflow: hidden;
 }
-  
+
+
 div.crawl:before {
-    display: block;
+    width: 34vmin;
+    height: 12vmin;
+    padding-top: 2vmin;
+    padding-left: 0vmin;
+    top: 62vmin;
+    left: 0vmin;
+    transform: skew(0, -15deg); 
     white-space: nowrap;
-    content: 'Breaking News: It is Divtober!';
-    animation: move-crawl 8s linear 0s infinite both running, move-crawl 8s linear 3s infinite both running;
+    //font-style: italic;
+    content: 'ng News: It is Divtober!';
+    //animation: move-left-crawl linear 8s infinite;
 }
-
 div.crawl:after {
-  display: block;
-  top: -6vmin;
-  content: 'Day 4 Prompt: Crawl';
-  animation: move-crawl 10s linear 3s infinite both running, move-crawl 10s linear 6s infinite both running;
+    width: 55vmin;
+    height: 12vmin;
+    padding-top: 2vmin;
+    padding-left: 0vmin;
+    top: 65vmin;
+    left: 36vmin;
+    transform: skew(0, 15deg); 
+  content: 'ober! –––  Breaking News: It is Divtober!';
+    //animation: move-right-crawl linear 8s infinite;
 }
 
-@keyframes move-crawl {
+
+@keyframes move-left-crawl {
     0% {
-      left: 140vw;
+      padding-left: 30vmin;
     }
     100% {
-      left: -140vw;
+      padding-left: 0vmin;
     }
 }
+
+@keyframes move-right-crawl {
+    0% {
+      padding-left: 0vmin;
+    }
+    100% {
+      padding-left: -235vmin;
+    }
+}
+
+// $white: #ffffff;
+// $black: #444444;
+// $blue: #4b97ed;
+// $yellow: #f6cb7c;
+
+// div, div:before, div:after {
+//   padding: 0;
+//   margin: 0;
+//   box-sizing: border-box;
+// }
+
+
+// body {
+//   width: 100vw;
+//   height: 100vh;
+//   position: relative;
+//   z-index: 1;
+//   background: 
+
+//     repeating-linear-gradient(90deg, transparent 0 80px, lighten($blue, 20%) 80px 82px),
+//     repeating-linear-gradient(-10deg, transparent 0 90px, lighten($blue, 20%) 90px 92px), 
+//     conic-gradient(from 167.72deg at 50.06% 45.46%, #133955 -54.38deg, #344275 7.33deg, #6F357D 84.38deg, #30297D 138.99deg, #213A57 168.75deg, #290755 205.87deg, #0C4A47 264.38deg, #133955 305.62deg, #344275 367.33deg);
+//   // linear-gradient(45deg, lighten($blue, 10%) 15%, lighten($blue, 5%) 100%);
+  
+// }
+
+
+// div, div:before, div:after {
+//   padding: 0;
+//   margin: 0;
+//   box-sizing: border-box;
+// }
+
+
+
+// div.crawl {
+//     width: 180vw;
+//     height: 40vmin;
+//     top: 40vmin;
+//     left: -40vw;
+//     position: relative;
+//     border-top: solid 10px darken(black, 5%);
+//     border-bottom: solid 10px darken(black, 5%);
+//     background-color: #333;
+//     transform: rotate(-10deg); 
+//     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+// }
+
+// div.crawl:before,
+// div.crawl:after {
+//     width: 200vmin;
+//     height: 20vmin;
+//     top: -2vmin;
+//     left: 20vmin;
+//     position: relative;
+//     color: $yellow;
+//     font-size: 20vmin;
+//     font-family: 'Teko', sans-serif;
+//     text-wrap: nowrap;
+//     text-transform: uppercase;
+//     font-style: italic;
+//     text-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+//     overflow: hidden;
+// }
+  
+// div.crawl:before {
+//     display: block;
+//     white-space: nowrap;
+//     content: 'Breaking News: It is Divtober!';
+//     animation: move-crawl 8s linear 0s infinite both running, move-crawl 8s linear 3s infinite both running;
+// }
+
+// div.crawl:after {
+//   display: block;
+//   top: -6vmin;
+//   content: 'Day 4 Prompt: Crawl';
+//   animation: move-crawl 10s linear 3s infinite both running, move-crawl 10s linear 6s infinite both running;
+// }
+
+// @keyframes move-crawl {
+//     0% {
+//       left: 140vw;
+//     }
+//     100% {
+//       left: -140vw;
+//     }
+// }

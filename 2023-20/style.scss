@@ -15,6 +15,7 @@ body {
   height: 100vh;
   width: 100vw;
   display: flex;
+  opacity: 0.85;
   transform: scale(1.3);
   justify-content: center;
   align-items: center; 
@@ -131,6 +132,7 @@ $row9:  lighten($gray, 60%) .75vmin,
 div.seeing {
     width: 100vmin;
     height: 80vmin;
+    opacity: 1;
     display: flex;
     margin: 0 auto;
     position: relative; 
@@ -158,6 +160,7 @@ div.seeing:before {
     left: 20vmin;
     top: 22vmin;
     height: 40vmin;
+    opacity: 1;
     //transform: scale(0.95);
     z-index: 999;
     background: 

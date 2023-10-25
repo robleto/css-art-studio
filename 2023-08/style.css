@@ -10,13 +10,19 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  background: linear-gradient(#48516b 0vmin, #5d678a 100vmin) 0vmin 0vmin/100% 100% no-repeat;
+  margin: 0 auto;
+  background: radial-gradient(white, #d2d5e1);
+  /*background-size: 115%;
+  background-position-x: -14vmin;
+  background-position-y: -12vmin;
+  background-image: url('https://nypost.com/wp-content/uploads/sites/2/2022/02/spiderman-18.jpg?quality=90&strip=all') */
 }
 
 div.mixed {
   width: 110vmin;
   height: 97vmin;
-  border: solid 10px #281014;
+  transform: scale(0.9);
+  border: solid 5px #281014;
   display: flex;
   margin: 0 auto;
   position: relative;
