@@ -1,6 +1,6 @@
 $test: #bada55;
-$bull: #351908;
-$girl: #e4c9b7;
+$bull: #30414b;
+$girl: #657b8b;
 
 div, div:before, div:after {
   display: block;
@@ -16,21 +16,25 @@ body {
   transform: scale(1.2);
   justify-content: center;
   align-items: center; 
-   background-color: $girl;
+  margin: 0 auto;
+  background:
+    radial-gradient(ellipse at 50% 0%, $girl 60%, darken($girl, 20%) 100%),
 }
 
 div.brave {
     width: 70vmin;
     height: 70vmin;
-    transform: scale(1.2);
     display: flex;
     margin: 0 auto;
     position: relative; 
+  
+  
 }
 
 div.brave:before {
     width: 80vmin;
     height: 64vmin;
+    left: -5vmin;
   
   
     animation: fly 7s linear 1;
@@ -117,6 +121,7 @@ div.brave:before {
 div.brave:after {
     width: 70vmin;
     height: 70vmin;
+    left: -5vmin;
     background: 
       
       /* head */ radial-gradient(ellipse, $girl 3.25vmin, transparent 1vmin) 39.25vmin 23.5vmin / 7vmin 9vmin no-repeat,
