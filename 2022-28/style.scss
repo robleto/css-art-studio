@@ -29,7 +29,9 @@ $brick3: 90deg, $offwhite 0vmin, $offwhite .5vmin, $fucia 1vmin, darken($fucia, 
 $brick4: 90deg, darken($fucia, 5%)  1vmin, darken($fucia, 10%) 4vmin, $offwhite 4vmin, $offwhite 4.5vmin, $fucia 5vmin, darken($fucia, 10%) 13vmin, $offwhite 13vmin, $offwhite 13.5vmin, $red 14vmin, darken($red, 10%) 22vmin, $offwhite 22vmin, $offwhite 22.5vmin, darken($fucia, 5%)23vmin, darken($fucia, 10%) 27vmin;
 
 
+
 /* Presets */
+
 *, *:before, *:after {
   padding: 0;
   margin: 0;
@@ -37,8 +39,8 @@ $brick4: 90deg, darken($fucia, 5%)  1vmin, darken($fucia, 10%) 4vmin, $offwhite 
 }
 
 body {
-
-  height: 100vmin;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,6 +64,7 @@ div.monster {
     margin-top: 20vmin;
     width: 90vmin;
     height: 90vmin;
+    left: -2vmin;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-left: solid 60px $gold;
     position: relative;
@@ -283,6 +286,7 @@ div.monster:before {
       linear-gradient(35deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 53.75vmin 43vmin / 3vmin 3vmin no-repeat,
       linear-gradient(65deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 55.5vmin 50vmin / 3vmin 3vmin no-repeat,
       linear-gradient(55deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 57vmin 56vmin / 3vmin 3vmin no-repeat,
+
 
       linear-gradient(-125deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 56.75vmin 23vmin / 3vmin 3vmin no-repeat,
       linear-gradient(115deg, darken($bluefur, 10%) 1.5vmin, transparent 1.5vmin) 57.25vmin 37vmin / 3vmin 3vmin no-repeat,

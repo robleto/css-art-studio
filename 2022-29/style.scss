@@ -14,8 +14,12 @@ $yellow: #FEE25E;
 }
 
 body {
-
-  height: 100vmin;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin: 0 auto;
   position: relative;
   z-index: 1;
   background: linear-gradient(180deg, $yellow 15%, $yellow 100%);
@@ -27,10 +31,12 @@ div:before, div:after {
   position: absolute;
 }
 
+
 div.free {
     width: 100vmin;
     height: 100vmin;
-    margin: -10vmin auto 0 auto;
+    left: -8vmin;
+    top: -10vmin;
     padding-left: 20vmin;
     padding-top: 90vmin;
     color: $dark-brown;
@@ -170,6 +176,7 @@ div.free:after {
 
 
       /* spikies */ 
+
       linear-gradient(115deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 24vmin 56vmin / 2.5vmin 3vmin no-repeat,
       linear-gradient(65deg, transparent 1vmin, $dark-green 1vmin, $dark-green 2vmin, transparent 2vmin) 18vmin 55vmin / 2.5vmin 3vmin no-repeat,
 

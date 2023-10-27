@@ -1,29 +1,30 @@
 *, *:before, *:after {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  height: 100vmin;
-  position: relative;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #f2f2f2), to(#d9d9d9));
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   background: linear-gradient(180deg, #f2f2f2 15%, #d9d9d9 100%);
 }
 
 div:before, div:after {
   display: block;
-  content: '';
+  content: "";
   position: absolute;
 }
 
 div.beloved {
   width: 100vmin;
   height: 100vmin;
+  left: -5vmin;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   z-index: -99;
   position: relative;
@@ -34,13 +35,9 @@ div.beloved:before {
   width: 100vmin;
   height: 100vmin;
   z-index: 50;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  background: radial-gradient(circle, #F0CAAB 1vmin, #e8af80 3.5vmin, transparent 3.5vmin) 29vmin 61vmin/8vmin 6vmin no-repeat, radial-gradient(circle, #F0CAAB 1vmin, #e8af80 3.5vmin, transparent 3.5vmin) 71vmin 20vmin/6vmin 8vmin no-repeat, radial-gradient(circle, #B40001 20vmin, transparent 20vmin) 35vmin 5vmin/40vmin 40vmin no-repeat, radial-gradient(circle, #B40001 20vmin, transparent 20vmin) 15vmin 25vmin/40vmin 40vmin no-repeat, -webkit-gradient(linear, left top, right top, color-stop(50vmin, #B40001), color-stop(50vmin, transparent)) 35vmin 25vmin/40vmin 40vmin no-repeat;
+  transform: rotate(45deg);
   background: radial-gradient(circle, #F0CAAB 1vmin, #e8af80 3.5vmin, transparent 3.5vmin) 29vmin 61vmin/8vmin 6vmin no-repeat, radial-gradient(circle, #F0CAAB 1vmin, #e8af80 3.5vmin, transparent 3.5vmin) 71vmin 20vmin/6vmin 8vmin no-repeat, radial-gradient(circle, #B40001 20vmin, transparent 20vmin) 35vmin 5vmin/40vmin 40vmin no-repeat, radial-gradient(circle, #B40001 20vmin, transparent 20vmin) 15vmin 25vmin/40vmin 40vmin no-repeat, linear-gradient(90deg, #B40001 50vmin, transparent 50vmin) 35vmin 25vmin/40vmin 40vmin no-repeat;
 }
 
@@ -50,55 +47,35 @@ div.beloved:after {
   top: 30vmin;
   left: 28vmin;
   z-index: 50;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   white-space: pre;
-  content: "Thank you \A Selena";
+  content: "Thank you \aSelena";
   text-align: center;
   line-height: 1.1;
   color: #FFFFFF;
   opacity: 0.08;
-  font-family: 'Architects Daughter', cursive;
+  font-family: "Architects Daughter", cursive;
   font-size: 12vmin;
 }
 
 div.beloved:before {
-  -webkit-animation: floatturn 10s ease-out infinite;
-          animation: floatturn 10s ease-out infinite;
+  animation: floatturn 10s ease-out infinite;
 }
 
 /* Float up and down */
-@-webkit-keyframes floatturn {
-  50% {
-    -webkit-transform: rotateZ(45deg) translateY(-3vmin);
-            transform: rotateZ(45deg) translateY(-3vmin);
-  }
-}
 @keyframes floatturn {
   50% {
-    -webkit-transform: rotateZ(45deg) translateY(-3vmin);
-            transform: rotateZ(45deg) translateY(-3vmin);
+    transform: rotateZ(45deg) translateY(-3vmin);
   }
 }
-
 div.beloved:after {
-  -webkit-animation: float 10s ease-out infinite;
-          animation: float 10s ease-out infinite;
+  animation: float 10s ease-out infinite;
 }
 
 /* Float up and down */
-@-webkit-keyframes float {
-  50% {
-    -webkit-transform: translateX(3vmin) translateY(-3vmin);
-            transform: translateX(3vmin) translateY(-3vmin);
-  }
-}
 @keyframes float {
   50% {
-    -webkit-transform: translateX(3vmin) translateY(-3vmin);
-            transform: translateX(3vmin) translateY(-3vmin);
+    transform: translateX(3vmin) translateY(-3vmin);
   }
 }
-/*# sourceMappingURL=style.css.map */

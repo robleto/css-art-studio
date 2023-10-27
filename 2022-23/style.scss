@@ -9,7 +9,10 @@ $yellow2: #F5E702;
 body {
   height: 100vh;
   width: 100vw;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin: 0 auto;
   background:
     
     repeating-conic-gradient(darken($red, 5%) 0 15deg, transparent 15deg 30deg),
@@ -25,8 +28,8 @@ div:before, div:after {
 }
 
 div.pop {
-    width: 100vw;
-    height: 100vh;
+    width: 100vmin;
+    height: 100vmin;
     position: relative;
     display: flex;
     justify-content: center;
@@ -34,31 +37,31 @@ div.pop {
 }
 
 div.pop:before {
-    width: 80vh;
-    height: 50vh;
+    width: 80vmin;
+    height: 50vmin;
     border-radius: 90%; 
     content: 'CSS!';
     font-family: 'Spicy Rice', cursive;
-    font-size: 45vh;
+    font-size: 45vmin;
     color: $gray;
     box-shadow: 25px 10px 5px 5px $gray; 
     transform: rotate(-5deg);
     background: 
       
     radial-gradient(circle, 
-      darken($yellow,5%)  0vh, darken($yellow, 5%)  0.75vh, transparent 0.75vh) calc(50% + 5vh) 25vh / 3vh 3vh repeat,
-    linear-gradient(darken($yellow, 10%) 0vh, darken($yellow, 5%) 100vh) 0vw 0vh / 100vw 100vh no-repeat;
+      darken($yellow,5%)  0vmin, darken($yellow, 5%)  0.75vmin, transparent 0.75vmin) calc(50% + 5vmin) 25vmin / 3vmin 3vmin repeat,
+    linear-gradient(darken($yellow, 10%) 0vmin, darken($yellow, 5%) 100vmin) 0vw 0vmin / 100vmin 100vmin no-repeat;
 }
 
 div.pop:after {
-    width: 80vh;
-    height: 50vh;
+    width: 80vmin;
+    height: 50vmin;
     border-radius: 90%; 
     content: 'CSS!';
     font-family: 'Spicy Rice', cursive;
-    font-size: 45vh;
-    margin-top: -5vh;
-    margin-left: -5vh;
+    font-size: 45vmin;
+    margin-top: -5vmin;
+    margin-left: -5vmin;
     color: $yellow2;
     transform: rotate(-5deg);
 }

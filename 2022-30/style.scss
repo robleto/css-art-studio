@@ -8,16 +8,20 @@ $eyes: #3C6526;
 $hair: #E3BA9B;
 
 
+
 *, *:before, *:after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-
 body {
-  height: 100vmin;
-  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin: 0 auto;
   background: linear-gradient(180deg, darken($white, 5%) 15%, darken($white, 15%) 100%);
 }
 
@@ -30,6 +34,7 @@ div:before, div:after {
 div.beloved {
     width: 100vmin;
     height: 100vmin;
+    left: -3vmin;
     margin: 0 auto;
     display: flex;
     z-index: -99;
