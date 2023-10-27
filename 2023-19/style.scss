@@ -17,11 +17,13 @@ div, div:before, div:after {
 }
 
 body {
-  height: 100vmin;
-  width: 100vmin;
+  height: 100vw;
+  width: 100vh;
   display: flex;
   justify-content: center;
   align-items: center; 
+  align-content: center; 
+  margin: 0 auto;
    background-color: $white;
     // background-size: 80%;
     // background-repeat: no-repeat;
@@ -42,12 +44,12 @@ $board-h: 0vmin;
 
 div.sticky {
     width: 100vmin;
-    height: 80vmin;
-    left: -1vmin;
+    height: 100vmin;
     display: flex;
-    //border: solid 10px $test;
+    position: relative; 
+    justify-content: center;
+    align-items: center; 
     margin: 0 auto;
-    //opacity: 0.5;
     position: relative; 
     background: 
       
