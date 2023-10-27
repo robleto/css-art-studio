@@ -24,13 +24,9 @@ body {
   justify-content: center;
   align-items: center; 
   
-  // background: 
-  //   radial-gradient(lighten($gray, 50%), lighten($gray, 35%));
-    background-size: 90%;
-    background-repeat: no-repeat;
-    background-position-x: 5vmin;
-    background-position-y: -10vmin;
-    //background-image: url('https://cdn4.vectorstock.com/i/1000x1000/85/28/mockup-with-gps-navigation-phone-map-mobile-vector-31138528.jpg') 
+  background: 
+    radial-gradient(lighten($blue, 10%), lighten($blue, 20%)); 
+    
   
 }
 
@@ -43,98 +39,132 @@ $box-h: 0vmin;
 div.pin {
     width: 100vmin;
     height: 95vmin;
+    left: 7vmin;
     //opacity: 0.7;
-    border: solid 1px $test;
+    transform: perspective(200vmin) rotateY(25deg);
     display: flex;
-    margin: 0 auto;
     position: relative; 
+    justify-content: center;
+    align-items: center; 
+    margin: 0 auto;
     background: 
       
     
+      
+      
+        //back
+      
+       linear-gradient( lighten($blue, 10%) 0vmin,
+         lighten($blue, 10%) 4vmin,
+         transparent 4vmin,
+        transparent 5vmin,
+         lighten($blue, 10%) 5vmin,
+         lighten($blue, 10%) 9vmin,
+         transparent 9vmin ) calc(#{$box-w} + 35vmin) calc(#{$box-h} + 6vmin)  / 29vmin 15vmin no-repeat,
+      
+      
+       linear-gradient($blue 13vmin, transparent 1vmin ) calc(#{$box-w} + 28.25vmin) calc(#{$box-h} + 5vmin)  / 41.25vmin 24vmin no-repeat,
+      
       
       
       /*** MAP ***/
       
       
         //Duke St.
-       linear-gradient($white 1.5vmin, transparent 1.5vmin, transparent 2.5vmin, $white 2.5vmin,   $white 4vmin, transparent 4vmin ) calc(#{$box-w} + 28.5vmin) calc(#{$box-h} + 14vmin)  / 41vmin 6vmin no-repeat,  
+       linear-gradient($white 1.5vmin, transparent 1.5vmin, transparent 2.5vmin, $white 2.5vmin,   $white 4vmin, transparent 4vmin ) calc(#{$box-w} + 28.5vmin) calc(#{$box-h} + 21vmin)  / 41vmin 6vmin no-repeat,  
       
       
       //Metro
-       linear-gradient(-45deg, transparent 16vmin,  $green 16vmin, $green 21.5vmin, transparent 21.5vmin ) calc(#{$box-w} + 28.5vmin) calc(#{$box-h} + 5vmin)  / 21vmin 22vmin no-repeat, 
+       linear-gradient(-45deg, transparent 16vmin,  $green 16vmin, $green 21.5vmin, transparent 21.5vmin ) calc(#{$box-w} + 28.5vmin) calc(#{$box-h} + 12vmin)  / 21vmin 22vmin no-repeat, 
       
       
         //Diagonal St.
-       linear-gradient(-45deg, transparent 6vmin,  $white 6vmin, $white 7.5vmin, transparent 7.5vmin ) calc(#{$box-w} + 35vmin) calc(#{$box-h} + 5vmin)  / 21vmin 9vmin no-repeat, 
+       linear-gradient(-45deg, transparent 6vmin,  $white 6vmin, $white 7.5vmin, transparent 7.5vmin ) calc(#{$box-w} + 35vmin) calc(#{$box-h} + 12vmin)  / 21vmin 9vmin no-repeat, 
 
-      radial-gradient(ellipse at 100% 0%, transparent 5vmin, $white 5vmin, $white 6.5vmin, transparent 1vmin ) calc(#{$box-w} + 37vmin) calc(#{$box-h} + 9vmin)  / 20vmin 20vmin no-repeat,
+      radial-gradient(ellipse at 100% 0%, transparent 5vmin, $white 5vmin, $white 6.5vmin, transparent 1vmin ) calc(#{$box-w} + 37vmin) calc(#{$box-h} + 16vmin)  / 20vmin 20vmin no-repeat,
       
       
+      radial-gradient(ellipse at 100% 0%, $mid-gray 4.5vmin, transparent 1vmin ) calc(#{$box-w} + 39vmin) calc(#{$box-h} + 15.5vmin)  / 20vmin 20vmin no-repeat,
+    linear-gradient($mid-gray 20vmin, transparent 1vmin) calc(#{$box-w} + 59vmin) calc(#{$box-h} + 15.5vmin)  / 10vmin 4.5vmin no-repeat,
       
       
         //Delaney St.
-       linear-gradient(90deg, $white 1.5vmin, transparent 1.5vmin, transparent 2.5vmin, $white 2.5vmin,   $white 4vmin, transparent 4vmin ) calc(#{$box-w} + 47vmin) calc(#{$box-h} + 17vmin)  / 41vmin 30vmin no-repeat,  
+       linear-gradient(90deg, $white 1.5vmin, transparent 1.5vmin, transparent 2.5vmin, $white 2.5vmin,   $white 4vmin, transparent 4vmin ) calc(#{$box-w} + 47vmin) calc(#{$box-h} + 24vmin)  / 41vmin 30vmin no-repeat,  
       
-      radial-gradient(ellipse at 50% 95%, $green 3.5vmin, $white 3.5vmin, $white 5vmin, transparent 1vmin ) calc(#{$box-w} + 39vmin) calc(#{$box-h} + 41vmin)  / 20vmin 10vmin no-repeat,
+      radial-gradient(ellipse at 50% 95%, $green 3.5vmin, $white 3.5vmin, $white 5vmin, transparent 1vmin ) calc(#{$box-w} + 39vmin) calc(#{$box-h} + 48vmin)  / 20vmin 10vmin no-repeat,
       
-       linear-gradient(90deg, $white 1.5vmin, $green 1vmin, $green 8.5vmin, $white 8.5vmin, $white 10vmin, transparent 10vmin) calc(#{$box-w} + 44vmin) calc(#{$box-h} + 50vmin)  / 41vmin 25vmin no-repeat,
+       linear-gradient(90deg, $white 1.5vmin, $green 1vmin, $green 8.5vmin, $white 8.5vmin, $white 10vmin, transparent 10vmin) calc(#{$box-w} + 44vmin) calc(#{$box-h} + 57vmin)  / 41vmin 25vmin no-repeat,
       
-    linear-gradient($white 1.5vmin, transparent 1vmin) calc(#{$box-w} + 44vmin) calc(#{$box-h} + 75vmin)  / 10vmin 25vmin no-repeat,
+    linear-gradient($white 1.5vmin, transparent 1vmin) calc(#{$box-w} + 44vmin) calc(#{$box-h} + 82vmin)  / 10vmin 25vmin no-repeat,
       
       
       //Access Road
-    linear-gradient(90deg, $white 1.5vmin, transparent 1.5vmin, transparent 1vmin) calc(#{$box-w} + 33.5vmin) calc(#{$box-h} + 25vmin)  / 41vmin 11vmin no-repeat,
+    linear-gradient(90deg, $white 1.5vmin, transparent 1.5vmin, transparent 1vmin) calc(#{$box-w} + 33.5vmin) calc(#{$box-h} + 32vmin)  / 41vmin 11vmin no-repeat,
 
 
       //Jamison & Ballys St.
-    linear-gradient($white 1.5vmin, transparent 1.5vmin, transparent 15vmin, $white 15vmin, $white 16.5vmin, transparent 16.5vmin) calc(#{$box-w} + 28.5vmin) calc(#{$box-h} + 35vmin)  / 41vmin 25vmin no-repeat,
+    linear-gradient($white 1.5vmin, transparent 1.5vmin, transparent 15vmin, $white 15vmin, $white 16.5vmin, transparent 16.5vmin) calc(#{$box-w} + 28.5vmin) calc(#{$box-h} + 42vmin)  / 41vmin 25vmin no-repeat,
+      
+      
+      //Access Road
+    linear-gradient($white 1.5vmin, transparent 1.5vmin, transparent 1vmin) calc(#{$box-w} + 28.5vmin) calc(#{$box-h} + 70vmin)  / 3vmin 11vmin no-repeat,
+      //Access Road
+    linear-gradient(90deg, $white 1.5vmin, transparent 1.5vmin, transparent 1vmin) calc(#{$box-w} + 66.5vmin) calc(#{$box-h} + 60vmin)  / 3vmin 11vmin no-repeat,
+    linear-gradient($white 1.5vmin, transparent 1.5vmin, transparent 1vmin) calc(#{$box-w} + 66.5vmin) calc(#{$box-h} + 70vmin)  / 3vmin 11vmin no-repeat,
       
       // 2000 Duke
-      radial-gradient(ellipse at 100% 0%, transparent 6vmin, $mid-gray 6vmin, $mid-gray 11vmin, transparent 1vmin ) calc(#{$box-w} + 26vmin) calc(#{$box-h} + 19vmin)  / 20vmin 20vmin no-repeat,
+      radial-gradient(ellipse at 100% 0%, transparent 6vmin, $mid-gray 6vmin, $mid-gray 11vmin, transparent 1vmin ) calc(#{$box-w} + 26vmin) calc(#{$box-h} + 26vmin)  / 20vmin 20vmin no-repeat,
       
-    linear-gradient($mid-gray 15vmin, transparent 1vmin) calc(#{$box-w} + 41vmin) calc(#{$box-h} + 28vmin)  / 5vmin 6vmin no-repeat,
+    linear-gradient($mid-gray 15vmin, transparent 1vmin) calc(#{$box-w} + 41vmin) calc(#{$box-h} + 35vmin)  / 5vmin 6vmin no-repeat,
+      
+      
+    linear-gradient($mid-gray 20vmin, transparent 1vmin) calc(#{$box-w} + 28.5vmin) calc(#{$box-h} + 30vmin)  / 3vmin 11vmin no-repeat,
       
       
       // 2001 Duke
-  radial-gradient(ellipse at 0% 0%, transparent 6vmin, $mid-gray 6vmin, $mid-gray 11vmin, transparent 1vmin ) calc(#{$box-w} + 52vmin) calc(#{$box-h} + 19vmin)  / 20vmin 20vmin no-repeat,
+  radial-gradient(ellipse at 0% 0%, transparent 6vmin, $mid-gray 6vmin, $mid-gray 11vmin, transparent 1vmin ) calc(#{$box-w} + 52vmin) calc(#{$box-h} + 26vmin)  / 20vmin 20vmin no-repeat,
       
-    linear-gradient($mid-gray 15vmin, transparent 1vmin) calc(#{$box-w} + 52vmin) calc(#{$box-h} + 28vmin)  / 5vmin 6vmin no-repeat,
+    linear-gradient($mid-gray 15vmin, transparent 1vmin) calc(#{$box-w} + 52vmin) calc(#{$box-h} + 35vmin)  / 5vmin 6vmin no-repeat,
       
-    linear-gradient($mid-gray 20vmin, transparent 1vmin) calc(#{$box-w} + 64.5vmin) calc(#{$box-h} + 19vmin)  / 5vmin 17vmin no-repeat,
+    linear-gradient($mid-gray 20vmin, transparent 1vmin) calc(#{$box-w} + 64.5vmin) calc(#{$box-h} + 26vmin)  / 5vmin 15vmin no-repeat,
       
 
       
       //PTO W1
-    linear-gradient($mid-gray 15vmin, transparent 1vmin) calc(#{$box-w} + 35vmin) calc(#{$box-h} + 38vmin)  / 8vmin 10vmin no-repeat,
-    linear-gradient(135deg, $mid-gray 5vmin, transparent 1vmin) calc(#{$box-w} + 42vmin) calc(#{$box-h} + 38vmin)  / 4vmin 6vmin no-repeat,
+    linear-gradient($mid-gray 15vmin, transparent 1vmin) calc(#{$box-w} + 35vmin) calc(#{$box-h} + 45vmin)  / 8vmin 10vmin no-repeat,
+    linear-gradient(135deg, $mid-gray 5vmin, transparent 1vmin) calc(#{$box-w} + 42vmin) calc(#{$box-h} + 45vmin)  / 4vmin 6vmin no-repeat,
 
-    linear-gradient($mid-gray 15vmin, transparent 1vmin) calc(#{$box-w} + 28.5vmin) calc(#{$box-h} + 38vmin)  / 5vmin 5vmin no-repeat,
+    linear-gradient($mid-gray 15vmin, transparent 1vmin) calc(#{$box-w} + 28.5vmin) calc(#{$box-h} + 45vmin)  / 5vmin 5vmin no-repeat,
       
       
       //PTO W2
-    linear-gradient($mid-gray 25vmin, transparent 1vmin) calc(#{$box-w} + 35vmin) calc(#{$box-h} + 53vmin)  / 8vmin 23vmin no-repeat,
-    linear-gradient(-45deg, $mid-gray 5vmin, transparent 1vmin) calc(#{$box-w} + 33vmin) calc(#{$box-h} + 58vmin)  / 4vmin 6vmin no-repeat,
-    linear-gradient(-135deg, $mid-gray 5vmin, transparent 1vmin) calc(#{$box-w} + 33vmin) calc(#{$box-h} + 63vmin)  / 4vmin 6vmin no-repeat,
+    linear-gradient($mid-gray 25vmin, transparent 1vmin) calc(#{$box-w} + 35vmin) calc(#{$box-h} + 60vmin)  / 8vmin 23vmin no-repeat,
+    linear-gradient(-45deg, $mid-gray 5vmin, transparent 1vmin) calc(#{$box-w} + 33vmin) calc(#{$box-h} + 65vmin)  / 4vmin 6vmin no-repeat,
+    linear-gradient(-135deg, $mid-gray 5vmin, transparent 1vmin) calc(#{$box-w} + 33vmin) calc(#{$box-h} + 70vmin)  / 4vmin 6vmin no-repeat,
 
+    linear-gradient($mid-gray 20vmin, transparent 1vmin) calc(#{$box-w} + 28.5vmin) calc(#{$box-h} + 75vmin)  / 4vmin 9vmin no-repeat,
     
       //PTO E1
-    linear-gradient($mid-gray 15vmin, transparent 1vmin) calc(#{$box-w} + 55vmin) calc(#{$box-h} + 38vmin)  / 8vmin 10vmin no-repeat,
-    linear-gradient(-135deg, $mid-gray 5vmin, transparent 1vmin) calc(#{$box-w} + 52vmin) calc(#{$box-h} + 38vmin)  / 4vmin 6vmin no-repeat,
+    linear-gradient($mid-gray 15vmin, transparent 1vmin) calc(#{$box-w} + 55vmin) calc(#{$box-h} + 45vmin)  / 8vmin 10vmin no-repeat,
+    linear-gradient(-135deg, $mid-gray 5vmin, transparent 1vmin) calc(#{$box-w} + 52vmin) calc(#{$box-h} + 45vmin)  / 4vmin 6vmin no-repeat,
       
-    linear-gradient($mid-gray 15vmin, transparent 1vmin) calc(#{$box-w} + 65vmin) calc(#{$box-h} + 38vmin)  / 4.25vmin 10vmin no-repeat,
+    linear-gradient($mid-gray 15vmin, transparent 1vmin) calc(#{$box-w} + 65vmin) calc(#{$box-h} + 45vmin)  / 4.25vmin 10vmin no-repeat,
       
       
       //PTO E2
-    linear-gradient($mid-gray 25vmin, transparent 1vmin) calc(#{$box-w} + 55.5vmin) calc(#{$box-h} + 53vmin)  / 8vmin 23vmin no-repeat,
-    linear-gradient(45deg, $mid-gray 5vmin, transparent 1vmin) calc(#{$box-w} + 61vmin) calc(#{$box-h} + 58vmin)  / 4vmin 6vmin no-repeat,
-    linear-gradient(135deg, $mid-gray 5vmin, transparent 1vmin) calc(#{$box-w} + 61vmin) calc(#{$box-h} + 63vmin)  / 4vmin 6vmin no-repeat,
+    linear-gradient($mid-gray 25vmin, transparent 1vmin) calc(#{$box-w} + 55.5vmin) calc(#{$box-h} + 60vmin)  / 8vmin 23vmin no-repeat,
+    linear-gradient(45deg, $mid-gray 5vmin, transparent 1vmin) calc(#{$box-w} + 61vmin) calc(#{$box-h} + 65vmin)  / 4vmin 6vmin no-repeat,
+    linear-gradient(135deg, $mid-gray 5vmin, transparent 1vmin) calc(#{$box-w} + 61vmin) calc(#{$box-h} + 70vmin)  / 4vmin 6vmin no-repeat,
+      
+    linear-gradient($mid-gray 20vmin, transparent 1vmin) calc(#{$box-w} + 66vmin) calc(#{$box-h} + 75vmin)  / 3vmin 9vmin no-repeat,
       
       
       
       //PTO
-    linear-gradient($mid-gray 25vmin, transparent 1vmin) calc(#{$box-w} + 35vmin) calc(#{$box-h} + 80vmin)  / 28vmin 10vmin no-repeat,
-    linear-gradient(45deg, $mid-gray 5vmin, transparent 1vmin) calc(#{$box-w} + 61vmin) calc(#{$box-h} + 58vmin)  / 4vmin 6vmin no-repeat,
-    linear-gradient(135deg, $mid-gray 5vmin, transparent 1vmin) calc(#{$box-w} + 61vmin) calc(#{$box-h} + 63vmin)  / 4vmin 6vmin no-repeat,
+    linear-gradient($mid-gray 25vmin, transparent 1vmin) calc(#{$box-w} + 35vmin) calc(#{$box-h} + 87vmin)  / 28vmin 3vmin no-repeat,
+    linear-gradient(45deg, $mid-gray 5vmin, transparent 1vmin) calc(#{$box-w} + 61vmin) calc(#{$box-h} + 65vmin)  / 4vmin 6vmin no-repeat,
+    linear-gradient(135deg, $mid-gray 5vmin, transparent 1vmin) calc(#{$box-w} + 61vmin) calc(#{$box-h} + 70vmin)  / 4vmin 6vmin no-repeat,
+      
       
       
       
@@ -154,7 +184,7 @@ div.pin {
       
       
         //N
-       linear-gradient($black 1.5vmin, $light-gray 1vmin ) calc(#{$box-w} + 32vmin) calc(#{$box-h} + 0vmin)  / 34vmin 6vmin no-repeat,
+       linear-gradient($black 1.5vmin, $blue 1vmin ) calc(#{$box-w} + 32vmin) calc(#{$box-h} + 0vmin)  / 34vmin 6vmin no-repeat,
       
         //S
        linear-gradient(360deg, $black 1.5vmin, $light-gray  1vmin ) calc(#{$box-w} + 32vmin) calc(#{$box-h} + 85.5vmin)  / 34vmin 6vmin no-repeat,
@@ -162,11 +192,11 @@ div.pin {
       //W
        linear-gradient(90deg,  $black 1.5vmin, $light-gray  1vmin ) calc(#{$box-w} + 26.75vmin) calc(#{$box-h} + 5vmin)  / 6vmin 81vmin no-repeat,
       
-     linear-gradient(90deg, $black .75vmin, transparent .75vmin ) calc(#{$box-w} + 26vmin) calc(#{$box-h} + 13vmin)  / 7.5vmin 2.5vmin no-repeat,
+     linear-gradient(90deg, lighten($black, 25%) .75vmin, transparent .75vmin ) calc(#{$box-w} + 26.25vmin) calc(#{$box-h} + 13vmin)  / 7.5vmin 2.5vmin no-repeat,
       
-       linear-gradient(90deg, $black .75vmin, transparent .75vmin ) calc(#{$box-w} + 26vmin) calc(#{$box-h} + 19vmin)  / 7.5vmin 7.5vmin no-repeat,
+       linear-gradient(90deg, lighten($black, 25%).75vmin, transparent .75vmin ) calc(#{$box-w} + 26.25vmin) calc(#{$box-h} + 19vmin)  / 7.5vmin 7.5vmin no-repeat,
       
-       linear-gradient(90deg, $black .75vmin, transparent .75vmin ) calc(#{$box-w} + 26vmin) calc(#{$box-h} + 27vmin)  / 7.5vmin 7.5vmin no-repeat,
+       linear-gradient(90deg, lighten($black, 25%).75vmin, transparent .75vmin ) calc(#{$box-w} + 26.25vmin) calc(#{$box-h} + 27vmin)  / 7.5vmin 7.5vmin no-repeat,
       
       
       
@@ -176,7 +206,7 @@ div.pin {
        linear-gradient(-90deg,  $black 1.5vmin, $light-gray  1vmin ) calc(#{$box-w} + 65vmin) calc(#{$box-h} + 5vmin)  / 6vmin 81vmin no-repeat,
       
       
-       linear-gradient(90deg, $black .75vmin, transparent .75vmin ) calc(#{$box-w} + 70.75vmin) calc(#{$box-h} + 21.5vmin)  / 7.5vmin 7vmin no-repeat,
+       linear-gradient(90deg, $black .75vmin, transparent .75vmin ) calc(#{$box-w} + 70.5vmin) calc(#{$box-h} + 21.5vmin)  / 7.5vmin 7vmin no-repeat,
       
       
        
@@ -184,17 +214,158 @@ div.pin {
        radial-gradient(ellipse at 0% 0%, $light-gray  4vmin, $black 4vmin, $black 5.5vmin, transparent 1vmin ) calc(#{$box-w} + 65.5vmin) calc(#{$box-h} + 86vmin)  / 23vmin 23vmin no-repeat,
       
       //NE
-       radial-gradient(ellipse at 0% 100%,$light-gray   4vmin, $black 4vmin, $black 5.5vmin, transparent 1vmin ) calc(#{$box-w} + 65.5vmin) calc(#{$box-h} + -17.5vmin)  / 23vmin 23vmin no-repeat,
+       radial-gradient(ellipse at 0% 100%,$blue   4vmin, $black 4vmin, $black 5.5vmin, transparent 1vmin ) calc(#{$box-w} + 65.5vmin) calc(#{$box-h} + -17.5vmin)  / 23vmin 23vmin no-repeat,
       
       //SW
        radial-gradient(ellipse at 100% 0%, $light-gray  4vmin, $black 4vmin, $black 5.5vmin, transparent 1vmin ) calc(#{$box-w} + 9.25vmin) calc(#{$box-h} + 86vmin)  / 23vmin 23vmin no-repeat,
       
       //NW
-       radial-gradient(ellipse at 100% 100%, $light-gray  4vmin, $black 4vmin, $black 5.5vmin, transparent 1vmin ) calc(#{$box-w} + 9.25vmin) calc(#{$box-h} + -17.5vmin)  / 23vmin 23vmin no-repeat,
+       radial-gradient(ellipse at 100% 100%, $blue  4vmin, $black 4vmin, $black 5.5vmin, transparent 1vmin ) calc(#{$box-w} + 9.25vmin) calc(#{$box-h} + -17.5vmin)  / 23vmin 23vmin no-repeat,
       
         //back
       
        linear-gradient(-90deg, $light-gray 50vmin, transparent 1vmin ) calc(#{$box-w} + 27vmin) calc(#{$box-h} + 5vmin)  / 44vmin 81vmin no-repeat,
       
       
+      
+      
+      
+       radial-gradient(ellipse at 100% 0%, $light-gray  4vmin, $black 4vmin, $black 5.5vmin, transparent 1vmin ) calc(#{$box-w} + 8vmin) calc(#{$box-h} + 85.5vmin)  / 23vmin 23vmin no-repeat,
+      
+       radial-gradient(ellipse at 100% 100%, $blue  4vmin, $black 4vmin, $black 5.5vmin, transparent 1vmin ) calc(#{$box-w} + 8.05vmin) calc(#{$box-h} + -17.3vmin)  / 23vmin 23vmin no-repeat,
+      
+       linear-gradient(90deg, $black 6vmin, transparent 1vmin) calc(#{$box-w} + 25.5vmin) calc(#{$box-h} + 5vmin)  / 6vmin 81vmin no-repeat,
+      
+      
+}
+
+
+
+
+div.pin:after {
+    width: 42vmin;
+    height: 88vmin;
+    padding-top: 2.5vmin;
+    padding-left: 10.5vmin;
+    font-size: 2.2vmin;
+    font-weight: 300;
+    z-index: 99999;
+    color: $white;
+    line-height: 2.2;
+    white-space: pre-wrap;
+    font-family: 'Leto', sans-serif;
+    content: 'Motley Fool HQ \a PTO Cafe';
+    background: 
+  
+      repeating-linear-gradient(lighten($blue, 20%)   0vmin, lighten($blue, 30%)  .25vmin, transparent .25vmin, transparent .5vmin) calc(#{$box-w} + 7vmin) calc(#{$box-h} + 3.75vmin)  / 2.5vmin 2vmin no-repeat, 
+      
+      repeating-linear-gradient(lighten($blue, 20%)   0vmin, lighten($blue, 30%)  .25vmin, transparent .25vmin, transparent .5vmin) calc(#{$box-w} + 7vmin) calc(#{$box-h} + 8.5vmin)  / 2.5vmin 2vmin no-repeat, 
+      
+      linear-gradient(45deg, transparent 2vmin, lighten($blue, 30%) 2vmin, lighten($blue, 30%) 2.25vmin, transparent 2.25vmin) calc(#{$box-w} + 36.1vmin) calc(#{$box-h} + 3.75vmin)  / 2.5vmin 2.5vmin no-repeat, 
+  linear-gradient(-45deg, transparent 2vmin, lighten($blue, 30%) 2vmin, lighten($blue, 30%) 2.25vmin, transparent 2.25vmin) calc(#{$box-w} + 36.5vmin) calc(#{$box-h} + 3.75vmin)  / 2.5vmin 2.5vmin no-repeat, 
+      
+      
+      
+      linear-gradient(45deg, transparent 2vmin, lighten($blue, 30%) 2vmin, lighten($blue, 30%) 2.25vmin, transparent 2.25vmin) calc(#{$box-w} + 36.1vmin) calc(#{$box-h} + 8.5vmin)  / 2.5vmin 2.5vmin no-repeat, 
+  linear-gradient(-45deg, transparent 2vmin, lighten($blue, 30%) 2vmin, lighten($blue, 30%) 2.25vmin, transparent 2.25vmin) calc(#{$box-w} + 36.5vmin) calc(#{$box-h} + 8.5vmin)  / 2.5vmin 2.5vmin no-repeat, 
+
+      linear-gradient(-135deg, transparent 2vmin, lighten($blue, 30%) 2vmin, lighten($blue, 30%) 2.3vmin, transparent 2.3vmin) calc(#{$box-w} + 1.6vmin) calc(#{$box-h} + 3.5vmin)  / 2vmin 2vmin no-repeat, 
+  linear-gradient(-45deg, transparent 2vmin, lighten($blue, 30%) 2vmin, lighten($blue, 30%) 2.3vmin, transparent 2.3vmin) calc(#{$box-w} + 1.5vmin) calc(#{$box-h} + 3.5vmin)  / 2vmin 2vmin no-repeat, 
+  
+      linear-gradient(lighten($blue, 30%) 2vmin, transparent 1vmin) calc(#{$box-w} + 1.75vmin) calc(#{$box-h} + 4.25vmin)  / 3vmin .3vmin no-repeat, 
+      
+}
+  
+
+
+
+div.pin:before {
+    width: 42vmin;
+    height: 88vmin;
+    top: 11vmin;
+  
+  
+    transition-origin: top center;
+    animation: revealpath 25s linear infinite;
+    background:
+   
+      radial-gradient(ellipse, $blue  1.25vmin, $white  1.25vmin,  $white  1.75vmin, transparent 1.75vmin ) calc(#{$box-w} + 7vmin) calc(#{$box-h} + 17vmin)  / 4vmin 4vmin no-repeat, 
+      
+      //dots
+      radial-gradient(ellipse, $blue  .6vmin, darken($blue, 15%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 9vmin) calc(#{$box-h} + 19vmin)  / 4vmin 4vmin no-repeat, 
+      radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 10.5vmin) calc(#{$box-h} + 20.5vmin)  / 4vmin 4vmin no-repeat, 
+   radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 11.75vmin) calc(#{$box-h} + 22.25vmin)  / 4vmin 4vmin no-repeat, 
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 12vmin) calc(#{$box-h} + 24.3vmin)  / 4vmin 4vmin no-repeat, 
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 14vmin) calc(#{$box-h} + 24.3vmin)  / 4vmin 4vmin no-repeat, 
+          
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 16vmin) calc(#{$box-h} + 24.3vmin)  / 4vmin 4vmin no-repeat, 
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 16vmin) calc(#{$box-h} + 26.3vmin)  / 4vmin 4vmin no-repeat, 
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 16vmin) calc(#{$box-h} + 28.3vmin)  / 4vmin 4vmin no-repeat, 
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 16vmin) calc(#{$box-h} + 30.3vmin)  / 4vmin 4vmin no-repeat, 
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 16vmin) calc(#{$box-h} + 32.3vmin)  / 4vmin 4vmin no-repeat, 
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 16vmin) calc(#{$box-h} + 34.3vmin)  / 4vmin 4vmin no-repeat, 
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 16vmin) calc(#{$box-h} + 36.3vmin)  / 4vmin 4vmin no-repeat, 
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 16vmin) calc(#{$box-h} + 38.3vmin)  / 4vmin 4vmin no-repeat, 
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 16vmin) calc(#{$box-h} + 40.3vmin)  / 4vmin 4vmin no-repeat, 
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 14.5vmin) calc(#{$box-h} + 41.55vmin)  / 4vmin 4vmin no-repeat, 
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 13.5vmin) calc(#{$box-h} + 43.25vmin)  / 4vmin 4vmin no-repeat, 
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 13.25vmin) calc(#{$box-h} + 45.25vmin)  / 4vmin 4vmin no-repeat, 
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 13.25vmin) calc(#{$box-h} + 47.25vmin)  / 4vmin 4vmin no-repeat, 
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 13.25vmin) calc(#{$box-h} + 49.25vmin)  / 4vmin 4vmin no-repeat, 
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 13.25vmin) calc(#{$box-h} + 51.25vmin)  / 4vmin 4vmin no-repeat, 
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 13.25vmin) calc(#{$box-h} + 53.25vmin)  / 4vmin 4vmin no-repeat, 
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 13.25vmin) calc(#{$box-h} + 55.25vmin)  / 4vmin 4vmin no-repeat, 
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 13.25vmin) calc(#{$box-h} + 57.25vmin)  / 4vmin 4vmin no-repeat, 
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 13.25vmin) calc(#{$box-h} + 59.25vmin)  / 4vmin 4vmin no-repeat, 
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 13.25vmin) calc(#{$box-h} + 61.25vmin)  / 4vmin 4vmin no-repeat, 
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 13.25vmin) calc(#{$box-h} + 63.25vmin)  / 4vmin 4vmin no-repeat, 
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 13.25vmin) calc(#{$box-h} + 65.25vmin)  / 4vmin 4vmin no-repeat, 
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 13.25vmin) calc(#{$box-h} + 67.25vmin)  / 4vmin 4vmin no-repeat, 
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 13.25vmin) calc(#{$box-h} + 69.25vmin)  / 4vmin 4vmin no-repeat, 
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 12.25vmin) calc(#{$box-h} + 71vmin)  / 4vmin 4vmin no-repeat,
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 11vmin) calc(#{$box-h} + 72.5vmin)  / 4vmin 4vmin no-repeat,
+      
+  radial-gradient(ellipse, $blue  .6vmin, darken($blue, 10%) .6vmin, darken($blue, 10%) 1vmin, transparent 1vmin ) calc(#{$box-w} + 9.5vmin) calc(#{$box-h} + 73.5vmin)  / 4vmin 4vmin no-repeat,
+      
+    linear-gradient(-115deg, $red  2vmin, darken($red, 10%) 2vmin, darken($red, 10%) 2.5vmin, transparent 1vmin ) calc(#{$box-w} + 5vmin) calc(#{$box-h} + 70.25vmin)  / 5vmin 5vmin no-repeat,
+      linear-gradient(115deg,$red  2vmin, darken($red, 10%) 2vmin, darken($red, 10%) 2.5vmin, transparent 1vmin ) calc(#{$box-w} + 10vmin) calc(#{$box-h} + 70.25vmin)  / 5vmin 5vmin no-repeat,
+      radial-gradient(ellipse, $white 1vmin, darken($red, 10%) 1vmin, darken($red, 10%) 1.5vmin, $red  1.5vmin, $red  2.5vmin, darken($red, 10%) 2.5vmin, darken($red, 10%) 3vmin, transparent 1vmin ) calc(#{$box-w} + 7vmin) calc(#{$box-h} + 66vmin)  / 6vmin 6vmin no-repeat,
+      
+      
+}
+
+
+
+ @keyframes revealpath {
+   0% {
+     height: 20vmin;
+   }
+  20% {
+      height: 88vmin;
+   }
 }
