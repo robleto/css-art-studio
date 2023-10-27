@@ -32,7 +32,7 @@ body {
 
 
 
-$box-w: -3vmin;
+$box-w: -5vmin;
 $box-h: -10vmin;
 
 
@@ -217,6 +217,7 @@ div.discontinued {
 div.discontinued:after {
     width: 100vmin;
     height: 100vmin;
+    left: -1vmin;
     text-align: center;
     z-index: 99;
     padding-top: 55vmin;
@@ -238,10 +239,11 @@ div.discontinued:after {
 div.discontinued:before {
     width: 100vmin;
     height: 100vmin;
+    left: -1vmin;
     text-align: center;
     z-index: 99;
     padding-top: 67vmin;
-    font-size: 7vmin;
+    font-size: 7.15vmin;
     font-weight: 400;
     transform:scale(1);
     z-index: 999;
