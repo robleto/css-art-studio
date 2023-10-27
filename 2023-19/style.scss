@@ -22,7 +22,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; 
-  align-content: center; 
   margin: 0 auto;
    background-color: $white;
     // background-size: 80%;
@@ -44,7 +43,7 @@ $board-h: 0vmin;
 
 div.sticky {
     width: 100vmin;
-    height: 100vmin;
+    height: 70vmin;
     display: flex;
     position: relative; 
     justify-content: center;
@@ -176,7 +175,7 @@ $cardback-h: .5vmin;
 
 div.sticky:before {
     width: 100vmin;
-    height: 100vmin;
+    height: 70vmin;
     z-index: 99;
     background: 
       
@@ -280,7 +279,7 @@ div.sticky:before {
 
 div.sticky:after {
     width: 100vmin;
-    height: 100vmin;
+    height: 70vmin;
     //border: solid 3px #990000;
     z-index: 999;
     transform: rotate(8deg);
