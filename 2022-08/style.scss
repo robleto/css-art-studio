@@ -23,6 +23,7 @@ body {
   justify-content: center;
   align-items: start;
   height: 100vh;
+  width: 100vw;
   background: radial-gradient(67% 67% at 50% 35%, var(--purple) 0%, var(--dark-purple) 100%)
 }
 
@@ -32,49 +33,49 @@ div:before, div:after {
   position: absolute;
 }
 
-div.haunted {
+div.spooky {
   background-color: var(--white);
-  margin-top: 10vh;
-  height: 210px;
-  width: 180px;
+  margin-top: 10vmin;
+  height: 45vmin;
+  width: 40vmin;
   border-radius: 100% 100% 0 0;
 
   &:after {
     position: absolute;
-      width: 125px;
-      height: 20px;
-      bottom: -35px;
+      width: 45vmin;
+      height: 10vmin;
+      bottom: -7vmin;
       left: 0px;
     content: ".";
     font-family: Comic Sans MS;
-    font-size: 180px;
+    font-size: 40vmin;
     text-shadow:
       /* left eye and cheek */
-     15px -250px 0 var(--pink),               
-     95px -250px 0 var(--pink),
+     3vmin -55vmin 0 var(--pink),               
+     21vmin -55vmin 0 var(--pink),
       /* right eye and cheek */
-     30px -280px 0 var(--gray),
-     80px -280px 0 var(--gray),
+     5.5vmin -62vmin 0 var(--gray),
+     18.5vmin -62vmin 0 var(--gray),
       /* mouth */
-     53px -244px 0 var(--white),
-     53px -240px 0 var(--gray);
-    height: 60px;
-    width: 50px;
+     12vmin -52vmin 0 var(--white),
+     12vmin -51vmin 0 var(--gray);
+    height: 15vmin;
+    width: 11vmin;
     color: transparent;
     background-color: var(--white);
     border-radius: 100%;
     box-shadow: 
-      30px 0 0 var(--white),
-      60px 0 0 var(--white),
-      90px 0 0 var(--white),
-      130px 0 0 var(--white);
+      7vmin 0 0 var(--white),
+      14vmin 0 0 var(--white),
+      22vmin 0 0 var(--white),
+      29vmin 0 0 var(--white);
   }
   &:before {
-    width: 195px;
-    height: 60px;
+    width: 30vmin;
+    height: 10vmin;
     position: absolute;
-    bottom: -130px;
-    left: 105px;
+    bottom: -30vmin;
+    left: 20vmin;
     background-color: var(--dark-purple);
     border-radius: 50%;
     transform: translateX(-50%);
@@ -82,8 +83,9 @@ div.haunted {
 }
 
 
+
 /* Animation */
-div.haunted {
+div.spooky {
   animation: float 3s ease-out infinite;
   
   &:before {

@@ -15,7 +15,24 @@ body {
 div.impossible {
   width: 100vmin;
   height: 100vmin;
-  margin: -10vmin auto 0;
+  top: -15vmin;
+  left: 5vmin;
+  /* transform-origin: 46% 67%;
+  animation: rotatetriangle 20s linear infinite; */
   position: relative;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   background: linear-gradient(60deg, #444444 0vmin, #444444 38vmin, transparent 38vmin) 20vmin 77vmin/80vmin 7.5vmin no-repeat, linear-gradient(-120deg, #aaaaaa 0vmin, #aaaaaa 50vmin, transparent 50vmin) -9.5vmin 84.5vmin/80vmin 7.5vmin no-repeat, linear-gradient(60deg, transparent 18.5vmin, #ffffff 18.5vmin, #ffffff 25vmin, transparent 25vmin) 50vmin 25vmin/50vmin 60vmin no-repeat, linear-gradient(120deg, #ffffff 0vmin, #ffffff 3.5vmin, transparent 3.5vmin) 75vmin 85vmin/10vmin 10vmin no-repeat, linear-gradient(-120deg, #ffffff 0vmin, #ffffff 3vmin, transparent 3vmin) 65vmin 85vmin/10vmin 10vmin no-repeat, linear-gradient(-60deg, transparent 18.5vmin, #ffffff 18.5vmin, #ffffff 25vmin, transparent 25vmin) 0vmin 25vmin/50vmin 60vmin no-repeat, linear-gradient(-60deg, transparent 18.5vmin, #444444 18.5vmin, #444444 32vmin, transparent 32vmin) 0vmin 35vmin/50vmin 50vmin no-repeat, linear-gradient(60deg, transparent 18.5vmin, #aaaaaa 18.5vmin, #aaaaaa 25vmin, transparent 25vmin) 46.5vmin 34vmin/50vmin 58vmin no-repeat;
+}
+
+@keyframes rotatetriangle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

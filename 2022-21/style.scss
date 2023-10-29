@@ -7,10 +7,19 @@ $green4: #55ddb9;
 /* Presets */
 body {
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
   margin: 0 auto;
   position: relative;
-  background-color: $bg;
+  display: flex;
+  position: relative; 
+  justify-content: center;
+  align-items: center; 
+  margin: 0 auto;
+  
+  background: 
+    radial-gradient(lighten($bg, 20%), darken($bg, 20%)); 
+    
+  
 }
 
 div:before, div:after {
@@ -20,32 +29,32 @@ div:before, div:after {
 }
 
 div.valuable {
-    width: 100%;
-    height: 100%;
-    margin-left: -15vh;
+    width: 100vmin;
+    height: 100vmin;
+    margin-left: -30vmin;
     display: flex;
     justify-content: center;
     align-items: center;
     background:
        
-    linear-gradient(-135deg, $green3 10vh, transparent 10vh) 30vh 40vh / 20vh 20vh no-repeat, 
-    linear-gradient(-45deg, $green4 10vh, transparent 10vh) 30vh 20vh / 20vh 20vh no-repeat, 
+    linear-gradient(-135deg, $green3 10vmin, transparent 10vmin) 30vmin 40vmin / 20vmin 20vmin no-repeat, 
+    linear-gradient(-45deg, $green4 10vmin, transparent 10vmin) 30vmin 20vmin / 20vmin 20vmin no-repeat, 
       
-    linear-gradient(-45deg, $green2 10vh, transparent 10vh) 44vh 20vh / 20vh 20vh no-repeat,
-    linear-gradient(135deg, $green3 10vh, transparent 10vh) 50vh 26vh / 20vh 20vh no-repeat,
-    linear-gradient(45deg, $green1 10vh, transparent 10vh) 64vh 20vh / 20vh 20vh no-repeat,
-    linear-gradient(-135deg, $green4 10vh, transparent 10vh) 58vh 26vh / 20vh 20vh no-repeat,
+    linear-gradient(-45deg, $green2 10vmin, transparent 10vmin) 44vmin 20vmin / 20vmin 20vmin no-repeat,
+    linear-gradient(135deg, $green3 10vmin, transparent 10vmin) 50vmin 26vmin / 20vmin 20vmin no-repeat,
+    linear-gradient(45deg, $green1 10vmin, transparent 10vmin) 64vmin 20vmin / 20vmin 20vmin no-repeat,
+    linear-gradient(-135deg, $green4 10vmin, transparent 10vmin) 58vmin 26vmin / 20vmin 20vmin no-repeat,
     
-    linear-gradient(45deg, $green1 10vh, transparent 10vh) 50vh 34vh / 20vh 20vh no-repeat,
-    linear-gradient(-135deg, $green4 10vh, transparent 10vh) 44vh 40vh / 20vh 20vh no-repeat,
-    linear-gradient(-45deg, $green2 10vh, transparent 10vh) 58vh 34vh / 20vh 20vh no-repeat,
-    linear-gradient(135deg, $green3 10vh, transparent 10vh) 64vh 40vh / 20vh 20vh no-repeat,
+    linear-gradient(45deg, $green1 10vmin, transparent 10vmin) 50vmin 34vmin / 20vmin 20vmin no-repeat,
+    linear-gradient(-135deg, $green4 10vmin, transparent 10vmin) 44vmin 40vmin / 20vmin 20vmin no-repeat,
+    linear-gradient(-45deg, $green2 10vmin, transparent 10vmin) 58vmin 34vmin / 20vmin 20vmin no-repeat,
+    linear-gradient(135deg, $green3 10vmin, transparent 10vmin) 64vmin 40vmin / 20vmin 20vmin no-repeat,
       
-    linear-gradient(135deg, $green4 10vh, transparent 10vh) 78vh 40vh / 20vh 20vh no-repeat,
-    linear-gradient(45deg, $green3 10vh, transparent 10vh) 78vh 20vh / 20vh 20vh no-repeat,
+    linear-gradient(135deg, $green4 10vmin, transparent 10vmin) 78vmin 40vmin / 20vmin 20vmin no-repeat,
+    linear-gradient(45deg, $green3 10vmin, transparent 10vmin) 78vmin 20vmin / 20vmin 20vmin no-repeat,
       
-    linear-gradient(-135deg, $green4 10vh, transparent 10vh) 44vh 54vh / 20vh 20vh no-repeat,
-    linear-gradient(135deg, $green3 10vh, transparent 10vh) 64vh 54vh / 20vh 20vh no-repeat,
+    linear-gradient(-135deg, $green4 10vmin, transparent 10vmin) 44vmin 54vmin / 20vmin 20vmin no-repeat,
+    linear-gradient(135deg, $green3 10vmin, transparent 10vmin) 64vmin 54vmin / 20vmin 20vmin no-repeat,
     
 }
 

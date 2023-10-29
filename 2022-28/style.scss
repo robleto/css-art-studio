@@ -4,6 +4,7 @@ $black: #000000;
 $offwhite: #D5DBCF;
 $gray: #F0f0f0;
 $skyblue: #C4D9EA;
+$test: #bada55;
 
 
 $gold: #A89D53;
@@ -66,7 +67,7 @@ div.monster {
     height: 90vmin;
     left: -2vmin;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-left: solid 60px $gold;
+    border-left: solid 10vmin $gold;
     position: relative;
     overflow: hidden;
     display: flex;

@@ -1,3 +1,5 @@
+$bg: #45b7f4;
+
 *,
 *:before,
 *:after {
@@ -12,12 +14,14 @@ body {
   margin: 0 auto;
   position: relative;
   display: flex;
-  position: relative;
+  position: relative; 
   transform: scale(1.3);
   justify-content: center;
-  align-items: center;
+  align-items: center; 
   margin: 0 auto;
-  background: radial-gradient(#a5dcfa, #0c86c7);
+    background: 
+    radial-gradient(lighten($bg, 20%), darken($bg, 20%)); 
+  
 }
 
 div {
@@ -26,7 +30,7 @@ div {
   background-color: #fff;
   position: absolute;
   margin: auto;
-  border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   box-shadow: 3vmin 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -39,9 +43,11 @@ div:before {
   border-radius: 50%;
   top: 25vmin;
   right: 12.5vmin;
-  box-shadow: -6vmin 0 0 #010008, 1.5vmin 2.5vmin 0 -0.35vmin #f5750f, -7.5vmin 2.5vmin 0 -0.35vmin #f5750f, -3vmin 0 0 10vmin #f5d201;
+  box-shadow: -6vmin 0 0 #010008, //left eye
+    1.5vmin 2.5vmin 0 -.35vmin #f5750f, //right dimpel
+    -7.5vmin 2.5vmin 0 -.35vmin #f5750f, //left dimpel
+    -3vmin 0 0 10vmin #f5d201; //egg face
 }
-
 div:after {
   content: "";
   position: absolute;
@@ -51,6 +57,9 @@ div:after {
   top: 29vmin;
   left: 14.5vmin;
   border-radius: 1vmin 1vmin 3vmin 3vmin;
-  border: 0.5vmin solid #010008;
-  background: radial-gradient(at 50% 100%, #f5750f 1vmin, #010008 1vmin);
-}/*# sourceMappingURL=style.css.map */
+  border: .5vmin solid #010008;
+  background: radial-gradient(
+    at 50% 100%, 
+    #f5750f 1vmin, 
+    #010008 1vmin);
+}

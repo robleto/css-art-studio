@@ -13,7 +13,11 @@ $blue2: #5993A7;
 }
 
 body {
-  height: 100vh;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   position: relative;
   z-index: 1;
   perspective-origin: 25% 75%;
@@ -28,8 +32,9 @@ div:before, div:after {
 }
 
 div.splash {
-    width: 100vh;
-    height: 100vh;
+    width: 100vmin;
+    height: 100vmin;
+    left: -4vmin;
     margin: 0 auto;
     position: relative;
     display: flex;
@@ -38,149 +43,151 @@ div.splash {
     background:
 
     /* slot */ 
-      linear-gradient( darken($gray, 20%) 1.5vh, darken($gray, 20%) 1.75vh, transparent 10vh) 32vh 52vh / 45vh 6vh no-repeat,
+      linear-gradient( darken($gray, 20%) 1.5vmin, darken($gray, 20%) 1.75vmin, transparent 10vmin) 32vmin 52vmin / 45vmin 6vmin no-repeat,
       
       
 
     /* buttons -up-l */ 
-      linear-gradient( darken($white, 20%) .25vh,
-lighten($gray, 5%) .5vh, lighten($gray, 5%) 4.75vh, darken($gray, 10%) 4.75vh, transparent 10vh) 12.5vh 53.5vh / 10vh 4vh no-repeat,
-      linear-gradient( darken($gray, 20%) 1.5vh, darken($gray, 20%) 1.75vh, transparent 10vh) 12vh 53vh / 11vh 5vh no-repeat,
+      linear-gradient( darken($white, 20%) .25vmin,
+lighten($gray, 5%) .5vmin, lighten($gray, 5%) 4.75vmin, darken($gray, 10%) 4.75vmin, transparent 10vmin) 12.5vmin 53.5vmin / 10vmin 4vmin no-repeat,
+      linear-gradient( darken($gray, 20%) 1.5vmin, darken($gray, 20%) 1.75vmin, transparent 10vmin) 12vmin 53vmin / 11vmin 5vmin no-repeat,
       
       
     /* top knobs */ 
       radial-gradient(circle, 
-darken($gray, 0%) 0vh, 
-darken($gray, 0%) 3.25vh,transparent 3.2vh) 83.5vh 51.25vh / 8vh 8vh no-repeat,
+darken($gray, 0%) 0vmin, 
+darken($gray, 0%) 3.25vmin,transparent 3.2vmin) 83.5vmin 51.25vmin / 8vmin 8vmin no-repeat,
       radial-gradient(circle, 
-darken($white, 10%) 0vh, 
-darken($white, 10%) 3vh,transparent 3vh) 83.5vh 50.5vh / 8vh 8vh no-repeat,
+darken($white, 10%) 0vmin, 
+darken($white, 10%) 3vmin,transparent 3vmin) 83.5vmin 50.5vmin / 8vmin 8vmin no-repeat,
       radial-gradient(circle, 
-lighten($gray, 5%) 0vh, 
-lighten($gray, 5%) 1.2vh, darken($gray, 5%) 3.5vh, darken($gray, 10%) 3.5vh,
-darken($gray, 20%) 4vh, transparent 4vh) 83.5vh 51vh / 8vh 8vh no-repeat,
+lighten($gray, 5%) 0vmin, 
+lighten($gray, 5%) 1.2vmin, darken($gray, 5%) 3.5vmin, darken($gray, 10%) 3.5vmin,
+darken($gray, 20%) 4vmin, transparent 4vmin) 83.5vmin 51vmin / 8vmin 8vmin no-repeat,
       
       radial-gradient(circle, 
-lighten($gray, 5%) 0vh, 
-lighten($gray, 5%) 1vh,transparent 1vh) 24.25vh 54.45vh / 2.5vh 2.5vh no-repeat,
+lighten($gray, 5%) 0vmin, 
+lighten($gray, 5%) 1vmin,transparent 1vmin) 24.25vmin 54.45vmin / 2.5vmin 2.5vmin no-repeat,
       radial-gradient(circle, 
-darken($white, 10%) 0vh, 
-darken($white, 10%) 1vh,transparent 1vh) 24.25vh 54.25vh / 2.5vh 2.5vh no-repeat,
+darken($white, 10%) 0vmin, 
+darken($white, 10%) 1vmin,transparent 1vmin) 24.25vmin 54.25vmin / 2.5vmin 2.5vmin no-repeat,
       radial-gradient(circle, 
-darken($gray, 5%) 0vh, 
-darken($gray, 5%) 1.2vh, darken($gray, 10%) 1.2vh, darken($gray, 20%) 1.5vh, transparent 1.5vh) 24vh 54vh / 3vh 3vh no-repeat,
+darken($gray, 5%) 0vmin, 
+darken($gray, 5%) 1.2vmin, darken($gray, 10%) 1.2vmin, darken($gray, 20%) 1.5vmin, transparent 1.5vmin) 24vmin 54vmin / 3vmin 3vmin no-repeat,
       
       
 
     /* bottom knobs */ 
       radial-gradient(circle, 
-lighten($gray, 5%) 0vh, 
-lighten($gray, 5%) 1vh,transparent 1vh) 13.25vh 64.5vh / 2.5vh 2.5vh no-repeat,
+lighten($gray, 5%) 0vmin, 
+lighten($gray, 5%) 1vmin,transparent 1vmin) 13.25vmin 64.5vmin / 2.5vmin 2.5vmin no-repeat,
       radial-gradient(circle, 
-darken($white, 10%) 0vh, 
-darken($white, 10%) 1vh,transparent 1vh) 13.25vh 64.25vh / 2.5vh 2.5vh no-repeat,
+darken($white, 10%) 0vmin, 
+darken($white, 10%) 1vmin,transparent 1vmin) 13.25vmin 64.25vmin / 2.5vmin 2.5vmin no-repeat,
       radial-gradient(circle, 
-lighten($gray, 5%) 0vh, 
-lighten($gray, 5%) 1.2vh, darken($gray, 10%) 1.2vh, darken($gray, 20%) 1.5vh, transparent 1.5vh) 13vh 64vh / 3vh 3vh no-repeat,
+lighten($gray, 5%) 0vmin, 
+lighten($gray, 5%) 1.2vmin, darken($gray, 10%) 1.2vmin, darken($gray, 20%) 1.5vmin, transparent 1.5vmin) 13vmin 64vmin / 3vmin 3vmin no-repeat,
       
       
       radial-gradient(circle, 
-lighten($gray, 5%) 0vh, 
-lighten($gray, 5%) 1vh,transparent 1vh) 18.25vh 64.5vh / 2.5vh 2.5vh no-repeat,
+lighten($gray, 5%) 0vmin, 
+lighten($gray, 5%) 1vmin,transparent 1vmin) 18.25vmin 64.5vmin / 2.5vmin 2.5vmin no-repeat,
       radial-gradient(circle, 
-darken($white, 10%) 0vh, 
-darken($white, 10%) 1vh,transparent 1vh) 18.25vh 64.25vh / 2.5vh 2.5vh no-repeat,
+darken($white, 10%) 0vmin, 
+darken($white, 10%) 1vmin,transparent 1vmin) 18.25vmin 64.25vmin / 2.5vmin 2.5vmin no-repeat,
       radial-gradient(circle, 
-lighten($gray, 5%) 0vh, 
-lighten($gray, 5%) 1.2vh, darken($gray, 10%) 1.2vh, darken($gray, 20%) 1.5vh, transparent 1.5vh) 18vh 64vh / 3vh 3vh no-repeat,
+lighten($gray, 5%) 0vmin, 
+lighten($gray, 5%) 1.2vmin, darken($gray, 10%) 1.2vmin, darken($gray, 20%) 1.5vmin, transparent 1.5vmin) 18vmin 64vmin / 3vmin 3vmin no-repeat,
 
       radial-gradient(circle, 
-lighten($gray, 5%) 0vh, 
-lighten($gray, 5%) 1vh,transparent 1vh) 23.25vh 64.5vh / 2.5vh 2.5vh no-repeat,
+lighten($gray, 5%) 0vmin, 
+lighten($gray, 5%) 1vmin,transparent 1vmin) 23.25vmin 64.5vmin / 2.5vmin 2.5vmin no-repeat,
       radial-gradient(circle, 
-darken($white, 10%) 0vh, 
-darken($white, 10%) 1vh,transparent 1vh) 23.25vh 64.25vh / 2.5vh 2.5vh no-repeat,
+darken($white, 10%) 0vmin, 
+darken($white, 10%) 1vmin,transparent 1vmin) 23.25vmin 64.25vmin / 2.5vmin 2.5vmin no-repeat,
       radial-gradient(circle, 
-lighten($gray, 5%) 0vh, 
-lighten($gray, 5%) 1.2vh, darken($gray, 10%) 1.2vh, darken($gray, 20%) 1.5vh, transparent 1.5vh) 23vh 64vh / 3vh 3vh no-repeat,
+lighten($gray, 5%) 0vmin, 
+lighten($gray, 5%) 1.2vmin, darken($gray, 10%) 1.2vmin, darken($gray, 20%) 1.5vmin, transparent 1.5vmin) 23vmin 64vmin / 3vmin 3vmin no-repeat,
       
       radial-gradient(circle, 
-lighten($gray, 5%) 0vh, 
-lighten($gray, 5%) 1vh,transparent 1vh) 72.25vh 64.5vh / 2.5vh 2.5vh no-repeat,
+lighten($gray, 5%) 0vmin, 
+lighten($gray, 5%) 1vmin,transparent 1vmin) 72.25vmin 64.5vmin / 2.5vmin 2.5vmin no-repeat,
       radial-gradient(circle, 
-darken($white, 10%) 0vh, 
-darken($white, 10%) 1vh,transparent 1vh) 72.25vh 64.25vh / 2.5vh 2.5vh no-repeat,
+darken($white, 10%) 0vmin, 
+darken($white, 10%) 1vmin,transparent 1vmin) 72.25vmin 64.25vmin / 2.5vmin 2.5vmin no-repeat,
       radial-gradient(circle, 
-lighten($gray, 5%) 0vh, 
-lighten($gray, 5%) 1.2vh, darken($gray, 10%) 1.2vh, darken($gray, 20%) 1.5vh, transparent 1.5vh) 72vh 64vh / 3vh 3vh no-repeat,
+lighten($gray, 5%) 0vmin, 
+lighten($gray, 5%) 1.2vmin, darken($gray, 10%) 1.2vmin, darken($gray, 20%) 1.5vmin, transparent 1.5vmin) 72vmin 64vmin / 3vmin 3vmin no-repeat,
 
     /* blue-bar -mid */ 
-      linear-gradient( darken($white, 20%) .25vh,
-lighten($blue2, 5%) .5vh, lighten($blue2, 5%) 4.75vh, darken($blue2, 10%) 4.75vh, transparent 10vh) 30.5vh 63.5vh / 25vh 4vh no-repeat,
-      linear-gradient( darken($gray, 20%) 1.5vh, darken($gray, 20%) 1.75vh, transparent 10vh) 30vh 63vh / 26vh 5vh no-repeat,
+      linear-gradient( darken($white, 20%) .25vmin,
+lighten($blue2, 5%) .5vmin, lighten($blue2, 5%) 4.75vmin, darken($blue2, 10%) 4.75vmin, transparent 10vmin) 30.5vmin 63.5vmin / 25vmin 4vmin no-repeat,
+      linear-gradient( darken($gray, 20%) 1.5vmin, darken($gray, 20%) 1.75vmin, transparent 10vmin) 30vmin 63vmin / 26vmin 5vmin no-repeat,
       
     /* buttons -mid */ 
-      linear-gradient( darken($white, 20%) .25vh,
-lighten($gray, 5%) .5vh, lighten($gray, 5%) 4.75vh, darken($gray, 10%) 4.75vh, transparent 10vh) 60.5vh 63.5vh / 10vh 4vh no-repeat,
-      linear-gradient( darken($gray, 20%) 1.5vh, darken($gray, 20%) 1.75vh, transparent 10vh) 60vh 63vh / 11vh 5vh no-repeat,
+      linear-gradient( darken($white, 20%) .25vmin,
+lighten($gray, 5%) .5vmin, lighten($gray, 5%) 4.75vmin, darken($gray, 10%) 4.75vmin, transparent 10vmin) 60.5vmin 63.5vmin / 10vmin 4vmin no-repeat,
+      linear-gradient( darken($gray, 20%) 1.5vmin, darken($gray, 20%) 1.75vmin, transparent 10vmin) 60vmin 63vmin / 11vmin 5vmin no-repeat,
 
 
       
     /* buttons -lower-r */ 
-      linear-gradient( darken($gray, 20%) 1.5vh, darken($gray, 20%) 1.75vh, transparent 10vh) 87vh 63vh / .5vh 5vh no-repeat,
-      linear-gradient( darken($white, 20%) .25vh,
-lighten($gray, 5%) .5vh, lighten($gray, 5%) 4.75vh, darken($gray, 10%) 4.75vh, transparent 10vh) 80.5vh 63.5vh / 14vh 4vh no-repeat,
-      linear-gradient( darken($gray, 20%) 1.5vh, darken($gray, 20%) 1.75vh, transparent 10vh) 80vh 63vh / 15vh 5vh no-repeat,
+      linear-gradient( darken($gray, 20%) 1.5vmin, darken($gray, 20%) 1.75vmin, transparent 10vmin) 87vmin 63vmin / .5vmin 5vmin no-repeat,
+      linear-gradient( darken($white, 20%) .25vmin,
+lighten($gray, 5%) .5vmin, lighten($gray, 5%) 4.75vmin, darken($gray, 10%) 4.75vmin, transparent 10vmin) 80.5vmin 63.5vmin / 14vmin 4vmin no-repeat,
+      linear-gradient( darken($gray, 20%) 1.5vmin, darken($gray, 20%) 1.75vmin, transparent 10vmin) 80vmin 63vmin / 15vmin 5vmin no-repeat,
       
 
-    /* line */ linear-gradient( darken($gray, 15%) 1.5vh, darken($gray, 20%) 1.75vh, transparent 6vh) 10vh 60vh / 90vh 2vh no-repeat,
-    /* base */ linear-gradient( darken($gray, 5%) 30vh, $gray 30vh, transparent 3vh) 10vh 50vh / 90vh 20vh no-repeat,
+    /* line */ linear-gradient( darken($gray, 15%) 1.5vmin, darken($gray, 20%) 1.75vmin, transparent 6vmin) 10vmin 60vmin / 90vmin 2vmin no-repeat,
+    /* base */ linear-gradient( darken($gray, 5%) 30vmin, $gray 30vmin, transparent 3vmin) 10vmin 50vmin / 90vmin 20vmin no-repeat,
   
       /* feet */
-      radial-gradient(ellipse, darken($gray, 15%) 7.5vh, darken($gray, 30%) 8vh, transparent 8vh) 25vh 69vh / 15vh 2vh no-repeat,
-      radial-gradient(ellipse, darken($gray, 15%) 7.5vh, darken($gray, 30%) 8vh, transparent 8vh) 75vh 69vh / 15vh 2vh no-repeat;
+      radial-gradient(ellipse, darken($gray, 15%) 7.5vmin, darken($gray, 30%) 8vmin, transparent 8vmin) 25vmin 69vmin / 15vmin 2vmin no-repeat,
+      radial-gradient(ellipse, darken($gray, 15%) 7.5vmin, darken($gray, 30%) 8vmin, transparent 8vmin) 75vmin 69vmin / 15vmin 2vmin no-repeat,
+  
+  ;
 }
 
 
 div.splash:before {
-    width: 100vh;
-    height: 100vh;
+    width: 100vmin;
+    height: 100vmin;
     margin: 0 auto;
     z-index: 99;
     transform: perspective(1000px) rotateX(55deg);
     background:
 
       
-      linear-gradient( lighten($gray, 40%) 0vh, lighten($gray, 32%) 0.5vh) 42vh 54.5vh / 26vh 0.25vh no-repeat,
-      linear-gradient( lighten($gray, 40%) 0vh, lighten($gray, 32%) 0.5vh) 42vh 55.5vh / 26vh 0.25vh no-repeat,
-      linear-gradient( lighten($gray, 40%) 0vh, lighten($gray, 32%) 0.5vh) 42vh 56.5vh / 26vh 0.25vh no-repeat,
-      linear-gradient( darken($white, 35%) 0vh, darken($white, 25%) 6vh, transparent 10vh) 41vh 54vh / 28vh 4vh no-repeat,
+      linear-gradient( lighten($gray, 40%) 0vmin, lighten($gray, 32%) 0.5vmin) 42vmin 54.5vmin / 26vmin 0.25vmin no-repeat,
+      linear-gradient( lighten($gray, 40%) 0vmin, lighten($gray, 32%) 0.5vmin) 42vmin 55.5vmin / 26vmin 0.25vmin no-repeat,
+      linear-gradient( lighten($gray, 40%) 0vmin, lighten($gray, 32%) 0.5vmin) 42vmin 56.5vmin / 26vmin 0.25vmin no-repeat,
+      linear-gradient( darken($white, 35%) 0vmin, darken($white, 25%) 6vmin, transparent 10vmin) 41vmin 54vmin / 28vmin 4vmin no-repeat,
       
-    /* base */ linear-gradient( darken($gray, 45%) 0vh, darken($gray, 25%) 4vh, transparent 6vh) 33.5vh 54vh / 42.25vh 4.75vh no-repeat,
-    /* base */ linear-gradient( $gray 20vh, darken($gray, 10%) 30vh, transparent 3vh) 10vh 20vh / 90vh 50vh no-repeat;
+    /* base */ linear-gradient( darken($gray, 45%) 0vmin, darken($gray, 25%) 4vmin, transparent 6vmin) 33.5vmin 54vmin / 42.25vmin 4.75vmin no-repeat,
+    /* base */ linear-gradient( $gray 20vmin, darken($gray, 10%) 30vmin, transparent 3vmin) 10vmin 20vmin / 90vmin 50vmin no-repeat;
 }
   
 div.splash:after {
-    width: 100vh;
-    height: 100vh;
+    width: 100vmin;
+    height: 100vmin;
     z-index: 999;
     margin: 0 auto;
     display: flex;
     content: 'Splash';
     font-family: 'Special Elite', cursive;
-    font-size: 3vh;
-    padding-top: 19vh;
+    font-size: 3vmin;
+    padding-top: 19vmin;
     justify-content: center;
     align-items: center;
     background:
 
       /* lines and such */
-      linear-gradient( lighten($gray, 32%) 0vh, lighten($gray, 32%) 0.5vh) 69vh 57.75vh / 1.25vh 2.75vh no-repeat,
-      linear-gradient( lighten($gray, 40%) 0vh, lighten($gray, 32%) 0.5vh) 35vh 58vh / 33vh 0.25vh no-repeat,
-      linear-gradient( lighten($gray, 40%) 0vh, lighten($gray, 32%) 0.5vh) 35vh 59vh / 33vh 0.25vh no-repeat,
-      linear-gradient( lighten($gray, 40%) 0vh, lighten($gray, 32%) 0.5vh) 35vh 60vh / 33vh 0.25vh no-repeat,
-      linear-gradient( darken($white, 35%) 0vh, darken($white, 25%) 6vh, transparent 10vh) 33.75vh 57vh / 38vh 4vh no-repeat,
+      linear-gradient( lighten($gray, 32%) 0vmin, lighten($gray, 32%) 0.5vmin) 69vmin 57.75vmin / 1.25vmin 2.75vmin no-repeat,
+      linear-gradient( lighten($gray, 40%) 0vmin, lighten($gray, 32%) 0.5vmin) 35vmin 58vmin / 33vmin 0.25vmin no-repeat,
+      linear-gradient( lighten($gray, 40%) 0vmin, lighten($gray, 32%) 0.5vmin) 35vmin 59vmin / 33vmin 0.25vmin no-repeat,
+      linear-gradient( lighten($gray, 40%) 0vmin, lighten($gray, 32%) 0.5vmin) 35vmin 60vmin / 33vmin 0.25vmin no-repeat,
+      linear-gradient( darken($white, 35%) 0vmin, darken($white, 25%) 6vmin, transparent 10vmin) 33.75vmin 57vmin / 38vmin 4vmin no-repeat,
       
-    /* base */ linear-gradient( darken($gray, 65%) 0vh, darken($gray, 25%) 6vh, transparent 14vh) 32.25vh 55.5vh / 46vh 7vh no-repeat,
+    /* base */ linear-gradient( darken($gray, 65%) 0vmin, darken($gray, 25%) 6vmin, transparent 14vmin) 32.25vmin 55.5vmin / 46vmin 7vmin no-repeat,
 }
   

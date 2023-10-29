@@ -1,0 +1,705 @@
+
+$white: #FFFFFF;
+$black: #333333;
+$red: #c31c23;
+$blue: #31879e;
+$tan: #A68F7C;
+$pale-blue: #A9D9ED;
+$light-blue: #D7F1F2;
+$night-sky-blue: #37758D;
+$brown: #b1977b;
+$dark-brown: #645251;
+$green: #177172;
+$yellow: #F4D31A;
+$dark-aqua: #4A877F;
+$aqua: #2C9A97;
+$gray: #1c3d49;
+$pine-green: #177172;
+
+
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vmin;
+  position: relative;
+  display: flex;
+  transform: scale(0.9);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(180deg, darken($pale-blue, 30%) 15%, $white 100%);
+}
+
+div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+
+div.snowglobe {
+    width: 90vmin;
+    height: 90vmin;
+    justify-self: center;
+    align-self: center;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid 10px $pale-blue;
+    background: 
+      
+
+    //Red house bushes
+    radial-gradient(circle, darken($light-blue, 15%), 2vmin, transparent 2vmin) 56.5vmin 61vmin / 6vmin 6vmin no-repeat,
+    radial-gradient(circle, darken($light-blue, 15%), 2vmin, transparent 2vmin) 58.5vmin 60.5vmin / 6vmin 6vmin no-repeat,
+    radial-gradient(circle, darken($light-blue, 15%), 2vmin, transparent 2vmin) 63.5vmin 61vmin / 6vmin 6vmin no-repeat,
+    radial-gradient(circle, darken($light-blue, 15%), 2vmin, transparent 2vmin) 61.5vmin 60vmin / 6vmin 6vmin no-repeat,
+    radial-gradient(circle, darken($light-blue, 15%), 2vmin, transparent 2vmin) 65.5vmin 63vmin / 6vmin 6vmin no-repeat,
+    radial-gradient(circle, darken($light-blue, 15%), 2vmin, transparent 2vmin) 55.5vmin 63vmin / 6vmin 6vmin no-repeat, 
+    linear-gradient(darken($light-blue, 15%), 5vmin, transparent 5vmin) 58vmin 64vmin / 10vmin 4vmin no-repeat,  
+      
+    /*** RED HOUSE ***/
+    // Red house round windows
+    radial-gradient(circle,  $dark-aqua 1vmin, $white 1vmin,  $white 1.125vmin, transparent 1.125vmin) 44.75vmin 57vmin / 2.25vmin 2.25vmin no-repeat,    
+    // Red house left front window
+    linear-gradient(90deg, $white .25vmin, transparent .25vmin, transparent 1.375vmin, $white 1.375vmin, $white 1.5vmin, transparent 1.625vmin, transparent 2.75vmin, $white 2.75vmin, $white 3vmin, transparent 3vmin) 42vmin 61.5vmin / 3vmin 4vmin no-repeat,   
+      linear-gradient($white .25vmin, $yellow .25vmin, $yellow 1.875vmin, $white 1.875vmin, $white 2vmin, $yellow 2.175vmin, $yellow 3.625vmin, $white 3.625vmin, $white 4vmin, transparent 4vmin) 42vmin 61.5vmin / 2.75vmin 4vmin no-repeat,     
+    // Red house right front window
+    linear-gradient(90deg, $white .25vmin, transparent .25vmin, transparent 1.375vmin, $white 1.375vmin, $white 1.5vmin, transparent 1.625vmin, transparent 2.75vmin, $white 2.75vmin, $white 3vmin, transparent 3vmin) 47vmin 61.5vmin / 3vmin 4vmin no-repeat,   
+    linear-gradient($white .25vmin, $dark-aqua .25vmin, $dark-aqua 1.875vmin, $white 1.875vmin, $white 2vmin, $dark-aqua 2.175vmin, $dark-aqua 3.625vmin, $white 3.625vmin, $white 4vmin, transparent 4vmin) 47vmin 61.5vmin / 2.75vmin 4vmin no-repeat,   
+      
+      // Red house side window 
+    linear-gradient(90deg, $white .25vmin, transparent .25vmin, transparent 1.375vmin, $white 1.375vmin, $white 1.5vmin, transparent 1.625vmin, transparent 2.75vmin, $white 2.75vmin, $white 3vmin, transparent 3vmin) 53.5vmin 61.5vmin / 3vmin 4vmin no-repeat,   
+    linear-gradient($white .25vmin, $dark-aqua .25vmin, $dark-aqua 1.875vmin, $white 1.875vmin, $white 2vmin, $dark-aqua 2.175vmin, $dark-aqua 3.625vmin, $white 3.625vmin, $white 4vmin, transparent 4vmin) 53.5vmin 61.5vmin / 2.75vmin 4vmin no-repeat, 
+      
+      /// Red house chimney
+      linear-gradient(90deg, $red .75vmin, lighten($red, 15%) 1.5vmin, transparent 1.5vmin) 53vmin 54vmin / 3vmin 4vmin no-repeat,
+      // Red house front wall
+      conic-gradient(from 130deg, $red 100deg, transparent 0) 40vmin 43vmin / 12vmin 25vmin no-repeat,
+      // Red house side wall
+      conic-gradient(from 89deg, lighten($red, 15%) 93deg, transparent 0) 46vmin 54vmin / 12vmin 14vmin no-repeat,
+      // Red house snowy roof
+      conic-gradient(from 130deg, lighten($pale-blue, 10%) 140deg, transparent 0) 46vmin 48vmin / 12vmin 14vmin no-repeat,
+      // Red house snowy roof
+      conic-gradient(from 180deg, lighten($pale-blue, 10%) 50deg, transparent 0) 40vmin 47.5vmin / 12vmin 14vmin no-repeat,
+      
+
+
+    //Green house round-tree 
+    radial-gradient(ellipse,  darken($light-blue, 15%) 4vmin, transparent 4vmin) 49vmin 38vmin / 15vmin 18vmin no-repeat,  
+    linear-gradient($dark-brown 100%, transparent 100%) 56vmin 47vmin / .75vmin 10vmin no-repeat,  
+
+
+    /*** GREEN HOUSE ***/
+        // Green house attic windows
+    radial-gradient(ellipse at bottom,  $dark-aqua 1vmin, $white 1vmin,  $white 1.125vmin, transparent 1.125vmin) 64.5vmin 40vmin / 3vmin 2vmin no-repeat, 
+    linear-gradient($white .5vmin, transparent .5vmin) 64.875vmin 42vmin / 2.25vmin 2.25vmin no-repeat, 
+    // Green house right front top window
+    linear-gradient(90deg, $white .25vmin, transparent .25vmin, transparent 1.375vmin, $white 1.375vmin, $white 1.5vmin, transparent 1.625vmin, transparent 2.75vmin, $white 2.75vmin, $white 3vmin, transparent 3vmin) 67vmin 45vmin / 3vmin 4vmin no-repeat,   
+      linear-gradient($white .25vmin, $blue .25vmin, $blue 1.875vmin, $white 1.875vmin, $white 2vmin, $blue 2.175vmin, $blue 3.625vmin, $white 3.625vmin, $white 4vmin, transparent 4vmin) 67vmin 45vmin / 2.75vmin 4vmin no-repeat,      
+    // Green house left front top window
+    linear-gradient(90deg, $white .25vmin, transparent .25vmin, transparent 1.375vmin, $white 1.375vmin, $white 1.5vmin, transparent 1.625vmin, transparent 2.75vmin, $white 2.75vmin, $white 3vmin, transparent 3vmin) 62vmin 45vmin / 3vmin 4vmin no-repeat,   
+      linear-gradient($white .25vmin, $yellow .25vmin, $yellow 1.875vmin, $white 1.875vmin, $white 2vmin, $yellow 2.175vmin, $yellow 3.625vmin, $white 3.625vmin, $white 4vmin, transparent 4vmin) 62vmin 45vmin / 2.75vmin 4vmin no-repeat,    
+    // Green house left front bottom window
+    linear-gradient(90deg, $white .25vmin, transparent .25vmin, transparent 1.375vmin, $white 1.375vmin, $white 1.5vmin, transparent 1.625vmin, transparent 2.75vmin, $white 2.75vmin, $white 3vmin, transparent 3vmin) 62vmin 52vmin / 3vmin 4vmin no-repeat,   
+      linear-gradient($white .25vmin, $blue .25vmin, $blue 1.875vmin, $white 1.875vmin, $white 2vmin, $blue 2.175vmin, $blue 3.625vmin, $white 3.625vmin, $white 4vmin, transparent 4vmin) 62vmin 52vmin / 2.75vmin 4vmin no-repeat,     
+    // Green house side window top
+    linear-gradient(90deg, $white .25vmin, transparent .25vmin, transparent 1.375vmin, $white 1.375vmin, $white 1.5vmin, transparent 1.625vmin, transparent 2.75vmin, $white 2.75vmin, $white 3vmin, transparent 3vmin) 73.5vmin 45vmin / 3vmin 4vmin no-repeat,   
+      linear-gradient($white .25vmin, $yellow .25vmin, $yellow 1.875vmin, $white 1.875vmin, $white 2vmin, $yellow 2.175vmin, $yellow 3.625vmin, $white 3.625vmin, $white 4vmin, transparent 4vmin) 73.5vmin 45vmin / 2.75vmin 4vmin no-repeat,  
+    // Green house side window bottom
+    linear-gradient(90deg, $white .25vmin, transparent .25vmin, transparent 1.375vmin, $white 1.375vmin, $white 1.5vmin, transparent 1.625vmin, transparent 2.75vmin, $white 2.75vmin, $white 3vmin, transparent 3vmin) 73.5vmin 52vmin / 3vmin 4vmin no-repeat,   
+      linear-gradient($white .25vmin, $yellow .25vmin, $yellow 1.875vmin, $white 1.875vmin, $white 2vmin, $yellow 2.175vmin, $yellow 3.625vmin, $white 3.625vmin, $white 4vmin, transparent 4vmin) 73.5vmin 52vmin / 2.75vmin 4vmin no-repeat,  
+      
+    // Green house door      
+    radial-gradient(ellipse at bottom,  $blue .25vmin, transparent .25vmin) 67.25vmin 55vmin / .5vmin .5vmin no-repeat, 
+    linear-gradient(90deg, $white .25vmin, transparent .25vmin, transparent 1.375vmin, $white 1.375vmin, $white 1.5vmin, transparent 1.5vmin, transparent 2.625vmin, $white 2.625vmin, $white 3vmin, transparent 3vmin) 67vmin 52vmin / 3vmin 4vmin no-repeat, 
+      linear-gradient($white .5vmin, $blue .5vmin, $blue 1.5vmin, $white 1.5vmin, $white 1.625vmin, $blue 1.625vmin, $blue 2.625vmin, $white 2.625vmin, $white 5.5vmin, darken($blue, 10%) 5.5vmin, darken($blue, 10%) 6vmin, transparent 6vmin) 67vmin 52vmin / 3vmin 6vmin no-repeat,    
+      
+      /// Green house chimney
+      linear-gradient(90deg, $green .75vmin, lighten($green, 15%) 1.5vmin, transparent 1.5vmin) 73vmin 38vmin / 3vmin 4vmin no-repeat,
+      // Green house front wall
+      conic-gradient(from 130deg, $green 100deg, transparent 0) 60vmin 18vmin / 12vmin 40vmin no-repeat,
+      // Green house side wall
+      conic-gradient(from 89deg, lighten($green, 15%) 93deg, transparent 0) 66vmin 29vmin / 12vmin 29vmin no-repeat,
+      // Green house snowy roof
+      conic-gradient(from 130deg, lighten($pale-blue, 10%) 140deg, transparent 0) 66vmin 30vmin / 12vmin 14vmin no-repeat,
+      // Green house snowy roof
+      conic-gradient(from 180deg, lighten($pale-blue, 10%) 50deg, transparent 0) 60vmin 29.75vmin / 12.25vmin 14vmin no-repeat,
+      
+
+    /*** BLUE HOUSE ***/
+    // Blue house attic windows
+    radial-gradient(ellipse at bottom,  $dark-aqua 1vmin, $white 1vmin,  $white 1.125vmin, transparent 1.125vmin) 19.75vmin 47.5vmin / 3vmin 2vmin no-repeat, 
+    linear-gradient($white .5vmin, transparent .5vmin) 20vmin 49.625vmin / 2.25vmin 2.25vmin no-repeat,   
+    // Blue house left front window
+    linear-gradient(90deg, $white .25vmin, transparent .25vmin, transparent 1.375vmin, $white 1.375vmin, $white 1.5vmin, transparent 1.625vmin, transparent 2.75vmin, $white 2.75vmin, $white 3vmin, transparent 3vmin) 17vmin 52vmin / 3vmin 4vmin no-repeat,   
+      linear-gradient($white .25vmin, $blue .25vmin, $blue 1.875vmin, $white 1.875vmin, $white 2vmin, $blue 2.175vmin, $blue 3.625vmin, $white 3.625vmin, $white 4vmin, transparent 4vmin) 17vmin 52vmin / 2.75vmin 4vmin no-repeat,     
+    // Blue house side window
+    linear-gradient(90deg, $white .25vmin, transparent .25vmin, transparent 1.375vmin, $white 1.375vmin, $white 1.5vmin, transparent 1.625vmin, transparent 2.75vmin, $white 2.75vmin, $white 3vmin, transparent 3vmin) 11.125vmin 52vmin / 3vmin 4vmin no-repeat,   
+      linear-gradient($white .25vmin, $yellow .25vmin, $yellow 1.875vmin, $white 1.875vmin, $white 2vmin, $yellow 2.175vmin, $yellow 3.625vmin, $white 3.625vmin, $white 4vmin, transparent 4vmin) 11.25vmin 52vmin / 2.75vmin 4vmin no-repeat,  
+      
+    // Blue house door      
+    radial-gradient(ellipse at bottom,  $blue .25vmin, transparent .25vmin) 22.25vmin 55vmin / .5vmin .5vmin no-repeat, 
+    linear-gradient($white .5vmin, transparent .5vmin) 20vmin 49.625vmin / 2.25vmin 2.25vmin no-repeat, 
+    linear-gradient(90deg, $white .25vmin, transparent .25vmin, transparent 1.375vmin, $white 1.375vmin, $white 1.5vmin, transparent 1.5vmin, transparent 2.625vmin, $white 2.625vmin, $white 3vmin, transparent 3vmin) 22vmin 52vmin / 3vmin 4vmin no-repeat, 
+      linear-gradient($white .5vmin, $blue .5vmin, $blue 1.5vmin, $white 1.5vmin, $white 1.625vmin, $blue 1.625vmin, $blue 2.625vmin, $white 2.625vmin, $white 5.5vmin, darken($blue, 10%) 5.5vmin, darken($blue, 10%) 6vmin, transparent 6vmin) 22vmin 52vmin / 3vmin 6vmin no-repeat,     
+      conic-gradient(from 120deg, darken($blue, 10%), 120deg, transparent 0) 20.9vmin 48.5vmin / 5vmin 4vmin no-repeat,
+      
+      
+      /// Blue house chimney
+      linear-gradient(90deg, $blue .75vmin, lighten($blue, 15%) 1.5vmin, transparent 1.5vmin) 14vmin 45vmin / 3vmin 4vmin no-repeat,
+      // Blue house front wall
+      conic-gradient(from 130deg, lighten($blue, 15%) 100deg, transparent 0) 15vmin 33vmin / 12vmin 25vmin no-repeat,
+      // Blue house side wall
+      conic-gradient(from 180deg, $blue 91deg, transparent 0) 10vmin 44vmin / 12vmin 14vmin no-repeat,
+      // Blue house snowy roof
+      conic-gradient(from 130deg, lighten($pale-blue, 15%) 140deg, transparent 0) 16vmin 38.5vmin / 12vmin 14vmin no-repeat,
+      // Blue house snowy roof
+      conic-gradient(from 180deg, lighten($pale-blue, 15%) 50deg, transparent 0) 10vmin 38.5vmin / 12vmin 14vmin no-repeat,
+      
+      
+      //Blue house tree 
+      conic-gradient(from -65deg, $pine-green 30deg, transparent 0)25vmin 33vmin / 8vmin 20vmin no-repeat,
+      conic-gradient(from 65deg, transparent 330deg, $pine-green 0)17vmin 33vmin / 8vmin 20vmin no-repeat,
+      conic-gradient(from -65deg, $pine-green 30deg, transparent 0)25vmin 36.5vmin / 10vmin 20vmin no-repeat,
+      conic-gradient(from 65deg, transparent 330deg, $pine-green 0)15.25vmin 36.5vmin / 10vmin 20vmin no-repeat,
+      conic-gradient(from -65deg, $pine-green 30deg, transparent 0)25vmin 41vmin / 13vmin 20vmin no-repeat,
+      conic-gradient(from 65deg, transparent 330deg, $pine-green 0)12.25vmin 41vmin / 13vmin 20vmin no-repeat,
+      conic-gradient(from 145deg, $pine-green 70deg, transparent 0)15vmin 35vmin / 20vmin 20vmin no-repeat,
+
+      
+
+    //Yellow house round-tree 
+    radial-gradient(ellipse,  $light-blue 4vmin, transparent 4vmin) 24vmin 33vmin / 15vmin 18vmin no-repeat,  
+    linear-gradient($dark-brown 100%, transparent 100%) 31vmin 43vmin / .75vmin 10vmin no-repeat,  
+
+
+      
+    /*** Yellow HOUSE ***/
+       
+    // Yellow house left front window
+    linear-gradient(90deg, $white .25vmin, transparent .25vmin, transparent 1.375vmin, $white 1.375vmin, $white 1.5vmin, transparent 1.5vmin, transparent 2.625vmin, $white 2.625vmin, $white 2.75vmin, transparent 2.75vmin, transparent 3.825vmin, $white 3.825vmin) 34vmin 39vmin / 4vmin 4vmin no-repeat,   
+      linear-gradient($white .25vmin, $yellow .25vmin, $yellow 1.875vmin, $white 1.875vmin, $white 2vmin, $yellow 2.175vmin, $yellow 3.625vmin, $white 3.625vmin, $white 4vmin, transparent 4vmin) 34vmin 39vmin / 4vmin 4vmin no-repeat,    
+      
+    // Yellow house right front window
+    linear-gradient(90deg, $white .25vmin, transparent .25vmin, transparent 1.375vmin, $white 1.375vmin) 42.5vmin 39vmin / 1.5vmin 4vmin no-repeat, 
+      linear-gradient($white .25vmin, $blue .25vmin, $blue 1.875vmin, $white 1.875vmin, $white 2vmin, $blue 2.175vmin, $blue 3.625vmin, $white 3.625vmin, $white 4vmin, transparent 4vmin) 42.5vmin 39vmin / 1.5vmin 4vmin no-repeat,   
+
+    // Yellow house door      
+    radial-gradient(ellipse at bottom,  $blue .25vmin, transparent .25vmin) 39vmin 42vmin / .5vmin .5vmin no-repeat, 
+    linear-gradient(90deg, $white .25vmin, transparent .25vmin, transparent 1.375vmin, $white 1.375vmin, $white 1.5vmin, transparent 1.5vmin, transparent 2.625vmin, $white 2.625vmin, $white 3vmin, transparent 3vmin) 38.75vmin 39vmin / 3vmin 4vmin no-repeat, 
+      linear-gradient($white .5vmin, $blue .5vmin, $blue 1.5vmin, $white 1.5vmin, $white 1.625vmin, $blue 1.625vmin, $blue 2.625vmin, $white 2.625vmin, $white 5.5vmin, darken($blue, 10%) 5.5vmin, darken($blue, 10%) 6vmin, transparent 6vmin) 38.75vmin 39vmin / 3vmin 6vmin no-repeat,    
+    // Yellow house side window
+    linear-gradient(90deg, $white .25vmin, transparent .25vmin, transparent 1.375vmin, $white 1.375vmin, $white 1.5vmin, transparent 1.625vmin, transparent 2.75vmin, $white 2.75vmin, $white 3vmin, transparent 3vmin) 46.75vmin 39vmin / 3vmin 4vmin no-repeat, 
+      linear-gradient($white .25vmin, $yellow .25vmin, $yellow 1.875vmin, $white 1.875vmin, $white 2vmin, $yellow 2.175vmin, $yellow 3.625vmin, $white 3.625vmin, $white 4vmin, transparent 4vmin) 46.75vmin 39vmin / 2.75vmin 4vmin no-repeat,  
+    // Yellow house steeple window
+    linear-gradient(90deg, $white .25vmin, transparent .25vmin, transparent 1.375vmin, $white 1.375vmin, $white 1.5vmin, transparent 1.625vmin, transparent 2.75vmin, $white 2.75vmin, $white 3vmin, transparent 3vmin) 39vmin 34.25vmin / 3vmin 2.875vmin no-repeat, 
+      linear-gradient($white .25vmin, $yellow .25vmin, $yellow 1.375vmin, $white 1.375vmin, $white 1.5vmin, $yellow 1.5vmin, $yellow 2.625vmin, $white 2.625vmin, $white 4vmin, transparent 4vmin) 39vmin 34.25vmin / 2.75vmin 2.875vmin no-repeat,  
+      
+      
+      // Yellow house steeple
+      conic-gradient(from 130deg, $tan, 100deg, transparent 0) 38vmin 27.5vmin / 5vmin 10vmin no-repeat,
+      conic-gradient(from 215deg, lighten($tan, 15%) 55deg, transparent 0) 42.5vmin 31.5vmin / 6vmin 6vmin no-repeat,
+      // Yellow house steeple roof
+      conic-gradient(from 130deg, lighten($pale-blue, 10%) 140deg, transparent 0) 40.5vmin 28.25vmin / 6vmin 8vmin no-repeat,
+      conic-gradient(from 180deg, lighten($pale-blue, 10%) 50deg, transparent 0) 36.5vmin 27vmin / 8vmin 10vmin no-repeat,
+      
+    
+      // Yellow house front wall
+      conic-gradient(from 140deg, lighten($tan, 15%) 80deg, transparent 0) 45vmin 25vmin / 6vmin 20vmin no-repeat,
+      // Yellow house side wall
+      conic-gradient(from 180deg, $tan 90deg, transparent 0) 33vmin 31vmin / 25vmin 14vmin no-repeat,
+      // Yellow house snowy roof
+      conic-gradient(from 140deg, lighten($pale-blue, 15%) 130deg, transparent 0) 37vmin 30.5vmin / 23vmin 8vmin no-repeat,
+      // Yellow house snowy roof
+      conic-gradient(from 180deg, lighten($pale-blue, 15%) 50deg, transparent 0) 33vmin 30.5vmin / 8vmin 8vmin no-repeat,
+      
+      
+
+    
+      // Bluer now
+      radial-gradient(ellipse, $light-blue 35vmin, transparent 35vmin) -140vmin 12vmin / 300vmin 150vmin no-repeat,
+      radial-gradient(ellipse, $light-blue 30vmin, transparent 30vmin) -65vmin 9vmin / 300vmin 150vmin no-repeat,
+      radial-gradient(ellipse, $light-blue 25vmin, transparent 25vmin) -105vmin 15vmin / 300vmin 150vmin no-repeat,
+      
+      // Snow
+      radial-gradient(ellipse, $white 45vmin, transparent 45vmin) -105vmin -10vmin / 300vmin 150vmin no-repeat,
+
+        //Yellow house tree 1
+      conic-gradient(from -65deg, lighten($night-sky-blue, 5%) 30deg, transparent 0) 54vmin 23vmin / 7vmin 20vmin no-repeat,
+      conic-gradient(from 65deg, transparent 330deg, lighten($night-sky-blue, 5%) 0) 47vmin 23vmin / 7vmin 20vmin no-repeat,
+      conic-gradient(from -65deg, lighten($night-sky-blue, 5%) 30deg, transparent 0) 54vmin 26vmin / 9vmin 20vmin no-repeat,
+      conic-gradient(from 65deg, transparent 330deg, lighten($night-sky-blue, 5%) 0) 45vmin 26vmin / 9vmin 20vmin no-repeat,
+      conic-gradient(from -65deg, lighten($night-sky-blue, 5%) 30deg, transparent 0) 55vmin 29.5vmin / 10vmin 20vmin no-repeat,
+      conic-gradient(from 65deg, transparent 330deg, lighten($night-sky-blue, 5%) 0) 43.25vmin 29.5vmin / 10vmin 20vmin no-repeat,
+      conic-gradient(from 145deg, lighten($night-sky-blue, 5%) 70deg, transparent 0) 44vmin 23vmin / 20vmin 20vmin no-repeat,
+
+      //Yellow house tree 2
+      conic-gradient(from -65deg, lighten($night-sky-blue, 5%) 30deg, transparent 0) 64vmin 27vmin / 7vmin 20vmin no-repeat,
+      conic-gradient(from 65deg, transparent 330deg, lighten($night-sky-blue, 5%) 0) 57vmin 27vmin / 7vmin 20vmin no-repeat,
+      conic-gradient(from -65deg, lighten($night-sky-blue, 5%) 30deg, transparent 0) 64vmin 30.5vmin / 10vmin 20vmin no-repeat,
+      conic-gradient(from 65deg, transparent 330deg, lighten($night-sky-blue, 5%) 0) 54vmin 30.5vmin / 10vmin 20vmin no-repeat,
+      conic-gradient(from -65deg, lighten($night-sky-blue, 5%) 30deg, transparent 0) 65vmin 33.5vmin / 10vmin 20vmin no-repeat,
+      conic-gradient(from 65deg, transparent 330deg, lighten($night-sky-blue, 5%) 0) 53.25vmin 33.5vmin / 10vmin 20vmin no-repeat,
+      conic-gradient(from 145deg, lighten($night-sky-blue, 5%) 70deg, transparent 0) 54vmin 27vmin / 20vmin 20vmin no-repeat,
+
+      //Green house tree 2
+      conic-gradient(from -65deg, $pine-green 30deg, transparent 0) 81vmin 35vmin / 7vmin 20vmin no-repeat,
+      conic-gradient(from 65deg, transparent 330deg, $pine-green 0) 74vmin 35vmin / 7vmin 20vmin no-repeat,
+      conic-gradient(from -65deg, $pine-green 30deg, transparent 0) 81vmin 38.5vmin / 10vmin 20vmin no-repeat,
+      conic-gradient(from 65deg, transparent 330deg, $pine-green 0) 71vmin 38.5vmin / 10vmin 20vmin no-repeat,
+      conic-gradient(from -65deg, $pine-green 30deg, transparent 0) 82vmin 41.5vmin / 10vmin 20vmin no-repeat,
+      conic-gradient(from 65deg, transparent 330deg, $pine-green 0) 70.25vmin 41.5vmin / 10vmin 20vmin no-repeat,
+      conic-gradient(from 145deg, $pine-green 70deg, transparent 0) 71vmin 35vmin / 20vmin 20vmin no-repeat,
+
+
+
+
+      //Sky 
+      radial-gradient(ellipse, lighten($night-sky-blue, 20%) 5%, $night-sky-blue 100%),
+}
+
+div.snowglobe:before {
+    width: 90vmin;
+    height: 90vmin;
+    z-index: 9;
+    background:
+
+    radial-gradient(circle, darken($night-sky-blue, 10%) 3vmin, transparent 3vmin) 8vmin 76vmin / 6vmin 6vmin no-repeat,
+    radial-gradient(circle, darken($night-sky-blue, 5%)  3vmin, transparent 3vmin) 72vmin 76vmin / 6vmin 6vmin no-repeat, 
+    linear-gradient(darken($night-sky-blue, 10%) 10vmin, transparent 10vmin) 11vmin 76vmin / 18vmin 6vmin no-repeat,  
+    linear-gradient(lighten($night-sky-blue, 15%) 10vmin, transparent 10vmin) 29vmin 76vmin / 18vmin 6vmin no-repeat,  
+    linear-gradient(lighten($night-sky-blue, 25%) 10vmin, transparent 10vmin) 47vmin 76vmin / 18vmin 6vmin no-repeat, 
+    linear-gradient(darken($night-sky-blue, 5%) 10vmin, transparent 10vmin) 65vmin 76vmin / 11vmin 6vmin no-repeat, 
+
+    radial-gradient(circle, $night-sky-blue, 3vmin, transparent 3vmin) 5vmin 82vmin / 6vmin 6vmin no-repeat,
+    radial-gradient(circle, lighten($night-sky-blue, 15%) 3vmin, transparent 3vmin) 75vmin 82vmin / 6vmin 6vmin no-repeat, 
+    linear-gradient($night-sky-blue, 10vmin, transparent 10vmin) 8vmin 82vmin / 15vmin 6vmin no-repeat, 
+    linear-gradient(lighten($night-sky-blue, 10%), 10vmin, transparent 10vmin) 23vmin 82vmin / 15vmin 6vmin no-repeat, 
+    linear-gradient(darken($night-sky-blue, 5%), 10vmin, transparent 10vmin) 38vmin 82vmin / 20vmin 6vmin no-repeat, 
+    linear-gradient(lighten($night-sky-blue, 15%), 10vmin, transparent 10vmin) 53vmin 82vmin / 25vmin 6vmin no-repeat, 
+}
+
+div.snowglobe:after {
+
+  $snow: rgba(255,255,255, 0.2);
+  $snow2: rgba(255,255,255, 0.5);
+  $snow3: rgba(255,255,255, 0.8);
+  $snow-size: .75vmin;
+
+
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: 
+    
+    /* snow1 */ 
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+
+
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+
+
+
+    /* snow2 */ 
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow2 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    
+    
+    /* snow3 */ 
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+    radial-gradient(circle, $snow3 $snow-size, transparent $snow-size)  (random(100) + vmin) (random(70) + vmin)  / calc( #{$snow-size} * 2) calc( #{$snow-size} * 2)  no-repeat,
+
+}

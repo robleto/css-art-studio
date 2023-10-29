@@ -4,76 +4,47 @@
 *, *:before, *:after {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  width: 100vw;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: relative;
   z-index: 1;
-  -webkit-perspective: 700px;
-          perspective: 700px;
-  -webkit-perspective-origin: 0% 0%;
-          perspective-origin: 0% 0%;
-  background-color: #f2f2f2;
+  background-color: #FFFFFF;
 }
 
 div:before, div:after {
   display: block;
-  content: '';
+  content: "";
   position: absolute;
 }
 
 div.stripes {
-  width: 90vh;
-  height: 60vh;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-color: #fff;
-  border: solid 10px #f2f2f2;
+  width: 100vmin;
+  height: 100vmin;
+  top: 40vmin;
+  transform: scale(1.6);
+  background-color: #FFFFFF;
   position: relative;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  background: linear-gradient #fff, 0vh, #fff 100vh;
 }
 
 div.stripes:before {
-  width: 100vh;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  width: 100vmin;
+  height: 100vmin;
   display: flex;
-  -webkit-transform: rotateZ(-38deg) translateX(15vh) translateY(-40vh);
-          transform: rotateZ(-38deg) translateX(15vh) translateY(-40vh);
-  background: radial-gradient(ellipse, #fff 25vh, transparent 25vh) 32vh 13vh/49.5vh 59vh no-repeat, radial-gradient(ellipse, #ED4920 25vh, transparent 25vh) 28vh 11.5vh/50vh 61vh no-repeat, radial-gradient(ellipse, #fff 25vh, transparent 25vh) 26vh 13vh/49.5vh 60vh no-repeat, radial-gradient(ellipse, #EE854A 25vh, transparent 25vh) 22vh 11.5vh/50vh 62vh no-repeat, radial-gradient(ellipse, #fff 25vh, transparent 25vh) 20vh 13vh/50vh 62vh no-repeat, radial-gradient(ellipse, #F4D109 25vh, transparent 25vh) 16vh 11.5vh/50vh 64vh no-repeat, radial-gradient(ellipse, #fff 25vh, transparent 25vh) 14vh 13vh/50vh 64vh no-repeat, radial-gradient(ellipse, #5CC85A 25vh, transparent 25vh) 10vh 11.5vh/50vh 66vh no-repeat, radial-gradient(ellipse, #fff 25vh, transparent 25vh) 9vh 13vh/50vh 68vh no-repeat, radial-gradient(ellipse, #3F87CF 25vh, transparent 25vh) 5vh 11.5vh/50vh 70vh no-repeat, radial-gradient(ellipse, #fff 25vh, transparent 25vh) 3vh 11vh/50vh 72vh no-repeat, radial-gradient(ellipse, #845AC8 25vh, transparent 25vh) -1vh 11.5vh/50vh 72vh no-repeat;
+  transform: rotateZ(-38deg) translateX(15vmin) translateY(-40vmin);
+  background: radial-gradient(ellipse, #fff 25vmin, transparent 25.25vmin) 32vmin 13vmin/49.5vmin 59vmin no-repeat, radial-gradient(ellipse, #ED4920 25vmin, transparent 25.25vmin) 28vmin 11.5vmin/50vmin 61vmin no-repeat, radial-gradient(ellipse, #fff 25vmin, transparent 25.25vmin) 26vmin 13vmin/49.5vmin 60vmin no-repeat, radial-gradient(ellipse, #EE854A 25vmin, transparent 25.25vmin) 22vmin 11.5vmin/50vmin 62vmin no-repeat, radial-gradient(ellipse, #fff 25vmin, transparent 25.25vmin) 20vmin 13vmin/50vmin 62vmin no-repeat, radial-gradient(ellipse, #F4D109 25vmin, transparent 25.25vmin) 16vmin 11.5vmin/50vmin 64vmin no-repeat, radial-gradient(ellipse, #fff 25vmin, transparent 25.25vmin) 14vmin 13vmin/50vmin 64vmin no-repeat, radial-gradient(ellipse, #5CC85A 25vmin, transparent 25.25vmin) 10vmin 11.5vmin/50vmin 66vmin no-repeat, radial-gradient(ellipse, #fff 25vmin, transparent 25.25vmin) 9vmin 13vmin/50vmin 68vmin no-repeat, radial-gradient(ellipse, #3F87CF 25vmin, transparent 25.25vmin) 5vmin 11.5vmin/50vmin 70vmin no-repeat, radial-gradient(ellipse, #fff 25vmin, transparent 25.25vmin) 3vmin 11vmin/50vmin 72vmin no-repeat, radial-gradient(ellipse, #845AC8 25vmin, transparent 25.25vmin) -1vmin 11.5vmin/50vmin 72vmin no-repeat;
 }
 
 div.stripes:after {
-  width: 100vh;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  width: 100vmin;
+  height: 100vmin;
   display: flex;
-  -webkit-transform: rotateY(-5deg) rotateZ(35deg) translateX(-14.5vh) translateY(-28vh);
-          transform: rotateY(-5deg) rotateZ(35deg) translateX(-14.5vh) translateY(-28vh);
-  background: radial-gradient(ellipse, #fff 40vh, transparent 40vh) 50vh 60vh/84vh 41.5vh no-repeat, radial-gradient(ellipse, #845AC8 40vh, transparent 40vh) 50vh 57vh/80vh 40vh no-repeat, radial-gradient(ellipse, #fff 40vh, transparent 40vh) 50vh 50vh/84vh 52vh no-repeat, radial-gradient(ellipse, #3F87CF 40vh, transparent 40vh) 50vh 47vh/80vh 50vh no-repeat, radial-gradient(ellipse, #fff 40vh, transparent 40vh) 50vh 40vh/84vh 60vh no-repeat, radial-gradient(ellipse, #5CC85A 40vh, transparent 40vh) 50vh 37vh/80vh 60vh no-repeat, radial-gradient(ellipse, #fff 40vh, transparent 40vh) 50vh 30vh/84vh 65vh no-repeat, radial-gradient(ellipse, #F4D109 40vh, transparent 40vh) 50vh 27vh/80vh 65vh no-repeat, radial-gradient(ellipse, #fff 40vh, transparent 40vh) 50vh 20vh/84vh 70vh no-repeat, radial-gradient(ellipse, #EE854A 40vh, transparent 40vh) 50vh 17vh/80vh 70vh no-repeat, radial-gradient(ellipse, #fff 40vh, transparent 40vh) 50vh 10vh/84vh 75vh no-repeat, radial-gradient(ellipse, #ED4920 40vh, transparent 40vh) 50vh 7vh/80vh 75vh no-repeat;
+  transform: rotateZ(30deg) translateX(-12vmin) translateY(-30vmin);
+  background: radial-gradient(ellipse, #fff 40vmin, transparent 40.25vmin) 50vmin 60vmin/84vmin 41.5vmin no-repeat, radial-gradient(ellipse, #845AC8 40vmin, transparent 40.25vmin) 50vmin 57vmin/80vmin 40vmin no-repeat, radial-gradient(ellipse, #fff 40vmin, transparent 40.25vmin) 50vmin 50vmin/84vmin 52vmin no-repeat, radial-gradient(ellipse, #3F87CF 40vmin, transparent 40.25vmin) 50vmin 47vmin/80vmin 50vmin no-repeat, radial-gradient(ellipse, #fff 40vmin, transparent 40.25vmin) 50vmin 40vmin/84vmin 60vmin no-repeat, radial-gradient(ellipse, #5CC85A 40vmin, transparent 40.25vmin) 50vmin 37vmin/80vmin 60vmin no-repeat, radial-gradient(ellipse, #fff 40vmin, transparent 40.25vmin) 50vmin 30vmin/84vmin 65vmin no-repeat, radial-gradient(ellipse, #F4D109 40vmin, transparent 40.25vmin) 50vmin 27vmin/80vmin 65vmin no-repeat, radial-gradient(ellipse, #fff 40vmin, transparent 40.25vmin) 50vmin 20vmin/84vmin 70vmin no-repeat, radial-gradient(ellipse, #EE854A 40vmin, transparent 40.25vmin) 50vmin 17vmin/80vmin 70vmin no-repeat, radial-gradient(ellipse, #fff 40vmin, transparent 40.25vmin) 50vmin 10vmin/84vmin 75vmin no-repeat, radial-gradient(ellipse, #ED4920 40vmin, transparent 40.25vmin) 50vmin 7vmin/80vmin 75vmin no-repeat;
 }
-/*# sourceMappingURL=style.css.map */

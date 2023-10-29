@@ -18,11 +18,19 @@ body {
 }
 
 
+
 div.impossible {
     width: 100vmin;
     height: 100vmin;
-    margin: -10vmin auto 0;
+    top: -15vmin;
+    transform-origin: 46% 67%;
+    animation: rotatetriangle 20s linear infinite;
     position: relative;  
+    display: flex;
+    position: relative; 
+    justify-content: center;
+    align-items: center; 
+    margin: 0 auto;
     background: 
 
    /* bottom-dark */ linear-gradient(60deg, $black 0vmin, $black 38vmin, transparent 38vmin) 20vmin 77vmin / 80vmin 7.5vmin no-repeat,
@@ -38,4 +46,13 @@ div.impossible {
     /* left-dark */ linear-gradient(-60deg, transparent 18.5vmin, $black 18.5vmin, $black 32vmin, transparent 32vmin) 0vmin 35vmin / 50vmin 50vmin no-repeat,
 
     /* right-mid */ linear-gradient(60deg, transparent 18.5vmin, lighten($black, 40%) 18.5vmin, lighten($black, 40%) 25vmin, transparent 25vmin) 46.5vmin 34vmin / 50vmin 58vmin no-repeat;
+}
+
+ @keyframes rotatetriangle {
+   0% {
+     transform: rotate(0deg);
+   }
+  100% {
+     transform: rotate(360deg);
+   }
 }

@@ -31,7 +31,7 @@ div.monster {
   height: 90vmin;
   left: -2vmin;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-left: solid 60px #A89D53;
+  border-left: solid 10vmin #A89D53;
   position: relative;
   overflow: hidden;
   display: flex;

@@ -41,13 +41,14 @@
   --light-aqua: #C5DEE2;
 
   /*dimensions */
-  --width: 70vh;
-  --height: 80vh;
+  --width: 70vmin;
+  --height: 80vmin;
   --l-space: calc(var(--width) / 20);
   --wideness: calc(var(--width) - (2 * var(--l-space)));
 }
 
 body {
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -76,81 +77,81 @@ div.meaty {
 
     --meat-logo:
       
-      /* meat */  radial-gradient(circle, var(--off-white) 1vh, transparent 1vh)  28.25vh 8.5vh / 2vh 2vh  no-repeat,
-      /* meat */  radial-gradient(circle, var(--blood-red) 4vh, transparent 4vh)  25vh 5vh / 9vh 9vh  no-repeat,
-      /* meat */  radial-gradient(circle, var(--off-white) 4.5vh, transparent 4.5vh)  24.5vh 4.5vh / 10vh 10vh  no-repeat,
-      /* meat */  radial-gradient(ellipse, var(--tan) 7.75vh, transparent 7.75vh)  25vh 4.75vh / 15vh 9vh  no-repeat,
-      /* meat */  radial-gradient(circle, var(--off-white) 1vh, transparent 1vh) 41.5vh 7.5vh / 2vh 2vh  no-repeat,
-      /* meat */  radial-gradient(circle, var(--off-white) 1vh, transparent 1vh) 41.5vh 9.25vh / 2vh 2vh  no-repeat,
-    /* sign-base */ linear-gradient( var(--off-white) 100%, transparent 2vh) 38vh 8.75vh / 4vh 1.5vh no-repeat;
+      /* meat */  radial-gradient(circle, var(--off-white) 1vmin, transparent 1vmin)  28.25vmin 8.5vmin / 2vmin 2vmin  no-repeat,
+      /* meat */  radial-gradient(circle, var(--blood-red) 4vmin, transparent 4vmin)  25vmin 5vmin / 9vmin 9vmin  no-repeat,
+      /* meat */  radial-gradient(circle, var(--off-white) 4.5vmin, transparent 4.5vmin)  24.5vmin 4.5vmin / 10vmin 10vmin  no-repeat,
+      /* meat */  radial-gradient(ellipse, var(--tan) 7.75vmin, transparent 7.75vmin)  25vmin 4.75vmin / 15vmin 9vmin  no-repeat,
+      /* meat */  radial-gradient(circle, var(--off-white) 1vmin, transparent 1vmin) 41.5vmin 7.5vmin / 2vmin 2vmin  no-repeat,
+      /* meat */  radial-gradient(circle, var(--off-white) 1vmin, transparent 1vmin) 41.5vmin 9.25vmin / 2vmin 2vmin  no-repeat,
+    /* sign-base */ linear-gradient( var(--off-white) 100%, transparent 2vmin) 38vmin 8.75vmin / 4vmin 1.5vmin no-repeat;
   
     --roofsign:
-    /* sign-top */ radial-gradient(ellipse, var(--darker-brown) 14vh, transparent 14vh)  17vh -1vh / 36vh 26vh  no-repeat,
-    /* sign-base */ linear-gradient( var(--darker-brown) 100%, transparent 2vh) 10vh 14.5vh /50vh 7.5vh no-repeat,
-    /* sign-base */ linear-gradient( var(--light-brown) 100%, transparent 2vh) 10vh 13vh / 50vh 10vh no-repeat,
+    /* sign-top */ radial-gradient(ellipse, var(--darker-brown) 14vmin, transparent 14vmin)  17vmin -1vmin / 36vmin 26vmin  no-repeat,
+    /* sign-base */ linear-gradient( var(--darker-brown) 100%, transparent 2vmin) 10vmin 14.5vmin /50vmin 7.5vmin no-repeat,
+    /* sign-base */ linear-gradient( var(--light-brown) 100%, transparent 2vmin) 10vmin 13vmin / 50vmin 10vmin no-repeat,
 
 
-    /* sign-base-l */ linear-gradient(-65deg, var(--darker-brown) 7vh, transparent 7vh) 2.5vh 14.5vh / 10vh 7.5vh no-repeat,
-    /* sign-base-l */ linear-gradient(-65deg, var(--light-brown) 7vh, transparent 7vh) 0vh 13vh / 10vh 10vh no-repeat,
-    /* sign-base-l */ linear-gradient(65deg, var(--darker-brown) 7vh, transparent 7vh) 57.5vh 14.5vh / 10vh 7.5vh no-repeat,
-    /* sign-base-r */ linear-gradient(65deg, var(--light-brown) 7vh, transparent 7vh) 60vh 13vh / 10vh 10vh no-repeat,
+    /* sign-base-l */ linear-gradient(-65deg, var(--darker-brown) 7vmin, transparent 7vmin) 2.5vmin 14.5vmin / 10vmin 7.5vmin no-repeat,
+    /* sign-base-l */ linear-gradient(-65deg, var(--light-brown) 7vmin, transparent 7vmin) 0vmin 13vmin / 10vmin 10vmin no-repeat,
+    /* sign-base-l */ linear-gradient(65deg, var(--darker-brown) 7vmin, transparent 7vmin) 57.5vmin 14.5vmin / 10vmin 7.5vmin no-repeat,
+    /* sign-base-r */ linear-gradient(65deg, var(--light-brown) 7vmin, transparent 7vmin) 60vmin 13vmin / 10vmin 10vmin no-repeat,
 
-    /* button1 */ radial-gradient(circle, var(--light-brown) 1vh, transparent 1vh)  12vh 23.5vh / 2vh 2vh  no-repeat,
-    /* button1 */ radial-gradient(circle, var(--light-brown) 1vh, transparent 1vh)  26vh 23.5vh / 2vh 2vh  no-repeat,
-    /* button1 */ radial-gradient(circle, var(--light-brown) 1vh, transparent 1vh)  40vh 23.5vh / 2vh 2vh  no-repeat,
-    /* button1 */ radial-gradient(circle, var(--light-brown) 1vh, transparent 1vh)  54vh 23.5vh / 2vh 2vh  no-repeat,
-    /* sign-bottom */ linear-gradient( var(--darkest-brown) 100%, transparent 2vh) 2vh 23vh / 66vh 3vh no-repeat,
-    /* sign-top */ radial-gradient(ellipse, var(--light-brown) 15vh, transparent 15vh)  15vh -3vh / 40vh 30vh  no-repeat;
+    /* button1 */ radial-gradient(circle, var(--light-brown) 1vmin, transparent 1vmin)  12vmin 23.5vmin / 2vmin 2vmin  no-repeat,
+    /* button1 */ radial-gradient(circle, var(--light-brown) 1vmin, transparent 1vmin)  26vmin 23.5vmin / 2vmin 2vmin  no-repeat,
+    /* button1 */ radial-gradient(circle, var(--light-brown) 1vmin, transparent 1vmin)  40vmin 23.5vmin / 2vmin 2vmin  no-repeat,
+    /* button1 */ radial-gradient(circle, var(--light-brown) 1vmin, transparent 1vmin)  54vmin 23.5vmin / 2vmin 2vmin  no-repeat,
+    /* sign-bottom */ linear-gradient( var(--darkest-brown) 100%, transparent 2vmin) 2vmin 23vmin / 66vmin 3vmin no-repeat,
+    /* sign-top */ radial-gradient(ellipse, var(--light-brown) 15vmin, transparent 15vmin)  15vmin -3vmin / 40vmin 30vmin  no-repeat;
   
     --window:   
-    /* window-r-shadow1 */ linear-gradient(115deg, var(--dark-aqua) 6vh, transparent 6vh) 9.5vh 39vh / 12vh 15vh no-repeat,
-    /* window-r-shadow2 */ linear-gradient(-65deg, var(--dark-aqua) 5vh, transparent 5vh) 11.5vh 40vh / 12vh 15vh no-repeat,
-    /* window-l */ linear-gradient( var(--light-aqua) 100%, transparent 100%) 9.5vh 39vh / 14vh 16vh no-repeat, 
-    /* window-r-shadow1 */ linear-gradient(115deg, var(--dark-aqua) 6vh, transparent 6vh) 25.5vh 39vh / 12vh 15vh no-repeat,
-    /* window-r-shadow2 */ linear-gradient(-65deg, var(--dark-aqua) 5vh, transparent 5vh) 27.5vh 40vh / 12vh 15vh no-repeat,
-    /* window-r */ linear-gradient( var(--light-aqua) 100%, transparent 100%) 25.5vh 39vh / 14vh 16vh no-repeat, 
-    /* window-frames-r */ linear-gradient( var(--off-white) 100%, transparent 100%) 41.5vh 37vh / .5vh 20vh no-repeat,
-    /* window-frames-l */ linear-gradient( var(--shadow-gray) 100%, transparent 100%) 7vh 37vh / .5vh 20vh no-repeat,
-    /* window-frames */ linear-gradient( var(--light-brown) 100%, transparent 100%) 7.5vh 37vh / 34.5vh 20vh no-repeat,
-    /* upper-base */ linear-gradient( var(--off-white) 100%, transparent 100%) 7vh 35vh / 35vh 2vh no-repeat,
-    /* upper-base */ linear-gradient( var(--shadow-gray) 100%, transparent 100%) 7vh 34vh / 35vh 1vh no-repeat,
-    /* lower-base */ linear-gradient( var(--off-white) 100%, transparent 100%) 7vh 57vh / 35vh 2vh no-repeat,
-    /* lower-base */ linear-gradient( var(--shadow-gray) 100%, transparent 100%) 7vh 59vh / 35vh 1vh no-repeat,
-    /* lowest-base */ linear-gradient( var(--darkest-yellow) 100%, transparent 100%) 7vh 60vh / 35vh 2vh no-repeat;
+    /* window-r-shadow1 */ linear-gradient(115deg, var(--dark-aqua) 6vmin, transparent 6vmin) 9.5vmin 39vmin / 12vmin 15vmin no-repeat,
+    /* window-r-shadow2 */ linear-gradient(-65deg, var(--dark-aqua) 5vmin, transparent 5vmin) 11.5vmin 40vmin / 12vmin 15vmin no-repeat,
+    /* window-l */ linear-gradient( var(--light-aqua) 100%, transparent 100%) 9.5vmin 39vmin / 14vmin 16vmin no-repeat, 
+    /* window-r-shadow1 */ linear-gradient(115deg, var(--dark-aqua) 6vmin, transparent 6vmin) 25.5vmin 39vmin / 12vmin 15vmin no-repeat,
+    /* window-r-shadow2 */ linear-gradient(-65deg, var(--dark-aqua) 5vmin, transparent 5vmin) 27.5vmin 40vmin / 12vmin 15vmin no-repeat,
+    /* window-r */ linear-gradient( var(--light-aqua) 100%, transparent 100%) 25.5vmin 39vmin / 14vmin 16vmin no-repeat, 
+    /* window-frames-r */ linear-gradient( var(--off-white) 100%, transparent 100%) 41.5vmin 37vmin / .5vmin 20vmin no-repeat,
+    /* window-frames-l */ linear-gradient( var(--shadow-gray) 100%, transparent 100%) 7vmin 37vmin / .5vmin 20vmin no-repeat,
+    /* window-frames */ linear-gradient( var(--light-brown) 100%, transparent 100%) 7.5vmin 37vmin / 34.5vmin 20vmin no-repeat,
+    /* upper-base */ linear-gradient( var(--off-white) 100%, transparent 100%) 7vmin 35vmin / 35vmin 2vmin no-repeat,
+    /* upper-base */ linear-gradient( var(--shadow-gray) 100%, transparent 100%) 7vmin 34vmin / 35vmin 1vmin no-repeat,
+    /* lower-base */ linear-gradient( var(--off-white) 100%, transparent 100%) 7vmin 57vmin / 35vmin 2vmin no-repeat,
+    /* lower-base */ linear-gradient( var(--shadow-gray) 100%, transparent 100%) 7vmin 59vmin / 35vmin 1vmin no-repeat,
+    /* lowest-base */ linear-gradient( var(--darkest-yellow) 100%, transparent 100%) 7vmin 60vmin / 35vmin 2vmin no-repeat;
 
   
     --door:
-    /* open-sign */ linear-gradient(var(--white) 10vh, transparent 10vh) 49vh 50vh / 7vh 4vh no-repeat,
-    /* open-sign-frame */ linear-gradient(var(--darker-brown) 10vh, transparent 10vh) 48.75vh 49.75vh / 7.5vh 4.5vh no-repeat,
+    /* open-sign */ linear-gradient(var(--white) 10vmin, transparent 10vmin) 49vmin 50vmin / 7vmin 4vmin no-repeat,
+    /* open-sign-frame */ linear-gradient(var(--darker-brown) 10vmin, transparent 10vmin) 48.75vmin 49.75vmin / 7.5vmin 4.5vmin no-repeat,
 
-    /* open-sign-string */ linear-gradient(-45deg, var(--light-aqua) 2vh, transparent 2vh) 48.75vh 46.5vh / 4vh 4vh no-repeat,
-    /* open-sign-string */ linear-gradient(-45deg, var(--off-white) 2vh, transparent 2vh) 48.25vh 45.5vh / 4.5vh 4.5vh no-repeat,
-    /* open-sign-string */ linear-gradient(45deg, var(--light-aqua) 2vh, transparent 2vh) 52.75vh 46.5vh / 4vh 4vh no-repeat,
-    /* open-sign-string */ linear-gradient(45deg, var(--off-white) 2vh, transparent 2vh) 52.75vh 45.5vh / 4.5vh 4.5vh no-repeat,
+    /* open-sign-string */ linear-gradient(-45deg, var(--light-aqua) 2vmin, transparent 2vmin) 48.75vmin 46.5vmin / 4vmin 4vmin no-repeat,
+    /* open-sign-string */ linear-gradient(-45deg, var(--off-white) 2vmin, transparent 2vmin) 48.25vmin 45.5vmin / 4.5vmin 4.5vmin no-repeat,
+    /* open-sign-string */ linear-gradient(45deg, var(--light-aqua) 2vmin, transparent 2vmin) 52.75vmin 46.5vmin / 4vmin 4vmin no-repeat,
+    /* open-sign-string */ linear-gradient(45deg, var(--off-white) 2vmin, transparent 2vmin) 52.75vmin 45.5vmin / 4.5vmin 4.5vmin no-repeat,
 
-    /* door-top-shadow1 */ linear-gradient(115deg, var(--dark-aqua) 4vh, transparent 4vh) 48vh 45vh / 12vh 15vh no-repeat,
-    /* door-top-shadow2 */ linear-gradient(-65deg, var(--dark-aqua) 5vh, transparent 5vh) 45vh 45vh / 12vh 15vh no-repeat,
-    /* door-top */ linear-gradient( var(--light-aqua) 100%, transparent 100%) 48vh 45vh / 9vh 15vh no-repeat,
-    /* door-bottom */ linear-gradient( var(--darker-brown) 100%, transparent 100%) 48vh 64vh / 9vh 8vh no-repeat,
-    /* door-shadow-l */ linear-gradient( var(--shadow-gray) 100%, transparent 100%) 44.5vh 41vh / .5vh 34vh no-repeat,
-    /* door-shadow-r */ linear-gradient( var(--light-off-white) 100%, transparent 100%) 60vh 41vh / .5vh 34vh no-repeat,
-    /* door*/ linear-gradient( var(--darkest-brown) 100%, transparent 100%) 45vh 41vh / 15vh 34vh no-repeat;
+    /* door-top-shadow1 */ linear-gradient(115deg, var(--dark-aqua) 4vmin, transparent 4vmin) 48vmin 45vmin / 12vmin 15vmin no-repeat,
+    /* door-top-shadow2 */ linear-gradient(-65deg, var(--dark-aqua) 5vmin, transparent 5vmin) 45vmin 45vmin / 12vmin 15vmin no-repeat,
+    /* door-top */ linear-gradient( var(--light-aqua) 100%, transparent 100%) 48vmin 45vmin / 9vmin 15vmin no-repeat,
+    /* door-bottom */ linear-gradient( var(--darker-brown) 100%, transparent 100%) 48vmin 64vmin / 9vmin 8vmin no-repeat,
+    /* door-shadow-l */ linear-gradient( var(--shadow-gray) 100%, transparent 100%) 44.5vmin 41vmin / .5vmin 34vmin no-repeat,
+    /* door-shadow-r */ linear-gradient( var(--light-off-white) 100%, transparent 100%) 60vmin 41vmin / .5vmin 34vmin no-repeat,
+    /* door*/ linear-gradient( var(--darkest-brown) 100%, transparent 100%) 45vmin 41vmin / 15vmin 34vmin no-repeat;
   
     --storefront:
-    /* lower-base */ linear-gradient( var(--light-off-white) 100%, transparent 100%) var(--l-space) 71vh / var(--wideness) 4vh no-repeat,
-    /* lower-base-shadow */ linear-gradient( var(--off-white) 100%, transparent 100%) var(--l-space) 70vh / var(--wideness) 1vh no-repeat,
-    /* yellow-store */ linear-gradient( var(--dark-yellow) 100%, transparent 100%) var(--l-space) 30vh / var(--wideness) 40vh no-repeat;
+    /* lower-base */ linear-gradient( var(--light-off-white) 100%, transparent 100%) var(--l-space) 71vmin / var(--wideness) 4vmin no-repeat,
+    /* lower-base-shadow */ linear-gradient( var(--off-white) 100%, transparent 100%) var(--l-space) 70vmin / var(--wideness) 1vmin no-repeat,
+    /* yellow-store */ linear-gradient( var(--dark-yellow) 100%, transparent 100%) var(--l-space) 30vmin / var(--wideness) 40vmin no-repeat;
 
     --sidewalk:
-    /* upper-sidewalk */ linear-gradient( var(--dark-gray) 100%, transparent 100%) var(--l-space) 75vh / var(--wideness) 1vh no-repeat,
-    /* curb-crack1*/ linear-gradient( var(--dark-gray) 6rem, transparent 2vh) 20% 100% / 0.25vh 4vh no-repeat,
-    /* curb-crack2*/ linear-gradient( var(--dark-gray) 6rem, transparent 2vh) 40% 100% / 0.25vh 4vh no-repeat,
-    /* curb-crack3*/ linear-gradient( var(--dark-gray) 6rem, transparent 2vh) 60% 100% / 0.25vh 4vh no-repeat,
-    /* curb-crack4*/ linear-gradient( var(--dark-gray) 6rem, transparent 2vh) 80% 100% / 0.25vh 4vh no-repeat,
-    /* sidewalk */ linear-gradient( var(--lightest-gray) 100%, transparent 2vh) 3vh 76vh / 64vh 2vh no-repeat,
-    /* sidewalk */ linear-gradient(-45deg, var(--lightest-gray) 2vh, transparent 2vh) 0vh 76vh / 3vh 2vh no-repeat,
-    /* sidewalk */ linear-gradient(45deg, var(--lightest-gray) 2vh, transparent 2vh) 67vh 76vh / 3vh 2vh no-repeat,
-    /* curb */ linear-gradient( var(--light-gray) 100%, transparent 2vh) 0% 100% / 70vh 2vh no-repeat;
+    /* upper-sidewalk */ linear-gradient( var(--dark-gray) 100%, transparent 100%) var(--l-space) 75vmin / var(--wideness) 1vmin no-repeat,
+    /* curb-crack1*/ linear-gradient( var(--dark-gray) 6rem, transparent 2vmin) 20% 100% / 0.25vmin 4vmin no-repeat,
+    /* curb-crack2*/ linear-gradient( var(--dark-gray) 6rem, transparent 2vmin) 40% 100% / 0.25vmin 4vmin no-repeat,
+    /* curb-crack3*/ linear-gradient( var(--dark-gray) 6rem, transparent 2vmin) 60% 100% / 0.25vmin 4vmin no-repeat,
+    /* curb-crack4*/ linear-gradient( var(--dark-gray) 6rem, transparent 2vmin) 80% 100% / 0.25vmin 4vmin no-repeat,
+    /* sidewalk */ linear-gradient( var(--lightest-gray) 100%, transparent 2vmin) 3vmin 76vmin / 64vmin 2vmin no-repeat,
+    /* sidewalk */ linear-gradient(-45deg, var(--lightest-gray) 2vmin, transparent 2vmin) 0vmin 76vmin / 3vmin 2vmin no-repeat,
+    /* sidewalk */ linear-gradient(45deg, var(--lightest-gray) 2vmin, transparent 2vmin) 67vmin 76vmin / 3vmin 2vmin no-repeat,
+    /* curb */ linear-gradient( var(--light-gray) 100%, transparent 2vmin) 0% 100% / 70vmin 2vmin no-repeat;
       
       background:
       var(--meat-logo),
@@ -172,75 +173,75 @@ div.meaty:after {
     align-items: center;
     content: 'Open';
     color: #990000;
-    padding-top: 24vh;
-    padding-left: 35vh;
+    padding-top: 24vmin;
+    padding-left: 35vmin;
     font-family: Helvetica, serif;
     font-weight: bold;
-    font-size: 1.5vh;
+    font-size: 1.5vmin;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: .25vmin;
     z-index: 99;
     opacity: 0.4;
   
     /* positions */
    --meat-cut-1:
-      /* meat */  radial-gradient(circle, var(--off-white) .5vh, transparent .5vh)  31.75vh 50.5vh / 2vh 2vh  no-repeat,
-      /* meat */  radial-gradient(circle, var(--blood-red) 2vh, transparent 2vh)  28vh 47vh / 9vh 9vh  no-repeat,
-      /* meat */  radial-gradient(circle, var(--off-white) 2.5vh, transparent 2.5vh)  27.5vh 46.5vh / 10vh 10vh  no-repeat,
-      /* meat */  radial-gradient(ellipse, var(--tan) 4.75vh, transparent 4.75vh)  23.5vh 46.75vh / 13.25vh 9vh  no-repeat;
+      /* meat */  radial-gradient(circle, var(--off-white) .5vmin, transparent .5vmin)  31.75vmin 50.5vmin / 2vmin 2vmin  no-repeat,
+      /* meat */  radial-gradient(circle, var(--blood-red) 2vmin, transparent 2vmin)  28vmin 47vmin / 9vmin 9vmin  no-repeat,
+      /* meat */  radial-gradient(circle, var(--off-white) 2.5vmin, transparent 2.5vmin)  27.5vmin 46.5vmin / 10vmin 10vmin  no-repeat,
+      /* meat */  radial-gradient(ellipse, var(--tan) 4.75vmin, transparent 4.75vmin)  23.5vmin 46.75vmin / 13.25vmin 9vmin  no-repeat;
   
     /* positions */
    --meat-cut-2:
-      /* meat */  radial-gradient(circle, var(--off-white) .5vh, transparent .5vh)  36.5vh 49.5vh / 2vh 2vh  no-repeat,
-      /* meat */  radial-gradient(circle, var(--blood-red) 2vh, transparent 2vh)  32vh 45vh / 9vh 9vh  no-repeat,
-      /* meat */  radial-gradient(ellipse, var(--blood-red) 2vh, transparent 2vh)  31.75vh 44.5vh / 9vh 12vh  no-repeat,
-      /* meat */  radial-gradient(circle, var(--blood-red) 2vh, transparent 2vh)  32.5vh 47.5vh / 9vh 9vh  no-repeat,
-      /* meat */  radial-gradient(circle, var(--off-white) 2.5vh, transparent 2.5vh)  32vh 47vh / 10vh 10vh  no-repeat,
-      /* meat */  radial-gradient(circle, var(--off-white) 2.5vh, transparent 2.5vh)  31.5vh 44.5vh / 10vh 10vh  no-repeat;
+      /* meat */  radial-gradient(circle, var(--off-white) .5vmin, transparent .5vmin)  36.5vmin 49.5vmin / 2vmin 2vmin  no-repeat,
+      /* meat */  radial-gradient(circle, var(--blood-red) 2vmin, transparent 2vmin)  32vmin 45vmin / 9vmin 9vmin  no-repeat,
+      /* meat */  radial-gradient(ellipse, var(--blood-red) 2vmin, transparent 2vmin)  31.75vmin 44.5vmin / 9vmin 12vmin  no-repeat,
+      /* meat */  radial-gradient(circle, var(--blood-red) 2vmin, transparent 2vmin)  32.5vmin 47.5vmin / 9vmin 9vmin  no-repeat,
+      /* meat */  radial-gradient(circle, var(--off-white) 2.5vmin, transparent 2.5vmin)  32vmin 47vmin / 10vmin 10vmin  no-repeat,
+      /* meat */  radial-gradient(circle, var(--off-white) 2.5vmin, transparent 2.5vmin)  31.5vmin 44.5vmin / 10vmin 10vmin  no-repeat;
   
     /* positions */
    --meat-cut-3:
-      /* turkey-wing-l */  radial-gradient(ellipse, var(--other-tan) 1vh, transparent 1vh)  15.75vh 47vh / 2.5vh 4.5vh  no-repeat,
-      /* turkey-leg-l */  radial-gradient(ellipse, var(--other-tan) 1.5vh, transparent 1.5vh)  15.5vh 51vh / 3vh 3vh  no-repeat,
-      /* turkey-wing-r */  radial-gradient(ellipse, var(--other-tan) 1vh, transparent 1vh)  20.75vh 47vh / 2.5vh 4.5vh  no-repeat,
-      /* turkey-leg-r */  radial-gradient(ellipse, var(--other-tan) 1.5vh, transparent 1.5vh)  20.5vh 51vh / 3vh 3vh  no-repeat,
-      /* turkey-base */  radial-gradient(ellipse, var(--other-tan) 3vh, transparent 3vh)  16.5vh 46.5vh / 6vh 8vh  no-repeat;
+      /* turkey-wing-l */  radial-gradient(ellipse, var(--other-tan) 1vmin, transparent 1vmin)  15.75vmin 47vmin / 2.5vmin 4.5vmin  no-repeat,
+      /* turkey-leg-l */  radial-gradient(ellipse, var(--other-tan) 1.5vmin, transparent 1.5vmin)  15.5vmin 51vmin / 3vmin 3vmin  no-repeat,
+      /* turkey-wing-r */  radial-gradient(ellipse, var(--other-tan) 1vmin, transparent 1vmin)  20.75vmin 47vmin / 2.5vmin 4.5vmin  no-repeat,
+      /* turkey-leg-r */  radial-gradient(ellipse, var(--other-tan) 1.5vmin, transparent 1.5vmin)  20.5vmin 51vmin / 3vmin 3vmin  no-repeat,
+      /* turkey-base */  radial-gradient(ellipse, var(--other-tan) 3vmin, transparent 3vmin)  16.5vmin 46.5vmin / 6vmin 8vmin  no-repeat;
   
     /* positions */
    --meat-cut-4:
-      /* meat */  radial-gradient(circle, var(--off-white) .5vh, transparent .5vh)  10.75vh 52vh / 1.5vh 1.5vh  no-repeat,
-      /* meat */  radial-gradient(circle, var(--blood-red) 2vh, transparent 2vh)  8.5vh 49vh / 7vh 7vh  no-repeat,
-      /* meat */  radial-gradient(circle, var(--off-white) 2.5vh, transparent 2.5vh)  8vh 48.5vh / 8vh 8vh  no-repeat,
-      /* meat */  radial-gradient(ellipse, var(--tan) 4.75vh, transparent 4.75vh)  9vh 49.25vh / 12vh 6vh  no-repeat;
+      /* meat */  radial-gradient(circle, var(--off-white) .5vmin, transparent .5vmin)  10.75vmin 52vmin / 1.5vmin 1.5vmin  no-repeat,
+      /* meat */  radial-gradient(circle, var(--blood-red) 2vmin, transparent 2vmin)  8.5vmin 49vmin / 7vmin 7vmin  no-repeat,
+      /* meat */  radial-gradient(circle, var(--off-white) 2.5vmin, transparent 2.5vmin)  8vmin 48.5vmin / 8vmin 8vmin  no-repeat,
+      /* meat */  radial-gradient(ellipse, var(--tan) 4.75vmin, transparent 4.75vmin)  9vmin 49.25vmin / 12vmin 6vmin  no-repeat;
   
   
     --shelves:
-    /* lower-shelf-l */ linear-gradient( var(--darker-brown) 100%, transparent 100%) 9.5vh 52vh / 14vh 3vh no-repeat,
-    /* lower-shelf-r */ linear-gradient( var(--darker-brown) 100%, transparent 100%) 25.5vh 52vh / 14vh 3vh no-repeat;
+    /* lower-shelf-l */ linear-gradient( var(--darker-brown) 100%, transparent 100%) 9.5vmin 52vmin / 14vmin 3vmin no-repeat,
+    /* lower-shelf-r */ linear-gradient( var(--darker-brown) 100%, transparent 100%) 25.5vmin 52vmin / 14vmin 3vmin no-repeat;
   
     --awning-shadow:   
-    /* 1 */ linear-gradient(var(--black) 10vh, transparent 6vh) 2vh 30vh / 6vh 20vh no-repeat,
-    /* 1 */ radial-gradient(circle, var(--black) 3vh, transparent 3vh)  2vh 36vh / 6vh  6vh no-repeat, 
-    /* 2 */ linear-gradient(var(--black) 10vh, transparent 6vh) 8vh 30vh / 6vh 20vh no-repeat,
-    /* 2 */ radial-gradient(circle, var(--black) 3vh, transparent 3vh)  8vh 36vh / 6vh  6vh no-repeat,
-    /* 3 */ linear-gradient(var(--black) 10vh, transparent 6vh) 14vh 30vh / 6vh 20vh  no-repeat,
-    /* 3 */ radial-gradient(circle, var(--black) 3vh, transparent 3vh)  14vh 36vh / 6vh 6vh  no-repeat, 
-    /* 4 */ linear-gradient(var(--black) 10vh, transparent 6vh) 20vh 30vh / 6vh 20vh  no-repeat,
-    /* 4 */ radial-gradient(circle, var(--black) 3vh, transparent 3vh)  20vh 36vh / 6vh  6vh no-repeat,
-    /* 5 */ linear-gradient(var(--black) 10vh, transparent 6vh) 26vh 30vh / 6vh 20vh  no-repeat,
-    /* 5 */ radial-gradient(circle, var(--black) 3vh, transparent 3vh)  26vh 36vh / 6vh  6vh no-repeat, 
-    /* 6 */ linear-gradient(var(--black) 10vh, transparent 6vh) 32vh 30vh / 6vh 20vh  no-repeat,
-    /* 6 */ radial-gradient(circle, var(--black) 3vh, transparent 3vh)  32vh 36vh / 6vh  6vh no-repeat,
-    /* 7 */ linear-gradient(var(--black) 10vh, transparent 6vh) 38vh 30vh / 6vh 20vh  no-repeat,
-    /* 7 */ radial-gradient(circle, var(--black) 3vh, transparent 3vh)  38vh 36vh / 6vh  6vh no-repeat, 
-    /* 8 */ linear-gradient(var(--black) 10vh, transparent 6vh) 44vh 30vh / 6vh 20vh no-repeat,
-    /* 8 */ radial-gradient(circle, var(--black) 3vh, transparent 3vh)  44vh 36vh / 6vh  6vh no-repeat,
-    /* 9 */ linear-gradient(var(--black) 10vh, transparent 6vh) 50vh 30vh / 6vh 20vh no-repeat,
-    /* 9 */ radial-gradient(circle, var(--black) 3vh, transparent 3vh)  50vh 36vh / 6vh  6vh no-repeat, 
-    /* 10 */ linear-gradient(var(--black) 10vh, transparent 6vh) 56vh 30vh / 6vh 20vh  no-repeat,
-    /* 10 */ radial-gradient(circle, var(--black) 3vh, transparent 3vh)  56vh 36vh / 6vh  6vh no-repeat,
-    /* 11 */ linear-gradient(var(--black) 10vh, transparent 6vh) 62vh 30vh / 6vh 20vh  no-repeat,
-    /* 11 */ radial-gradient(circle, var(--black) 3vh, transparent 3vh)  62vh 36vh / 6vh  6vh no-repeat;
+    /* 1 */ linear-gradient(var(--black) 10vmin, transparent 6vmin) 2vmin 30vmin / 6vmin 20vmin no-repeat,
+    /* 1 */ radial-gradient(circle, var(--black) 3vmin, transparent 3vmin)  2vmin 36vmin / 6vmin  6vmin no-repeat, 
+    /* 2 */ linear-gradient(var(--black) 10vmin, transparent 6vmin) 8vmin 30vmin / 6vmin 20vmin no-repeat,
+    /* 2 */ radial-gradient(circle, var(--black) 3vmin, transparent 3vmin)  8vmin 36vmin / 6vmin  6vmin no-repeat,
+    /* 3 */ linear-gradient(var(--black) 10vmin, transparent 6vmin) 14vmin 30vmin / 6vmin 20vmin  no-repeat,
+    /* 3 */ radial-gradient(circle, var(--black) 3vmin, transparent 3vmin)  14vmin 36vmin / 6vmin 6vmin  no-repeat, 
+    /* 4 */ linear-gradient(var(--black) 10vmin, transparent 6vmin) 20vmin 30vmin / 6vmin 20vmin  no-repeat,
+    /* 4 */ radial-gradient(circle, var(--black) 3vmin, transparent 3vmin)  20vmin 36vmin / 6vmin  6vmin no-repeat,
+    /* 5 */ linear-gradient(var(--black) 10vmin, transparent 6vmin) 26vmin 30vmin / 6vmin 20vmin  no-repeat,
+    /* 5 */ radial-gradient(circle, var(--black) 3vmin, transparent 3vmin)  26vmin 36vmin / 6vmin  6vmin no-repeat, 
+    /* 6 */ linear-gradient(var(--black) 10vmin, transparent 6vmin) 32vmin 30vmin / 6vmin 20vmin  no-repeat,
+    /* 6 */ radial-gradient(circle, var(--black) 3vmin, transparent 3vmin)  32vmin 36vmin / 6vmin  6vmin no-repeat,
+    /* 7 */ linear-gradient(var(--black) 10vmin, transparent 6vmin) 38vmin 30vmin / 6vmin 20vmin  no-repeat,
+    /* 7 */ radial-gradient(circle, var(--black) 3vmin, transparent 3vmin)  38vmin 36vmin / 6vmin  6vmin no-repeat, 
+    /* 8 */ linear-gradient(var(--black) 10vmin, transparent 6vmin) 44vmin 30vmin / 6vmin 20vmin no-repeat,
+    /* 8 */ radial-gradient(circle, var(--black) 3vmin, transparent 3vmin)  44vmin 36vmin / 6vmin  6vmin no-repeat,
+    /* 9 */ linear-gradient(var(--black) 10vmin, transparent 6vmin) 50vmin 30vmin / 6vmin 20vmin no-repeat,
+    /* 9 */ radial-gradient(circle, var(--black) 3vmin, transparent 3vmin)  50vmin 36vmin / 6vmin  6vmin no-repeat, 
+    /* 10 */ linear-gradient(var(--black) 10vmin, transparent 6vmin) 56vmin 30vmin / 6vmin 20vmin  no-repeat,
+    /* 10 */ radial-gradient(circle, var(--black) 3vmin, transparent 3vmin)  56vmin 36vmin / 6vmin  6vmin no-repeat,
+    /* 11 */ linear-gradient(var(--black) 10vmin, transparent 6vmin) 62vmin 30vmin / 6vmin 20vmin  no-repeat,
+    /* 11 */ radial-gradient(circle, var(--black) 3vmin, transparent 3vmin)  62vmin 36vmin / 6vmin  6vmin no-repeat;
   
 
   background:
@@ -257,7 +258,7 @@ div.meaty:before {
   
     width: var(--width);
     height: var(--height);
-    padding-top: 15.5vh;
+    padding-top: 16vmin;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -265,65 +266,65 @@ div.meaty:before {
     color: var(--white);
     font-family: Helvetica, serif;
     font-weight: bold;
-    font-size: 5.5vh;
+    font-size: 5.5vmin;
     text-transform: uppercase;
-    text-shadow: 2px 2px var(--tan);
-    letter-spacing: 4px;
+    text-shadow: 0.25vmin 0.25vmin var(--tan);
+    letter-spacing: 0.5vmin;
     z-index: 9999;
   
     /* positions */
     
     --awning:   
-     linear-gradient(var(--red) 10vh, transparent 6vh) 2vh 26vh / 6vh 9vh no-repeat,
-     linear-gradient(var(--shadow-red) 10vh, transparent 6vh) 2vh 33.5vh / 6vh 3vh no-repeat,
-     radial-gradient(circle, var(--shadow-red) 3vh, transparent 3vh)  2vh 33vh / 6vh 6vh no-repeat,  
+     linear-gradient(var(--red) 10vmin, transparent 6vmin) 2vmin 26vmin / 6vmin 9vmin no-repeat,
+     linear-gradient(var(--shadow-red) 10vmin, transparent 6vmin) 2vmin 33.5vmin / 6vmin 3vmin no-repeat,
+     radial-gradient(circle, var(--shadow-red) 3vmin, transparent 3vmin)  2vmin 33vmin / 6vmin 6vmin no-repeat,  
 
       
-    linear-gradient(var(--yellow) 10vh, transparent 6vh) 8vh 26vh / 6vh 9vh no-repeat,
-    linear-gradient(var(--shadow-yellow) 10vh, transparent 6vh) 8vh 33.5vh / 6vh 3vh no-repeat,
-    radial-gradient(circle, var(--shadow-yellow) 3vh, transparent 3vh)  8vh 33vh / 6vh  6vh no-repeat, 
+    linear-gradient(var(--yellow) 10vmin, transparent 6vmin) 8vmin 26vmin / 6vmin 9vmin no-repeat,
+    linear-gradient(var(--shadow-yellow) 10vmin, transparent 6vmin) 8vmin 33.5vmin / 6vmin 3vmin no-repeat,
+    radial-gradient(circle, var(--shadow-yellow) 3vmin, transparent 3vmin)  8vmin 33vmin / 6vmin  6vmin no-repeat, 
       
-     linear-gradient(var(--red) 10vh, transparent 6vh) 14vh 26vh / 6vh 9vh no-repeat,
-     linear-gradient(var(--shadow-red) 10vh, transparent 6vh) 14vh 33.5vh / 6vh 3vh no-repeat,
-     radial-gradient(circle, var(--shadow-red) 3vh, transparent 3vh)  14vh 33vh / 6vh  6vh no-repeat,  
+     linear-gradient(var(--red) 10vmin, transparent 6vmin) 14vmin 26vmin / 6vmin 9vmin no-repeat,
+     linear-gradient(var(--shadow-red) 10vmin, transparent 6vmin) 14vmin 33.5vmin / 6vmin 3vmin no-repeat,
+     radial-gradient(circle, var(--shadow-red) 3vmin, transparent 3vmin)  14vmin 33vmin / 6vmin  6vmin no-repeat,  
 
       
-    linear-gradient(var(--yellow) 10vh, transparent 6vh) 20vh 26vh / 6vh 9vh no-repeat,
-    linear-gradient(var(--shadow-yellow) 10vh, transparent 6vh) 20vh 33.5vh / 6vh 3vh no-repeat,
-    radial-gradient(circle, var(--shadow-yellow) 3vh, transparent 3vh)  20vh 33vh / 6vh  6vh no-repeat, 
+    linear-gradient(var(--yellow) 10vmin, transparent 6vmin) 20vmin 26vmin / 6vmin 9vmin no-repeat,
+    linear-gradient(var(--shadow-yellow) 10vmin, transparent 6vmin) 20vmin 33.5vmin / 6vmin 3vmin no-repeat,
+    radial-gradient(circle, var(--shadow-yellow) 3vmin, transparent 3vmin)  20vmin 33vmin / 6vmin  6vmin no-repeat, 
       
       
-     linear-gradient(var(--red) 10vh, transparent 6vh) 26vh 26vh / 6vh 9vh no-repeat,
-     linear-gradient(var(--shadow-red) 10vh, transparent 6vh) 26vh 33.5vh / 6vh 3vh no-repeat,
-     radial-gradient(circle, var(--shadow-red) 3vh, transparent 3vh)  26vh 33vh / 6vh  6vh no-repeat,  
+     linear-gradient(var(--red) 10vmin, transparent 6vmin) 26vmin 26vmin / 6vmin 9vmin no-repeat,
+     linear-gradient(var(--shadow-red) 10vmin, transparent 6vmin) 26vmin 33.5vmin / 6vmin 3vmin no-repeat,
+     radial-gradient(circle, var(--shadow-red) 3vmin, transparent 3vmin)  26vmin 33vmin / 6vmin  6vmin no-repeat,  
 
       
-    linear-gradient(var(--yellow) 10vh, transparent 6vh) 32vh 26vh / 6vh 9vh no-repeat,
-    linear-gradient(var(--shadow-yellow) 10vh, transparent 6vh) 32vh 33.5vh / 6vh 3vh no-repeat,
-    radial-gradient(circle, var(--shadow-yellow) 3vh, transparent 3vh)  32vh 33vh / 6vh 6vh  no-repeat, 
+    linear-gradient(var(--yellow) 10vmin, transparent 6vmin) 32vmin 26vmin / 6vmin 9vmin no-repeat,
+    linear-gradient(var(--shadow-yellow) 10vmin, transparent 6vmin) 32vmin 33.5vmin / 6vmin 3vmin no-repeat,
+    radial-gradient(circle, var(--shadow-yellow) 3vmin, transparent 3vmin)  32vmin 33vmin / 6vmin 6vmin  no-repeat, 
       
-     linear-gradient(var(--red) 10vh, transparent 6vh) 38vh 26vh / 6vh 9vh no-repeat,
-     linear-gradient(var(--shadow-red) 10vh, transparent 6vh) 38vh 33.5vh / 6vh 3vh no-repeat,
-     radial-gradient(circle, var(--shadow-red) 3vh, transparent 3vh)  38vh 33vh / 6vh 6vh  no-repeat,  
+     linear-gradient(var(--red) 10vmin, transparent 6vmin) 38vmin 26vmin / 6vmin 9vmin no-repeat,
+     linear-gradient(var(--shadow-red) 10vmin, transparent 6vmin) 38vmin 33.5vmin / 6vmin 3vmin no-repeat,
+     radial-gradient(circle, var(--shadow-red) 3vmin, transparent 3vmin)  38vmin 33vmin / 6vmin 6vmin  no-repeat,  
 
       
-    linear-gradient(var(--yellow) 10vh, transparent 6vh) 44vh 26vh / 6vh 9vh no-repeat,
-    linear-gradient(var(--shadow-yellow) 10vh, transparent 6vh) 44vh 33.5vh / 6vh 3vh no-repeat,
-    radial-gradient(circle, var(--shadow-yellow) 3vh, transparent 3vh)  44vh 33vh / 6vh  6vh no-repeat, 
+    linear-gradient(var(--yellow) 10vmin, transparent 6vmin) 44vmin 26vmin / 6vmin 9vmin no-repeat,
+    linear-gradient(var(--shadow-yellow) 10vmin, transparent 6vmin) 44vmin 33.5vmin / 6vmin 3vmin no-repeat,
+    radial-gradient(circle, var(--shadow-yellow) 3vmin, transparent 3vmin)  44vmin 33vmin / 6vmin  6vmin no-repeat, 
       
-     linear-gradient(var(--red) 10vh, transparent 6vh) 50vh 26vh / 6vh 9vh no-repeat,
-     linear-gradient(var(--shadow-red) 10vh, transparent 6vh) 50vh 33.5vh / 6vh 3vh no-repeat,
-     radial-gradient(circle, var(--shadow-red) 3vh, transparent 3vh)  50vh 33vh / 6vh  6vh no-repeat,  
+     linear-gradient(var(--red) 10vmin, transparent 6vmin) 50vmin 26vmin / 6vmin 9vmin no-repeat,
+     linear-gradient(var(--shadow-red) 10vmin, transparent 6vmin) 50vmin 33.5vmin / 6vmin 3vmin no-repeat,
+     radial-gradient(circle, var(--shadow-red) 3vmin, transparent 3vmin)  50vmin 33vmin / 6vmin  6vmin no-repeat,  
 
       
-    linear-gradient(var(--yellow) 10vh, transparent 6vh) 56vh 26vh / 6vh 9vh no-repeat,
-    linear-gradient(var(--shadow-yellow) 10vh, transparent 6vh) 56vh 33.5vh / 6vh 3vh no-repeat,
-    radial-gradient(circle, var(--shadow-yellow) 3vh, transparent 3vh)  56vh 33vh / 6vh  6vh no-repeat, 
+    linear-gradient(var(--yellow) 10vmin, transparent 6vmin) 56vmin 26vmin / 6vmin 9vmin no-repeat,
+    linear-gradient(var(--shadow-yellow) 10vmin, transparent 6vmin) 56vmin 33.5vmin / 6vmin 3vmin no-repeat,
+    radial-gradient(circle, var(--shadow-yellow) 3vmin, transparent 3vmin)  56vmin 33vmin / 6vmin  6vmin no-repeat, 
       
       
-     linear-gradient(var(--red) 10vh, transparent 6vh) 62vh 26vh / 6vh 9vh no-repeat,
-     linear-gradient(var(--shadow-red) 10vh, transparent 6vh) 62vh 33.5vh / 6vh 3vh no-repeat,
-     radial-gradient(circle, var(--shadow-red) 3vh, transparent 3vh)  62vh 33vh / 6vh  6vh no-repeat;
+     linear-gradient(var(--red) 10vmin, transparent 6vmin) 62vmin 26vmin / 6vmin 9vmin no-repeat,
+     linear-gradient(var(--shadow-red) 10vmin, transparent 6vmin) 62vmin 33.5vmin / 6vmin 3vmin no-repeat,
+     radial-gradient(circle, var(--shadow-red) 3vmin, transparent 3vmin)  62vmin 33vmin / 6vmin  6vmin no-repeat;
   
 
   background:
