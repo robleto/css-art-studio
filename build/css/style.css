@@ -1,6 +1,5 @@
-*,
-*:before,
-*:after {
+@charset "UTF-8";
+div, div:before, div:after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -9,48 +8,266 @@
 body {
   height: 100vh;
   width: 100vw;
-  margin: 0 auto;
-  position: relative;
   display: flex;
-  position: relative;
-  transform: scale(1.3);
   justify-content: center;
-  align-items: center;
+  align-items: end;
   margin: 0 auto;
-  background: radial-gradient(#a5dcfa, #0c86c7);
+  background: radial-gradient(ellipse, #bfdaf9 15vmin, transparent 1vmin) calc(0vmin + 45vmin) calc(0vmin + 25vmin)/30vmin 20vmin no-repeat, radial-gradient(ellipse, #bfdaf9 20vmin, transparent 1vmin) calc(0vmin + 25vmin) calc(0vmin + 35vmin)/40vmin 20vmin no-repeat, radial-gradient(ellipse, #bfdaf9 20vmin, transparent 1vmin) calc(0vmin + 15vmin) calc(0vmin + 17vmin)/40vmin 20vmin no-repeat, radial-gradient(ellipse, #bfdaf9 20vmin, transparent 1vmin) calc(0vmin + 0vmin) calc(0vmin + 25vmin)/40vmin 20vmin no-repeat, radial-gradient(ellipse, #bfdaf9 25vmin, transparent 1vmin) calc(0vmin + 90vmin) calc(0vmin + -5vmin)/50vmin 30vmin no-repeat, radial-gradient(ellipse, #bfdaf9 15vmin, transparent 1vmin) calc(0vmin + 70vmin) calc(0vmin + 5vmin)/30vmin 20vmin no-repeat, radial-gradient(ellipse, #bfdaf9 20vmin, transparent 1vmin) calc(0vmin + 75vmin) calc(0vmin + 15vmin)/40vmin 20vmin no-repeat, radial-gradient(ellipse, #bfdaf9 20vmin, transparent 1vmin) calc(0vmin + 95vmin) calc(0vmin + 21vmin)/40vmin 20vmin no-repeat, radial-gradient(ellipse, #bfdaf9 20vmin, transparent 1vmin) calc(0vmin + 115vmin) calc(0vmin + 16vmin)/40vmin 20vmin no-repeat, radial-gradient(#bfdaf9, #62a4ef);
 }
 
-div {
-  height: 45vmin;
-  width: 33vmin;
-  background-color: #fff;
-  position: absolute;
-  margin: auto;
-  border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
-  box-shadow: 3vmin 0 rgba(0, 0, 0, 0.1);
-}
-
-div:before {
+div, div:before, div:after {
+  display: block;
   content: "";
   position: absolute;
-  height: 2vmin;
-  width: 2vmin;
-  background-color: #010008;
-  border-radius: 50%;
-  top: 25vmin;
-  right: 12.5vmin;
-  box-shadow: -6vmin 0 0 #010008, 1.5vmin 2.5vmin 0 -0.35vmin #f5750f, -7.5vmin 2.5vmin 0 -0.35vmin #f5750f, -3vmin 0 0 10vmin #f5d201;
+  box-sizing: border-box;
 }
 
-div:after {
-  content: "";
-  position: absolute;
-  height: 2.75vmin;
-  width: 4vmin;
-  background-color: #010008;
-  top: 29vmin;
-  left: 14.5vmin;
-  border-radius: 1vmin 1vmin 3vmin 3vmin;
-  border: 0.5vmin solid #010008;
-  background: radial-gradient(at 50% 100%, #f5750f 1vmin, #010008 1vmin);
+div.crawl {
+  width: 100vmin;
+  height: 100vmin;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  justify-content: center;
+  align-items: end;
+  background: linear-gradient(90deg, #111 15vmin, transparent 1vmin) calc(0vmin + 31.5vmin) calc(0vmin + 6.5vmin)/0.5vmin 17vmin no-repeat, linear-gradient(90deg, #111 15vmin, transparent 1vmin) calc(0vmin + 27vmin) calc(0vmin + 10.5vmin)/0.5vmin 14vmin no-repeat, linear-gradient(-15deg, transparent 9vmin, #222 9vmin, #222 10vmin, #000 10vmin, #000 20vmin, #444 21vmin, #444 21vmin, transparent 21vmin) calc(0vmin + 0vmin) calc(0vmin + 43.5vmin)/35vmin 35vmin no-repeat, linear-gradient(90deg, #08274b 15vmin, transparent 1vmin) calc(0vmin + 0vmin) calc(0vmin + 32vmin)/2vmin 85vmin no-repeat, linear-gradient(90deg, #08274b 15vmin, transparent 1vmin) calc(0vmin + 31.5vmin) calc(0vmin + 24vmin)/3.5vmin 85vmin no-repeat, linear-gradient(-15deg, transparent 10vmin, #08274b 10vmin, #08274b 15vmin, transparent 15vmin) calc(0vmin + 0vmin) calc(0vmin + 13vmin)/35vmin 25vmin no-repeat, repeating-linear-gradient(90deg, transparent 0vmin, transparent 2.75vmin, #030f1d 2.75vmin, #0a3362 3vmin) calc(0vmin + 0vmin) calc(0vmin + 31vmin)/35vmin 80vmin no-repeat, repeating-linear-gradient(-15deg, transparent 0vmin, transparent 3.25vmin, #030f1d 3.75vmin, #1364bf 4vmin) calc(0vmin + 0vmin) calc(0vmin + 30vmin)/35vmin 80vmin no-repeat, linear-gradient(-15deg, black 0vmin, #0a3362 80vmin, transparent 1vmin) calc(0vmin + 0vmin) calc(0vmin + 6vmin)/35vmin 100vmin no-repeat, linear-gradient(15deg, transparent 19vmin, #222 19vmin, #222 20vmin, #000 20vmin, #000 30vmin, #444 31vmin, #444 31vmin, transparent 31vmin) calc(35vmin + 0vmin) calc(0vmin + 34vmin)/55vmin 55vmin no-repeat, linear-gradient(90deg, #08274b 15vmin, transparent 1vmin) calc(35vmin + 0vmin) calc(0vmin + 27vmin)/3.5vmin 85vmin no-repeat, linear-gradient(90deg, #08274b 15vmin, transparent 1vmin) calc(35vmin + 52.5vmin) calc(0vmin + 39vmin)/2.25vmin 85vmin no-repeat, linear-gradient(15deg, transparent 20vmin, #08274b 20vmin, #08274b 25vmin, transparent 25vmin) calc(35vmin + 0vmin) calc(0vmin + 19vmin)/55vmin 30vmin no-repeat, repeating-linear-gradient(90deg, transparent 0vmin, transparent 2.75vmin, #030f1d 2.75vmin, #0a3362 3vmin) calc(35vmin + 0vmin) calc(0vmin + 37vmin)/55vmin 80vmin no-repeat, repeating-linear-gradient(15deg, transparent 0vmin, transparent 3.25vmin, #030f1d 3.75vmin, #1364bf 4vmin) calc(35vmin + 0vmin) calc(0vmin + 35vmin)/55vmin 80vmin no-repeat, linear-gradient(15deg, #030f1d 0vmin, #0e4b91 80vmin, transparent 1vmin) calc(35vmin + 0vmin) calc(0vmin + 5.5vmin)/55vmin 100vmin no-repeat, linear-gradient(90deg, #030f1d 15vmin, transparent 1vmin) calc(35vmin + 50vmin) calc(0vmin + 57vmin)/3.5vmin 85vmin no-repeat, linear-gradient(90deg, #030f1d 15vmin, transparent 1vmin) calc(35vmin + 62.5vmin) calc(0vmin + 60vmin)/2.25vmin 85vmin no-repeat, linear-gradient(15deg, transparent 20vmin, #030f1d 20vmin, #08274b 25vmin, transparent 25vmin) calc(35vmin + 50vmin) calc(0vmin + 49vmin)/55vmin 30vmin no-repeat, repeating-linear-gradient(90deg, transparent 0vmin, transparent 2.75vmin, black 2.75vmin, #0a3362 3vmin) calc(35vmin + 50vmin) calc(0vmin + 77vmin)/55vmin 80vmin no-repeat, repeating-linear-gradient(15deg, transparent 0vmin, transparent 3.25vmin, black 3.75vmin, #1364bf 4vmin) calc(35vmin + 50vmin) calc(0vmin + 65vmin)/55vmin 80vmin no-repeat, linear-gradient(15deg, black 0vmin, #0c3f79 80vmin, transparent 1vmin) calc(35vmin + 50vmin) calc(0vmin + 35.5vmin)/55vmin 100vmin no-repeat;
+}
+
+div.crawl:before,
+div.crawl:after {
+  color: #f6cb7c;
+  font-size: 6vmin;
+  font-family: "Teko", sans-serif;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  text-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  overflow: hidden;
+}
+
+div.crawl:before {
+  width: 34vmin;
+  height: 12vmin;
+  padding-top: 2vmin;
+  padding-left: 0vmin;
+  top: 62vmin;
+  left: 0vmin;
+  transform: skew(0, -15deg);
+  white-space: nowrap;
+  content: "ng News: It is Divtober!";
+  animation: move-left-crawl linear 8s infinite;
+}
+
+div.crawl:after {
+  width: 55vmin;
+  height: 12vmin;
+  padding-top: 2vmin;
+  padding-left: 0vmin;
+  top: 65vmin;
+  left: 36vmin;
+  transform: skew(0, 15deg);
+  content: "ober! –––  Breaking News: It is Divtober!";
+  animation: move-right-crawl linear 8s infinite;
+}
+
+@keyframes move-left-crawl {
+  0% {
+    content: "ng News: It is Divtober! – Breaki";
+  }
+  3% {
+    content: "g News: It is Divtober! – Breakin";
+  }
+  6% {
+    content: " News: It is Divtober! – Breaking";
+  }
+  9% {
+    content: "News: It is Divtober! – Breaking ";
+  }
+  12% {
+    content: "ews: It is Divtober! – Breaking N";
+  }
+  15% {
+    content: "ws: It is Divtober! – Breaking Ne";
+  }
+  18% {
+    content: "s: It is Divtober! – Breaking New";
+  }
+  21% {
+    content: ": It is Divtober! – Breaking News";
+  }
+  24% {
+    content: "It is Divtober! – Breaking News: ";
+  }
+  27% {
+    content: "t is Divtober! – Breaking News: I";
+  }
+  30% {
+    content: " is Divtober! – Breaking News: It";
+  }
+  33% {
+    content: "is Divtober! – Breaking News: It ";
+  }
+  36% {
+    content: "s Divtober! – Breaking News: It i";
+  }
+  39% {
+    content: " Divtober! – Breaking News: It is";
+  }
+  42% {
+    content: "Divtober! – Breaking News: It is ";
+  }
+  45% {
+    content: "ivtober! – Breaking News: It is D";
+  }
+  48% {
+    content: "vtober! – Breaking News: It is Di";
+  }
+  51% {
+    content: "tober! – Breaking News: It is Div";
+  }
+  54% {
+    content: "ober! – Breaking News: It is Divt";
+  }
+  57% {
+    content: "ober! – Breaking News: It is Divt";
+  }
+  60% {
+    content: "ber! – Breaking News: It is Divto";
+  }
+  63% {
+    content: "er! – Breaking News: It is Divtob";
+  }
+  66% {
+    content: "r! – Breaking News: It is Divtobe";
+  }
+  69% {
+    content: "! – Breaking News: It is Divtober";
+  }
+  72% {
+    content: " – Breaking News: It is Divtober!";
+  }
+  75% {
+    content: "– Breaking News: It is Divtober! ";
+  }
+  78% {
+    content: " Breaking News: It is Divtober! –";
+  }
+  81% {
+    content: "Breaking News: It is Divtober! – ";
+  }
+  84% {
+    content: "reaking News: It is Divtober! – B";
+  }
+  87% {
+    content: "eaking News: It is Divtober! – Br";
+  }
+  90% {
+    content: "aking News: It is Divtober! – Bre";
+  }
+  93% {
+    content: "king News: It is Divtober! – Brea";
+  }
+  96% {
+    content: "ing News: It is Divtober! – Break";
+  }
+}
+@keyframes move-right-crawl {
+  0% {
+    content: "ober! – Breaking News: It is Divt";
+  }
+  3% {
+    content: "ber! – Breaking News: It is Divto";
+  }
+  6% {
+    content: "er! – Breaking News: It is Divtob";
+  }
+  9% {
+    content: "r! – Breaking News: It is Divtobe";
+  }
+  12% {
+    content: "! – Breaking News: It is Divtober";
+  }
+  15% {
+    content: " – Breaking News: It is Divtober!";
+  }
+  18% {
+    content: "– Breaking News: It is Divtober! ";
+  }
+  21% {
+    content: " Breaking News: It is Divtober! –";
+  }
+  24% {
+    content: "Breaking News: It is Divtober! – ";
+  }
+  27% {
+    content: "reaking News: It is Divtober! – B";
+  }
+  30% {
+    content: "eaking News: It is Divtober! – Br";
+  }
+  33% {
+    content: "aking News: It is Divtober! – Bre";
+  }
+  36% {
+    content: "king News: It is Divtober! – Brea";
+  }
+  39% {
+    content: "ing News: It is Divtober! – Break";
+  }
+  42% {
+    content: "ng News: It is Divtober! – Breaki";
+  }
+  45% {
+    content: "g News: It is Divtober! – Breakin";
+  }
+  48% {
+    content: " News: It is Divtober! – Breaking";
+  }
+  51% {
+    content: "News: It is Divtober! – Breaking ";
+  }
+  54% {
+    content: "ews: It is Divtober! – Breaking N";
+  }
+  57% {
+    content: "ws: It is Divtober! – Breaking Ne";
+  }
+  60% {
+    content: "s: It is Divtober! – Breaking New";
+  }
+  63% {
+    content: ": It is Divtober! – Breaking News";
+  }
+  66% {
+    content: "It is Divtober! – Breaking News: ";
+  }
+  69% {
+    content: "t is Divtober! – Breaking News: I";
+  }
+  72% {
+    content: " is Divtober! – Breaking News: It";
+  }
+  75% {
+    content: "is Divtober! – Breaking News: It ";
+  }
+  78% {
+    content: "s Divtober! – Breaking News: It i";
+  }
+  81% {
+    content: " Divtober! – Breaking News: It is";
+  }
+  84% {
+    content: "Divtober! – Breaking News: It is ";
+  }
+  87% {
+    content: "ivtober! – Breaking News: It is D";
+  }
+  90% {
+    content: "vtober! – Breaking News: It is Di";
+  }
+  93% {
+    content: "tober! – Breaking News: It is Div";
+  }
+  96% {
+    content: "ober! – Breaking News: It is Divt";
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -30,7 +30,7 @@ div.crawl {
   display: block;
   justify-content: center;
   align-items: end;
-  background: linear-gradient(90deg, #111 15vmin, transparent 1vmin) calc(0vmin + 31.5vmin) calc(0vmin + 6.5vmin)/0.5vmin 17vmin no-repeat, linear-gradient(90deg, #111 15vmin, transparent 1vmin) calc(0vmin + 27vmin) calc(0vmin + 10.5vmin)/0.5vmin 14vmin no-repeat, linear-gradient(-15deg, transparent 9vmin, #222 9vmin, #222 10vmin, #000 10vmin, #000 20vmin, #444 21vmin, #444 21vmin, transparent 21vmin) calc(0vmin + 0vmin) calc(0vmin + 43.5vmin)/35vmin 35vmin no-repeat, linear-gradient(90deg, #08274b 15vmin, transparent 1vmin) calc(0vmin + 0vmin) calc(0vmin + 32vmin)/2vmin 85vmin no-repeat, linear-gradient(90deg, #08274b 15vmin, transparent 1vmin) calc(0vmin + 31.5vmin) calc(0vmin + 24vmin)/3.5vmin 85vmin no-repeat, linear-gradient(-15deg, transparent 10vmin, #08274b 10vmin, #08274b 15vmin, transparent 15vmin) calc(0vmin + 0vmin) calc(0vmin + 13vmin)/35vmin 25vmin no-repeat, repeating-linear-gradient(90deg, transparent 0vmin, transparent 2.75vmin, #030f1d 2.75vmin, #0a3362 3vmin) calc(0vmin + 0vmin) calc(0vmin + 31vmin)/35vmin 80vmin no-repeat, repeating-linear-gradient(-15deg, transparent 0vmin, transparent 3.25vmin, #030f1d 3.75vmin, #1364bf 4vmin) calc(0vmin + 0vmin) calc(0vmin + 30vmin)/35vmin 80vmin no-repeat, linear-gradient(-15deg, #133955 0vmin, #133955 80vmin, transparent 1vmin) calc(0vmin + 0vmin) calc(0vmin + 6vmin)/35vmin 100vmin no-repeat, linear-gradient(15deg, transparent 19vmin, #222 19vmin, #222 20vmin, #000 20vmin, #000 30vmin, #444 31vmin, #444 31vmin, transparent 31vmin) calc(35vmin + 0vmin) calc(0vmin + 34vmin)/55vmin 55vmin no-repeat, linear-gradient(90deg, #08274b 15vmin, transparent 1vmin) calc(35vmin + 0vmin) calc(0vmin + 27vmin)/3.5vmin 85vmin no-repeat, linear-gradient(90deg, #08274b 15vmin, transparent 1vmin) calc(35vmin + 52.5vmin) calc(0vmin + 39vmin)/2.25vmin 85vmin no-repeat, linear-gradient(15deg, transparent 20vmin, #08274b 20vmin, #08274b 25vmin, transparent 25vmin) calc(35vmin + 0vmin) calc(0vmin + 19vmin)/55vmin 30vmin no-repeat, repeating-linear-gradient(90deg, transparent 0vmin, transparent 2.75vmin, #030f1d 2.75vmin, #0a3362 3vmin) calc(35vmin + 0vmin) calc(0vmin + 37vmin)/55vmin 80vmin no-repeat, repeating-linear-gradient(15deg, transparent 0vmin, transparent 3.25vmin, #030f1d 3.75vmin, #1364bf 4vmin) calc(35vmin + 0vmin) calc(0vmin + 35vmin)/55vmin 80vmin no-repeat, linear-gradient(15deg, #133955 0vmin, #133955 80vmin, transparent 1vmin) calc(35vmin + 0vmin) calc(0vmin + 5.5vmin)/55vmin 100vmin no-repeat;
+  background: linear-gradient(90deg, #111 15vmin, transparent 1vmin) calc(0vmin + 31.5vmin) calc(0vmin + 6.5vmin)/0.5vmin 17vmin no-repeat, linear-gradient(90deg, #111 15vmin, transparent 1vmin) calc(0vmin + 27vmin) calc(0vmin + 10.5vmin)/0.5vmin 14vmin no-repeat, linear-gradient(-15deg, transparent 9vmin, #222 9vmin, #222 10vmin, #000 10vmin, #000 20vmin, #444 21vmin, #444 21vmin, transparent 21vmin) calc(0vmin + 0vmin) calc(0vmin + 43.5vmin)/35vmin 35vmin no-repeat, linear-gradient(90deg, #08274b 15vmin, transparent 1vmin) calc(0vmin + 0vmin) calc(0vmin + 32vmin)/2vmin 85vmin no-repeat, linear-gradient(90deg, #08274b 15vmin, transparent 1vmin) calc(0vmin + 31.5vmin) calc(0vmin + 24vmin)/3.5vmin 85vmin no-repeat, linear-gradient(-15deg, transparent 10vmin, #08274b 10vmin, #08274b 15vmin, transparent 15vmin) calc(0vmin + 0vmin) calc(0vmin + 13vmin)/35vmin 25vmin no-repeat, repeating-linear-gradient(90deg, transparent 0vmin, transparent 2.75vmin, #030f1d 2.75vmin, #0a3362 3vmin) calc(0vmin + 0vmin) calc(0vmin + 31vmin)/35vmin 80vmin no-repeat, repeating-linear-gradient(-15deg, transparent 0vmin, transparent 3.25vmin, #030f1d 3.75vmin, #1364bf 4vmin) calc(0vmin + 0vmin) calc(0vmin + 30vmin)/35vmin 80vmin no-repeat, linear-gradient(-15deg, black 0vmin, #0a3362 80vmin, transparent 1vmin) calc(0vmin + 0vmin) calc(0vmin + 6vmin)/35vmin 100vmin no-repeat, linear-gradient(15deg, transparent 19vmin, #222 19vmin, #222 20vmin, #000 20vmin, #000 30vmin, #444 31vmin, #444 31vmin, transparent 31vmin) calc(35vmin + 0vmin) calc(0vmin + 34vmin)/55vmin 55vmin no-repeat, linear-gradient(90deg, #08274b 15vmin, transparent 1vmin) calc(35vmin + 0vmin) calc(0vmin + 27vmin)/3.5vmin 85vmin no-repeat, linear-gradient(90deg, #08274b 15vmin, transparent 1vmin) calc(35vmin + 52.5vmin) calc(0vmin + 39vmin)/2.25vmin 85vmin no-repeat, linear-gradient(15deg, transparent 20vmin, #08274b 20vmin, #08274b 25vmin, transparent 25vmin) calc(35vmin + 0vmin) calc(0vmin + 19vmin)/55vmin 30vmin no-repeat, repeating-linear-gradient(90deg, transparent 0vmin, transparent 2.75vmin, #030f1d 2.75vmin, #0a3362 3vmin) calc(35vmin + 0vmin) calc(0vmin + 37vmin)/55vmin 80vmin no-repeat, repeating-linear-gradient(15deg, transparent 0vmin, transparent 3.25vmin, #030f1d 3.75vmin, #1364bf 4vmin) calc(35vmin + 0vmin) calc(0vmin + 35vmin)/55vmin 80vmin no-repeat, linear-gradient(15deg, #030f1d 0vmin, #0e4b91 80vmin, transparent 1vmin) calc(35vmin + 0vmin) calc(0vmin + 5.5vmin)/55vmin 100vmin no-repeat, linear-gradient(90deg, #030f1d 15vmin, transparent 1vmin) calc(35vmin + 50vmin) calc(0vmin + 57vmin)/3.5vmin 85vmin no-repeat, linear-gradient(90deg, #030f1d 15vmin, transparent 1vmin) calc(35vmin + 62.5vmin) calc(0vmin + 60vmin)/2.25vmin 85vmin no-repeat, linear-gradient(15deg, transparent 20vmin, #030f1d 20vmin, #08274b 25vmin, transparent 25vmin) calc(35vmin + 50vmin) calc(0vmin + 49vmin)/55vmin 30vmin no-repeat, repeating-linear-gradient(90deg, transparent 0vmin, transparent 2.75vmin, black 2.75vmin, #0a3362 3vmin) calc(35vmin + 50vmin) calc(0vmin + 77vmin)/55vmin 80vmin no-repeat, repeating-linear-gradient(15deg, transparent 0vmin, transparent 3.25vmin, black 3.75vmin, #1364bf 4vmin) calc(35vmin + 50vmin) calc(0vmin + 65vmin)/55vmin 80vmin no-repeat, linear-gradient(15deg, black 0vmin, #0c3f79 80vmin, transparent 1vmin) calc(35vmin + 50vmin) calc(0vmin + 35.5vmin)/55vmin 100vmin no-repeat;
 }
 
 div.crawl:before,
@@ -54,6 +54,7 @@ div.crawl:before {
   transform: skew(0, -15deg);
   white-space: nowrap;
   content: "ng News: It is Divtober!";
+  animation: move-left-crawl linear 8s infinite;
 }
 
 div.crawl:after {
@@ -65,95 +66,208 @@ div.crawl:after {
   left: 36vmin;
   transform: skew(0, 15deg);
   content: "ober! –––  Breaking News: It is Divtober!";
+  animation: move-right-crawl linear 8s infinite;
 }
 
 @keyframes move-left-crawl {
   0% {
-    padding-left: 30vmin;
+    content: "ng News: It is Divtober! – Breaki";
   }
-  100% {
-    padding-left: 0vmin;
+  3% {
+    content: "g News: It is Divtober! – Breakin";
+  }
+  6% {
+    content: " News: It is Divtober! – Breaking";
+  }
+  9% {
+    content: "News: It is Divtober! – Breaking ";
+  }
+  12% {
+    content: "ews: It is Divtober! – Breaking N";
+  }
+  15% {
+    content: "ws: It is Divtober! – Breaking Ne";
+  }
+  18% {
+    content: "s: It is Divtober! – Breaking New";
+  }
+  21% {
+    content: ": It is Divtober! – Breaking News";
+  }
+  24% {
+    content: "It is Divtober! – Breaking News: ";
+  }
+  27% {
+    content: "t is Divtober! – Breaking News: I";
+  }
+  30% {
+    content: " is Divtober! – Breaking News: It";
+  }
+  33% {
+    content: "is Divtober! – Breaking News: It ";
+  }
+  36% {
+    content: "s Divtober! – Breaking News: It i";
+  }
+  39% {
+    content: " Divtober! – Breaking News: It is";
+  }
+  42% {
+    content: "Divtober! – Breaking News: It is ";
+  }
+  45% {
+    content: "ivtober! – Breaking News: It is D";
+  }
+  48% {
+    content: "vtober! – Breaking News: It is Di";
+  }
+  51% {
+    content: "tober! – Breaking News: It is Div";
+  }
+  54% {
+    content: "ober! – Breaking News: It is Divt";
+  }
+  57% {
+    content: "ober! – Breaking News: It is Divt";
+  }
+  60% {
+    content: "ber! – Breaking News: It is Divto";
+  }
+  63% {
+    content: "er! – Breaking News: It is Divtob";
+  }
+  66% {
+    content: "r! – Breaking News: It is Divtobe";
+  }
+  69% {
+    content: "! – Breaking News: It is Divtober";
+  }
+  72% {
+    content: " – Breaking News: It is Divtober!";
+  }
+  75% {
+    content: "– Breaking News: It is Divtober! ";
+  }
+  78% {
+    content: " Breaking News: It is Divtober! –";
+  }
+  81% {
+    content: "Breaking News: It is Divtober! – ";
+  }
+  84% {
+    content: "reaking News: It is Divtober! – B";
+  }
+  87% {
+    content: "eaking News: It is Divtober! – Br";
+  }
+  90% {
+    content: "aking News: It is Divtober! – Bre";
+  }
+  93% {
+    content: "king News: It is Divtober! – Brea";
+  }
+  96% {
+    content: "ing News: It is Divtober! – Break";
   }
 }
 @keyframes move-right-crawl {
   0% {
-    padding-left: 0vmin;
+    content: "ober! – Breaking News: It is Divt";
   }
-  100% {
-    padding-left: -235vmin;
+  3% {
+    content: "ber! – Breaking News: It is Divto";
+  }
+  6% {
+    content: "er! – Breaking News: It is Divtob";
+  }
+  9% {
+    content: "r! – Breaking News: It is Divtobe";
+  }
+  12% {
+    content: "! – Breaking News: It is Divtober";
+  }
+  15% {
+    content: " – Breaking News: It is Divtober!";
+  }
+  18% {
+    content: "– Breaking News: It is Divtober! ";
+  }
+  21% {
+    content: " Breaking News: It is Divtober! –";
+  }
+  24% {
+    content: "Breaking News: It is Divtober! – ";
+  }
+  27% {
+    content: "reaking News: It is Divtober! – B";
+  }
+  30% {
+    content: "eaking News: It is Divtober! – Br";
+  }
+  33% {
+    content: "aking News: It is Divtober! – Bre";
+  }
+  36% {
+    content: "king News: It is Divtober! – Brea";
+  }
+  39% {
+    content: "ing News: It is Divtober! – Break";
+  }
+  42% {
+    content: "ng News: It is Divtober! – Breaki";
+  }
+  45% {
+    content: "g News: It is Divtober! – Breakin";
+  }
+  48% {
+    content: " News: It is Divtober! – Breaking";
+  }
+  51% {
+    content: "News: It is Divtober! – Breaking ";
+  }
+  54% {
+    content: "ews: It is Divtober! – Breaking N";
+  }
+  57% {
+    content: "ws: It is Divtober! – Breaking Ne";
+  }
+  60% {
+    content: "s: It is Divtober! – Breaking New";
+  }
+  63% {
+    content: ": It is Divtober! – Breaking News";
+  }
+  66% {
+    content: "It is Divtober! – Breaking News: ";
+  }
+  69% {
+    content: "t is Divtober! – Breaking News: I";
+  }
+  72% {
+    content: " is Divtober! – Breaking News: It";
+  }
+  75% {
+    content: "is Divtober! – Breaking News: It ";
+  }
+  78% {
+    content: "s Divtober! – Breaking News: It i";
+  }
+  81% {
+    content: " Divtober! – Breaking News: It is";
+  }
+  84% {
+    content: "Divtober! – Breaking News: It is ";
+  }
+  87% {
+    content: "ivtober! – Breaking News: It is D";
+  }
+  90% {
+    content: "vtober! – Breaking News: It is Di";
+  }
+  93% {
+    content: "tober! – Breaking News: It is Div";
+  }
+  96% {
+    content: "ober! – Breaking News: It is Divt";
   }
 }
-
-
-/* div, div:before, div:after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  z-index: 1;
-  background: repeating-linear-gradient(90deg, transparent 0 80px, #a8cdf6 80px 82px), repeating-linear-gradient(-10deg, transparent 0 90px, #a8cdf6 90px 92px), conic-gradient(from 167.72deg at 50.06% 45.46%, #133955 -54.38deg, #344275 7.33deg, #6F357D 84.38deg, #30297D 138.99deg, #213A57 168.75deg, #290755 205.87deg, #0C4A47 264.38deg, #133955 305.62deg, #344275 367.33deg);
-}
-
-div, div:before, div:after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-div.crawl {
-  width: 180vw;
-  height: 40vmin;
-  top: 40vmin;
-  left: -40vw;
-  position: relative;
-  border-top: solid 10px black;
-  border-bottom: solid 10px black;
-  background-color: #333;
-  transform: rotate(-10deg);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-
-div.crawl:before,
-div.crawl:after {
-  width: 200vmin;
-  height: 20vmin;
-  top: -2vmin;
-  left: 20vmin;
-  position: relative;
-  color: #f6cb7c;
-  font-size: 20vmin;
-  font-family: "Teko", sans-serif;
-  text-wrap: nowrap;
-  text-transform: uppercase;
-  font-style: italic;
-  text-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  overflow: hidden;
-}
-
-div.crawl:before {
-  display: block;
-  white-space: nowrap;
-  content: "Breaking News: It is Divtober!";
-  animation: move-crawl 8s linear 0s infinite both running, move-crawl 8s linear 3s infinite both running;
-}
-
-div.crawl:after {
-  display: block;
-  top: -6vmin;
-  content: "Day 4 Prompt: Crawl";
-  animation: move-crawl 10s linear 3s infinite both running, move-crawl 10s linear 6s infinite both running;
-}
-
-@keyframes move-crawl {
-  0% {
-    left: 140vw;
-  }
-  100% {
-    left: -140vw;
-  }
-} */
