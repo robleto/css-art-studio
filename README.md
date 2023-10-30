@@ -1,5 +1,7 @@
 # CSS Art Studio
 
+![Divtober 2023](https://cdn-images-1.medium.com/max/2400/1*qCWTbtPuMLsDLwxPz423qA.png)
+
 This is the code repsitory for cssartstudio.com, the personal collection of CSS artwork by Greg Robleto. 
 
 
@@ -23,4 +25,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
+_Disclaimer: As always, all thoughts are my own and not my employer, who does not pay me to code single-div art pieces (but wouldn't that be cool, one can dream)? Some of these pieces are inspired by vector stock, art or other pens; credit for the inspiration is provided in the CodePen code linked on each piece of artwork. Every line of code creating the art work was coded by hand by Greg Robleto._
