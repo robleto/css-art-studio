@@ -1,0 +1,1459 @@
+$test: #bada55;
+
+$burgundy: #9B6152;
+$blue: #89B2C4;
+$red: #CC4144;
+$tan: #F1CFA1;
+$pine: #677718;
+$gray: #6d6d6d;
+$white: #ffffff;
+$black: #020202;
+
+$gift-red: #ED171E;
+$gift-teal: #79D7DF;
+$gift-yellow: #FFE417;
+$gift-green: #639560;
+$gift-pink: #FFB8CE;
+
+
+body, body:before, body:after,
+div, div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+  box-sizing:border-box;
+}
+
+
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+
+
+$box-w: 0vmin;
+$box-h: 0vmin;
+
+
+div.workshop {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    position: relative; 
+    background: 
+      
+/********************
+      
+      GIFTS
+      
+********************/
+      
+      
+        //green gift 1 - floor
+        linear-gradient(
+          darken($white, 30%) 3vmin,
+          darken($white, 40%) 3.25vmin, 
+          darken($white, 40%) 3.75vmin,
+          darken($white, 30%) 3.75vmin,
+          darken($white, 30%) 25vmin,
+          transparent 1vmin) 129vmin 77.5vmin / 1.5vmin 20vmin no-repeat,
+      
+        linear-gradient(
+          darken($gift-green, 20%) 10vmin,
+          transparent 1vmin) 119vmin 77.5vmin / 22vmin 3vmin no-repeat,
+      
+        linear-gradient(
+          darken($gift-green, 30%) 1vmin, 
+          darken($gift-green, 20%) 1.25vmin,
+          darken($gift-green, 20%) 18vmin,
+          transparent 1vmin) 120vmin 80vmin / 20vmin 25vmin no-repeat,
+      
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        darken($white, 30%) 1vmin, 
+        darken($white, 30%) 1.5vmin, 
+        transparent 1.25vmin) 128vmin 72.5vmin / 5vmin 8vmin no-repeat,
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        darken($white, 30%) 1vmin, 
+        darken($white, 30%) 1.5vmin, 
+        transparent 1.25vmin) 126vmin 73.5vmin / 5vmin 6vmin no-repeat,
+      
+      
+      
+      
+      
+      //red gift 1 - floor
+        repeating-linear-gradient(90deg,
+          darken($white, 40%)  0vmin,
+          darken($white, 40%)  2vmin,
+          transparent 2vmin,
+          transparent 87.5vmin) 97.5vmin 86.5vmin / 100% 1.25vmin no-repeat,
+      
+        repeating-linear-gradient(90deg,
+          darken($white, 30%) 3vmin,
+          darken($white, 30%) 5vmin,
+          transparent 1vmin,
+          transparent 90.5vmin) 94.5vmin 83.75vmin / 100% 13vmin no-repeat,
+      
+        repeating-linear-gradient(90deg,
+          darken($gift-red, 30%) 0vmin,
+          darken($gift-red, 30%)  20vmin,
+          transparent 18vmin,
+          transparent 87.5vmin) 88vmin 86.5vmin / 100% 1.25vmin no-repeat,
+      
+        repeating-linear-gradient(90deg,
+          darken($gift-red, 25%) 0vmin,
+          darken($gift-red, 25%) 22vmin,
+          transparent 22vmin,
+          transparent 87.5vmin) 87vmin 83.75vmin / 100% 3vmin no-repeat,
+      
+        repeating-linear-gradient(90deg,
+          darken($gift-red, 25%) 0vmin,
+          darken($gift-red, 25%) 20vmin,
+          transparent 20vmin,
+          transparent 87.5vmin) 88vmin 83.75vmin / 100% 13vmin no-repeat,
+      
+      
+            
+      //white gift 1 - floor
+        linear-gradient(
+          darken($gift-yellow, 20%) 3vmin,
+          darken($gift-yellow, 25%) 3vmin, 
+          darken($gift-yellow, 25%) 3.75vmin,
+          darken($gift-yellow, 20%) 4vmin,
+          darken($gift-yellow, 20%) 18vmin,
+          transparent 1vmin) 110vmin 85vmin / 1.5vmin 9vmin no-repeat,
+      
+        linear-gradient(
+          darken($white, 10%) 5vmin,
+          transparent 1vmin) 99vmin 85vmin / 27vmin 3vmin no-repeat,
+      
+        linear-gradient(
+          darken($white, 20%) 1vmin, 
+          darken($white, 10%) 1.25vmin,
+          darken($white, 10%) 6vmin,
+          transparent 1vmin) 100vmin 88vmin / 25vmin 10vmin no-repeat,
+      
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        darken($gift-yellow, 25%) 1vmin, 
+        darken($gift-yellow, 25%) 1.25vmin, 
+        transparent 1.25vmin) 108vmin 78vmin / 5vmin 10vmin no-repeat,
+      
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        darken($gift-yellow, 25%) 1vmin, 
+        darken($gift-yellow, 25%) 1.25vmin, 
+        transparent 1.25vmin) 106.5vmin 79.5vmin / 5vmin 8vmin no-repeat,
+      
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        darken($gift-yellow, 25%) 1vmin, 
+        darken($gift-yellow, 25%) 1.25vmin, 
+        transparent 1.25vmin) 109.5vmin 79.5vmin / 5vmin 8vmin no-repeat,
+      
+      
+ 
+      
+      
+      //pink gift 1 - floor
+        linear-gradient(
+          darken($gift-green, 10%) 3vmin,
+          darken($gift-green, 20%) 3.25vmin, 
+          darken($gift-green, 10%) 3.55vmin,
+          darken($gift-green, 10%) 14vmin,
+          transparent 1vmin) -.5vmin 84.75vmin / 1.5vmin 12.5vmin no-repeat,
+      
+        linear-gradient(
+          darken($gift-pink, 20%) 5vmin,
+          transparent 1vmin) -9vmin 84.75vmin / 14.75vmin 3vmin no-repeat,
+      
+        linear-gradient(
+          darken($gift-pink, 30%) 1vmin, 
+          darken($gift-pink, 20%) 1.25vmin,
+          darken($gift-pink, 20%) 15vmin,
+          transparent 1vmin) -5vmin 87.25vmin / 10vmin 10vmin no-repeat,
+      
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        darken($gift-green, 10%) 1vmin, 
+        darken($gift-green, 10%) 1.25vmin, 
+        transparent 1.25vmin) -1.75vmin 79.75vmin / 5vmin 8vmin no-repeat,
+      
+      
+            
+      //teal gift 1 - floor,
+        repeating-linear-gradient(90deg,
+          darken($gift-yellow, 15%) 3vmin,
+          darken($gift-yellow, 15%) 5vmin,
+          transparent 5vmin,
+          transparent 144vmin) 145vmin 89vmin / 100% 1.25vmin no-repeat,
+      
+        repeating-linear-gradient(90deg,
+          darken($gift-yellow, 10%) 3vmin,
+          darken($gift-yellow, 10%) 5vmin,
+          transparent 5vmin,
+          transparent 144vmin) 145vmin 87vmin / 100% 8vmin no-repeat,
+      
+        repeating-linear-gradient(90deg,
+          darken($gift-teal, 5%) 5vmin,
+          darken($gift-teal, 5%) 28vmin,
+          transparent 28.25vmin,
+          transparent 145vmin) 135vmin 89vmin / 100% 1.25vmin no-repeat,
+      
+        repeating-linear-gradient(90deg,
+          darken($gift-teal, 0%) 5vmin,
+          darken($gift-teal, 0%) 30vmin,
+          transparent 15.25vmin,
+          transparent 145vmin
+        ) 134vmin 87vmin / 100% 2.5vmin no-repeat,
+      
+        repeating-linear-gradient(90deg,
+          darken($gift-teal, 0%) 5vmin,
+          darken($gift-teal, 0%) 28vmin,
+          transparent 28.25vmin,
+          transparent 145vmin) 135vmin 89vmin / 100% 6vmin no-repeat,
+      
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        darken($gift-yellow, 10%) 1vmin, 
+        darken($gift-yellow, 10%) 1.5vmin, 
+        transparent 1.25vmin) 146.5vmin 81vmin / 4.5vmin 10vmin no-repeat,
+      
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        darken($gift-yellow, 10%) 1vmin, 
+        darken($gift-yellow, 10%) 1.5vmin, 
+        transparent 1.25vmin) 145vmin 82.5vmin / 5vmin 8vmin no-repeat,
+      
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        darken($gift-yellow, 10%) 1vmin, 
+        darken($gift-yellow, 10%) 1.5vmin, 
+        transparent 1.25vmin) 148vmin 82.5vmin / 5vmin 8vmin no-repeat,
+ 
+      
+
+       
+      
+      
+/********************
+      
+      LIGHTS
+      
+********************/
+
+      
+      //light stem 
+        repeating-linear-gradient(90deg,  transparent 8.25vmin, darken($black, 15%) 8.5vmin, transparent 9vmin, transparent 50.25vmin) 0vmin 0vmin / 100% 20vmin no-repeat,
+      
+      //lights 
+        repeating-linear-gradient(115deg,  lighten($black, 25%) 2vmin, $black 5vmin, transparent 5vmin, transparent 40vmin) 4.5vmin 18vmin / 100% 3vmin no-repeat,
+        repeating-linear-gradient(65deg,  darken($black, 15%) 4vmin, darken($black, 15%) 7vmin, transparent 7vmin, transparent 42vmin) 4.5vmin 18vmin / 100% 3vmin no-repeat,
+        repeating-linear-gradient(145deg,  lighten($black, 25%) 2vmin, $black 5.5vmin, transparent 5.5vmin, transparent 26vmin) 2vmin 20.5vmin / 100% 2vmin no-repeat,
+        repeating-linear-gradient(35deg,  darken($black, 15%) 2vmin, darken($black, 15%) 5.5vmin, transparent 5.5vmin, transparent 26vmin) 5vmin 20.5vmin / 100% 2vmin no-repeat,
+      
+      //light bulbs 
+        repeating-linear-gradient(115deg,  transparent 1vmin, darken($white, 15%) 5vmin, darken($white, 15%) 5vmin, transparent 6.5vmin, transparent 39vmin) 6vmin 21vmin / 100% 3vmin no-repeat,
+        repeating-linear-gradient(65deg,  transparent 1vmin, darken($white, 15%) 2.5vmin, darken($white, 15%) 5vmin, transparent 5vmin, transparent 39vmin) 4.5vmin 21vmin / 100% 3vmin no-repeat,
+      
+      
+
+      
+/********************
+      
+      WORKBENCH
+      
+********************/
+      
+      
+      //stool 1
+         radial-gradient(darken($red, 15%) 3vmin, darken($red, 8%) 5.5vmin, transparent 5.75vmin) 8vmin 77vmin / 14vmin 3vmin no-repeat,
+         radial-gradient(darken($red, 20%) 3vmin, darken($red, 10%) 7.5vmin, transparent 7.75vmin) 8vmin 77vmin / 14vmin 5vmin no-repeat,
+        linear-gradient(100deg,  transparent 5.75vmin, darken($burgundy, 10%) 6vmin, darken($burgundy, 15%) 8.25vmin, transparent 1vmin) 5vmin 80vmin / 10vmin  15vmin no-repeat,
+        linear-gradient(80deg,  transparent 5.75vmin, darken($burgundy, 10%) 6vmin, darken($burgundy, 15%) 8.25vmin, transparent 1vmin) 13vmin 80vmin / 10vmin  15vmin no-repeat,
+        linear-gradient( darken($burgundy, 25%) .25vmin, $burgundy 1.5vmin, transparent 1vmin) 11vmin 84vmin / 7vmin 1.5vmin no-repeat,
+        linear-gradient( darken($burgundy, 25%) .25vmin, $burgundy 1.5vmin, transparent 1vmin) 9.5vmin 88.5vmin / 10vmin 1.5vmin no-repeat,
+      
+      
+      //stool 2
+         radial-gradient(darken($red, 15%) 3vmin, darken($red, 8%) 5.5vmin, transparent 5.75vmin) 35vmin 77vmin / 14vmin 3vmin no-repeat,
+         radial-gradient(darken($red, 20%) 3vmin, darken($red, 10%) 7.5vmin, transparent 7.75vmin) 35vmin 77vmin / 14vmin 5vmin no-repeat,
+        linear-gradient(100deg,  transparent 5.75vmin, darken($burgundy, 10%) 6vmin, darken($burgundy, 15%) 8.25vmin, transparent 1vmin) 32vmin 80vmin / 10vmin  15vmin no-repeat,
+        linear-gradient(80deg,  transparent 5.75vmin, darken($burgundy, 10%) 6vmin, darken($burgundy, 15%) 8.25vmin, transparent 1vmin) 40vmin 80vmin / 10vmin  15vmin no-repeat,
+        linear-gradient( darken($burgundy, 25%) .25vmin, $burgundy 1.5vmin, transparent 1vmin) 38vmin 84vmin / 7vmin 1.5vmin no-repeat,
+        linear-gradient( darken($burgundy, 25%) .25vmin, $burgundy 1.5vmin, transparent 1vmin) 36.5vmin 88.5vmin / 10vmin 1.5vmin no-repeat,
+      
+        //stool 3
+         radial-gradient(darken($red, 15%) 3vmin, darken($red, 8%) 5.5vmin, transparent 5.75vmin) 62vmin 77vmin / 14vmin 3vmin no-repeat,
+         radial-gradient(darken($red, 20%) 3vmin, darken($red, 10%) 7.5vmin, transparent 7.75vmin) 62vmin 77vmin / 14vmin 5vmin no-repeat,
+        linear-gradient(100deg,  transparent 5.75vmin, darken($burgundy, 10%) 6vmin, darken($burgundy, 15%) 8.25vmin, transparent 1vmin) 59vmin 80vmin / 10vmin  15vmin no-repeat,
+        linear-gradient(80deg,  transparent 5.75vmin, darken($burgundy, 10%) 6vmin, darken($burgundy, 15%) 8.25vmin, transparent 1vmin) 67vmin 80vmin / 10vmin  15vmin no-repeat,
+        linear-gradient( darken($burgundy, 25%) .25vmin, $burgundy 1.5vmin, transparent 1vmin) 65vmin 84vmin / 7vmin 1.5vmin no-repeat,
+        linear-gradient( darken($burgundy, 25%) .25vmin, $burgundy 1.5vmin, transparent 1vmin) 63.5vmin 88.5vmin / 10vmin 1.5vmin no-repeat,
+      
+      //workbench drawers
+      radial-gradient(ellipse, lighten($black, 22%) .5vmin, transparent 0.75vmin) 17vmin 72.5vmin / 10vmin 10vmin no-repeat,
+        linear-gradient(transparent 1vmin, darken($blue, 15%) 1.25vmin, darken($blue, 30%) 10vmin, transparent 10vmin) 5.75vmin 72.75vmin / 33.5vmin 8.5vmin no-repeat,
+        linear-gradient(transparent 1vmin, lighten($black, 15%) 1.25vmin, lighten($black, 30%) 10vmin, transparent 10vmin) 5vmin 72vmin / 35vmin 15vmin no-repeat,
+      
+            radial-gradient(ellipse, lighten($black, 22%) .5vmin, transparent 0.75vmin) 57vmin 72.5vmin / 10vmin 10vmin no-repeat,
+        linear-gradient(transparent 1vmin, darken($blue, 15%) 1.25vmin, darken($blue, 30%) 10vmin, transparent 10vmin) 44.75vmin 72.75vmin / 33.5vmin 8.5vmin no-repeat,
+        linear-gradient(transparent 1vmin, lighten($black, 15%) 1.25vmin, lighten($black, 30%) 10vmin, transparent 10vmin) 44vmin 72vmin / 35vmin 15vmin no-repeat,
+      
+      
+      radial-gradient(ellipse, lighten($black, 22%) .5vmin, transparent 0.75vmin) 17vmin 82.5vmin / 10vmin 10vmin no-repeat,
+        linear-gradient(transparent 1vmin, darken($blue, 15%) 1.25vmin, darken($blue, 30%) 10vmin, transparent 10vmin) 5.75vmin 82.75vmin / 33.5vmin 8.5vmin no-repeat,
+        linear-gradient(transparent 1vmin, lighten($black, 15%) 1.25vmin, lighten($black, 30%) 10vmin, transparent 10vmin) 5vmin 82vmin / 35vmin 15vmin no-repeat,
+      
+            radial-gradient(ellipse, lighten($black, 22%) .5vmin, transparent 0.75vmin) 57vmin 82.5vmin / 10vmin 10vmin no-repeat,
+        linear-gradient(transparent 1vmin, darken($blue, 15%) 1.25vmin, darken($blue, 30%) 10vmin, transparent 10vmin) 44.75vmin 82.75vmin / 33.5vmin 8.5vmin no-repeat,
+        linear-gradient(transparent 1vmin, lighten($black, 15%) 1.25vmin, lighten($black, 30%) 10vmin, transparent 10vmin) 44vmin 82vmin / 35vmin 15vmin no-repeat,
+      
+      
+      
+        linear-gradient(darken($white, 15%) 12.5vmin, darken($white, 30%) 90vmin, transparent 1vmin) 2vmin 70vmin / 80vmin 2vmin no-repeat,
+        linear-gradient(lighten($black, 15%) 12.5vmin, lighten($black, 30%) 90vmin, transparent 1vmin) 2vmin 72vmin / 80vmin .5vmin no-repeat,
+        linear-gradient(darken($blue, 15%) 12.5vmin, darken($blue, 40%) 40vmin, transparent 1vmin) 2vmin 72vmin / 80vmin 22vmin no-repeat,
+      
+      
+            
+/********************
+      
+      BELT
+      
+********************/
+      
+  //wheels     
+  radial-gradient(ellipse, 
+    darken($white, 40%) .5vmin,
+    lighten($black, 25%) .75vmin, 
+    lighten($black, 30%) 1.75vmin,
+    darken($white, 40%) 1.75vmin,
+    darken($white, 45%) 2.25vmin, 
+    transparent 1vmin) 81vmin 68vmin / 10vmin 10vmin no-repeat,
+      
+      
+  radial-gradient(ellipse, 
+    darken($white, 40%) .5vmin,
+    lighten($black, 25%) .75vmin, 
+    lighten($black, 30%) 1.75vmin,
+    darken($white, 40%) 1.75vmin,
+    darken($white, 45%) 2.25vmin, 
+    transparent 1vmin) 121vmin 68vmin / 10vmin 10vmin no-repeat,
+      
+      
+  radial-gradient(ellipse, 
+    darken($white, 40%) .5vmin,
+    lighten($black, 25%) .75vmin, 
+    lighten($black, 30%) 1.75vmin,
+    darken($white, 40%) 1.75vmin,
+    darken($white, 45%) 2.25vmin, 
+    transparent 1vmin) 161vmin 68vmin / 10vmin 10vmin no-repeat,
+      
+      
+  radial-gradient(ellipse, 
+    darken($white, 40%) .5vmin,
+    lighten($black, 25%) .75vmin, 
+    lighten($black, 30%) 1.75vmin,
+    darken($white, 40%) 1.75vmin,
+    darken($white, 45%) 2.25vmin, 
+    transparent 1vmin) 201vmin 68vmin / 10vmin 10vmin no-repeat,
+      
+      
+  radial-gradient(ellipse, 
+    darken($white, 40%) .5vmin,
+    lighten($black, 25%) .75vmin, 
+    lighten($black, 30%) 1.75vmin,
+    darken($white, 40%) 1.75vmin,
+    darken($white, 45%) 2.25vmin, 
+    transparent 1vmin) 241vmin 68vmin / 10vmin 10vmin no-repeat,
+      
+      
+  radial-gradient(ellipse, 
+    darken($white, 40%) .5vmin,
+    lighten($black, 25%) .75vmin, 
+    lighten($black, 30%) 1.75vmin,
+    darken($white, 40%) 1.75vmin,
+    darken($white, 45%) 2.25vmin, 
+    transparent 1vmin) 281vmin 68vmin / 10vmin 10vmin no-repeat,
+      
+      
+  radial-gradient(ellipse, 
+    darken($white, 40%) .5vmin,
+    lighten($black, 25%) .75vmin, 
+    lighten($black, 30%) 1.75vmin,
+    darken($white, 40%) 1.75vmin,
+    darken($white, 45%) 2.25vmin, 
+    transparent 1vmin) 321vmin 68vmin / 10vmin 10vmin no-repeat,
+      
+      
+  radial-gradient(ellipse, 
+    darken($white, 40%) .5vmin,
+    lighten($black, 25%) .75vmin, 
+    lighten($black, 30%) 1.75vmin,
+    darken($white, 40%) 1.75vmin,
+    darken($white, 45%) 2.25vmin, 
+    transparent 1vmin) 361vmin 68vmin / 10vmin 10vmin no-repeat,
+      
+      
+  radial-gradient(ellipse, 
+    darken($white, 40%) .5vmin,
+    lighten($black, 25%) .75vmin, 
+    lighten($black, 30%) 1.75vmin,
+    darken($white, 40%) 1.75vmin,
+    darken($white, 45%) 2.25vmin, 
+    transparent 1vmin) 401vmin 68vmin / 10vmin 10vmin no-repeat,
+      
+      
+  radial-gradient(ellipse, 
+    darken($white, 40%) .5vmin,
+    lighten($black, 25%) .75vmin, 
+    lighten($black, 30%) 1.75vmin,
+    darken($white, 40%) 1.75vmin,
+    darken($white, 45%) 2.25vmin, 
+    transparent 1vmin) 441vmin 68vmin / 10vmin 10vmin no-repeat,
+      
+      
+  radial-gradient(ellipse, 
+    darken($white, 40%) .5vmin,
+    lighten($black, 25%) .75vmin, 
+    lighten($black, 30%) 1.75vmin,
+    darken($white, 40%) 1.75vmin,
+    darken($white, 45%) 2.25vmin, 
+    transparent 1vmin) 481vmin 68vmin / 10vmin 10vmin no-repeat,
+      
+      
+  radial-gradient(ellipse, 
+    darken($white, 40%) .5vmin,
+    lighten($black, 25%) .75vmin, 
+    lighten($black, 30%) 1.75vmin,
+    darken($white, 40%) 1.75vmin,
+    darken($white, 45%) 2.25vmin, 
+    transparent 1vmin) 521vmin 68vmin / 10vmin 10vmin no-repeat,
+      
+      
+  radial-gradient(ellipse, 
+    darken($white, 40%) .5vmin,
+    lighten($black, 25%) .75vmin, 
+    lighten($black, 30%) 1.75vmin,
+    darken($white, 40%) 1.75vmin,
+    darken($white, 45%) 2.25vmin, 
+    transparent 1vmin) 561vmin 68vmin / 10vmin 10vmin no-repeat,
+      
+      
+  //belt track    
+  radial-gradient(ellipse at right,
+    lighten($black, 25%) 2.5vmin, 
+    darken($white, 30%) 2.75vmin, 
+    darken($white, 50%) 3vmin, 
+    transparent 1vmin) 76vmin 63vmin / 10vmin 20vmin no-repeat,
+      
+    repeating-linear-gradient(90deg, darken($white, 40%) 0vmin, darken($white, 50%) 1vmin, transparent 1vmin, transparent 2vmin) 86vmin 70vmin / 100% .5vmin no-repeat, 
+      
+    repeating-linear-gradient(90deg, darken($white, 50%) 0vmin, darken($white, 60%) 1vmin, transparent 1vmin, transparent 2vmin) 88vmin 75.5vmin / 100% .5vmin no-repeat, 
+      
+      repeating-linear-gradient(lighten($black, 15%) 0vmin, lighten($black, 40%) 9vmin, transparent 1vmin) 85vmin 70vmin / 100% 6vmin no-repeat,
+      
+      
+        repeating-linear-gradient(90deg,
+          lighten($black, 30%) 0vmin,
+          lighten($black, 20%) 3.5vmin, 
+          transparent 4vmin, transparent 50.25vmin) 90vmin 75vmin / 100% 19vmin no-repeat,
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+/********************
+      
+      TREE
+      
+********************/
+
+      //balls
+      radial-gradient(ellipse, lighten($red, 8%) .25vmin, lighten($red, 10%) 1vmin, transparent 1.5vmin) 131vmin 29vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($red, 8%) .25vmin, lighten($red, 10%) 1vmin, transparent 1.5vmin) 132vmin 38vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($red, 8%) .25vmin, lighten($red, 10%) 1vmin, transparent 1.5vmin) 130vmin 55vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($red, 8%) .25vmin, lighten($red, 10%) 1vmin, transparent 1.5vmin) 136vmin 64vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($red, 8%) .25vmin, lighten($red, 10%) 1vmin, transparent 1.5vmin) 126vmin 74vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($red, 8%) .25vmin, lighten($red, 10%) 1vmin, transparent 1.5vmin) 143vmin 74vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($blue, 8%) .25vmin, lighten($blue, 10%) 1vmin, transparent 1.5vmin) 138vmin 54vmin / 10vmin 10vmin no-repeat,
+
+      radial-gradient(ellipse, lighten($blue, 8%) .25vmin, lighten($blue, 10%) 1vmin, transparent 1.5vmin) 135vmin 72vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($blue, 8%) .25vmin, lighten($blue, 10%) 1vmin, transparent 1.5vmin) 131vmin 45vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($blue, 8%) .25vmin, lighten($blue, 10%) 1vmin, transparent 1.5vmin) 133vmin 25vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($tan, 8%) .25vmin, lighten($tan, 10%) 1vmin, transparent 1.5vmin) 136vmin 30vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($tan, 8%) .25vmin, lighten($tan, 10%) 1vmin, transparent 1.5vmin) 126vmin 64vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($tan, 8%) .25vmin, lighten($tan, 10%) 1vmin, transparent 1.5vmin) 138vmin 44vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($tan, 8%) .25vmin, lighten($tan, 10%) 1vmin, transparent 1.5vmin) 138vmin 78vmin / 10vmin 10vmin no-repeat,
+      
+      
+        //limbs
+        linear-gradient(70deg, darken($pine, 5%) 1vmin, darken($pine, 10%) 6vmin, transparent 6.5vmin) 138.5vmin 18vmin / 10vmin 20vmin no-repeat,
+       linear-gradient(-70deg,darken($pine, 5%) 1vmin, $pine 6vmin, transparent 6.5vmin) 128.5vmin 18vmin / 10vmin 20vmin no-repeat,
+      
+        linear-gradient(70deg, darken($pine, 5%) 1vmin, darken($pine, 10%)  10vmin, transparent 10.5vmin) 138vmin 33vmin / 12vmin 20vmin no-repeat,
+       linear-gradient(-70deg,darken($pine, 5%) 1vmin, $pine 10vmin, transparent 10.5vmin) 128vmin 33vmin / 12vmin 20vmin no-repeat,
+      
+        linear-gradient(70deg,darken($pine, 5%) 1vmin, darken($pine, 10%)  13vmin, transparent 10.5vmin) 138.5vmin 52vmin / 16vmin 20vmin no-repeat,
+       linear-gradient(-70deg,darken($pine, 5%) 1vmin, $pine 13vmin, transparent 10.5vmin) 122.5vmin 52vmin / 16vmin 20vmin no-repeat,
+      
+        linear-gradient(70deg,darken($pine, 5%) 1vmin, darken($pine, 10%)  15.25vmin, transparent 15.5vmin) 138.5vmin 68vmin / 16vmin 20vmin no-repeat,
+       linear-gradient(-70deg,darken($pine, 5%) 1vmin, $pine 15.25vmin, transparent 15.5vmin) 123.5vmin 68vmin / 16vmin 20vmin no-repeat,
+      
+      
+        linear-gradient(90deg,  transparent 5.75vmin, darken($burgundy, 5%) 6vmin, darken($burgundy, 0%) 9vmin, transparent 1vmin) 131vmin 80vmin / 15vmin 13vmin no-repeat,
+      
+      
+      
+      //balls
+      radial-gradient(ellipse, lighten($red, 8%) .25vmin, lighten($red, 10%) 1vmin, transparent 1.5vmin) 331vmin 29vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($red, 8%) .25vmin, lighten($red, 10%) 1vmin, transparent 1.5vmin) 332vmin 38vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($red, 8%) .25vmin, lighten($red, 10%) 1vmin, transparent 1.5vmin) 330vmin 55vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($red, 8%) .25vmin, lighten($red, 10%) 1vmin, transparent 1.5vmin) 336vmin 64vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($red, 8%) .25vmin, lighten($red, 10%) 1vmin, transparent 1.5vmin) 326vmin 74vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($red, 8%) .25vmin, lighten($red, 10%) 1vmin, transparent 1.5vmin) 343vmin 74vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($blue, 8%) .25vmin, lighten($blue, 10%) 1vmin, transparent 1.5vmin) 338vmin 54vmin / 10vmin 10vmin no-repeat,
+
+      radial-gradient(ellipse, lighten($blue, 8%) .25vmin, lighten($blue, 10%) 1vmin, transparent 1.5vmin) 335vmin 72vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($blue, 8%) .25vmin, lighten($blue, 10%) 1vmin, transparent 1.5vmin) 331vmin 45vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($blue, 8%) .25vmin, lighten($blue, 10%) 1vmin, transparent 1.5vmin) 333vmin 25vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($tan, 8%) .25vmin, lighten($tan, 10%) 1vmin, transparent 1.5vmin) 336vmin 30vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($tan, 8%) .25vmin, lighten($tan, 10%) 1vmin, transparent 1.5vmin) 326vmin 60vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($tan, 8%) .25vmin, lighten($tan, 10%) 1vmin, transparent 1.5vmin) 338vmin 44vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($tan, 8%) .25vmin, lighten($tan, 10%) 1vmin, transparent 1.5vmin) 338vmin 78vmin / 10vmin 10vmin no-repeat,
+      
+      
+        //limbs
+        linear-gradient(70deg, darken($pine, 5%) 1vmin, darken($pine, 10%) 6vmin, transparent 6.5vmin) 338.5vmin 18vmin / 10vmin 20vmin no-repeat,
+       linear-gradient(-70deg,darken($pine, 5%) 1vmin, $pine 6vmin, transparent 6.5vmin) 328.5vmin 18vmin / 10vmin 20vmin no-repeat,
+      
+        linear-gradient(70deg, darken($pine, 5%) 1vmin, darken($pine, 10%)  10vmin, transparent 10.5vmin) 338vmin 33vmin / 12vmin 20vmin no-repeat,
+       linear-gradient(-70deg,darken($pine, 5%) 1vmin, $pine 10vmin, transparent 10.5vmin) 328vmin 33vmin / 12vmin 20vmin no-repeat,
+      
+        linear-gradient(70deg,darken($pine, 5%) 1vmin, darken($pine, 10%)  13vmin, transparent 10.5vmin) 338.5vmin 52vmin / 16vmin 20vmin no-repeat,
+       linear-gradient(-70deg,darken($pine, 5%) 1vmin, $pine 13vmin, transparent 10.5vmin) 322.5vmin 52vmin / 16vmin 20vmin no-repeat,
+      
+        linear-gradient(70deg,darken($pine, 5%) 1vmin, darken($pine, 10%)  15.25vmin, transparent 15.5vmin) 338.5vmin 68vmin / 16vmin 20vmin no-repeat,
+       linear-gradient(-70deg,darken($pine, 5%) 1vmin, $pine 15.25vmin, transparent 15.5vmin) 323.5vmin 68vmin / 16vmin 20vmin no-repeat,
+      
+      
+        linear-gradient(90deg,  transparent 5.75vmin, darken($burgundy, 5%) 6vmin, darken($burgundy, 0%) 9vmin, transparent 1vmin) 331vmin 80vmin / 15vmin 13vmin no-repeat,
+      
+/********************
+      
+ WREATHS
+      
+********************/
+      
+      //wreath 1
+      radial-gradient(ellipse, darken($red, 2%) .25vmin, darken($red, 10%) 1vmin, transparent 1.5vmin) 28vmin 22.5vmin / 10vmin 10vmin no-repeat,      
+       linear-gradient(35deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 30.5vmin 22.75vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(-35deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 30.5vmin 22.75vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(145deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 30.5vmin 27vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(-145deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 30.5vmin 27vmin / 5vmin 5vmin no-repeat,
+      
+  radial-gradient(ellipse, 
+    transparent 3.5vmin,
+    darken($pine, 1%) 3.75vmin, 
+    darken($pine, 10%) 7vmin,
+    transparent 7.75vmin,
+    transparent 1vmin) 23vmin 23vmin / 20vmin 20vmin no-repeat,
+      
+      
+      
+      //wreath 2
+      radial-gradient(ellipse, darken($red, 2%) .25vmin, darken($red, 10%) 1vmin, transparent 1.5vmin) 98vmin 22.5vmin / 10vmin 10vmin no-repeat,      
+       linear-gradient(35deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 100.5vmin 22.75vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(-35deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 100.5vmin 22.75vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(145deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 100.5vmin 27vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(-145deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 100.5vmin 27vmin / 5vmin 5vmin no-repeat,
+      
+  radial-gradient(ellipse, 
+    transparent 3.5vmin,
+    darken($pine, 1%) 3.75vmin, 
+    darken($pine, 10%) 7vmin,
+    transparent 7.75vmin,
+    transparent 1vmin) 93vmin 23vmin / 20vmin 20vmin no-repeat,
+      
+            
+      //wreath 3
+      radial-gradient(ellipse, darken($red, 2%) .25vmin, darken($red, 10%) 1vmin, transparent 1.5vmin) 168vmin 22.5vmin / 10vmin 10vmin no-repeat,      
+       linear-gradient(35deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 170.5vmin 22.75vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(-35deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 170.5vmin 22.75vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(145deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 170.5vmin 27vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(-145deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 170.5vmin 27vmin / 5vmin 5vmin no-repeat,
+      
+  radial-gradient(ellipse, 
+    transparent 3.5vmin,
+    darken($pine, 1%) 3.75vmin, 
+    darken($pine, 10%) 7vmin,
+    transparent 7.75vmin,
+    transparent 1vmin) 163vmin 23vmin / 20vmin 20vmin no-repeat,
+      
+      
+            
+      //wreath 4
+      radial-gradient(ellipse, darken($red, 2%) .25vmin, darken($red, 10%) 1vmin, transparent 1.5vmin) 238vmin 22.5vmin / 10vmin 10vmin no-repeat,      
+       linear-gradient(35deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 240.5vmin 22.75vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(-35deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 240.5vmin 22.75vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(145deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 240.5vmin 27vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(-145deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 240.5vmin 27vmin / 5vmin 5vmin no-repeat,
+      
+  radial-gradient(ellipse, 
+    transparent 3.5vmin,
+    darken($pine, 1%) 3.75vmin, 
+    darken($pine, 10%) 7vmin,
+    transparent 7.75vmin,
+    transparent 1vmin) 233vmin 23vmin / 20vmin 20vmin no-repeat,
+      
+      
+            
+      //wreath 5
+      radial-gradient(ellipse, darken($red, 2%) .25vmin, darken($red, 10%) 1vmin, transparent 1.5vmin) 308vmin 22.5vmin / 10vmin 10vmin no-repeat,      
+       linear-gradient(35deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 310.5vmin 22.75vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(-35deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 310.5vmin 22.75vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(145deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 310.5vmin 27vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(-145deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 310.5vmin 27vmin / 5vmin 5vmin no-repeat,
+      
+  radial-gradient(ellipse, 
+    transparent 3.5vmin,
+    darken($pine, 1%) 3.75vmin, 
+    darken($pine, 10%) 7vmin,
+    transparent 7.75vmin,
+    transparent 1vmin) 303vmin 23vmin / 20vmin 20vmin no-repeat,
+      
+      
+            
+      //wreath 6
+      radial-gradient(ellipse, darken($red, 2%) .25vmin, darken($red, 10%) 1vmin, transparent 1.5vmin) 378vmin 22.5vmin / 10vmin 10vmin no-repeat,      
+       linear-gradient(35deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 380.5vmin 22.75vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(-35deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 380.5vmin 22.75vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(145deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 380.5vmin 27vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(-145deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 380.5vmin 27vmin / 5vmin 5vmin no-repeat,
+      
+  radial-gradient(ellipse, 
+    transparent 3.5vmin,
+    darken($pine, 1%) 3.75vmin, 
+    darken($pine, 10%) 7vmin,
+    transparent 7.75vmin,
+    transparent 1vmin) 373vmin 23vmin / 20vmin 20vmin no-repeat,
+      
+      
+         
+      //wreath 7   
+      radial-gradient(ellipse, darken($red, 2%) .25vmin, darken($red, 10%) 1vmin, transparent 1.5vmin) 446vmin 22.5vmin / 10vmin 10vmin no-repeat,      
+       linear-gradient(35deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 448.5vmin 22.75vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(-35deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 448.5vmin 22.75vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(145deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 448.5vmin 27vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(-145deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 448.5vmin 27vmin / 5vmin 5vmin no-repeat,
+      
+  radial-gradient(ellipse, 
+    transparent 3.5vmin,
+    darken($pine, 1%) 3.75vmin, 
+    darken($pine, 10%) 7vmin,
+    transparent 7.75vmin,
+    transparent 1vmin) 441vmin 23vmin / 20vmin 20vmin no-repeat,
+      
+      
+            
+      //wreath 8   
+      radial-gradient(ellipse, darken($red, 2%) .25vmin, darken($red, 10%) 1vmin, transparent 1.5vmin) 516vmin 22.5vmin / 10vmin 10vmin no-repeat,      
+       linear-gradient(35deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 518.5vmin 22.75vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(-35deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 518.5vmin 22.75vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(145deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 518.5vmin 27vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(-145deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 518.5vmin 27vmin / 5vmin 5vmin no-repeat,
+      
+  radial-gradient(ellipse, 
+    transparent 3.5vmin,
+    darken($pine, 1%) 3.75vmin, 
+    darken($pine, 10%) 7vmin,
+    transparent 7.75vmin,
+    transparent 1vmin) 511vmin 23vmin / 20vmin 20vmin no-repeat,
+      
+      
+            
+      radial-gradient(ellipse, darken($red, 2%) .25vmin, darken($red, 10%) 1vmin, transparent 1.5vmin) 98vmin 22.5vmin / 10vmin 10vmin no-repeat,      
+       linear-gradient(35deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 100.5vmin 22.75vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(-35deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 100.5vmin 22.75vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(145deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 100.5vmin 27vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(-145deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 100.5vmin 27vmin / 5vmin 5vmin no-repeat,
+      
+  radial-gradient(ellipse, 
+    transparent 3.5vmin,
+    darken($pine, 1%) 3.75vmin, 
+    darken($pine, 10%) 7vmin,
+    transparent 7.75vmin,
+    transparent 1vmin) 93vmin 23vmin / 20vmin 20vmin no-repeat,
+      
+      
+            
+      radial-gradient(ellipse, darken($red, 2%) .25vmin, darken($red, 10%) 1vmin, transparent 1.5vmin) 98vmin 22.5vmin / 10vmin 10vmin no-repeat,      
+       linear-gradient(35deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 100.5vmin 22.75vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(-35deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 100.5vmin 22.75vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(145deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 100.5vmin 27vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(-145deg, darken($red, 10%) 1.5vmin, transparent 1.75vmin, transparent 26vmin) 100.5vmin 27vmin / 5vmin 5vmin no-repeat,
+      
+  radial-gradient(ellipse, 
+    transparent 3.5vmin,
+    darken($pine, 1%) 3.75vmin, 
+    darken($pine, 10%) 7vmin,
+    transparent 7.75vmin,
+    transparent 1vmin) 93vmin 23vmin / 20vmin 20vmin no-repeat,
+      
+      
+      
+      
+/********************
+      
+ WIDNOWS/ CURTAINS
+      
+********************/
+      
+      
+      
+      //curtains 
+        repeating-linear-gradient(90deg, darken($tan, 15%) 12.5vmin, darken($tan, 10%) 54vmin, transparent 54.5vmin, transparent 82vmin) 0vmin 17vmin / 100% 2vmin no-repeat,
+      
+        repeating-linear-gradient(90deg,
+          transparent 13vmin, 
+          darken($red, 15%) 13.25vmin,
+          lighten($red, 5%) 13.5vmin,
+          darken($red, 5%) 13.75vmin,
+          $red 14vmin, 
+          $red 15.5vmin, 
+          darken($red, 15%) 15.75vmin,
+          lighten($red, 5%) 16vmin,
+          darken($red, 5%) 16.75vmin,
+          $red 17vmin, 
+          $red 18.5vmin, 
+          darken($red, 15%) 18.75vmin,
+          lighten($red, 5%) 19vmin,
+          darken($red, 5%) 19.25vmin,
+          lighten($red, 5%) 20vmin,
+          $red 20.5vmin, 
+          $red 21.25vmin,
+          darken($red, 15%) 21.75vmin,
+          lighten($red, 5%) 22vmin,
+          darken($red, 5%) 22.75vmin, 
+          $red 23vmin, 
+          $red 23.25vmin,
+          transparent 23.5vmin, 
+          transparent 82.5vmin) 
+      0vmin 18vmin / 100% 63vmin no-repeat,
+      
+      
+        repeating-linear-gradient(90deg,
+          transparent 13vmin, 
+          darken($red, 5%) 13.25vmin,
+          lighten($red, 15%) 13.5vmin,
+          darken($red, 15%) 14.75vmin,
+          $red 15vmin, 
+          $red 15.5vmin, 
+          darken($red, 15%) 15.75vmin,
+          lighten($red, 5%) 16vmin,
+          darken($red, 5%) 16.75vmin,
+          $red 17vmin, 
+          $red 18.5vmin, 
+          darken($red, 15%) 18.75vmin,
+          lighten($red, 5%) 19vmin,
+          darken($red, 5%) 19.25vmin,
+          lighten($red, 5%) 20vmin,
+          $red 20.5vmin, 
+          $red 21.25vmin,
+          darken($red, 15%) 21.75vmin,
+          lighten($red, 5%) 22vmin,
+          darken($red, 5%) 22.75vmin, 
+          $red 23vmin, 
+          $red 23.25vmin,
+          transparent 23.5vmin, 
+          transparent 82.5vmin) 
+    30vmin 18vmin / 100% 63vmin no-repeat,
+      
+      
+      //window 1
+      repeating-linear-gradient(90deg, 
+        transparent .25vmin,
+        $tan .5vmin, 
+        $tan .75vmin, 
+        transparent 1vmin,
+        transparent 9.25vmin,
+        $tan 9.5vmin, 
+        $tan 9.75vmin, 
+        transparent 10vmin,
+        transparent 70vmin,
+      ) 
+      27.5vmin 20vmin / 100% 45vmin no-repeat,
+       
+      repeating-linear-gradient(90deg, transparent .25vmin, $tan .5vmin,  $tan 22.75vmin,  transparent 23vmin, transparent 70vmin,) 20vmin 28vmin / 100% .5vmin no-repeat,
+      
+      repeating-linear-gradient(90deg, transparent .25vmin, $tan .5vmin,  $tan 22.75vmin,  transparent 23vmin, transparent 70vmin,) 20vmin 28vmin / 100% .5vmin no-repeat,
+      
+      repeating-linear-gradient(90deg, transparent .25vmin, $tan .5vmin,  $tan 22.75vmin,  transparent 23vmin, transparent 70vmin,) 20vmin 35vmin / 100% .5vmin no-repeat,
+      
+      repeating-linear-gradient(90deg, transparent .25vmin, $tan .5vmin,  $tan 22.75vmin,  transparent 23vmin, transparent 70vmin,) 20vmin 42vmin / 100% .5vmin no-repeat,
+      
+      repeating-linear-gradient(90deg, transparent .25vmin, $tan .5vmin,  $tan 22.75vmin,  transparent 23vmin, transparent 70vmin,) 20vmin 49vmin / 100% .5vmin no-repeat,
+      
+      repeating-linear-gradient(90deg, transparent .25vmin, $tan .5vmin,  $tan 22.75vmin,  transparent 23vmin, transparent 70vmin,) 20vmin 56vmin / 100% .5vmin no-repeat,
+      
+      //snowman
+
+      radial-gradient(ellipse, lighten($black, 30%) .25vmin, transparent .5vmin) 100.5vmin 42.5vmin / 10vmin 10vmin no-repeat, 
+      radial-gradient(ellipse, lighten($black, 30%)  .25vmin, transparent .5vmin) 102.25vmin 42.5vmin / 10vmin 10vmin no-repeat, 
+      
+       linear-gradient(-15deg, darken($red, 10%) .75vmin, transparent 1vmin, transparent 2vmin) 104.5vmin 46.5vmin / 2vmin 2vmin no-repeat,
+
+      
+      radial-gradient(ellipse, lighten($black, 40%) .25vmin, transparent .5vmin) 101vmin 46vmin / 10vmin 10vmin no-repeat,
+      radial-gradient(ellipse, lighten($black, 40%) .25vmin, transparent .5vmin) 100.75vmin 47.5vmin / 10vmin 10vmin no-repeat, 
+      radial-gradient(ellipse, lighten($black, 40%) .25vmin, transparent .5vmin) 101vmin 49vmin / 10vmin 10vmin no-repeat, 
+      
+      
+      
+      radial-gradient(ellipse, darken($white, 11%) .5vmin, darken($white, 17%) 2vmin, transparent 2.25vmin) 102vmin 43vmin / 10vmin 10vmin no-repeat, 
+      radial-gradient(ellipse, darken($white, 11%) .5vmin, darken($white, 17%) 3vmin, transparent 3.25vmin) 102vmin 47vmin / 10vmin 10vmin no-repeat, 
+      radial-gradient(ellipse, darken($white, 11%) .5vmin, darken($white, 17%) 4vmin, transparent 4.25vmin) 102vmin 52vmin / 10vmin 10vmin no-repeat, 
+      
+      
+      
+      // linear-gradient($tan .5vmin, $tan 1vmin, transparent .75vmin) 21vmin 42vmin / 14vmin 0.25vmin no-repeat,
+      // linear-gradient($tan .5vmin, $tan 1vmin, transparent .75vmin) 21vmin 49vmin / 14vmin 0.25vmin no-repeat,
+      // linear-gradient($tan .5vmin, $tan 1vmin, transparent .75vmin) 21vmin 56vmin / 14vmin 0.25vmin no-repeat,
+  
+      
+        repeating-linear-gradient(90deg, darken($white,11%) 0vmin, darken($white, 17%) 32vmin, transparent 32vmin, transparent 70vmin) 14vmin 59.25vmin / 100% 4vmin no-repeat,
+      
+        repeating-linear-gradient(90deg,  transparent 21vmin, darken($white, 15%) 21.25vmin, darken($blue, 30%) 50.25vmin, transparent 50.5vmin, transparent 91vmin) 0vmin 21.5vmin / 100% 42vmin no-repeat,
+        repeating-linear-gradient(90deg,  transparent 20vmin, $tan 20.25vmin, $tan 45.25vmin, transparent 45.5vmin, transparent 90vmin) 0vmin 20vmin / 100% 45vmin no-repeat,
+      
+      
+      
+
+/********************
+      
+      DUCTS
+      
+********************/
+      
+    
+      //ducts
+        repeating-linear-gradient(90deg, darken($burgundy, 28%) 0vmin, darken($burgundy, 18%) 2vmin, transparent 2.25vmin, transparent 20vmin) 18vmin 0vmin / 100% 16vmin no-repeat,
+        repeating-linear-gradient(45deg, darken($burgundy, 28%) 12vmin, darken($burgundy, 18%) 14vmin, transparent 14.25vmin, transparent 40vmin) 0vmin 0vmin / 100% 16vmin no-repeat,
+        repeating-linear-gradient(135deg, darken($burgundy, 28%) 12vmin, darken($burgundy, 18%) 14vmin, transparent 14.25vmin, transparent 40vmin) 18vmin 0vmin / 100% 16vmin no-repeat,
+      
+      
+        repeating-linear-gradient(90deg, darken($burgundy, 18%) 0vmin, darken($burgundy, 12%) 2vmin, transparent 2.25vmin, transparent 20vmin) 18vmin 67vmin / 100% 24.5vmin no-repeat,
+       repeating-linear-gradient(90deg, darken($burgundy, 8%) 0vmin, darken($burgundy, 6%) .25vmin, transparent .75vmin, transparent 3vmin) 0vmin 67vmin / 100% 24.5vmin no-repeat,
+      
+      
+      
+      //bricks
+repeating-linear-gradient(90deg, darken($blue, 15%) 1vmin, darken($blue, 10%) 8vmin, transparent 8vmin, transparent 140vmin) 0vmin 37.5vmin / 100% 3vmin no-repeat,
+repeating-linear-gradient(90deg, darken($blue, 15%) 1vmin, darken($blue, 10%) 8vmin, transparent 8vmin, transparent 140vmin) 4vmin 34vmin / 100% 3vmin no-repeat,
+
+      
+repeating-linear-gradient(90deg, darken($blue, 10%) 0vmin, darken($blue, 5%) 8vmin, transparent 8vmin, transparent 140vmin) 53vmin 24.5vmin / 100% 3vmin no-repeat,
+repeating-linear-gradient(90deg, darken($blue, 10%) 0vmin, darken($blue, 5%) 8vmin, transparent 8vmin, transparent 140vmin) 57vmin 21vmin / 100% 3vmin no-repeat,
+      
+      
+        
+repeating-linear-gradient(90deg, darken($blue, 10%) 0vmin, darken($blue, 5%) 8vmin, transparent 8vmin, transparent 140vmin) 74vmin 27vmin / 100% 3vmin no-repeat,
+repeating-linear-gradient(90deg, darken($blue, 10%) 0vmin, darken($blue, 5%) 8vmin, transparent 8vmin, transparent 140vmin) 57vmin 21vmin / 100% 3vmin no-repeat,
+            
+
+repeating-linear-gradient(90deg, darken($blue, 20%) 1vmin, darken($blue, 15%) 8vmin, transparent 8vmin, transparent 140vmin) 195vmin 51.5vmin / 100% 3vmin no-repeat,
+repeating-linear-gradient(90deg, darken($blue, 20%) 1vmin, darken($blue, 15%) 8vmin, transparent 8vmin, transparent 140vmin) 204vmin 51.5vmin / 100% 3vmin no-repeat,
+repeating-linear-gradient(90deg, darken($blue, 20%) 1vmin, darken($blue, 15%) 8vmin, transparent 8vmin, transparent 140vmin) 200vmin 48vmin / 100% 3vmin no-repeat,
+      
+      
+      //backgrounds
+      linear-gradient(
+        darken($burgundy, 20%) 5vmin,
+        $burgundy 15vmin,
+        darken($burgundy, 28%) 15.25vmin, 
+        darken($burgundy, 18%) 17vmin, 
+        $blue 17.25vmin,
+        darken($blue, 20%) 65vmin,
+        darken($burgundy, 28%) 65.25vmin, 
+        darken($burgundy, 18%) 67vmin, 
+        $burgundy 67.25vmin,
+        darken($burgundy, 15%) 91.75vmin,
+        $tan 88.25vmin, $tan 92vmin, 
+        darken($tan, 10%) 92.25vmin, 
+        darken($tan, 15%) 95vmin,
+        $tan 95.25vmin, 
+        $tan 97vmin,
+        darken($tan, 10%) 97.25vmin, 
+        darken($tan, 15%) 100vmin) 
+      0% 0% / 100% 100%
+  
+}
+
+
+
+      
+div.workshop:before {
+  width: 100vw;
+  height: 100vh;
+  top: 0vh;
+  left: 0vw;
+  //border: solid 4px #990000;
+  z-index: 99;
+  margin: 0 auto;
+  position: absolute;
+  background: 
+     //yellow gift 1 - table
+        linear-gradient(
+          lighten($black, 30%) 2.75vmin,
+          lighten($black, 15%) 3vmin, 
+          lighten($black, 30%) 3.5vmin,
+          lighten($black, 30%) 18vmin,
+          transparent 1vmin) 75.5vmin 52.5vmin / 1.5vmin 17.5vmin no-repeat,
+      
+        linear-gradient(
+          darken($gift-yellow, 10%) 5vmin,
+          transparent 1vmin) 67vmin 52.5vmin / 18vmin 3vmin no-repeat,
+      
+        linear-gradient(
+          darken($gift-yellow, 20%) 1vmin, 
+          darken($gift-yellow, 10%) 1.25vmin,
+          darken($gift-yellow, 10%) 15vmin,
+          transparent 1vmin) 68vmin 55vmin / 16vmin 16vmin no-repeat,
+      
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        lighten($black, 10%) 1vmin, 
+        lighten($black, 10%) 1.25vmin, 
+        transparent 1.25vmin) 72.5vmin 47vmin / 5vmin 10vmin no-repeat,
+      
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        lighten($black, 10%) 1vmin, 
+        lighten($black, 10%) 1.25vmin, 
+        transparent 1.25vmin) 74.5vmin 47vmin / 5vmin 8vmin no-repeat,
+      
+      
+            //white gift 1
+      
+       
+      radial-gradient(ellipse,
+        transparent 2vmin, 
+        lighten($gift-red, 10%) 2vmin, 
+        lighten($gift-red, 10%) 2.5vmin, 
+        transparent 2.5vmin) 32.5vmin 64vmin / 6vmin 4vmin no-repeat,
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        lighten($gift-red, 10%) 1vmin, 
+        lighten($gift-red, 10%) 1.5vmin, 
+        transparent 1.5vmin) 35vmin 62vmin / 5vmin 8vmin no-repeat,
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        lighten($gift-red, 10%) 1vmin, 
+        lighten($gift-red, 10%) 1.5vmin, 
+        transparent 1.5vmin) 33.25vmin 60.5vmin / 5vmin 8vmin no-repeat,
+      radial-gradient(ellipse,
+        transparent 2vmin, 
+        lighten($gift-red, 10%) 2vmin, 
+        lighten($gift-red, 10%) 2.5vmin, 
+        transparent 2.5vmin) 34.75vmin 62.25vmin / 6vmin 4vmin no-repeat,
+    
+    
+    
+        linear-gradient(90deg,
+          transparent 3vmin, 
+          lighten($gift-red, 10%) 3vmin, 
+          lighten($gift-red, 10%) 3.75vmin, 
+          transparent 1vmin) 33vmin 60vmin / 4vmin 10vmin no-repeat,
+      
+        linear-gradient(
+          darken($white, 10%) 5vmin, 
+          lighten($gift-red, 10%) 5vmin, 
+          lighten($gift-red, 10%) 5.75vmin, 
+          darken($white, 10%) 5.75vmin,
+          darken($white, 20%) 11vmin,
+          transparent 1vmin) 30vmin 60vmin / 25vmin 10vmin no-repeat,
+      
+      
+      
+            //teal gift 1
+      
+     
+      radial-gradient(ellipse,
+        transparent 2vmin, 
+        $white 2vmin, 
+        $white 2.5vmin, 
+        transparent 2.5vmin) 56vmin 57vmin / 6vmin 4vmin no-repeat,
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        $white 1vmin, 
+        $white 1.5vmin, 
+        transparent 1.5vmin) 58.5vmin 55vmin / 5vmin 8vmin no-repeat,
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        $white 1vmin, 
+        $white 1.5vmin, 
+        transparent 1.5vmin) 56.75vmin 53.5vmin / 5vmin 8vmin no-repeat,
+      radial-gradient(ellipse,
+        transparent 2vmin, 
+        $white 2vmin, 
+        $white 2.5vmin, 
+        transparent 2.5vmin) 58.25vmin 55.25vmin / 6vmin 4vmin no-repeat,
+      
+        linear-gradient(90deg,
+          transparent 3vmin, 
+          $white 3vmin, 
+          $white 3.75vmin, 
+          transparent 1vmin) 57vmin 50vmin / 4vmin 20vmin no-repeat,
+      
+        linear-gradient(
+          darken($gift-teal, 10%) 8vmin, 
+          $white 8vmin, 
+          $white 8.75vmin, 
+          darken($gift-teal, 10%) 8.75vmin,
+          darken($gift-teal, 20%) 20vmin,
+          transparent 1vmin) 50vmin 50vmin / 20vmin 20vmin no-repeat,
+      
+           //pink gift 1 - table
+        linear-gradient(
+          darken($gift-teal, 30%) 2.75vmin,
+          darken($gift-teal, 15%) 3vmin, 
+          darken($gift-teal, 30%) 3.5vmin,
+          darken($gift-teal, 30%) 18vmin,
+          transparent 1vmin) 25.5vmin 52.5vmin / 1.5vmin 17.5vmin no-repeat,
+      
+        linear-gradient(
+          darken($gift-pink, 10%) 5vmin,
+          transparent 1vmin) 17vmin 52.5vmin / 18vmin 3vmin no-repeat,
+      
+        linear-gradient(
+          darken($gift-pink, 20%) 1vmin, 
+          darken($gift-pink, 10%) 1.25vmin,
+          darken($gift-pink, 10%) 15vmin,
+          transparent 1vmin) 18vmin 55vmin / 16vmin 16vmin no-repeat,
+      
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        darken($gift-teal, 20%) 1vmin, 
+        darken($gift-teal, 30%) 1.25vmin, 
+        transparent 1.25vmin) 22.5vmin 47vmin / 5vmin 10vmin no-repeat,
+      
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        darken($gift-teal, 20%) 1vmin, 
+        darken($gift-teal, 30%) 1.25vmin, 
+        transparent 1.25vmin) 24.5vmin 47vmin / 5vmin 8vmin no-repeat,
+      
+      
+           //blue gift 1 - table
+        linear-gradient(
+          darken($gift-yellow, 30%) 2.75vmin,
+          darken($gift-yellow, 15%) 3vmin, 
+          darken($gift-yellow, 30%) 3.5vmin,
+          darken($gift-yellow, 30%) 18vmin,
+          transparent 1vmin) 40vmin 47.5vmin / 1.5vmin 17.5vmin no-repeat,
+      
+        linear-gradient(
+          darken($blue, 20%) 5vmin,
+          transparent 1vmin) 27vmin 47.5vmin / 28vmin 3vmin no-repeat,
+      
+        linear-gradient(
+          darken($blue, 30%) 1vmin, 
+          darken($blue, 20%) 1.25vmin,
+          darken($blue, 20%) 15vmin,
+          transparent 1vmin) 28vmin 50vmin / 26vmin 16vmin no-repeat,
+      
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        darken($gift-yellow, 20%) 1vmin, 
+        darken($gift-yellow, 30%) 1.5vmin, 
+        transparent 1.25vmin) 40vmin 42vmin / 5vmin 10vmin no-repeat,
+      
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        darken($gift-yellow, 20%) 1vmin, 
+        darken($gift-yellow, 30%) 1.5vmin, 
+        transparent 1.25vmin) 38vmin 41vmin / 5vmin 8vmin no-repeat,
+    
+    
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        darken($gift-yellow, 20%) 1vmin, 
+        darken($gift-yellow, 30%) 1.5vmin, 
+        transparent 1.25vmin) 36vmin 42vmin / 5vmin 10vmin no-repeat,
+      
+            
+    
+    
+        //teal gift 1
+      radial-gradient(ellipse,
+        transparent 2vmin, 
+        darken($gift-yellow, 10%) 2vmin, 
+        darken($gift-yellow, 10%) 2.5vmin, 
+        transparent 2.5vmin) 6vmin 57vmin / 6vmin 4vmin no-repeat,
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        darken($gift-yellow, 10%) 1vmin, 
+        darken($gift-yellow, 10%) 1.5vmin, 
+        transparent 1.5vmin) 8.5vmin 55vmin / 5vmin 8vmin no-repeat,
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        darken($gift-yellow, 10%) 1vmin, 
+        darken($gift-yellow, 10%) 1.5vmin, 
+        transparent 1.5vmin) 6.75vmin 53.5vmin / 5vmin 8vmin no-repeat,
+      radial-gradient(ellipse,
+        transparent 2vmin, 
+        darken($gift-yellow, 10%) 2vmin, 
+        darken($gift-yellow, 10%) 2.5vmin, 
+        transparent 2.5vmin) 8.25vmin 55.25vmin / 6vmin 4vmin no-repeat,
+      
+        linear-gradient(90deg,
+          transparent 3vmin, 
+          darken($gift-yellow, 10%) 3vmin, 
+          darken($gift-yellow, 10%) 3.75vmin, 
+          transparent 1vmin) 7vmin 50vmin / 4vmin 20vmin no-repeat,
+      
+        linear-gradient(
+          darken($gift-red, 10%) 8vmin, 
+          darken($gift-yellow, 10%) 8vmin, 
+          darken($gift-yellow, 10%) 8.75vmin, 
+          darken($gift-red, 10%) 8.75vmin,
+          darken($gift-red, 20%) 20vmin,
+          transparent 1vmin) 0vmin 50vmin / 20vmin 20vmin no-repeat,
+      
+      
+}
+
+
+div.workshop:after {
+  width: 30vmin;
+  height: 30vmin;
+  top: 40vmin;
+  left: 40vmin;
+  //border: solid .5vmin $test;
+  animation: pop-up 20s ease-in-out infinite;
+  z-index: 69;
+  position: absolute;
+  background: 
+    
+       radial-gradient(ellipse at bottom, darken($white, 15%) 3.5vmin, transparent 2.25vmin, transparent 26vmin) 5vmin 12vmin / 15vmin 5vmin no-repeat,
+       radial-gradient(ellipse at bottom, darken($white, 15%) 3.5vmin, transparent 2.25vmin, transparent 26vmin) 9.75vmin 12vmin / 15vmin 5vmin no-repeat,
+        linear-gradient(70deg, $pine 0vmin, lighten($pine, 10%) 5vmin, transparent 5vmin) 15vmin 1vmin / 10vmin 15vmin no-repeat,  
+       linear-gradient(-70deg, lighten($pine, 10%) 5vmin, transparent 5vmin) 5vmin 1vmin / 10vmin 15vmin no-repeat,
+       linear-gradient(65deg, $tan 2vmin, transparent 2.25vmin, transparent 26vmin) 9vmin 10vmin / 5vmin 5vmin no-repeat,
+       linear-gradient(-65deg, $tan 2vmin, transparent 2.25vmin, transparent 26vmin) 16vmin 10vmin / 5vmin 5vmin no-repeat,
+    ;
+}
+
+@keyframes pop-up {
+  0% { 
+    top: 40vmin;
+  }
+  38% { 
+    top: 40vmin;
+  }
+  40% { 
+    top: 33vmin;
+  }
+  65% { 
+    top: 33vmin;
+  }
+  67% { 
+    top: 40vmin;
+  }
+  100% { 
+    top: 40vmin;
+  }
+}
+
+    
+body:before {
+  content: 'December';
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.8vmin;
+  line-height: 4vmin;
+  text-align: center;
+  text-transform: uppercase;
+  color: darken($white, 50%);
+  width: 20vmin;
+  height: 30vmin;
+  top: 32vmin;
+  left: 58vmin;
+  border: solid 1vmin darken($blue, 20%);
+  margin: .25rem;
+  z-index: 9;
+  margin: 0 auto;
+  position: absolute;
+  box-shadow: 0 0 0 #333;
+  background: 
+    
+     radial-gradient(ellipse, 
+       transparent 1.5vmin, $red 1.75vmin, $red 2.25vmin, transparent 2.5vmin) 4.75vmin 11.25vmin / 5vmin 5vmin no-repeat,
+    
+    
+        linear-gradient(90deg,
+    darken($white, 25%) 0vmin,
+    darken($white, 25%) 2vmin,
+    transparent 2vmin,
+    transparent 2.25vmin,
+    darken($white, 25%) 2.25vmin,
+    darken($white, 25%) 4.25vmin,
+    transparent 4.25vmin,
+    transparent 4.5vmin,
+    darken($white, 25%) 4.75vmin,
+    darken($white, 25%) 6.75vmin,
+    transparent 6.75vmin,
+    transparent 7vmin,
+    darken($white, 25%) 7vmin,
+    darken($white, 25%) 9vmin,
+    transparent 9vmin,
+    transparent 9.25vmin,
+    darken($white, 25%) 9.25vmin,
+    darken($white, 25%) 11.25vmin,
+    transparent 11.25vmin,
+    transparent 11.5vmin,
+    darken($white, 25%) 11.5vmin,
+    darken($white, 25%) 13.5vmin,
+    transparent 13.5vmin,
+    transparent 13.75vmin,
+    darken($white, 25%) 13.75vmin,
+    darken($white, 25%) 15.75vmin,
+    transparent 1vmin,
+    ) 1.5vmin 5vmin / 17vmin 2vmin no-repeat,
+    
+    
+        linear-gradient(90deg,
+    darken($white, 25%) 0vmin,
+    darken($white, 25%) 2vmin,
+    transparent 2vmin,
+    transparent 2.25vmin,
+    darken($white, 25%) 2.25vmin,
+    darken($white, 25%) 4.25vmin,
+    transparent 4.25vmin,
+    transparent 4.5vmin,
+    darken($white, 25%) 4.75vmin,
+    darken($white, 25%) 6.75vmin,
+    transparent 6.75vmin,
+    transparent 7vmin,
+    darken($white, 25%) 7vmin,
+    darken($white, 25%) 9vmin,
+    transparent 9vmin,
+    transparent 9.25vmin,
+    darken($white, 25%) 9.25vmin,
+    darken($white, 25%) 11.25vmin,
+    transparent 11.25vmin,
+    transparent 11.5vmin,
+    darken($white, 25%) 11.5vmin,
+    darken($white, 25%) 13.5vmin,
+    transparent 13.5vmin,
+    transparent 13.75vmin,
+    darken($white, 25%) 13.75vmin,
+    darken($white, 25%) 15.75vmin,
+    transparent 1vmin,
+    ) 1.5vmin 7.5vmin / 17vmin 2vmin no-repeat,
+    
+        linear-gradient(90deg,
+    darken($white, 25%) 0vmin,
+    darken($white, 25%) 2vmin,
+    transparent 2vmin,
+    transparent 2.25vmin,
+    darken($white, 25%) 2.25vmin,
+    darken($white, 25%) 4.25vmin,
+    transparent 4.25vmin,
+    transparent 4.5vmin,
+    darken($white, 25%) 4.75vmin,
+    darken($white, 25%) 6.75vmin,
+    transparent 6.75vmin,
+    transparent 7vmin,
+    darken($white, 25%) 7vmin,
+    darken($white, 25%) 9vmin,
+    transparent 9vmin,
+    transparent 9.25vmin,
+    darken($white, 25%) 9.25vmin,
+    darken($white, 25%) 11.25vmin,
+    transparent 11.25vmin,
+    transparent 11.5vmin,
+    darken($white, 25%) 11.5vmin,
+    darken($white, 25%) 13.5vmin,
+    transparent 13.5vmin,
+    transparent 13.75vmin,
+    darken($white, 25%) 13.75vmin,
+    darken($white, 25%) 15.75vmin,
+    transparent 1vmin,
+    ) 1.5vmin 10vmin / 17vmin 2vmin no-repeat,
+    
+        linear-gradient(90deg,
+    darken($white, 25%) 0vmin,
+    darken($white, 25%) 2vmin,
+    transparent 2vmin,
+    transparent 2.25vmin,
+    darken($white, 25%) 2.25vmin,
+    darken($white, 25%) 4.25vmin,
+    transparent 4.25vmin,
+    transparent 4.5vmin,
+    darken($white, 25%) 4.75vmin,
+    darken($white, 25%) 6.75vmin,
+    transparent 6.75vmin,
+    transparent 7vmin,
+    darken($white, 25%) 7vmin,
+    darken($white, 25%) 9vmin,
+    transparent 9vmin,
+    transparent 9.25vmin,
+    darken($white, 25%) 9.25vmin,
+    darken($white, 25%) 11.25vmin,
+    transparent 11.25vmin,
+    transparent 11.5vmin,
+    darken($white, 25%) 11.5vmin,
+    darken($white, 25%) 13.5vmin,
+    transparent 13.5vmin,
+    transparent 13.75vmin,
+    darken($white, 25%) 13.75vmin,
+    darken($white, 25%) 15.75vmin,
+    transparent 1vmin,
+    ) 1.5vmin 12.5vmin / 17vmin 2vmin no-repeat,
+    
+    linear-gradient(90deg,
+    darken($white, 25%) 0vmin,
+    darken($white, 25%) 2vmin,
+    transparent 2vmin,
+    transparent 2.25vmin,
+    darken($white, 25%) 2.25vmin,
+    darken($white, 25%) 4.25vmin,
+    transparent 4.25vmin,
+    transparent 4.5vmin,
+    darken($white, 25%) 4.75vmin,
+    darken($white, 25%) 6.75vmin,
+    transparent 1vmin,
+    ) 1.5vmin 15vmin / 17vmin 2vmin no-repeat,
+    
+     linear-gradient(90deg, $white 0vmin, darken($white, 10%) 8vmin) 0% 0% / 100% 100% no-repeat,
+    ;
+}
+    
+    
+
+body:after {
+  width: 100vw;
+  height: 72vh;
+  top: 1vh;
+  left: 84vw;
+  //border: solid 4px $test;
+  z-index: 9;
+  margin: 0 auto;
+  position: absolute;
+  animation: go-left 20s ease-in-out infinite;
+  background: 
+    
+    
+     //pink gift 3 - track
+        linear-gradient(
+          darken($gift-yellow, 10%) 3vmin,
+          darken($gift-yellow, 20%) 3.25vmin, 
+          darken($gift-yellow, 10%) 3.55vmin,
+          darken($gift-yellow, 10%) 14vmin,
+          transparent 1vmin) 10.5vmin 56vmin / 1.5vmin 12.5vmin no-repeat,
+      
+        linear-gradient(
+          darken($gift-pink, 20%) 5vmin,
+          transparent 1vmin) 4vmin 56vmin / 14vmin 3vmin no-repeat,
+      
+        linear-gradient(
+          darken($gift-pink, 30%) 1vmin, 
+          darken($gift-pink, 20%) 1.25vmin,
+          darken($gift-pink, 20%) 15vmin,
+          transparent 1vmin) 5vmin 59vmin / 12vmin 10vmin no-repeat,
+      
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        darken($gift-yellow, 10%) 1vmin, 
+        darken($gift-yellow, 10%) 1.25vmin, 
+        transparent 1.25vmin) 9.25vmin 51vmin / 5vmin 8vmin no-repeat,
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        darken($gift-yellow, 10%) 1vmin, 
+        darken($gift-yellow, 10%) 1.25vmin, 
+        transparent 1.25vmin) 7.25vmin 51vmin / 5vmin 8vmin no-repeat,
+      
+         //green gift 2 track
+        linear-gradient(90deg,
+          transparent 3vmin, 
+          lighten($gift-red, 10%) 3vmin, 
+          lighten($gift-red, 10%) 4.25vmin, 
+          transparent 1vmin) 53vmin 59vmin / 4vmin 10vmin no-repeat,
+      
+        linear-gradient(
+          darken($gift-green, 10%) 5vmin, 
+          lighten($gift-red, 10%) 4.75vmin, 
+          lighten($gift-red, 10%) 6vmin, 
+          darken($gift-green, 10%) 6.25vmin,
+          darken($gift-green, 20%) 11vmin,
+          transparent 1vmin) 50vmin 59vmin / 25vmin 10vmin no-repeat,
+      
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        lighten($gift-red, 10%) 1vmin, 
+        lighten($gift-red, 10%) 1.5vmin, 
+        transparent 1.5vmin) 53vmin 53vmin / 5vmin 8vmin no-repeat,
+      
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        lighten($gift-red, 10%) 1vmin, 
+        lighten($gift-red, 10%) 1.5vmin, 
+        transparent 1.5vmin) 55vmin 53vmin / 5vmin 8vmin no-repeat,
+      
+    
+     //teal gift 1 - track
+        linear-gradient(
+          darken($gift-teal, 10%) 3vmin,
+          darken($gift-teal, 20%) 3.25vmin, 
+          darken($gift-teal, 10%) 3.55vmin,
+          darken($gift-teal, 10%) 14vmin,
+          transparent 1vmin) 118vmin 56vmin / 1.5vmin 13vmin no-repeat,
+      
+        linear-gradient(
+          darken($white, 20%) 5vmin,
+          transparent 1vmin) 114vmin 56vmin / 10vmin 3vmin no-repeat,
+      
+        linear-gradient(
+          darken($white, 30%) 1vmin, 
+          darken($white, 20%) 1.25vmin,
+          darken($white, 20%) 15vmin,
+          transparent 1vmin) 115vmin 59vmin / 8vmin 10vmin no-repeat,
+      
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        darken($gift-teal, 10%) 1vmin, 
+        darken($gift-teal, 10%) 1.25vmin, 
+        transparent 1.25vmin) 117.25vmin 51vmin / 5vmin 8vmin no-repeat,
+      radial-gradient(ellipse,
+        transparent 1vmin, 
+        darken($gift-teal, 10%) 1vmin, 
+        darken($gift-teal, 10%) 1.25vmin, 
+        transparent 1.25vmin) 115.25vmin 51vmin / 5vmin 8vmin no-repeat,
+    
+    
+    ;
+}
+
+@keyframes go-left {
+  0% { 
+    left: -100%;
+  }
+  100% { 
+    left: 100%;
+  }
+}

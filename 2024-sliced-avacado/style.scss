@@ -1,0 +1,188 @@
+$black: #111111;
+$dark-gray: #51504E;
+$light-blue: #CBD4F5;
+$pale-blue: #4B6D95;
+$dark-brown: #553B16;
+$pine-green: #556533;
+$sky-blue: #6386AF;
+$lime-green: #88C03B;
+$dark-tan: #A77A3A;
+$tan: #C1924E;
+$pale-green: #C8DC6C;
+$white: #E1E1E1;
+$bright-white: #D9D9D9;
+$pale-tan: #E5AC75;
+
+div, div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+  box-sizing:border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: 
+    radial-gradient(darken($light-blue, 0%), darken($light-blue, 5%));
+}
+
+
+$box-w: 5vmin;
+$box-h: 0vmin;
+
+div.soft-and-sharp {
+    width: 92vmin;
+    height: 92vmin;
+    display: flex;
+    margin: 0 auto;
+    position: relative; 
+    justify-content: center;
+    align-items: center;
+    background: 
+    
+      /* avacado 1 */
+      
+       radial-gradient(ellipse, 
+         $pale-tan .75vmin, 
+         transparent 1vmin ) calc(#{$box-w} + 52vmin) calc(#{$box-h} + 37vmin)  / 2vmin 3vmin no-repeat,
+      
+       radial-gradient(ellipse, 
+         $pale-tan .75vmin, 
+         transparent 1vmin ) calc(#{$box-w} + 49.75vmin) calc(#{$box-h} + 39vmin)  / 2.5vmin 5vmin no-repeat,
+      
+       radial-gradient(ellipse, 
+         $tan 5.25vmin, 
+         transparent 5.5vmin ) calc(#{$box-w} + 48.5vmin) calc(#{$box-h} + 33.5vmin)  / 12vmin 16vmin no-repeat,
+       radial-gradient(ellipse, 
+         $dark-tan 5.25vmin, 
+         transparent 5.5vmin ) calc(#{$box-w} + 47vmin) calc(#{$box-h} + 31vmin)  / 16vmin 22vmin no-repeat,
+         
+      
+      
+       radial-gradient(ellipse at 50% 102%, 
+         $pale-green 8vmin, 
+         $lime-green 8.25vmin, 
+         $lime-green 11.25vmin, 
+         $pine-green 11.5vmin, 
+         $pine-green 12.25vmin, 
+         transparent 12.5vmin ) calc(#{$box-w} + 38vmin) calc(#{$box-h} + 7vmin)  / 34vmin 30vmin no-repeat,
+      
+       radial-gradient(ellipse, 
+         $pale-green 9vmin, 
+         $lime-green 9.25vmin, 
+         $lime-green 12vmin, 
+         $pine-green 12.25vmin, 
+         $pine-green 13vmin, 
+         transparent 13.25vmin ) calc(#{$box-w} + 30vmin) calc(#{$box-h} + 10vmin)  / 50vmin 65vmin no-repeat,
+      
+      
+      /* plate */
+       radial-gradient(ellipse, 
+         $pale-blue 36vmin, 
+         $sky-blue 36.25vmin, 
+         $sky-blue 37vmin, 
+         $pale-blue 37.25vmin,
+         $pale-blue 41.25vmin, 
+         $dark-brown 41.5vmin, 
+         $dark-brown 43vmin, 
+         transparent 43.25vmin ) calc(#{$box-w} - 4vmin) calc(#{$box-h} + 1vmin)  / 86vmin 86vmin no-repeat,
+      
+}
+
+
+$after-w: -40vmin;
+$after-h: -15vmin;
+
+div.soft-and-sharp:after {
+    width: 35vmin;
+    height: 50vmin;
+    transform: rotate(-19deg);
+    left: 15vmin;
+    top: 8vmin;
+    z-index: 99;
+    background: 
+      
+       radial-gradient(ellipse, 
+         darken($pale-green, 30%) 4.25vmin, 
+         transparent 4.5vmin ) calc(#{$after-w} + 49.75vmin) calc(#{$after-h} + 34.75vmin)  / 10vmin 14vmin no-repeat,
+       radial-gradient(ellipse, 
+         darken($pale-green, 25%) 5.25vmin, 
+         transparent 5.5vmin ) calc(#{$after-w} + 47vmin) calc(#{$after-h} + 31vmin)  / 16vmin 22vmin no-repeat,
+         
+      
+      
+       radial-gradient(ellipse at 50% 102%, 
+         $pale-green 8vmin, 
+         $lime-green 8.25vmin, 
+         $lime-green 11.25vmin, 
+         $pine-green 11.5vmin, 
+         $pine-green 12.25vmin, 
+         transparent 12.5vmin ) calc(#{$after-w} + 38vmin) calc(#{$after-h} + 7vmin)  / 34vmin 30vmin no-repeat,
+      
+       radial-gradient(ellipse, 
+         $pale-green 9vmin, 
+         $lime-green 9.25vmin, 
+         $lime-green 12vmin, 
+         $pine-green 12.25vmin, 
+         $pine-green 13vmin, 
+         transparent 13.25vmin ) calc(#{$after-w} + 27.5vmin) calc(#{$after-h} + 8vmin)  / 55vmin 67vmin no-repeat,
+      
+}
+      
+$before-w: 0vmin;
+$before-h: 0vmin;
+
+div.soft-and-sharp:before {
+    width: 85vmin;
+    height: 20vmin;
+    transform: rotate(9deg);
+    left: -5vmin;
+    top: 60vmin;
+    z-index: 99;
+    background: 
+      
+      
+        /* knife blade */
+      
+       radial-gradient(ellipse at top left, 
+         $bright-white 5.5vmin, 
+         transparent 5.75vmin ) calc(#{$before-w} + 73vmin) calc(#{$before-h} + .5vmin)  / 5.5vmin 5.5vmin no-repeat,
+       linear-gradient( 
+         $bright-white 5.5vmin, 
+         transparent 7.75vmin ) calc(#{$before-w} + 34vmin) calc(#{$before-h} + .5vmin)  / 40vmin 5.5vmin no-repeat,
+      
+      
+       radial-gradient(ellipse at top left, 
+         $white 7.5vmin, 
+         transparent 7.75vmin ) calc(#{$before-w} + 73vmin) calc(#{$before-h} + .5vmin)  / 7.5vmin 7.5vmin no-repeat,
+       linear-gradient( 
+         $white 7.5vmin, 
+         transparent 7.75vmin ) calc(#{$before-w} + 34vmin) calc(#{$before-h} + .5vmin)  / 40vmin 7.5vmin no-repeat,
+      
+      
+        /* knife handle */
+       linear-gradient( 
+         $black 9.75vmin, 
+         transparent 10vmin ) calc(#{$before-w} + 5vmin) calc(#{$before-h} + 0vmin)  / 28vmin 4vmin no-repeat,
+      
+       radial-gradient(ellipse at 100% 50%, 
+         $black 9.75vmin, 
+         transparent 10vmin ) calc(#{$before-w} + 24vmin) calc(#{$before-h} + 0vmin)  / 10vmin 10vmin no-repeat,
+      
+       radial-gradient(ellipse, 
+         $black 10.75vmin, 
+         transparent 5vmin ) calc(#{$before-w} + 8vmin) calc(#{$before-h} + 1.25vmin)  / 22vmin 10vmin no-repeat,
+      
+       radial-gradient(ellipse, 
+         $dark-gray 1vmin, 
+         transparent 1.25vmin ) calc(#{$before-w} + 3vmin) calc(#{$before-h} + 3.5vmin)  / 2.5vmin 2.5vmin no-repeat,
+      
+       radial-gradient(ellipse, 
+         $black 4.75vmin, 
+         transparent 5vmin ) calc(#{$before-w} + 0vmin) calc(#{$before-h} + 0vmin)  / 10vmin 10vmin no-repeat,
+      
+}

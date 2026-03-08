@@ -1,0 +1,461 @@
+$test: #bada55;
+
+$gray: #616161;
+$off-white: #f7f7f7;
+$light-gray: #d9d9d9;
+
+$white: #ffffff;
+$black: #020202;
+
+div, div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+  box-sizing:border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  
+  background: 
+  radial-gradient(darken($white, 10%) 40%, lighten($gray, 20%));
+}
+
+
+
+$laptop-w: 0vmin;
+$laptop-h: 0vmin;
+
+
+div.laptop {
+    //border: solid 4px #990000;
+    position: relative;
+    width: 100vmin;
+    height: 100vmin;
+}
+
+div.laptop:before {
+    color: #ccc;
+    width: 60vmin;
+    height: 40vmin;
+    top: 10vmin;
+    left: 0vmin;
+    transform: perspective(900px) rotateX(-17deg);
+    position: absolute;
+    border: solid 2px darken($light-gray, 15%);
+    border-radius: .8rem;
+    display: flex;
+    margin: 0 auto;
+    position: relative; 
+    background: 
+      
+      
+      // Camera
+    radial-gradient(circle, lighten($black,24%) .25vmin, lighten($black, 8%) .5vmin, transparent .5vmin)  calc(#{$laptop-w} + 25.5vmin)  calc(#{$laptop-h} + -2.25vmin)  / 8vmin 8vmin no-repeat,
+      
+      // Screen
+    linear-gradient( lighten($black,25%) 12vmin, lighten($black, 10%) 40vmin, transparent 13.5vmin)  calc(#{$laptop-w} + 3vmin)  calc(#{$laptop-h} + 3vmin)  / 53.5vmin 33vmin no-repeat,
+    
+      
+      
+      
+      // bg
+      linear-gradient(180deg, lighten($black, 5%) 10vmin, darken($black, 5%) 50vmin, transparent 1vmin)  calc(#{$laptop-w} + 0vmin)  calc(#{$laptop-h} + 0vmin)  / 100vmin 43vmin no-repeat;
+}
+
+
+div.laptop:after {
+    color: #ccc;
+    width: 60vmin;
+    height: 43.5vmin;
+    border-left: solid 2px darken($light-gray, 15%);
+    border-right: solid 2px darken($light-gray, 15%);
+    top:6.25vmin;
+    left: 0vmin;
+    transform: perspective(900px) rotateX(17deg);
+    position: absolute;
+    border-radius: .8rem;
+    display: flex;
+    margin: 0 auto;
+    position: relative; 
+  
+    background:
+    
+    //  Function row
+    linear-gradient(90deg, 
+      transparent 0vmin, 
+      $black 0.25vmin, 
+      darken($black, 10%) 3.25vmin, 
+      transparent 3.5vmin, 
+      transparent 3.75vmin,  
+      $black 4vmin, 
+      darken($black, 10%) 6.75vmin, 
+      transparent 7vmin, 
+      transparent 7.25vmin,  
+      $black 7.5vmin, 
+      darken($black, 10%) 10.5vmin, 
+      transparent 10.75vmin, 
+      transparent 11vmin,  
+      $black 11.25vmin, 
+      darken($black, 10%) 14vmin, 
+      transparent 14.25vmin, 
+      transparent 14.5vmin,  
+      $black 14.75vmin, 
+      darken($black, 10%) 17.75vmin, 
+      transparent 18vmin, 
+      transparent 18.25vmin,  
+      $black 18.5vmin, 
+      darken($black, 10%) 21.5vmin, 
+      transparent 21.75vmin, 
+      transparent 22vmin,  
+      $black 22.25vmin, 
+      darken($black, 10%) 25vmin, 
+      transparent 25.25vmin, 
+      transparent 25.5vmin,  
+      $black 25.75vmin, 
+      darken($black, 10%) 28.75vmin, 
+      transparent 29vmin, 
+      transparent 29.25vmin,  
+      $black 29.5vmin, 
+      darken($black, 10%) 32.5vmin,
+      transparent 32.75vmin, 
+      transparent 33vmin,  
+      $black 33.25vmin, 
+      darken($black, 10%) 36vmin,
+      transparent 36.25vmin, 
+      transparent 36.5vmin,  
+      $black 36.75vmin, 
+      darken($black, 10%) 39.75vmin,
+      transparent 40vmin, 
+      transparent 40.25vmin,  
+      $black 40.5vmin, 
+      darken($black, 10%) 43.5vmin,
+      transparent 43.75vmin, 
+      transparent 44vmin,  
+      $black 44.25vmin, 
+      darken($black, 10%) 47.25vmin,
+      transparent 47.5vmin, 
+      transparent 47.75vmin,  
+      $black 48vmin, 
+      darken($black, 10%) 51vmin,
+      transparent 1vmin)  calc(#{$laptop-w} + 4.5vmin)  calc(#{$laptop-h} + 4vmin)  / 52vmin 1.75vmin no-repeat,
+      
+      
+      
+    //  No. row
+    linear-gradient(90deg, 
+      transparent 0vmin, 
+      $black 0.25vmin, 
+      darken($black, 10%) 3vmin, 
+      transparent 3.25vmin, 
+      transparent 3.5vmin,  
+      $black 3.75vmin, 
+      darken($black, 10%) 6.5vmin, 
+      transparent 6.75vmin, 
+      transparent 7vmin,
+      $black 7.25vmin, 
+      darken($black, 10%) 10vmin, 
+      transparent 10.25vmin, 
+      transparent 10.5vmin,
+      $black 10.75vmin, 
+      darken($black, 10%) 13.5vmin, 
+      transparent 13.75vmin, 
+      transparent 14vmin,
+      $black 14.25vmin, 
+      darken($black, 10%) 17vmin, 
+      transparent 17.25vmin, 
+      transparent 17.5vmin,
+      $black 17.75vmin, 
+      darken($black, 10%) 20.75vmin, 
+      transparent 21vmin, 
+      transparent 21.25vmin,
+      $black 21.5vmin, 
+      darken($black, 10%) 24.25vmin, 
+      transparent 24.5vmin, 
+      transparent 24.75vmin,
+      $black 25vmin, 
+      darken($black, 10%) 27.75vmin, 
+      transparent 28vmin, 
+      transparent 28.25vmin,
+      $black 28.5vmin, 
+      darken($black, 10%) 31.25vmin, 
+      transparent 31.5vmin, 
+      transparent 31.75vmin,
+      $black 32vmin, 
+      darken($black, 10%) 34.75vmin, 
+      transparent 5vmin, 
+      transparent 35.25vmin,
+      $black 35.5vmin, 
+      darken($black, 10%) 38.25vmin, 
+      transparent 38.5vmin, 
+      transparent 38.75vmin,
+      $black 39vmin, 
+      darken($black, 10%) 41.75vmin,
+      transparent 42vmin, 
+      transparent 42.25vmin,
+      $black 42.5vmin, 
+      darken($black, 10%) 45.5vmin,
+      transparent 45.75vmin, 
+      transparent 46vmin,
+      $black 46.25vmin, 
+      darken($black, 10%) 51vmin,
+      transparent 1vmin)  calc(#{$laptop-w} + 4.5vmin)  calc(#{$laptop-h} + 6.5vmin)  / 52vmin 3vmin no-repeat,
+      
+      
+    //  Q row
+    linear-gradient(90deg, 
+      transparent 0vmin, 
+      $black 0.25vmin, 
+      darken($black, 10%) 4.75vmin, 
+      transparent 5vmin, 
+      transparent 5.25vmin,
+      $black 5.5vmin, 
+      darken($black, 10%) 8.25vmin, 
+      transparent 8.5vmin, 
+      transparent 8.75vmin,
+      $black 9vmin, 
+      darken($black, 10%) 11.75vmin, 
+      transparent 12vmin, 
+      transparent 12.25vmin,
+      $black 12.5vmin, 
+      darken($black, 10%) 15.25vmin, 
+      transparent 15.5vmin, 
+      transparent 15.75vmin,
+      $black 16vmin, 
+      darken($black, 10%) 18.75vmin, 
+      transparent 19vmin, 
+      transparent 19.25vmin,
+      $black 19.5vmin, 
+      darken($black, 10%) 22.25vmin, 
+      transparent 22.5vmin, 
+      transparent 22.75vmin,
+      $black 23vmin, 
+      darken($black, 10%) 25.75vmin, 
+      transparent 26vmin, 
+      transparent 26.25vmin,
+      $black 26.5vmin, 
+      darken($black, 10%) 29.25vmin, 
+      transparent 29.5vmin, 
+      transparent 29.75vmin,
+      $black 30vmin, 
+      darken($black, 10%) 32.75vmin, 
+      transparent 33vmin, 
+      transparent 33.25vmin,
+      $black 33.5vmin, 
+      darken($black, 10%) 36.25vmin, 
+      transparent 36.5vmin, 
+      transparent 36.75vmin,
+      $black 37vmin, 
+      darken($black, 10%) 40vmin,
+      transparent 40.25vmin, 
+      transparent 40.5vmin,
+      $black 40.75vmin, 
+      darken($black, 10%) 43.5vmin,
+      transparent 43.75vmin, 
+      transparent 44vmin,
+      $black 44.25vmin, 
+      darken($black, 10%) 47vmin,
+      transparent 47.25vmin, 
+      transparent 47.5vmin,
+      $black 47.75vmin, 
+      darken($black, 10%) 51vmin,
+      transparent 1vmin)  calc(#{$laptop-w} + 4.5vmin)  calc(#{$laptop-h} + 10vmin)  / 52vmin 3vmin no-repeat,
+      
+      
+      
+    //  A row
+    linear-gradient(90deg, 
+      transparent 0vmin, 
+      $black 0.25vmin, 
+      darken($black, 10%) 5.5vmin, 
+      transparent 5.75vmin, 
+      transparent 6.25vmin,
+      $black 6.5vmin, 
+      darken($black, 10%) 9.25vmin, 
+      transparent 9.5vmin, 
+      transparent 9.75vmin,
+      $black 10vmin, 
+      darken($black, 10%) 12.75vmin, 
+      transparent 13vmin, 
+      transparent 13.25vmin,
+      $black 13.5vmin, 
+      darken($black, 10%)16.25vmin, 
+      transparent 16.5vmin, 
+      transparent 16.75vmin,
+      $black 17vmin, 
+      darken($black, 10%) 19.75vmin, 
+      transparent 20vmin, 
+      transparent 20.25vmin,
+      $black 20.5vmin, 
+      darken($black, 10%) 23.25vmin, 
+      transparent 23.5vmin, 
+      transparent 23.75vmin,
+      $black 24vmin, 
+      darken($black, 10%) 26.75vmin, 
+      transparent 27vmin, 
+      transparent 27.25vmin,
+      $black 27.5vmin, 
+      darken($black, 10%) 30.25vmin, 
+      transparent 30.5vmin, 
+      transparent 30.75vmin,
+      $black 31vmin, 
+      darken($black, 10%) 33.75vmin, 
+      transparent 34vmin, 
+      transparent 34.25vmin,
+      $black 34.5vmin, 
+      darken($black, 10%) 37.25vmin, 
+      transparent 37.5vmin, 
+      transparent 37.75vmin,
+      $black 38vmin, 
+      darken($black, 10%) 41vmin,
+      transparent 41.25vmin, 
+      transparent 41.5vmin,
+      $black 41.75vmin, 
+      darken($black, 10%) 44.5vmin,
+      transparent 44.75vmin, 
+      transparent 45vmin,
+      $black 45.25vmin,
+      darken($black, 10%) 51vmin,
+      transparent 1vmin)  calc(#{$laptop-w} + 4.5vmin)  calc(#{$laptop-h} + 13.5vmin)  / 52vmin 3vmin no-repeat,
+      
+           
+      
+    //  Z row
+    linear-gradient(90deg, 
+      transparent 0vmin, 
+      $black 0.25vmin, 
+      darken($black, 10%) 7.25vmin, 
+      transparent 7.55vmin, 
+      transparent 7.75vmin,
+      $black 8vmin, 
+      darken($black, 10%) 10.75vmin, 
+      transparent 11vmin, 
+      transparent 11.25vmin,
+      $black 11.5vmin, 
+      darken($black, 10%) 14.25vmin, 
+      transparent 14.5vmin, 
+      transparent 14.75vmin,
+      $black 15vmin, 
+      darken($black, 10%) 17.75vmin, 
+      transparent 18vmin, 
+      transparent 18.25vmin,
+      $black 18.5vmin, 
+      darken($black, 10%) 21.25vmin, 
+      transparent 21.5vmin, 
+      transparent 21.75vmin,
+      $black 22vmin, 
+      darken($black, 10%) 24.75vmin, 
+      transparent 25vmin, 
+      transparent 25.25vmin,
+      $black 25.5vmin, 
+      darken($black, 10%) 28.25vmin, 
+      transparent 28.5vmin, 
+      transparent 28.75vmin,
+      $black 29vmin, 
+      darken($black, 10%) 31.75vmin, 
+      transparent 32vmin, 
+      transparent 32.25vmin,
+      $black 32.5vmin, 
+      darken($black, 10%) 35.25vmin, 
+      transparent 35.5vmin, 
+      transparent 35.75vmin,
+      $black 36vmin, 
+      darken($black, 10%) 39vmin,
+      transparent 39.25vmin, 
+      transparent 39.5vmin,
+      $black 39.75vmin, 
+      darken($black, 10%) 42.5vmin,
+      transparent 42.75vmin, 
+      transparent 43vmin,
+      $black 43.25vmin,
+      darken($black, 10%) 51vmin,
+      transparent 1vmin)  calc(#{$laptop-w} + 4.5vmin)  calc(#{$laptop-h} + 17vmin)  / 52vmin 3vmin no-repeat,
+      
+      
+    
+    //  Spacebar row
+    linear-gradient(90deg, 
+      transparent 0vmin, 
+      $black 0.25vmin, 
+      darken($black, 10%) 3vmin, 
+      transparent 3.25vmin, 
+      transparent 3.5vmin,  
+      $black 3.75vmin, 
+      darken($black, 10%) 6.5vmin, 
+      transparent 6.75vmin, 
+      transparent 7vmin,
+      $black 7.25vmin, 
+      darken($black, 10%) 10vmin, 
+      transparent 10.25vmin, 
+      transparent 10.5vmin,
+      $black 10.75vmin, 
+      darken($black, 10%) 14vmin, 
+      transparent 14.25vmin, 
+      transparent 14.5vmin,
+      $black 14.75vmin, 
+      darken($black, 10%) 31.5vmin, 
+      transparent 31.75vmin, 
+      transparent 32vmin,
+      $black 32.25vmin, 
+      darken($black, 10%) 36vmin, 
+      transparent 36.25vmin, 
+      transparent 36.5vmin,
+      $black 37vmin, 
+      darken($black, 10%) 39.75vmin,
+      transparent 1vmin)  calc(#{$laptop-w} + 4.5vmin)  calc(#{$laptop-h} + 20.65vmin)  / 52vmin 3vmin no-repeat,
+      
+          //  Arrows up row
+    linear-gradient(90deg, 
+      transparent 0vmin, 
+      transparent 44vmin,  
+      $black 44.25vmin, 
+      darken($black, 10%) 47.25vmin,
+      transparent 1vmin)  calc(#{$laptop-w} + 4.5vmin)  calc(#{$laptop-h} + 20.5vmin)  / 52vmin 1.5vmin no-repeat,
+      
+    //  Arrows down row
+    linear-gradient(90deg, 
+      transparent 0vmin, 
+      transparent 40.25vmin, 
+      $black 40.5vmin, 
+      darken($black, 10%) 43.5vmin,
+      transparent 43.75vmin, 
+      transparent 44vmin,  
+      $black 44.25vmin, 
+      darken($black, 10%)47.25vmin,
+      transparent 47.5vmin, 
+      transparent 47.75vmin,  
+      $black 48vmin, 
+      darken($black, 10%) 51vmin,
+      transparent 1vmin)  calc(#{$laptop-w} + 4.5vmin)  calc(#{$laptop-h} + 22.25vmin)  / 52vmin 1.5vmin no-repeat,
+      
+      
+      
+      // Trackpad
+    radial-gradient(ellipse, darken($light-gray,16%) 14vmin, darken($light-gray, 15%) 16.25vmin, transparent 15.5vmin)  calc(#{$laptop-w} + 17.5vmin)  calc(#{$laptop-h} + 26vmin)  / 24vmin 14vmin no-repeat,
+    
+      
+      
+    //  Black bar
+    linear-gradient(90deg, 
+      transparent 1.75vmin,  
+      darken($black, 10%) 2vmin, 
+      darken($black, 10%) 49.25vmin,
+      transparent 1vmin)  calc(#{$laptop-w} + 4.5vmin)  calc(#{$laptop-h} + 0vmin)  / 52vmin 1.75vmin no-repeat,
+      
+      
+      // notch
+    radial-gradient(ellipse, $black 6.5vmin, transparent 1vmin)  calc(#{$laptop-w} + 24vmin)  calc(#{$laptop-h} + 42.25vmin)  / 10vmin 2vmin no-repeat,
+    
+    
+    linear-gradient(180deg, darken($light-gray, 35%) 10vmin, darken($light-gray, 15%) 50vmin, transparent 1vmin)  calc(#{$laptop-w} + 0vmin)  calc(#{$laptop-h} + 0vmin)  / 100vmin 43vmin no-repeat,
+        
+    linear-gradient($black 50vmin, transparent 1vmin) calc(#{$laptop-w} + 0vmin)  calc(#{$laptop-h} + 0vmin) / 100vmin 100vmin no-repeat;
+      
+      
+      
+}
+      

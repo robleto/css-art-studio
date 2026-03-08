@@ -1,0 +1,46 @@
+div, div:before, div:after {
+  display: block;
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(#cbd4f5, rgb(181.6129032258, 194.314516129, 240.8870967742));
+}
+
+div.soft-and-sharp {
+  width: 92vmin;
+  height: 92vmin;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(ellipse, #E5AC75 0.75vmin, transparent 1vmin) calc(5vmin + 52vmin) calc(0vmin + 37vmin)/2vmin 3vmin no-repeat, radial-gradient(ellipse, #E5AC75 0.75vmin, transparent 1vmin) calc(5vmin + 49.75vmin) calc(0vmin + 39vmin)/2.5vmin 5vmin no-repeat, radial-gradient(ellipse, #C1924E 5.25vmin, transparent 5.5vmin) calc(5vmin + 48.5vmin) calc(0vmin + 33.5vmin)/12vmin 16vmin no-repeat, radial-gradient(ellipse, #A77A3A 5.25vmin, transparent 5.5vmin) calc(5vmin + 47vmin) calc(0vmin + 31vmin)/16vmin 22vmin no-repeat, radial-gradient(ellipse at 50% 102%, #C8DC6C 8vmin, #88C03B 8.25vmin, #88C03B 11.25vmin, #556533 11.5vmin, #556533 12.25vmin, transparent 12.5vmin) calc(5vmin + 38vmin) calc(0vmin + 7vmin)/34vmin 30vmin no-repeat, radial-gradient(ellipse, #C8DC6C 9vmin, #88C03B 9.25vmin, #88C03B 12vmin, #556533 12.25vmin, #556533 13vmin, transparent 13.25vmin) calc(5vmin + 30vmin) calc(0vmin + 10vmin)/50vmin 65vmin no-repeat, radial-gradient(ellipse, #4B6D95 36vmin, #6386AF 36.25vmin, #6386AF 37vmin, #4B6D95 37.25vmin, #4B6D95 41.25vmin, #553B16 41.5vmin, #553B16 43vmin, transparent 43.25vmin) calc(5vmin - 4vmin) calc(0vmin + 1vmin)/86vmin 86vmin no-repeat;
+}
+
+div.soft-and-sharp:after {
+  width: 35vmin;
+  height: 50vmin;
+  transform: rotate(-19deg);
+  left: 15vmin;
+  top: 8vmin;
+  z-index: 99;
+  background: radial-gradient(ellipse, rgb(122.1153846154, 141.3461538462, 33.6538461538) 4.25vmin, transparent 4.5vmin) calc(-40vmin + 49.75vmin) calc(-15vmin + 34.75vmin)/10vmin 14vmin no-repeat, radial-gradient(ellipse, rgb(139.9093406593, 161.9423076923, 38.5576923077) 5.25vmin, transparent 5.5vmin) calc(-40vmin + 47vmin) calc(-15vmin + 31vmin)/16vmin 22vmin no-repeat, radial-gradient(ellipse at 50% 102%, #C8DC6C 8vmin, #88C03B 8.25vmin, #88C03B 11.25vmin, #556533 11.5vmin, #556533 12.25vmin, transparent 12.5vmin) calc(-40vmin + 38vmin) calc(-15vmin + 7vmin)/34vmin 30vmin no-repeat, radial-gradient(ellipse, #C8DC6C 9vmin, #88C03B 9.25vmin, #88C03B 12vmin, #556533 12.25vmin, #556533 13vmin, transparent 13.25vmin) calc(-40vmin + 27.5vmin) calc(-15vmin + 8vmin)/55vmin 67vmin no-repeat;
+}
+
+div.soft-and-sharp:before {
+  width: 85vmin;
+  height: 20vmin;
+  transform: rotate(9deg);
+  left: -5vmin;
+  top: 60vmin;
+  z-index: 99;
+  background: radial-gradient(ellipse at top left, #D9D9D9 5.5vmin, transparent 5.75vmin) calc(0vmin + 73vmin) calc(0vmin + 0.5vmin)/5.5vmin 5.5vmin no-repeat, linear-gradient(#D9D9D9 5.5vmin, transparent 7.75vmin) calc(0vmin + 34vmin) calc(0vmin + 0.5vmin)/40vmin 5.5vmin no-repeat, radial-gradient(ellipse at top left, #E1E1E1 7.5vmin, transparent 7.75vmin) calc(0vmin + 73vmin) calc(0vmin + 0.5vmin)/7.5vmin 7.5vmin no-repeat, linear-gradient(#E1E1E1 7.5vmin, transparent 7.75vmin) calc(0vmin + 34vmin) calc(0vmin + 0.5vmin)/40vmin 7.5vmin no-repeat, linear-gradient(#111111 9.75vmin, transparent 10vmin) calc(0vmin + 5vmin) calc(0vmin + 0vmin)/28vmin 4vmin no-repeat, radial-gradient(ellipse at 100% 50%, #111111 9.75vmin, transparent 10vmin) calc(0vmin + 24vmin) calc(0vmin + 0vmin)/10vmin 10vmin no-repeat, radial-gradient(ellipse, #111111 10.75vmin, transparent 5vmin) calc(0vmin + 8vmin) calc(0vmin + 1.25vmin)/22vmin 10vmin no-repeat, radial-gradient(ellipse, #51504E 1vmin, transparent 1.25vmin) calc(0vmin + 3vmin) calc(0vmin + 3.5vmin)/2.5vmin 2.5vmin no-repeat, radial-gradient(ellipse, #111111 4.75vmin, transparent 5vmin) calc(0vmin + 0vmin) calc(0vmin + 0vmin)/10vmin 10vmin no-repeat;
+}

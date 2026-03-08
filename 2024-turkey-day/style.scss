@@ -1,0 +1,193 @@
+$dark-gray: #2a1f1d;
+$light-gray: #52483b;
+$red: #812020;
+$green: #443c2e;
+$tangerine: #fd9207;
+$orange: #cd4c0e;
+$yellow: #f3ab23;
+$pink: #da4b45;
+$off-white: #faf1d1;
+$white: #ffffff;
+
+div,
+div:before,
+div:after {
+  display: block;
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vmin;
+  width: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  background-color: $off-white;
+  margin: 0 auto;
+}
+
+div.turkey {
+  width: 100vmin;
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  background: 
+      
+      
+      // eye
+    radial-gradient(
+        ellipse at 50% 50%,
+        $dark-gray 0.5vmin,
+        transparent 0.75vmin
+      )
+      39.5vmin 25.5vmin / 2vmin 2vmin no-repeat,
+    // neck
+    radial-gradient(ellipse at 50% 75%, $red 3.5vmin, transparent 1vmin)
+      35.5vmin 22vmin / 10vmin 7vmin no-repeat,
+    linear-gradient(90deg, $red 5vmin, transparent 1vmin) 37.5vmin 27vmin /
+      10vmin 10vmin no-repeat,
+    //gibbler
+    radial-gradient(ellipse at 50% 20%, $pink 1vmin, transparent 1vmin) 36vmin
+      31.5vmin / 2vmin 2.5vmin no-repeat,
+    linear-gradient(90deg, $pink 7vmin, transparent 1vmin) 36vmin 27vmin / 2vmin
+      5vmin no-repeat,
+    radial-gradient(ellipse at 50% 75%, $pink 3.5vmin, transparent 1vmin)
+      34.5vmin 22vmin / 10vmin 7vmin no-repeat,
+    //beak
+    linear-gradient(-25deg, $dark-gray 2vmin, transparent 1vmin) 33vmin 25vmin /
+      4vmin 4vmin no-repeat,
+    // neck
+    linear-gradient(90deg, $red 7vmin, transparent 1vmin) 37vmin 27vmin / 12vmin
+      16vmin no-repeat,
+    radial-gradient(ellipse at 50% 25%, $red 1vmin, transparent 1vmin) 36.5vmin
+      42vmin / 3vmin 5vmin no-repeat,
+    radial-gradient(ellipse at 50% 25%, $red 1vmin, transparent 1vmin) 38.25vmin
+      42vmin / 3vmin 5vmin no-repeat,
+    radial-gradient(ellipse at 50% 25%, $red 1vmin, transparent 1vmin) 39.75vmin
+      42vmin / 3vmin 5vmin no-repeat,
+    radial-gradient(ellipse at 50% 25%, $red 1vmin, transparent 1vmin) 41.5vmin
+      42vmin / 3vmin 5vmin no-repeat,
+    // wing
+    linear-gradient(25deg, $light-gray 6.25vmin, transparent 1vmin) 62.75vmin
+      37vmin / 20vmin 6vmin no-repeat,
+    linear-gradient(145deg, $light-gray 8vmin, transparent 1vmin) 62.75vmin
+      43vmin / 20vmin 8vmin no-repeat,
+    radial-gradient(ellipse at 50% 50%, $light-gray 10vmin, transparent 1vmin)
+      50vmin 36vmin / 20vmin 16vmin no-repeat,
+    // body
+    radial-gradient(ellipse at 50% 50%, $dark-gray 15vmin, transparent 1vmin)
+      37vmin 29vmin / 30vmin 30vmin no-repeat,
+    //legs
+    linear-gradient(90deg, $light-gray 7vmin, transparent 1vmin) 52vmin 56vmin /
+      1.5vmin 12vmin no-repeat,
+    linear-gradient(90deg, $light-gray 7vmin, transparent 1vmin) 48vmin 56vmin /
+      1.5vmin 12vmin no-repeat,
+    //feet
+    linear-gradient(
+        -25deg,
+        transparent 3vmin,
+        $light-gray 3.25vmin,
+        $light-gray 4.25vmin,
+        transparent 4.5vmin
+      )
+      50.75vmin 67.5vmin / 8vmin 2vmin no-repeat,
+    linear-gradient(
+        -25deg,
+        transparent 3vmin,
+        $light-gray 3.25vmin,
+        $light-gray 4.25vmin,
+        transparent 4.5vmin
+      )
+      48.5vmin 67.5vmin / 8vmin 2vmin no-repeat,
+    linear-gradient(
+        -25deg,
+        transparent 3vmin,
+        $light-gray 3.25vmin,
+        $light-gray 4.25vmin,
+        transparent 4.5vmin
+      )
+      46.5vmin 67.25vmin / 8vmin 2vmin no-repeat,
+    linear-gradient(
+        -25deg,
+        transparent 3vmin,
+        $light-gray 3.25vmin,
+        $light-gray 4.25vmin,
+        transparent 4.5vmin
+      )
+      44.5vmin 67vmin / 8vmin 2vmin no-repeat;
+}
+
+div.turkey:before {
+  width: 100vmin;
+  height: 100vmin;
+  padding-top: 75vmin;
+  font-size: 4vmin;
+  letter-spacing: 1.3vmin;
+  text-align: center;
+  line-height: 1.15;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: $green;
+  white-space: pre-wrap;
+  content: "Happy Turkey Day";
+}
+
+div.turkey:after {
+  width: 60vmin;
+  height: 60vmin;
+  opacity: 100%;
+  top: 15vmin;
+  left: 22vmin;
+  z-index: -999;
+  border-radius: 50%;
+  background-image: conic-gradient(
+    transparent 0deg,
+    transparent 1deg,
+    $red 1.25deg,
+    $red 23.75deg,
+    transparent 24deg,
+    transparent 25deg,
+    $yellow 25.25deg,
+    $yellow 46.75deg,
+    transparent 47deg,
+    transparent 48deg,
+    $green 48.25deg,
+    $green 70.75deg,
+    transparent 71deg,
+    transparent 72deg,
+    $orange 72.25deg,
+    $orange 93.75deg,
+    transparent 94deg,
+    transparent 95deg,
+    $tangerine 95.25deg,
+    $tangerine 117.75deg,
+    transparent 118deg,
+    transparent 242deg,
+    $red 242.25deg,
+    $red 266.75deg,
+    transparent 267deg,
+    transparent 268deg,
+    $yellow 268.25deg,
+    $yellow 290.75deg,
+    transparent 291deg,
+    transparent 292deg,
+    $green 292.25deg,
+    $green 313.75deg,
+    transparent 314deg,
+    transparent 315deg,
+    $orange 31.25deg,
+    $orange 336.75deg,
+    transparent 337deg,
+    transparent 338deg,
+    $tangerine 338.25deg,
+    $tangerine 359.75deg
+  );
+}

@@ -1,0 +1,49 @@
+$white: #efefef;
+$black: #020202;
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin: 0 auto;
+  background-color: $black;
+}
+
+div.light-and-dark {
+    width: 100vmin;
+    height: 95vmin;
+    position: relative; 
+    background: 
+
+			//ajar door
+      linear-gradient( $white 50vmin,  transparent 51vmin ) 54vmin 20vmin  / 10vmin 80vmin no-repeat,
+       linear-gradient(-165deg, $white 5vmin, transparent 5.5vmin ) 35vmin 20vmin  / 20vmin 10vmin no-repeat,
+
+			//door handle
+			radial-gradient(ellipse at 92% 48%, transparent 1.45vmin, darken($white, 50%)  1.45vmin,	darken($white, 60%)  1.75vmin, transparent 2vmin) 50vmin 45vmin  / 2vmin 7vmin no-repeat,
+      
+}
+      
+div.light-and-dark:after {
+    width: 40vmin;
+    height: 85vmin;
+    left: 42vmin;
+    top: 20vmin;
+    transform: rotate(-65deg);
+		content: '';
+		position: absolute;
+		background:  
+			
+			//shadow gradient
+      linear-gradient(-160deg,
+         transparent 25vmin,
+         $black 45vmin, 
+         $black 60vmin, 
+         transparent 1vmin ) 0vmin 30vmin  / 30vmin 50vmin no-repeat,
+
+			//light bleeding in
+			linear-gradient(70deg, $white 14vmin, transparent 14.5vmin) 13.25vmin 38.5vmin  / 20vmin 40vmin no-repeat,
+       linear-gradient(-75deg, $white 14vmin, transparent 14.5vmin) -14.5vmin 38.5vmin / 28vmin 40vmin no-repeat,
+}

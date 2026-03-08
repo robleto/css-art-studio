@@ -1,0 +1,58 @@
+div,
+div:before,
+div:after {
+  display: block;
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vmin;
+  width: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  background-color: #faf1d1;
+  margin: 0 auto;
+}
+
+div.turkey {
+  width: 100vmin;
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  background: radial-gradient(ellipse at 50% 50%, #2a1f1d 0.5vmin, transparent 0.75vmin) 39.5vmin 25.5vmin/2vmin 2vmin no-repeat, radial-gradient(ellipse at 50% 75%, #812020 3.5vmin, transparent 1vmin) 35.5vmin 22vmin/10vmin 7vmin no-repeat, linear-gradient(90deg, #812020 5vmin, transparent 1vmin) 37.5vmin 27vmin/10vmin 10vmin no-repeat, radial-gradient(ellipse at 50% 20%, #da4b45 1vmin, transparent 1vmin) 36vmin 31.5vmin/2vmin 2.5vmin no-repeat, linear-gradient(90deg, #da4b45 7vmin, transparent 1vmin) 36vmin 27vmin/2vmin 5vmin no-repeat, radial-gradient(ellipse at 50% 75%, #da4b45 3.5vmin, transparent 1vmin) 34.5vmin 22vmin/10vmin 7vmin no-repeat, linear-gradient(-25deg, #2a1f1d 2vmin, transparent 1vmin) 33vmin 25vmin/4vmin 4vmin no-repeat, linear-gradient(90deg, #812020 7vmin, transparent 1vmin) 37vmin 27vmin/12vmin 16vmin no-repeat, radial-gradient(ellipse at 50% 25%, #812020 1vmin, transparent 1vmin) 36.5vmin 42vmin/3vmin 5vmin no-repeat, radial-gradient(ellipse at 50% 25%, #812020 1vmin, transparent 1vmin) 38.25vmin 42vmin/3vmin 5vmin no-repeat, radial-gradient(ellipse at 50% 25%, #812020 1vmin, transparent 1vmin) 39.75vmin 42vmin/3vmin 5vmin no-repeat, radial-gradient(ellipse at 50% 25%, #812020 1vmin, transparent 1vmin) 41.5vmin 42vmin/3vmin 5vmin no-repeat, linear-gradient(25deg, #52483b 6.25vmin, transparent 1vmin) 62.75vmin 37vmin/20vmin 6vmin no-repeat, linear-gradient(145deg, #52483b 8vmin, transparent 1vmin) 62.75vmin 43vmin/20vmin 8vmin no-repeat, radial-gradient(ellipse at 50% 50%, #52483b 10vmin, transparent 1vmin) 50vmin 36vmin/20vmin 16vmin no-repeat, radial-gradient(ellipse at 50% 50%, #2a1f1d 15vmin, transparent 1vmin) 37vmin 29vmin/30vmin 30vmin no-repeat, linear-gradient(90deg, #52483b 7vmin, transparent 1vmin) 52vmin 56vmin/1.5vmin 12vmin no-repeat, linear-gradient(90deg, #52483b 7vmin, transparent 1vmin) 48vmin 56vmin/1.5vmin 12vmin no-repeat, linear-gradient(-25deg, transparent 3vmin, #52483b 3.25vmin, #52483b 4.25vmin, transparent 4.5vmin) 50.75vmin 67.5vmin/8vmin 2vmin no-repeat, linear-gradient(-25deg, transparent 3vmin, #52483b 3.25vmin, #52483b 4.25vmin, transparent 4.5vmin) 48.5vmin 67.5vmin/8vmin 2vmin no-repeat, linear-gradient(-25deg, transparent 3vmin, #52483b 3.25vmin, #52483b 4.25vmin, transparent 4.5vmin) 46.5vmin 67.25vmin/8vmin 2vmin no-repeat, linear-gradient(-25deg, transparent 3vmin, #52483b 3.25vmin, #52483b 4.25vmin, transparent 4.5vmin) 44.5vmin 67vmin/8vmin 2vmin no-repeat;
+}
+
+div.turkey:before {
+  width: 100vmin;
+  height: 100vmin;
+  padding-top: 75vmin;
+  font-size: 4vmin;
+  letter-spacing: 1.3vmin;
+  text-align: center;
+  line-height: 1.15;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: #443c2e;
+  white-space: pre-wrap;
+  content: "Happy Turkey Day";
+}
+
+div.turkey:after {
+  width: 60vmin;
+  height: 60vmin;
+  opacity: 100%;
+  top: 15vmin;
+  left: 22vmin;
+  z-index: -999;
+  border-radius: 50%;
+  background-image: conic-gradient(transparent 0deg, transparent 1deg, #812020 1.25deg, #812020 23.75deg, transparent 24deg, transparent 25deg, #f3ab23 25.25deg, #f3ab23 46.75deg, transparent 47deg, transparent 48deg, #443c2e 48.25deg, #443c2e 70.75deg, transparent 71deg, transparent 72deg, #cd4c0e 72.25deg, #cd4c0e 93.75deg, transparent 94deg, transparent 95deg, #fd9207 95.25deg, #fd9207 117.75deg, transparent 118deg, transparent 242deg, #812020 242.25deg, #812020 266.75deg, transparent 267deg, transparent 268deg, #f3ab23 268.25deg, #f3ab23 290.75deg, transparent 291deg, transparent 292deg, #443c2e 292.25deg, #443c2e 313.75deg, transparent 314deg, transparent 315deg, #cd4c0e 31.25deg, #cd4c0e 336.75deg, transparent 337deg, transparent 338deg, #fd9207 338.25deg, #fd9207 359.75deg);
+}
