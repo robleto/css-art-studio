@@ -1,0 +1,256 @@
+@use 'sass:color';
+
+$test: #BADA55;
+
+// Jester hat palette
+$purple:        #6B4DB3;
+$purple-light:  color.adjust($purple, $lightness: 15%);
+$purple-dark:   color.adjust($purple, $lightness: -15%);
+
+$teal:          #1A9E8F;
+$teal-light:    color.adjust($teal, $lightness: 7.5%);
+$teal-dark:     color.adjust($teal, $lightness: -15%);
+
+$gold:          #F0A020;
+$gold-light:    color.adjust($gold, $lightness: 15%);
+$gold-dark:     color.adjust($gold, $lightness: -15%);
+
+$orange:        #E07818;
+$orange-light:  color.adjust($orange, $lightness: 15%);
+$orange-dark:   color.adjust($orange, $lightness: -15%);
+
+$white: #ffffff;
+$black: #020202;
+
+
+div, div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+  box-sizing:border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background: 
+    radial-gradient(lighten($purple-light, 50%), lighten($teal-light, 35%));
+    margin: 0 auto;
+//    background-color: $white;
+//     background-size: 88%;
+//     background-repeat: no-repeat;
+//     background-position-x: 5vmin;
+//     background-position-y: 33vmin;
+     background-image: url('https://www.shutterstock.com/image-vector/artemis-rocket-vector-illustration-365-600nw-2192906975.jpg') 
+}
+
+
+
+$box-w: 0vmin;
+$box-h: 0vmin;
+
+
+div.jester-cap {
+    width: 90vmin;
+    height: 70vmin;
+    //opacity: .8;
+    display: flex;
+    //border: solid 2px $purple;
+    margin: 0 auto;
+    position: relative; 
+    background:
+
+    // purple cover
+    linear-gradient($purple-dark 4vmin, transparent 1vmin) 39vmin 18vmin / 10vmin 12vmin no-repeat,
+
+
+    
+    //right bell
+    radial-gradient(circle, $gold-light 1vmin, $gold 2vmin, transparent 1vmin) calc(#{$box-w} + 77.5vmin) calc(#{$box-h} + 35.5vmin)  / 8vmin 8vmin no-repeat,
+
+    radial-gradient(circle, $orange-light 2vmin, $orange 4.5vmin, transparent 1vmin) calc(#{$box-w} + 78vmin) calc(#{$box-h} + 36vmin)  / 9vmin 9vmin no-repeat,
+
+    
+    //left bell
+    radial-gradient(circle, $gold-light 1vmin, $gold 2vmin, transparent 1vmin) calc(#{$box-w} + -.1vmin) calc(#{$box-h} + 35.5vmin)  / 8vmin 8vmin no-repeat,
+
+    radial-gradient(circle, $orange-light 2vmin, $orange 4.5vmin, transparent 1vmin) calc(#{$box-w} + 1vmin) calc(#{$box-h} + 36vmin)  / 9vmin 9vmin no-repeat,
+
+
+    //middle bell
+    radial-gradient(circle, $gold-light 1vmin, $gold 2vmin, transparent 1vmin) calc(#{$box-w} + 20vmin) calc(#{$box-h} + 13vmin)  / 10vmin 10vmin no-repeat,
+
+    radial-gradient(circle, $orange-light 2vmin, $orange 5vmin, transparent 1vmin) calc(#{$box-w} + 21vmin) calc(#{$box-h} + 14vmin)  / 10vmin 10vmin no-repeat,
+
+
+
+
+
+    // CROWN RING
+
+    radial-gradient(ellipse, transparent, transparent 19.75vmin, $gold-light 20vmin, $gold-light 22.5vmin, transparent 1vmin) calc(#{$box-w} + 20vmin) calc(#{$box-h} + 41vmin)  / 48vmin 20vmin no-repeat,
+
+
+
+    radial-gradient(ellipse at bottom, transparent 20vmin, $gold 16.25vmin,  $gold-light 22.5vmin, transparent 1vmin) calc(#{$box-w} + 14vmin) calc(#{$box-h} + 39vmin)  / 60vmin 10vmin no-repeat,
+
+    
+
+    radial-gradient(ellipse,  $teal-dark 20vmin, transparent 1vmin) calc(#{$box-w} + 22vmin) calc(#{$box-h} + 42vmin)  / 44vmin 12vmin no-repeat,
+
+    radial-gradient(ellipse, transparent, $orange-dark 19.75vmin, transparent 1vmin) calc(#{$box-w} + 20vmin) calc(#{$box-h} + 41vmin)  / 48vmin 20vmin no-repeat,
+
+    radial-gradient(ellipse, $gold 10vmin, $gold-light 22.5vmin, transparent 1vmin) calc(#{$box-w} + 14vmin) calc(#{$box-h} + 33vmin)  / 60vmin 32vmin no-repeat,
+
+    radial-gradient(ellipse at top, $orange-dark 3vmin, $gold-dark 22.5vmin, transparent 1vmin) calc(#{$box-w} + 14vmin) calc(#{$box-h} + 47vmin)  / 60vmin 15vmin no-repeat,    
+
+
+    // POINTS
+    
+
+
+      // center left pointy
+
+      linear-gradient(-245deg, $gold 3vmin, transparent 1vmin) 26.5vmin 27vmin / 5vmin 6vmin no-repeat,
+
+      radial-gradient(ellipse at right, $gold 2vmin, transparent 1vmin) calc(#{$box-w} + 23vmin) calc(#{$box-h} + 23.5vmin)  / 4vmin 14vmin no-repeat,
+
+
+      // center right pointy
+      linear-gradient(245deg, $gold 3vmin, transparent 1vmin) 56.25vmin 27vmin / 5vmin 6vmin no-repeat,
+
+      radial-gradient(ellipse at left, $gold 2vmin, transparent 1vmin) calc(#{$box-w} + 61vmin) calc(#{$box-h} + 23.5vmin)  / 4vmin 14vmin no-repeat,
+
+
+      // middle pointy
+      linear-gradient(225deg, $gold 2.5vmin, transparent 1vmin) 40vmin 22vmin / 4vmin 10vmin no-repeat,
+
+      linear-gradient(135deg, $gold 2.5vmin, transparent 1vmin) 44vmin 22vmin / 4vmin 10vmin no-repeat,
+
+
+
+    // GOLD LAPELS
+
+    //middle
+    radial-gradient(ellipse at right bottom, $orange 6vmin, $orange-light 8vmin, transparent 1vmin) calc(#{$box-w} + 36vmin) calc(#{$box-h} + 20vmin)  / 8vmin 18vmin no-repeat,
+      
+     radial-gradient(ellipse at left bottom,  $orange 6vmin, $orange-light 8vmin, transparent 1vmin) calc(#{$box-w} + 43.75vmin) calc(#{$box-h} + 20vmin)  / 8vmin 18vmin no-repeat,
+      
+
+
+    // left center
+    radial-gradient(ellipse at right bottom, $orange 4vmin, $orange-light 6vmin, transparent 1vmin) calc(#{$box-w} + 24vmin) calc(#{$box-h} + 27vmin)  / 6vmin 20vmin no-repeat,
+      
+     radial-gradient(ellipse at left bottom,  $orange 4vmin, $orange-light 8vmin, transparent 1vmin) calc(#{$box-w} + 30vmin) calc(#{$box-h} + 27vmin)  / 8vmin 15vmin no-repeat,
+      
+
+
+    // right center
+    radial-gradient(ellipse at left bottom, $orange 4vmin, $orange-light 6vmin, transparent 1vmin) calc(#{$box-w} + 57vmin) calc(#{$box-h} + 27vmin)  / 6vmin 20vmin no-repeat,
+      
+     radial-gradient(ellipse at right bottom,  $orange 4vmin, $orange-light 8vmin, transparent 1vmin) calc(#{$box-w} + 50vmin) calc(#{$box-h} + 27vmin)  / 8vmin 15vmin no-repeat,
+      
+
+
+    // CAP LAPELS
+
+
+      radial-gradient(ellipse at bottom right, $teal 4vmin, transparent 1vmin) calc(#{$box-w} + 12vmin) calc(#{$box-h} + 21.5vmin)  / 4vmin 12vmin no-repeat,
+
+      linear-gradient(-245deg, $teal-light 9vmin, transparent 1vmin) 6vmin 21.5vmin / 10vmin 18vmin no-repeat,
+
+      radial-gradient(ellipse at right, $teal-light 6vmin, transparent 1vmin) calc(#{$box-w} + -2vmin) calc(#{$box-h} + 17.25vmin)  / 9vmin 26vmin no-repeat,
+
+         
+      
+
+      linear-gradient(245deg, $teal-light 8vmin, transparent 1vmin) 70vmin 22.25vmin / 10vmin 18vmin no-repeat,
+
+      radial-gradient(ellipse at left, $teal-light 6vmin, transparent 1vmin) calc(#{$box-w} + 80vmin) calc(#{$box-h} + 18vmin)  / 9vmin 26vmin no-repeat,
+
+
+
+
+
+    //middle
+    radial-gradient(ellipse at right bottom, $purple-dark 10vmin, $purple 15vmin, transparent 1vmin) calc(#{$box-w} + 25vmin) calc(#{$box-h} + -5vmin)  / 20vmin 40vmin no-repeat,
+
+    radial-gradient(ellipse at left bottom, $purple-dark 10vmin, $purple 15vmin, transparent 1vmin) calc(#{$box-w} + 44vmin) calc(#{$box-h} + -5vmin)  / 20vmin 40vmin no-repeat,
+      
+      
+
+    ;
+  }
+      
+
+div.jester-cap:after {
+  width: 100vmin;
+  height: 100vmin;
+  top: -8vmin;
+  left: 0;
+  transform: rotate(-25deg);
+  z-index: -99;
+  //border: solid 2px $purple;
+  background: 
+
+    //  left pointy
+    linear-gradient(-245deg, $gold 4vmin, transparent 1vmin) 20.25vmin 28vmin / 5vmin 8vmin no-repeat,
+
+    radial-gradient(ellipse at right, $gold 2.5vmin, transparent 1vmin) calc(#{$box-w} + 17vmin) calc(#{$box-h} + 25.75vmin)  / 4vmin 13vmin no-repeat,
+
+
+
+    // left 
+    radial-gradient(ellipse at left bottom, $orange 3vmin, $orange-light 12.5vmin, transparent 1vmin) calc(#{$box-w} + 22vmin) calc(#{$box-h} + 15vmin)  / 22vmin 30vmin no-repeat,
+      
+  
+    radial-gradient(ellipse, $purple 13vmin, transparent 1vmin) calc(#{$box-w} + 37vmin) calc(#{$box-h} + 11.5vmin)  / 26vmin 11vmin no-repeat,
+
+  
+
+    // left cap
+
+
+    radial-gradient(ellipse at left bottom, $teal-dark 3vmin, $teal 12vmin, $teal 20vmin, transparent 1vmin) calc(#{$box-w} + 25vmin) calc(#{$box-h} + -.25vmin)  / 30vmin 50vmin no-repeat,
+      
+    radial-gradient(ellipse, $teal 7.5vmin, transparent 1vmin) calc(#{$box-w} + 14vmin) calc(#{$box-h} + 16vmin)  / 15vmin 8vmin no-repeat,
+
+
+    linear-gradient(245deg, $teal 10vmin, transparent 1vmin) 10vmin 22vmin / 18vmin 28vmin no-repeat,
+
+}
+
+
+
+div.jester-cap:before {
+  width: 100vmin;
+  height: 100vmin;
+  top: -8vmin;
+  left: 0;
+  transform: rotate(40deg);
+  z-index: -93;
+  //border: solid 2px $teal;
+  background: 
+
+
+    //  right pointy
+    //linear-gradient(225deg, $gold 5vmin, transparent 1vmin) 63vmin 28.15vmin / 5vmin 10vmin no-repeat,
+    linear-gradient(245deg, $gold 4vmin, transparent 1vmin) 62.25vmin 28.25vmin / 5vmin 8vmin no-repeat,
+
+    radial-gradient(ellipse at left, $gold 2.5vmin, transparent 1vmin) calc(#{$box-w} + 67vmin) calc(#{$box-h} + 25.75vmin)  / 4vmin 13vmin no-repeat,
+
+
+
+    // right 
+    radial-gradient(ellipse at right bottom, $orange 3vmin, $orange-light 12.5vmin, transparent 1vmin) calc(#{$box-w} + 44vmin) calc(#{$box-h} + 15vmin)  / 22vmin 30vmin no-repeat,
+      
+
+    // right cap
+    radial-gradient(ellipse at right bottom, $teal-dark 3vmin, $teal 12vmin, $teal 20vmin, transparent 1vmin) calc(#{$box-w} + 34vmin) calc(#{$box-h} + 0vmin)  / 30vmin 50vmin no-repeat,
+
+      
+
+}

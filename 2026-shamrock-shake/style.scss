@@ -1,0 +1,231 @@
+$test: #e6cda5;
+$tan: #e6cda5;
+$dark-brown: #844414;
+$milkshake-green: #b4edc1;
+$yellow: #ffbc09;
+$red: #ec4e51;
+$clear: #d2ddd2;
+$bg-green: #95d58d;
+$green: #83c57b;
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background: radial-gradient(
+    lighten($milkshake-green, 10%) 0vmin,
+    darken($milkshake-green, 5%) 60vmin
+  );
+}
+
+$box-w: -5vmin;
+$box-h: -5vmin;
+
+div.shamrock-shake {
+  width: 100vmin;
+  height: 110vmin;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  background:
+
+    /* Pumpkin  */
+    // radial-gradient(50% 60%, lighten($green, 5%) 5vmin,  transparent 5vmin) 42vmin 51vmin / 25vmin 25vmin no-repeat,
+    // radial-gradient(50% 60%, $milkshake-green 4vmin,  transparent 4vmin) 38vmin 53.5vmin / 25vmin 25vmin no-repeat,
+    // radial-gradient(50% 60%, $milkshake-green 4vmin,  transparent 4vmin) 46vmin 53.5vmin / 25vmin 25vmin no-repeat,
+      
+      
+    /* McDs logo */ linear-gradient(
+        90deg,
+        $milkshake-green 0vmin,
+        $milkshake-green 20vmin,
+        transparent 10vmin
+      )
+      calc(#{$box-w} + 44vmin) calc(#{$box-h} + 65vmin) / 45vmin 15vmin
+      no-repeat,
+    radial-gradient(
+        50% 60%,
+        $milkshake-green 0vmin,
+        $milkshake-green 3.75vmin,
+        $yellow 3.75vmin,
+        $yellow 5vmin,
+        transparent 5vmin
+      )
+      calc(#{$box-w} + 40vmin) calc(#{$box-h} + 40vmin) / 20vmin 50vmin
+      no-repeat,
+    radial-gradient(
+        50% 60%,
+        $milkshake-green 0vmin,
+        $milkshake-green 3.75vmin,
+        $yellow 3.75vmin,
+        $yellow 5vmin,
+        transparent 5vmin
+      )
+      calc(#{$box-w} + 49vmin) calc(#{$box-h} + 40vmin) / 20vmin 50vmin
+      no-repeat,
+    /* base-shadow-left */
+      linear-gradient(
+        -95deg,
+        transparent 0vmin,
+        transparent 4vmin,
+        lighten($milkshake-green, 5%) 4vmin,
+        lighten($milkshake-green, 5%) 7vmin,
+        transparent 7vmin
+      )
+      calc(#{$box-w} + 34vmin) calc(#{$box-h} + 42vmin) / 10vmin 45vmin
+      no-repeat,
+    /* base-shadow-top */
+      linear-gradient(
+        15deg,
+        lighten($milkshake-green, 5%) 0vmin,
+        lighten($milkshake-green, 5%) 5vmin,
+        transparent 5vmin
+      )
+      calc(#{$box-w} + 42vmin) calc(#{$box-h} + 67vmin) / 40vmin 20vmin
+      no-repeat,
+    /* base-shadow-right-top */
+      linear-gradient(
+        -165deg,
+        darken($milkshake-green, 5%) 0vmin,
+        darken($milkshake-green, 5%) 7vmin,
+        transparent 7vmin
+      )
+      calc(#{$box-w} + 32vmin) calc(#{$box-h} + 40vmin) / 40vmin 20vmin
+      no-repeat,
+    /* base-shadow-right */
+      linear-gradient(
+        95deg,
+        transparent 0vmin,
+        transparent 4vmin,
+        darken($milkshake-green, 5%) 4vmin,
+        darken($milkshake-green, 3%) 7vmin,
+        transparent 7vmin
+      )
+      calc(#{$box-w} + 68vmin) calc(#{$box-h} + 40vmin) / 10vmin 50vmin
+      no-repeat,
+    /* base-center */
+      linear-gradient(0deg, $milkshake-green 0vmin, $milkshake-green 3vmin)
+      calc(#{$box-w} + 44vmin) calc(#{$box-h} + 40vmin) / 20vmin 50vmin
+      no-repeat,
+    /* base-left */
+      linear-gradient(
+        -95deg,
+        $milkshake-green 0vmin,
+        $milkshake-green 10vmin,
+        transparent 3vmin
+      )
+      calc(#{$box-w} + 25vmin) calc(#{$box-h} + 40vmin) / 20vmin 50vmin
+      no-repeat,
+    /* base-right */
+      linear-gradient(
+        95deg,
+        $milkshake-green 0vmin,
+        $milkshake-green 10vmin,
+        transparent 3vmin
+      )
+      calc(#{$box-w} + 65vmin) calc(#{$box-h} + 40vmin) / 20vmin 50vmin
+      no-repeat,
+    /* bottom-shadow-left */
+      linear-gradient(
+        -95deg,
+        transparent 0vmin,
+        transparent 4vmin,
+        lighten($milkshake-green, 5%) 4vmin,
+        lighten($milkshake-green, 5%) 7vmin,
+        transparent 7vmin
+      )
+      calc(#{$box-w} + 37vmin) calc(#{$box-h} + 63vmin) / 10vmin 45vmin
+      no-repeat,
+    /* bottom-shadow-right */
+      linear-gradient(
+        95deg,
+        transparent 0vmin,
+        transparent 4.5vmin,
+        darken($milkshake-green, 5%) 4.5vmin,
+        darken($milkshake-green, 3%) 7vmin,
+        transparent 7vmin
+      )
+      calc(#{$box-w} + 65vmin) calc(#{$box-h} + 60vmin) / 10vmin 50vmin
+      no-repeat,
+    /* bottom-center */
+      linear-gradient(0deg, $milkshake-green 0vmin, $milkshake-green 3vmin)
+      calc(#{$box-w} + 45vmin) calc(#{$box-h} + 40vmin) / 20vmin 70vmin
+      no-repeat,
+    /* bottom-left */
+      linear-gradient(
+        -95deg,
+        $milkshake-green 0vmin,
+        $milkshake-green 10vmin,
+        transparent 3vmin
+      )
+      calc(#{$box-w} + 27vmin) calc(#{$box-h} + 50vmin) / 20vmin 60vmin
+      no-repeat,
+    /* bottom-right */
+      linear-gradient(
+        95deg,
+        $milkshake-green 0vmin,
+        $milkshake-green 10vmin,
+        transparent 3vmin
+      )
+      calc(#{$box-w} + 63vmin) calc(#{$box-h} + 50vmin) / 20vmin 60vmin
+      no-repeat,
+    /* straw */
+      linear-gradient(
+        -98deg,
+        transparent 0vmin,
+        transparent 4vmin,
+        $clear 4vmin,
+        $clear 5vmin,
+        $red 5vmin,
+        $red 6vmin,
+        $clear 6vmin,
+        $clear 7vmin,
+        transparent 7vmin
+      )
+      calc(#{$box-w} + 39vmin) calc(#{$box-h} + 22vmin) / 10vmin 45vmin
+      no-repeat,
+    radial-gradient(
+        ellipse at bottom,
+        lighten($milkshake-green, 15%) 10vmin,
+        lighten($milkshake-green, 5%) 15vmin,
+        transparent 1vmin
+      )
+      calc(#{$box-w} + 30vmin) calc(#{$box-h} + 23vmin) / 50vmin 12vmin
+      no-repeat,
+    radial-gradient(
+        ellipse at bottom,
+        lighten($milkshake-green, 15%) 15vmin,
+        lighten($milkshake-green, 5%) 20vmin,
+        transparent 1vmin
+      )
+      calc(#{$box-w} + 30vmin) calc(#{$box-h} + 29vmin) / 50vmin 12vmin
+      no-repeat,
+    // cherry
+    radial-gradient(
+        ellipse,
+        lighten($red, 5%) 2vmin,
+        darken($red, 5%) 4vmin,
+        transparent 1vmin
+      )
+      calc(#{$box-w} + 52vmin) calc(#{$box-h} + 19vmin) / 18vmin 18vmin
+      no-repeat,
+    // shadow
+    radial-gradient(
+        ellipse,
+        darken($milkshake-green, 15%) 0vmin,
+        transparent 30vmin
+      )
+      calc(#{$box-w} + 30vmin) calc(#{$box-h} + 101vmin) / 50vmin 12vmin
+      no-repeat;
+}

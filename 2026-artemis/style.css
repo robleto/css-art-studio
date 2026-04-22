@@ -1,0 +1,85 @@
+div, div:before, div:after {
+  display: block;
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+}
+
+@keyframes launch {
+  from {
+    transform: translateX(-50%) translateY(0);
+  }
+  to {
+    transform: translateX(-50%) translateY(-115vmin);
+  }
+}
+@keyframes smoke-bloom {
+  0% {
+    transform: translateX(-50%) scale(0.05);
+    opacity: 0;
+  }
+  8% {
+    transform: translateX(-50%) scale(0.3);
+    opacity: 0.8;
+  }
+  35% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.7;
+  }
+  65% {
+    transform: translateX(-50%) scale(1.6);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateX(-50%) scale(2.2);
+    opacity: 0;
+  }
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, rgb(10.875, 15.5875, 32.625) 33%, rgb(61.875, 88.6875, 185.625) 100%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+div.artemis {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  opacity: 0.9;
+  margin: 0 auto;
+  background: radial-gradient(ellipse at top, rgb(78.5, 78.5, 78.5), rgb(14.75, 14.75, 14.75)) 0 0vmin/100vw 100vh no-repeat;
+}
+
+div.artemis:after {
+  width: 100vmin;
+  height: 150vmin;
+  left: 50%;
+  top: -88vmin;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: -99;
+  animation: launch 9s ease-in 4s forwards;
+  background: linear-gradient(290deg, #A8C4D8 0.5vmin, rgb(220.8214285714, 231.8214285714, 239.6785714286) 1.5vmin, transparent 1vmin) calc(0vmin + 37vmin) calc(0vmin + 45.5vmin)/2.25vmin 3.5vmin no-repeat, linear-gradient(-290deg, #A8C4D8 0.5vmin, #A8C4D8 1.5vmin, transparent 1vmin) calc(0vmin + 39.25vmin) calc(0vmin + 45.5vmin)/2.25vmin 3.5vmin no-repeat, linear-gradient(#EEE5D8 0vmin, #EEE5D8 0.25vmin, #AE9C96 0.25vmin, #AE9C96 0.75vmin, #EEE5D8 0.75vmin, #EEE5D8 1vmin, #FAF2E4 1vmin, #FAF2E4 1.25vmin, #EEE5D8 1.25vmin, #EEE5D8 1.5vmin, #FAF2E4 1.5vmin, #FAF2E4 1.75vmin, #EEE5D8 1.75vmin, #EEE5D8 2vmin, #FAF2E4 2vmin, #FAF2E4 2.25vmin, #EEE5D8 2.25vmin, #EEE5D8 2.5vmin, #FAF2E4 2.5vmin, #FAF2E4 2.75vmin, #EEE5D8 2.75vmin, #EEE5D8 3vmin, transparent 3vmin, transparent 3.75vmin, #798895 3.75vmin, #798895 4vmin, transparent 4vmin, transparent 6vmin, #798895 6vmin, #798895 6.25vmin, transparent 6.25vmin, transparent 12.5vmin, #798895 12.5vmin, #798895 12.75vmin, transparent 12.75vmin, transparent 19vmin, #798895 19vmin, #798895 19.25vmin, transparent 19.25vmin, transparent 25.5vmin, #798895 25.5vmin, #798895 25.75vmin, transparent 25.75vmin, transparent 28.5vmin, #798895 28.5vmin, #798895 28.75vmin, transparent 28.75vmin, transparent 29.25vmin, #798895 29.25vmin, #798895 29.5vmin, transparent 29.5vmin, transparent 31.25vmin, #798895 31.25vmin, #798895 31.5vmin, transparent 31.5vmin, transparent 32vmin, #798895 32vmin, #798895 32.25vmin, transparent 32.25vmin, transparent 33.25vmin, #798895 33.25vmin, #798895 33.5vmin, transparent 33.5vmin, transparent 34vmin, #798895 34vmin, #798895 34.25vmin, transparent 34.25vmin, transparent 35.25vmin, #798895 35.25vmin, #798895 35.5vmin, transparent 35.5vmin, transparent 36vmin, #798895 36vmin, #798895 36.25vmin, transparent 1vmin) calc(0vmin + 37.65vmin) calc(0vmin + 49vmin)/3.25vmin 37.5vmin no-repeat, linear-gradient(90deg, rgb(220.8214285714, 231.8214285714, 239.6785714286) 0vmin, #A8C4D8 6.5vmin, rgb(220.8214285714, 231.8214285714, 239.6785714286) 7vmin, transparent 1vmin) calc(0vmin + 37.65vmin) calc(0vmin + 49vmin)/3.25vmin 37.5vmin no-repeat, linear-gradient(290deg, #A8C4D8 0.5vmin, rgb(220.8214285714, 231.8214285714, 239.6785714286) 1vmin, transparent 1vmin) calc(0vmin + 36vmin) calc(0vmin + 84.5vmin)/2vmin 2vmin no-repeat, linear-gradient(-290deg, #A8C4D8 0.5vmin, #A8C4D8 1vmin, transparent 1vmin) calc(0vmin + 40.5vmin) calc(0vmin + 84.5vmin)/2vmin 2vmin no-repeat, linear-gradient(-45deg, #A8C4D8 0vmin, #798895 2vmin, transparent 1vmin) calc(0vmin + 37.75vmin) calc(0vmin + 85.75vmin)/1.5vmin 2.5vmin no-repeat, linear-gradient(45deg, #A8C4D8 0vmin, #798895 2vmin, transparent 1vmin) calc(0vmin + 39.25vmin) calc(0vmin + 85.75vmin)/1.5vmin 2.5vmin no-repeat, linear-gradient(290deg, #A8C4D8 0.5vmin, rgb(220.8214285714, 231.8214285714, 239.6785714286) 1.5vmin, transparent 1vmin) calc(0vmin + 47.5vmin) calc(0vmin + 45.5vmin)/2.25vmin 3.5vmin no-repeat, linear-gradient(-290deg, #A8C4D8 0.5vmin, #A8C4D8 1.5vmin, transparent 1vmin) calc(0vmin + 49.75vmin) calc(0vmin + 45.5vmin)/2.25vmin 3.5vmin no-repeat, linear-gradient(#EEE5D8 0vmin, #EEE5D8 0.25vmin, #AE9C96 0.25vmin, #AE9C96 0.75vmin, #EEE5D8 0.75vmin, #EEE5D8 1vmin, #FAF2E4 1vmin, #FAF2E4 1.25vmin, #EEE5D8 1.25vmin, #EEE5D8 1.5vmin, #FAF2E4 1.5vmin, #FAF2E4 1.75vmin, #EEE5D8 1.75vmin, #EEE5D8 2vmin, #FAF2E4 2vmin, #FAF2E4 2.25vmin, #EEE5D8 2.25vmin, #EEE5D8 2.5vmin, #FAF2E4 2.5vmin, #FAF2E4 2.75vmin, #EEE5D8 2.75vmin, #EEE5D8 3vmin, transparent 3vmin, transparent 3.75vmin, #798895 3.75vmin, #798895 4vmin, transparent 4vmin, transparent 6vmin, #798895 6vmin, #798895 6.25vmin, transparent 6.25vmin, transparent 12.5vmin, #798895 12.5vmin, #798895 12.75vmin, transparent 12.75vmin, transparent 19vmin, #798895 19vmin, #798895 19.25vmin, transparent 19.25vmin, transparent 25.5vmin, #798895 25.5vmin, #798895 25.75vmin, transparent 25.75vmin, transparent 28.5vmin, #798895 28.5vmin, #798895 28.75vmin, transparent 28.75vmin, transparent 29.25vmin, #798895 29.25vmin, #798895 29.5vmin, transparent 29.5vmin, transparent 31.25vmin, #798895 31.25vmin, #798895 31.5vmin, transparent 31.5vmin, transparent 32vmin, #798895 32vmin, #798895 32.25vmin, transparent 32.25vmin, transparent 33.25vmin, #798895 33.25vmin, #798895 33.5vmin, transparent 33.5vmin, transparent 34vmin, #798895 34vmin, #798895 34.25vmin, transparent 34.25vmin, transparent 35.25vmin, #798895 35.25vmin, #798895 35.5vmin, transparent 35.5vmin, transparent 36vmin, #798895 36vmin, #798895 36.25vmin, transparent 1vmin) calc(0vmin + 48.15vmin) calc(0vmin + 49vmin)/3.25vmin 37.5vmin no-repeat, linear-gradient(90deg, rgb(220.8214285714, 231.8214285714, 239.6785714286) 0vmin, #A8C4D8 6.5vmin, rgb(220.8214285714, 231.8214285714, 239.6785714286) 7vmin, transparent 1vmin) calc(0vmin + 48.15vmin) calc(0vmin + 49vmin)/3.25vmin 37.5vmin no-repeat, linear-gradient(290deg, #A8C4D8 0.5vmin, rgb(220.8214285714, 231.8214285714, 239.6785714286) 1vmin, transparent 1vmin) calc(0vmin + 46.5vmin) calc(0vmin + 84.5vmin)/2vmin 2vmin no-repeat, linear-gradient(-290deg, #A8C4D8 0.5vmin, #A8C4D8 1vmin, transparent 1vmin) calc(0vmin + 51vmin) calc(0vmin + 84.5vmin)/2vmin 2vmin no-repeat, linear-gradient(-45deg, #A8C4D8 0vmin, #798895 2vmin, transparent 1vmin) calc(0vmin + 48.25vmin) calc(0vmin + 85.75vmin)/1.5vmin 2.5vmin no-repeat, linear-gradient(45deg, #A8C4D8 0vmin, #798895 2vmin, transparent 1vmin) calc(0vmin + 49.75vmin) calc(0vmin + 85.75vmin)/1.5vmin 2.5vmin no-repeat, linear-gradient(290deg, rgb(220.8214285714, 231.8214285714, 239.6785714286) 1vmin, transparent 1vmin) calc(0vmin + 43.5vmin) calc(0vmin + 7vmin)/1vmin 2vmin no-repeat, linear-gradient(-290deg, rgb(220.8214285714, 231.8214285714, 239.6785714286) 0vmin, #A8C4D8 1vmin, transparent 1vmin) calc(0vmin + 44.5vmin) calc(0vmin + 7vmin)/1vmin 2vmin no-repeat, linear-gradient(-60deg, #A8C4D8 0vmin, rgb(220.8214285714, 231.8214285714, 239.6785714286) 0.25vmin, transparent 0.5vmin) calc(0vmin + 44vmin) calc(0vmin + 0vmin)/0.5vmin 1vmin no-repeat, linear-gradient(60deg, #A8C4D8 0vmin, rgb(220.8214285714, 231.8214285714, 239.6785714286) 0.25vmin, transparent 0.5vmin) calc(0vmin + 44.45vmin) calc(0vmin + 0vmin)/0.5vmin 1vmin no-repeat, linear-gradient(90deg, rgb(220.8214285714, 231.8214285714, 239.6785714286) 0vmin, #A8C4D8 1vmin, transparent 1vmin) calc(0vmin + 44.25vmin) calc(0vmin + 1vmin)/0.5vmin 6.5vmin no-repeat, linear-gradient(-45deg, #A8C4D8 0vmin, rgb(220.8214285714, 231.8214285714, 239.6785714286) 1vmin, transparent 0vmin) calc(0vmin + 43.85vmin) calc(0vmin + 5vmin)/1vmin 0.75vmin no-repeat, linear-gradient(45deg, #A8C4D8 0vmin, rgb(220.8214285714, 231.8214285714, 239.6785714286) 1vmin, transparent 0vmin) calc(0vmin + 44.15vmin) calc(0vmin + 5vmin)/1vmin 0.75vmin no-repeat, linear-gradient(90deg, rgb(220.8214285714, 231.8214285714, 239.6785714286) 0vmin, #A8C4D8 2vmin, transparent 1vmin) calc(0vmin + 43.5vmin) calc(0vmin + 8.85vmin)/2vmin 4vmin no-repeat, linear-gradient(290deg, rgb(220.8214285714, 231.8214285714, 239.6785714286) 2vmin, transparent 1vmin) calc(0vmin + 42.25vmin) calc(0vmin + 8.75vmin)/2vmin 4vmin no-repeat, linear-gradient(-290deg, #A8C4D8 2vmin, transparent 1vmin) calc(0vmin + 44.75vmin) calc(0vmin + 8.75vmin)/2vmin 4vmin no-repeat, linear-gradient(90deg, rgb(220.8214285714, 231.8214285714, 239.6785714286) 0vmin, rgb(220.8214285714, 231.8214285714, 239.6785714286) 0.5vmin, #A8C4D8 4vmin, #A8C4D8 4.5vmin, transparent 1vmin) calc(0vmin + 42.25vmin) calc(0vmin + 12.5vmin)/4.5vmin 8.5vmin no-repeat, linear-gradient(290deg, rgb(220.8214285714, 231.8214285714, 239.6785714286) 2vmin, transparent 1vmin) calc(0vmin + 41.25vmin) calc(0vmin + 17vmin)/2vmin 4vmin no-repeat, linear-gradient(-290deg, #A8C4D8 2vmin, transparent 1vmin) calc(0vmin + 45.75vmin) calc(0vmin + 17vmin)/2vmin 4vmin no-repeat, linear-gradient(90deg, rgb(220.8214285714, 231.8214285714, 239.6785714286) 0vmin, #A8C4D8 6.5vmin, rgb(220.8214285714, 231.8214285714, 239.6785714286) 7vmin, transparent 1vmin) calc(0vmin + 41.25vmin) calc(0vmin + 21vmin)/6.5vmin 4vmin no-repeat, linear-gradient(rgb(230.2297297297, 119.7162162162, 68.2702702703) 10vmin, transparent 1vmin) 42.5vmin 29.75vmin/1.5vmin 1.5vmin no-repeat, linear-gradient(rgb(230.2297297297, 119.7162162162, 68.2702702703) 10vmin, transparent 1vmin) 42.5vmin 35vmin/1.5vmin 1.5vmin no-repeat, linear-gradient(rgb(230.2297297297, 119.7162162162, 68.2702702703) 10vmin, transparent 1vmin) 44.75vmin 36.25vmin/1vmin 1vmin no-repeat, linear-gradient(rgb(230.2297297297, 119.7162162162, 68.2702702703) 10vmin, transparent 1vmin) 41.5vmin 51vmin/1.5vmin 1.5vmin no-repeat, linear-gradient(#6B2810 0vmin, #6B2810 0.25vmin, transparent 0.25vmin, transparent 3vmin, #6B2810 3vmin, #6B2810 3.25vmin, transparent 3.25vmin, transparent 6vmin, #6B2810 6vmin, #6B2810 6.25vmin, transparent 6.25vmin, transparent 9vmin, #6B2810 9vmin, #6B2810 9.25vmin, transparent 9.25vmin, transparent 12vmin, #6B2810 12vmin, #6B2810 12.25vmin, transparent 12.25vmin, transparent 15vmin, #6B2810 15vmin, #6B2810 15.25vmin, transparent 15.25vmin, transparent 18vmin, #6B2810 18vmin, #6B2810 18.25vmin, transparent 18.25vmin, transparent 21vmin, #6B2810 21vmin, #6B2810 21.25vmin, transparent 21.25vmin, transparent 24vmin, #6B2810 24vmin, #6B2810 24.25vmin, transparent 24.25vmin, transparent 27vmin, #6B2810 27vmin, #6B2810 27.25vmin, transparent 27.25vmin, transparent 1vmin) 43.75vmin 53.75vmin/1.5vmin 30vmin no-repeat, linear-gradient(#6B2810 0vmin, #6B2810 0.5vmin, rgb(230.2297297297, 119.7162162162, 68.2702702703) 0.5vmin, rgb(230.2297297297, 119.7162162162, 68.2702702703) 35vmin, transparent 1vmin) 44.25vmin 51vmin/0.5vmin 30vmin no-repeat, linear-gradient(transparent 4.2vmin, #6B2810 4.2vmin, #6B2810 4.5vmin, transparent 4.5vmin, transparent 14.25vmin, rgb(230.2297297297, 119.7162162162, 68.2702702703) 14.25vmin, rgb(230.2297297297, 119.7162162162, 68.2702702703) 14.75vmin, transparent 14.75vmin, transparent 21.75vmin, rgb(230.2297297297, 119.7162162162, 68.2702702703) 22vmin, rgb(230.2297297297, 119.7162162162, 68.2702702703) 22.5vmin, transparent 22.5vmin, transparent 23.25vmin, rgb(230.2297297297, 119.7162162162, 68.2702702703) 23.25vmin, rgb(230.2297297297, 119.7162162162, 68.2702702703) 23.5vmin, transparent 23.5vmin, transparent 23.75vmin, rgb(230.2297297297, 119.7162162162, 68.2702702703) 23.75vmin, rgb(230.2297297297, 119.7162162162, 68.2702702703) 24vmin, transparent 24vmin, transparent 24.25vmin, rgb(230.2297297297, 119.7162162162, 68.2702702703) 24.25vmin, rgb(230.2297297297, 119.7162162162, 68.2702702703) 24.5vmin, transparent 24.5vmin, transparent 24.75vmin, rgb(230.2297297297, 119.7162162162, 68.2702702703) 24.25vmin, rgb(230.2297297297, 119.7162162162, 68.2702702703) 25vmin, transparent 25vmin, transparent 25.75vmin, rgb(230.2297297297, 119.7162162162, 68.2702702703) 25.25vmin, rgb(230.2297297297, 119.7162162162, 68.2702702703) 26vmin, transparent 26vmin, transparent 26.75vmin, rgb(230.2297297297, 119.7162162162, 68.2702702703) 26.25vmin, rgb(230.2297297297, 119.7162162162, 68.2702702703) 27vmin, transparent 27vmin, transparent 27.75vmin, rgb(230.2297297297, 119.7162162162, 68.2702702703) 27.25vmin, rgb(230.2297297297, 119.7162162162, 68.2702702703) 28vmin, transparent 28.25vmin, transparent 54.5vmin, rgb(230.2297297297, 119.7162162162, 68.2702702703) 54.5vmin, rgb(230.2297297297, 119.7162162162, 68.2702702703) 55vmin, transparent 55.25vmin) calc(0vmin + 41vmin) calc(0vmin + 25vmin)/7vmin 55vmin no-repeat, linear-gradient(90deg, rgb(230.2297297297, 119.7162162162, 68.2702702703) 0vmin, #C4501A 2.5vmin, #C4501A 6.5vmin, rgb(230.2297297297, 119.7162162162, 68.2702702703) 7vmin, transparent 1vmin) calc(0vmin + 41vmin) calc(0vmin + 25vmin)/7vmin 55vmin no-repeat, linear-gradient(90deg, #A8C4D8 1vmin, transparent 1vmin, transparent 2.5vmin, #A8C4D8 2.5vmin, #A8C4D8 3.5vmin, transparent 1vmin) calc(0vmin + 42.75vmin) calc(0vmin + 83.5vmin)/5vmin 1vmin no-repeat, linear-gradient(90deg, rgb(220.8214285714, 231.8214285714, 239.6785714286) 0vmin, #A8C4D8 6.5vmin, rgb(220.8214285714, 231.8214285714, 239.6785714286) 7vmin, transparent 1vmin) calc(0vmin + 41vmin) calc(0vmin + 80vmin)/7vmin 4.5vmin no-repeat, linear-gradient(90deg, #A8C4D8 0vmin, #A8C4D8 6.5vmin, #798895 7vmin, transparent 1vmin) calc(0vmin + 41.5vmin) calc(0vmin + 84.25vmin)/6vmin 1.25vmin no-repeat, linear-gradient(90deg, rgb(220.8214285714, 231.8214285714, 239.6785714286) 0vmin, #A8C4D8 2vmin, transparent 2vmin, transparent 3vmin, rgb(220.8214285714, 231.8214285714, 239.6785714286) 3vmin, #A8C4D8 7vmin, transparent 1vmin) calc(0vmin + 42vmin) calc(0vmin + 85.25vmin)/5vmin 1vmin no-repeat, linear-gradient(-45deg, #020202 0vmin, #020202 2vmin, transparent 1vmin) calc(0vmin + 41.5vmin) calc(0vmin + 85.75vmin)/1.5vmin 2.5vmin no-repeat, linear-gradient(45deg, #020202 0vmin, #020202 2vmin, transparent 1vmin) calc(0vmin + 42.75vmin) calc(0vmin + 85.75vmin)/1.5vmin 2.5vmin no-repeat, linear-gradient(-45deg, #020202 0vmin, #020202 2vmin, transparent 1vmin) calc(0vmin + 44.5vmin) calc(0vmin + 85.75vmin)/1.5vmin 2.5vmin no-repeat, linear-gradient(45deg, #020202 0vmin, #020202 2vmin, transparent 1vmin) calc(0vmin + 45.75vmin) calc(0vmin + 85.75vmin)/1.5vmin 2.5vmin no-repeat, radial-gradient(ellipse at top, #FFF5A0 0%, #FFD700 12%, rgb(230.2297297297, 119.7162162162, 68.2702702703) 30%, rgba(196, 80, 26, 0.5) 45%, rgba(196, 80, 26, 0.25) 60%, rgba(196, 80, 26, 0.08) 75%, rgba(196, 80, 26, 0.02) 85%, transparent 95%) calc(0vmin + 38vmin) calc(0vmin + 88vmin)/2.5vmin 10vmin no-repeat, radial-gradient(ellipse at top, #FFF5A0 0%, #FFD700 12%, rgb(230.2297297297, 119.7162162162, 68.2702702703) 30%, rgba(196, 80, 26, 0.5) 45%, rgba(196, 80, 26, 0.25) 60%, rgba(196, 80, 26, 0.08) 75%, rgba(196, 80, 26, 0.02) 85%, transparent 95%) calc(0vmin + 41.65vmin) calc(0vmin + 88vmin)/2.5vmin 10vmin no-repeat, radial-gradient(ellipse at top, #FFF5A0 0%, #FFD700 12%, rgb(230.2297297297, 119.7162162162, 68.2702702703) 30%, rgba(196, 80, 26, 0.5) 45%, rgba(196, 80, 26, 0.25) 60%, rgba(196, 80, 26, 0.08) 75%, rgba(196, 80, 26, 0.02) 85%, transparent 95%) calc(0vmin + 44.65vmin) calc(0vmin + 88vmin)/2.5vmin 10vmin no-repeat, radial-gradient(ellipse at top, #FFF5A0 0%, #FFD700 12%, rgb(230.2297297297, 119.7162162162, 68.2702702703) 30%, rgba(196, 80, 26, 0.5) 45%, rgba(196, 80, 26, 0.25) 60%, rgba(196, 80, 26, 0.08) 75%, rgba(196, 80, 26, 0.02) 85%, transparent 95%) calc(0vmin + 48.5vmin) calc(0vmin + 88vmin)/2.5vmin 10vmin no-repeat;
+}
+
+div.artemis:before {
+  width: 100vmin;
+  height: 100vmin;
+  left: 50%;
+  bottom: 3vh;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 99;
+  transform-origin: 44vmin 88vmin;
+  animation: smoke-bloom 8s ease-out 4s both;
+  background: radial-gradient(ellipse, rgba(180, 170, 160, 0.85) 30%, transparent 70%) 14vmin 72vmin/62vmin 24vmin no-repeat, radial-gradient(circle, rgba(200, 190, 180, 0.9) 40%, transparent 70%) 8vmin 78vmin/34vmin 28vmin no-repeat, radial-gradient(circle, rgba(200, 190, 180, 0.9) 30%, transparent 70%) 50vmin 78vmin/34vmin 28vmin no-repeat, radial-gradient(ellipse, rgb(230, 220, 210) 30%, rgba(190, 180, 170, 0.7) 50%, transparent 80%) 20vmin 80vmin/52vmin 20vmin no-repeat;
+}/*# sourceMappingURL=style.css.map */

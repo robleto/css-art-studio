@@ -1,0 +1,691 @@
+@use 'sass:color';
+
+$test: #BADA55;
+
+// Artemis SLS palette
+$navy:          #1E2B5A;
+$navy-light:    color.adjust($navy, $lightness: 25%);
+$navy-dark:     color.adjust($navy, $lightness: -15%);
+
+$rust:          #C4501A;
+$rust-light:    color.adjust($rust, $lightness: 15%);
+$rust-dark:     color.adjust($rust, $lightness: -10%);
+
+$silver:        #A8C4D8;
+$silver-light:  color.adjust($silver, $lightness: 15%);
+$silver-dark:   #798895;
+
+$cream:         #EEE5D8;
+$cream-light:   #FAF2E4;
+$cream-dark:    #AE9C96;
+
+$brown:         #6B2810;
+$brown-light:   color.adjust($brown, $lightness: 25%);
+$brown-dark:    color.adjust($brown, $lightness: -15%);
+
+$white: #ffffff;
+$black: #020202;
+
+
+div, div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+}
+
+@keyframes launch {
+  from { transform: translateX(-50%) translateY(0); }
+  to   { transform: translateX(-50%) translateY(-115vmin); }
+}
+
+@keyframes smoke-bloom {
+  0%   { transform: translateX(-50%) scale(0.05); opacity: 0;   }
+  8%   { transform: translateX(-50%) scale(0.3);  opacity: 0.8; }
+  35%  { transform: translateX(-50%) scale(1);    opacity: 0.7; }
+  65%  { transform: translateX(-50%) scale(1.6);  opacity: 0.4; }
+  100% { transform: translateX(-50%) scale(2.2);  opacity: 0;   }
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, $navy-dark 33%, $navy-light 100%);
+  //background-image: url('https://www.shutterstock.com/image-vector/artemis-rocket-vector-illustration-365-600nw-2192906975.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+
+$box-w: 0vmin;
+$box-h: 0vmin;
+
+
+div.artemis {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  opacity: .9;
+  margin: 0 auto;
+  //border: solid 5px $test;
+  background:
+
+    // ground / launchpad base
+    radial-gradient(ellipse at top, color.adjust($black, $lightness: 30%), color.adjust($black, $lightness: 5%)) 0 0vmin / 100vw 100vh no-repeat;
+}
+
+
+div.artemis:after {
+  width: 100vmin;
+  height: 150vmin;
+  left: 50%;
+  top: -88vmin;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: -99;
+  animation: launch 9s ease-in 4s forwards;
+  background: 
+
+
+  // LEFT BOOSTER //
+
+  
+    // silver bottom base
+    linear-gradient(290deg,
+      $silver .5vmin,
+      $silver-light 1.5vmin,
+      transparent 1vmin)  calc(#{$box-w} + 37vmin) calc(#{$box-h} + 45.5vmin) / 2.25vmin 3.5vmin no-repeat,
+
+    // silver bottom base
+    linear-gradient(-290deg,
+      $silver .5vmin,
+      $silver 1.5vmin,
+      transparent 1vmin)  calc(#{$box-w} + 39.25vmin) calc(#{$box-h} + 45.5vmin) / 2.25vmin 3.5vmin no-repeat,
+
+
+
+
+    // silver bottom base
+    linear-gradient( 
+      $cream 0vmin, 
+      $cream 0.25vmin,  
+      $cream-dark 0.25vmin,
+      $cream-dark 0.75vmin, 
+      $cream 0.75vmin, 
+      $cream 1vmin, 
+      $cream-light 1vmin,
+      $cream-light 1.25vmin,
+      $cream 1.25vmin,
+      $cream 1.5vmin,
+      $cream-light 1.5vmin,
+      $cream-light 1.75vmin,
+      $cream 1.75vmin,
+      $cream 2vmin,
+      $cream-light 2vmin,
+      $cream-light 2.25vmin,
+      $cream 2.25vmin,
+      $cream 2.5vmin,
+      $cream-light 2.5vmin,
+      $cream-light 2.75vmin,
+      $cream 2.75vmin,
+      $cream 3vmin,    
+      transparent 3vmin,
+      transparent 3.75vmin,
+      $silver-dark 3.75vmin,
+      $silver-dark 4vmin,
+      transparent 4vmin,
+      transparent 6vmin,
+      $silver-dark 6vmin,
+      $silver-dark 6.25vmin,
+      transparent 6.25vmin,
+      transparent 12.5vmin,
+      $silver-dark 12.5vmin,
+      $silver-dark 12.75vmin,
+      transparent 12.75vmin,
+      transparent 19vmin,
+      $silver-dark 19vmin,
+      $silver-dark 19.25vmin,
+      transparent 19.25vmin,
+      transparent 25.5vmin,
+      $silver-dark 25.5vmin,
+      $silver-dark 25.75vmin,
+      transparent 25.75vmin,
+      transparent 28.5vmin,
+      $silver-dark 28.5vmin,
+      $silver-dark 28.75vmin,
+      transparent 28.75vmin,
+      transparent 29.25vmin,
+      $silver-dark 29.25vmin,
+      $silver-dark 29.5vmin,
+      transparent 29.5vmin,
+      transparent 31.25vmin,
+      $silver-dark 31.25vmin,
+      $silver-dark 31.5vmin,
+      transparent 31.5vmin,
+      transparent 32vmin,
+      $silver-dark 32vmin,
+      $silver-dark 32.25vmin,
+
+      transparent 32.25vmin,
+      transparent 33.25vmin,
+      $silver-dark 33.25vmin,
+      $silver-dark 33.5vmin,
+      transparent 33.5vmin,
+      transparent 34vmin,
+      $silver-dark 34vmin,
+      $silver-dark 34.25vmin,
+
+      transparent 34.25vmin,
+      transparent 35.25vmin,
+      $silver-dark 35.25vmin,
+      $silver-dark 35.5vmin,
+      transparent 35.5vmin,
+      transparent 36vmin,
+      $silver-dark 36vmin,
+      $silver-dark 36.25vmin,
+
+      transparent 1vmin)  calc(#{$box-w} + 37.65vmin) calc(#{$box-h} + 49vmin) / 3.25vmin 37.5vmin no-repeat,
+
+
+
+    // silver bottom base
+    linear-gradient(90deg,
+      $silver-light 0vmin,
+      $silver 6.5vmin,  
+      $silver-light 7vmin,
+      transparent 1vmin)  calc(#{$box-w} + 37.65vmin) calc(#{$box-h} + 49vmin) / 3.25vmin 37.5vmin no-repeat,
+
+
+    // silver bottom wing
+    linear-gradient(290deg,
+      $silver .5vmin,
+      $silver-light 1vmin,
+      transparent 1vmin)  calc(#{$box-w} + 36vmin) calc(#{$box-h} + 84.5vmin) / 2vmin 2vmin no-repeat,
+
+    // silver bottom wing
+    linear-gradient(-290deg,
+      $silver .5vmin,
+      $silver 1vmin,
+      transparent 1vmin)  calc(#{$box-w} + 40.5vmin) calc(#{$box-h} + 84.5vmin) / 2vmin 2vmin no-repeat,
+
+
+    // silver base
+    linear-gradient(-45deg,
+      $silver 0vmin,
+      $silver-dark 2vmin,  
+      transparent 1vmin)  calc(#{$box-w} + 37.75vmin) calc(#{$box-h} + 85.75vmin) / 1.5vmin 2.5vmin no-repeat,
+
+    linear-gradient(45deg,
+      $silver 0vmin,
+      $silver-dark 2vmin,  
+      transparent 1vmin)  calc(#{$box-w} + 39.25vmin) calc(#{$box-h} + 85.75vmin) / 1.5vmin 2.5vmin no-repeat,
+
+
+
+  // RIGHT BOOSTER //
+
+    // silver bottom base
+    linear-gradient(290deg,
+      $silver .5vmin,
+      $silver-light 1.5vmin,
+      transparent 1vmin)  calc(#{$box-w} + 47.5vmin) calc(#{$box-h} + 45.5vmin) / 2.25vmin 3.5vmin no-repeat,
+
+    // silver bottom base
+    linear-gradient(-290deg,
+      $silver .5vmin,
+      $silver 1.5vmin,
+      transparent 1vmin)  calc(#{$box-w} + 49.75vmin) calc(#{$box-h} + 45.5vmin) / 2.25vmin 3.5vmin no-repeat,
+
+
+
+
+    // silver bottom base
+    linear-gradient( 
+      $cream 0vmin, 
+      $cream 0.25vmin,  
+      $cream-dark 0.25vmin,
+      $cream-dark 0.75vmin, 
+      $cream 0.75vmin, 
+      $cream 1vmin, 
+      $cream-light 1vmin,
+      $cream-light 1.25vmin,
+      $cream 1.25vmin,
+      $cream 1.5vmin,
+      $cream-light 1.5vmin,
+      $cream-light 1.75vmin,
+      $cream 1.75vmin,
+      $cream 2vmin,
+      $cream-light 2vmin,
+      $cream-light 2.25vmin,
+      $cream 2.25vmin,
+      $cream 2.5vmin,
+      $cream-light 2.5vmin,
+      $cream-light 2.75vmin,
+      $cream 2.75vmin,
+      $cream 3vmin,    
+      transparent 3vmin,
+      transparent 3.75vmin,
+      $silver-dark 3.75vmin,
+      $silver-dark 4vmin,
+      transparent 4vmin,
+      transparent 6vmin,
+      $silver-dark 6vmin,
+      $silver-dark 6.25vmin,
+      transparent 6.25vmin,
+      transparent 12.5vmin,
+      $silver-dark 12.5vmin,
+      $silver-dark 12.75vmin,
+      transparent 12.75vmin,
+      transparent 19vmin,
+      $silver-dark 19vmin,
+      $silver-dark 19.25vmin,
+      transparent 19.25vmin,
+      transparent 25.5vmin,
+      $silver-dark 25.5vmin,
+      $silver-dark 25.75vmin,
+      transparent 25.75vmin,
+      transparent 28.5vmin,
+      $silver-dark 28.5vmin,
+      $silver-dark 28.75vmin,
+      transparent 28.75vmin,
+      transparent 29.25vmin,
+      $silver-dark 29.25vmin,
+      $silver-dark 29.5vmin,
+      transparent 29.5vmin,
+      transparent 31.25vmin,
+      $silver-dark 31.25vmin,
+      $silver-dark 31.5vmin,
+      transparent 31.5vmin,
+      transparent 32vmin,
+      $silver-dark 32vmin,
+      $silver-dark 32.25vmin,
+
+      transparent 32.25vmin,
+      transparent 33.25vmin,
+      $silver-dark 33.25vmin,
+      $silver-dark 33.5vmin,
+      transparent 33.5vmin,
+      transparent 34vmin,
+      $silver-dark 34vmin,
+      $silver-dark 34.25vmin,
+
+      transparent 34.25vmin,
+      transparent 35.25vmin,
+      $silver-dark 35.25vmin,
+      $silver-dark 35.5vmin,
+      transparent 35.5vmin,
+      transparent 36vmin,
+      $silver-dark 36vmin,
+      $silver-dark 36.25vmin,
+
+      transparent 1vmin)  calc(#{$box-w} + 48.15vmin) calc(#{$box-h} + 49vmin) / 3.25vmin 37.5vmin no-repeat,
+
+
+
+    // silver bottom base
+    linear-gradient(90deg,
+      $silver-light 0vmin,
+      $silver 6.5vmin,  
+      $silver-light 7vmin,
+      transparent 1vmin)  calc(#{$box-w} + 48.15vmin) calc(#{$box-h} + 49vmin) / 3.25vmin 37.5vmin no-repeat,
+
+
+    // silver bottom wing
+    linear-gradient(290deg,
+      $silver .5vmin,
+      $silver-light 1vmin,
+      transparent 1vmin)  calc(#{$box-w} + 46.5vmin) calc(#{$box-h} + 84.5vmin) / 2vmin 2vmin no-repeat,
+
+    // silver bottom wing
+    linear-gradient(-290deg,
+      $silver .5vmin,
+      $silver 1vmin,
+      transparent 1vmin)  calc(#{$box-w} + 51vmin) calc(#{$box-h} + 84.5vmin) / 2vmin 2vmin no-repeat,
+
+
+    // silver base
+    linear-gradient(-45deg,
+      $silver 0vmin,
+      $silver-dark 2vmin,  
+      transparent 1vmin)  calc(#{$box-w} + 48.25vmin) calc(#{$box-h} + 85.75vmin) / 1.5vmin 2.5vmin no-repeat,
+
+    linear-gradient(45deg,
+      $silver 0vmin,
+      $silver-dark 2vmin,  
+      transparent 1vmin)  calc(#{$box-w} + 49.75vmin) calc(#{$box-h} + 85.75vmin) / 1.5vmin 2.5vmin no-repeat,
+
+
+
+
+
+// FUSELAGE //
+
+
+    // silver top angle 
+    linear-gradient(290deg,
+      $silver-light 1vmin,
+      transparent 1vmin)  calc(#{$box-w} + 43.5vmin) calc(#{$box-h} + 7vmin) / 1vmin 2vmin no-repeat,
+      
+    linear-gradient(-290deg,
+      $silver-light 0vmin,
+      $silver 1vmin,
+      transparent 1vmin)  calc(#{$box-w} + 44.5vmin) calc(#{$box-h} + 7vmin) / 1vmin 2vmin no-repeat,
+
+
+    // silver pole  
+
+    linear-gradient(-60deg,
+      $silver 0vmin,
+      $silver-light .25vmin,
+      transparent .5vmin)  calc(#{$box-w} + 44vmin) calc(#{$box-h} + 0vmin) / .5vmin 1vmin no-repeat,
+
+    linear-gradient(60deg,
+      $silver 0vmin,
+      $silver-light .25vmin,
+      transparent .5vmin)  calc(#{$box-w} + 44.45vmin) calc(#{$box-h} + 0vmin) / .5vmin 1vmin no-repeat,
+
+      
+    linear-gradient(90deg,
+      $silver-light 0vmin,
+      $silver 1vmin,
+      transparent 1vmin)  calc(#{$box-w} + 44.25vmin) calc(#{$box-h} + 1vmin) / .5vmin 6.5vmin no-repeat,
+      
+    linear-gradient(-45deg,
+      $silver 0vmin,
+      $silver-light 1vmin,
+      transparent 0vmin)  calc(#{$box-w} + 43.85vmin) calc(#{$box-h} + 5vmin) / 1vmin .75vmin no-repeat,
+
+    linear-gradient(45deg,
+      $silver 0vmin,
+      $silver-light 1vmin,
+      transparent 0vmin)  calc(#{$box-w} + 44.15vmin) calc(#{$box-h} + 5vmin) / 1vmin .75vmin no-repeat,
+
+
+    // silver bottom base
+    linear-gradient(90deg,
+      $silver-light 0vmin,
+      $silver 2vmin,  
+      transparent 1vmin)  calc(#{$box-w} + 43.5vmin) calc(#{$box-h} + 8.85vmin) / 2vmin 4vmin no-repeat,
+
+
+    // silver bottom base
+    linear-gradient(290deg,
+      $silver-light 2vmin,
+      transparent 1vmin)  calc(#{$box-w} + 42.25vmin) calc(#{$box-h} + 8.75vmin) / 2vmin 4vmin no-repeat,
+
+    // silver bottom base
+    linear-gradient(-290deg,
+      $silver 2vmin,
+      transparent 1vmin)  calc(#{$box-w} + 44.75vmin) calc(#{$box-h} + 8.75vmin) / 2vmin 4vmin no-repeat,
+
+
+
+
+    // silver bottom base
+    linear-gradient(90deg,
+      $silver-light 0vmin,
+      $silver-light 0.5vmin,
+      $silver 4vmin, 
+      $silver 4.5vmin,  
+      transparent 1vmin)  calc(#{$box-w} + 42.25vmin) calc(#{$box-h} + 12.5vmin) / 4.5vmin 8.5vmin no-repeat,
+
+
+    // silver bottom base
+    linear-gradient(290deg,
+      $silver-light 2vmin,
+      transparent 1vmin)  calc(#{$box-w} + 41.25vmin) calc(#{$box-h} + 17vmin) / 2vmin 4vmin no-repeat,
+
+    // silver bottom base
+    linear-gradient(-290deg,
+      $silver 2vmin,
+      transparent 1vmin)  calc(#{$box-w} + 45.75vmin) calc(#{$box-h} + 17vmin) / 2vmin 4vmin no-repeat,
+
+
+
+
+
+
+    // silver bottom base
+    linear-gradient(90deg,
+      $silver-light 0vmin,
+      $silver 6.5vmin,  
+      $silver-light 7vmin,
+      transparent 1vmin)  calc(#{$box-w} + 41.25vmin) calc(#{$box-h} + 21vmin) / 6.5vmin 4vmin no-repeat,
+
+
+
+
+
+  // highlights
+    linear-gradient( $rust-light 10vmin, transparent 1vmin) 42.5vmin 29.75vmin / 1.5vmin 1.5vmin no-repeat,
+
+    linear-gradient( $rust-light 10vmin, transparent 1vmin) 42.5vmin 35vmin / 1.5vmin 1.5vmin no-repeat,
+
+    linear-gradient( $rust-light 10vmin, transparent 1vmin) 44.75vmin 36.25vmin / 1vmin 1vmin no-repeat,
+
+
+    linear-gradient( $rust-light 10vmin, transparent 1vmin) 41.5vmin 51vmin / 1.5vmin 1.5vmin no-repeat,
+
+
+    //lower line
+
+    linear-gradient( 
+      $brown 0vmin,
+      $brown .25vmin,
+      transparent .25vmin,
+      transparent 3vmin,
+      $brown 3vmin,
+      $brown 3.25vmin,
+      transparent 3.25vmin,
+      transparent 6vmin,
+      $brown 6vmin,
+      $brown 6.25vmin,
+      transparent 6.25vmin,
+      transparent 9vmin,
+      $brown 9vmin,
+      $brown 9.25vmin,
+      transparent 9.25vmin,
+      transparent 12vmin,
+      $brown 12vmin,
+      $brown 12.25vmin,
+      transparent 12.25vmin,
+      transparent 15vmin,
+      $brown 15vmin,
+      $brown 15.25vmin,
+      transparent 15.25vmin,
+      transparent 18vmin,
+      $brown 18vmin,
+      $brown 18.25vmin,
+      transparent 18.25vmin,
+      transparent 21vmin,
+      $brown 21vmin,
+      $brown 21.25vmin,
+      transparent 21.25vmin,
+      transparent 24vmin,
+      $brown 24vmin,
+      $brown 24.25vmin,
+      transparent 24.25vmin,
+      transparent 27vmin,
+      $brown 27vmin,
+      $brown 27.25vmin,
+      transparent 27.25vmin,
+      transparent 1vmin) 43.75vmin 53.75vmin / 1.5vmin 30vmin no-repeat,
+
+
+    linear-gradient( 
+      $brown 0vmin,
+      $brown .5vmin,
+      $rust-light .5vmin,
+      $rust-light 35vmin, 
+      transparent 1vmin) 44.25vmin 51vmin / .5vmin 30vmin no-repeat,
+
+
+    // rust base
+    linear-gradient(
+      transparent 4.2vmin, 
+      $brown 4.2vmin, 
+      $brown 4.5vmin, 
+      transparent 4.5vmin, 
+      transparent 14.25vmin, 
+      $rust-light 14.25vmin, 
+      $rust-light 14.75vmin, 
+      transparent 14.75vmin, 
+      transparent 21.75vmin, 
+      $rust-light 22vmin, 
+      $rust-light 22.5vmin, 
+      transparent 22.5vmin, 
+      transparent 23.25vmin, 
+      $rust-light 23.25vmin, 
+      $rust-light 23.5vmin, 
+      transparent 23.5vmin, 
+      transparent 23.75vmin, 
+      $rust-light 23.75vmin, 
+      $rust-light 24vmin, 
+      transparent 24vmin, 
+      transparent 24.25vmin, 
+      $rust-light 24.25vmin, 
+      $rust-light 24.5vmin, 
+      transparent 24.5vmin, 
+      transparent 24.75vmin, 
+      $rust-light 24.25vmin, 
+      $rust-light 25vmin, 
+      transparent 25vmin, 
+      transparent 25.75vmin, 
+      $rust-light 25.25vmin, 
+      $rust-light 26vmin, 
+      transparent 26vmin, 
+      transparent 26.75vmin, 
+      $rust-light 26.25vmin, 
+      $rust-light 27vmin, 
+      transparent 27vmin, 
+      transparent 27.75vmin, 
+      $rust-light 27.25vmin, 
+      $rust-light 28vmin, 
+      transparent 28.25vmin,
+      transparent 54.5vmin,
+      $rust-light 54.5vmin, 
+      $rust-light 55vmin, 
+      transparent 55.25vmin)  calc(#{$box-w} + 41vmin) calc(#{$box-h} + 25vmin) / 7vmin 55vmin no-repeat,
+
+
+    // rust base
+    linear-gradient(90deg,
+      $rust-light 0vmin,
+      $rust 2.5vmin,  
+      $rust 6.5vmin,  
+      $rust-light 7vmin,
+      transparent 1vmin)  calc(#{$box-w} + 41vmin) calc(#{$box-h} + 25vmin) / 7vmin 55vmin no-repeat,
+
+
+    // silver bottom highlights
+    linear-gradient(90deg,
+      $silver 1vmin,  
+      transparent 1vmin,
+      transparent 2.5vmin,
+      $silver 2.5vmin,
+      $silver 3.5vmin,
+      transparent 1vmin)  calc(#{$box-w} + 42.75vmin) calc(#{$box-h} + 83.5vmin) / 5vmin 1vmin no-repeat,
+
+
+    // silver bottom base
+    linear-gradient(90deg,
+      $silver-light 0vmin,
+      $silver 6.5vmin,  
+      $silver-light 7vmin,
+      transparent 1vmin)  calc(#{$box-w} + 41vmin) calc(#{$box-h} + 80vmin) / 7vmin 4.5vmin no-repeat,
+
+    // silver bottom base
+    linear-gradient(90deg,
+      $silver 0vmin,
+      $silver 6.5vmin,  
+      $silver-dark 7vmin,
+      transparent 1vmin)  calc(#{$box-w} + 41.5vmin) calc(#{$box-h} + 84.25vmin) / 6vmin 1.25vmin no-repeat,
+
+ 
+    // silver bottom base
+    linear-gradient(90deg,
+      $silver-light 0vmin,
+      $silver 2vmin,  
+      transparent 2vmin,
+      transparent 3vmin,
+      $silver-light 3vmin,
+      $silver 7vmin,
+      transparent 1vmin)  calc(#{$box-w} + 42vmin) calc(#{$box-h} + 85.25vmin) / 5vmin 1vmin no-repeat,
+
+
+ 
+    // black base
+
+    linear-gradient(-45deg,
+      $black 0vmin,
+      $black 2vmin,  
+      transparent 1vmin)  calc(#{$box-w} + 41.5vmin) calc(#{$box-h} + 85.75vmin) / 1.5vmin 2.5vmin no-repeat,
+
+    linear-gradient(45deg,
+      $black 0vmin,
+      $black 2vmin,  
+      transparent 1vmin)  calc(#{$box-w} + 42.75vmin) calc(#{$box-h} + 85.75vmin) / 1.5vmin 2.5vmin no-repeat,
+
+    linear-gradient(-45deg,
+      $black 0vmin,
+      $black 2vmin,  
+      transparent 1vmin)  calc(#{$box-w} + 44.5vmin) calc(#{$box-h} + 85.75vmin) / 1.5vmin 2.5vmin no-repeat,
+
+    linear-gradient(45deg,
+      $black 0vmin,
+      $black 2vmin,  
+      transparent 1vmin)  calc(#{$box-w} + 45.75vmin) calc(#{$box-h} + 85.75vmin) / 1.5vmin 2.5vmin no-repeat,
+
+
+    // LEFT BOOSTER FLAME
+    radial-gradient(ellipse at top, #FFF5A0 0%, #FFD700 12%, $rust-light 30%, rgba(196,80,26,0.5) 45%, rgba(196,80,26,0.25) 60%, rgba(196,80,26,0.08) 75%, rgba(196,80,26,0.02) 85%, transparent 95%)
+      calc(#{$box-w} + 38vmin) calc(#{$box-h} + 88vmin) / 2.5vmin 10vmin no-repeat,
+
+    // CENTER-LEFT ENGINE FLAME
+    radial-gradient(ellipse at top, #FFF5A0 0%, #FFD700 12%, $rust-light 30%, rgba(196,80,26,0.5) 45%, rgba(196,80,26,0.25) 60%, rgba(196,80,26,0.08) 75%, rgba(196,80,26,0.02) 85%, transparent 95%)
+      calc(#{$box-w} + 41.65vmin) calc(#{$box-h} + 88vmin) / 2.5vmin 10vmin no-repeat,
+
+    // CENTER-RIGHT ENGINE FLAME
+    radial-gradient(ellipse at top, #FFF5A0 0%, #FFD700 12%, $rust-light 30%, rgba(196,80,26,0.5) 45%, rgba(196,80,26,0.25) 60%, rgba(196,80,26,0.08) 75%, rgba(196,80,26,0.02) 85%, transparent 95%)
+      calc(#{$box-w} + 44.65vmin) calc(#{$box-h} + 88vmin) / 2.5vmin 10vmin no-repeat,
+
+    // RIGHT BOOSTER FLAME
+    radial-gradient(ellipse at top, #FFF5A0 0%, #FFD700 12%, $rust-light 30%, rgba(196,80,26,0.5) 45%, rgba(196,80,26,0.25) 60%, rgba(196,80,26,0.08) 75%, rgba(196,80,26,0.02) 85%, transparent 95%)
+      calc(#{$box-w} + 48.5vmin) calc(#{$box-h} + 88vmin) / 2.5vmin 10vmin no-repeat,
+      
+}
+
+div.artemis:before {
+  width: 100vmin;
+  height: 100vmin;
+  left: 50%;
+  bottom: 3vh;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 99;
+  transform-origin: 44vmin 88vmin; // anchor at launchpad base
+  animation: smoke-bloom 8s ease-out 4s both;
+  background:
+    // wide outer smoke ring
+    radial-gradient(ellipse, rgba(180,170,160,0.85) 30%, transparent 70%)
+      14vmin 72vmin / 62vmin 24vmin no-repeat,
+    // mid billows left
+    radial-gradient(circle, rgba(200,190,180,0.9) 40%, transparent 70%)
+      8vmin 78vmin / 34vmin 28vmin no-repeat,
+    // mid billows right
+    radial-gradient(circle, rgba(200,190,180,0.9) 30%, transparent 70%)
+      50vmin 78vmin / 34vmin 28vmin no-repeat,
+    // center base bloom
+    radial-gradient(ellipse, rgba(230,220,210,1) 30%, rgba(190,180,170,0.7) 50%, transparent 80%)
+      20vmin 80vmin / 52vmin 20vmin no-repeat;
+}
+
+
+
