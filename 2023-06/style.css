@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: flex-end;
   z-index: 1;
-  background-color: #c3e1f4;
+  background-color: rgb(194.9493723849, 224.5309623431, 244.3506276151);
 }
 
 div.bouncing-ball:after {
@@ -27,7 +27,7 @@ div.bouncing-ball:after {
   border-radius: 50%;
   background-size: cover;
   border-radius: 50%;
-  background: radial-gradient(circle, #3498DB 0vmin, #3498DB 8vmin, transparent 8vmin) 4vmin 5vmin/16vmin 16vmin no-repeat, radial-gradient(circle, transparent 0vmin, transparent 6.75vmin, #cce5f6 6.75vmin, #cce5f6 7.5vmin, transparent 7.5vmin) 5.5vmin 4.5vmin/15vmin 15vmin no-repeat, radial-gradient(circle at center, #3498db 50%, transparent 52%);
+  background: radial-gradient(circle, #3498DB 0vmin, #3498DB 8vmin, transparent 8vmin) 4vmin 5vmin/16vmin 16vmin no-repeat, radial-gradient(circle, transparent 0vmin, transparent 6.75vmin, rgb(203.6129707113, 228.9267782427, 245.8870292887) 6.75vmin, rgb(203.6129707113, 228.9267782427, 245.8870292887) 7.5vmin, transparent 7.5vmin) 5.5vmin 4.5vmin/15vmin 15vmin no-repeat, radial-gradient(circle at center, #3498db 50%, transparent 52%);
   animation: bounce 1.5s infinite reverse;
   animation-timing-function: cubic-bezier(0.05, 1.25);
 }
@@ -50,4 +50,4 @@ div.bouncing-ball:before {
   align-items: flex-end;
   z-index: 1;
   background: linear-gradient(-90deg, #AAAAAA 0vmin, #AAAAAA 20vmin, transparent 40vmin) -10vmin 0vmin/60vmin 0.5vmin no-repeat, linear-gradient(90deg, #AAAAAA 0vmin, #AAAAAA 20vmin, transparent 40vmin) 50vmin 0vmin/60vmin 0.5vmin no-repeat;
-}
+}/*# sourceMappingURL=style.css.map */

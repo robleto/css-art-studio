@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  background: linear-gradient(180deg, #f2f2f2 15%, #d9d9d9 100%);
+  background: linear-gradient(180deg, rgb(242.25, 242.25, 242.25) 15%, rgb(216.75, 216.75, 216.75) 100%);
 }
 
 div:before, div:after {
@@ -23,12 +23,12 @@ div:before, div:after {
 div.beloved {
   width: 100vmin;
   height: 100vmin;
-  left: -5vmin;
+  left: -3vmin;
   margin: 0 auto;
   display: flex;
   z-index: -99;
   position: relative;
-  background: radial-gradient(ellipse, #E3BA9B 3vmin, transparent 5vmin) 50vmin 5vmin/10vmin 5vmin no-repeat, radial-gradient(circle, #3C6526 0.75vmin, black 0.75vmin, transparent 1vmin) 52vmin 12vmin/4vmin 4vmin no-repeat, radial-gradient(circle, #3C6526 0.75vmin, black 0.75vmin, transparent 1vmin) 56vmin 12vmin/4vmin 4vmin no-repeat, radial-gradient(circle, #F0CAAB 5vmin, #ecbc95 10vmin, transparent 10vmin) 45vmin 5vmin/20vmin 20vmin no-repeat, radial-gradient(ellipse at 90% 100%, #633b1c 8vmin, transparent 8vmin) 30vmin 85vmin/20vmin 8vmin no-repeat, radial-gradient(ellipse at 10% 100%, #633b1c 8vmin, transparent 8vmin) 63vmin 85vmin/20vmin 8vmin no-repeat, linear-gradient(-85deg, transparent 1vmin, #4e555e 1vmin, #717A88 10vmin, transparent 10vmin) 37vmin 60vmin/15vmin 30vmin no-repeat, linear-gradient(85deg, transparent 1vmin, #4e555e 1vmin, #717A88 10vmin, transparent 10vmin) 61vmin 60vmin/15vmin 30vmin no-repeat;
+  background: radial-gradient(ellipse, #E3BA9B 3vmin, transparent 5vmin) 50vmin 5vmin/10vmin 5vmin no-repeat, radial-gradient(circle, #3C6526 0.75vmin, black 0.75vmin, transparent 1vmin) 52vmin 12vmin/4vmin 4vmin no-repeat, radial-gradient(circle, #3C6526 0.75vmin, black 0.75vmin, transparent 1vmin) 56vmin 12vmin/4vmin 4vmin no-repeat, radial-gradient(circle, #F0CAAB 5vmin, rgb(236.1363636364, 188.3484848485, 149.3636363636) 10vmin, transparent 10vmin) 45vmin 5vmin/20vmin 20vmin no-repeat, radial-gradient(ellipse at 90% 100%, rgb(99.21875, 58.5390625, 27.78125) 8vmin, transparent 8vmin) 30vmin 85vmin/20vmin 8vmin no-repeat, radial-gradient(ellipse at 10% 100%, rgb(99.21875, 58.5390625, 27.78125) 8vmin, transparent 8vmin) 63vmin 85vmin/20vmin 8vmin no-repeat, linear-gradient(-85deg, transparent 1vmin, rgb(78.2831325301, 84.5180722892, 94.2168674699) 1vmin, #717A88 10vmin, transparent 10vmin) 37vmin 60vmin/15vmin 30vmin no-repeat, linear-gradient(85deg, transparent 1vmin, rgb(78.2831325301, 84.5180722892, 94.2168674699) 1vmin, #717A88 10vmin, transparent 10vmin) 61vmin 60vmin/15vmin 30vmin no-repeat;
 }
 
 div.beloved:before {
@@ -38,7 +38,7 @@ div.beloved:before {
   display: flex;
   position: absolute;
   transform: rotate(45deg);
-  background: radial-gradient(circle, #F0CAAB 1vmin, #e8af80 3.5vmin, transparent 3.5vmin) 29vmin 61vmin/8vmin 6vmin no-repeat, radial-gradient(circle, #F0CAAB 1vmin, #e8af80 3.5vmin, transparent 3.5vmin) 71vmin 20vmin/6vmin 8vmin no-repeat, radial-gradient(circle, #B40001 20vmin, transparent 20vmin) 35vmin 5vmin/40vmin 40vmin no-repeat, radial-gradient(circle, #B40001 20vmin, transparent 20vmin) 15vmin 25vmin/40vmin 40vmin no-repeat, linear-gradient(90deg, #B40001 50vmin, transparent 50vmin) 35vmin 25vmin/40vmin 40vmin no-repeat;
+  background: radial-gradient(circle, #F0CAAB 1vmin, rgb(232.2727272727, 174.696969697, 127.7272727273) 3.5vmin, transparent 3.5vmin) 29vmin 61vmin/8vmin 6vmin no-repeat, radial-gradient(circle, #F0CAAB 1vmin, rgb(232.2727272727, 174.696969697, 127.7272727273) 3.5vmin, transparent 3.5vmin) 71vmin 20vmin/6vmin 8vmin no-repeat, radial-gradient(circle, #B40001 20vmin, transparent 20vmin) 35vmin 5vmin/40vmin 40vmin no-repeat, radial-gradient(circle, #B40001 20vmin, transparent 20vmin) 15vmin 25vmin/40vmin 40vmin no-repeat, linear-gradient(90deg, #B40001 50vmin, transparent 50vmin) 35vmin 25vmin/40vmin 40vmin no-repeat;
 }
 
 div.beloved:after {
@@ -78,4 +78,4 @@ div.beloved:after {
   50% {
     transform: translateX(3vmin) translateY(-3vmin);
   }
-}
+}/*# sourceMappingURL=style.css.map */

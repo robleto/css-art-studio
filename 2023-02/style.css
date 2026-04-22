@@ -9,16 +9,15 @@ body {
   width: 100vw;
   position: relative;
   z-index: 1;
-  background: linear-gradient(-90deg, #d7dfea 15%, #c6d1e2 100%);
+  background: linear-gradient(-90deg, rgb(214.6964285714, 222.8660714286, 234.3035714286) 15%, rgb(197.8482142857, 209.4330357143, 225.6517857143) 100%);
 }
 
 div.impossible {
   width: 100vmin;
   height: 100vmin;
   top: -15vmin;
-  left: 5vmin;
-  /* transform-origin: 46% 67%;
-  animation: rotatetriangle 20s linear infinite; */
+  transform-origin: 46% 67%;
+  animation: rotatetriangle 20s linear infinite;
   position: relative;
   display: flex;
   position: relative;
@@ -35,4 +34,4 @@ div.impossible {
   100% {
     transform: rotate(360deg);
   }
-}
+}/*# sourceMappingURL=style.css.map */

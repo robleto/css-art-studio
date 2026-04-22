@@ -32,7 +32,7 @@ div.sparkle {
   width: 25vmin;
   height: 25vmin;
   animation: sparkdown 20s infinite, spark 1s infinite, spin 1s infinite;
-  background: linear-gradient(90deg, transparent 6vmin, #9c5a00 6.25vmin, transparent 6.5vmin) 6.75vmin 6vmin/14vmin 4vmin no-repeat, linear-gradient(-125deg, transparent 6vmin, #ff9f1c 6.25vmin, transparent 6.5vmin) -13.75vmin 6.25vmin/30vmin 4vmin no-repeat, linear-gradient(125deg, transparent 6vmin, #ff9f1c 6.25vmin, transparent 6.5vmin) 9.25vmin 6.25vmin/30vmin 4vmin no-repeat, linear-gradient(-145deg, transparent 6vmin, #9c5a00 6.25vmin, transparent 6.5vmin) -3.5vmin 8.5vmin/22vmin 2vmin no-repeat, linear-gradient(145deg, transparent 6vmin, #9c5a00 6.25vmin, transparent 6.5vmin) 7vmin 8.5vmin/22vmin 2vmin no-repeat, linear-gradient(-160deg, transparent 6vmin, #ff9f1c 6.25vmin, transparent 6.5vmin) 1vmin 9.75vmin/22vmin 2vmin no-repeat, linear-gradient(160deg, transparent 6vmin, #ff9f1c 6.25vmin, transparent 6.5vmin) 2.5vmin 9.75vmin/22vmin 2vmin no-repeat, linear-gradient(0deg, transparent 6vmin, #9c5a00 6.25vmin, transparent 6.5vmin) 3.5vmin 9vmin/7vmin 10vmin no-repeat, linear-gradient(0deg, transparent 6vmin, #9c5a00 6.25vmin, transparent 6.5vmin) 15vmin 9vmin/7vmin 10vmin no-repeat, linear-gradient(-25deg, transparent 6vmin, #ff9f1c 6.25vmin, transparent 6.5vmin) -1vmin 13.75vmin/22vmin 2vmin no-repeat, linear-gradient(25deg, transparent 6vmin, #ff9f1c 6.25vmin, transparent 6.5vmin) 4.5vmin 13.75vmin/22vmin 2vmin no-repeat, linear-gradient(-35deg, transparent 6vmin, #9c5a00 6.25vmin, transparent 6.5vmin) -2.75vmin 14.75vmin/22vmin 2vmin no-repeat, linear-gradient(35deg, transparent 6vmin, #9c5a00 6.25vmin, transparent 6.5vmin) 6.5vmin 14.75vmin/22vmin 2vmin no-repeat, linear-gradient(-55deg, transparent 6vmin, #ff9f1c 6.25vmin, transparent 6.5vmin) -13.75vmin 16vmin/30vmin 4vmin no-repeat, linear-gradient(55deg, transparent 6vmin, #ff9f1c 6.25vmin, transparent 6.5vmin) 9vmin 16vmin/30vmin 4vmin no-repeat, linear-gradient(90deg, transparent 6vmin, #9c5a00 6.25vmin, transparent 6.5vmin) 6.75vmin 16vmin/14vmin 4vmin no-repeat;
+  background: linear-gradient(90deg, transparent 6vmin, rgb(155.5, 89.7378854626, 0) 6.25vmin, transparent 6.5vmin) 6.75vmin 6vmin/14vmin 4vmin no-repeat, linear-gradient(-125deg, transparent 6vmin, #ff9f1c 6.25vmin, transparent 6.5vmin) -13.75vmin 6.25vmin/30vmin 4vmin no-repeat, linear-gradient(125deg, transparent 6vmin, #ff9f1c 6.25vmin, transparent 6.5vmin) 9.25vmin 6.25vmin/30vmin 4vmin no-repeat, linear-gradient(-145deg, transparent 6vmin, rgb(155.5, 89.7378854626, 0) 6.25vmin, transparent 6.5vmin) -3.5vmin 8.5vmin/22vmin 2vmin no-repeat, linear-gradient(145deg, transparent 6vmin, rgb(155.5, 89.7378854626, 0) 6.25vmin, transparent 6.5vmin) 7vmin 8.5vmin/22vmin 2vmin no-repeat, linear-gradient(-160deg, transparent 6vmin, #ff9f1c 6.25vmin, transparent 6.5vmin) 1vmin 9.75vmin/22vmin 2vmin no-repeat, linear-gradient(160deg, transparent 6vmin, #ff9f1c 6.25vmin, transparent 6.5vmin) 2.5vmin 9.75vmin/22vmin 2vmin no-repeat, linear-gradient(0deg, transparent 6vmin, rgb(155.5, 89.7378854626, 0) 6.25vmin, transparent 6.5vmin) 3.5vmin 9vmin/7vmin 10vmin no-repeat, linear-gradient(0deg, transparent 6vmin, rgb(155.5, 89.7378854626, 0) 6.25vmin, transparent 6.5vmin) 15vmin 9vmin/7vmin 10vmin no-repeat, linear-gradient(-25deg, transparent 6vmin, #ff9f1c 6.25vmin, transparent 6.5vmin) -1vmin 13.75vmin/22vmin 2vmin no-repeat, linear-gradient(25deg, transparent 6vmin, #ff9f1c 6.25vmin, transparent 6.5vmin) 4.5vmin 13.75vmin/22vmin 2vmin no-repeat, linear-gradient(-35deg, transparent 6vmin, rgb(155.5, 89.7378854626, 0) 6.25vmin, transparent 6.5vmin) -2.75vmin 14.75vmin/22vmin 2vmin no-repeat, linear-gradient(35deg, transparent 6vmin, rgb(155.5, 89.7378854626, 0) 6.25vmin, transparent 6.5vmin) 6.5vmin 14.75vmin/22vmin 2vmin no-repeat, linear-gradient(-55deg, transparent 6vmin, #ff9f1c 6.25vmin, transparent 6.5vmin) -13.75vmin 16vmin/30vmin 4vmin no-repeat, linear-gradient(55deg, transparent 6vmin, #ff9f1c 6.25vmin, transparent 6.5vmin) 9vmin 16vmin/30vmin 4vmin no-repeat, linear-gradient(90deg, transparent 6vmin, rgb(155.5, 89.7378854626, 0) 6.25vmin, transparent 6.5vmin) 6.75vmin 16vmin/14vmin 4vmin no-repeat;
   border-radius: 0.5rem;
 }
 
@@ -41,7 +41,7 @@ div.sparkle {
   z-index: 999;
   width: 1vmin;
   height: 40vmin;
-  background: linear-gradient(to bottom, #ff9f1c 0.3rem, #2f2b32 0.4rem);
+  background: linear-gradient(to bottom, #ff9f1c 0.3rem, rgb(47.3846153846, 43.1538461538, 50.3461538462) 0.4rem);
   border-radius: 0.5rem;
   animation: burndown 20s infinite;
 }
@@ -80,4 +80,4 @@ div.sparkle {
   100% {
     transform: rotate(-2deg);
   }
-}
+}/*# sourceMappingURL=style.css.map */

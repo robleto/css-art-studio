@@ -44,4 +44,4 @@ div:before, div:after {
   left: -0.5vmin;
   position: absolute;
   background-image: linear-gradient(darkred, white 2%, transparent 15%, transparent 90%, darkred), linear-gradient(90deg, red, white 15%, red 50%, darkred);
-}
+}/*# sourceMappingURL=style.css.map */

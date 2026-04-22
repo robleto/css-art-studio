@@ -4,34 +4,22 @@
 *:after {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   position: relative;
   z-index: 1;
-  background: -webkit-gradient(linear, left top, left bottom, from(#a65325), to(#dacc99)), -webkit-gradient(linear, left top, left bottom, from(#000), to(#000));
   background: linear-gradient(180deg, #a65325 0%, #dacc99 100%), linear-gradient(180deg, #000 0%, #000 100%);
-  -webkit-animation: darken-land 20s linear;
-          animation: darken-land 20s linear;
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation: darken-land 20s linear;
+  animation-play-state: running;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
 }
 
 div:before,
@@ -62,7 +50,7 @@ div.dry {
   padding: 0;
   position: relative;
   --first-tier:
-  
+
     /* rightest hill */ radial-gradient(
         ellipse,
         var(--foreground) 55vh,
@@ -80,7 +68,6 @@ div.dry {
     /* base */ linear-gradient(var(--foreground) 100%, transparent 100%) 100%
       100% / 100% var(--foreground-base) no-repeat;
   --second-tier:
-
     /* rightest hill */ radial-gradient(
         ellipse,
         var(--midground) 55vh,
@@ -100,7 +87,6 @@ div.dry {
     /* base */ linear-gradient(var(--midground) 100%, transparent 100%) 100%
       100% / 100% var(--midground-base) no-repeat;
   --third-tier:
-
     /* rightest hill */ radial-gradient(
         ellipse,
         var(--farground) 55vh,
@@ -240,14 +226,10 @@ div.dry:before {
   position: absolute;
   z-index: -40;
   /* z-index required on body and here to put psuedo class behind main class */
-  -webkit-animation: sunsetting 10s linear;
-          animation: sunsetting 10s linear;
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation: sunsetting 10s linear;
+  animation-play-state: running;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
   /* colors */
   --sun: #fae7b6;
   --sunset: radial-gradient(ellipse, var(--sun) 30vh, transparent 10.5vh) 40vh
@@ -264,14 +246,10 @@ div.dry:before {
   z-index: -40;
   background-color: #181715;
   /* z-index required on body and here to put psuedo class behind main class */
-  -webkit-animation: sunsetting 10s linear;
-          animation: sunsetting 10s linear;
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation: sunsetting 10s linear;
+  animation-play-state: running;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
   /* colors */
   --sun: #fae7b6;
   --sunset: radial-gradient(ellipse, var(--sun) 30vh, transparent 10.5vh) 40vh
@@ -290,56 +268,22 @@ div.dry:after {
   left: 0;
   z-index: -80;
   background: linear-gradient(180.01deg, #3f1150 30.21%, #ae6738 70.31%, #dacc99 99.99%);
-  -webkit-animation: skysetting 20s linear;
-          animation: skysetting 20s linear;
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-@-webkit-keyframes skysetting {
-  100% {
-    -webkit-transform: translateY(200vh);
-            transform: translateY(200vh);
-  }
+  animation: skysetting 20s linear;
+  animation-play-state: running;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
 }
 
 @keyframes skysetting {
   100% {
-    -webkit-transform: translateY(200vh);
-            transform: translateY(200vh);
+    transform: translateY(200vh);
   }
 }
-
-@-webkit-keyframes sunsetting {
-  100% {
-    -webkit-transform: translateY(55vh);
-            transform: translateY(55vh);
-  }
-}
-
 @keyframes sunsetting {
   100% {
-    -webkit-transform: translateY(55vh);
-            transform: translateY(55vh);
+    transform: translateY(55vh);
   }
 }
-
-@-webkit-keyframes darken-sky {
-  0% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 0.95;
-  }
-  100% {
-    opacity: 0.9;
-  }
-}
-
 @keyframes darken-sky {
   0% {
     opacity: 0;
@@ -351,42 +295,17 @@ div.dry:after {
     opacity: 0.9;
   }
 }
-
-@-webkit-keyframes darken-land {
-  0% {
-    -webkit-filter: brightness(1);
-            filter: brightness(1);
-  }
-  50% {
-    -webkit-filter: brightness(0.5);
-            filter: brightness(0.5);
-  }
-  70% {
-    -webkit-filter: brightness(0.3);
-            filter: brightness(0.3);
-  }
-  100% {
-    -webkit-filter: brightness(0.2);
-            filter: brightness(0.2);
-  }
-}
-
 @keyframes darken-land {
   0% {
-    -webkit-filter: brightness(1);
-            filter: brightness(1);
+    filter: brightness(1);
   }
   50% {
-    -webkit-filter: brightness(0.5);
-            filter: brightness(0.5);
+    filter: brightness(0.5);
   }
   70% {
-    -webkit-filter: brightness(0.3);
-            filter: brightness(0.3);
+    filter: brightness(0.3);
   }
   100% {
-    -webkit-filter: brightness(0.2);
-            filter: brightness(0.2);
+    filter: brightness(0.2);
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

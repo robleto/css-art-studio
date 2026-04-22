@@ -7,7 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  background: repeating-conic-gradient(#c30000 0 15deg, transparent 15deg 30deg), radial-gradient(circle, #c30000 0vh, #c30000 0.75vh, transparent 0.75vh) calc(50% + 5vh) 25vh/3vh 3vh repeat, linear-gradient(#a90000 0vh, #dc0000 100vh) 0vw 0vh/100vw 100vh no-repeat;
+  background: repeating-conic-gradient(rgb(194.5, 0, 0) 0 15deg, transparent 15deg 30deg), radial-gradient(circle, rgb(194.5, 0, 0) 0vh, rgb(194.5, 0, 0) 0.75vh, transparent 0.75vh) calc(50% + 5vh) 25vh/3vh 3vh repeat, linear-gradient(#a90000 0vh, #dc0000 100vh) 0vw 0vh/100vw 100vh no-repeat;
 }
 
 div:before, div:after {
@@ -35,7 +35,7 @@ div.pop:before {
   color: #333333;
   box-shadow: 25px 10px 5px 5px #333333;
   transform: rotate(-5deg);
-  background: radial-gradient(circle, #1b9bbf 0vmin, #1b9bbf 0.75vmin, transparent 0.75vmin) calc(50% + 5vmin) 25vmin/3vmin 3vmin repeat, linear-gradient(#1889a8 0vmin, #1b9bbf 100vmin) 0vw 0vmin/100vmin 100vmin no-repeat;
+  background: radial-gradient(circle, rgb(26.8518518519, 154.8456790123, 190.6481481481) 0vmin, rgb(26.8518518519, 154.8456790123, 190.6481481481) 0.75vmin, transparent 0.75vmin) calc(50% + 5vmin) 25vmin/3vmin 3vmin repeat, linear-gradient(rgb(23.7037037037, 136.6913580247, 168.2962962963) 0vmin, rgb(26.8518518519, 154.8456790123, 190.6481481481) 100vmin) 0vw 0vmin/100vmin 100vmin no-repeat;
 }
 
 div.pop:after {
@@ -49,4 +49,4 @@ div.pop:after {
   margin-left: -5vmin;
   color: #F5E702;
   transform: rotate(-5deg);
-}
+}/*# sourceMappingURL=style.css.map */

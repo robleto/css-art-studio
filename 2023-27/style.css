@@ -11,16 +11,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(#ffffff, #cccccc);
+  background: linear-gradient(#fdfaf1 40vmin, #ffffff 100vmin) 0vw 0vh/100vmin 100vmin no-repeat;
 }
 
 div.rules {
   width: 90vmin;
   height: 90vmin;
-
-    left: -1.5vmin;
   display: flex;
   opacity: 0.8;
+  left: -1.5vmin;
   border: solid 3px #020000;
   margin: 0 auto;
   position: relative;
@@ -42,7 +41,7 @@ div.rules:before {
   color: #020000;
   white-space: pre-wrap;
   content: "Remember the \aGolden Rule!";
-  background: radial-gradient(ellipse at 0% 0%, #e2f0d3 5vmin, #020000 5vmin, #020000 5.5vmin, transparent 1vmin) calc(0vmin + 42vmin) calc(0vmin + 24vmin)/30vmin 20vmin no-repeat, radial-gradient(ellipse at 0% 0%, #020000 5.5vmin, transparent 1vmin) calc(0vmin + 41.5vmin) calc(0vmin + 24vmin)/30vmin 20vmin no-repeat, radial-gradient(ellipse at 0% 0%, #e2f0d3 6vmin, #020000 6vmin, #020000 6.5vmin, transparent 1vmin) calc(0vmin + 80vmin) calc(0vmin + 18vmin)/23vmin 23vmin no-repeat, radial-gradient(ellipse at 0% 100%, #e2f0d3 6vmin, #020000 6vmin, #020000 6.5vmin, transparent 1vmin) calc(0vmin + 80vmin) calc(0vmin + -15vmin)/23vmin 23vmin no-repeat, radial-gradient(ellipse at 100% 0%, #e2f0d3 6vmin, #020000 6vmin, #020000 6.5vmin, transparent 1vmin) calc(0vmin + 12vmin) calc(0vmin + 18vmin)/23vmin 23vmin no-repeat, radial-gradient(ellipse at 100% 100%, #e2f0d3 6vmin, #020000 6vmin, #020000 6.5vmin, transparent 1vmin) calc(0vmin + 12vmin) calc(0vmin + -15vmin)/23vmin 23vmin no-repeat, radial-gradient(ellipse, #e2f0d3 50vmin, transparent 1vmin) calc(0vmin + 29vmin) calc(0vmin + 7vmin)/57vmin 12vmin no-repeat, radial-gradient(ellipse, #020000 50vmin, transparent 1vmin) calc(0vmin + 28.5vmin) calc(0vmin + 8vmin)/58vmin 10vmin no-repeat, radial-gradient(ellipse, #e2f0d3 50vmin, transparent 1vmin) calc(0vmin + 34vmin) calc(0vmin + 2vmin)/47vmin 22vmin no-repeat, radial-gradient(ellipse, #020000 50vmin, transparent 1vmin) calc(0vmin + 35vmin) calc(0vmin + 1.5vmin)/45vmin 23vmin no-repeat;
+  background: radial-gradient(ellipse at 0% 0%, #e2f0d3 5vmin, #020000 5vmin, #020000 5.5vmin, transparent 1vmin) calc(0vmin + 42vmin) calc(0vmin + 24vmin)/30vmin 20vmin no-repeat, radial-gradient(ellipse at 0% 0%, #020000 5.5vmin, transparent 1vmin) calc(0vmin + 41.5vmin) calc(0vmin + 24vmin)/30vmin 20vmin no-repeat, radial-gradient(ellipse at 0% 0%, #e2f0d3 6vmin, #020000 6vmin, #020000 6.5vmin, transparent 1vmin) calc(0vmin + 80vmin) calc(0vmin + 18vmin)/23vmin 23vmin no-repeat, radial-gradient(ellipse at 0% 100%, #e2f0d3 6vmin, #020000 6vmin, #020000 6.5vmin, transparent 1vmin) calc(0vmin + 80vmin) calc(0vmin - 15vmin)/23vmin 23vmin no-repeat, radial-gradient(ellipse at 100% 0%, #e2f0d3 6vmin, #020000 6vmin, #020000 6.5vmin, transparent 1vmin) calc(0vmin + 12vmin) calc(0vmin + 18vmin)/23vmin 23vmin no-repeat, radial-gradient(ellipse at 100% 100%, #e2f0d3 6vmin, #020000 6vmin, #020000 6.5vmin, transparent 1vmin) calc(0vmin + 12vmin) calc(0vmin - 15vmin)/23vmin 23vmin no-repeat, radial-gradient(ellipse, #e2f0d3 50vmin, transparent 1vmin) calc(0vmin + 29vmin) calc(0vmin + 7vmin)/57vmin 12vmin no-repeat, radial-gradient(ellipse, #020000 50vmin, transparent 1vmin) calc(0vmin + 28.5vmin) calc(0vmin + 8vmin)/58vmin 10vmin no-repeat, radial-gradient(ellipse, #e2f0d3 50vmin, transparent 1vmin) calc(0vmin + 34vmin) calc(0vmin + 2vmin)/47vmin 22vmin no-repeat, radial-gradient(ellipse, #020000 50vmin, transparent 1vmin) calc(0vmin + 35vmin) calc(0vmin + 1.5vmin)/45vmin 23vmin no-repeat;
 }
 
 div.rules:after {
@@ -60,4 +59,4 @@ div.rules:after {
   text-transform: uppercase;
   content: "Whoever has \athe Gold, \aMakes the Rules!";
   background: radial-gradient(ellipse at 100% 0%, #dfedf7 5vmin, #020000 5vmin, #020000 5.5vmin, transparent 1vmin) calc(0vmin + 42vmin) calc(0vmin + 60vmin)/30vmin 20vmin no-repeat, radial-gradient(ellipse at 100% 0%, #020000 5.5vmin, transparent 1vmin) calc(0vmin + 42.5vmin) calc(0vmin + 60vmin)/30vmin 20vmin no-repeat, radial-gradient(ellipse at 0% 0%, #dfedf7 6vmin, #020000 6vmin, #020000 6.5vmin, transparent 1vmin) calc(0vmin + 80vmin) calc(0vmin + 54vmin)/23vmin 23vmin no-repeat, radial-gradient(ellipse at 0% 100%, #dfedf7 6vmin, #020000 6vmin, #020000 6.5vmin, transparent 1vmin) calc(0vmin + 80vmin) calc(0vmin + 23vmin)/23vmin 23vmin no-repeat, radial-gradient(ellipse at 100% 0%, #dfedf7 6vmin, #020000 6vmin, #020000 6.5vmin, transparent 1vmin) calc(0vmin + 32vmin) calc(0vmin + 54vmin)/23vmin 23vmin no-repeat, radial-gradient(ellipse at 100% 100%, #dfedf7 6vmin, #020000 6vmin, #020000 6.5vmin, transparent 1vmin) calc(0vmin + 32vmin) calc(0vmin + 23vmin)/23vmin 23vmin no-repeat, radial-gradient(ellipse, #dfedf7 50vmin, transparent 1vmin) calc(0vmin + 49vmin) calc(0vmin + 46vmin)/37vmin 10vmin no-repeat, radial-gradient(ellipse, #020000 50vmin, transparent 1vmin) calc(0vmin + 48.5vmin) calc(0vmin + 46vmin)/38vmin 8vmin no-repeat, radial-gradient(ellipse, #dfedf7 50vmin, transparent 1vmin) calc(0vmin + 52vmin) calc(0vmin + 40vmin)/29vmin 20vmin no-repeat, radial-gradient(ellipse, #020000 50vmin, transparent 1vmin) calc(0vmin + 54.5vmin) calc(0vmin + 39.5vmin)/26vmin 21vmin no-repeat;
-}
+}/*# sourceMappingURL=style.css.map */

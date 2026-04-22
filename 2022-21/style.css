@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  background: radial-gradient(#4b7375, black);
+  background: radial-gradient(rgb(74.6666666667, 115.2, 117.3333333333), black);
 }
 
 div:before, div:after {
@@ -26,4 +26,4 @@ div.valuable {
   justify-content: center;
   align-items: center;
   background: linear-gradient(-135deg, #26c893 10vmin, transparent 10vmin) 30vmin 40vmin/20vmin 20vmin no-repeat, linear-gradient(-45deg, #55ddb9 10vmin, transparent 10vmin) 30vmin 20vmin/20vmin 20vmin no-repeat, linear-gradient(-45deg, #20bc7d 10vmin, transparent 10vmin) 44vmin 20vmin/20vmin 20vmin no-repeat, linear-gradient(135deg, #26c893 10vmin, transparent 10vmin) 50vmin 26vmin/20vmin 20vmin no-repeat, linear-gradient(45deg, #1fb67c 10vmin, transparent 10vmin) 64vmin 20vmin/20vmin 20vmin no-repeat, linear-gradient(-135deg, #55ddb9 10vmin, transparent 10vmin) 58vmin 26vmin/20vmin 20vmin no-repeat, linear-gradient(45deg, #1fb67c 10vmin, transparent 10vmin) 50vmin 34vmin/20vmin 20vmin no-repeat, linear-gradient(-135deg, #55ddb9 10vmin, transparent 10vmin) 44vmin 40vmin/20vmin 20vmin no-repeat, linear-gradient(-45deg, #20bc7d 10vmin, transparent 10vmin) 58vmin 34vmin/20vmin 20vmin no-repeat, linear-gradient(135deg, #26c893 10vmin, transparent 10vmin) 64vmin 40vmin/20vmin 20vmin no-repeat, linear-gradient(135deg, #55ddb9 10vmin, transparent 10vmin) 78vmin 40vmin/20vmin 20vmin no-repeat, linear-gradient(45deg, #26c893 10vmin, transparent 10vmin) 78vmin 20vmin/20vmin 20vmin no-repeat, linear-gradient(-135deg, #55ddb9 10vmin, transparent 10vmin) 44vmin 54vmin/20vmin 20vmin no-repeat, linear-gradient(135deg, #26c893 10vmin, transparent 10vmin) 64vmin 54vmin/20vmin 20vmin no-repeat;
-}
+}/*# sourceMappingURL=style.css.map */

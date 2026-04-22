@@ -17,7 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  background: radial-gradient(#a5dcfa, #0c86c7);
+  background: radial-gradient(rgb(165.3045685279, 220.2791878173, 249.6954314721), rgb(11.7817258883, 133.883248731, 199.2182741117));
 }
 
 div {
@@ -53,4 +53,4 @@ div:after {
   border-radius: 1vmin 1vmin 3vmin 3vmin;
   border: 0.5vmin solid #010008;
   background: radial-gradient(at 50% 100%, #f5750f 1vmin, #010008 1vmin);
-}
+}/*# sourceMappingURL=style.css.map */

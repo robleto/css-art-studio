@@ -24,4 +24,4 @@ div.light-and-dark:after {
   content: "";
   position: absolute;
   background: linear-gradient(-160deg, transparent 25vmin, #020202 45vmin, #020202 60vmin, transparent 1vmin) 0vmin 30vmin/30vmin 50vmin no-repeat, linear-gradient(70deg, #efefef 14vmin, transparent 14.5vmin) 13.25vmin 38.5vmin/20vmin 40vmin no-repeat, linear-gradient(-75deg, #efefef 14vmin, transparent 14.5vmin) -14.5vmin 38.5vmin/28vmin 40vmin no-repeat;
-}
+}/*# sourceMappingURL=style.css.map */

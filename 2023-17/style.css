@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  background: radial-gradient(ellipse at 50% 0%, #657b8b 60%, #3a4750 100%);
+  background: radial-gradient(ellipse at 50% 0%, #657b8b 60%, rgb(58.075, 70.725, 79.925) 100%);
 }
 
 div.brave {
@@ -44,4 +44,4 @@ div.brave:after {
     transform: scale(0.6) translate(0vmin, -25vmin);
     opacity: 0.7;
   }
-}
+}/*# sourceMappingURL=style.css.map */
