@@ -53,7 +53,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: end;
-  margin: 0 auto;
+  margin: 0 auto -3rem;
   background: linear-gradient(to bottom, $navy-dark 33%, $navy-light 100%);
   //background-image: url('https://www.shutterstock.com/image-vector/artemis-rocket-vector-illustration-365-600nw-2192906975.jpg');
   background-repeat: no-repeat;
@@ -72,7 +72,7 @@ div.artemis {
   display: flex;
   justify-content: center;
   align-items: end;
-  opacity: .9;
+  //opacity: .8;
   margin: 0 auto;
   //border: solid 5px $test;
   background:
@@ -666,7 +666,7 @@ div.artemis:before {
   width: 100vmin;
   height: 100vmin;
   left: 50%;
-  bottom: 3vh;
+  bottom: 4vh;
   position: absolute;
   transform: translateX(-50%);
   z-index: 99;
@@ -686,6 +686,3 @@ div.artemis:before {
     radial-gradient(ellipse, rgba(230,220,210,1) 30%, rgba(190,180,170,0.7) 50%, transparent 80%)
       20vmin 80vmin / 52vmin 20vmin no-repeat;
 }
-
-
-

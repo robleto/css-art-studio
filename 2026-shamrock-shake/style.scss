@@ -46,7 +46,8 @@ div.shamrock-shake {
     // radial-gradient(50% 60%, $milkshake-green 4vmin,  transparent 4vmin) 46vmin 53.5vmin / 25vmin 25vmin no-repeat,
       
       
-    /* McDs logo */ linear-gradient(
+    /* McDs logo - bar */
+      linear-gradient(
         90deg,
         $milkshake-green 0vmin,
         $milkshake-green 20vmin,
@@ -54,7 +55,8 @@ div.shamrock-shake {
       )
       calc(#{$box-w} + 44vmin) calc(#{$box-h} + 65vmin) / 45vmin 15vmin
       no-repeat,
-    radial-gradient(
+    /* McDs logo - left arch */
+      radial-gradient(
         50% 60%,
         $milkshake-green 0vmin,
         $milkshake-green 3.75vmin,
@@ -64,7 +66,8 @@ div.shamrock-shake {
       )
       calc(#{$box-w} + 40vmin) calc(#{$box-h} + 40vmin) / 20vmin 50vmin
       no-repeat,
-    radial-gradient(
+    /* McDs logo - right arch */
+      radial-gradient(
         50% 60%,
         $milkshake-green 0vmin,
         $milkshake-green 3.75vmin,
@@ -74,6 +77,9 @@ div.shamrock-shake {
       )
       calc(#{$box-w} + 49vmin) calc(#{$box-h} + 40vmin) / 20vmin 50vmin
       no-repeat,
+
+
+
     /* base-shadow-left */
       linear-gradient(
         -95deg,
