@@ -13,8 +13,7 @@ body {
   align-items: center;
   background: radial-gradient(white, rgb(161.1875, 239.5625, 230.65625));
   margin: 0 auto;
-  background-image: url("https://www.shutterstock.com/image-vector/artemis-rocket-vector-illustration-365-600nw-2192906975.jpg");
-}
+ }
 
 div.jester-cap {
   width: 90vmin;
