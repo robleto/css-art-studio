@@ -1,91 +1,486 @@
-body {
-  font-family: poppins, sans-serif;
-  background: radial-gradient(#ededed, #c6c6c6);
+/* ===========================
+   CSS Art Museum Gallery
+   Apple-inspired bright museum
+   =========================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 100vh;
+  cursor: grab;
+  /* Bright museum wall */
+  background:
+    linear-gradient(180deg,
+      #f0efe8 0%,
+      #f5f4ef 8%,
+      #faf9f4 15%,
+      #fdfcf8 30%,
+      #fefdf9 50%,
+      #fdfcf8 70%,
+      #f5f4ef 90%,
+      #eae9e2 100%
+    );
+  background-attachment: fixed;
+}
+
+body:active {
+  cursor: grabbing;
+}
+
+/* === HEADER === */
 header {
-  color: #555;
-  text-transform: uppercase;
-  padding: 0.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
   text-align: center;
-  font-size: 3vmin;
-  margin: 3vmin auto 0vmin;
+  padding: 1.2rem 2rem 0.8rem;
+  background: linear-gradient(180deg, rgba(250,249,244,0.97) 0%, rgba(250,249,244,0.8) 70%, transparent 100%);
+  pointer-events: none;
+}
+
+header * {
+  pointer-events: auto;
+}
+
+header h1 {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #333;
+  margin: 0;
+}
+
+header .subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(0.7rem, 1.5vw, 0.95rem);
+  color: #888;
+  letter-spacing: 0.2em;
+  margin-top: 0.2rem;
+  font-weight: 300;
 }
 
 header a, header a:visited {
-  color: #555;
+  color: #333;
   text-decoration: none;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
 }
 
-header a:hover, header a:active {
-  color: #222;
-  text-decoration: underline;
+header a:hover {
+  color: #000;
+  border-bottom-color: #000;
 }
 
-h1 {
-  font-size: clamp(1vmin, 20rem, 3vmin);
+/* === SCROLL HINT === */
+.museum-hint {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.85rem;
+  color: #aaa;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  animation: hintFade 4s ease-in-out infinite;
+  white-space: nowrap;
 }
 
-main.grid {
-  max-width: 90vw;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(45vmin, 60vmin));
-  grid-column-gap: 5vmin;
-  grid-row-gap: 5vmin;
-  aspect-ratio: 1/1;
-  margin: 0 auto;
-}
-
-main.grid a {
-  margin: 0 auto;
-  display: block;
-}
-
-iframe {
-  background-color: #eaeaea;
-  border: solid 5vmin #444;
-  border-bottom-color: #333;
-  border-left-color: #444;
-  border-radius: 2px;
-  border-right-color: #444;
-  border-top-color: #333;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset, 0 5px 10px 5px rgba(0, 0, 0, 0.25);
-  box-sizing: border-box;
+.museum-hint .arrow {
   display: inline-block;
-  margin: 0vmin 5vmin;
-  padding: 7.5vmin;
-  position: relative;
+  animation: hintSlide 2s ease-in-out infinite;
+  font-size: 1.1em;
+}
+
+.museum-hint .arrow:last-child {
+  animation-direction: reverse;
+}
+
+@keyframes hintFade {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes hintSlide {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-5px); }
+}
+
+/* === GALLERY LAYOUT === */
+main.gallery {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+  padding: 6rem 8vw 4rem;
+  min-height: 100vh;
+  width: max-content;
+}
+
+/* === SECTION LABELS === */
+.gallery-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 3rem;
+  min-height: 60vh;
+}
+
+.section-label {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: #bbb;
+  white-space: nowrap;
+  border-right: 1px solid rgba(0,0,0,0.1);
+  padding-right: 1.2rem;
+}
+
+/* === END MARKER === */
+.gallery-end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 200px;
+  min-height: 40vh;
   text-align: center;
-  min-height: 40vmin;
-  max-height: 60vmin;
+  color: #bbb;
+}
+
+.gallery-end p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.gallery-end .subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: none;
+  margin-top: 0.5rem;
+  opacity: 0.6;
+}
+
+/* === ARTWORK CONTAINER === */
+.artwork {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.artwork a {
+  display: block;
+  line-height: 0;
+}
+
+/* === SIZING === */
+.artwork.size-small iframe {
+  width: 260px;
+  height: 260px;
+}
+
+.artwork.size-medium iframe {
+  width: 360px;
+  height: 360px;
+}
+
+.artwork.size-large iframe {
+  width: 460px;
+  height: 460px;
+}
+
+.artwork.size-featured iframe {
+  width: 560px;
+  height: 560px;
+}
+
+/* === BASE IFRAME === */
+iframe {
+  background-color: #f5f3ee;
+  display: block;
   aspect-ratio: 1/1;
 }
 
-iframe:before {
-  border-radius: 2px;
-  bottom: -2vmin;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25) inset;
-  content: "";
-  left: -2vmin;
-  position: absolute;
-  right: -2vmin;
-  top: -2vmin;
+/* ================================
+   FRAME STYLES
+   ================================ */
+
+/* --- 1. CLASSIC WHITE: Inspired by the 2023-14 beveled white frame --- */
+.frame-ornate iframe {
+  border: solid 14px #eee;
+  border-top-color: #d5d5d5;
+  border-right-color: #eee;
+  border-bottom-color: #fff;
+  border-left-color: #eee;
+  border-radius: 0.5px;
+  box-shadow:
+    0 0 5px 0 rgba(0,0,0,0.15) inset,
+    0 4px 12px 4px rgba(0,0,0,0.12);
+  padding: 8px;
+  background: #e7e7db;
 }
 
-iframe:after {
-  border-radius: 2px;
-  bottom: -2.5vmin;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
-  content: "";
-  left: -2.5vmin;
-  position: absolute;
-  right: -2.5vmin;
-  top: -2.5vmin;
+/* --- 2. GALLERY WHITE: Thick clean white with subtle bevel --- */
+.frame-gilded iframe {
+  border: 20px solid #f0f0f0;
+  border-top-color: #e0e0e0;
+  border-right-color: #ebebeb;
+  border-bottom-color: #fafafa;
+  border-left-color: #ebebeb;
+  box-shadow:
+    0 0 0 1px rgba(0,0,0,0.06),
+    inset 0 0 15px rgba(0,0,0,0.08),
+    0 6px 20px rgba(0,0,0,0.1),
+    0 2px 6px rgba(0,0,0,0.06);
+  padding: 6px;
+  background: #f5f3ee;
 }
 
-@media (max-width: 980px) {
-  main.grid {
-    grid-template-columns: repeat(1, minmax(60vmin, 80vmin));
+/* --- 3. CHARCOAL: Dark grey matte frame --- */
+.frame-wood iframe {
+  border: 14px solid #3a3a3a;
+  border-top-color: #444;
+  border-right-color: #333;
+  border-bottom-color: #2a2a2a;
+  border-left-color: #383838;
+  box-shadow:
+    0 0 0 1px rgba(0,0,0,0.15),
+    inset 0 0 12px rgba(0,0,0,0.15),
+    4px 6px 20px rgba(0,0,0,0.18);
+  padding: 5px;
+  background: #f5f3ee;
+}
+
+/* --- 4. GALLERY MAT: Wide linen mat with pencil-thin rule --- */
+.frame-minimal iframe {
+  border: none;
+  box-shadow:
+    0 0 0 22px #faf9f4,
+    0 0 0 23px rgba(0,0,0,0.14),
+    0 0 0 24px rgba(255,255,255,0.4),
+    8px 12px 32px rgba(0,0,0,0.1),
+    2px 4px 10px rgba(0,0,0,0.06);
+  margin: 26px;
+  padding: 0;
+}
+
+/* --- 5. SHADOW BOX: Deep recessed white frame --- */
+.frame-shadow iframe {
+  border: 5px solid #e8e8e8;
+  border-top-color: #ddd;
+  border-bottom-color: #f2f2f2;
+  box-shadow:
+    inset 0 0 0 8px #faf9f4,
+    inset 0 0 20px rgba(0,0,0,0.06),
+    0 0 0 1px rgba(0,0,0,0.05),
+    8px 10px 30px rgba(0,0,0,0.1),
+    2px 3px 8px rgba(0,0,0,0.06);
+  padding: 12px;
+}
+
+/* ================================
+   PLAQUES
+   ================================ */
+.plaque {
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.8rem;
+  text-align: center;
+  max-width: 85%;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 1px;
+  box-shadow:
+    0 1px 4px rgba(0,0,0,0.06),
+    0 0 0 1px rgba(0,0,0,0.02);
+  position: relative;
+}
+
+/* Plaque mounting pins */
+.plaque::before,
+.plaque::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #e0e0e0, #bbb);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.plaque::before {
+  left: 8px;
+}
+
+.plaque::after {
+  right: 8px;
+}
+
+.plaque h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #222;
+  letter-spacing: 0;
+  text-transform: none;
+  margin-bottom: 0.15rem;
+}
+
+.plaque .medium {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.75rem;
+  font-style: italic;
+  color: #888;
+  letter-spacing: 0.05em;
+}
+
+.plaque .date {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.7rem;
+  color: #999;
+  letter-spacing: 0.08em;
+  margin-top: 0.1rem;
+}
+
+/* ================================
+   SUBTLE TOP LIGHTING
+   ================================ */
+.artwork::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse 35% 60% at 50% 0%,
+    rgba(255,255,255,0.15) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ================================
+   HOVER EFFECTS
+   ================================ */
+.artwork a {
+  transition: transform 0.3s ease;
+}
+
+.artwork:hover a {
+  transform: scale(1.02);
+}
+
+.artwork:hover .plaque {
+  background: #fafafa;
+  border-color: #ccc;
+}
+
+/* ================================
+   SCROLLBAR STYLING
+   ================================ */
+body::-webkit-scrollbar {
+  height: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f0efe8;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+/* ================================
+   RESPONSIVE
+   ================================ */
+@media (max-height: 600px) {
+  .artwork.size-featured iframe {
+    width: 380px;
+    height: 380px;
+  }
+  .artwork.size-large iframe {
+    width: 320px;
+    height: 320px;
+  }
+  .artwork.size-medium iframe {
+    width: 260px;
+    height: 260px;
+  }
+  .artwork.size-small iframe {
+    width: 200px;
+    height: 200px;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+@media (max-width: 768px) {
+  main.gallery {
+    padding: 5rem 5vw 3rem;
+    gap: 3vw;
+  }
+
+  .artwork.size-featured iframe {
+    width: 340px;
+    height: 340px;
+  }
+  .artwork.size-large iframe {
+    width: 300px;
+    height: 300px;
+  }
+  .artwork.size-medium iframe {
+    width: 250px;
+    height: 250px;
+  }
+  .artwork.size-small iframe {
+    width: 200px;
+    height: 200px;
+  }
+
+  header h1 {
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+  }
+}
+
+/* Smooth scroll for touch devices */
+@media (pointer: coarse) {
+  body {
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .artwork {
+    scroll-snap-align: center;
+  }
+}
