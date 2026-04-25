@@ -40,46 +40,37 @@ div.shamrock-shake {
   position: relative;
   background:
 
-    /* Pumpkin  */
-    // radial-gradient(50% 60%, lighten($green, 5%) 5vmin,  transparent 5vmin) 42vmin 51vmin / 25vmin 25vmin no-repeat,
-    // radial-gradient(50% 60%, $milkshake-green 4vmin,  transparent 4vmin) 38vmin 53.5vmin / 25vmin 25vmin no-repeat,
-    // radial-gradient(50% 60%, $milkshake-green 4vmin,  transparent 4vmin) 46vmin 53.5vmin / 25vmin 25vmin no-repeat,
+
       
       
-    /* McDs logo - bar */
-      linear-gradient(
-        90deg,
-        $milkshake-green 0vmin,
-        $milkshake-green 20vmin,
-        transparent 10vmin
-      )
-      calc(#{$box-w} + 44vmin) calc(#{$box-h} + 65vmin) / 45vmin 15vmin
-      no-repeat,
-    /* McDs logo - left arch */
-      radial-gradient(
-        50% 60%,
-        $milkshake-green 0vmin,
-        $milkshake-green 3.75vmin,
-        $yellow 3.75vmin,
-        $yellow 5vmin,
-        transparent 5vmin
-      )
-      calc(#{$box-w} + 40vmin) calc(#{$box-h} + 40vmin) / 20vmin 50vmin
-      no-repeat,
-    /* McDs logo - right arch */
-      radial-gradient(
-        50% 60%,
-        $milkshake-green 0vmin,
-        $milkshake-green 3.75vmin,
-        $yellow 3.75vmin,
-        $yellow 5vmin,
-        transparent 5vmin
-      )
-      calc(#{$box-w} + 49vmin) calc(#{$box-h} + 40vmin) / 20vmin 50vmin
-      no-repeat,
-
-
-
+    // /* McDs logo */ linear-gradient(
+    //     90deg,
+    //     $milkshake-green 0vmin,
+    //     $milkshake-green 20vmin,
+    //     transparent 10vmin
+    //   )
+    //   calc(#{$box-w} + 44vmin) calc(#{$box-h} + 65vmin) / 45vmin 15vmin
+    //   no-repeat,
+    // radial-gradient(
+    //     50% 60%,
+    //     $milkshake-green 0vmin,
+    //     $milkshake-green 3.75vmin,
+    //     $yellow 3.75vmin,
+    //     $yellow 5vmin,
+    //     transparent 5vmin
+    //   )
+    //   calc(#{$box-w} + 40vmin) calc(#{$box-h} + 40vmin) / 20vmin 50vmin
+    //   no-repeat,
+    // radial-gradient(
+    //     50% 60%,
+    //     $milkshake-green 0vmin,
+    //     $milkshake-green 3.75vmin,
+    //     $yellow 3.75vmin,
+    //     $yellow 5vmin,
+    //     transparent 5vmin
+    //   )
+    //   calc(#{$box-w} + 49vmin) calc(#{$box-h} + 40vmin) / 20vmin 50vmin
+    //   no-repeat,
     /* base-shadow-left */
       linear-gradient(
         -95deg,
@@ -234,4 +225,29 @@ div.shamrock-shake {
       )
       calc(#{$box-w} + 30vmin) calc(#{$box-h} + 101vmin) / 50vmin 12vmin
       no-repeat;
+}
+
+div.shamrock-shake:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 27vmin;
+  height: 27vmin;
+  top: 36vmin;
+  left: 36vmin;
+  z-index: 99;
+  background:
+    // central slit — black gap between the two arch feet
+    //linear-gradient(to right, transparent 48.5%, $milkshake-green 49.3%, $milkshake-green 50.7%, transparent 51.5%)
+    //  calc(#{$box-w} + 34vmin) calc(#{$box-h} + 42vmin) / 27vmin 27vmin no-repeat,
+    // inner cutouts — punch the hole in each arch
+    radial-gradient(ellipse 3vmin 16.9vmin at 25% 100%, $milkshake-green 99.5%, transparent 100%)
+      1.8vmin 0 / 27vmin 27vmin no-repeat,
+    radial-gradient(ellipse 3vmin 16.9vmin at 75% 100%, $milkshake-green 99.5%, transparent 100%)
+      -1.8vmin 0 / 27vmin 27vmin no-repeat,
+    // outer arches — the filled M shapes
+    radial-gradient(ellipse 6.8vmin 18.7vmin at 25% 100%, $yellow 99.5%, transparent 100%)
+      1.8vmin 0 / 27vmin 27vmin no-repeat,
+    radial-gradient(ellipse 6.8vmin 18.7vmin at 75% 100%, $yellow 99.5%, transparent 100%)
+      -1.8vmin 0 / 27vmin 27vmin no-repeat;
 }

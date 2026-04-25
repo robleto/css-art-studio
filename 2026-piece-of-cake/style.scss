@@ -1,0 +1,313 @@
+@use 'sass:color';
+@use 'sass:list';
+
+$test: #BADA55;
+
+
+// Colors extracted from chocolate cake image
+$purple:        #2A1005;  // dark chocolate base
+$purple-light:  color.adjust($purple, $lightness: 15%);
+$purple-dark:   color.adjust($purple, $lightness: -15%);
+
+$brown:          #5C2E0A;  // deep chocolate brown
+$brown-light:    color.adjust($brown, $lightness: 7.5%);
+$brown-dark:     color.adjust($brown, $lightness: -15%);
+
+$gold:          #C67B3E;  // caramel / warm frosting
+$gold-light:    color.adjust($gold, $lightness: 15%);
+$gold-dark:     color.adjust($gold, $lightness: -15%);
+
+$orange:        #8B4D1E;  // medium chocolate layer
+$orange-light:  color.adjust($orange, $lightness: 15%);
+$orange-dark:   color.adjust($orange, $lightness: -15%);
+
+$red:           rgba(184, 28, 44, 0.9);  // cherry red
+$red-light:     color.adjust($red, $lightness: 15%);
+$red-dark:      color.adjust($red, $lightness: -15%);
+
+$vanilla:       #FEF0DC; 
+
+
+$white: #ffffff;
+$black: #020202;
+
+
+div, div:before, div:after {
+  display: block;
+  content: '';
+  position: absolute;
+  box-sizing:border-box;
+}
+
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #F5F0E8;
+  background-image:
+    // subtle warp: horizontal linen threads
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 3px,
+      rgba(210, 200, 185, 0.18) 3px,
+      rgba(210, 200, 185, 0.18) 4px
+    ),
+    // subtle weft: vertical linen threads
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 3px,
+      rgba(210, 200, 185, 0.12) 3px,
+      rgba(210, 200, 185, 0.12) 4px
+    ),
+    // soft vignette to give the cloth depth
+    radial-gradient(ellipse at center, #FAF7F2 0%, #EDE6D8 100%);
+  
+  // background-color: $white;
+  // background-size: 88%;
+  // background-repeat: no-repeat;
+  // background-position: top center;
+  //background-image: url('https://thumbs.dreamstime.com/b/chocolate-cake-slice-vector-clip-art-illustration-85488292.jpg');
+}
+
+
+
+$box-w: 0vmin;
+$box-h: 0vmin;
+
+
+// ── Whip cream dollop helper ─────────────────────────────────────────────────
+// whip-cream($bx, $by) stamps a dollop at base position (bx, by).
+// The anchor is the bottom-center of the dollop.
+@function whip-cream($bx, $by) {
+  $cream:  $white;
+  $shadow: color.adjust($white, $lightness: -10%);
+  @return
+    // tip
+    radial-gradient(ellipse, #{$cream} .75vmin, #{$shadow} 1.25vmin, transparent 1vmin)
+      calc(#{$box-w} + #{$bx} + 1.25vmin) calc(#{$box-h} + #{$by} - 3vmin) / 2.5vmin 4vmin no-repeat,
+    radial-gradient(ellipse, #{$cream} .75vmin, #{$shadow} 2vmin, transparent 1vmin)
+      calc(#{$box-w} + #{$bx} + 1vmin) calc(#{$box-h} + #{$by} - 5vmin) / 4vmin 6.5vmin no-repeat,
+    radial-gradient(ellipse, #{$cream} 1.25vmin, #{$shadow} 2.5vmin, transparent 1vmin)
+      calc(#{$box-w} + #{$bx} + 1vmin) calc(#{$box-h} + #{$by} - 6.5vmin) / 5vmin 8vmin no-repeat,
+    radial-gradient(ellipse, #{$cream} 1.25vmin, #{$shadow} 2.5vmin, transparent 1vmin)
+      calc(#{$box-w} + #{$bx} + 1.5vmin) calc(#{$box-h} + #{$by} - 7.75vmin) / 5vmin 8vmin no-repeat,
+    // body
+    radial-gradient(ellipse at left, #{$cream} 1.5vmin, #{$shadow} 4vmin, transparent 1vmin)
+      calc(#{$box-w} + #{$bx} + 3.5vmin) calc(#{$box-h} + #{$by} - 9.25vmin) / 5vmin 12.5vmin no-repeat,
+    radial-gradient(ellipse at left, #{$cream} 1.5vmin, #{$shadow} 4vmin, transparent 1vmin)
+      calc(#{$box-w} + #{$bx} + 4.5vmin) calc(#{$box-h} + #{$by} - 9.25vmin) / 5vmin 12.5vmin no-repeat,
+    radial-gradient(ellipse at left, #{$cream} 1.5vmin, #{$shadow} 4vmin, transparent 1vmin)
+      calc(#{$box-w} + #{$bx} + 5.5vmin) calc(#{$box-h} + #{$by} - 9.25vmin) / 5vmin 13.5vmin no-repeat,
+    // base
+    radial-gradient(circle at top, #{$cream} 1.5vmin, #{$shadow} 3.5vmin, transparent 1vmin)
+      calc(#{$box-w} + #{$bx}) calc(#{$box-h} + #{$by}) / 10vmin 3.25vmin no-repeat;
+}
+
+
+// Dot cluster helper
+$dot-cluster: (
+   0.5vmin  0.75vmin,
+  2.8vmin  2.0vmin,                                                                 
+    5.6vmin  0.5vmin,                                                                 
+    8.0vmin  2.4vmin,                                                                 
+     1.2vmin  4.0vmin,                                                                 
+    4.4vmin  5.2vmin,                                                                 
+      7.2vmin  4.0vmin,                                                                 
+      2.4vmin  6.8vmin,                                                                 
+       6.0vmin  7.2vmin,                                                                 
+    8.8vmin  5.6vmin,  
+);
+
+// $r = half-width; height is 2× $r making each mark a tall ellipse
+@function cake-dots($bx, $by, $color, $r) {
+  $layers: ();
+  @each $offset in $dot-cluster {
+    $dx: list.nth($offset, 1);
+    $dy: list.nth($offset, 2);
+    $layers: list.append(
+      $layers,
+      radial-gradient(ellipse, #{$color} 0, #{$color} 50%, transparent 50%)
+        calc(#{$box-w} + #{$bx} + #{$dx}) calc(#{$box-h} + #{$by} + #{$dy}) / #{$r * 4} #{$r * 2} no-repeat,
+      comma
+    );
+  }
+  @return $layers;
+}
+
+
+div.piece-of-cake {
+    width: 100vmin;
+    height: 70vmin;
+    //opacity: .8;
+    display: flex;
+    //border: solid 2px $purple;
+    margin: 0 auto;
+    position: relative;
+    background:
+
+
+
+    // cherry stem top
+    radial-gradient(ellipse, $red-dark 0vmin, $red-dark .25vmin, transparent 0.5vmin)  calc(#{$box-w} + 80.75vmin) calc(#{$box-h} + 48vmin) / 0.75vmin 1.25vmin no-repeat,
+
+      // cherry stem
+      radial-gradient(ellipse at top left, transparent 48%, $red 49%, $red-dark 50%, $red-dark 50.5%, transparent 51%) calc(#{$box-w} + 72vmin) calc(#{$box-h} + 49vmin) / 13vmin 12vmin no-repeat,
+
+      radial-gradient(ellipse, $brown 0vmin,  transparent 1vmin) calc(#{$box-w} + 71.25vmin) calc(#{$box-h} + 56.5vmin) / 1.5vmin 1.5vmin no-repeat,
+
+      // cherry
+      radial-gradient(ellipse at bottom right, transparent 38%, transparent 40%, $red 50%, transparent 60%, transparent 62%) calc(#{$box-w} + 65.25vmin) calc(#{$box-h} + 53vmin) / 4vmin 4vmin no-repeat,
+      radial-gradient(circle, color.adjust($red-dark, $lightness: 15%) 0.5vmin, $red-dark 2.5vmin, color.adjust($red-dark, $lightness: 5%) 3.75vmin, transparent 4vmin) calc(#{$box-w} + 65.5vmin) calc(#{$box-h} + 53vmin) / 8vmin 8vmin no-repeat,
+
+
+      // chocolate sauce dot on left - top of three 
+      radial-gradient(ellipse at bottom right, transparent 38%, transparent 40%, $brown-light 50%, transparent 60%, transparent 62%) calc(#{$box-w} + 13.75vmin) calc(#{$box-h} + 41.5vmin) / 4vmin 2vmin no-repeat,
+      radial-gradient(ellipse, $brown-dark .5vmin, $brown-dark 3vmin, transparent 1vmin) calc(#{$box-w} + 13vmin) calc(#{$box-h} + 41vmin) / 8vmin 4vmin no-repeat,
+
+      // chocolate sauce dot on left - middle of three 
+      radial-gradient(ellipse at bottom right, transparent 38%, transparent 40%, $brown-light 50%, transparent 60%, transparent 62%) calc(#{$box-w} + 10.25vmin) calc(#{$box-h} + 46.5vmin) / 3vmin 1.5vmin no-repeat,
+      radial-gradient(ellipse, $brown-dark .5vmin, $brown-dark 2.5vmin, transparent 1vmin) calc(#{$box-w} + 10.25vmin) calc(#{$box-h} + 46.5vmin) / 5vmin 2.5vmin no-repeat,
+
+      // chocolate sauce dot on left - middle of three 
+      radial-gradient(ellipse at bottom right, transparent 38%, transparent 40%, $brown-light 50%, transparent 60%, transparent 62%) calc(#{$box-w} + 12.25vmin) calc(#{$box-h} + 51.5vmin) / 2vmin 1vmin no-repeat,
+      radial-gradient(ellipse, $brown-dark .5vmin, $brown-dark 2vmin, transparent 1vmin) calc(#{$box-w} + 12.25vmin) calc(#{$box-h} + 51.5vmin) / 4vmin 2vmin no-repeat,
+
+
+      // chocolate stripe across bottom center 
+
+      radial-gradient(ellipse, $brown-dark .5vmin, $brown-dark 2vmin, transparent 1vmin) calc(#{$box-w} + 17.75vmin) calc(#{$box-h} + 56vmin) /  4.5vmin 2.5vmin no-repeat,
+      radial-gradient(ellipse at top right, transparent 47%, $brown-dark 47%, $brown-dark 50%, $brown-dark 55.5%, transparent 56%) calc(#{$box-w} + 11.75vmin) calc(#{$box-h} + 57vmin) / 30vmin 10vmin no-repeat,
+      radial-gradient(ellipse at top left, transparent 38%, $brown-dark 38%, $brown-dark 50%, $brown-dark 55%, transparent 55%) calc(#{$box-w} + 40vmin) calc(#{$box-h} + 61vmin) / 45vmin 5vmin no-repeat,
+      radial-gradient(ellipse, $brown-dark .5vmin, $brown-dark 7vmin, transparent 1vmin) calc(#{$box-w} + 62vmin) calc(#{$box-h} + 59vmin) / 14vmin 4vmin no-repeat,
+
+
+
+       // dark icing edge -- right
+         linear-gradient(23deg, color.adjust($brown, $lightness: -12%) 0vmin, color.adjust($brown, $lightness: -12%)  11vmin, transparent 0.5vmin)  calc(#{$box-w} + 54vmin) calc(#{$box-h} + -8vmin) / 20vmin 30vmin no-repeat,
+
+         linear-gradient(25deg, color.adjust($brown, $lightness: -12%) 0vmin, color.adjust($brown, $lightness: -12%)  10vmin, transparent 0.5vmin)  calc(#{$box-w} + 51vmin) calc(#{$box-h} + -11.25vmin) / 24vmin 30vmin no-repeat,
+
+
+
+    // plate
+  radial-gradient(ellipse, color.adjust($white, $lightness: 40vmin) 0vmin, color.adjust($white, $lightness: 20%) 44vmin, color.adjust($white, $lightness: -5%)  47.5vmin, transparent .5vmin) calc(#{$box-w} + -40vmin) calc(#{$box-h} + 10.25vmin) / 180vmin 75vmin no-repeat,
+
+      
+    // plate lip
+  radial-gradient(ellipse, color.adjust($white, $lightness: 20%) 0vmin, color.adjust($white, $lightness: 15%)  49vmin, transparent .5vmin) calc(#{$box-w} + -40vmin) calc(#{$box-h + 10.5vmin}) / 180vmin 75vmin no-repeat,
+
+    // plate shadow
+  radial-gradient(ellipse, color.adjust($black, $lightness: 50%) 0vmin, color.adjust($black, $lightness: 65%) 45vmin, transparent 50vmin) calc(#{$box-w} + -32vmin) calc(#{$box-h + 18vmin}) / 165vmin 65vmin no-repeat,
+
+    ;
+  }
+      
+
+div.piece-of-cake:after {
+  width: 100vmin;
+  height: 100vmin;
+  top: -8vmin;
+  left: 0;
+  transform: rotate(-12deg);
+  z-index: 99;
+  //border: solid 2px $purple;
+  background:
+
+
+
+
+  
+
+     // whip cream dollop
+     whip-cream(66vmin, 27vmin),
+
+     whip-cream(60vmin, 23vmin),
+
+     whip-cream(54vmin, 19vmin),
+      
+
+
+
+    cake-dots( 28.5vmin, 41.5vmin, color.adjust($gold-light, $lightness: -5%), 0.45vmin),
+    cake-dots( 38.5vmin, 41.5vmin, color.adjust($gold-light, $lightness: -2%), 0.45vmin),
+    cake-dots( 49vmin, 42vmin, $gold-light, 0.4vmin),
+    cake-dots( 60vmin, 42vmin, color.adjust($gold-light, $lightness: 3%), 0.35vmin),
+
+
+    // caramel cream base -- left
+    linear-gradient(280deg, color.adjust($gold-light, $lightness: 10%) 0vmin, color.adjust($gold-light, $lightness: 5%) 40vmin, transparent 0.5vmin)  calc(#{$box-w} + -11.25vmin) calc(#{$box-h} + 42vmin) / 80vmin 8vmin no-repeat,
+    // caramel cream base -- right
+    linear-gradient(100deg, color.adjust($gold-light, $lightness: 13%) 0vmin, color.adjust($gold-light, $lightness: 10%) 40vmin, transparent 0.5vmin)  calc(#{$box-w} + 35.5vmin) calc(#{$box-h} + 42vmin) / 80vmin 8vmin no-repeat,
+
+    // cake dots - top 
+    cake-dots( 31vmin, 34vmin, color.adjust($orange, $lightness: -15%), 0.45vmin),
+    cake-dots( 42.5vmin, 35vmin, color.adjust($orange, $lightness: -12%), 0.45vmin),
+    cake-dots( 53vmin, 34.25vmin, color.adjust($orange, $lightness: -10%), 0.4vmin),
+    cake-dots( 64vmin, 35vmin, color.adjust($orange, $lightness: -8%), 0.35vmin),
+
+  // cake dots - bottom
+    cake-dots( 29vmin, 49vmin, color.adjust($orange, $lightness: -15%), 0.45vmin),
+    cake-dots( 40vmin, 49vmin, color.adjust($orange, $lightness: -12%), 0.45vmin),
+    cake-dots( 51vmin, 48.5vmin, color.adjust($orange, $lightness: -10%), 0.4vmin),
+    cake-dots( 61vmin, 49vmin, color.adjust($orange, $lightness: -8%), 0.35vmin),
+
+    // caramel slice base -- left
+    linear-gradient(280deg, $orange 0vmin, $orange-dark 40vmin, transparent 0.5vmin)  calc(#{$box-w} + -12.5vmin) calc(#{$box-h} + 34.5vmin) / 80vmin 23vmin no-repeat,
+
+    // caramel slice base -- right
+    linear-gradient(100deg, $orange 0vmin, $orange 18vmin, $brown 18.5vmin, $brown 20vmin, transparent 0.5vmin)  calc(#{$box-w} + 59vmin) calc(#{$box-h} + 34.5vmin) / 40vmin 23vmin no-repeat,
+
+
+      // dark icing edge -- left
+    linear-gradient(280deg, color.adjust($brown-dark, $lightness: 10%) 0vmin, color.adjust($brown-dark, $lightness: 5%) 40vmin, transparent 0.5vmin)  calc(#{$box-w} + -8.75vmin) calc(#{$box-h} + 32.25vmin) / 80vmin 2.5vmin no-repeat,
+    // dark icing edge -- right
+    linear-gradient(100deg, color.adjust($brown-dark, $lightness: 13%) 0vmin, color.adjust($brown-dark, $lightness: 10%) 40vmin, transparent 0.5vmin)  calc(#{$box-w} + 38vmin) calc(#{$box-h} + 32.25vmin) / 80vmin 2.5vmin no-repeat,
+
+    // dark icing edge -- rounded corner
+  radial-gradient(ellipse, color.adjust($brown-dark, $lightness: 13%) 1vmin, transparent 1vmin) calc(#{$box-w} + 77.5vmin) calc(#{$box-h} + 32.25vmin) / 2vmin 3vmin no-repeat,
+
+    // dark icing edge -- rounded corner
+  radial-gradient(ellipse, color.adjust($brown, $lightness: -12%) .75vmin, transparent .5vmin) calc(#{$box-w} + 57.25vmin) calc(#{$box-h} + 16.75vmin) / 1.5vmin 1.5vmin no-repeat,
+}
+
+
+
+div.piece-of-cake:before {
+  width: 100vmin;
+  height: 100vmin;
+  top: -8vmin;
+  left: 0;
+  transform: rotate(48deg);
+  z-index: 23;
+  //border: solid 2px $brown;
+  background: 
+
+
+
+      radial-gradient(ellipse at bottom left, transparent 47%, $white 47%, $white 50%, color.adjust($white, $lightness: -15%) 55.5%, transparent 56%) calc(#{$box-w} + 24.5vmin) calc(#{$box-h} + 29.75vmin) / 30vmin 10vmin no-repeat,
+
+      radial-gradient(ellipse at top left, transparent 47%, $white 47%, $white 50%, color.adjust($white, $lightness: -15%) 55.5%, transparent 56%) calc(#{$box-w} + 24.5vmin) calc(#{$box-h} + 36vmin) / 30vmin 10vmin no-repeat,
+      
+      // cherry ball
+      radial-gradient(ellipse at bottom right, transparent 38%, transparent 40%, color.adjust($red, $lightness: -20%) 50%, transparent 60%, transparent 62%) calc(#{$box-w} + 26.75vmin) calc(#{$box-h} + 45vmin) / 2vmin 2vmin no-repeat,
+      radial-gradient(circle, color.adjust($red-dark, $lightness: 5%) 0.25vmin, $red-dark 1vmin, color.adjust($red-dark, $lightness: 5%) 1.5vmin, transparent 1.5vmin) calc(#{$box-w} + 27vmin) calc(#{$box-h} + 45vmin) / 3vmin 3vmin no-repeat,
+
+      // cherry ball
+      radial-gradient(ellipse at bottom right, transparent 38%, transparent 40%, color.adjust($red, $lightness: -20%) 50%, transparent 60%, transparent 62%) calc(#{$box-w} + 25.75vmin) calc(#{$box-h} + 37vmin) / 2vmin 2vmin no-repeat,
+      radial-gradient(circle, color.adjust($red-dark, $lightness: 5%) 0.25vmin, $red-dark 1vmin, color.adjust($red-dark, $lightness: 5%) 1.5vmin, transparent 1.5vmin) calc(#{$box-w} + 26vmin) calc(#{$box-h} + 37vmin) / 3vmin 3vmin no-repeat,
+      
+      // cherry ball
+      radial-gradient(ellipse at bottom right, transparent 38%, transparent 40%, color.adjust($red, $lightness: -20%) 50%, transparent 60%, transparent 62%) calc(#{$box-w} + 33.75vmin) calc(#{$box-h} + 29vmin) / 2vmin 2vmin no-repeat,
+      radial-gradient(circle, color.adjust($red-dark, $lightness: 5%) 0.25vmin, $red-dark 1vmin, color.adjust($red-dark, $lightness: 5%) 1.5vmin, transparent 1.5vmin) calc(#{$box-w} + 34vmin) calc(#{$box-h} + 29vmin) / 3vmin 3vmin no-repeat,
+
+
+      // dark icing edge -- left
+    linear-gradient(125deg, color.adjust($brown, $lightness: -12%) 0vmin, color.adjust($brown, $lightness: -12%) 18vmin, transparent 0.5vmin)  calc(#{$box-w} + 25vmin) calc(#{$box-h} + 27vmin) / 20vmin 30.5vmin no-repeat,
+
+}
